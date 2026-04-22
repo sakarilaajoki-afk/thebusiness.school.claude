@@ -34,37 +34,37 @@ What's live on `thebusiness.school` today:
 
 ## The 6-week plan
 
-### Week 1 (22–28 April) — Technical SEO foundation
+### Week 1 (22–28 April) — Technical SEO foundation ✅ DONE
 
 **Goal:** every page crawlable, indexable, share-friendly.
 
 - [x] Audit baseline (done 22 Apr)
-- [ ] Add canonical + OG + Twitter Card tags to `index.html`
-- [ ] Add Schema.org JSON-LD: `EducationalOrganization` + `Course` + `WebSite`
-- [ ] Tighten meta description to 150–160 chars with clear CTA
-- [ ] Create `robots.txt` (allow all, point to sitemap)
-- [ ] Create `sitemap.xml` (homepage + resources + privacy + terms)
-- [ ] Connect GitHub repo → Netlify for auto-deploy
-- [ ] Submit sitemap to Google Search Console + Bing Webmaster Tools
+- [x] Add canonical + OG + Twitter Card tags to `index.html`
+- [x] Add Schema.org JSON-LD: `EducationalOrganization` + `Course` + `WebSite`
+- [x] Tighten meta description to 150–160 chars with clear CTA
+- [x] Create `robots.txt` (allow all, point to sitemap)
+- [x] Create `sitemap.xml` (homepage + resources + privacy + terms)
+- [x] Connect GitHub repo → Netlify for auto-deploy
+- [ ] Submit sitemap to Google Search Console + Bing Webmaster Tools → see `GSC_SETUP.md`
 - [ ] Run Lighthouse, record baseline scores
 
-**Deliverable:** PR with all tech fixes + deploy verification checklist.
+**Deliverable:** ✅ Live on thebusiness.school. Sakari to do GSC + Lighthouse as follow-ups.
 
 ---
 
-### Week 2 (29 Apr – 5 May) — Blog infrastructure + post #1
+### Week 2 (29 Apr – 5 May) — Blog infrastructure + post #1 ✅ DONE (shipped early)
 
 **Goal:** content engine ready, first post live.
 
-- [ ] Create `/blog/` section: index page + template
-- [ ] Write & publish Post #1 — **"A Free Edexcel A-Level Business Simulation — Map to Theme 1 & 4 in 60 Minutes"**
+- [x] Create `/blog/` section: index page + template
+- [x] Write & publish Post #1 — **"A Free Edexcel A-Level Business Simulation — Map to Theme 1 & 4 in 60 Minutes"**
   - Target keyword: *A-Level Business Studies simulation Edexcel*
-  - 1,500–2,000 words, British English
-  - `BlogPosting` schema, internal link to demo
-- [ ] Add breadcrumbs + `BreadcrumbList` schema
-- [ ] Update sitemap.xml with new URLs
+  - ~1,900 words, British English
+  - `BlogPosting` + `BreadcrumbList` schema, internal link to demo
+- [x] Add breadcrumbs + `BreadcrumbList` schema
+- [x] Update sitemap.xml with new URLs
 
-**Deliverable:** Post #1 live + indexed in Google Search Console.
+**Deliverable:** ✅ Post #1 live at /blog/edexcel-a-level-business-simulation/. Sakari to request indexing in GSC once verified.
 
 ---
 
