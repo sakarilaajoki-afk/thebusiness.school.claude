@@ -1,0 +1,9 @@
+# robots.txt for thebusiness.school
+# Allow all crawlers full access.
+# Blocklist bad bots at CDN / firewall level, not here.
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://thebusiness.school/sitemap.xml
