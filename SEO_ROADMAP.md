@@ -68,15 +68,17 @@ What's live on `thebusiness.school` today:
 
 ---
 
-### Week 3 (6–12 May) — Post #2 + on-page polish
+### Week 3 (6–12 May) — Post #2 + on-page polish ✅ DONE (shipped early)
 
-- [ ] Write & publish Post #2 — **"How to Teach Price Elasticity of Demand in 20 Minutes — A Sixth Form Activity"**
+- [x] Write & publish Post #2 — **"How to Teach Price Elasticity of Demand in 20 Minutes — A Sixth Form Activity"**
   - Target keyword: *teach price elasticity of demand UK classroom*
-- [ ] Add FAQ section on homepage with `FAQPage` schema
-- [ ] Add "For Teachers" landing page with specific AQA / Edexcel / OCR spec links
-- [ ] Image alt tags audit across the site
+  - `BlogPosting` + `BreadcrumbList` + `HowTo` schema (3 schemas for rich results)
+  - Internal link to Post #1; reverse link added to Post #1
+- [x] Add FAQ section on homepage with `FAQPage` schema
+- [ ] Add "For Teachers" landing page with specific AQA / Edexcel / OCR spec links (moved to Week 4)
+- [ ] Image alt tags audit across the site (moved to Week 5)
 
-**Deliverable:** 2 blog posts live, FAQ schema eligible for rich snippets.
+**Deliverable:** ✅ 2 posts live, internal linking live, FAQ + HowTo schemas eligible for rich snippets.
 
 ---
 
