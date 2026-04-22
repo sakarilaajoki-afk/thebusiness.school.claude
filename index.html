@@ -80,6 +80,96 @@
     }
     </script>
 
+    <!-- FAQ Schema (eligible for Google rich results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is The Business School free for teachers?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The teacher demo is completely free — no credit card, no email capture required. Generate a PIN, share it with your class, and run a full 60-minute lesson. The paid tier (saved sessions, multi-class league tables, printable teacher packs) is optional and priced at £95 per teacher per year as of April 2026."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which A-Level Business specifications does it cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The simulation maps to Edexcel 9BS0 (Themes 1–4), AQA 7132 (sections 3.1, 3.2, 3.5), and OCR H431/H031. It also works for BTEC Level 3 Business Unit 3, Cambridge Nationals, IGCSE Business Studies, and first-year university business modules. Each in-game decision is tied to at least one specification topic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do students need to create accounts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Students join a session by typing a PIN and picking a team name. No email, no password, nothing stored — your data protection lead has nothing to chase. GDPR-compliant by design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is a session?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A standard session runs 60 minutes including setup and reflection. Plan 5 minutes setup, 40 minutes of gameplay across 8 rounds, and 10 minutes of whole-class reflection. A shorter 30-minute version works for tutor-group slots or end-of-term lessons."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What devices do students need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Any device with a modern browser — Chromebooks, laptops, tablets, and phones all work. One device per team of up to five is enough. The teacher projects a dashboard from their own laptop. No apps to install, no IT department involvement required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many students can play at once?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Up to 30 students per session, organised in teams of three to five. Teams of five work best for C-suite role assignments (CEO, CFO, CMO, COO, CTO). Larger classes can be split across two parallel sessions with different PINs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it with mixed-ability or SEND students?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A difficulty toggle softens the market response and crisis events for lower-attaining groups. The C-suite role structure means each team member has a defined job — CFO handles money, CMO handles marketing — which scaffolds participation for students who struggle with open-ended tasks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work on the school Wi-Fi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — it is browser-based and works on standard UK school networks. If your school firewall blocks unknown domains, ask IT to whitelist thebusiness.school. The teacher dashboard has a pause and resume feature, so if Wi-Fi drops mid-lesson you can pick up from the last round without losing progress."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a teacher dashboard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The teacher controls the session from a dedicated dashboard: pause and resume rounds, inject crisis events (exchange rate shocks, supply disruptions, demand shifts), message individual teams, and view real-time performance. It is projector-friendly for whole-class display."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is student data safe and GDPR-compliant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. No personal student data is collected — students type a team name, not their own name or email. Sessions are ephemeral by default on the free tier. On the paid tier, teachers can save session data under their own account with full export and deletion rights. The company is registered in Finland (TBS Education Ltd Oy) and complies with UK GDPR."
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -296,6 +386,57 @@
 
         /* FEATURES */
         .features-bg { background: var(--light); }
+
+        /* FAQ */
+        .faq-section { background: #fff; padding: 80px 20px; }
+        .faq-section .container { max-width: 860px; }
+        .faq-list { margin-top: 36px; }
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding: 0;
+        }
+        .faq-item:first-of-type { border-top: 1px solid #e5e7eb; }
+        .faq-item summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 22px 48px 22px 4px;
+            font-weight: 600;
+            color: var(--primary);
+            font-size: 1.08rem;
+            position: relative;
+            transition: color 0.2s;
+        }
+        .faq-item summary:hover { color: var(--accent); }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: '+';
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--accent);
+            transition: transform 0.2s;
+            line-height: 1;
+        }
+        .faq-item[open] summary::after {
+            content: '–';
+        }
+        .faq-item .faq-answer {
+            padding: 0 4px 22px 4px;
+            color: var(--text);
+            line-height: 1.7;
+        }
+        .faq-item .faq-answer p { margin: 0; }
+        .faq-note {
+            text-align: center;
+            margin-top: 36px;
+            color: var(--subtle);
+            font-size: 0.95rem;
+        }
+        .faq-note a { color: var(--accent); text-decoration: none; font-weight: 600; }
+        .faq-note a:hover { text-decoration: underline; }
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -715,6 +856,7 @@
         <a href="#curriculum">Curriculum</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
         <a href="https://teacher-demo-tbs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
         <a href="#contact" class="nav-cta">Get in Touch</a>
     </div>
@@ -1133,6 +1275,69 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section features-bg" id="faq">
+    <div class="container">
+        <p class="section-label">Frequently Asked</p>
+        <h2 class="section-title">Teacher Questions, Answered</h2>
+        <p class="section-subtitle">The questions UK Sixth Form teachers ask before running their first session. If yours is missing, email <a href="mailto:sakari.laajoki@gmail.com" style="color:var(--accent);">sakari.laajoki@gmail.com</a>.</p>
+
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>Is The Business School free for teachers?</summary>
+                <div class="faq-answer"><p>Yes. The teacher demo is completely free — no credit card, no email capture required. Generate a PIN, share it with your class, and run a full 60-minute lesson. The paid tier (saved sessions, multi-class league tables, printable teacher packs) is optional and priced at £95 per teacher per year as of April 2026.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Which A-Level Business specifications does it cover?</summary>
+                <div class="faq-answer"><p>The simulation maps to <strong>Edexcel 9BS0</strong> (Themes 1–4), <strong>AQA 7132</strong> (sections 3.1, 3.2, 3.5), and <strong>OCR H431/H031</strong>. It also works for BTEC Level 3 Business Unit 3, Cambridge Nationals, IGCSE Business Studies, and first-year university business modules. Every in-game decision is tied to at least one specification topic.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do students need to create accounts?</summary>
+                <div class="faq-answer"><p>No. Students join a session by typing a PIN and picking a team name. No email, no password, nothing stored — your data protection lead has nothing to chase. GDPR-compliant by design.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How long is a session?</summary>
+                <div class="faq-answer"><p>A standard session runs 60 minutes including setup and reflection. Plan 5 minutes setup, 40 minutes of gameplay across 8 rounds, and 10 minutes of whole-class reflection. A shorter 30-minute version works for tutor-group slots or end-of-term lessons.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>What devices do students need?</summary>
+                <div class="faq-answer"><p>Any device with a modern browser — Chromebooks, laptops, tablets, and phones all work. One device per team of up to five is enough. The teacher projects a dashboard from their own laptop. No apps to install, no IT department involvement required.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>How many students can play at once?</summary>
+                <div class="faq-answer"><p>Up to 30 students per session, organised in teams of three to five. Teams of five work best for C-suite role assignments (CEO, CFO, CMO, COO, CTO). Larger classes can be split across two parallel sessions with different PINs.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I use it with mixed-ability or SEND students?</summary>
+                <div class="faq-answer"><p>Yes. A difficulty toggle softens the market response and crisis events for lower-attaining groups. The C-suite role structure means each team member has a defined job — CFO handles money, CMO handles marketing — which scaffolds participation for students who struggle with open-ended tasks.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Does it work on the school Wi-Fi?</summary>
+                <div class="faq-answer"><p>Yes — it is browser-based and works on standard UK school networks. If your school firewall blocks unknown domains, ask IT to whitelist <code>thebusiness.school</code>. The teacher dashboard has a pause and resume feature, so if Wi-Fi drops mid-lesson you can pick up from the last round without losing progress.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Is there a teacher dashboard?</summary>
+                <div class="faq-answer"><p>Yes. The teacher controls the session from a dedicated dashboard: pause and resume rounds, inject crisis events (exchange rate shocks, supply disruptions, demand shifts), message individual teams, and view real-time performance. It is projector-friendly for whole-class display.</p></div>
+            </details>
+
+            <details class="faq-item">
+                <summary>Is student data safe and GDPR-compliant?</summary>
+                <div class="faq-answer"><p>Yes. No personal student data is collected — students type a team name, not their own name or email. Sessions are ephemeral by default on the free tier. On the paid tier, teachers can save session data under their own account with full export and deletion rights. The company is registered in Finland (TBS Education Ltd Oy) and complies with UK GDPR.</p></div>
+            </details>
+        </div>
+
+        <p class="faq-note">Got a question not answered here? <a href="#contact">Drop us a line &rarr;</a></p>
     </div>
 </section>
 
