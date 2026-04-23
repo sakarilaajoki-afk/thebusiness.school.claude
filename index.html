@@ -387,6 +387,127 @@
         /* FEATURES */
         .features-bg { background: var(--light); }
 
+        /* TRUST / CREDIBILITY SECTION */
+        .trust-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+            color: #fff;
+            padding: 80px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .trust-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold) 0%, var(--accent) 100%);
+        }
+        .trust-section .container { max-width: 1100px; position: relative; z-index: 1; }
+        .trust-eyebrow {
+            color: var(--gold);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        .trust-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            margin-bottom: 14px;
+            line-height: 1.15;
+        }
+        .trust-title span { color: var(--gold); }
+        .trust-lede {
+            text-align: center;
+            font-size: 1.08rem;
+            color: rgba(255,255,255,0.78);
+            max-width: 680px;
+            margin: 0 auto 48px;
+            line-height: 1.65;
+        }
+        .trust-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+        .trust-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.09);
+            border-radius: 12px;
+            padding: 28px 26px;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+        .trust-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-2px);
+        }
+        .trust-card .trust-number {
+            color: var(--gold);
+            font-size: 1.9rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            display: block;
+            line-height: 1;
+        }
+        .trust-card h3 {
+            color: #fff;
+            font-size: 1.08rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .trust-card p {
+            color: rgba(255,255,255,0.72);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .trust-partners {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 36px;
+            padding: 32px 24px;
+            background: rgba(0,0,0,0.18);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+        .trust-partner {
+            text-align: center;
+            min-width: 180px;
+        }
+        .trust-partner .partner-label {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .trust-partner .partner-name {
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            display: block;
+            margin-bottom: 2px;
+        }
+        .trust-partner .partner-meta {
+            color: rgba(255,255,255,0.55);
+            font-size: 0.82rem;
+        }
+        @media (max-width:620px) {
+            .trust-title { font-size: 1.6rem; }
+            .trust-partners { gap: 20px; padding: 24px 16px; }
+        }
+
         /* FAQ */
         .faq-section { background: #fff; padding: 80px 20px; }
         .faq-section .container { max-width: 860px; }
@@ -875,7 +996,8 @@
 
 <!-- HERO -->
 <section class="hero">
-    <p style="font-size:0.85rem;text-transform:uppercase;letter-spacing:3px;opacity:0.7;margin-bottom:12px;">Built in Finland</p>
+    <p style="font-size:0.85rem;text-transform:uppercase;letter-spacing:3px;opacity:0.7;margin-bottom:6px;">Built in Finland · Engineered in Sydney</p>
+    <p style="font-size:0.78rem;letter-spacing:1px;opacity:0.55;margin-bottom:18px;">In professional partnership with Appifest — software studio, Australia</p>
     <h1>The <span>Business School</span></h1>
     <p class="hero-tagline">The classroom simulation where students run real companies.</p>
     <p class="subtitle">The Business School is a live, multiplayer business simulation built for secondary and higher education. Each student runs their own virtual firm — buying stock, setting retail prices, managing VAT, and reacting to teacher-triggered market events. Teachers can organise students into teams of 3–5 for collaborative play. No downloads, no setup, no student accounts — just a PIN code and a browser.</p>
@@ -1264,6 +1386,51 @@
     </div>
 </section>
 
+<!-- TRUST / ENGINEERING CREDIBILITY -->
+<section class="trust-section" id="engineering">
+    <div class="container">
+        <p class="trust-eyebrow">Built by Professionals</p>
+        <h2 class="trust-title">Engineered for the classroom, not <span>vibe-coded in a weekend</span>.</h2>
+        <p class="trust-lede">The Business School is a professionally developed product. The simulation engine, the live multiplayer architecture and the teacher dashboard were built in a cross-continental partnership with a dedicated software studio — not assembled by a single founder with an AI tool.</p>
+
+        <div class="trust-cards">
+            <div class="trust-card">
+                <span class="trust-number">2</span>
+                <h3>Continents, one team</h3>
+                <p>Product and pedagogy direction from Helsinki. Full-stack engineering from Sydney. A deliberate cross-continental partnership that combines Nordic educational expertise with professional Australian software development.</p>
+            </div>
+            <div class="trust-card">
+                <span class="trust-number">€1,000s</span>
+                <h3>Professional engineering investment</h3>
+                <p>Thousands of euros invested in dedicated engineering hours. Real architecture decisions, real code review, real QA. Not a side-project hobby build.</p>
+            </div>
+            <div class="trust-card">
+                <span class="trust-number">100%</span>
+                <h3>Production-grade stack</h3>
+                <p>Browser-based frontend, serverless backend on Netlify, Postgres database, AI reports via Claude API. A real production system that runs 30 concurrent students in a live classroom.</p>
+            </div>
+        </div>
+
+        <div class="trust-partners" aria-label="Partners">
+            <div class="trust-partner">
+                <span class="partner-label">Founder &amp; Product</span>
+                <span class="partner-name">TBS Education Ltd Oy</span>
+                <span class="partner-meta">Helsinki, Finland</span>
+            </div>
+            <div class="trust-partner">
+                <span class="partner-label">Engineering Partner</span>
+                <span class="partner-name">Appifest</span>
+                <span class="partner-meta">Sydney, Australia · Software Studio</span>
+            </div>
+            <div class="trust-partner">
+                <span class="partner-label">Pilot Cohorts</span>
+                <span class="partner-name">UK · UAE · Australia</span>
+                <span class="partner-meta">Pilots beginning April 2026</span>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ABOUT -->
 <section class="about-section" id="about">
     <div class="container">
@@ -1276,7 +1443,7 @@
             <p>Today, 48% of Gen Z already run a side hustle. Social media has made entrepreneurship feel easy — but nobody teaches the financial fundamentals that can make or break a young business.</p>
             <p>That question — <em>what if students could make those mistakes safely, before they cost real money?</em> — became The Business School.</p>
             <p>The Business School is proudly built in Finland — a country consistently ranked #1 in the world for education. Our pedagogy is founded on trust, equality, and learning by doing, and those principles are at the heart of everything we build. That foundation gives us a unique perspective on how students truly learn: not through theory alone, but through experience.</p>
-            <p>Together with our development team based in Sydney, Australia, we built a live simulation designed specifically for the classroom. This cross-continental collaboration brings together Nordic educational expertise with cutting-edge product development. Each student runs their own competing firm. Over 60 minutes, they buy stock, set retail prices, manage a VAT account, negotiate deals and respond to teacher-triggered crisis events. Every decision is tracked, scored, and reflected in a final grade and certificate.</p>
+            <p>To build the simulation itself we partnered with <strong>Appifest</strong>, a professional software studio based in Sydney, Australia. The engineering work — the real-time multiplayer architecture, the teacher dashboard, the database layer, the AI-report pipeline — was delivered by a dedicated team over many months, backed by a multi-thousand-euro development investment. This cross-continental partnership combines Nordic educational expertise with professional Australian software craftsmanship. Each student runs their own competing firm. Over 60 minutes, they buy stock, set retail prices, manage a VAT account, negotiate deals and respond to teacher-triggered crisis events. Every decision is tracked, scored, and reflected in a final grade and certificate.</p>
             <p style="margin-bottom:0;">The platform is browser-based with zero IT setup. Students join with a PIN. Teachers click one button to start. We are now piloting with schools in the UK and preparing for international expansion.</p>
             <div class="about-author">
                 <div class="about-avatar">S</div>
