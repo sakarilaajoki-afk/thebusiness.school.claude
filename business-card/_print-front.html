@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<title>Business Card — Front (print)</title>
+<style>
+  @page { size: 89mm 59mm; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { width: 89mm; height: 59mm; }
+  body { width: 89mm; height: 59mm; overflow: hidden; background: #1a1a2e; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; }
+  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  .card {
+    width: 89mm; height: 59mm; position: relative; overflow: hidden;
+    color: #fff;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 45%, #0f3460 100%);
+  }
+  .card::after {
+    content:''; position:absolute; top:0; left:0; right:0; height:1.2mm;
+    background: linear-gradient(90deg, #f4c542 0%, #e94560 100%);
+  }
+  .inner {
+    position:absolute; top:5mm; left:5mm; right:5mm; bottom:5mm;
+    display:flex; justify-content:space-between; gap:4mm;
+  }
+  .left { display:flex; flex-direction:column; justify-content:space-between; padding-top:1mm; }
+  .eyebrow { font-size:1.9mm; font-weight:700; letter-spacing:0.25em; text-transform:uppercase; color:#f4c542; margin-bottom:2.5mm; }
+  .brand { font-size:6.2mm; font-weight:800; letter-spacing:-0.4px; line-height:1.08; color:#fff; }
+  .brand .dot { color:#f4c542; }
+  .tag { font-size:2.1mm; color: rgba(255,255,255,0.7); margin-top:2.2mm; line-height:1.45; max-width:44mm; }
+  .footline { font-size:1.8mm; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color: rgba(255,255,255,0.5); line-height:1.3; }
+  .footline .dot { color:#f4c542; }
+
+  .right { display:flex; flex-direction:column; align-items:flex-end; justify-content:space-between; }
+  .qr { width:30mm; height:30mm; background:#fff; border-radius:1.8mm; padding:1.6mm; display:flex; align-items:center; justify-content:center; }
+  .qr img { width:100%; height:100%; display:block; }
+  .qr-caption { font-size:1.7mm; color:#f4c542; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; text-align:right; margin-top:2mm; line-height:1.3; }
+  .qr-caption .url { display:block; font-size:2mm; color:#fff; letter-spacing:0; text-transform:none; font-weight:700; margin-top:0.5mm; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="inner">
+      <div class="left">
+        <div>
+          <div class="eyebrow">A-Level Business Simulation</div>
+          <div class="brand">The Business<br>School<span class="dot">.</span></div>
+          <div class="tag">The classroom simulation where students run real companies.</div>
+        </div>
+        <div class="footline">Built in Finland <span class="dot">·</span> Engineered in Sydney</div>
+      </div>
+      <div class="right">
+        <div class="qr">
+          <img src="../assets/qr-thebusiness-school.png" alt="QR to thebusiness.school">
+        </div>
+        <div class="qr-caption">
+          Scan to visit
+          <span class="url">thebusiness.school</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
