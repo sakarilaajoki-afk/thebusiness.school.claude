@@ -716,7 +716,21 @@
             font-size: 0.85rem;
         }
         footer a { color: var(--gold); text-decoration: none; }
-        footer .footer-copy { font-size: 0.8rem; opacity: 0.5; }
+        footer a:hover { color: #fff; }
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 28px;
+            margin: 0 0 24px;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+        footer .footer-links a { font-size: 0.88rem; color: rgba(255,255,255,0.75); }
+        footer .footer-links a:hover { color: var(--gold); }
+        footer .footer-copy { font-size: 0.8rem; opacity: 0.5; line-height: 1.7; }
+        footer .footer-copy a { opacity: 0.8; }
 
         /* AI FEEDBACK SECTION */
         .feedback-section {
@@ -850,12 +864,9 @@
 <nav class="nav">
     <a href="#" class="nav-brand">The <span>Business School</span></a>
     <div class="nav-links">
-        <a href="/resources">Free resources</a>
-        <a href="#how">How It Works</a>
-        <a href="#features">Features</a>
-        <a href="#curriculum">Curriculum</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#about">About</a>
+        <a href="/for-teachers/">For Teachers</a>
+        <a href="/resources/">Resources</a>
+        <a href="/blog/">Blog</a>
         <a href="#faq">FAQ</a>
         <a href="https://teacher-demo-tbs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
         <a href="#contact" class="nav-cta">Get in Touch</a>
@@ -1379,7 +1390,15 @@
 <footer>
     <div class="footer-brand">The Business School</div>
     <div class="footer-tagline">Live Business Simulation for Classrooms</div>
-    <div class="footer-origin">Built in Finland — home of the world's best education. Designed for UK and Australian classrooms. Expanding globally.</div>
+    <div class="footer-origin">Built in Finland. Designed for UK, UAE and Australian classrooms.</div>
+    <nav class="footer-links" aria-label="Footer">
+        <a href="/">Home</a>
+        <a href="/for-teachers/">For Teachers</a>
+        <a href="/resources/">Resources</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/#contact">Contact</a>
+    </nav>
     <div class="footer-copy">© 2026 TBS Education Ltd Oy (Business ID: 3614159-3). All rights reserved. · <a href="/privacy">Privacy Policy</a> · <a href="/terms">Terms &amp; Conditions</a></div>
 </footer>
 
