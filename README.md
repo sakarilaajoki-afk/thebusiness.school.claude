@@ -1,7 +1,7 @@
 # The Business School — Marketing Site
 
 **Live site:** [thebusiness.school](https://thebusiness.school)
-**Product:** Interactive live business simulation for A-Level, BTEC, IGCSE and university Business Studies classrooms. Students run virtual firms as C-suite executives in 60-minute sessions. No downloads, just a PIN code.
+**Product:** Interactive live business simulation for A-Level, BTEC, IGCSE and university Business Studies classrooms. Each student runs their own virtual firm — buying stock, setting retail prices, managing VAT, reacting to teacher-triggered crisis events. Teacher-controlled pace, up to 12 rounds per session. No downloads, just a PIN code.
 **Company:** TBS Education Ltd Oy (Finland)
 **Owner:** Sakari Laajoki — [sakari.laajoki@gmail.com](mailto:sakari.laajoki@gmail.com)
 
