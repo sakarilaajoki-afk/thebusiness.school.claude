@@ -80,6 +80,22 @@
     }
     </script>
 
+    <!-- VideoObject schema for the demo walkthrough -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "The Business School — Live Classroom Simulation Walkthrough",
+      "description": "A short walkthrough of The Business School — the live multiplayer business simulation for UK A-Level, BTEC and IGCSE classrooms. Shows the teacher dashboard, student view, and a full round of gameplay.",
+      "thumbnailUrl": "https://cdn.loom.com/sessions/thumbnails/d9f73be6390b46a8bd9e395dcdea57e6-with-play.gif",
+      "uploadDate": "2026-04-23",
+      "embedUrl": "https://www.loom.com/embed/d9f73be6390b46a8bd9e395dcdea57e6",
+      "contentUrl": "https://www.loom.com/share/d9f73be6390b46a8bd9e395dcdea57e6",
+      "publisher": { "@id": "https://thebusiness.school/#organization" },
+      "inLanguage": "en-GB"
+    }
+    </script>
+
     <!-- FAQ Schema (eligible for Google rich results) -->
     <script type="application/ld+json">
     {
@@ -386,6 +402,80 @@
 
         /* FEATURES */
         .features-bg { background: var(--light); }
+
+        /* DEMO VIDEO SECTION */
+        .video-section {
+            background: #0a0a18;
+            padding: 72px 20px 80px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .video-section::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold) 0%, var(--accent) 100%);
+            opacity: 0.6;
+        }
+        .video-section .container { max-width: 960px; position: relative; z-index: 1; }
+        .video-eyebrow {
+            color: var(--gold);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        .video-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            margin-bottom: 14px;
+            line-height: 1.2;
+        }
+        .video-title span { color: var(--gold); }
+        .video-lede {
+            text-align: center;
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.72);
+            max-width: 620px;
+            margin: 0 auto 36px;
+            line-height: 1.65;
+        }
+        .video-frame {
+            position: relative;
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.06);
+        }
+        .video-frame iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
+        }
+        .video-note {
+            text-align: center;
+            margin-top: 22px;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.55);
+        }
+        .video-note a { color: var(--gold); text-decoration: none; font-weight: 600; }
+        .video-note a:hover { color: #fff; }
+        @media (max-width: 620px) {
+            .video-title { font-size: 1.5rem; }
+            .video-section { padding: 56px 16px 60px; }
+            .video-frame { border-radius: 10px; }
+        }
 
         /* TRUST / CREDIBILITY SECTION */
         .trust-section {
@@ -985,6 +1075,7 @@
 <nav class="nav">
     <a href="#" class="nav-brand">The <span>Business School</span></a>
     <div class="nav-links">
+        <a href="#demo-video">Watch Demo</a>
         <a href="/for-teachers/">For Teachers</a>
         <a href="/resources/">Resources</a>
         <a href="/blog/">Blog</a>
@@ -1014,6 +1105,26 @@
         <a href="#contact" class="cta-btn-outline">Request Pilot Access</a>
     </div>
     <p style="margin-top:18px;font-size:0.85rem;opacity:0.6;">Opens the teacher demo in a new tab — explore the simulation at your own pace, no sign-up required.</p>
+</section>
+
+<!-- DEMO VIDEO -->
+<section class="video-section" id="demo-video">
+    <div class="container">
+        <p class="video-eyebrow">See it in action</p>
+        <h2 class="video-title">A 2-minute walkthrough <span>of the live classroom simulation</span></h2>
+        <p class="video-lede">Watch the teacher dashboard, the student view, and a full round play out — before you decide to run it with your class.</p>
+        <div class="video-frame">
+            <iframe
+                src="https://www.loom.com/embed/d9f73be6390b46a8bd9e395dcdea57e6?hideEmbedTopBar=true&hide_owner=true"
+                title="The Business School — live classroom simulation walkthrough"
+                frameborder="0"
+                allow="fullscreen; picture-in-picture"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+        <p class="video-note">Prefer to try it yourself? <a href="https://teacher-demo-tbs.netlify.app/" target="_blank" rel="noopener noreferrer">Open the live teacher demo →</a></p>
+    </div>
 </section>
 
 <!-- HOW IT WORKS -->
