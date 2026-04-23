@@ -4,6 +4,8 @@
 
 User-agent: *
 Allow: /
+# Internal print-only page, do not index
+Disallow: /business-card/
 
 # Sitemap
 Sitemap: https://thebusiness.school/sitemap.xml
