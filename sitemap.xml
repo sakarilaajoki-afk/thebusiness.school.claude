@@ -43,15 +43,9 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://thebusiness.school/privacy/</loc>
-    <lastmod>2026-04-22</lastmod>
+    <loc>https://thebusiness.school/data-protection/</loc>
+    <lastmod>2026-04-23</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://thebusiness.school/terms/</loc>
-    <lastmod>2026-04-22</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
 </urlset>

@@ -47,6 +47,13 @@
     Content-Disposition = "attachment"
     Cache-Control = "public, max-age=86400"
 
+# Data protection PDFs — cache for a day, schools download these to review
+[[headers]]
+  for = "/data-protection/*.pdf"
+  [headers.values]
+    Content-Type = "application/pdf"
+    Cache-Control = "public, max-age=86400"
+
 # Pretty URLs for blog
 [[redirects]]
   from = "/blog"
