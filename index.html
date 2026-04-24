@@ -193,8 +193,8 @@
             --primary: #1a1a2e;
             --primary-light: #16213e;
             --primary-mid: #0f3460;
-            --accent: #e94560;
-            --accent-hover: #d63050;
+            --accent: #00838f;
+            --accent-hover: #006971;
             --gold: #f4c542;
             --light: #f8f9fa;
             --text: #2d2d2d;
@@ -688,13 +688,13 @@
         .role-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
         .role-icon {
             width: 48px; height: 48px;
-            background: var(--primary);
-            color: var(--gold);
-            border-radius: 10px;
+            background: #f1f4f7;
+            color: var(--accent);
+            border-radius: 8px;
             display: flex; align-items: center; justify-content: center;
-            font-size: 1.3rem;
             flex-shrink: 0;
         }
+        .role-icon svg { width: 24px; height: 24px; }
         .role-card h4 { font-size: 0.95rem; color: var(--primary); margin-bottom: 4px; }
         .role-card .role-title { font-size: 0.8rem; color: var(--accent); font-weight: 600; margin-bottom: 6px; }
         .role-card p { color: var(--subtle); font-size: 0.88rem; line-height: 1.5; }
@@ -1075,13 +1075,12 @@
 <nav class="nav">
     <a href="#" class="nav-brand">The <span>Business School</span></a>
     <div class="nav-links">
-        <a href="#demo-video">Watch Demo</a>
         <a href="/for-teachers/">For Teachers</a>
         <a href="/curriculum-mapping/">Curriculum</a>
         <a href="/resources/">Resources</a>
         <a href="/blog/">Blog</a>
         <a href="https://teacher-demo-tbs.netlify.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-        <a href="#contact" class="nav-cta">Get in Touch</a>
+        <a href="#contact" class="nav-cta">Contact</a>
     </div>
 </nav>
 
@@ -1101,8 +1100,8 @@
     </div>
     <p class="hero-pilot">UK Sixth Form pilot from 22 April 2026. Australian edition launches 5 May 2026. University edition in development.</p>
     <div class="hero-ctas">
-        <a href="https://teacher-demo-tbs.netlify.app/" target="_blank" rel="noopener noreferrer" class="cta-btn">Try the Live Teacher Demo →</a>
-        <a href="#contact" class="cta-btn-outline">Request Pilot Access</a>
+        <a href="https://teacher-demo-tbs.netlify.app/" target="_blank" rel="noopener noreferrer" class="cta-btn">Request a live demo →</a>
+        <a href="#contact" class="cta-btn-outline">Apply for the pilot programme</a>
     </div>
     <p style="margin-top:18px;font-size:0.85rem;opacity:0.6;">Opens the teacher demo in a new tab — explore the simulation at your own pace, no sign-up required.</p>
 </section>
@@ -1167,7 +1166,7 @@
         <p class="section-subtitle">Each student manages their own virtual business — making real decisions with real financial consequences round after round.</p>
         <div class="roles-grid">
             <div class="role-card">
-                <div class="role-icon">🛒</div>
+                <div class="role-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div>
                 <div>
                     <h4>Buy Stock</h4>
                     <div class="role-title">Wholesale Market</div>
@@ -1175,7 +1174,7 @@
                 </div>
             </div>
             <div class="role-card">
-                <div class="role-icon">💷</div>
+                <div class="role-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 7c0-5.333-8-5.333-8 0"/><path d="M10 7v14"/><path d="M6 21h12"/><path d="M6 13h10"/></svg></div>
                 <div>
                     <h4>Set Prices</h4>
                     <div class="role-title">Retail Strategy</div>
@@ -1183,7 +1182,7 @@
                 </div>
             </div>
             <div class="role-card">
-                <div class="role-icon">📊</div>
+                <div class="role-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
                 <div>
                     <h4>Track Sales</h4>
                     <div class="role-title">Live Market Data</div>
@@ -1191,7 +1190,7 @@
                 </div>
             </div>
             <div class="role-card">
-                <div class="role-icon">🧾</div>
+                <div class="role-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 17.5v-11"/></svg></div>
                 <div>
                     <h4>Manage VAT</h4>
                     <div class="role-title">20% UK Rate</div>
@@ -1199,7 +1198,7 @@
                 </div>
             </div>
             <div class="role-card">
-                <div class="role-icon">⚠️</div>
+                <div class="role-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg></div>
                 <div>
                     <h4>React to Crises</h4>
                     <div class="role-title">Market Shocks</div>
@@ -1207,7 +1206,7 @@
                 </div>
             </div>
             <div class="role-card">
-                <div class="role-icon">🏆</div>
+                <div class="role-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg></div>
                 <div>
                     <h4>Climb the Leaderboard</h4>
                     <div class="role-title">100-Point Scoring</div>
@@ -1558,7 +1557,7 @@
             <p style="margin-bottom:0;">The platform is browser-based with zero IT setup. Students join with a PIN. Teachers click one button to start. We are now piloting with schools in the UK and preparing for international expansion.</p>
             <div style="margin-top:28px; padding-top:24px; border-top:1px solid rgba(0,0,0,0.08); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;">
                 <span style="color:var(--subtle); font-size:0.95rem;">Questions, pilot enquiries, or just curious?</span>
-                <a href="#contact" style="background:var(--accent); color:#fff; padding:10px 22px; border-radius:6px; text-decoration:none; font-weight:600; font-size:0.95rem;">Get in touch →</a>
+                <a href="#contact" style="background:var(--accent); color:#fff; padding:10px 22px; border-radius:6px; text-decoration:none; font-weight:600; font-size:0.95rem;">Contact us →</a>
             </div>
         </div>
     </div>
