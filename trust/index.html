@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a1a2e">
+<meta name="robots" content="index, follow">
+
+<title>Trust Centre — Security, Privacy, Compliance — The Business School</title>
+<meta name="description" content="Security, privacy and compliance facts about The Business School: UK GDPR, EU data residency, sub-processors, accessibility statement, Cyber Essentials.">
+<link rel="canonical" href="https://thebusiness.school/trust/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thebusiness.school/trust/">
+<meta property="og:title" content="Trust Centre — The Business School">
+<meta property="og:description" content="Security, privacy and compliance facts for UK schools.">
+<meta property="og:image" content="https://thebusiness.school/assets/og-image.png">
+<meta property="og:locale" content="en_GB">
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+<style>
+  :root {
+    --primary:#1a1a2e; --primary-mid:#0f3460;
+    --accent:#00838f; --accent-hover:#006971; --gold:#f4c542;
+    --text:#2d2d2d; --subtle:#6c757d; --ink:#1b1b1b;
+    --bg-soft:#fafafa; --rule:#e5e7eb;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; color:var(--text); line-height:1.6; background:#fff; }
+
+  .nav { background:var(--primary); padding:14px 24px; position:sticky; top:0; z-index:50; }
+  .nav-inner { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+  .nav a.brand { color:#fff; text-decoration:none; font-weight:800; font-size:1.05rem; }
+  .nav a.brand span { color:var(--gold); }
+  .nav-links { display:flex; gap:24px; align-items:center; }
+  .nav-links a { color:rgba(255,255,255,0.85); text-decoration:none; font-size:0.9rem; }
+  .nav-links a:hover { color:#fff; }
+  .nav-links a.cta { background:var(--accent); color:#fff; padding:8px 18px; border-radius:6px; font-weight:600; }
+  .nav-links a.cta:hover { background:var(--accent-hover); }
+  @media (max-width:720px) { .nav-links a:not(.cta) { display:none; } }
+
+  .hero-lite { background:linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%); color:#fff; padding:72px 24px 56px; }
+  .hero-inner { max-width:960px; margin:0 auto; }
+  .hero-lite .eyebrow { color:var(--gold); font-size:0.78rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; margin-bottom:14px; }
+  .hero-lite h1 { font-size:2.2rem; line-height:1.2; margin-bottom:14px; font-weight:800; letter-spacing:-0.01em; }
+  .hero-lite p { font-size:1.05rem; color:rgba(255,255,255,0.8); max-width:760px; }
+
+  main { max-width:960px; margin:0 auto; padding:56px 24px 80px; }
+
+  h2 { color:var(--primary); font-size:1.5rem; margin:40px 0 14px; letter-spacing:-0.01em; }
+  h2:first-of-type { margin-top:0; }
+  p { margin-bottom:14px; font-size:1rem; }
+
+  .status-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:20px 0 32px; }
+  .status-card {
+    background: var(--bg-soft); border:1px solid var(--rule);
+    border-radius:6px; padding:16px 18px;
+  }
+  .status-card .label { color:var(--subtle); font-size:0.76rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:6px; }
+  .status-card .value { color:var(--primary); font-weight:700; font-size:0.98rem; line-height:1.3; }
+  .status-card .note { color:var(--subtle); font-size:0.82rem; margin-top:4px; }
+
+  .fact-list { margin: 10px 0 24px 0; }
+  .fact-list .fact { padding: 14px 18px; border-left: 3px solid var(--accent); background: var(--bg-soft); margin-bottom: 10px; border-radius: 0 6px 6px 0; }
+  .fact-list .fact strong { color: var(--primary); display:block; margin-bottom: 2px; font-size: 0.95rem; }
+  .fact-list .fact span { color: var(--text); font-size: 0.94rem; }
+
+  .docs-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin:16px 0 32px; }
+  .doc-card { background:#fff; border:1px solid var(--rule); border-radius:6px; padding:18px 20px; display:flex; flex-direction:column; gap:10px; }
+  .doc-card .tag { color:var(--accent); font-size:0.72rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; }
+  .doc-card h3 { color:var(--primary); font-size:1rem; line-height:1.3; margin:0; }
+  .doc-card p { color:var(--text); font-size:0.88rem; margin:0; }
+  .doc-card .btn {
+    display:inline-block; background:var(--accent); color:#fff;
+    padding:8px 16px; border-radius:4px; text-decoration:none;
+    font-weight:600; font-size:0.85rem; text-align:center; margin-top:auto;
+  }
+  .doc-card .btn:hover { background:var(--accent-hover); }
+
+  .subp-table { width:100%; border-collapse:collapse; margin:16px 0 28px; font-size:0.92rem; border:1px solid var(--rule); border-radius:6px; overflow:hidden; }
+  .subp-table th, .subp-table td { padding:10px 14px; text-align:left; vertical-align:top; border-bottom:1px solid var(--rule); }
+  .subp-table thead th { background: var(--primary); color:#fff; font-size:0.82rem; letter-spacing:0.04em; }
+  .subp-table tbody tr:last-child td { border-bottom:none; }
+  .subp-table td strong { color:var(--primary); }
+
+  .contact-box { background:var(--bg-soft); border:1px solid var(--rule); border-radius:6px; padding:22px 24px; margin:32px 0 0; }
+  .contact-box h3 { color:var(--primary); margin-bottom:8px; }
+  .contact-box a { color:var(--accent); font-weight:600; text-decoration:none; }
+  .contact-box a:hover { text-decoration:underline; }
+
+  @media (max-width:620px) {
+    .hero-lite h1 { font-size:1.7rem; }
+    h2 { font-size:1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">The Business<span>.</span>School</a>
+    <div class="nav-links">
+      <a href="/for-teachers/">For Teachers</a>
+      <a href="/curriculum-mapping/">Curriculum</a>
+      <a href="/data-protection/">Documents</a>
+      <a class="cta" href="/#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-lite">
+  <div class="hero-inner">
+    <p class="eyebrow">Trust Centre</p>
+    <h1>Security, privacy and compliance — the short version</h1>
+    <p>Everything a UK school's DPO, IT lead or bursar needs to review The Business School in one page. The full policy PDFs live on the <a href="/data-protection/" style="color:var(--gold);">Documents page</a>.</p>
+  </div>
+</section>
+
+<main>
+
+  <h2>Status at a glance</h2>
+  <div class="status-grid">
+    <div class="status-card">
+      <div class="label">Controller</div>
+      <div class="value">TBS Education Ltd Oy</div>
+      <div class="note">Helsinki, Finland · Business ID 3614159-3</div>
+    </div>
+    <div class="status-card">
+      <div class="label">Data residency</div>
+      <div class="value">EU (Frankfurt)</div>
+      <div class="note">Netlify Edge + Neon Postgres</div>
+    </div>
+    <div class="status-card">
+      <div class="label">UK GDPR</div>
+      <div class="value">Compliant</div>
+      <div class="note">UK Data Protection Act 2018</div>
+    </div>
+    <div class="status-card">
+      <div class="label">Cyber Essentials</div>
+      <div class="value">In progress</div>
+      <div class="note">Application submitted April 2026</div>
+    </div>
+    <div class="status-card">
+      <div class="label">BESA</div>
+      <div class="value">Application submitted</div>
+      <div class="note">Pending review</div>
+    </div>
+    <div class="status-card">
+      <div class="label">Accessibility</div>
+      <div class="value">WCAG 2.2 AA target</div>
+      <div class="note">Statement on this page</div>
+    </div>
+  </div>
+
+  <h2>What students share with the product</h2>
+  <div class="fact-list">
+    <div class="fact"><strong>Nickname only.</strong> <span>Students choose a nickname to join a session. No real name, email, school email or date of birth is collected from the student.</span></div>
+    <div class="fact"><strong>No pupil accounts.</strong> <span>There is no account creation for students. Access is a 6-digit PIN shared by the teacher. Sessions end — no persistent pupil record.</span></div>
+    <div class="fact"><strong>No third-party trackers.</strong> <span>No Google Analytics, Facebook Pixel or advertising trackers on student-facing pages.</span></div>
+    <div class="fact"><strong>No device fingerprinting.</strong> <span>No cookies beyond a session cookie needed to keep the student connected to the active session.</span></div>
+  </div>
+
+  <h2>Sub-processors</h2>
+  <table class="subp-table">
+    <thead>
+      <tr><th>Processor</th><th>Role</th><th>Region</th><th>Data</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Netlify</strong></td>
+        <td>Website + edge functions</td>
+        <td>EU (Frankfurt)</td>
+        <td>HTTP logs (IP, user-agent, URL). No personal student data.</td>
+      </tr>
+      <tr>
+        <td><strong>Neon</strong></td>
+        <td>Postgres database</td>
+        <td>EU (Frankfurt, eu-central-1)</td>
+        <td>Session state, teacher email, student nickname only.</td>
+      </tr>
+      <tr>
+        <td><strong>Anthropic</strong></td>
+        <td>AI-report generation (Claude API)</td>
+        <td>EU endpoint</td>
+        <td>Aggregated game decisions per student (no identifying info) for report text.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Documents</h2>
+  <p>Four PDFs your data-protection officer will review. The one-page summary unblocks most DPO approvals without deeper reading.</p>
+  <div class="docs-grid">
+    <div class="doc-card">
+      <span class="tag">One-page summary</span>
+      <h3>Data Protection Summary (2026)</h3>
+      <p>What we collect, where it's stored, retention, contact. Written for busy DPOs.</p>
+      <a class="btn" href="/data-protection/TBS-Data-Protection-Summary-2026.pdf" download>Download PDF</a>
+    </div>
+    <div class="doc-card">
+      <span class="tag">Privacy Policy</span>
+      <h3>Privacy Policy (2026)</h3>
+      <p>Full privacy policy — data subject rights, lawful basis, retention, transfers.</p>
+      <a class="btn" href="/data-protection/TBS-Privacy-Policy-2026.pdf" download>Download PDF</a>
+    </div>
+    <div class="doc-card">
+      <span class="tag">Article-28 DPA</span>
+      <h3>Data Processing Agreement (2026)</h3>
+      <p>Controller/processor DPA ready for schools to sign. Sub-processors listed.</p>
+      <a class="btn" href="/data-protection/TBS-Data-Processing-Agreement-DPA-2026.pdf" download>Download PDF</a>
+    </div>
+    <div class="doc-card">
+      <span class="tag">Internal</span>
+      <h3>Internal Data Policies (2026)</h3>
+      <p>Access controls, incident response, staff training, retention.</p>
+      <a class="btn" href="/data-protection/TBS-Internal-Data-Policies-2026.pdf" download>Download PDF</a>
+    </div>
+  </div>
+
+  <h2>Accessibility statement</h2>
+  <p>We aim for WCAG 2.2 AA conformance across both the marketing site and the live classroom simulation. Current known gaps (being addressed in Wave 3, due late April 2026):</p>
+  <ul style="margin:6px 0 16px 22px;">
+    <li>SEND-friendly options in the student view: quiz timer 15 / 30 / 45 / 60 seconds (currently fixed at 15s).</li>
+    <li>Dyslexia-friendly font toggle in the student view.</li>
+    <li>ARIA labels on emoji-only buttons in the teacher dashboard.</li>
+    <li>High-contrast colour mode.</li>
+  </ul>
+  <p>If a specific adjustment is needed for a pupil or pilot, email <a href="mailto:sakari.laajoki@gmail.com" style="color:var(--accent); font-weight:600;">sakari.laajoki@gmail.com</a> and we will prioritise it.</p>
+
+  <h2>Security</h2>
+  <p>HTTPS is enforced site-wide. Cyber Essentials certification is in progress (application submitted April 2026). For a security issue, email <a href="mailto:security@thebusiness.school" style="color:var(--accent); font-weight:600;">security@thebusiness.school</a> or see <a href="/.well-known/security.txt" style="color:var(--accent);">security.txt</a>.</p>
+
+  <h2>Safeguarding and AI safety</h2>
+  <p>AI-generated feedback reports run through Anthropic's Claude API with the teacher's session data only. No chat or free-text input from students reaches the model. No personal identifiers are sent. Output is shown only to the teacher and the individual student. This aligns with KCSIE 2024/25 §143 and the DfE Generative AI Product Safety Expectations.</p>
+
+  <div class="contact-box">
+    <h3>Data-protection enquiries</h3>
+    <p><strong>Controller:</strong> TBS Education Ltd Oy · Business ID 3614159-3 · Helsinki, Finland</p>
+    <p><strong>Email:</strong> <a href="mailto:sakari.laajoki@gmail.com?subject=Data%20protection%20enquiry">sakari.laajoki@gmail.com</a></p>
+    <p style="margin-top:10px; font-size:0.9rem; color:var(--subtle);">We aim to respond within 72 hours. For subject access requests, data-deletion requests, or DPA-signing requests, please reference your school name in the subject line.</p>
+  </div>
+
+</main>
+
+</body>
+</html>

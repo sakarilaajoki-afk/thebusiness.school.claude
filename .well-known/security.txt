@@ -1,0 +1,6 @@
+Contact: mailto:security@thebusiness.school
+Contact: mailto:sakari.laajoki@gmail.com
+Expires: 2027-04-24T00:00:00.000Z
+Preferred-Languages: en, fi
+Canonical: https://thebusiness.school/.well-known/security.txt
+Policy: https://thebusiness.school/trust/

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A5 Flyer — The Business School</title>
+<style>
+  @page { size: A5; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 148mm; height: 210mm;
+    background: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #1a1a2e;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page {
+    width: 148mm; height: 210mm;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* FRONT ================================================= */
+  .front {
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+    color: #fff;
+    padding: 14mm 13mm;
+    display: flex;
+    flex-direction: column;
+  }
+  .front::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2mm;
+    background: linear-gradient(90deg, #f4c542 0%, #00838f 100%);
+  }
+  .front .eyebrow {
+    font-size: 2.4mm;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #f4c542;
+    margin-bottom: 5mm;
+  }
+  .front .brand {
+    font-size: 13mm;
+    font-weight: 800;
+    letter-spacing: -0.4px;
+    line-height: 1;
+    margin-bottom: 5mm;
+  }
+  .front .brand .dot { color: #f4c542; }
+  .front .tagline {
+    font-size: 4mm;
+    line-height: 1.35;
+    color: rgba(255,255,255,0.92);
+    margin-bottom: 10mm;
+    max-width: 108mm;
+    font-weight: 500;
+  }
+  .front .value-props {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5mm 8mm;
+    margin-bottom: 12mm;
+  }
+  .front .vp {
+    font-size: 2.6mm;
+    color: rgba(255,255,255,0.82);
+    line-height: 1.45;
+    border-left: 1px solid rgba(244,197,66,0.6);
+    padding-left: 3mm;
+  }
+  .front .vp strong {
+    display: block;
+    color: #f4c542;
+    font-weight: 700;
+    font-size: 2.4mm;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1mm;
+  }
+
+  .front .footer-block {
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 6mm;
+    padding-top: 6mm;
+    border-top: 0.3mm solid rgba(255,255,255,0.16);
+  }
+  .front .qr {
+    width: 38mm; height: 38mm;
+    background: #fff;
+    border-radius: 2mm;
+    padding: 2mm;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .front .qr img { width: 100%; height: 100%; display: block; }
+  .front .qr-cap {
+    color: #f4c542;
+    font-size: 2.2mm;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.4;
+  }
+  .front .qr-cap .url {
+    display: block;
+    color: #fff;
+    font-size: 3.2mm;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-top: 1mm;
+  }
+  .front .show-tag {
+    position: absolute;
+    top: 14mm;
+    right: 12mm;
+    background: #00838f;
+    color: #fff;
+    padding: 2mm 4mm;
+    font-size: 2.2mm;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border-radius: 1mm;
+  }
+
+  /* BACK =================================================== */
+  .back {
+    background: #fff;
+    padding: 14mm 13mm;
+    color: #1b1b1b;
+    display: flex;
+    flex-direction: column;
+  }
+  .back::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2mm;
+    background: linear-gradient(90deg, #00838f 0%, #1a1a2e 50%, #f4c542 100%);
+  }
+  .back h2 {
+    font-size: 6.5mm;
+    color: #1a1a2e;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    margin-bottom: 2.5mm;
+    line-height: 1.15;
+  }
+  .back .lede {
+    font-size: 3mm;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 8mm;
+  }
+  .back .section-title {
+    font-size: 2.4mm;
+    color: #00838f;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin: 5mm 0 3mm;
+  }
+  .back ul {
+    margin: 0 0 6mm 4mm;
+    padding: 0;
+    list-style: none;
+  }
+  .back ul li {
+    font-size: 2.8mm;
+    line-height: 1.5;
+    padding-left: 4mm;
+    position: relative;
+    margin-bottom: 1.5mm;
+  }
+  .back ul li::before {
+    content: '→';
+    color: #00838f;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+  }
+
+  .back .pricing-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3mm;
+    margin: 4mm 0 6mm;
+  }
+  .back .pricing-card {
+    background: #fafbfc;
+    border: 0.3mm solid #e5e7eb;
+    border-radius: 1.5mm;
+    padding: 3mm 3.5mm;
+  }
+  .back .pricing-card .tier {
+    font-size: 2mm;
+    color: #6c757d;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 1mm;
+  }
+  .back .pricing-card .price {
+    font-size: 4.5mm;
+    font-weight: 800;
+    color: #1a1a2e;
+    letter-spacing: -0.3px;
+    line-height: 1;
+  }
+  .back .pricing-card .detail {
+    font-size: 2.3mm;
+    color: #444;
+    line-height: 1.35;
+    margin-top: 1.5mm;
+  }
+
+  .back .contact-strip {
+    margin-top: auto;
+    padding-top: 5mm;
+    border-top: 0.3mm solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 6mm;
+  }
+  .back .contact-left {
+    font-size: 2.5mm;
+    color: #444;
+    line-height: 1.5;
+  }
+  .back .contact-left strong { color: #1a1a2e; }
+  .back .contact-right {
+    text-align: right;
+    font-size: 2.2mm;
+    color: #6c757d;
+    line-height: 1.4;
+  }
+  .back .contact-right strong { color: #1a1a2e; display: block; font-size: 2.6mm; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- FRONT ================================================= -->
+<div class="page front">
+  <div class="show-tag">S&amp;A Show · 7 May 2026</div>
+  <p class="eyebrow">A-Level · BTEC · IGCSE Business Simulation</p>
+  <div class="brand">The Business<br>School<span class="dot">.</span></div>
+  <p class="tagline">A live classroom simulation for UK Sixth Form Business. Mapped to Edexcel 9BS0, AQA 7132 and OCR H431. 60 minutes, no downloads, no pupil accounts.</p>
+
+  <div class="value-props">
+    <div class="vp"><strong>Curriculum</strong>Mapped to every major UK exam board. Spec-tagged certificates.</div>
+    <div class="vp"><strong>Ofsted-ready</strong>Generates written evidence for post-16 provision — AO2, AO3, AO4.</div>
+    <div class="vp"><strong>Data safe</strong>EU-hosted. Article-28 DPA ready to sign. Cyber Essentials in progress.</div>
+    <div class="vp"><strong>Budget fit</strong>Department licence £249 / year. Under procurement threshold.</div>
+  </div>
+
+  <div class="footer-block">
+    <div>
+      <div class="qr">
+        <img src="../assets/qr-thebusiness-school.png" alt="QR to thebusiness.school">
+      </div>
+    </div>
+    <div class="qr-cap">
+      Scan or visit
+      <span class="url">thebusiness.school</span>
+    </div>
+  </div>
+</div>
+
+<!-- BACK =================================================== -->
+<div class="page back">
+  <h2>Why Heads and SLT bring us in</h2>
+  <p class="lede">Three pressures UK Heads of Business face in 2026: the November 2025 Ofsted framework (post-16 now a standalone graded area), the AQA 7137/7138 spec refresh (first teaching Sep 2026), and tighter discretionary budgets. The Business School answers all three in a single 60-minute lesson.</p>
+
+  <div class="section-title">What students do</div>
+  <ul>
+    <li>Each student runs their own UK firm — buys stock, sets prices, manages a 20% VAT account</li>
+    <li>Six crisis events: Supply Crisis, Tax Hike, Recession, Viral Product, Demand Boom, New Competitor</li>
+    <li>Live auction bidding + aggressive-tactic dilemmas tied to Theme 3.4 evaluation</li>
+    <li>Auto-graded quiz, A* to U certificate, personalised AI performance report</li>
+  </ul>
+
+  <div class="section-title">What teachers get</div>
+  <ul>
+    <li>No pupil accounts · PIN-based joining · one-click session start</li>
+    <li>Specification-tagged certificates and teacher CSV export for moderation</li>
+    <li>Projector view with live leaderboard, market pulse and ESG dilemma overlay</li>
+    <li>Full UK GDPR compliance pack and signed DPA</li>
+  </ul>
+
+  <div class="section-title">Pricing</div>
+  <div class="pricing-row">
+    <div class="pricing-card">
+      <div class="tier">Pilot · May–Jul</div>
+      <div class="price">Free</div>
+      <div class="detail">Department licence free through July 2026. Converts pro rata from September.</div>
+    </div>
+    <div class="pricing-card">
+      <div class="tier">Department / year</div>
+      <div class="price">£249</div>
+      <div class="detail">Up to 60 students. Below the £500 procurement threshold — HoD-signable.</div>
+    </div>
+  </div>
+
+  <div class="contact-strip">
+    <div class="contact-left">
+      <strong>Come see us</strong><br>
+      Schools &amp; Academies Show<br>
+      ExCeL London · 7 May 2026
+    </div>
+    <div class="contact-right">
+      <strong>Sakari Laajoki</strong>
+      sakari.laajoki@gmail.com<br>
+      TBS Education Ltd Oy · Helsinki<br>
+      Engineering partner: Appifest · Sydney
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

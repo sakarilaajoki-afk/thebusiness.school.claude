@@ -43,10 +43,28 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://thebusiness.school/for-heads/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://thebusiness.school/curriculum-mapping/</loc>
     <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://thebusiness.school/pricing/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://thebusiness.school/trust/</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://thebusiness.school/data-protection/</loc>

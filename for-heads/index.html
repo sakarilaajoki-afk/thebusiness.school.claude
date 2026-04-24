@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a1a2e">
+<meta name="robots" content="index, follow">
+
+<title>For Heads of Department &amp; Senior Leadership — The Business School</title>
+<meta name="description" content="How The Business School helps UK secondary schools and sixth-form colleges lift Business Studies results, strengthen Ofsted post-16 provision, and make departmental budgets go further.">
+<link rel="canonical" href="https://thebusiness.school/for-heads/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thebusiness.school/for-heads/">
+<meta property="og:title" content="For Heads of Department &amp; Senior Leadership — The Business School">
+<meta property="og:description" content="Results, Ofsted evidence, curriculum coverage and budget fit — the tool for UK Sixth Form Business provision.">
+<meta property="og:image" content="https://thebusiness.school/assets/og-image.png">
+<meta property="og:locale" content="en_GB">
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+<style>
+  :root {
+    --primary:#1a1a2e; --primary-mid:#0f3460;
+    --accent:#00838f; --accent-hover:#006971; --gold:#f4c542;
+    --text:#2d2d2d; --subtle:#6c757d; --ink:#1b1b1b;
+    --bg-soft:#fafafa; --rule:#e5e7eb;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; color:var(--text); line-height:1.6; background:#fff; }
+
+  .nav { background:var(--primary); padding:14px 24px; position:sticky; top:0; z-index:50; }
+  .nav-inner { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+  .nav a.brand { color:#fff; text-decoration:none; font-weight:800; font-size:1.05rem; }
+  .nav a.brand span { color:var(--gold); }
+  .nav-links { display:flex; gap:24px; align-items:center; }
+  .nav-links a { color:rgba(255,255,255,0.85); text-decoration:none; font-size:0.9rem; }
+  .nav-links a:hover { color:#fff; }
+  .nav-links a.cta { background:var(--accent); color:#fff; padding:8px 18px; border-radius:6px; font-weight:600; }
+  .nav-links a.cta:hover { background:var(--accent-hover); }
+  @media (max-width:720px) { .nav-links a:not(.cta) { display:none; } }
+
+  .hero-lite { background:linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%); color:#fff; padding:72px 24px 56px; }
+  .hero-inner { max-width:960px; margin:0 auto; }
+  .hero-lite .eyebrow { color:var(--gold); font-size:0.78rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; margin-bottom:14px; }
+  .hero-lite h1 { font-size:2.2rem; line-height:1.2; margin-bottom:16px; font-weight:800; letter-spacing:-0.01em; max-width: 780px; }
+  .hero-lite p { font-size:1.05rem; color:rgba(255,255,255,0.82); max-width:720px; }
+  .hero-lite .actions { margin-top:28px; display:flex; gap:12px; flex-wrap:wrap; }
+  .hero-lite .actions a {
+    background:var(--accent); color:#fff; padding:11px 22px; border-radius:6px;
+    text-decoration:none; font-weight:600; font-size:0.95rem;
+  }
+  .hero-lite .actions a.ghost {
+    background:transparent; border:1px solid rgba(255,255,255,0.28); color:#fff;
+  }
+  .hero-lite .actions a:hover { background:var(--accent-hover); }
+  .hero-lite .actions a.ghost:hover { background:rgba(255,255,255,0.06); }
+
+  main { max-width:960px; margin:0 auto; padding:52px 24px 80px; }
+
+  h2 { color:var(--primary); font-size:1.55rem; margin:44px 0 12px; letter-spacing:-0.01em; }
+  h2:first-of-type { margin-top:0; }
+  p { margin-bottom:14px; font-size:1rem; }
+
+  .four-up { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:16px; margin:16px 0 32px; }
+  .four-up .cell { background:var(--bg-soft); border:1px solid var(--rule); border-radius:6px; padding:18px 20px; }
+  .four-up .cell .num { color:var(--accent); font-size:1.6rem; font-weight:800; letter-spacing:-0.02em; line-height:1; display:block; margin-bottom:8px; }
+  .four-up .cell h3 { color:var(--primary); font-size:0.98rem; margin-bottom:6px; }
+  .four-up .cell p { margin:0; font-size:0.9rem; color:var(--text); line-height:1.5; }
+
+  .feature-table { width:100%; border-collapse:collapse; margin:16px 0 28px; font-size:0.95rem; border:1px solid var(--rule); border-radius:6px; overflow:hidden; }
+  .feature-table th, .feature-table td { padding:11px 14px; text-align:left; vertical-align:top; border-bottom:1px solid var(--rule); }
+  .feature-table thead th { background: var(--primary); color:#fff; font-size:0.82rem; letter-spacing:0.04em; }
+  .feature-table tbody tr:last-child td { border-bottom:none; }
+  .feature-table td.lead { color:var(--primary); font-weight:700; }
+
+  .cta-strip {
+    background: var(--primary); color:#fff; border-radius:6px;
+    padding: 28px 32px; margin:36px 0 0;
+    display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;
+  }
+  .cta-strip h3 { color: var(--gold); font-size: 0.84rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom:6px; }
+  .cta-strip p { color: rgba(255,255,255,0.85); font-size: 0.98rem; margin:0; }
+  .cta-strip a {
+    background:var(--accent); color:#fff; padding:11px 22px; border-radius:6px;
+    text-decoration:none; font-weight:600; font-size:0.95rem;
+  }
+  .cta-strip a:hover { background:var(--accent-hover); }
+
+  @media (max-width:620px) {
+    .hero-lite h1 { font-size:1.7rem; }
+    h2 { font-size:1.3rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">The Business<span>.</span>School</a>
+    <div class="nav-links">
+      <a href="/for-teachers/">For Teachers</a>
+      <a href="/curriculum-mapping/">Curriculum</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/trust/">Trust</a>
+      <a class="cta" href="/#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-lite">
+  <div class="hero-inner">
+    <p class="eyebrow">For Heads of Department &amp; Senior Leadership</p>
+    <h1>Built to lift A-Level Business results, strengthen post-16 Ofsted evidence and fit a sixth-form department budget</h1>
+    <p>The Business School is a browser-based classroom simulation for UK A-Level, BTEC and IGCSE Business. It runs in a single lesson, covers every major UK specification, and produces the written evidence Heads of Department and Senior Leadership are asked for by Ofsted, SLT and examiners.</p>
+    <div class="actions">
+      <a href="/pricing/">See pricing</a>
+      <a class="ghost" href="/curriculum-mapping/">View curriculum mapping</a>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <h2>Why this matters now</h2>
+  <p>Three pressures on UK Heads of Business in 2026:</p>
+
+  <div class="four-up">
+    <div class="cell">
+      <span class="num">Nov 2025</span>
+      <h3>New Ofsted framework</h3>
+      <p>Post-16 provision is now a standalone graded area. Heads need tools that generate evidence for curriculum innovation and personal development.</p>
+    </div>
+    <div class="cell">
+      <span class="num">Sep 2026</span>
+      <h3>AQA spec refresh</h3>
+      <p>AQA A-Level Business 7137/7138 begins first teaching in September. Schemes of work are being rewritten this summer.</p>
+    </div>
+    <div class="cell">
+      <span class="num">2025/26</span>
+      <h3>Tight budgets</h3>
+      <p>95% of school leaders report squeezed discretionary budgets. Departmental spend over £500 triggers multi-quote procurement.</p>
+    </div>
+    <div class="cell">
+      <span class="num">Year on year</span>
+      <h3>Options evenings</h3>
+      <p>A-Level Business competes with Economics and Psychology for Sixth Form intake. Differentiation at taster lessons drives recruitment.</p>
+    </div>
+  </div>
+
+  <h2>How The Business School answers each</h2>
+  <table class="feature-table">
+    <thead>
+      <tr>
+        <th style="width:26%;">Pressure</th>
+        <th style="width:34%;">What the product provides</th>
+        <th>Evidence output</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="lead">Ofsted post-16 evidence</td>
+        <td>A 60-minute lesson that exercises all four Assessment Objectives. Teacher CSV export of round-by-round decisions and quiz responses.</td>
+        <td>Per-student decision log + AI-generated performance summary — quotable in self-evaluation forms.</td>
+      </tr>
+      <tr>
+        <td class="lead">Curriculum coverage</td>
+        <td>Specification-reference dropdown at session start (AQA 7132, Edexcel 9BS0, OCR H431, BTEC L3, IGCSE 0450). Mapping to specific sub-clauses published.</td>
+        <td>Session-level spec tag, printed on the student certificate and CSV export.</td>
+      </tr>
+      <tr>
+        <td class="lead">AQA 7137/7138 readiness</td>
+        <td>Mapping refreshed against the new specification as awarding-body guidance lands. Department licence keeps you aligned without resource churn.</td>
+        <td>Updated spec-mapping PDF, republished every term.</td>
+      </tr>
+      <tr>
+        <td class="lead">Budget fit</td>
+        <td>Department licence £249 / year (up to 60 students). Below the £500 procurement threshold — HoD-signable without bursar escalation.</td>
+        <td>Single line-item invoice. No per-student fees.</td>
+      </tr>
+      <tr>
+        <td class="lead">Recruitment events</td>
+        <td>Works as a Year 11 taster in 45 minutes. Competitive, live, mobile-only — visibly different from Economics and Psychology.</td>
+        <td>Final-round leaderboard plus student certificate to take home.</td>
+      </tr>
+      <tr>
+        <td class="lead">Data protection</td>
+        <td>No pupil accounts. No personal data from students. EU data residency. Article-28 DPA ready to sign. Cyber Essentials application submitted.</td>
+        <td>One-page DPIA summary your DPO can sign off in a sitting. Full document pack on the <a href="/trust/" style="color:var(--accent); font-weight:600;">Trust Centre</a>.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>What the product is not</h2>
+  <p>A few honest clarifications to save you a qualifying email:</p>
+  <ul style="margin:6px 0 18px 22px;">
+    <li>It is not a homework platform. Students play together in the same classroom, not independently from home.</li>
+    <li>It is not an individual-study tool. Every decision is made in a live session, not in solo practice (solo mode is available for revision only).</li>
+    <li>It is not a Kahoot-style quiz. The quiz is one component; the main activity is decision-making under time pressure.</li>
+    <li>It does not replace teaching. It complements it with a lived experience of pricing, finance and competition.</li>
+  </ul>
+
+  <h2>Adoption path</h2>
+  <p>We do not ask for a commitment before you see how it lands in your room.</p>
+  <ol style="margin:6px 0 24px 22px;">
+    <li><strong>Book a 20-minute walkthrough.</strong> We open a live session and you watch from the teacher's side. Free.</li>
+    <li><strong>Free pilot May–July 2026.</strong> One or more of your teachers runs the tool in a real class. You see engagement and examiner-style output firsthand.</li>
+    <li><strong>Department licence from September.</strong> £249 / year, invoiced pro rata for partial terms. Signed by HoD, under the procurement threshold.</li>
+    <li><strong>Renew or step up.</strong> School-wide licence (£995 / year) or MAT rate on request. Cancel with 30 days' notice.</li>
+  </ol>
+
+  <div class="cta-strip">
+    <div>
+      <h3>Schools &amp; Academies Show</h3>
+      <p>Meet us at ExCeL London on 7 May 2026.</p>
+    </div>
+    <a href="/#contact">Book a 20-minute walkthrough</a>
+  </div>
+
+</main>
+
+</body>
+</html>
