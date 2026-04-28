@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<title>Data Protection Summary — The Business School</title>
+<style>
+  @page { size: A4; margin: 18mm 18mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Georgia, 'Times New Roman', serif; color: #1a1a1a; line-height: 1.5; font-size: 10pt; }
+
+  .title-block { border-bottom: 0.5mm solid #1a1a1a; padding-bottom: 4mm; margin-bottom: 5mm; }
+  .title-block .eyebrow { font-family: Helvetica, Arial, sans-serif; font-size: 8pt; letter-spacing: 0.18em; text-transform: uppercase; color: #555; margin-bottom: 2mm; font-weight: 600; }
+  .title-block h1 { font-size: 20pt; font-weight: 700; line-height: 1.05; letter-spacing: -0.5px; }
+  .title-block .subtitle { font-family: Helvetica, Arial, sans-serif; font-size: 9pt; color: #555; margin-top: 2.5mm; line-height: 1.5; }
+
+  h2 { font-family: Helvetica, Arial, sans-serif; font-size: 10pt; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin: 4mm 0 1.5mm; page-break-after: avoid; }
+  p { margin-bottom: 2mm; font-size: 9.5pt; line-height: 1.5; }
+  strong { font-weight: 700; }
+
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin: 1.5mm 0 3mm; }
+  .grid-block { border-left: 0.6mm solid #1a1a1a; padding: 0 0 0 4mm; }
+  .grid-block h3 { font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 700; color: #555; margin-bottom: 1.5mm; }
+  .grid-block p { font-size: 9.5pt; }
+
+  table { width: 100%; border-collapse: collapse; margin: 1.5mm 0 3mm; font-size: 9pt; }
+  table th { background: #1a1a1a; color: #fff; text-align: left; padding: 1.5mm 2.5mm; font-family: Helvetica, Arial, sans-serif; font-size: 8pt; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; }
+  table td { padding: 1.5mm 2.5mm; border-bottom: 0.2mm solid #ccc; vertical-align: top; }
+
+  .ref-box { border: 0.5mm solid #1a1a1a; padding: 3mm 4mm; margin: 3mm 0; background: #f7f8fa; }
+  .ref-box .label { font-family: Helvetica, Arial, sans-serif; font-size: 7.5pt; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; color: #555; margin-bottom: 1mm; }
+  .ref-box .val { font-size: 11pt; font-weight: 700; }
+
+  .footer-block { margin-top: 6mm; padding-top: 2.5mm; border-top: 0.3mm solid #ccc; font-family: Helvetica, Arial, sans-serif; font-size: 8pt; color: #666; text-align: center; }
+  .footer-block strong { color: #1a1a1a; }
+</style>
+</head>
+<body>
+
+<div class="title-block">
+  <div class="eyebrow">For Data Protection Officers · One-page summary</div>
+  <h1>Data Protection Summary</h1>
+  <div class="subtitle">
+    The Business School · TBS Education Ltd Oy · Effective 28 April 2026
+  </div>
+</div>
+
+<div class="grid">
+  <div class="grid-block">
+    <h3>Controller / Processor</h3>
+    <p>School = <strong>Data Controller</strong>. TBS Education Ltd Oy = <strong>Data Processor</strong>.</p>
+  </div>
+  <div class="grid-block">
+    <h3>Lawful basis</h3>
+    <p>Legitimate interest of the school (curriculum-aligned education) under UK GDPR Art. 6(1)(f).</p>
+  </div>
+</div>
+
+<div class="ref-box">
+  <div class="label">UK Data Protection Registration</div>
+  <div class="val">ICO Registration: ZC133810</div>
+  <p style="margin-top: 1mm; font-size: 9pt;">Verifiable on the ICO public register at ico.org.uk.</p>
+</div>
+
+<h2>What we collect</h2>
+<table>
+  <thead><tr><th style="width:24%">Data type</th><th>Detail</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Teacher</strong></td><td>Name, email, school name, session history</td></tr>
+    <tr><td><strong>Student</strong></td><td>Self-selected nickname only (no real name, no email, no DOB, no photos). PIN-code join — no account, no password.</td></tr>
+    <tr><td><strong>Gameplay</strong></td><td>In-session decisions (purchases, pricing, VAT filing, hiring) and team scores</td></tr>
+    <tr><td><strong>Technical</strong></td><td>IP address (server logs only, 30-day auto-purge); browser/device headers; session timestamps</td></tr>
+  </tbody>
+</table>
+
+<h2>Where it is stored</h2>
+<table>
+  <thead><tr><th style="width:24%">Sub-processor</th><th style="width:24%">Purpose</th><th style="width:22%">Location</th><th>Safeguard</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Netlify</strong></td><td>Frontend hosting + edge CDN</td><td>Global edge; primary EU edge</td><td>SCC (UK Addendum)</td></tr>
+    <tr><td><strong>Neon</strong></td><td>Postgres database</td><td>AWS US East 1 — EU migration planned May 2026</td><td>SCC (UK Addendum); AES-256 at rest; TLS 1.2+ in transit</td></tr>
+    <tr><td><strong>Anthropic</strong></td><td>AI inference for end-of-session reports (Claude API)</td><td>EU and US regions</td><td>SCC (UK Addendum); no student personal identifiers sent to model</td></tr>
+  </tbody>
+</table>
+
+<h2>Retention</h2>
+<p><strong>Free tier sessions:</strong> ephemeral — auto-deleted within 24 hours of session end. <strong>Paid tier saved sessions:</strong> teacher-controlled deletion. <strong>Teacher accounts:</strong> retained during subscription, deleted within 30 days of termination. <strong>Server logs (IP):</strong> 30 days, auto-purged.</p>
+
+<h2>Sharing</h2>
+<p>No sale, no rental, no advertising profiling. The three sub-processors above process data solely to deliver their infrastructure or inference services. No marketing tracking cookies. PIN-code join eliminates credential risks.</p>
+
+<h2>Rights and complaints</h2>
+<p>Under UK GDPR / EU GDPR: rights of access, rectification, erasure, restriction, portability, and objection. Student data requests are routed via the school as Data Controller. Complaints to the UK ICO at <strong>ico.org.uk/concerns</strong> or to the Finnish Data Protection Ombudsman at <strong>tietosuoja.fi</strong>.</p>
+
+<h2>Contact</h2>
+<p><strong>Sakari Laajoki, TBS Education Ltd Oy</strong> · sakari.laajoki@gmail.com · Response within 72 hours. Full Privacy Policy and Data Processing Agreement available at <strong>thebusiness.school/data-protection</strong>.</p>
+
+<div class="footer-block">
+  <strong>TBS Education Ltd Oy</strong> · Business ID 3614159-3 · ICO Registration ZC133810 · www.thebusiness.school · Effective 28 April 2026
+</div>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<title>Internal Data Policies — The Business School</title>
+<style>
+  @page { size: A4; margin: 22mm 20mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { font-family: Georgia, 'Times New Roman', serif; color: #1a1a1a; line-height: 1.55; font-size: 10pt; }
+
+  .title-block { border-bottom: 0.5mm solid #1a1a1a; padding-bottom: 5mm; margin-bottom: 6mm; }
+  .title-block .eyebrow { font-family: Helvetica, Arial, sans-serif; font-size: 8pt; letter-spacing: 0.18em; text-transform: uppercase; color: #555; margin-bottom: 2mm; font-weight: 600; }
+  .title-block h1 { font-size: 22pt; font-weight: 700; line-height: 1.05; letter-spacing: -0.5px; }
+  .title-block .subtitle { font-family: Helvetica, Arial, sans-serif; font-size: 9.5pt; color: #555; margin-top: 3mm; line-height: 1.5; }
+
+  h2 { font-family: Helvetica, Arial, sans-serif; font-size: 11pt; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; margin: 6mm 0 2.5mm; page-break-after: avoid; }
+  h3 { font-family: Helvetica, Arial, sans-serif; font-size: 10pt; font-weight: 700; margin: 4mm 0 1.5mm; color: #2a2a2a; }
+  p { margin-bottom: 2.5mm; }
+  ul, ol { margin: 1.5mm 0 3mm 6mm; }
+  li { margin-bottom: 1mm; }
+  strong { font-weight: 700; }
+
+  .ref-box { border: 0.5mm solid #1a1a1a; padding: 4mm 5mm; margin: 4mm 0; background: #f7f8fa; font-size: 9.5pt; }
+  .ref-box .label { font-family: Helvetica, Arial, sans-serif; font-size: 7.8pt; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; color: #555; margin-bottom: 1.5mm; }
+
+  table { width: 100%; border-collapse: collapse; margin: 2mm 0 4mm; font-size: 9.5pt; }
+  table th { background: #1a1a1a; color: #fff; text-align: left; padding: 1.8mm 2.5mm; font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 700; }
+  table td { padding: 1.8mm 2.5mm; border-bottom: 0.2mm solid #ccc; vertical-align: top; }
+
+  .footer-block { margin-top: 8mm; padding-top: 3mm; border-top: 0.3mm solid #ccc; font-family: Helvetica, Arial, sans-serif; font-size: 8.5pt; color: #666; text-align: center; }
+  .footer-block strong { color: #1a1a1a; }
+
+  .keep-together { page-break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<div class="title-block">
+  <div class="eyebrow">Internal · For TBS Education Ltd Oy staff and contractors</div>
+  <h1>Internal Data Policies</h1>
+  <div class="subtitle">
+    Operational policies for handling personal data · Effective 28 April 2026
+  </div>
+</div>
+
+<div class="ref-box">
+  <div class="label">Organisation registration</div>
+  <p style="margin: 0;"><strong>TBS Education Ltd Oy</strong> · Business ID 3614159-3 · Lahti, Finland<br>
+  <strong>UK ICO Registration:</strong> ZC133810</p>
+</div>
+
+<h2>1. Scope</h2>
+<p>This document describes the internal operational policies of TBS Education Ltd Oy with respect to personal data. It applies to all staff, founders, and engaged contractors. It supplements (and is consistent with) the public-facing Privacy Policy and the Data Processing Agreement signed with each customer school.</p>
+
+<h2>2. Roles and Responsibilities</h2>
+<table>
+  <thead><tr><th style="width:30%">Role</th><th>Responsibility</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Data Protection Lead</strong></td><td>Sakari Laajoki (Founder &amp; Director) — first point of contact for all data-protection enquiries, breach response, and regulator correspondence.</td></tr>
+    <tr><td><strong>Engineering Partner</strong></td><td>Appifest, Sydney, Australia (Muhammad Feroz) — operates the production codebase under written confidentiality terms; access to production database is logged and audited.</td></tr>
+    <tr><td><strong>Sub-processors</strong></td><td>Netlify (frontend), Neon (database), Anthropic (AI inference). Each operates under their own DPA and Standard Contractual Clauses.</td></tr>
+  </tbody>
+</table>
+
+<div class="keep-together">
+<h2>3. Access Control</h2>
+<ul>
+  <li>Production database access is limited to the Data Protection Lead and the contracted Engineering Partner</li>
+  <li>Each access uses a uniquely identifiable credential; shared accounts are not permitted</li>
+  <li>Multi-factor authentication is enabled on the Neon, Netlify and Anthropic admin consoles</li>
+  <li>Access is reviewed quarterly; any contractor whose engagement ends has access revoked within 24 hours</li>
+</ul>
+</div>
+
+<h2>4. Data Minimisation</h2>
+<ul>
+  <li>The simulation collects only what is operationally necessary (see Privacy Policy section 3)</li>
+  <li>No real student names, emails, dates of birth, addresses or photos are collected</li>
+  <li>Students join via PIN code — no account or password is required or generated</li>
+  <li>Free-tier session data is auto-deleted within 24 hours of session end</li>
+</ul>
+
+<h2>5. Encryption</h2>
+<ul>
+  <li>All connections use HTTPS / TLS 1.2 or higher</li>
+  <li>The production database is encrypted at rest using AES-256</li>
+  <li>Backups are encrypted and held by the database provider; encryption keys are managed by the provider</li>
+</ul>
+
+<h2>6. Logging and Monitoring</h2>
+<ul>
+  <li>Server logs (including IP addresses) are retained for 30 days, then auto-purged</li>
+  <li>Database admin actions are logged by Neon</li>
+  <li>Application errors are surfaced to the Engineering Partner for investigation</li>
+</ul>
+
+<div class="keep-together">
+<h2>7. Breach Response</h2>
+<p>If a personal data breach is suspected or confirmed, the following process applies:</p>
+<ol>
+  <li><strong>Hour 0–2:</strong> Containment — the Data Protection Lead and Engineering Partner isolate affected systems; access tokens are rotated</li>
+  <li><strong>Hour 2–24:</strong> Assessment — scope, data categories, number of data subjects, and risk to rights and freedoms are documented</li>
+  <li><strong>Hour 24–72:</strong> Notification — affected schools (Controllers) are notified within 72 hours of awareness, with all information required under UK GDPR Art. 33. The UK ICO and the Finnish Data Protection Ombudsman are notified directly where required</li>
+  <li><strong>Day 7:</strong> Post-incident review — root cause, remediation, and policy updates are documented</li>
+</ol>
+<p>The Data Protection Lead is Sakari Laajoki, sakari.laajoki@gmail.com.</p>
+</div>
+
+<h2>8. Sub-processor Engagement</h2>
+<ul>
+  <li>New sub-processors are engaged only under a written DPA that mirrors the obligations in our customer DPA</li>
+  <li>Each sub-processor's location, purpose and transfer safeguard is recorded in the public-facing Privacy Policy and DPA</li>
+  <li>Customer schools are notified at least 30 days in advance of any new or replacement sub-processor</li>
+</ul>
+
+<h2>9. Training and Awareness</h2>
+<ul>
+  <li>The Data Protection Lead reviews UK GDPR, UK Data Protection Act 2018, and KCSIE 2024/25 §143 obligations annually</li>
+  <li>Engineering Partner receives a written briefing on these obligations at the start of the engagement and on any material change</li>
+  <li>Cyber Essentials Verified Self-Assessment is in progress with IASME</li>
+</ul>
+
+<h2>10. Data Subject Rights — Internal Workflow</h2>
+<p>When a data-subject request is received (typically via the school as Controller):</p>
+<ol>
+  <li>Acknowledge within 5 working days</li>
+  <li>Verify identity (or rely on Controller verification)</li>
+  <li>Locate relevant records; redact third-party personal data</li>
+  <li>Respond within 30 days of receipt; in complex cases, extend to 60 days with written explanation</li>
+  <li>Log the request and response in the internal register</li>
+</ol>
+
+<h2>11. Retention and Deletion</h2>
+<table>
+  <thead><tr><th style="width:34%">Data type</th><th style="width:22%">Retention</th><th>Trigger to delete</th></tr></thead>
+  <tbody>
+    <tr><td>Free-tier session data</td><td>≤ 24 hours</td><td>Session end + 24h auto-delete</td></tr>
+    <tr><td>Paid-tier saved sessions</td><td>Teacher-controlled</td><td>Teacher delete action</td></tr>
+    <tr><td>Teacher account data</td><td>Subscription duration</td><td>Subscription termination + 30 days</td></tr>
+    <tr><td>Server logs (incl. IP)</td><td>30 days</td><td>Auto-purge</td></tr>
+    <tr><td>Backups</td><td>30 days rolling</td><td>Auto-rotation</td></tr>
+  </tbody>
+</table>
+
+<h2>12. Review</h2>
+<p>This document is reviewed at least annually by the Data Protection Lead, and immediately after any material change to processing, sub-processors, or applicable law.</p>
+
+<div class="footer-block">
+  <strong>TBS Education Ltd Oy</strong> · Business ID 3614159-3 · ICO Registration ZC133810<br>
+  www.thebusiness.school · Lahti, Finland · Effective 28 April 2026
+</div>
+
+</body>
+</html>
