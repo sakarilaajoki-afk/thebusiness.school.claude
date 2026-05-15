@@ -6,10 +6,25 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { background: #ccc; }
-  body { font-family: 'Inter', sans-serif; color: #1a1a1a; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+  body { font-family: 'Inter', sans-serif; color: #1a1a1a; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; gap: 16px; }
+  .download-btn {
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+  }
+  .download-btn:hover { background: #333; }
+  @media print { .download-btn { display: none; } }
   .card {
     width: 1200px;
     height: 630px;
@@ -151,5 +166,27 @@
     </div>
   </div>
 </div>
+
+
+<button class="download-btn" onclick="downloadCard()">↓ Download as PNG (1200×630)</button>
+
+<script>
+function downloadCard() {
+  const card = document.querySelector('.card');
+  html2canvas(card, {
+    width: 1200,
+    height: 630,
+    scale: 2,
+    backgroundColor: '#ffffff',
+    useCORS: true,
+    allowTaint: true
+  }).then(canvas => {
+    const link = document.createElement('a');
+    link.download = 'summer-bridging-pack-fb-card.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  });
+}
+</script>
 </body>
 </html>
