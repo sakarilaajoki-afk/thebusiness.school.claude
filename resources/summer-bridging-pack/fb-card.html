@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<title>Summer Bridging Pack — Social Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #ccc; }
+  body { font-family: 'Inter', sans-serif; color: #1a1a1a; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: #ffffff;
+    padding: 56px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 16px;
+  }
+  .top-mark {
+    color: #555;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+  .free-pill {
+    background: #1a1a1a;
+    color: white;
+    padding: 6px 18px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 0.94;
+    letter-spacing: -0.03em;
+    color: #1a1a1a;
+    margin-top: 26px;
+  }
+  .lead {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.28;
+    margin-top: 12px;
+    max-width: 850px;
+  }
+  .tasks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 22px;
+  }
+  .task {
+    border-left: 3px solid #1a1a1a;
+    padding: 6px 14px;
+  }
+  .task .w {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .task .n {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.15;
+    margin-top: 1px;
+  }
+  .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid #ccc;
+    padding-top: 16px;
+  }
+  .meta {
+    display: flex;
+    gap: 32px;
+  }
+  .meta .ml {
+    font-size: 11px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 3px;
+    font-weight: 700;
+  }
+  .meta .mv {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  .brand {
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+  }
+  .brand b {
+    color: #1a1a1a;
+    font-weight: 800;
+    font-size: 15px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div>
+    <div class="top-row">
+      <div class="top-mark">A-Level Business · Summer Pack 2026</div>
+      <div class="free-pill">FREE</div>
+    </div>
+    <h1>Year 12 → Year 13<br>Summer Bridging Pack</h1>
+    <div class="lead">Six weekly self-marking tasks to keep your Y12s in flow over the summer break.</div>
+  </div>
+
+  <div>
+    <div class="tasks">
+      <div class="task"><div class="w">Week 1</div><div class="n">The Two-Minute News Brief</div></div>
+      <div class="task"><div class="w">Week 2</div><div class="n">SWOT Your Local High Street</div></div>
+      <div class="task"><div class="w">Week 3</div><div class="n">The 25-Mark Essay Plan</div></div>
+      <div class="task"><div class="w">Week 4</div><div class="n">Industry Deep Dive</div></div>
+      <div class="task"><div class="w">Week 5</div><div class="n">Cash Flow Forecast Lab</div></div>
+      <div class="task"><div class="w">Week 6</div><div class="n">The One-Page Strategic Pitch</div></div>
+    </div>
+
+    <div class="bottom-row">
+      <div class="meta">
+        <div><div class="ml">Pages</div><div class="mv">10 · print-ready</div></div>
+        <div><div class="ml">Boards</div><div class="mv">AQA · Edexcel · OCR</div></div>
+        <div><div class="ml">Year</div><div class="mv">Y12 → Y13</div></div>
+      </div>
+      <div class="brand"><b>The Business School</b><br>thebusiness.school</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
