@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A-Level Business Calculation Cheat Sheet — 26 Formulas with Worked Examples | The Business School</title>
+<meta name="description" content="Free A-Level Business calculation reference. All 26 formulas students need for AQA 7132, Edexcel 9BS0 and OCR H431, with worked examples using real UK businesses. Print-ready single-page reference.">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="A-Level Business Calculation Cheat Sheet — All 26 Formulas">
+<meta property="og:description" content="Free print-ready calculation reference for AQA, Edexcel and OCR A-Level Business. 26 formulas, worked examples, real UK business contexts.">
+<meta property="og:url" content="https://thebusiness.school/resources/calculation-cheat-sheet/">
+<meta property="og:site_name" content="The Business School">
+<meta property="og:image" content="https://thebusiness.school/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A-Level Business Calculation Cheat Sheet — 26 Formulas">
+<meta name="twitter:description" content="Free, print-ready calculation reference for AQA 7132 · Edexcel 9BS0 · OCR H431.">
+<meta name="twitter:image" content="https://thebusiness.school/assets/og-image.png">
+
+<link rel="canonical" href="https://thebusiness.school/resources/calculation-cheat-sheet/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ink: #1a1a1a;
+    --grey-900: #333;
+    --grey-700: #555;
+    --grey-500: #888;
+    --grey-300: #ccc;
+    --grey-100: #f5f5f5;
+    --grey-50: #fafafa;
+    --white: #fff;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--grey-100); color: var(--ink); line-height: 1.5; }
+  .num { font-family: 'Roboto Mono', monospace; }
+  .nav-bar { position: fixed; top: 0; left: 0; right: 0; background: var(--white); color: var(--ink); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; z-index: 100; border-bottom: 1px solid var(--grey-300); }
+  .nav-bar .logo a { font-weight: 800; font-size: 14px; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+  .nav-bar .nav-actions { display: flex; gap: 10px; align-items: center; }
+  .nav-bar .back-link { font-size: 13px; color: var(--grey-700); text-decoration: none; }
+  .nav-bar .back-link:hover { color: var(--ink); }
+  .nav-bar .print-btn { background: var(--ink); color: var(--white); border: 1px solid var(--ink); padding: 7px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+
+  .pages-wrap { margin-top: 56px; padding: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+  .page { background: white; margin-bottom: 18px; border: 1px solid var(--grey-300); aspect-ratio: 1 / 1.414; padding: 48px 56px; position: relative; overflow: hidden; page-break-after: always; }
+  .page-num { position: absolute; bottom: 20px; right: 32px; font-family: 'Roboto Mono', monospace; font-size: 10px; color: var(--grey-700); }
+  .page-brand { position: absolute; bottom: 20px; left: 32px; font-size: 10px; color: var(--grey-700); font-weight: 500; }
+
+  .page h1 { font-size: 28px; font-weight: 900; color: var(--ink); margin-bottom: 4px; letter-spacing: -0.02em; line-height: 1.1; }
+  .page h2 { font-size: 14px; font-weight: 800; color: var(--ink); margin: 18px 0 8px; letter-spacing: 0.04em; text-transform: uppercase; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+  .page .subtitle { font-size: 13px; color: var(--grey-700); margin-bottom: 12px; }
+  .page .meta-row { display: flex; gap: 16px; font-size: 10px; color: var(--grey-700); padding: 6px 0 14px; border-bottom: 1.5px solid var(--ink); margin-bottom: 18px; }
+  .page .meta-row b { color: var(--ink); font-weight: 700; }
+
+  .formula-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .formula-grid.single { grid-template-columns: 1fr; }
+  .f-card {
+    border: 1px solid var(--grey-300);
+    padding: 8px 10px;
+    background: var(--white);
+  }
+  .f-card .f-num {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--white);
+    padding: 1px 6px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    margin-right: 4px;
+  }
+  .f-card .f-name {
+    display: inline;
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--ink);
+  }
+  .f-card .f-formula {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10.5px;
+    color: var(--ink);
+    font-weight: 600;
+    background: var(--grey-50);
+    padding: 5px 8px;
+    margin: 5px 0 4px;
+    border-left: 2px solid var(--ink);
+    line-height: 1.45;
+  }
+  .f-card .f-note {
+    font-size: 9.5px;
+    color: var(--grey-700);
+    line-height: 1.4;
+  }
+  .f-card .f-note b { color: var(--ink); }
+
+  .worked {
+    border: 1.5px solid var(--ink);
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .worked .w-title {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+  .worked .w-context {
+    font-size: 11px;
+    color: var(--grey-900);
+    margin-bottom: 6px;
+    line-height: 1.45;
+  }
+  .worked .w-step {
+    font-family: 'Roboto Mono', monospace;
+    background: var(--grey-50);
+    padding: 4px 8px;
+    font-size: 10.5px;
+    color: var(--ink);
+    margin: 3px 0;
+    line-height: 1.5;
+  }
+  .worked .w-answer {
+    border-top: 1px solid var(--ink);
+    padding-top: 5px;
+    margin-top: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .spec-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+    border: 1px solid var(--grey-300);
+    padding: 8px 12px;
+    align-items: center;
+  }
+  .spec-strip .ss-label {
+    font-size: 9px;
+    color: var(--grey-700);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-right: 4px;
+  }
+  .spec-strip .ss-tag {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .spec-strip .ss-divider { color: var(--grey-300); margin: 0 3px; }
+
+  .footer-note {
+    margin-top: 16px;
+    padding: 10px 14px;
+    border: 1px solid var(--ink);
+    text-align: center;
+  }
+  .footer-note p { font-size: 10px; color: var(--grey-700); line-height: 1.45; margin: 0; }
+  .footer-note p strong { color: var(--ink); }
+
+  /* Cover page */
+  .cover { display: flex; flex-direction: column; }
+  .cover .cover-top { border-bottom: 2px solid var(--ink); padding-bottom: 14px; display: flex; justify-content: space-between; align-items: flex-start; }
+  .cover .cover-top .top-mark { font-size: 11px; color: var(--grey-700); font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; }
+  .cover .free-pill { background: var(--ink); color: white; padding: 5px 14px; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
+  .cover h1.big { font-size: 46px; font-weight: 900; line-height: 0.96; letter-spacing: -0.03em; margin-top: 26px; }
+  .cover h2.lead { font-size: 16px; font-weight: 700; color: var(--ink); line-height: 1.35; margin-top: 12px; max-width: 600px; }
+  .cover .preview-strip { display: flex; gap: 12px; margin-top: 26px; padding: 14px 0; border-top: 1px solid var(--grey-300); border-bottom: 1px solid var(--grey-300); }
+  .cover .preview-strip .ps-stat { flex: 1; }
+  .cover .preview-strip .ps-num { font-family: 'Roboto Mono', monospace; font-size: 28px; font-weight: 700; color: var(--ink); line-height: 1; }
+  .cover .preview-strip .ps-label { font-size: 9px; color: var(--grey-700); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 6px; font-weight: 700; }
+  .cover .toc {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .cover .toc-section {
+    border-left: 3px solid var(--ink);
+    padding: 8px 12px;
+  }
+  .cover .toc-section .tn { font-family: 'Roboto Mono', monospace; font-size: 9px; color: var(--grey-700); text-transform: uppercase; letter-spacing: 0.05em; }
+  .cover .toc-section .tt { font-size: 13px; font-weight: 800; color: var(--ink); line-height: 1.2; margin-top: 1px; }
+  .cover .toc-section .tc { font-size: 10px; color: var(--grey-700); margin-top: 3px; }
+  .cover .bottom-row { display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid var(--grey-300); padding-top: 14px; margin-top: auto; }
+  .cover .meta-block { display: flex; gap: 28px; }
+  .cover .meta-block .ml { font-size: 9px; color: var(--grey-700); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 2px; font-weight: 700; }
+  .cover .meta-block .mv { font-size: 12px; font-weight: 700; color: var(--ink); }
+  .cover .brand-block { text-align: right; font-size: 11px; color: var(--grey-700); line-height: 1.4; }
+  .cover .brand-block b { color: var(--ink); font-weight: 800; }
+
+  @page { size: A4 portrait; margin: 0; }
+  @media print {
+    body { background: white; }
+    .nav-bar { display: none !important; }
+    .pages-wrap { margin-top: 0; padding: 0; max-width: none; }
+    .page { margin: 0; border: none; page-break-after: always; width: 210mm; height: 297mm; aspect-ratio: unset; padding: 16mm 18mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav-bar">
+  <div class="logo"><a href="/">The Business School</a></div>
+  <div class="nav-actions">
+    <a href="/resources/" class="back-link">← All resources</a>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+</div>
+
+<div class="pages-wrap">
+
+<!-- PAGE 1: COVER -->
+<div class="page cover">
+  <div class="cover-top">
+    <div class="top-mark">A-Level Business · Reference Pack</div>
+    <div class="free-pill">FREE</div>
+  </div>
+
+  <h1 class="big">Calculation<br>Cheat Sheet</h1>
+  <h2 class="lead">All 26 calculations a Year 12 or Year 13 Business student needs, with worked examples using real UK businesses. AQA 7132, Edexcel 9BS0, OCR H431.</h2>
+
+  <div class="preview-strip">
+    <div class="ps-stat"><div class="ps-num">26</div><div class="ps-label">Formulas</div></div>
+    <div class="ps-stat"><div class="ps-num">5</div><div class="ps-label">Sections</div></div>
+    <div class="ps-stat"><div class="ps-num">8</div><div class="ps-label">Worked examples</div></div>
+    <div class="ps-stat"><div class="ps-num">3</div><div class="ps-label">Exam boards mapped</div></div>
+    <div class="ps-stat"><div class="ps-num">6</div><div class="ps-label">Print-ready pages</div></div>
+  </div>
+
+  <div class="toc">
+    <div class="toc-section">
+      <div class="tn">Section 1</div>
+      <div class="tt">Revenue, Costs &amp; Profit</div>
+      <div class="tc">7 formulas · Theme 2 / Unit 3</div>
+    </div>
+    <div class="toc-section">
+      <div class="tn">Section 2</div>
+      <div class="tt">Margins &amp; Ratios</div>
+      <div class="tc">6 formulas · Theme 2 / Unit 3</div>
+    </div>
+    <div class="toc-section">
+      <div class="tn">Section 3</div>
+      <div class="tt">Break-even &amp; Contribution</div>
+      <div class="tc">4 formulas · Theme 2 / Unit 3</div>
+    </div>
+    <div class="toc-section">
+      <div class="tn">Section 4</div>
+      <div class="tt">Cash Flow &amp; Working Capital</div>
+      <div class="tc">5 formulas · Theme 2 / Unit 3</div>
+    </div>
+    <div class="toc-section">
+      <div class="tn">Section 5</div>
+      <div class="tt">Investment Appraisal</div>
+      <div class="tc">4 formulas · Theme 3 / Unit 3</div>
+    </div>
+    <div class="toc-section">
+      <div class="tn">Bonus</div>
+      <div class="tt">Worked Examples</div>
+      <div class="tc">Real UK businesses · Greggs, M&amp;S, JD Sports</div>
+    </div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="meta-block">
+      <div><div class="ml">Pages</div><div class="mv">6 · print-ready</div></div>
+      <div><div class="ml">Boards</div><div class="mv">AQA · Edexcel · OCR</div></div>
+      <div><div class="ml">Year</div><div class="mv">Y12 / Y13</div></div>
+    </div>
+    <div class="brand-block"><b>The Business School</b><br>thebusiness.school</div>
+  </div>
+</div>
+
+<!-- PAGE 2: REVENUE, COSTS, PROFIT -->
+<div class="page">
+  <h1>Section 1 · Revenue, Costs &amp; Profit</h1>
+  <p class="subtitle">The seven core formulas that underpin every other calculation in A-Level Business.</p>
+  <div class="meta-row">
+    <span><b>AQA:</b> 3.5 Financial performance</span>
+    <span><b>Edexcel:</b> Theme 2.2 / 2.3</span>
+    <span><b>OCR:</b> Unit 3 Finance</span>
+  </div>
+
+  <div class="formula-grid">
+    <div class="f-card">
+      <span class="f-num">1</span><span class="f-name">Total Revenue</span>
+      <div class="f-formula">Revenue = Price × Quantity sold</div>
+      <div class="f-note">Also called <b>sales revenue</b> or <b>turnover</b>. Top line of every income statement.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">2</span><span class="f-name">Total Costs</span>
+      <div class="f-formula">Total costs = Fixed costs + Variable costs</div>
+      <div class="f-note"><b>Fixed</b> = rent, salaries, insurance. <b>Variable</b> = stock, ingredients, packaging — scales with output.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">3</span><span class="f-name">Total Variable Cost</span>
+      <div class="f-formula">TVC = Variable cost per unit × Quantity</div>
+      <div class="f-note">Sometimes called <b>direct costs</b>. Excludes overheads.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">4</span><span class="f-name">Gross Profit</span>
+      <div class="f-formula">Gross profit = Revenue − Cost of sales</div>
+      <div class="f-note">Cost of sales = direct costs only (not overheads). First profit line.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">5</span><span class="f-name">Operating Profit</span>
+      <div class="f-formula">Operating profit = Gross profit − Overheads</div>
+      <div class="f-note">Also called <b>EBIT</b> in business journalism. Profit from trading before interest and tax.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">6</span><span class="f-name">Net Profit (Profit for the year)</span>
+      <div class="f-formula">Net profit = Operating profit − Interest − Tax</div>
+      <div class="f-note">Bottom line. What the business actually keeps.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">7</span><span class="f-name">Profit (general)</span>
+      <div class="f-formula">Profit = Total revenue − Total costs</div>
+      <div class="f-note">The simplest profit definition — used when the question does not distinguish layers.</div>
+    </div>
+  </div>
+
+  <div class="spec-strip">
+    <span class="ss-label">Mark losses to avoid</span>
+    <span class="ss-tag">Showing units in £ (or vice versa)</span>
+    <span class="ss-divider">·</span>
+    <span class="ss-tag">Mixing gross and operating profit</span>
+    <span class="ss-divider">·</span>
+    <span class="ss-tag">Forgetting to subtract interest in net profit</span>
+  </div>
+
+  <div class="page-brand">The Business School · Calculation Cheat Sheet</div>
+  <div class="page-num">02 / 06</div>
+</div>
+
+<!-- PAGE 3: MARGINS & RATIOS -->
+<div class="page">
+  <h1>Section 2 · Margins &amp; Ratios</h1>
+  <p class="subtitle">The six margin and ratio calculations examiners expect at A-Level.</p>
+  <div class="meta-row">
+    <span><b>AQA:</b> 3.5 Financial performance</span>
+    <span><b>Edexcel:</b> Theme 2.3 Managing finance</span>
+    <span><b>OCR:</b> Unit 3 Finance</span>
+  </div>
+
+  <div class="formula-grid">
+    <div class="f-card">
+      <span class="f-num">8</span><span class="f-name">Gross Profit Margin</span>
+      <div class="f-formula">GP margin (%) = (Gross profit ÷ Revenue) × 100</div>
+      <div class="f-note">A retailer like JD Sports might run 50% gross. A discounter like Lidl might run 8–12%.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">9</span><span class="f-name">Operating Profit Margin</span>
+      <div class="f-formula">OP margin (%) = (Operating profit ÷ Revenue) × 100</div>
+      <div class="f-note">The cleanest profitability indicator for comparing firms in the same industry.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">10</span><span class="f-name">Net Profit Margin</span>
+      <div class="f-formula">Net margin (%) = (Net profit ÷ Revenue) × 100</div>
+      <div class="f-note">Affected by capital structure (interest costs) and tax rate.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">11</span><span class="f-name">Return on Capital Employed (ROCE)</span>
+      <div class="f-formula">ROCE (%) = (Operating profit ÷ Capital employed) × 100</div>
+      <div class="f-note"><b>Capital employed</b> = total equity + non-current liabilities. Above 15% is healthy.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">12</span><span class="f-name">Current Ratio</span>
+      <div class="f-formula">Current ratio = Current assets ÷ Current liabilities</div>
+      <div class="f-note">Liquidity check. <b>1.5–2</b> is comfortable. Below 1 means short-term cash trouble.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">13</span><span class="f-name">Acid Test (Quick Ratio)</span>
+      <div class="f-formula">Acid test = (Current assets − Inventory) ÷ Current liabilities</div>
+      <div class="f-note">Stricter liquidity test. <b>1.0</b> is comfortable. Subtracts inventory because it cannot always be sold quickly.</div>
+    </div>
+  </div>
+
+  <div class="spec-strip">
+    <span class="ss-label">Mark losses to avoid</span>
+    <span class="ss-tag">Forgetting × 100 to get a percentage</span>
+    <span class="ss-divider">·</span>
+    <span class="ss-tag">Using net assets instead of capital employed in ROCE</span>
+  </div>
+
+  <div class="page-brand">The Business School · Calculation Cheat Sheet</div>
+  <div class="page-num">03 / 06</div>
+</div>
+
+<!-- PAGE 4: BREAK-EVEN, CONTRIBUTION + WORKED EXAMPLE -->
+<div class="page">
+  <h1>Section 3 · Break-even &amp; Contribution</h1>
+  <p class="subtitle">Four formulas plus one worked example using a real UK SME.</p>
+  <div class="meta-row">
+    <span><b>AQA:</b> 3.5 Financial performance</span>
+    <span><b>Edexcel:</b> Theme 2.3</span>
+    <span><b>OCR:</b> Unit 3</span>
+  </div>
+
+  <div class="formula-grid">
+    <div class="f-card">
+      <span class="f-num">14</span><span class="f-name">Contribution per unit</span>
+      <div class="f-formula">Contribution per unit = Selling price − Variable cost per unit</div>
+      <div class="f-note">How much each sale contributes to covering fixed costs.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">15</span><span class="f-name">Break-even Output</span>
+      <div class="f-formula">Break-even (units) = Fixed costs ÷ Contribution per unit</div>
+      <div class="f-note">Minimum units to sell before profit starts.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">16</span><span class="f-name">Margin of Safety</span>
+      <div class="f-formula">Margin of safety (units) = Actual sales − Break-even sales</div>
+      <div class="f-note">A buffer. Often expressed as % of actual sales.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">17</span><span class="f-name">Target Profit Output</span>
+      <div class="f-formula">Target output = (Fixed costs + Target profit) ÷ Contribution per unit</div>
+      <div class="f-note">How many units needed to hit a specific profit target.</div>
+    </div>
+  </div>
+
+  <div class="worked">
+    <div class="w-title">Worked example 1 · Bristol coffee van</div>
+    <div class="w-context">A street-food coffee van has fixed costs of £2,800/month. Coffees sell at £3.50 with variable cost of £0.90.</div>
+    <div class="w-step">Contribution per coffee = £3.50 − £0.90 = <b>£2.60</b></div>
+    <div class="w-step">Break-even = £2,800 ÷ £2.60 = <b>1,077 coffees per month</b></div>
+    <div class="w-step">If actual sales are 1,500 coffees, MoS = 1,500 − 1,077 = <b>423 coffees (28%)</b></div>
+    <div class="w-answer">If the van wants £1,500 profit: target = (£2,800 + £1,500) ÷ £2.60 = <b>1,654 coffees</b></div>
+  </div>
+
+  <div class="spec-strip">
+    <span class="ss-label">Mark losses to avoid</span>
+    <span class="ss-tag">Mixing fixed costs and variable costs in the formula</span>
+    <span class="ss-divider">·</span>
+    <span class="ss-tag">Rounding break-even output downward (always round UP)</span>
+  </div>
+
+  <div class="page-brand">The Business School · Calculation Cheat Sheet</div>
+  <div class="page-num">04 / 06</div>
+</div>
+
+<!-- PAGE 5: CASH FLOW + INVESTMENT -->
+<div class="page">
+  <h1>Section 4 · Cash Flow &amp; Working Capital</h1>
+  <p class="subtitle">Five formulas covering liquidity and short-term financial management.</p>
+  <div class="meta-row">
+    <span><b>AQA:</b> 3.5 / 3.7</span>
+    <span><b>Edexcel:</b> Theme 2.3</span>
+    <span><b>OCR:</b> Unit 3</span>
+  </div>
+
+  <div class="formula-grid">
+    <div class="f-card">
+      <span class="f-num">18</span><span class="f-name">Net Cash Flow</span>
+      <div class="f-formula">Net cash flow = Cash inflows − Cash outflows</div>
+      <div class="f-note">Per period. Different from profit because timing matters.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">19</span><span class="f-name">Closing Balance</span>
+      <div class="f-formula">Closing balance = Opening balance + Net cash flow</div>
+      <div class="f-note">The cash you start the next period with.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">20</span><span class="f-name">Working Capital</span>
+      <div class="f-formula">Working capital = Current assets − Current liabilities</div>
+      <div class="f-note">Day-to-day operating cash. Positive working capital = healthy short-term operations.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">21</span><span class="f-name">Receivables Days</span>
+      <div class="f-formula">Receivables days = (Receivables ÷ Revenue) × 365</div>
+      <div class="f-note">How long customers take to pay. <b>30–60 days</b> is typical UK B2B.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">22</span><span class="f-name">Payables Days</span>
+      <div class="f-formula">Payables days = (Payables ÷ Cost of sales) × 365</div>
+      <div class="f-note">How long the firm takes to pay suppliers. Higher = better short-term cash but supplier strain.</div>
+    </div>
+  </div>
+
+  <h2>Section 5 · Investment Appraisal</h2>
+
+  <div class="formula-grid">
+    <div class="f-card">
+      <span class="f-num">23</span><span class="f-name">Payback Period</span>
+      <div class="f-formula">Payback = Investment ÷ Annual net cash flow</div>
+      <div class="f-note">Years to recover the initial outlay. Short = lower risk.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">24</span><span class="f-name">Average Rate of Return (ARR)</span>
+      <div class="f-formula">ARR (%) = (Average annual profit ÷ Investment) × 100</div>
+      <div class="f-note">Compare against the cost of borrowing. ARR > borrowing rate = potentially viable.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">25</span><span class="f-name">Net Present Value (concept)</span>
+      <div class="f-formula">NPV = Σ (Discounted cash flows) − Investment</div>
+      <div class="f-note">Edexcel/AQA students given discount tables. Positive NPV = project adds value.</div>
+    </div>
+    <div class="f-card">
+      <span class="f-num">26</span><span class="f-name">Capital Employed</span>
+      <div class="f-formula">Capital employed = Total equity + Non-current liabilities</div>
+      <div class="f-note">Used in ROCE. Represents long-term financing of the business.</div>
+    </div>
+  </div>
+
+  <div class="page-brand">The Business School · Calculation Cheat Sheet</div>
+  <div class="page-num">05 / 06</div>
+</div>
+
+<!-- PAGE 6: WORKED EXAMPLES + EXAM TECHNIQUE -->
+<div class="page">
+  <h1>Bonus · Worked Examples &amp; Exam Technique</h1>
+  <p class="subtitle">Real UK businesses applied to the calculations. The exam technique notes below are based on senior examiner reports.</p>
+  <div class="meta-row">
+    <span><b>Use this:</b> homework, mock prep, revision</span>
+    <span><b>Time per example:</b> 10–15 minutes</span>
+  </div>
+
+  <div class="worked">
+    <div class="w-title">Worked example 2 · Greggs plc — Gross profit margin</div>
+    <div class="w-context">Greggs reports revenue of £1.8bn and gross profit of £612m in a recent financial year.</div>
+    <div class="w-step">GP margin = (£612m ÷ £1,800m) × 100 = <b>34.0%</b></div>
+    <div class="w-answer">Industry benchmark: UK food retail typically runs 25–35% gross margin. Greggs sits at the high end because of vertical integration (they bake in-house).</div>
+  </div>
+
+  <div class="worked">
+    <div class="w-title">Worked example 3 · JD Sports — Acid test</div>
+    <div class="w-context">A simplified JD Sports balance sheet shows current assets £900m (including inventory £550m) and current liabilities £600m.</div>
+    <div class="w-step">Current ratio = £900m ÷ £600m = <b>1.50</b> (comfortable)</div>
+    <div class="w-step">Acid test = (£900m − £550m) ÷ £600m = <b>0.58</b> (low)</div>
+    <div class="w-answer">Note the gap: JD has a lot of stock. If sportswear demand crashed, the acid test reveals real liquidity risk.</div>
+  </div>
+
+  <div class="worked">
+    <div class="w-title">Worked example 4 · Local cafe — Payback</div>
+    <div class="w-context">A Manchester cafe owner spends £28,000 on a new oven. The oven is forecast to save £700/month in supplier costs.</div>
+    <div class="w-step">Annual cash flow saving = £700 × 12 = <b>£8,400</b></div>
+    <div class="w-step">Payback period = £28,000 ÷ £8,400 = <b>3.33 years (3 years 4 months)</b></div>
+    <div class="w-answer">Decision rule: if the cafe's payback threshold is 3 years, this project is rejected on payback grounds — though ARR and NPV might still favour it.</div>
+  </div>
+
+  <h2 style="margin-top: 12px;">Exam Technique — Calculation Questions</h2>
+  <ul style="font-size:11px; line-height:1.5; padding-left:18px; color:var(--grey-900);">
+    <li><b>Always state the formula first.</b> Examiners mark workings — a wrong final answer with the right formula often earns full method marks.</li>
+    <li><b>Show units throughout.</b> £, %, units, days. Markers cannot reward an answer of "1,077" unless the unit is clear.</li>
+    <li><b>Round only at the final step.</b> Round mid-calculation and you compound errors.</li>
+    <li><b>If a question gives data you do not use, ask why.</b> A-Level papers rarely include unused data — if you skipped something, recheck.</li>
+    <li><b>For NPV / discount tables, identify Year 0.</b> Year 0 is the investment. Don't apply a discount factor to Year 0.</li>
+  </ul>
+
+  <div class="footer-note">
+    <p><strong>Made by Sakari Laajoki · TBS Education Ltd Oy</strong> (company number 3614159-3, Lahti, Finland). Free to share with colleagues. Modifications welcome for classroom use. Resale not permitted. Found a typo or want to suggest an improvement? <strong>thebusiness.school</strong></p>
+  </div>
+
+  <div class="page-brand">The Business School · Calculation Cheat Sheet</div>
+  <div class="page-num">06 / 06</div>
+</div>
+
+</div>
+
+</body>
+</html>
