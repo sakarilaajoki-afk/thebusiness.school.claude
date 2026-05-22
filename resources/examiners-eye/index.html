@@ -38,10 +38,11 @@
     --grey-100: #f5f5f5;
     --grey-50: #fafafa;
     --white: #fff;
-    --ao1: #444;
-    --ao2: #444;
-    --ao3: #444;
-    --ao4: #444;
+    --ao1: #475569;   /* slate — Knowledge */
+    --ao2: #0e7490;   /* teal  — Application */
+    --ao3: #4338ca;   /* indigo — Analysis */
+    --ao4: #9f1239;   /* burgundy — Evaluation */
+    --urgent: #b8333f;
   }
   body { font-family: 'Inter', sans-serif; background: var(--grey-100); color: var(--ink); line-height: 1.5; }
   .num { font-family: 'Roboto Mono', monospace; }
@@ -144,10 +145,14 @@
     vertical-align: 1px;
     letter-spacing: 0.05em;
   }
+  .annotation.ao1 { background: var(--ao1); }
+  .annotation.ao2 { background: var(--ao2); }
+  .annotation.ao3 { background: var(--ao3); }
+  .annotation.ao4 { background: var(--ao4); }
   .annotation.miss {
     background: white;
-    color: var(--ink);
-    border: 1px solid var(--ink);
+    color: var(--urgent);
+    border: 1px dashed var(--urgent);
   }
   .ab-summary {
     background: var(--grey-50);
@@ -168,8 +173,13 @@
   }
   .compare-grid .cg-card {
     border: 1px solid var(--grey-300);
+    border-top: 4px solid var(--ink);
     padding: 10px 12px;
   }
+  .compare-grid .cg-card.ao1-card { border-top-color: var(--ao1); }
+  .compare-grid .cg-card.ao2-card { border-top-color: var(--ao2); }
+  .compare-grid .cg-card.ao3-card { border-top-color: var(--ao3); }
+  .compare-grid .cg-card.ao4-card { border-top-color: var(--ao4); }
   .compare-grid .cg-label {
     font-size: 9px;
     font-weight: 800;
@@ -178,6 +188,10 @@
     letter-spacing: 0.06em;
     margin-bottom: 6px;
   }
+  .compare-grid .cg-card.ao1-card .cg-label { color: var(--ao1); }
+  .compare-grid .cg-card.ao2-card .cg-label { color: var(--ao2); }
+  .compare-grid .cg-card.ao3-card .cg-label { color: var(--ao3); }
+  .compare-grid .cg-card.ao4-card .cg-label { color: var(--ao4); }
   .compare-grid .cg-text {
     font-size: 11px;
     color: var(--grey-900);
@@ -265,6 +279,54 @@
   .cover .cover-top { border-bottom: 2px solid var(--ink); padding-bottom: 14px; display: flex; justify-content: space-between; align-items: flex-start; }
   .cover .cover-top .top-mark { font-size: 11px; color: var(--grey-700); font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; }
   .cover .free-pill { background: var(--ink); color: white; padding: 5px 14px; font-size: 10px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
+  .cover .urgency-bar {
+    margin-top: 18px;
+    background: var(--urgent);
+    color: white;
+    padding: 9px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .cover .urgency-bar .ub-tag {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .cover .urgency-bar .ub-text {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+  .cover .ao-legend {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .cover .ao-legend .ao-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid var(--grey-300);
+    padding: 4px 10px;
+  }
+  .cover .ao-legend .ao-chip .chip-dot {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+  }
+  .cover .ao-legend .ao-chip .chip-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .cover .ao-legend .ao-chip .chip-sub {
+    font-size: 9px;
+    color: var(--grey-700);
+  }
   .cover h1.big { font-size: 60px; font-weight: 900; line-height: 0.95; letter-spacing: -0.03em; margin-top: 24px; }
   .cover h2.lead { font-size: 17px; font-weight: 700; color: var(--ink); line-height: 1.35; margin-top: 14px; max-width: 600px; }
   .cover .preview-strip { display: flex; gap: 12px; margin-top: 22px; padding: 14px 0; border-top: 1px solid var(--grey-300); border-bottom: 1px solid var(--grey-300); }
@@ -319,8 +381,20 @@
     <div class="free-pill">FREE</div>
   </div>
 
+  <div class="urgency-bar">
+    <div class="ub-tag">Final-Weekend Edition · 22–25 May 2026</div>
+    <div class="ub-text">Read before Tuesday's Paper 1</div>
+  </div>
+
   <h1 class="big">The Examiner's<br>Eye</h1>
-  <h2 class="lead">How an A-Level Business answer actually becomes a mark — two student responses to the same 16-mark Evaluate question, annotated word-by-word.</h2>
+  <h2 class="lead">How an A-Level Business answer actually becomes a mark — two student responses to the same 16-mark Evaluate question, annotated word-by-word in the four colours an examiner actually thinks in.</h2>
+
+  <div class="ao-legend">
+    <span class="ao-chip"><span class="chip-dot" style="background:var(--ao1);"></span><span class="chip-label">AO1</span><span class="chip-sub">Knowledge</span></span>
+    <span class="ao-chip"><span class="chip-dot" style="background:var(--ao2);"></span><span class="chip-label">AO2</span><span class="chip-sub">Application</span></span>
+    <span class="ao-chip"><span class="chip-dot" style="background:var(--ao3);"></span><span class="chip-label">AO3</span><span class="chip-sub">Analysis</span></span>
+    <span class="ao-chip"><span class="chip-dot" style="background:var(--ao4);"></span><span class="chip-label">AO4</span><span class="chip-sub">Evaluation</span></span>
+  </div>
 
   <div class="preview-strip">
     <div class="ps-stat"><div class="ps-num">2</div><div class="ps-label">Real-style answers</div></div>
@@ -404,10 +478,10 @@
       <div class="ab-mark">7 / 16</div>
     </div>
     <div class="ab-body">
-      <p>Boohoo has decided to split its company up into different parts. Each brand will now operate separately. This is called demerger or restructuring <span class="annotation">AO1</span>.</p>
-      <p>One advantage of splitting up is that each brand can focus on its own customers. PrettyLittleThing has younger customers and Debenhams has older customers, so different marketing works better for each. This means they can target their advertising more carefully <span class="annotation">AO1</span><span class="annotation">AO3</span>.</p>
-      <p>Another advantage is that if one brand fails, it doesn't affect the others. So if PrettyLittleThing has bad sales, Karen Millen is protected. This is risk diversification <span class="annotation">AO1</span>.</p>
-      <p>However, there are disadvantages. Splitting up costs money because each brand needs its own HR and finance team. This is called duplication of overheads <span class="annotation">AO1</span>. Also Boohoo will lose economies of scale because they cannot buy stock in bulk anymore <span class="annotation">AO3</span>.</p>
+      <p>Boohoo has decided to split its company up into different parts. Each brand will now operate separately. This is called demerger or restructuring <span class="annotation ao1">AO1</span>.</p>
+      <p>One advantage of splitting up is that each brand can focus on its own customers. PrettyLittleThing has younger customers and Debenhams has older customers, so different marketing works better for each. This means they can target their advertising more carefully <span class="annotation ao1">AO1</span><span class="annotation ao3">AO3</span>.</p>
+      <p>Another advantage is that if one brand fails, it doesn't affect the others. So if PrettyLittleThing has bad sales, Karen Millen is protected. This is risk diversification <span class="annotation ao1">AO1</span>.</p>
+      <p>However, there are disadvantages. Splitting up costs money because each brand needs its own HR and finance team. This is called duplication of overheads <span class="annotation ao1">AO1</span>. Also Boohoo will lose economies of scale because they cannot buy stock in bulk anymore <span class="annotation ao3">AO3</span>.</p>
       <p>In conclusion, splitting the brands is a good idea because focused marketing helps each brand grow. <span class="annotation miss">AO4 not earned</span></p>
     </div>
     <div class="ab-summary">
@@ -425,19 +499,19 @@
   <p class="subtitle">The same answer broken down by AO. This is exactly how an examiner would feed back to the student.</p>
 
   <div class="compare-grid">
-    <div class="cg-card">
+    <div class="cg-card ao1-card">
       <div class="cg-label">AO1 · Knowledge — earned 2/3</div>
       <div class="cg-text">Concepts named correctly: <b>demerger, risk diversification, economies of scale, duplication of overheads</b>. Solid theoretical grounding. Earned most of the AO1 marks available.</div>
     </div>
-    <div class="cg-card">
+    <div class="cg-card ao2-card">
       <div class="cg-label">AO2 · Application — earned 1/3</div>
       <div class="cg-text">Mentions brands by name but uses <b>no case-specific data</b>. No revenue figures, no Q1 2026 numbers, no reference to actual Debenhams collapse (2020), no Boohoo profit warning context. <b>This is where most marks were lost.</b></div>
     </div>
-    <div class="cg-card">
+    <div class="cg-card ao3-card">
       <div class="cg-label">AO3 · Analysis — earned 2/5</div>
       <div class="cg-text">Chains are too short. "Focused marketing → better targeting" stops after one step. A Level 4 chain would continue: → which means PrettyLittleThing can ringfence its TikTok budget → which improves CAC for young customers → which protects Boohoo PLC margin in a price-elastic market.</div>
     </div>
-    <div class="cg-card">
+    <div class="cg-card ao4-card">
       <div class="cg-label">AO4 · Evaluation — earned 2/5</div>
       <div class="cg-text">Counter-arguments raised but never weighed. <b>The judgement sentence is the killer.</b> "Splitting is a good idea" — no reasoning, no commitment to <i>under what conditions</i>. Capped Level 2 because of this single sentence.</div>
     </div>
@@ -465,10 +539,10 @@
       <div class="ab-mark">14 / 16</div>
     </div>
     <div class="ab-body">
-      <p>Boohoo's brand-portfolio split is a structural <b>demerger</b> — a reversal of the consolidation strategy Boohoo pursued through the late 2010s. <span class="annotation">AO1</span> The board's reasoning is that each label (PrettyLittleThing, Karen Millen, Debenhams) targets a fundamentally different consumer segment, and group-level decision-making has constrained brand-specific agility. <span class="annotation">AO2</span></p>
-      <p><b>The case for splitting.</b> PrettyLittleThing's customer base is 18–24, predominantly female, TikTok-led, and highly price-elastic. Karen Millen targets a 30–45 professional segment with three times the average order value. Running both inside one PLC means marketing budgets, IT infrastructure and supply-chain decisions are shaped by a common denominator that suits neither <span class="annotation">AO3</span>. By separating, each brand can ringfence its own promotion budget, set its own pricing strategy and pursue its own growth model — PrettyLittleThing through influencer volume, Karen Millen through retention. The financial logic is that brand-specific operating margin will improve by 200–300 basis points within 12 months <span class="annotation">AO2</span><span class="annotation">AO3</span>.</p>
-      <p><b>The case against.</b> Duplication of corporate functions (HR, finance, IT, legal) carries an annual cost burden estimated at 4–6% of revenue — a material drag on a group already running thin operating margins (~5% in the last reported year). <span class="annotation">AO2</span> Loss of group-wide buying power means PrettyLittleThing can no longer access Debenhams-scale supplier discounts, which weakens gross margin. Most importantly, the split signals strategic fragility to the equity market, which has historically punished UK fast-fashion stocks for breakup announcements (ASOS, Boohoo group itself have both seen 15%+ single-day declines on restructuring news) <span class="annotation">AO3</span>.</p>
-      <p><b>Judgement.</b> The split is justified <b>only if Boohoo can demonstrably monetise brand-specific marketing within 18 months</b>. Given current fast-fashion fatigue, ongoing ESG pressure on supplier audits, and a UK consumer base shifting toward second-hand platforms (Vinted UK growth >40% YoY), this is genuinely uncertain. On balance, the cost of duplicated overheads is likely to outweigh the focus benefit over the next 24 months, particularly for the smaller labels. The strategy looks more defensive (protecting Boohoo plc's core balance sheet from PLT volatility) than offensive (capturing new growth). <b>I would judge this a partially-justified restructuring</b> — defensible at the PLT/Karen Millen separation, but the Debenhams legacy label adds little and would have been better sold rather than spun out. <span class="annotation">AO4</span></p>
+      <p>Boohoo's brand-portfolio split is a structural <b>demerger</b> — a reversal of the consolidation strategy Boohoo pursued through the late 2010s. <span class="annotation ao1">AO1</span> The board's reasoning is that each label (PrettyLittleThing, Karen Millen, Debenhams) targets a fundamentally different consumer segment, and group-level decision-making has constrained brand-specific agility. <span class="annotation ao2">AO2</span></p>
+      <p><b>The case for splitting.</b> PrettyLittleThing's customer base is 18–24, predominantly female, TikTok-led, and highly price-elastic. Karen Millen targets a 30–45 professional segment with three times the average order value. Running both inside one PLC means marketing budgets, IT infrastructure and supply-chain decisions are shaped by a common denominator that suits neither <span class="annotation ao3">AO3</span>. By separating, each brand can ringfence its own promotion budget, set its own pricing strategy and pursue its own growth model — PrettyLittleThing through influencer volume, Karen Millen through retention. The financial logic is that brand-specific operating margin will improve by 200–300 basis points within 12 months <span class="annotation ao2">AO2</span><span class="annotation ao3">AO3</span>.</p>
+      <p><b>The case against.</b> Duplication of corporate functions (HR, finance, IT, legal) carries an annual cost burden estimated at 4–6% of revenue — a material drag on a group already running thin operating margins (~5% in the last reported year). <span class="annotation ao2">AO2</span> Loss of group-wide buying power means PrettyLittleThing can no longer access Debenhams-scale supplier discounts, which weakens gross margin. Most importantly, the split signals strategic fragility to the equity market, which has historically punished UK fast-fashion stocks for breakup announcements (ASOS, Boohoo group itself have both seen 15%+ single-day declines on restructuring news) <span class="annotation ao3">AO3</span>.</p>
+      <p><b>Judgement.</b> The split is justified <b>only if Boohoo can demonstrably monetise brand-specific marketing within 18 months</b>. Given current fast-fashion fatigue, ongoing ESG pressure on supplier audits, and a UK consumer base shifting toward second-hand platforms (Vinted UK growth >40% YoY), this is genuinely uncertain. On balance, the cost of duplicated overheads is likely to outweigh the focus benefit over the next 24 months, particularly for the smaller labels. The strategy looks more defensive (protecting Boohoo plc's core balance sheet from PLT volatility) than offensive (capturing new growth). <b>I would judge this a partially-justified restructuring</b> — defensible at the PLT/Karen Millen separation, but the Debenhams legacy label adds little and would have been better sold rather than spun out. <span class="annotation ao4">AO4</span></p>
     </div>
     <div class="ab-summary">
       <b>Examiner's view:</b> Level 4 (14/16). Strong AO1–3 throughout; case-specific data anchors every claim; chains of reasoning are full ("which means → which improves → which protects"); counter-arguments are real, not straw men; the judgement <b>commits to a calibrated position</b> ("partially-justified" rather than yes/no) and <b>distinguishes between brands within the answer</b>. Top of Level 4. The two marks held back: a sharper introduction and one more specific Vinted/ESG quantification would have earned 15–16.
