@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<title>Tes Cover — Live Business Simulation</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 800px;
+    height: 600px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    overflow: hidden;
+  }
+
+  .cover {
+    width: 800px;
+    height: 600px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 60%, #1a3a5c 100%);
+    color: #fff;
+    position: relative;
+    padding: 44px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  /* decorative chart bottom right */
+  .chart-bg {
+    position: absolute;
+    right: -60px;
+    bottom: -50px;
+    width: 540px;
+    height: 380px;
+    opacity: 0.10;
+  }
+  .chart-bg svg { width: 100%; height: 100%; }
+
+  /* gold corner stripe */
+  .corner-stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: linear-gradient(180deg, #f4c542 0%, #f4c542 30%, #00838f 70%, #00838f 100%);
+  }
+
+  /* live indicator pulse dot */
+  .live-pulse {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: #00d27a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(0,210,122,0.25), 0 0 12px rgba(0,210,122,0.6);
+    margin-right: 8px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+  }
+
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+  }
+  .brand {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+  }
+  .brand .dot { color: #f4c542; }
+
+  .free-badge {
+    background: #00838f;
+    color: #fff;
+    padding: 7px 16px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .center {
+    z-index: 2;
+    position: relative;
+    margin-top: -10px;
+  }
+  .live-eyebrow {
+    color: #00d27a;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: inline-flex;
+    align-items: center;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1.8px;
+    margin-bottom: 10px;
+  }
+  h1 .accent { color: #f4c542; }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.92);
+    margin-bottom: 18px;
+    letter-spacing: -0.2px;
+  }
+  .subtitle {
+    font-size: 16px;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.45;
+    max-width: 560px;
+    font-weight: 400;
+  }
+  .subtitle strong { color: #fff; font-weight: 600; }
+
+  .specs-row {
+    display: flex;
+    gap: 12px;
+    z-index: 2;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .spec-chip {
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.20);
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+    position: relative;
+  }
+  .meta {
+    color: rgba(255,255,255,0.55);
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+  .meta strong { color: #fff; font-weight: 600; }
+  .url {
+    color: #00bfd6;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+
+  <div class="corner-stripe"></div>
+
+  <!-- decorative chart -->
+  <div class="chart-bg">
+    <svg viewBox="0 0 540 380" xmlns="http://www.w3.org/2000/svg">
+      <polyline points="0,320 70,275 140,295 210,205 280,225 350,135 420,160 490,75 540,95"
+        stroke="#f4c542" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="0,355 70,330 140,340 210,300 280,315 350,260 420,280 490,215 540,235"
+        stroke="#00838f" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="0,360 70,355 140,358 210,348 280,352 350,335 420,342 490,315 540,322"
+        stroke="#00d27a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="0" y1="380" x2="540" y2="380" stroke="#fff" stroke-width="1"/>
+      <line x1="0" y1="0" x2="0" y2="380" stroke="#fff" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <div class="top-row">
+    <div class="brand">The Business<span class="dot">.</span>School</div>
+    <div class="free-badge">Free PDF</div>
+  </div>
+
+  <div class="center">
+    <div class="live-eyebrow"><span class="live-pulse"></span>LIVE · Multiplayer · Browser-only</div>
+    <h1><span class="accent">Live</span> Business<br>Simulation</h1>
+    <h2>Curriculum mapping for UK A-Level teachers.</h2>
+    <div class="subtitle">A 1-page PDF showing how a real-time, multiplayer classroom simulation aligns with <strong>every major UK A-Level Business specification</strong>. Department-meeting ready.</div>
+  </div>
+
+  <div>
+    <div class="specs-row">
+      <div class="spec-chip">AQA 7132</div>
+      <div class="spec-chip">EDEXCEL 9BS0</div>
+      <div class="spec-chip">OCR H431</div>
+      <div class="spec-chip">PEARSON BTEC L3</div>
+    </div>
+  </div>
+
+  <div class="footer-row">
+    <div class="meta">
+      Built in Finland · Engineered with our international studio<br>
+      <strong>ICO Registered (ZC133810) · UK GDPR compliant</strong>
+    </div>
+    <div class="url">play.thebusiness.school</div>
+  </div>
+
+</div>
+
+</body>
+</html>
