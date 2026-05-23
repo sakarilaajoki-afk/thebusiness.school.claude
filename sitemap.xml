@@ -25,6 +25,12 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://thebusiness.school/pilot/</loc>
+    <lastmod>2026-05-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://thebusiness.school/curriculum-mapping/</loc>
     <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
