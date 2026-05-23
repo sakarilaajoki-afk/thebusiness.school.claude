@@ -6,20 +6,20 @@
 <meta name="theme-color" content="#1a1a2e">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
-<title>Free Autumn 2026 Pilot — The Business School</title>
-<meta name="description" content="Apply for a free Autumn Term 2026 pilot slot of The Business School Simulation. For UK A-Level, BTEC, IGCSE and IB Business teachers. Pilot Day webinar 15 September 2026.">
+<title>Pilot Programme — Autumn Term 2026 | The Business School</title>
+<meta name="description" content="Apply for the free Pilot Programme — Autumn Term 2026. Cohort capped at 20 schools. UK A-Level, BTEC, IGCSE and IB Business. 15 September – 15 December 2026.">
 <link rel="canonical" href="https://thebusiness.school/pilot/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Business School">
 <meta property="og:url" content="https://thebusiness.school/pilot/">
-<meta property="og:title" content="Free Autumn 2026 Pilot — The Business School Simulation">
-<meta property="og:description" content="Apply for a free pilot slot. Autumn Term 2026. UK A-Level, BTEC, IGCSE and IB Business.">
+<meta property="og:title" content="Pilot Programme — Autumn Term 2026 | The Business School">
+<meta property="og:description" content="Free Pilot Programme for UK A-Level, BTEC, IGCSE and IB Business teachers. Cohort capped at 20 schools. 15 Sept – 15 Dec 2026.">
 <meta property="og:image" content="https://thebusiness.school/assets/og-image.png">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Free Autumn 2026 Pilot — The Business School">
-<meta name="twitter:description" content="Apply for a free pilot slot. Autumn Term 2026. UK A-Level, BTEC, IGCSE and IB Business.">
+<meta name="twitter:title" content="Pilot Programme — Autumn Term 2026">
+<meta name="twitter:description" content="Free Pilot Programme. Cohort capped at 20 schools. 15 Sept – 15 Dec 2026.">
 <meta name="twitter:image" content="https://thebusiness.school/assets/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
@@ -30,7 +30,7 @@
     --accent:#00838f; --accent-hover:#006971; --gold:#f4c542;
     --text:#2d2d2d; --subtle:#6c757d; --ink:#1b1b1b;
     --bg-soft:#fafafa; --bg-tint:#fff8e1; --rule:#e5e7eb;
-    --err:#b8333f;
+    --err:#b8333f; --good:#15803d;
   }
   * { margin:0; padding:0; box-sizing:border-box; }
   html { scroll-behavior:smooth; }
@@ -51,43 +51,107 @@
 
   .hero-lite {
     background:linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
-    color:#fff; padding:68px 24px 56px;
+    color:#fff; padding:64px 24px 48px;
   }
-  .hero-inner { max-width:780px; margin:0 auto; }
+  .hero-inner { max-width:880px; margin:0 auto; }
   .hero-lite .eyebrow { color:var(--gold); font-size:0.8rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:14px; }
   .hero-lite h1 { font-size:2.4rem; line-height:1.12; margin-bottom:14px; font-weight:800; letter-spacing:-0.01em; }
-  .hero-lite .lead { font-size:1.1rem; color:rgba(255,255,255,0.85); max-width:640px; margin-bottom:8px; }
-  .hero-lite .lede-sub { font-size:0.95rem; color:rgba(255,255,255,0.65); }
-  .hero-lite .pilot-pill {
-    display:inline-block; background:var(--gold); color:var(--primary);
-    padding:4px 12px; font-size:0.78rem; font-weight:800;
-    letter-spacing:0.08em; text-transform:uppercase; margin-bottom:18px;
+  .hero-lite .lead { font-size:1.1rem; color:rgba(255,255,255,0.85); max-width:640px; margin-bottom:24px; }
+
+  /* Cohort capacity bar */
+  .capacity-bar {
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(244,197,66,0.4);
+    border-radius:8px; padding:14px 18px;
+    display:flex; align-items:center; gap:18px;
+    max-width:640px;
+  }
+  .capacity-bar .cap-label {
+    color:var(--gold); font-size:0.78rem; font-weight:800;
+    letter-spacing:0.14em; text-transform:uppercase;
+  }
+  .capacity-bar .cap-track {
+    flex-grow:1; height:8px; background:rgba(255,255,255,0.15);
+    border-radius:4px; overflow:hidden;
+  }
+  .capacity-bar .cap-fill {
+    height:100%; width:0%; background:var(--gold);
+    transition:width 0.6s;
+  }
+  .capacity-bar .cap-count {
+    color:#fff; font-family:'Roboto Mono', monospace;
+    font-size:0.9rem; font-weight:700;
   }
 
-  main { max-width:780px; margin:0 auto; padding:48px 24px 80px; }
+  main { max-width:880px; margin:0 auto; padding:48px 24px 80px; }
 
-  /* The 3-step explainer */
-  .steps { display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; margin-bottom:44px; }
-  @media (max-width:720px) { .steps { grid-template-columns:1fr; } }
-  .step {
-    background:var(--bg-soft); border:1px solid var(--rule);
-    border-radius:8px; padding:18px 20px;
+  /* Programme summary box */
+  .programme-summary {
+    border:2px solid var(--primary); border-radius:10px;
+    overflow:hidden; margin-bottom:36px;
   }
-  .step .step-num {
+  .programme-summary .ps-header {
+    background:var(--primary); color:white;
+    padding:14px 24px; font-size:0.85rem; font-weight:800;
+    letter-spacing:0.12em; text-transform:uppercase;
+  }
+  .programme-summary .ps-body { padding:24px 28px; }
+  .programme-summary h2 {
+    color:var(--primary); font-size:1.35rem; margin-bottom:14px;
+    letter-spacing:-0.01em;
+  }
+  .ps-grid {
+    display:grid; grid-template-columns:1fr 1fr; gap:24px;
+    margin-top:18px;
+  }
+  @media (max-width:720px) { .ps-grid { grid-template-columns:1fr; } }
+  .ps-col h3 {
+    color:var(--primary); font-size:0.9rem; font-weight:800;
+    letter-spacing:0.06em; text-transform:uppercase;
+    margin-bottom:10px; padding-bottom:6px;
+    border-bottom:2px solid var(--rule);
+  }
+  .ps-col ul { list-style:none; padding:0; margin:0; }
+  .ps-col li {
+    font-size:0.92rem; color:var(--text); margin-bottom:7px;
+    padding-left:20px; position:relative; line-height:1.5;
+  }
+  .ps-col li::before {
+    content:"✓"; position:absolute; left:0; top:0;
+    color:var(--good); font-weight:700;
+  }
+  .ps-col.expect li::before { content:"→"; color:var(--accent); }
+
+  /* 3-step timeline */
+  .timeline {
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:0;
+    margin-bottom:36px; border:1px solid var(--rule);
+    border-radius:8px; overflow:hidden;
+  }
+  @media (max-width:720px) { .timeline { grid-template-columns:1fr; } }
+  .tl-step {
+    padding:18px 20px; border-right:1px solid var(--rule);
+    background:var(--bg-soft);
+  }
+  @media (max-width:720px) {
+    .tl-step { border-right:none; border-bottom:1px solid var(--rule); }
+    .tl-step:last-child { border-bottom:none; }
+  }
+  .tl-step:last-child { border-right:none; }
+  .tl-step .tl-date {
     font-family:'Roboto Mono', monospace;
-    font-size:11px; font-weight:700; color:var(--accent);
+    font-size:10px; font-weight:700; color:var(--accent);
     letter-spacing:0.1em; text-transform:uppercase; margin-bottom:6px;
   }
-  .step h3 { color:var(--primary); font-size:1.02rem; margin-bottom:5px; }
-  .step p { font-size:0.88rem; color:var(--subtle); line-height:1.5; }
+  .tl-step h3 { color:var(--primary); font-size:0.98rem; margin-bottom:5px; }
+  .tl-step p { font-size:0.86rem; color:var(--subtle); line-height:1.5; margin:0; }
 
   /* Section headings */
   section.block { margin-bottom:36px; }
   section.block h2 {
-    color:var(--primary); font-size:1.45rem; margin-bottom:10px;
+    color:var(--primary); font-size:1.4rem; margin-bottom:10px;
     letter-spacing:-0.01em;
   }
-  section.block p { margin-bottom:14px; color:var(--text); }
 
   /* The form */
   .form-card {
@@ -96,9 +160,25 @@
   }
   .form-card h2 {
     color:var(--primary); margin-top:0;
-    padding-bottom:14px; border-bottom:2px solid var(--rule); margin-bottom:22px;
+    padding-bottom:14px; border-bottom:2px solid var(--rule); margin-bottom:6px;
   }
+  .form-card .form-sub {
+    color:var(--subtle); font-size:0.9rem; margin-bottom:22px;
+  }
+
+  .form-section {
+    margin-bottom:24px; padding-bottom:20px;
+    border-bottom:1px dashed var(--rule);
+  }
+  .form-section:last-of-type { border-bottom:none; }
+  .form-section .fs-label {
+    font-family:'Roboto Mono', monospace;
+    font-size:10px; font-weight:700; color:var(--accent);
+    letter-spacing:0.1em; text-transform:uppercase; margin-bottom:14px;
+  }
+
   .form-row { margin-bottom:18px; }
+  .form-row:last-child { margin-bottom:0; }
   .form-row label {
     display:block; font-size:0.92rem; font-weight:700;
     color:var(--primary); margin-bottom:5px;
@@ -120,17 +200,26 @@
   .form-row textarea { resize:vertical; min-height:80px; }
   .form-row .help { font-size:0.82rem; color:var(--subtle); margin-top:4px; }
 
+  .form-two-col {
+    display:grid; grid-template-columns:1fr 1fr; gap:14px;
+  }
+  @media (max-width:560px) { .form-two-col { grid-template-columns:1fr; } }
+
   .checkbox-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px 14px; margin-top:4px; }
   @media (max-width:560px) { .checkbox-grid { grid-template-columns:1fr; } }
   .cb-row, .radio-row {
-    display:flex; align-items:center; gap:8px;
+    display:flex; align-items:flex-start; gap:8px;
     font-size:0.92rem; color:var(--text); cursor:pointer;
+    line-height:1.4;
   }
-  .cb-row input, .radio-row input { width:16px; height:16px; cursor:pointer; }
+  .cb-row input, .radio-row input {
+    width:16px; height:16px; cursor:pointer; flex-shrink:0;
+    margin-top:2px;
+  }
 
   .commit-box {
     background:var(--bg-tint); border:1px solid var(--gold);
-    border-radius:6px; padding:14px 16px; margin-bottom:18px;
+    border-radius:6px; padding:16px 18px; margin-bottom:0;
   }
   .commit-box .cb-row { font-weight:600; color:var(--primary); }
 
@@ -142,6 +231,7 @@
     border-radius:6px; cursor:pointer; width:100%;
     transition:background 0.15s;
     font-family:inherit;
+    margin-top:22px;
   }
   .submit-btn:hover { background:var(--accent-hover); }
   .submit-btn:disabled { background:var(--subtle); cursor:not-allowed; }
@@ -151,18 +241,6 @@
     text-align:center; line-height:1.5;
   }
   .privacy-note a { color:var(--accent); }
-
-  /* Pilot day callout */
-  .pilot-day {
-    background:var(--primary); color:white;
-    border-radius:10px; padding:28px 32px; margin-bottom:36px;
-  }
-  .pilot-day .pd-label {
-    color:var(--gold); font-size:0.78rem; font-weight:800;
-    letter-spacing:0.14em; text-transform:uppercase; margin-bottom:6px;
-  }
-  .pilot-day h2 { font-size:1.35rem; margin-bottom:8px; }
-  .pilot-day p { color:rgba(255,255,255,0.85); margin-bottom:0; font-size:0.98rem; }
 
   footer {
     background:var(--primary); color:rgba(255,255,255,0.8);
@@ -175,13 +253,23 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://thebusiness.school/pilot/",
+  "@type": "EducationalOccupationalProgram",
+  "name": "The Business School — Autumn 2026 Pilot Programme",
+  "description": "A free 13-week pilot programme of The Business School Simulation for UK A-Level, BTEC, IGCSE and IB Business teachers. Cohort capped at 20 schools.",
+  "provider": {
+    "@type": "Organization",
+    "name": "The Business School",
+    "sameAs": "https://thebusiness.school/"
+  },
   "url": "https://thebusiness.school/pilot/",
-  "name": "Free Autumn 2026 Pilot — The Business School",
-  "description": "Application form for the free Autumn Term 2026 pilot cohort of The Business School Simulation.",
-  "inLanguage": "en-GB",
-  "isPartOf": { "@id": "https://thebusiness.school/#website" }
+  "applicationStartDate": "2026-05-15",
+  "applicationDeadline": "2026-09-15",
+  "startDate": "2026-09-15",
+  "endDate": "2026-12-15",
+  "timeToComplete": "P13W",
+  "maximumEnrollment": 20,
+  "occupationalCategory": "Business Education",
+  "educationalCredentialAwarded": "Pilot Programme Completion (Optional)"
 }
 </script>
 </head>
@@ -202,123 +290,232 @@
 
 <section class="hero-lite">
   <div class="hero-inner">
-    <p class="eyebrow">Free Pilot · Autumn Term 2026</p>
-    <h1>Apply for a free pilot slot</h1>
-    <p class="lead">A 6–8 week classroom pilot of The Business School Simulation, free for participating schools in Autumn Term 2026. UK A-Level, BTEC, IGCSE and IB Business.</p>
-    <p class="lede-sub">No card. No invoice. Just your honest feedback after running it with your students.</p>
+    <p class="eyebrow">Autumn 2026 · Pilot Programme</p>
+    <h1>Free Pilot Programme — 20 schools, Autumn Term 2026</h1>
+    <p class="lead">A 13-week classroom pilot of The Business School Simulation. UK A-Level, BTEC, IGCSE and IB Business. Cohort capped at 20 schools.</p>
+
+    <div class="capacity-bar">
+      <div class="cap-label">Cohort</div>
+      <div class="cap-track"><div class="cap-fill" style="width:0%;"></div></div>
+      <div class="cap-count">0 / 20 slots filled</div>
+    </div>
   </div>
 </section>
 
 <main>
 
-  <!-- 3-STEP EXPLAINER -->
-  <div class="steps">
-    <div class="step">
-      <div class="step-num">Step 1</div>
-      <h3>Apply below</h3>
-      <p>5-minute form. Tells us your year groups, exam board and preferred pilot window.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">Step 2</div>
-      <h3>Pilot Day · 15 Sept</h3>
-      <p>Join the kickoff webinar Tuesday 15 September 2026, 19:00 UK time (or watch the recording).</p>
-    </div>
-    <div class="step">
-      <div class="step-num">Step 3</div>
-      <h3>Run it with your class</h3>
-      <p>Sept–Nov 2026. Free licence. Email support. Honest feedback at the end.</p>
+  <!-- PROGRAMME SUMMARY -->
+  <div class="programme-summary">
+    <div class="ps-header">Programme Overview</div>
+    <div class="ps-body">
+      <h2>What this is — and what it isn't</h2>
+      <p>The Pilot Programme exists to validate the simulation in real UK and international classrooms across the Autumn Term 2026, ahead of full release. Pilot schools receive the working classroom-ready build, run it with their students at their own pace, and provide a single end-of-term feedback survey. There is no cost, no licence fee, and no commitment to purchase afterwards.</p>
+
+      <div class="ps-grid">
+        <div class="ps-col deliver">
+          <h3>What we deliver to your school</h3>
+          <ul>
+            <li>Working teacher licence for full 2026/27 academic year (no cost)</li>
+            <li>One-page IT info sheet for your network team (KCSIE 2024/25, UK GDPR)</li>
+            <li>10-minute Loom walkthrough video (sent 15 September)</li>
+            <li>Email support throughout the programme</li>
+            <li>Optional monthly drop-in office hour with the founder</li>
+            <li>Curriculum-mapping reference for AQA, Edexcel, OCR, BTEC, IGCSE and IB</li>
+          </ul>
+        </div>
+        <div class="ps-col expect">
+          <h3>What we ask of your school</h3>
+          <ul>
+            <li>Deploy the simulation with at least one Year 12 or Year 13 class between 15 September and 15 December 2026</li>
+            <li>Forward the IT info sheet to your network team for whitelisting</li>
+            <li>Complete a 5-minute end-of-term feedback survey in December 2026</li>
+            <li>Permission for us to reference your school by category (e.g. "UK independent sixth form") — never by name without separate consent</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- 4-STEP TIMELINE -->
+  <section class="block">
+    <h2>Timeline</h2>
+    <div class="timeline">
+      <div class="tl-step">
+        <div class="tl-date">Now → 15 Sept</div>
+        <h3>Apply</h3>
+        <p>5-minute form below. Cohort accepted on a rolling basis until 20 slots are filled.</p>
+      </div>
+      <div class="tl-step">
+        <div class="tl-date">Monday 15 Sept</div>
+        <h3>Licence Day</h3>
+        <p>Confirmed pilot schools receive the working licence + 10-min Loom walkthrough + IT info sheet by email.</p>
+      </div>
+      <div class="tl-step">
+        <div class="tl-date">15 Sept → 15 Dec</div>
+        <h3>Run the pilot</h3>
+        <p>13-week window. Deploy whenever fits your scheme of work. Email support throughout.</p>
+      </div>
+      <div class="tl-step">
+        <div class="tl-date">Mid-December</div>
+        <h3>Feedback</h3>
+        <p>5-minute survey. Honest feedback shapes the Spring 2027 release.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- THE FORM -->
   <form class="form-card" name="pilot-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/pilot/thanks/">
     <input type="hidden" name="form-name" value="pilot-application">
     <p class="hidden"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
 
-    <h2>Pilot Application Form</h2>
+    <h2>Pilot Programme Application</h2>
+    <p class="form-sub">Estimated time: 5 minutes. All required fields marked with <span style="color:var(--err);">*</span>.</p>
 
-    <div class="form-row">
-      <label for="name">Full name <span class="req">*</span></label>
-      <input type="text" id="name" name="name" required>
-    </div>
+    <!-- SECTION 1: CONTACT -->
+    <div class="form-section">
+      <div class="fs-label">Section 1 · Your contact details</div>
 
-    <div class="form-row">
-      <label for="email">Email <span class="req">*</span></label>
-      <input type="email" id="email" name="email" required>
-      <div class="help">A school email if possible — helps with IT whitelisting later.</div>
-    </div>
+      <div class="form-two-col">
+        <div class="form-row">
+          <label for="name">Full name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
 
-    <div class="form-row">
-      <label for="school">School name &amp; country <span class="req">*</span></label>
-      <input type="text" id="school" name="school" placeholder="e.g. St Andrew's Sixth Form, UK" required>
-    </div>
-
-    <div class="form-row">
-      <label for="role">Your role <span class="req">*</span></label>
-      <select id="role" name="role" required>
-        <option value="">Select your role</option>
-        <option>Head of Business / Economics</option>
-        <option>Business Studies teacher</option>
-        <option>Sixth Form Lead / Director of Sixth Form</option>
-        <option>Curriculum Lead / Deputy Head</option>
-        <option>Headteacher / Principal</option>
-        <option>Other</option>
-      </select>
-    </div>
-
-    <div class="form-row">
-      <label>Exam board(s) you teach <span class="req">*</span></label>
-      <div class="checkbox-grid">
-        <label class="cb-row"><input type="checkbox" name="boards" value="AQA 7132"> AQA 7132</label>
-        <label class="cb-row"><input type="checkbox" name="boards" value="Edexcel 9BS0"> Edexcel 9BS0</label>
-        <label class="cb-row"><input type="checkbox" name="boards" value="OCR H431"> OCR H431</label>
-        <label class="cb-row"><input type="checkbox" name="boards" value="BTEC Business"> BTEC Business</label>
-        <label class="cb-row"><input type="checkbox" name="boards" value="IB Business Management"> IB Business Management</label>
-        <label class="cb-row"><input type="checkbox" name="boards" value="Cambridge IGCSE 0450"> Cambridge IGCSE 0450</label>
-        <label class="cb-row"><input type="checkbox" name="boards" value="Pearson IGCSE 4BS1"> Pearson IGCSE 4BS1</label>
-        <label class="cb-row"><input type="checkbox" name="boards" value="Other"> Other</label>
+      <div class="form-row">
+        <label for="role">Your role <span class="req">*</span></label>
+        <select id="role" name="role" required>
+          <option value="">Select your role</option>
+          <option>Head of Business / Economics</option>
+          <option>Business Studies teacher</option>
+          <option>Sixth Form Lead / Director of Sixth Form</option>
+          <option>Curriculum Lead / Deputy Head</option>
+          <option>Headteacher / Principal</option>
+          <option>Other</option>
+        </select>
       </div>
     </div>
 
-    <div class="form-row">
-      <label for="cohort">Year groups + estimated students <span class="req">*</span></label>
-      <input type="text" id="cohort" name="cohort" placeholder="e.g. Y12 + Y13, ~25 students per session" required>
-    </div>
+    <!-- SECTION 2: SCHOOL -->
+    <div class="form-section">
+      <div class="fs-label">Section 2 · About your school</div>
 
-    <div class="form-row">
-      <label>Preferred pilot start window <span class="req">*</span></label>
-      <div class="checkbox-grid">
-        <label class="radio-row"><input type="radio" name="start_window" value="Sept 2026" required> Sept 2026</label>
-        <label class="radio-row"><input type="radio" name="start_window" value="Oct 2026"> Oct 2026</label>
-        <label class="radio-row"><input type="radio" name="start_window" value="Nov 2026"> Nov 2026</label>
-        <label class="radio-row"><input type="radio" name="start_window" value="Flexible"> Flexible / discuss</label>
+      <div class="form-row">
+        <label for="school">School name &amp; country <span class="req">*</span></label>
+        <input type="text" id="school" name="school" placeholder="e.g. St Andrew's Sixth Form, UK" required>
+      </div>
+
+      <div class="form-row">
+        <label for="school_type">School type <span class="req">*</span></label>
+        <select id="school_type" name="school_type" required>
+          <option value="">Select school type</option>
+          <option>State Sixth Form</option>
+          <option>Independent School / Sixth Form</option>
+          <option>State Comprehensive (11–18)</option>
+          <option>Academy / Free School (11–18)</option>
+          <option>Sixth Form College</option>
+          <option>FE College</option>
+          <option>International School</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="dept_size">Business department size <span class="opt">(approximate, optional)</span></label>
+        <input type="text" id="dept_size" name="dept_size" placeholder="e.g. 3 teachers, ~120 Business students total">
       </div>
     </div>
 
-    <div class="form-row">
-      <label for="it_whitelist">IT setup — can your school whitelist new domains?</label>
-      <select id="it_whitelist" name="it_whitelist">
-        <option value="">Select one</option>
-        <option>Yes — we whitelist on request</option>
-        <option>No — we use a strict filter</option>
-        <option>Don't know — would need to ask IT</option>
-      </select>
-      <div class="help">If unsure, we have a 1-page IT info sheet to forward to your network team.</div>
+    <!-- SECTION 3: PILOT FIT -->
+    <div class="form-section">
+      <div class="fs-label">Section 3 · Pilot fit</div>
+
+      <div class="form-row">
+        <label>Exam board(s) you teach <span class="req">*</span></label>
+        <div class="checkbox-grid">
+          <label class="cb-row"><input type="checkbox" name="boards" value="AQA 7132"> AQA 7132</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="Edexcel 9BS0"> Edexcel 9BS0</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="OCR H431"> OCR H431</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="BTEC Business"> BTEC Business</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="IB Business Management"> IB Business Management</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="Cambridge IGCSE 0450"> Cambridge IGCSE 0450</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="Pearson IGCSE 4BS1"> Pearson IGCSE 4BS1</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="Other"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="cohort">Year groups + estimated students per session <span class="req">*</span></label>
+        <input type="text" id="cohort" name="cohort" placeholder="e.g. Y12 + Y13, ~25 students per session" required>
+      </div>
+
+      <div class="form-row">
+        <label for="it_whitelist">IT setup — can your school whitelist new domains? <span class="req">*</span></label>
+        <select id="it_whitelist" name="it_whitelist" required>
+          <option value="">Select one</option>
+          <option>Yes — we whitelist on request</option>
+          <option>No — we use a strict filter</option>
+          <option>Don't know — would need to ask IT</option>
+        </select>
+        <div class="help">If unsure, we have a 1-page IT info sheet to forward to your network team.</div>
+      </div>
     </div>
 
-    <div class="commit-box">
-      <label class="cb-row">
-        <input type="checkbox" name="pilot_day_commit" value="Yes">
-        I can join Pilot Day Tuesday 15 September 2026 at 19:00 UK time (or watch the recording afterwards)
-      </label>
+    <!-- SECTION 4: COMMITMENT -->
+    <div class="form-section">
+      <div class="fs-label">Section 4 · Programme commitment</div>
+
+      <div class="commit-box" style="margin-bottom:14px;">
+        <label class="cb-row">
+          <input type="checkbox" name="commit_deploy" value="Yes" required>
+          <span><b>I commit</b> to deploying the simulation with at least one of my classes between <b>15 September and 15 December 2026</b>, at a time that fits my scheme of work. <span class="req">*</span></span>
+        </label>
+      </div>
+
+      <div class="commit-box" style="margin-bottom:14px;">
+        <label class="cb-row">
+          <input type="checkbox" name="commit_feedback" value="Yes" required>
+          <span><b>I commit</b> to completing a 5-minute end-of-term feedback survey in <b>mid-December 2026</b>. <span class="req">*</span></span>
+        </label>
+      </div>
+
+      <div class="commit-box">
+        <label class="cb-row">
+          <input type="checkbox" name="commit_reference" value="Yes">
+          <span>I'm happy for The Business School to reference my school by <b>category only</b> (e.g. "UK Independent Sixth Form" — never by name) in pilot reporting. <span class="opt">(Optional)</span></span>
+        </label>
+      </div>
     </div>
 
-    <div class="form-row">
-      <label for="notes">Anything else we should know? <span class="opt">(optional)</span></label>
-      <textarea id="notes" name="notes" placeholder="School context, scheme-of-work fit, specific timing constraints, prior simulation experience..."></textarea>
+    <!-- SECTION 5: OPTIONAL -->
+    <div class="form-section">
+      <div class="fs-label">Section 5 · Anything else</div>
+
+      <div class="form-row">
+        <label for="referral">How did you hear about us? <span class="opt">(optional)</span></label>
+        <select id="referral" name="referral">
+          <option value="">Select one</option>
+          <option>Facebook group</option>
+          <option>LinkedIn (post or message)</option>
+          <option>Email from Sakari</option>
+          <option>TES Resources</option>
+          <option>Recommended by a colleague</option>
+          <option>Google search</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="notes">Anything else we should know? <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="notes" placeholder="School context, scheme-of-work fit, specific timing constraints, prior simulation experience..."></textarea>
+      </div>
     </div>
 
-    <button type="submit" class="submit-btn">Reserve a free pilot slot →</button>
+    <button type="submit" class="submit-btn">Submit Pilot Application →</button>
 
     <p class="privacy-note">
       Your information is used only for pilot coordination. We don't sell or share it.<br>
