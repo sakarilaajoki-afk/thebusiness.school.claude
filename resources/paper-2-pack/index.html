@@ -235,23 +235,23 @@
   /* Facts list */
   .fact-row {
     display: grid;
-    grid-template-columns: 18px 1fr;
-    gap: 6px;
-    margin-bottom: 5px;
-    font-size: 10px;
-    line-height: 1.4;
+    grid-template-columns: 20px 1fr;
+    gap: 8px;
+    margin-bottom: 7px;
+    font-size: 11px;
+    line-height: 1.5;
     color: var(--grey-900);
   }
   .fact-row .f-num {
     font-family: 'Roboto Mono', monospace;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 700;
     color: var(--ao1);
   }
   .fact-row b { color: var(--ink); }
   .fact-row .formula {
     font-family: 'Roboto Mono', monospace;
-    font-size: 9.5px;
+    font-size: 10px;
     background: var(--grey-50);
     padding: 1px 5px;
     border-radius: 3px;
@@ -261,20 +261,20 @@
   /* Stem cards */
   .stem-card {
     background: var(--grey-50);
-    padding: 6px 9px;
-    margin-bottom: 5px;
+    padding: 8px 10px;
+    margin-bottom: 7px;
     border-left: 3px solid var(--ao4);
   }
   .stem-card .stem-q {
     font-family: 'Roboto Mono', monospace;
-    font-size: 9.5px;
+    font-size: 10.5px;
     color: var(--ink);
-    line-height: 1.4;
-    margin-bottom: 2px;
+    line-height: 1.45;
+    margin-bottom: 3px;
   }
   .stem-card .stem-q b { color: var(--ao4); font-weight: 700; }
   .stem-card .stem-ao {
-    font-size: 8.5px;
+    font-size: 9px;
     font-family: 'Roboto Mono', monospace;
     color: var(--ao4);
     font-weight: 700;
@@ -310,38 +310,38 @@
     padding: 9px 12px;
   }
   .q-block .q-text {
-    font-size: 10.5px;
+    font-size: 11.5px;
     color: var(--grey-900);
-    line-height: 1.5;
-    margin-bottom: 7px;
+    line-height: 1.55;
+    margin-bottom: 9px;
   }
   .q-block .q-text b { color: var(--ink); }
   .q-block .ms-label {
-    font-size: 9px;
+    font-size: 9.5px;
     font-weight: 700;
     color: var(--grey-700);
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
   .q-block .ms-row {
-    font-size: 9.5px;
+    font-size: 10.5px;
     color: var(--grey-900);
-    margin-bottom: 3px;
-    line-height: 1.4;
+    margin-bottom: 5px;
+    line-height: 1.45;
     display: grid;
-    grid-template-columns: 32px 1fr;
-    gap: 6px;
+    grid-template-columns: 36px 1fr;
+    gap: 8px;
   }
   .q-block .ms-row .ms-ao {
     font-family: 'Roboto Mono', monospace;
-    font-size: 8.5px;
+    font-size: 9px;
     font-weight: 700;
-    padding: 1px 5px;
+    padding: 2px 5px;
     border-radius: 3px;
     color: white;
     text-align: center;
-    height: 13px;
+    height: 15px;
     line-height: 11px;
   }
   .q-block .ms-row .ms-ao.ao1 { background: var(--ao1); }
@@ -349,6 +349,28 @@
   .q-block .ms-row .ms-ao.ao3 { background: var(--ao3); }
   .q-block .ms-row .ms-ao.ao4 { background: var(--ao4); }
   .q-block .ms-row b { color: var(--ink); }
+
+  /* Pitfall box at bottom of each topic */
+  .pitfall-box {
+    margin-top: 10px;
+    border: 1.5px solid var(--ink);
+    padding: 10px 14px;
+    background: var(--grey-50);
+  }
+  .pitfall-box .pb-label {
+    font-size: 9.5px;
+    font-weight: 800;
+    color: var(--urgent);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .pitfall-box .pb-text {
+    font-size: 10.5px;
+    color: var(--grey-900);
+    line-height: 1.5;
+  }
+  .pitfall-box .pb-text b { color: var(--ink); }
 
   /* Page marks */
   .page-num { position: absolute; bottom: 6px; right: 14px; font-family: 'Roboto Mono', monospace; font-size: 9px; color: var(--grey-700); }
@@ -375,7 +397,64 @@
     .related { display: none !important; }
     .pages-wrap { margin-top: 0; padding: 0; max-width: none; }
     .page { margin: 0; border: none; width: 210mm; height: 297mm; aspect-ratio: unset; padding: 12mm 13mm 8mm; }
-    .topic-bar { margin: -12mm -13mm 9px; padding: 9px 13mm; }
+
+    /* Print: replace solid colour bars with white-bg + coloured border (saves ink) */
+    .topic-bar {
+      margin: -12mm -13mm 9px;
+      padding: 9px 13mm;
+      background: white !important;
+      color: var(--ink) !important;
+      border-bottom: 3px solid var(--ink);
+    }
+    .topic-bar.t1 { border-bottom-color: var(--t1); }
+    .topic-bar.t2 { border-bottom-color: var(--t2); }
+    .topic-bar.t3 { border-bottom-color: var(--t3); }
+    .topic-bar.t4 { border-bottom-color: var(--t4); }
+    .topic-bar.t5 { border-bottom-color: var(--t5); }
+    .topic-bar.cover { border-bottom-color: var(--ink); }
+
+    /* Cover how-to: white not dark */
+    .cover .how-to {
+      background: white !important;
+      color: var(--ink) !important;
+      border: 1.5px solid var(--ink);
+    }
+    .cover .how-to .ht-label { color: var(--urgent) !important; }
+    .cover .how-to .ht-text { color: var(--grey-900) !important; }
+    .cover .how-to .ht-text b { color: var(--ink) !important; }
+
+    /* Stem cards: keep border, drop fill */
+    .stem-card {
+      background: white !important;
+      border: 1px solid var(--grey-300);
+      border-left: 3px solid var(--ao4);
+    }
+
+    /* Question header: outline not filled */
+    .q-block .q-header {
+      background: white !important;
+      color: var(--ink) !important;
+      border-bottom: 2px solid var(--ink);
+    }
+    .q-block .q-header .qh-label { color: var(--grey-700) !important; }
+    .q-block .q-header .qh-marks { color: var(--ink) !important; font-weight: 800; }
+
+    /* AO badges: outline-only (no filled background) */
+    .q-block .ms-row .ms-ao {
+      background: white !important;
+      border: 1.5px solid currentColor;
+      padding: 1px 4px;
+    }
+    .q-block .ms-row .ms-ao.ao1 { color: var(--ao1) !important; border-color: var(--ao1); background: white !important; }
+    .q-block .ms-row .ms-ao.ao2 { color: var(--ao2) !important; border-color: var(--ao2); background: white !important; }
+    .q-block .ms-row .ms-ao.ao3 { color: var(--ao3) !important; border-color: var(--ao3); background: white !important; }
+    .q-block .ms-row .ms-ao.ao4 { color: var(--ao4) !important; border-color: var(--ao4); background: white !important; }
+
+    /* Pitfall box: keep border, drop fill */
+    .pitfall-box { background: white !important; }
+
+    /* Cover topic items: drop the grey-50 fill */
+    .cover .topic-item { background: white !important; }
   }
 </style>
 
@@ -570,6 +649,11 @@
     </div>
   </div>
 
+  <div class="pitfall-box">
+    <div class="pb-label">Common pitfall · don't lose AO4 marks</div>
+    <div class="pb-text">Students often quote an NPV figure without stating the assumed discount rate. <b>Always declare your assumption</b> ("at a discount rate of 10%...") and add a one-line sensitivity comment ("a 2% rise in cost of capital would reverse the recommendation"). That's the difference between Level 3 and Level 4 in any NPV question.</div>
+  </div>
+
   <div class="page-brand">The Business School · Paper 2 Pack · Topic 1</div>
   <div class="page-num">02 / 06</div>
 </div>
@@ -642,6 +726,11 @@
       <div class="ms-row"><span class="ms-ao ao3">AO3</span><span>Chains: ratios are <b>historic data + sector-context dependent + can be window-dressed</b>.</span></div>
       <div class="ms-row"><span class="ms-ao ao4">AO4</span><span>Calibrated judgement: ratios are <b>necessary but not sufficient</b>; must be combined with qualitative factors (management, brand, market position).</span></div>
     </div>
+  </div>
+
+  <div class="pitfall-box">
+    <div class="pb-label">Common pitfall · don't lose AO3 marks</div>
+    <div class="pb-text">Calculating a ratio correctly is AO1/AO2. <b>Comparing it to the industry benchmark or to a 3-year trend is AO3.</b> Most Level-2 answers stop at the calculation. The Level-4 chain always anchors the number to context: "a current ratio of 1.2 is below the retail-sector norm of 1.5, suggesting…".</div>
   </div>
 
   <div class="page-brand">The Business School · Paper 2 Pack · Topic 2</div>
@@ -718,6 +807,11 @@
     </div>
   </div>
 
+  <div class="pitfall-box">
+    <div class="pb-label">Common pitfall · don't confuse JIT with lean</div>
+    <div class="pb-text">JIT is <b>one tool within lean production</b>, not the same thing. Lean is the broader philosophy (eliminating the 8 wastes); JIT is a stock-control mechanism. In any Evaluate question on operations, name lean as the strategy and JIT as one tactical implementation — this AO1 precision separates Level 3 from Level 4.</div>
+  </div>
+
   <div class="page-brand">The Business School · Paper 2 Pack · Topic 3</div>
   <div class="page-num">04 / 06</div>
 </div>
@@ -792,6 +886,11 @@
     </div>
   </div>
 
+  <div class="pitfall-box">
+    <div class="pb-label">Common pitfall · don't apply one theory in isolation</div>
+    <div class="pb-text">Citing only Maslow (or only Herzberg) is Level 2. <b>Level 4 answers triangulate</b>: "Herzberg suggests pay is hygiene, not motivator — applied to this firm, X. But Maslow would caution that lower needs must be met first, so Y." Two theories in tension = stronger evaluation than one theory alone.</div>
+  </div>
+
   <div class="page-brand">The Business School · Paper 2 Pack · Topic 4</div>
   <div class="page-num">05 / 06</div>
 </div>
@@ -864,6 +963,11 @@
       <div class="ms-row"><span class="ms-ao ao3">AO3</span><span>Chains comparing <b>risk, control, learning curve, capital commitment</b>.</span></div>
       <div class="ms-row"><span class="ms-ao ao4">AO4</span><span>Calibrated judgement: <b>JV if local knowledge is critical (regulated sector, complex distribution); exporting if pure pricing/product play</b>.</span></div>
     </div>
+  </div>
+
+  <div class="pitfall-box">
+    <div class="pb-label">Common pitfall · don't write "PESTLE shows…" without applying</div>
+    <div class="pb-text">Listing PESTLE factors is AO1. <b>Level 4 always links each factor to a firm-specific impact</b>. Wrong: "The economic environment affects the business." Right: "A 3% interest-rate rise raises this firm's mortgage-backed customer base's borrowing costs by ~£40/month per £100k, which means..." External factor → firm-specific number → chain.</div>
   </div>
 
   <div class="page-brand">The Business School · Paper 2 Pack · Topic 5</div>
