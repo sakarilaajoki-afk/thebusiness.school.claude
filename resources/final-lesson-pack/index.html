@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Final Lesson Pack — Monday before A-Level Business | The Business School</title>
+<meta name="description" content="Free 4-page pack for Y13 Business teachers: a ready-to-deliver 30-minute final lesson plan + a printable Plan-on-a-Page template + a 5-minute pre-exam warmup. For Monday before A-Level Business Paper 1.">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Final Lesson Pack — Monday before A-Level Business">
+<meta property="og:description" content="A teacher's 30-min final lesson + a student's Plan-on-a-Page + a 5-min pre-exam warmup. Free, print-ready.">
+<meta property="og:url" content="https://thebusiness.school/resources/final-lesson-pack/">
+<meta property="og:site_name" content="The Business School">
+<meta property="og:image" content="https://thebusiness.school/assets/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Final Lesson Pack — A-Level Business">
+<meta name="twitter:description" content="A 30-min final lesson + Plan-on-a-Page + pre-exam warmup. Free, print-ready.">
+<meta name="twitter:image" content="https://thebusiness.school/assets/og-image.png">
+
+<link rel="canonical" href="https://thebusiness.school/resources/final-lesson-pack/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ink: #1a1a1a;
+    --grey-900: #2a2a2a;
+    --grey-700: #555;
+    --grey-500: #888;
+    --grey-300: #ccc;
+    --grey-100: #f5f5f5;
+    --grey-50: #fafafa;
+    --white: #fff;
+    --ao1: #475569;
+    --ao2: #0e7490;
+    --ao3: #4338ca;
+    --ao4: #9f1239;
+    --urgent: #b8333f;
+    --good: #15803d;
+    --calm: #1e6091;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--grey-100); color: var(--ink); line-height: 1.45; }
+  .num { font-family: 'Roboto Mono', monospace; }
+
+  .nav-bar { position: fixed; top: 0; left: 0; right: 0; background: var(--white); color: var(--ink); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; z-index: 100; border-bottom: 1px solid var(--grey-300); }
+  .nav-bar .logo a { font-weight: 800; font-size: 14px; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+  .nav-bar .nav-actions { display: flex; gap: 10px; align-items: center; }
+  .nav-bar .back-link { font-size: 13px; color: var(--grey-700); text-decoration: none; }
+  .nav-bar .back-link:hover { color: var(--ink); }
+  .nav-bar .print-btn { background: var(--ink); color: var(--white); border: 1px solid var(--ink); padding: 7px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+
+  .pages-wrap { margin-top: 56px; padding: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+  .page { background: white; margin-bottom: 18px; border: 1px solid var(--grey-300); aspect-ratio: 1 / 1.414; padding: 38px 44px 26px; position: relative; overflow: hidden; page-break-after: always; display: flex; flex-direction: column; }
+
+  /* Top urgency bar */
+  .top-bar {
+    background: var(--urgent);
+    color: white;
+    margin: -38px -44px 16px;
+    padding: 11px 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-bar .tag {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+  .top-bar .when {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  /* Generic page elements */
+  .page h1 { font-size: 32px; font-weight: 900; line-height: 1.05; letter-spacing: -0.025em; margin-bottom: 5px; }
+  .page .lead { font-size: 13px; color: var(--grey-700); font-weight: 600; margin-bottom: 14px; line-height: 1.4; }
+  .page h2 { font-size: 14px; font-weight: 800; color: var(--ink); margin: 18px 0 8px; letter-spacing: 0.03em; text-transform: uppercase; padding-bottom: 5px; border-bottom: 2px solid var(--ink); }
+  .page h3 { font-size: 12px; font-weight: 800; color: var(--ink); margin: 12px 0 5px; letter-spacing: 0.04em; text-transform: uppercase; }
+  .page p { font-size: 11.5px; color: var(--grey-900); line-height: 1.55; margin-bottom: 7px; }
+  .page p b { color: var(--ink); }
+
+  /* Cover page */
+  .cover { display: flex; flex-direction: column; }
+  .cover .cover-title-block { padding: 8px 0 20px; border-bottom: 2px solid var(--ink); }
+  .cover .eyebrow { color: var(--urgent); font-size: 11px; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 8px; }
+  .cover h1.big {
+    font-size: 52px; font-weight: 900; line-height: 0.95;
+    letter-spacing: -0.03em; margin-bottom: 14px;
+  }
+  .cover .cover-sub {
+    font-size: 16px; font-weight: 600; color: var(--ink);
+    line-height: 1.35; max-width: 540px;
+  }
+  .cover .pack-contents {
+    margin-top: 24px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .cover .pc-item {
+    border: 1px solid var(--grey-300);
+    border-left: 4px solid var(--calm);
+    padding: 12px 14px;
+  }
+  .cover .pc-item .pc-num {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9.5px; font-weight: 700; color: var(--grey-700);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px;
+  }
+  .cover .pc-item .pc-title {
+    font-size: 13px; font-weight: 800; color: var(--ink); margin-bottom: 3px;
+  }
+  .cover .pc-item .pc-desc {
+    font-size: 10.5px; color: var(--grey-700); line-height: 1.4;
+  }
+  .cover .pc-item.teacher { border-left-color: var(--ao4); }
+  .cover .pc-item.student-1 { border-left-color: var(--ao3); }
+  .cover .pc-item.student-2 { border-left-color: var(--ao2); }
+  .cover .pc-item.cover-card { border-left-color: var(--grey-700); }
+
+  .cover .footnote-block {
+    margin-top: auto; padding-top: 18px; border-top: 1px solid var(--grey-300);
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+  .cover .fb-left { font-size: 10px; color: var(--grey-700); line-height: 1.5; max-width: 440px; }
+  .cover .fb-left b { color: var(--ink); }
+  .cover .fb-right { text-align: right; font-size: 10.5px; color: var(--grey-700); line-height: 1.4; }
+  .cover .fb-right b { color: var(--ink); font-weight: 800; }
+
+  /* Lesson minute-block */
+  .minute-block {
+    border: 1px solid var(--grey-300);
+    margin-bottom: 10px;
+    background: white;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+  }
+  .minute-block .mb-time {
+    background: var(--ink); color: white;
+    padding: 10px 8px; text-align: center;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .minute-block .mb-time .t-range {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 11px; font-weight: 700;
+  }
+  .minute-block .mb-time .t-label {
+    font-size: 8.5px; font-weight: 700; opacity: 0.75;
+    letter-spacing: 0.1em; text-transform: uppercase; margin-top: 2px;
+  }
+  .minute-block .mb-body {
+    padding: 10px 14px;
+  }
+  .minute-block .mb-body h4 {
+    font-size: 12.5px; font-weight: 800; color: var(--ink);
+    margin-bottom: 3px;
+  }
+  .minute-block .mb-body p {
+    font-size: 10.5px; line-height: 1.45; color: var(--grey-900);
+    margin-bottom: 4px;
+  }
+  .minute-block .mb-body .say {
+    font-size: 10.5px; font-style: italic; color: var(--calm);
+    border-left: 2px solid var(--calm);
+    padding-left: 8px; margin: 4px 0;
+  }
+  .minute-block .mb-body .say::before {
+    content: '"';
+  }
+  .minute-block .mb-body .say::after {
+    content: '"';
+  }
+  .minute-block .mb-body .qrecall {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px; color: var(--ink);
+    background: var(--grey-50);
+    padding: 5px 8px;
+    margin: 3px 0;
+    border-left: 2px solid var(--ao1);
+  }
+  .minute-block.color-1 .mb-time { background: var(--calm); }
+  .minute-block.color-2 .mb-time { background: var(--ao1); }
+  .minute-block.color-3 .mb-time { background: var(--ao3); }
+  .minute-block.color-4 .mb-time { background: var(--ao4); }
+  .minute-block.color-5 .mb-time { background: var(--good); }
+
+  /* Plan-on-a-Page Template (student handout) */
+  .plan-template {
+    border: 2px solid var(--ink);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .plan-template .plan-header {
+    background: var(--ink); color: white;
+    padding: 9px 14px;
+    display: grid; grid-template-columns: 1fr auto auto; gap: 12px;
+    align-items: center;
+    font-size: 11px;
+  }
+  .plan-template .plan-header .ph-label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9.5px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; opacity: 0.7;
+  }
+  .plan-template .plan-header .ph-meta {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px; font-weight: 700;
+  }
+  .plan-template .plan-body {
+    padding: 12px 16px;
+    display: flex; flex-direction: column;
+    flex-grow: 1;
+  }
+  .plan-template .q-line {
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px dashed var(--grey-300);
+  }
+  .plan-template .q-line .q-label {
+    font-size: 10.5px; font-weight: 800; color: var(--ink);
+    margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .plan-template .q-line .q-fill {
+    height: 18px; border-bottom: 1px solid var(--grey-700);
+  }
+  .plan-template .section {
+    margin-bottom: 12px;
+    border: 1px solid var(--grey-300);
+    padding: 9px 12px;
+  }
+  .plan-template .section .sec-head {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 6px;
+  }
+  .plan-template .section .sec-title {
+    font-size: 11px; font-weight: 800; color: var(--ink);
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+  .plan-template .section .sec-time {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9.5px; font-weight: 700; color: var(--grey-700);
+  }
+  .plan-template .section.intro { border-left: 3px solid var(--ao1); }
+  .plan-template .section.intro .sec-title { color: var(--ao1); }
+  .plan-template .section.case-for { border-left: 3px solid var(--ao2); }
+  .plan-template .section.case-for .sec-title { color: var(--ao2); }
+  .plan-template .section.case-against { border-left: 3px solid var(--ao3); }
+  .plan-template .section.case-against .sec-title { color: var(--ao3); }
+  .plan-template .section.judgement { border-left: 3px solid var(--ao4); }
+  .plan-template .section.judgement .sec-title { color: var(--ao4); }
+  .plan-template .section .prompt-row {
+    font-size: 9.5px; color: var(--grey-700);
+    margin-bottom: 2px; line-height: 1.35;
+  }
+  .plan-template .section .write-line {
+    height: 13px; border-bottom: 1px solid var(--grey-300);
+    margin-bottom: 3px;
+  }
+  .plan-template .quick-check {
+    background: var(--grey-50);
+    border: 1px solid var(--grey-300);
+    padding: 9px 12px;
+    margin-top: auto;
+  }
+  .plan-template .quick-check h4 {
+    font-size: 11px; font-weight: 800; color: var(--ink);
+    margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .plan-template .quick-check .check-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 4px 12px;
+  }
+  .plan-template .quick-check .check-row {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 9.5px; color: var(--grey-900);
+  }
+  .plan-template .quick-check .box {
+    width: 11px; height: 11px;
+    border: 1.5px solid var(--ink);
+    flex-shrink: 0;
+  }
+
+  /* Warmup page (final, take-home) */
+  .warmup-grid {
+    display: grid; grid-template-rows: auto 1fr 1fr 1fr auto;
+    gap: 12px; flex-grow: 1;
+  }
+  .warmup-intro {
+    padding: 10px 14px;
+    background: var(--calm); color: white;
+    border-radius: 4px;
+  }
+  .warmup-intro .wi-tag {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9.5px; font-weight: 700; letter-spacing: 0.14em;
+    text-transform: uppercase; opacity: 0.8; margin-bottom: 3px;
+  }
+  .warmup-intro .wi-text {
+    font-size: 12px; font-weight: 600;
+  }
+  .warmup-block {
+    border: 1px solid var(--grey-300);
+    padding: 12px 14px;
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 14px;
+    align-items: center;
+  }
+  .warmup-block .wb-num {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 32px; font-weight: 700; color: var(--ink);
+    line-height: 1;
+    text-align: center;
+  }
+  .warmup-block .wb-num .wb-unit {
+    display: block; font-size: 10px; color: var(--grey-700);
+    letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px;
+  }
+  .warmup-block .wb-body h4 {
+    font-size: 13px; font-weight: 800; color: var(--ink);
+    margin-bottom: 5px;
+  }
+  .warmup-block .wb-body p {
+    font-size: 10.5px; color: var(--grey-900); line-height: 1.45;
+    margin-bottom: 3px;
+  }
+  .warmup-block .wb-body .prompt-item {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px; color: var(--ink);
+    background: var(--grey-50);
+    padding: 3px 7px; margin: 2px 0;
+    border-left: 2px solid var(--ao1);
+  }
+  .warmup-block.breathe { border-left: 4px solid var(--calm); }
+  .warmup-block.recall { border-left: 4px solid var(--ao1); }
+  .warmup-block.anchor { border-left: 4px solid var(--ao4); }
+  .warmup-block .breathe-box {
+    display: inline-block; width: 32px; height: 32px;
+    border: 2px solid var(--calm);
+    margin-right: 6px; vertical-align: middle;
+  }
+  .warmup-block .breathe-instr {
+    display: flex; gap: 14px; align-items: center;
+    margin-top: 4px; flex-wrap: wrap;
+  }
+  .warmup-block .breathe-instr span {
+    font-size: 10px; color: var(--grey-900);
+  }
+  .warmup-block .breathe-instr span b { color: var(--calm); }
+  .warmup-final-msg {
+    background: var(--ink); color: white;
+    padding: 12px 16px; text-align: center;
+    font-size: 14px; font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  /* Page brand */
+  .page-num { position: absolute; bottom: 7px; right: 16px; font-family: 'Roboto Mono', monospace; font-size: 9px; color: var(--grey-700); }
+  .page-brand { position: absolute; bottom: 7px; left: 16px; font-size: 9px; color: var(--grey-700); font-weight: 500; }
+
+  /* Related */
+  .related {
+    background: white;
+    padding: 22px 28px;
+    border: 1px solid var(--grey-300);
+    margin-bottom: 18px;
+  }
+  .related h3 { font-size: 13px; font-weight: 800; color: var(--ink); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.06em; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+  .related .related-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .related .related-card { border: 1px solid var(--grey-300); padding: 10px 12px; text-decoration: none; color: inherit; transition: border-color 0.15s; }
+  .related .related-card:hover { border-color: var(--ink); }
+  .related .related-card .rc-tag { font-family: 'Roboto Mono', monospace; font-size: 8.5px; color: var(--grey-700); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; }
+  .related .related-card .rc-title { font-size: 12px; font-weight: 800; color: var(--ink); line-height: 1.25; }
+
+  @page { size: A4 portrait; margin: 0; }
+  @media print {
+    body { background: white; }
+    .nav-bar { display: none !important; }
+    .related { display: none !important; }
+    .pages-wrap { margin-top: 0; padding: 0; max-width: none; }
+    .page { margin: 0; border: none; page-break-after: always; width: 210mm; height: 297mm; aspect-ratio: unset; padding: 14mm 14mm 9mm; }
+    .top-bar { margin: -14mm -14mm 10px; padding: 9px 14mm; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "The Business School", "item": "https://thebusiness.school/" },
+    { "@type": "ListItem", "position": 2, "name": "Free Resources", "item": "https://thebusiness.school/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "The Final Lesson Pack", "item": "https://thebusiness.school/resources/final-lesson-pack/" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DigitalDocument",
+  "name": "The Final Lesson Pack — Monday before A-Level Business",
+  "description": "Free 4-page teacher pack: a ready-to-deliver 30-minute final lesson plan, a printable Plan-on-a-Page student handout, and a 5-minute pre-exam warmup. For UK A-Level Business teachers in the final lesson before the exam.",
+  "creator": { "@type": "Organization", "name": "The Business School", "url": "https://thebusiness.school/" },
+  "url": "https://thebusiness.school/resources/final-lesson-pack/",
+  "datePublished": "2026-05-25",
+  "inLanguage": "en-GB",
+  "audience": { "@type": "EducationalAudience", "educationalRole": "teacher" },
+  "learningResourceType": "Lesson Plan",
+  "educationalLevel": "Year 13",
+  "educationalAlignment": [
+    { "@type": "AlignmentObject", "alignmentType": "teaches", "targetName": "AQA A-Level Business 7132" },
+    { "@type": "AlignmentObject", "alignmentType": "teaches", "targetName": "Edexcel A-Level Business 9BS0" },
+    { "@type": "AlignmentObject", "alignmentType": "teaches", "targetName": "OCR A-Level Business H431" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="nav-bar">
+  <div class="logo"><a href="/">The Business School</a></div>
+  <div class="nav-actions">
+    <a href="/resources/" class="back-link">← All resources</a>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+</div>
+
+<div class="pages-wrap">
+
+<!-- PAGE 1 — COVER -->
+<div class="page cover">
+  <div class="top-bar">
+    <div class="tag">Final-Lesson Edition · Y13 Business</div>
+    <div class="when">For tomorrow's Paper 1 · 26 May 2026</div>
+  </div>
+
+  <div class="cover-title-block">
+    <div class="eyebrow">The Final Lesson Pack</div>
+    <h1 class="big">For the lesson<br>before the exam.</h1>
+    <div class="cover-sub">A teacher's 30-minute lesson plan, a printable student handout, and a take-home pre-exam warmup — all in 4 pages, ready to print.</div>
+  </div>
+
+  <div class="pack-contents">
+    <div class="pc-item cover-card">
+      <div class="pc-num">Page 1 · This page</div>
+      <div class="pc-title">Cover &amp; pack overview</div>
+      <div class="pc-desc">What's inside, who it's for, how to use it.</div>
+    </div>
+    <div class="pc-item teacher">
+      <div class="pc-num">Page 2 · For the teacher</div>
+      <div class="pc-title">The 30-Minute Final Lesson</div>
+      <div class="pc-desc">Minute-by-minute facilitator plan. Includes the exact words to say and 5 ready-to-use recall questions. Print one copy for yourself.</div>
+    </div>
+    <div class="pc-item student-1">
+      <div class="pc-num">Page 3 · For the student</div>
+      <div class="pc-title">The Plan-on-a-Page</div>
+      <div class="pc-desc">A printable, fill-in template for any 12-24 mark Evaluate / Discuss / To-What-Extent question. Hand out one per student.</div>
+    </div>
+    <div class="pc-item student-2">
+      <div class="pc-num">Page 4 · For the student (take-home)</div>
+      <div class="pc-title">The 5-Minute Pre-Exam Warmup</div>
+      <div class="pc-desc">A single sheet students can do in their seat 5 minutes before the paper starts. Breathing · Recall · Anchor.</div>
+    </div>
+  </div>
+
+  <div class="footnote-block">
+    <div class="fb-left">
+      <b>Designed for:</b> UK Year 13 A-Level Business teachers in the final lesson before Paper 1. <b>Boards:</b> AQA 7132 · Edexcel 9BS0 · OCR H431. <b>Format:</b> A4 portrait, 4 pages, B&amp;W printable. <b>Permission:</b> free to use, free to share with your department.
+    </div>
+    <div class="fb-right">
+      <b>The Business School</b><br>thebusiness.school<br>25 May 2026
+    </div>
+  </div>
+
+  <div class="page-brand">The Business School · The Final Lesson Pack</div>
+  <div class="page-num">01 / 04</div>
+</div>
+
+<!-- PAGE 2 — THE 30-MIN FINAL LESSON (TEACHER) -->
+<div class="page">
+  <div class="top-bar">
+    <div class="tag">Page 2 · For the teacher</div>
+    <div class="when">Run this in your final 30-min slot</div>
+  </div>
+
+  <h1 style="font-size: 24px; margin-bottom: 4px;">The 30-Minute Final Lesson</h1>
+  <p class="lead">No new content. Just calm, structured re-priming. Print one copy of this page for yourself before class.</p>
+
+  <div class="minute-block color-1">
+    <div class="mb-time">
+      <div class="t-range">0–5</div>
+      <div class="t-label">min</div>
+    </div>
+    <div class="mb-body">
+      <h4>1 · Calm + refocus</h4>
+      <p>Open the lesson with low-pressure framing. Set the tone: this is not a learning session.</p>
+      <div class="say">We're not learning anything new today. Today is about getting your head right for tomorrow. By the end of this lesson, you will have a clear plan and you will know exactly what walking-in looks like.</div>
+    </div>
+  </div>
+
+  <div class="minute-block color-2">
+    <div class="mb-time">
+      <div class="t-range">5–10</div>
+      <div class="t-label">min</div>
+    </div>
+    <div class="mb-body">
+      <h4>2 · Recall sprint — 5 questions, no marks</h4>
+      <p>Quick-fire. No writing. Students call out answers. Goal: prove to themselves they know more than they fear.</p>
+      <div class="qrecall">Q1. Name the formula for gross profit margin.</div>
+      <div class="qrecall">Q2. What does AO4 require above AO3?</div>
+      <div class="qrecall">Q3. Why does "in conclusion, X is good" lose marks?</div>
+      <div class="qrecall">Q4. Give one example of a stakeholder a Business answer should name.</div>
+      <div class="qrecall">Q5. What's the difference between "Analyse" and "Evaluate" as command words?</div>
+    </div>
+  </div>
+
+  <div class="minute-block color-3">
+    <div class="mb-time">
+      <div class="t-range">10–20</div>
+      <div class="t-label">min</div>
+    </div>
+    <div class="mb-body">
+      <h4>3 · Model the plan, not the answer</h4>
+      <p>Project a sample 16-mark Evaluate question on the board. Spend 10 minutes <b>planning it together</b> — not writing it. Use the Plan-on-a-Page structure (Intro · Case For · Case Against · Judgement).</p>
+      <div class="say">Today we plan. Tomorrow you write. The plan is the answer — the writing is just the typing-out part.</div>
+      <p style="margin-top: 6px;"><b>Example prompt you can use:</b> "Evaluate the decision of a UK fast-fashion retailer to expand into US markets in 2026."</p>
+    </div>
+  </div>
+
+  <div class="minute-block color-4">
+    <div class="mb-time">
+      <div class="t-range">20–25</div>
+      <div class="t-label">min</div>
+    </div>
+    <div class="mb-body">
+      <h4>4 · Hand out the Plan-on-a-Page (page 3)</h4>
+      <p>One per student. Have them try planning a second sample question solo, in silence, for 5 minutes. Don't intervene. Don't help. Let them feel the structure.</p>
+      <p style="margin-top: 4px;"><b>Second prompt:</b> "To what extent should a UK SME prioritise cash flow over profit in its first three years of trading?"</p>
+    </div>
+  </div>
+
+  <div class="minute-block color-5">
+    <div class="mb-time">
+      <div class="t-range">25–30</div>
+      <div class="t-label">min</div>
+    </div>
+    <div class="mb-body">
+      <h4>5 · Wind down + the take-home (page 4)</h4>
+      <p>Hand out the Pre-Exam Warmup (page 4). Final 60 seconds — say three things, slowly:</p>
+      <div class="say">Trust your preparation. The plan is the answer. Walk in calm.</div>
+      <p style="margin-top: 4px; font-size: 10.5px; color: var(--grey-700);">Then dismiss. Don't drag it out.</p>
+    </div>
+  </div>
+
+  <div class="page-brand">The Business School · The Final Lesson Pack</div>
+  <div class="page-num">02 / 04</div>
+</div>
+
+<!-- PAGE 3 — PLAN-ON-A-PAGE (STUDENT HANDOUT) -->
+<div class="page">
+  <div class="top-bar">
+    <div class="tag">Page 3 · For the student (handout)</div>
+    <div class="when">Use this in tomorrow's exam · 18–22 minutes per question</div>
+  </div>
+
+  <h1 style="font-size: 22px; margin-bottom: 4px;">The Plan-on-a-Page</h1>
+  <p class="lead">For any 12–24 mark Evaluate / Discuss / To-What-Extent question. Spend 2 minutes filling this in. The plan is the answer.</p>
+
+  <div class="plan-template">
+
+    <div class="plan-header">
+      <div>
+        <div class="ph-label">Question</div>
+      </div>
+      <div>
+        <div class="ph-label">Command word</div>
+        <div class="ph-meta">Evaluate / Assess / Discuss</div>
+      </div>
+      <div>
+        <div class="ph-label">Marks · Time</div>
+        <div class="ph-meta">__ / __ · __ min</div>
+      </div>
+    </div>
+
+    <div class="plan-body">
+
+      <div class="q-line">
+        <div class="q-label">Question (in your own words)</div>
+        <div class="q-fill"></div>
+        <div class="q-fill"></div>
+      </div>
+
+      <div class="section intro">
+        <div class="sec-head">
+          <div class="sec-title">Introduction</div>
+          <div class="sec-time">40 sec · 1 sentence</div>
+        </div>
+        <div class="prompt-row"><b>The question asks me to…</b> + my initial position is…</div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="section case-for">
+        <div class="sec-head">
+          <div class="sec-title">Case FOR</div>
+          <div class="sec-time">6 min · 1 paragraph</div>
+        </div>
+        <div class="prompt-row"><b>Main argument · case-specific evidence · "which means →" chain</b></div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="section case-against">
+        <div class="sec-head">
+          <div class="sec-title">Case AGAINST</div>
+          <div class="sec-time">6 min · 1 paragraph</div>
+        </div>
+        <div class="prompt-row"><b>Counter-argument · case-specific evidence · "which means →" chain</b></div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="section judgement">
+        <div class="sec-head">
+          <div class="sec-title">Judgement (AO4)</div>
+          <div class="sec-time">5 min · 1 paragraph</div>
+        </div>
+        <div class="prompt-row"><b>On balance… only if… the most decisive factor is…</b></div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+        <div class="write-line"></div>
+      </div>
+
+      <div class="quick-check">
+        <h4>60-second check before moving on</h4>
+        <div class="check-grid">
+          <div class="check-row"><span class="box"></span>Named the business 3+ times</div>
+          <div class="check-row"><span class="box"></span>Used at least one number / figure</div>
+          <div class="check-row"><span class="box"></span>Judgement COMMITS (not "good or bad")</div>
+          <div class="check-row"><span class="box"></span>Question number written above answer</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="page-brand">The Business School · The Final Lesson Pack</div>
+  <div class="page-num">03 / 04</div>
+</div>
+
+<!-- PAGE 4 — PRE-EXAM WARMUP (STUDENT TAKE-HOME) -->
+<div class="page">
+  <div class="top-bar">
+    <div class="tag">Page 4 · For the student (take-home)</div>
+    <div class="when">Do this in your seat · 5 minutes before the paper starts</div>
+  </div>
+
+  <h1 style="font-size: 22px; margin-bottom: 4px;">The 5-Minute Pre-Exam Warmup</h1>
+  <p class="lead">Three blocks. Five minutes total. Do this in your exam seat before the paper is turned over.</p>
+
+  <div class="warmup-grid">
+
+    <div class="warmup-intro">
+      <div class="wi-tag">How to use</div>
+      <div class="wi-text">Sit down. Pen ready. Eyes on the desk. Work through Block 1 → Block 2 → Block 3, in order. By the end you will be physically calm, mentally sharp, and ready.</div>
+    </div>
+
+    <div class="warmup-block breathe">
+      <div class="wb-num">1<span class="wb-unit">min</span></div>
+      <div class="wb-body">
+        <h4>Breathe — box breathing</h4>
+        <p>Four equal counts. Repeat 4 times. Your heart rate drops within 60 seconds.</p>
+        <div class="breathe-instr">
+          <span><b>4 in</b> · breathe in through nose</span>
+          <span><b>4 hold</b> · pause</span>
+          <span><b>4 out</b> · breathe out through mouth</span>
+          <span><b>4 hold</b> · pause</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="warmup-block recall">
+      <div class="wb-num">3<span class="wb-unit">min</span></div>
+      <div class="wb-body">
+        <h4>Recall — answer these in your head</h4>
+        <p>Don't write. Just think. Confirm you know it.</p>
+        <div class="prompt-item">1. Name 3 stakeholders you might mention in any answer.</div>
+        <div class="prompt-item">2. What does "AO4" want above all else? <span style="color: var(--grey-700);">(judgement)</span></div>
+        <div class="prompt-item">3. Write the formula for break-even units, in your head.</div>
+        <div class="prompt-item">4. What does "On balance, … only if …" do for a paragraph? <span style="color: var(--grey-700);">(commits)</span></div>
+        <div class="prompt-item">5. Why do you NEVER write "in conclusion, X is good"? <span style="color: var(--grey-700);">(no reasoning = capped)</span></div>
+      </div>
+    </div>
+
+    <div class="warmup-block anchor">
+      <div class="wb-num">1<span class="wb-unit">min</span></div>
+      <div class="wb-body">
+        <h4>Anchor — three things to remember</h4>
+        <p>Say these to yourself, in order. Believe them.</p>
+        <div class="prompt-item" style="border-left-color: var(--ao4);">1. <b>The plan is the answer.</b> Plan for 2 min, then write.</div>
+        <div class="prompt-item" style="border-left-color: var(--ao4);">2. <b>Name the business. Use a number. Commit.</b></div>
+        <div class="prompt-item" style="border-left-color: var(--ao4);">3. <b>I know more than I fear.</b></div>
+      </div>
+    </div>
+
+    <div class="warmup-final-msg">
+      Pen down. Eyes up. You're ready.
+    </div>
+
+  </div>
+
+  <div class="page-brand">The Business School · The Final Lesson Pack</div>
+  <div class="page-num">04 / 04</div>
+</div>
+
+<!-- RELATED -->
+<div class="related">
+  <h3>Pair this with</h3>
+  <div class="related-cards">
+    <a class="related-card" href="/resources/tuesday-morning-sheet/">
+      <div class="rc-tag">1-page A4</div>
+      <div class="rc-title">The Tuesday Morning Sheet — final-week cramming reference</div>
+    </a>
+    <a class="related-card" href="/resources/examiners-eye/">
+      <div class="rc-tag">8-page deep dive</div>
+      <div class="rc-title">The Examiner's Eye — Level 2 vs Level 4 answer, annotated</div>
+    </a>
+    <a class="related-card" href="/resources/command-words-decoded/">
+      <div class="rc-tag">Exam technique</div>
+      <div class="rc-title">Command Words Decoded — full 8-page reference</div>
+    </a>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
