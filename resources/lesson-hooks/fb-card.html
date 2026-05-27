@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<meta name="robots" content="noindex">
+<title>20 Lesson Hooks — FB Card 1200×630</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ink: #0a2540;
+    --navy: #0a2540;
+    --navy-light: #16335a;
+    --gold: #f4c542;
+    --burgundy: #9f1239;
+    --teal: #0e7490;
+    --indigo: #4338ca;
+    --green: #15803d;
+    --white: #ffffff;
+    --grey-light: rgba(255,255,255,0.7);
+  }
+  body {
+    background: #333;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    min-height: 100vh;
+  }
+  .instructions {
+    background: white;
+    color: #1a1a1a;
+    padding: 20px 28px;
+    border-radius: 8px;
+    max-width: 1200px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .instructions h2 { font-size: 16px; margin-bottom: 8px; color: var(--navy); }
+  .instructions ol { margin-left: 22px; }
+  .instructions li { margin-bottom: 4px; }
+  .instructions b { color: var(--navy); }
+  .instructions code {
+    background: #eee; padding: 2px 6px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12.5px;
+    border-radius: 3px;
+  }
+
+  .card-wrap {
+    width: 1200px;
+    height: 630px;
+    background: var(--navy);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 64px 56px;
+  }
+  /* Diagonal accent stripe */
+  .card-wrap::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 280px; height: 280px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    opacity: 0.15;
+  }
+  .card-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 6px;
+    background: linear-gradient(90deg,
+      var(--burgundy) 0%, var(--burgundy) 25%,
+      var(--teal) 25%, var(--teal) 50%,
+      var(--indigo) 50%, var(--indigo) 75%,
+      var(--green) 75%, var(--green) 100%);
+  }
+
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 22px;
+    z-index: 2;
+    position: relative;
+  }
+  .top-row .brand {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .top-row .brand .gold { color: var(--gold); }
+  .top-row .free-pill {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border-radius: 2px;
+  }
+
+  .eyebrow {
+    color: var(--gold);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    z-index: 2;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 84px;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.035em;
+    margin-bottom: 14px;
+    z-index: 2;
+    position: relative;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--grey-light);
+    line-height: 1.35;
+    max-width: 880px;
+    margin-bottom: 24px;
+    z-index: 2;
+    position: relative;
+  }
+  .subtitle b { color: var(--white); }
+
+  .firms-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+    z-index: 2;
+    position: relative;
+  }
+  .firm-pill {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--white);
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 2px;
+  }
+  .firm-pill.gold {
+    background: rgba(244,197,66,0.15);
+    border-color: rgba(244,197,66,0.4);
+    color: var(--gold);
+  }
+
+  .stats {
+    display: flex;
+    gap: 48px;
+    z-index: 2;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 18px;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+  .stat .num {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .stat .label {
+    font-size: 12px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-top: 6px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+    position: relative;
+  }
+  .footer-row .left {
+    font-size: 12px;
+    color: var(--grey-light);
+    line-height: 1.5;
+  }
+  .footer-row .left b { color: var(--white); }
+  .footer-row .url {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    color: var(--gold);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  <h2>FB / LinkedIn cover image — how to use</h2>
+  <ol>
+    <li><b>Maximize this browser window</b> — the card below is exactly 1200×630 px (Facebook + LinkedIn recommended size).</li>
+    <li><b>Press <code>Win + Shift + S</code></b> (Windows) or <code>Cmd + Shift + 4</code> (Mac) — opens the snipping tool.</li>
+    <li><b>Drag a selection</b> around the dark card below (just the card, not this instruction block).</li>
+    <li><b>Copy the screenshot</b> (auto-copied on Windows) or save it. Paste / upload to your Facebook post or LinkedIn post.</li>
+    <li>Card already has title, subtitle, key UK firm anchors, stats, and URL — no need to add text in FB.</li>
+  </ol>
+</div>
+
+<div class="card-wrap">
+
+  <div class="top-row">
+    <div class="brand">The <span class="gold">Business School</span></div>
+    <div class="free-pill">Free · 0 prep · A4 print-ready</div>
+  </div>
+
+  <div class="eyebrow">A-Level Business · Teacher Resource · Y12 + Y13</div>
+
+  <h1>20 Five-Minute<br>Lesson Hooks.</h1>
+
+  <div class="subtitle">
+    <b>Classroom-ready openers</b> across Marketing, Operations &amp; HRM, Finance, and Strategy &amp; Global Business. Every hook: real UK business · 5-min activity · spec link · zero prep.
+  </div>
+
+  <div class="firms-row">
+    <span class="firm-pill">Costa</span>
+    <span class="firm-pill">Boohoo</span>
+    <span class="firm-pill">Greggs</span>
+    <span class="firm-pill">Pret</span>
+    <span class="firm-pill">TikTok</span>
+    <span class="firm-pill">Vinted</span>
+    <span class="firm-pill">Tesco</span>
+    <span class="firm-pill">JLR</span>
+    <span class="firm-pill">Royal Mail</span>
+    <span class="firm-pill">Wetherspoons</span>
+    <span class="firm-pill">Wilko</span>
+    <span class="firm-pill">Tesla</span>
+    <span class="firm-pill">Apple</span>
+    <span class="firm-pill">Starbucks</span>
+    <span class="firm-pill">Aldi</span>
+    <span class="firm-pill">Thames Water</span>
+    <span class="firm-pill gold">+ 4 more</span>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">20</div><div class="label">Lesson hooks</div></div>
+    <div class="stat"><div class="num">5</div><div class="label">Min per hook</div></div>
+    <div class="stat"><div class="num">20</div><div class="label">Real UK firms</div></div>
+    <div class="stat"><div class="num">4</div><div class="label">Themes</div></div>
+    <div class="stat"><div class="num">0</div><div class="label">Prep needed</div></div>
+  </div>
+
+  <div class="footer-row">
+    <div class="left">
+      <b>AQA 7132 · Edexcel 9BS0 · OCR H431</b> — every hook cross-referenced.<br>
+      Built in Finland · Engineered with our international studio · ICO ZC133810
+    </div>
+    <div class="url">thebusiness.school/resources/lesson-hooks</div>
+  </div>
+
+</div>
+
+</body>
+</html>
