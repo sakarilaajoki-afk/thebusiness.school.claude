@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Knowledge Organisers — A-Level Business | The Business School</title>
+<meta name="description" content="Free 6-page A-Level Business pack: five single-page Knowledge Organisers covering Marketing, Operations, Finance, HRM, and Strategy &amp; Global Business. Tier 3 vocab, formulas, real UK firms. For AQA 7132, Edexcel 9BS0 and OCR H431.">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="5 Knowledge Organisers — A-Level Business">
+<meta property="og:description" content="One-page Knowledge Organisers for Marketing, Operations, Finance, HRM, and Strategy. Free, print-ready.">
+<meta property="og:url" content="https://thebusiness.school/resources/knowledge-organisers/">
+<meta property="og:site_name" content="The Business School">
+<meta property="og:image" content="https://thebusiness.school/assets/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="5 Knowledge Organisers — A-Level Business">
+<meta name="twitter:description" content="One-page reference per theme. Free, A4 print-ready.">
+<meta name="twitter:image" content="https://thebusiness.school/assets/og-image.png">
+
+<link rel="canonical" href="https://thebusiness.school/resources/knowledge-organisers/">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ink: #0d0d0d;
+    --grey-900: #2a2a2a;
+    --grey-700: #555;
+    --grey-500: #888;
+    --grey-300: #ccc;
+    --grey-100: #f5f5f5;
+    --grey-50: #fafafa;
+    --white: #fff;
+    --good: #15803d;
+    --calm: #1e6091;
+    --urgent: #b8333f;
+    --t1: #b8333f;
+    --t2: #0e7490;
+    --t3: #4338ca;
+    --t4: #15803d;
+    --t5: #b45309;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--grey-100); color: var(--ink); line-height: 1.45; }
+  .num { font-family: 'Roboto Mono', monospace; }
+
+  .nav-bar { position: fixed; top: 0; left: 0; right: 0; background: var(--white); color: var(--ink); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; z-index: 100; border-bottom: 1px solid var(--grey-300); }
+  .nav-bar .logo a { font-weight: 800; font-size: 14px; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+  .nav-bar .nav-actions { display: flex; gap: 10px; align-items: center; }
+  .nav-bar .back-link { font-size: 13px; color: var(--grey-700); text-decoration: none; }
+  .nav-bar .print-btn { background: var(--ink); color: var(--white); border: 1px solid var(--ink); padding: 7px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+
+  .pages-wrap { margin-top: 56px; padding: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+  .page { background: white; margin-bottom: 18px; border: 1px solid var(--grey-300); aspect-ratio: 1 / 1.414; position: relative; overflow: hidden; padding: 28px 32px 20px; display: flex; flex-direction: column; }
+
+  .topic-bar {
+    margin: -28px -32px 12px;
+    padding: 10px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  .topic-bar.t1 { background: var(--t1); }
+  .topic-bar.t2 { background: var(--t2); }
+  .topic-bar.t3 { background: var(--t3); }
+  .topic-bar.t4 { background: var(--t4); }
+  .topic-bar.t5 { background: var(--t5); }
+  .topic-bar.cover { background: var(--ink); }
+  .topic-bar .tag {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .topic-bar .when {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  /* Cover */
+  .cover h1.big {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.03em;
+    margin-bottom: 12px;
+  }
+  .cover .cover-sub {
+    font-size: 15px;
+    color: var(--grey-700);
+    line-height: 1.45;
+    max-width: 620px;
+    margin-bottom: 18px;
+  }
+  .cover .cover-sub b { color: var(--ink); }
+  .cover .preview-row {
+    display: flex; gap: 18px;
+    padding: 14px 0;
+    border-top: 1px solid var(--grey-300);
+    border-bottom: 1px solid var(--grey-300);
+    margin-bottom: 18px;
+  }
+  .cover .preview-stat { flex: 1; }
+  .cover .preview-stat .ps-num {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .cover .preview-stat .ps-label {
+    font-size: 9.5px;
+    color: var(--grey-700);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 6px;
+    font-weight: 700;
+  }
+  .cover .topic-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .cover .topic-item {
+    border-left: 4px solid var(--grey-700);
+    padding: 9px 12px;
+    background: var(--grey-50);
+  }
+  .cover .topic-item.t1 { border-left-color: var(--t1); }
+  .cover .topic-item.t2 { border-left-color: var(--t2); }
+  .cover .topic-item.t3 { border-left-color: var(--t3); }
+  .cover .topic-item.t4 { border-left-color: var(--t4); }
+  .cover .topic-item.t5 { border-left-color: var(--t5); }
+  .cover .topic-item .ti-num {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--grey-700);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .cover .topic-item .ti-title {
+    font-size: 12.5px;
+    font-weight: 800;
+    color: var(--ink);
+    line-height: 1.2;
+    margin-top: 1px;
+  }
+  .cover .topic-item .ti-sub {
+    font-size: 9.5px;
+    color: var(--grey-700);
+    margin-top: 2px;
+  }
+  .cover .how-to {
+    margin-top: auto;
+    background: var(--ink);
+    color: white;
+    padding: 12px 16px;
+  }
+  .cover .how-to .ht-label {
+    color: #f4c542;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .cover .how-to .ht-text {
+    font-size: 11.5px;
+    line-height: 1.5;
+    color: rgba(255,255,255,0.9);
+  }
+  .cover .how-to .ht-text b { color: white; }
+
+  /* KO page */
+  .ko-page h1 {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--ink);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 3px;
+  }
+  .ko-page .spec-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 10px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--grey-700);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .ko-page .spec-row b { color: var(--ink); }
+
+  /* Concept grid 2x3 */
+  .concept-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .concept-box {
+    border: 1px solid var(--grey-300);
+    padding: 9px 12px;
+    background: white;
+  }
+  .concept-box.t1 { border-left: 3px solid var(--t1); }
+  .concept-box.t2 { border-left: 3px solid var(--t2); }
+  .concept-box.t3 { border-left: 3px solid var(--t3); }
+  .concept-box.t4 { border-left: 3px solid var(--t4); }
+  .concept-box.t5 { border-left: 3px solid var(--t5); }
+  .concept-box .cb-title {
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    border-bottom: 1.5px solid var(--ink);
+  }
+  .concept-box .cb-text {
+    font-size: 10px;
+    color: var(--grey-900);
+    line-height: 1.45;
+  }
+  .concept-box .cb-text b { color: var(--ink); }
+  .concept-box .cb-text .em {
+    color: var(--calm);
+    font-weight: 700;
+  }
+
+  /* Reference strips */
+  .ref-strip {
+    border: 1px solid var(--grey-300);
+    padding: 8px 12px;
+    margin-bottom: 7px;
+    background: var(--grey-50);
+  }
+  .ref-strip .rs-label {
+    font-size: 9px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .ref-strip .rs-text {
+    font-size: 10px;
+    color: var(--grey-900);
+    line-height: 1.5;
+  }
+  .ref-strip .rs-text b { color: var(--ink); }
+  .ref-strip .rs-text code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9.5px;
+    background: white;
+    padding: 1px 5px;
+    border: 1px solid var(--grey-300);
+    color: var(--ink);
+    margin: 0 2px;
+  }
+  .ref-strip.uk { border-left: 3px solid var(--good); }
+  .ref-strip.formula { border-left: 3px solid var(--t3); }
+  .ref-strip.terms { border-left: 3px solid var(--t1); }
+
+  /* Page marks */
+  .page-num { position: absolute; bottom: 6px; right: 14px; font-family: 'Roboto Mono', monospace; font-size: 9px; color: var(--grey-700); }
+  .page-brand { position: absolute; bottom: 6px; left: 14px; font-size: 9px; color: var(--grey-700); font-weight: 500; }
+
+  /* Related */
+  .related {
+    background: white;
+    padding: 22px 28px;
+    border: 1px solid var(--grey-300);
+    margin-bottom: 18px;
+  }
+  .related h3 { font-size: 13px; font-weight: 800; color: var(--ink); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 0.06em; padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+  .related .related-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+  .related .related-card { border: 1px solid var(--grey-300); padding: 10px 12px; text-decoration: none; color: inherit; transition: border-color 0.15s; }
+  .related .related-card:hover { border-color: var(--ink); }
+  .related .related-card .rc-tag { font-family: 'Roboto Mono', monospace; font-size: 8.5px; color: var(--grey-700); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px; }
+  .related .related-card .rc-title { font-size: 12px; font-weight: 800; color: var(--ink); line-height: 1.25; }
+
+  @page { size: A4 portrait; margin: 0; }
+  @media print {
+    body { background: white; }
+    .nav-bar { display: none !important; }
+    .related { display: none !important; }
+    .pages-wrap { margin-top: 0; padding: 0; max-width: none; }
+    .page { margin: 0; border: none; width: 210mm; height: 297mm; aspect-ratio: unset; padding: 11mm 13mm 7mm; }
+    .topic-bar {
+      margin: -11mm -13mm 8px; padding: 8px 13mm;
+      background: white !important; color: var(--ink) !important;
+      border-bottom: 3px solid var(--ink);
+    }
+    .topic-bar.t1 { border-bottom-color: var(--t1); }
+    .topic-bar.t2 { border-bottom-color: var(--t2); }
+    .topic-bar.t3 { border-bottom-color: var(--t3); }
+    .topic-bar.t4 { border-bottom-color: var(--t4); }
+    .topic-bar.t5 { border-bottom-color: var(--t5); }
+    .topic-bar.cover { border-bottom-color: var(--ink); }
+    .cover .how-to {
+      background: white !important; color: var(--ink) !important;
+      border: 1.5px solid var(--ink);
+    }
+    .cover .how-to .ht-label { color: var(--urgent) !important; }
+    .cover .how-to .ht-text { color: var(--grey-900) !important; }
+    .cover .how-to .ht-text b { color: var(--ink) !important; }
+    .cover .topic-item { background: white !important; }
+    .ref-strip { background: white !important; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "The Business School", "item": "https://thebusiness.school/" },
+    { "@type": "ListItem", "position": 2, "name": "Free Resources", "item": "https://thebusiness.school/resources/" },
+    { "@type": "ListItem", "position": 3, "name": "5 Knowledge Organisers", "item": "https://thebusiness.school/resources/knowledge-organisers/" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DigitalDocument",
+  "name": "5 Knowledge Organisers — A-Level Business",
+  "description": "Free 6-page A-Level Business resource: five single-page Knowledge Organisers covering Marketing, Operations Management, Finance, Human Resource Management, and Strategy & Global Business. Includes Tier 3 vocabulary, key formulas, and real UK business anchors. For AQA 7132, Edexcel 9BS0 and OCR H431.",
+  "creator": { "@type": "Organization", "name": "The Business School", "url": "https://thebusiness.school/" },
+  "url": "https://thebusiness.school/resources/knowledge-organisers/",
+  "datePublished": "2026-05-29",
+  "inLanguage": "en-GB",
+  "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+  "learningResourceType": "Knowledge Organiser",
+  "educationalLevel": "Year 12 and Year 13",
+  "educationalAlignment": [
+    { "@type": "AlignmentObject", "alignmentType": "teaches", "targetName": "AQA A-Level Business 7132" },
+    { "@type": "AlignmentObject", "alignmentType": "teaches", "targetName": "Edexcel A-Level Business 9BS0" },
+    { "@type": "AlignmentObject", "alignmentType": "teaches", "targetName": "OCR A-Level Business H431" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<div class="nav-bar">
+  <div class="logo"><a href="/">The Business School</a></div>
+  <div class="nav-actions">
+    <a href="/resources/" class="back-link">← All resources</a>
+    <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+</div>
+
+<div class="pages-wrap">
+
+<!-- PAGE 1 — COVER -->
+<div class="page cover">
+
+  <div class="topic-bar cover">
+    <div class="tag">A-Level Business · Y12 + Y13 · Knowledge Organisers</div>
+    <div class="when">One A4 per theme · print &amp; pin</div>
+  </div>
+
+  <h1 class="big">5 Knowledge<br>Organisers.</h1>
+  <p class="cover-sub">One condensed A4 reference per major A-Level Business theme. Each Knowledge Organiser pulls the <b>key concepts, Tier 3 vocabulary, formulas, and a real UK business anchor</b> into a single printable page. <b>For AQA 7132, Edexcel 9BS0 and OCR H431.</b></p>
+
+  <div class="preview-row">
+    <div class="preview-stat"><div class="ps-num">5</div><div class="ps-label">Themes covered</div></div>
+    <div class="preview-stat"><div class="ps-num">30</div><div class="ps-label">Concept boxes</div></div>
+    <div class="preview-stat"><div class="ps-num">12</div><div class="ps-label">Key formulas</div></div>
+    <div class="preview-stat"><div class="ps-num">60+</div><div class="ps-label">Tier 3 terms</div></div>
+    <div class="preview-stat"><div class="ps-num">5</div><div class="ps-label">UK firm anchors</div></div>
+  </div>
+
+  <div class="topic-list">
+    <div class="topic-item t1">
+      <div class="ti-num">Page 2 · KO 1</div>
+      <div class="ti-title">Marketing</div>
+      <div class="ti-sub">4Ps / 7Ps · market research · segmentation · lifecycle · pricing · branding</div>
+    </div>
+    <div class="topic-item t2">
+      <div class="ti-num">Page 3 · KO 2</div>
+      <div class="ti-title">Operations Management</div>
+      <div class="ti-sub">production methods · quality · capacity · inventory · lean · technology</div>
+    </div>
+    <div class="topic-item t3">
+      <div class="ti-num">Page 4 · KO 3</div>
+      <div class="ti-title">Finance</div>
+      <div class="ti-sub">sources · cash flow · profitability · liquidity · investment appraisal · breakeven</div>
+    </div>
+    <div class="topic-item t4">
+      <div class="ti-num">Page 5 · KO 4</div>
+      <div class="ti-title">Human Resource Management</div>
+      <div class="ti-sub">workforce planning · motivation · structure · leadership · ER · training</div>
+    </div>
+    <div class="topic-item t5">
+      <div class="ti-num">Page 6 · KO 5</div>
+      <div class="ti-title">Strategy &amp; Global Business</div>
+      <div class="ti-sub">SWOT · PESTLE · Ansoff · BCG · Porter · globalisation · modes of entry</div>
+    </div>
+    <div class="topic-item">
+      <div class="ti-num">How to use</div>
+      <div class="ti-title">Print, pin, retrieve</div>
+      <div class="ti-sub">Hand to students at the start of each theme. Use as the revision foundation in Y13.</div>
+    </div>
+  </div>
+
+  <div class="how-to">
+    <div class="ht-label">What a Knowledge Organiser is for</div>
+    <div class="ht-text">A KO is the <b>distilled spine</b> of a topic — what every student should be able to recall from memory by exam day. Hand it out at the <b>start</b> of a unit (as a roadmap), then again before <b>mocks</b> (as a recall self-test), then once more in the <b>last week before the exam</b> (as a final compression of the topic). Tier 3 terms are highlighted because vocabulary fluency is the single most reliable predictor of Level 4 marks.</div>
+  </div>
+
+  <div class="page-brand">The Business School · 5 Knowledge Organisers</div>
+  <div class="page-num">01 / 06</div>
+</div>
+
+<!-- PAGE 2 — KO 1 MARKETING -->
+<div class="page ko-page">
+
+  <div class="topic-bar t1">
+    <div class="tag">KO 1 · Marketing</div>
+    <div class="when">Y12 + Y13 · Theme 1 Edexcel · Sect. 4 AQA · Topic 1 OCR</div>
+  </div>
+
+  <h1>Marketing.</h1>
+  <div class="spec-row">
+    <span><b>Edexcel</b> Theme 1 (1.1–1.3)</span>
+    <span><b>AQA</b> 7132 Section 4</span>
+    <span><b>OCR</b> H431 Topic 1</span>
+  </div>
+
+  <div class="concept-grid">
+
+    <div class="concept-box t1">
+      <div class="cb-title">Marketing Mix (4Ps / 7Ps)</div>
+      <div class="cb-text">The <b>4Ps</b>: Product, Price, Place, Promotion. <b>7Ps</b> (services): + People, Process, Physical Evidence. The mix must be <b class="em">internally consistent</b> — premium product needs premium price + premium channel + restrained promotion.</div>
+    </div>
+
+    <div class="concept-box t1">
+      <div class="cb-title">Market Research</div>
+      <div class="cb-text"><b>Primary</b> (own collection): surveys, focus groups, observation. <b>Secondary</b> (existing data): ONS, trade reports, competitors. <b>Quantitative</b> (numbers) vs <b>qualitative</b> (depth). Trade-off: <b class="em">cost vs control vs timeliness</b>.</div>
+    </div>
+
+    <div class="concept-box t1">
+      <div class="cb-title">Segmentation</div>
+      <div class="cb-text">Splitting market into target groups by: <b>demographic</b> (age, income, gender), <b>geographic</b> (region, urban/rural), <b>psychographic</b> (lifestyle, values), <b>behavioural</b> (loyalty, usage rate). <b class="em">Niche</b> vs <b class="em">mass</b> market.</div>
+    </div>
+
+    <div class="concept-box t1">
+      <div class="cb-title">Product Lifecycle</div>
+      <div class="cb-text">Four stages: <b>Introduction</b> (high cost, low sales), <b>Growth</b> (rising sales, margin building), <b>Maturity</b> (peak sales, defending share), <b>Decline</b> (falling sales). Extension strategies: rebranding, repositioning, new markets, modifications.</div>
+    </div>
+
+    <div class="concept-box t1">
+      <div class="cb-title">Pricing Strategies</div>
+      <div class="cb-text"><b>Penetration</b> (low entry price, build share), <b>Skimming</b> (high entry price, fall over time), <b>Premium</b> (high price, signal quality), <b>Psychological</b> (£9.99), <b>Competitive</b> (match rivals), <b>Cost-plus</b> (cost + margin), <b>Dynamic</b> (real-time adjustment).</div>
+    </div>
+
+    <div class="concept-box t1">
+      <div class="cb-title">Branding</div>
+      <div class="cb-text"><b>Brand equity</b> = value beyond the physical product (recognition, loyalty, associations). <b>Positioning</b> = where the brand sits in the customer's mind vs competitors. <b>Repositioning</b> takes 18–24 months and risks alienating existing customers.</div>
+    </div>
+
+  </div>
+
+  <div class="ref-strip terms">
+    <div class="rs-label">Tier 3 vocabulary</div>
+    <div class="rs-text"><b>USP · Market share · Niche vs Mass · B2B vs B2C · Marketing Mix · Price Elasticity of Demand (PED) · Brand Equity · Market Penetration · Ansoff Matrix · Positioning · Differentiation · Segmentation · Marketing Plan</b></div>
+  </div>
+
+  <div class="ref-strip formula">
+    <div class="rs-label">Formulas</div>
+    <div class="rs-text"><b>Market Share</b> = <code>(Company sales ÷ Total market sales) × 100</code> · <b>PED</b> = <code>%ΔQD ÷ %ΔP</code> (sign matters; ≥1 elastic, &lt;1 inelastic) · <b>Market Growth Rate</b> = <code>((This year − Last year) ÷ Last year) × 100</code></div>
+  </div>
+
+  <div class="ref-strip uk">
+    <div class="rs-label">Real UK firm anchor</div>
+    <div class="rs-text"><b>Boohoo</b> (mass-market fast fashion) vs <b>Burberry</b> (niche premium luxury) — same customer category (clothing), opposite positioning. Compare 4Ps choice, target segments, and PED differences. <b class="em">Sample question:</b> "Evaluate Burberry's pricing strategy given the rise of dupes on Vinted."</div>
+  </div>
+
+  <div class="page-brand">The Business School · KO 1 · Marketing</div>
+  <div class="page-num">02 / 06</div>
+</div>
+
+<!-- PAGE 3 — KO 2 OPERATIONS -->
+<div class="page ko-page">
+
+  <div class="topic-bar t2">
+    <div class="tag">KO 2 · Operations Management</div>
+    <div class="when">Y12 + Y13 · Theme 2 Edexcel · Sect. 5 AQA · Topic 4 OCR</div>
+  </div>
+
+  <h1>Operations Management.</h1>
+  <div class="spec-row">
+    <span><b>Edexcel</b> Theme 2 (2.3)</span>
+    <span><b>AQA</b> 7132 Section 5</span>
+    <span><b>OCR</b> H431 Topic 4</span>
+  </div>
+
+  <div class="concept-grid">
+
+    <div class="concept-box t2">
+      <div class="cb-title">Production Methods</div>
+      <div class="cb-text"><b>Job</b> (one-off, bespoke, e.g. wedding cake), <b>Batch</b> (groups of identical items, e.g. bread batches), <b>Flow</b> (continuous, mass production, e.g. cars), <b>Cell</b> (team-based mini-factories). Choice depends on <b class="em">volume + variety</b>.</div>
+    </div>
+
+    <div class="concept-box t2">
+      <div class="cb-title">Quality</div>
+      <div class="cb-text"><b>Quality Control</b> (inspection at end), <b>Quality Assurance</b> (built into process), <b>Total Quality Management (TQM)</b> (whole-firm culture), <b>Six Sigma</b> (statistical defect reduction). Trade-off: <b class="em">cost of quality vs cost of failure</b>.</div>
+    </div>
+
+    <div class="concept-box t2">
+      <div class="cb-title">Capacity</div>
+      <div class="cb-text"><b>Capacity utilisation</b> = current output as % of maximum. <b>85–90%</b> considered optimal. Higher → bottlenecks + breakdown risk. Lower → fixed costs spread thinly → margin pressure. Solutions: subcontract, rationalise, invest.</div>
+    </div>
+
+    <div class="concept-box t2">
+      <div class="cb-title">Inventory (Stock)</div>
+      <div class="cb-text"><b>Just-in-Time (JIT)</b>: stock arrives just before needed; low holding cost, high supply-chain risk. <b>Just-in-Case (JIC)</b>: buffer stock; safer but ties up cash. <b>Stock control charts</b>: max, min, re-order, lead time.</div>
+    </div>
+
+    <div class="concept-box t2">
+      <div class="cb-title">Lean Production</div>
+      <div class="cb-text">Minimising waste (Toyota system). <b>8 wastes</b>: defects, overproduction, waiting, non-utilised talent, transport, inventory, motion, extra processing. <b>Kaizen</b> = continuous improvement through small, worker-led changes.</div>
+    </div>
+
+    <div class="concept-box t2">
+      <div class="cb-title">Technology in Operations</div>
+      <div class="cb-text"><b>Automation</b> (robots, AI), <b>CAD/CAM</b> (computer-aided design/manufacture), <b>EPOS</b> (electronic point of sale), <b>ERP</b> (enterprise resource planning). Trade-off: capital cost + redundancy risk vs productivity + accuracy gains.</div>
+    </div>
+
+  </div>
+
+  <div class="ref-strip terms">
+    <div class="rs-label">Tier 3 vocabulary</div>
+    <div class="rs-text"><b>Productivity · Capacity Utilisation · JIT · JIC · Lean · Kaizen · TQM · Six Sigma · Bottleneck · Buffer Stock · Outsourcing · Economies of Scale · Quality Assurance · Supply Chain · Subcontracting</b></div>
+  </div>
+
+  <div class="ref-strip formula">
+    <div class="rs-label">Formulas</div>
+    <div class="rs-text"><b>Labour Productivity</b> = <code>Output ÷ Number of workers</code> · <b>Capacity Utilisation</b> = <code>(Current output ÷ Maximum possible) × 100</code> · <b>Unit Cost</b> = <code>Total cost ÷ Units of output</code></div>
+  </div>
+
+  <div class="ref-strip uk">
+    <div class="rs-label">Real UK firm anchor</div>
+    <div class="rs-text"><b>JLR</b> (Jaguar Land Rover) — JIT semiconductor shortage 2021–2023 caused thousands of finished vehicles to sit unfinished. Compare with <b>Greggs</b>, whose vertical supply chain (own bakeries) gave it resilience during similar disruptions. <b class="em">Sample question:</b> "Evaluate the suitability of JIT for a UK car manufacturer in the post-Brexit supply environment."</div>
+  </div>
+
+  <div class="page-brand">The Business School · KO 2 · Operations Management</div>
+  <div class="page-num">03 / 06</div>
+</div>
+
+<!-- PAGE 4 — KO 3 FINANCE -->
+<div class="page ko-page">
+
+  <div class="topic-bar t3">
+    <div class="tag">KO 3 · Finance</div>
+    <div class="when">Y12 + Y13 · Theme 2/3 Edexcel · Sect. 7 AQA · Topic 5 OCR</div>
+  </div>
+
+  <h1>Finance.</h1>
+  <div class="spec-row">
+    <span><b>Edexcel</b> Theme 2/3 (2.2, 3.4)</span>
+    <span><b>AQA</b> 7132 Section 7</span>
+    <span><b>OCR</b> H431 Topic 5</span>
+  </div>
+
+  <div class="concept-grid">
+
+    <div class="concept-box t3">
+      <div class="cb-title">Sources of Finance</div>
+      <div class="cb-text"><b>Internal</b>: retained profit, sale of assets, working capital. <b>External short-term</b>: overdraft, trade credit. <b>External long-term</b>: bank loan, share capital, venture capital, crowdfunding, debentures. Choice depends on <b class="em">cost, time horizon, ownership impact</b>.</div>
+    </div>
+
+    <div class="concept-box t3">
+      <div class="cb-title">Cash Flow</div>
+      <div class="cb-text"><b>Inflows</b>: sales receipts, loans, investments. <b>Outflows</b>: wages, suppliers, rent, tax. <b>Net cash flow</b> = inflows − outflows. <b>Closing balance</b> = opening + net. <b class="em">Cash is not profit</b> — a profitable firm can collapse if it runs out of cash.</div>
+    </div>
+
+    <div class="concept-box t3">
+      <div class="cb-title">Profitability</div>
+      <div class="cb-text"><b>Gross Profit Margin</b>: direct cost efficiency. <b>Operating Profit Margin</b>: includes overheads. <b>Net Profit Margin</b>: after tax + finance costs. <b>ROCE</b> (Return on Capital Employed): profit per pound of capital invested. Compare to <b class="em">industry benchmarks</b>, not just last year.</div>
+    </div>
+
+    <div class="concept-box t3">
+      <div class="cb-title">Liquidity</div>
+      <div class="cb-text"><b>Current Ratio</b>: ability to meet short-term debts (1.5–2 healthy). <b>Acid Test (Quick Ratio)</b>: stricter — excludes stock. <b>Gearing</b>: long-term debt as % of capital employed; <b class="em">&gt;50% = high financial risk</b>. Liquidity ≠ profitability — both matter.</div>
+    </div>
+
+    <div class="concept-box t3">
+      <div class="cb-title">Investment Appraisal</div>
+      <div class="cb-text"><b>Payback Period</b>: time to recoup investment (quick, ignores time value). <b>ARR</b> (Average Rate of Return): average profit as % of cost. <b>NPV</b> (Net Present Value): sum of discounted cash flows minus outlay — most rigorous, requires discount rate.</div>
+    </div>
+
+    <div class="concept-box t3">
+      <div class="cb-title">Breakeven</div>
+      <div class="cb-text"><b>Contribution per unit</b> = Selling price − Variable cost. <b>Breakeven point</b> = units at which contribution covers fixed costs. <b>Margin of Safety</b> = current sales − breakeven sales. Used for go/no-go decisions on new products.</div>
+    </div>
+
+  </div>
+
+  <div class="ref-strip terms">
+    <div class="rs-label">Tier 3 vocabulary</div>
+    <div class="rs-text"><b>Cash flow · Profit · Margin · Liquidity · Gearing · ROCE · Payback · NPV · Breakeven · Working Capital · Variable Cost · Fixed Cost · Contribution · Margin of Safety · Solvent · Receivables · Payables</b></div>
+  </div>
+
+  <div class="ref-strip formula">
+    <div class="rs-label">Formulas</div>
+    <div class="rs-text"><b>GPM</b> = <code>(Gross profit ÷ Revenue) × 100</code> · <b>Current Ratio</b> = <code>Current assets ÷ Current liabilities</code> · <b>ARR</b> = <code>(Avg annual profit ÷ Initial cost) × 100</code> · <b>Breakeven units</b> = <code>Fixed costs ÷ (Price − Variable cost)</code> · <b>Gearing</b> = <code>(Non-current liabilities ÷ Capital employed) × 100</code></div>
+  </div>
+
+  <div class="ref-strip uk">
+    <div class="rs-label">Real UK firm anchor</div>
+    <div class="rs-text"><b>Wilko</b> (collapsed 2023) had strong customer footfall on UK high streets but ran out of cash within weeks — proof that <b class="em">cash flow ≠ profit</b> and that a working-capital crisis can kill a household-name retailer faster than declining sales. <b class="em">Sample question:</b> "Assess the importance of liquidity management for a UK high-street retailer in 2026."</div>
+  </div>
+
+  <div class="page-brand">The Business School · KO 3 · Finance</div>
+  <div class="page-num">04 / 06</div>
+</div>
+
+<!-- PAGE 5 — KO 4 HRM -->
+<div class="page ko-page">
+
+  <div class="topic-bar t4">
+    <div class="tag">KO 4 · Human Resource Management</div>
+    <div class="when">Y12 + Y13 · Theme 1/2 Edexcel · Sect. 6 AQA · Topic 4 OCR</div>
+  </div>
+
+  <h1>Human Resource Management.</h1>
+  <div class="spec-row">
+    <span><b>Edexcel</b> Theme 1.4 + 2.4</span>
+    <span><b>AQA</b> 7132 Section 6</span>
+    <span><b>OCR</b> H431 Topic 4</span>
+  </div>
+
+  <div class="concept-grid">
+
+    <div class="concept-box t4">
+      <div class="cb-title">Workforce Planning</div>
+      <div class="cb-text"><b>Recruitment</b> (internal vs external), <b>Selection</b> (CVs, interviews, assessment centres), <b>Retention</b> (keeping good staff), <b>Redundancy</b> (compulsory vs voluntary). Linked to <b class="em">workforce audit</b>: current vs needed skills.</div>
+    </div>
+
+    <div class="concept-box t4">
+      <div class="cb-title">Motivation Theories</div>
+      <div class="cb-text"><b>Maslow</b>: hierarchy of needs (physiological → safety → social → esteem → self-actualisation). <b>Herzberg</b>: hygiene factors (pay, conditions) prevent dissatisfaction; <b class="em">motivators</b> (recognition, achievement) create satisfaction. <b>Taylor</b>: scientific management — pay drives output. <b>McGregor</b>: Theory X (workers lazy) vs Theory Y (workers self-motivated).</div>
+    </div>
+
+    <div class="concept-box t4">
+      <div class="cb-title">Organisational Structure</div>
+      <div class="cb-text"><b>Hierarchy</b>: levels of authority (tall vs flat). <b>Span of control</b>: subordinates per manager (narrow = supervision; wide = empowerment). <b>Centralised</b> vs <b>decentralised</b> decision-making. <b>Functional</b> vs <b>matrix</b> structure.</div>
+    </div>
+
+    <div class="concept-box t4">
+      <div class="cb-title">Leadership Styles</div>
+      <div class="cb-text"><b>Autocratic</b>: leader decides, team executes. <b>Democratic</b>: team consulted. <b>Laissez-faire</b>: minimal supervision. <b>Paternalistic</b>: leader cares for team's welfare. Choice depends on <b class="em">task complexity, team skill, urgency</b>.</div>
+    </div>
+
+    <div class="concept-box t4">
+      <div class="cb-title">Employer-Employee Relations</div>
+      <div class="cb-text"><b>Trade unions</b>: collective bargaining for pay/conditions (UK: USDAW, RMT, Unite). <b>ACAS</b>: dispute resolution. <b>Industrial action</b>: strike, work-to-rule, overtime ban. <b>Single union agreement</b>: one union negotiates for all workers.</div>
+    </div>
+
+    <div class="concept-box t4">
+      <div class="cb-title">Training &amp; Development</div>
+      <div class="cb-text"><b>Induction</b> (joining), <b>On-the-job</b> (learning by doing), <b>Off-the-job</b> (external courses), <b>CPD</b> (continuing professional development). Trade-off: <b class="em">cost &amp; lost time vs retention &amp; productivity</b>. Trained staff = motivated + harder to replace.</div>
+    </div>
+
+  </div>
+
+  <div class="ref-strip terms">
+    <div class="rs-label">Tier 3 vocabulary</div>
+    <div class="rs-text"><b>Motivation · Hierarchy · Span of Control · Empowerment · Delegation · Trade Union · Recruitment · Retention · Theory X / Theory Y · Hygiene Factor · Motivator · Centralisation · Decentralisation · Autocratic · Laissez-faire</b></div>
+  </div>
+
+  <div class="ref-strip formula">
+    <div class="rs-label">Formulas</div>
+    <div class="rs-text"><b>Labour Turnover</b> = <code>(Leavers ÷ Average headcount) × 100</code> · <b>Labour Productivity</b> = <code>Output ÷ Number of workers</code> · <b>Absenteeism Rate</b> = <code>(Days lost ÷ Total possible days) × 100</code></div>
+  </div>
+
+  <div class="ref-strip uk">
+    <div class="rs-label">Real UK firm anchor</div>
+    <div class="rs-text"><b>Royal Mail</b> ongoing industrial relations with the CWU (Communication Workers Union) — strikes, pay disputes, and the transition from postal-letter to parcel-driven business model. Compare with non-unionised gig-economy rivals (Evri, Amazon Logistics). <b class="em">Sample question:</b> "Evaluate the impact of strong trade union presence on a UK plc facing structural decline in its core market."</div>
+  </div>
+
+  <div class="page-brand">The Business School · KO 4 · Human Resource Management</div>
+  <div class="page-num">05 / 06</div>
+</div>
+
+<!-- PAGE 6 — KO 5 STRATEGY & GLOBAL -->
+<div class="page ko-page">
+
+  <div class="topic-bar t5">
+    <div class="tag">KO 5 · Strategy &amp; Global Business</div>
+    <div class="when">Y13 · Theme 3/4 Edexcel · Sect. 8–10 AQA · Topic 5/6 OCR</div>
+  </div>
+
+  <h1>Strategy &amp; Global Business.</h1>
+  <div class="spec-row">
+    <span><b>Edexcel</b> Theme 3 + Theme 4</span>
+    <span><b>AQA</b> 7132 Sect. 8–10</span>
+    <span><b>OCR</b> H431 Topic 5/6</span>
+  </div>
+
+  <div class="concept-grid">
+
+    <div class="concept-box t5">
+      <div class="cb-title">Strategic Analysis</div>
+      <div class="cb-text"><b>SWOT</b>: internal Strengths/Weaknesses + external Opportunities/Threats. <b>PESTLE</b>: Political, Economic, Social, Technological, Legal, Environmental. Used to <b class="em">frame</b> strategic choices — not substitutes for judgement.</div>
+    </div>
+
+    <div class="concept-box t5">
+      <div class="cb-title">Ansoff Matrix</div>
+      <div class="cb-text">Growth strategies plotted on 2 axes (existing/new product × existing/new market): <b>Market Penetration</b> (lowest risk), <b>Product Development</b>, <b>Market Development</b>, <b>Diversification</b> (highest risk). Risk-return trade-off must match <b class="em">firm capacity</b>.</div>
+    </div>
+
+    <div class="concept-box t5">
+      <div class="cb-title">Boston Matrix (BCG)</div>
+      <div class="cb-text">Product portfolio on growth × market share: <b>Stars</b> (invest), <b>Cash Cows</b> (milk), <b>Question Marks</b> (decide), <b>Dogs</b> (divest). Balanced portfolio has products in <b class="em">multiple quadrants</b>.</div>
+    </div>
+
+    <div class="concept-box t5">
+      <div class="cb-title">Porter's Five Forces</div>
+      <div class="cb-text">Industry attractiveness depends on: <b>threat of new entrants</b>, <b>supplier power</b>, <b>buyer power</b>, <b>threat of substitutes</b>, <b>industry rivalry</b>. Strategy = position to <b class="em">protect against</b> the strongest forces.</div>
+    </div>
+
+    <div class="concept-box t5">
+      <div class="cb-title">Globalisation</div>
+      <div class="cb-text">Drivers: <b>trade liberalisation</b> (WTO, free-trade agreements), <b>technology</b> (digital communication), <b>transport</b> (containerisation), <b>capital flows</b>. Impact: bigger markets, more competition, supply-chain complexity.</div>
+    </div>
+
+    <div class="concept-box t5">
+      <div class="cb-title">Modes of Entry</div>
+      <div class="cb-text"><b>Exporting</b> (lowest commitment), <b>Licensing/Franchising</b> (medium), <b>Joint Venture</b> (shared risk/control), <b>FDI/Wholly-owned</b> (highest commitment + control). Choice = <b class="em">risk × control × speed × cost</b> trade-off.</div>
+    </div>
+
+  </div>
+
+  <div class="ref-strip terms">
+    <div class="rs-label">Tier 3 vocabulary</div>
+    <div class="rs-text"><b>Strategy · SWOT · PESTLE · Ansoff · BCG · Porter · Globalisation · Multinational · Joint Venture · FDI · Trade Bloc · Tariff · Quota · Exchange Rate · Comparative Advantage · Outsourcing · Diversification · Repositioning</b></div>
+  </div>
+
+  <div class="ref-strip formula">
+    <div class="rs-label">Formulas &amp; key calculations</div>
+    <div class="rs-text"><b>Market Growth Rate</b> = <code>((This year − Last year) ÷ Last year) × 100</code> · <b>Relative Market Share</b> = <code>Firm sales ÷ Largest competitor sales</code> · <b>FX impact</b>: <i>strong £ → exports more expensive, imports cheaper</i></div>
+  </div>
+
+  <div class="ref-strip uk">
+    <div class="rs-label">Real UK firm anchor</div>
+    <div class="rs-text"><b>Burberry</b> — premium UK brand, ~50% of revenue from Asia-Pacific, exposed to both China demand cycles and GBP/USD/CNY exchange rates. Decisions around store-rationalisation in Europe vs Asia investment = synoptic Strategy + Global Business analysis. <b class="em">Sample question:</b> "Evaluate Burberry's strategy of concentrating retail expansion in Asia rather than Europe."</div>
+  </div>
+
+  <div class="page-brand">The Business School · KO 5 · Strategy &amp; Global Business</div>
+  <div class="page-num">06 / 06</div>
+</div>
+
+<!-- RELATED -->
+<div class="related">
+  <h3>Pair this with</h3>
+  <div class="related-cards">
+    <a class="related-card" href="/resources/paper-2-pack/">
+      <div class="rc-tag">6-page revision pack</div>
+      <div class="rc-title">The Paper 2 Pack — Finance, Ratios, Operations, HRM, External</div>
+    </a>
+    <a class="related-card" href="/resources/marketing-strategy-pack/">
+      <div class="rc-tag">6-page revision pack</div>
+      <div class="rc-title">The Marketing &amp; Strategy Pack — 4Ps, Ansoff, BCG, Porter, Brand</div>
+    </a>
+    <a class="related-card" href="/resources/lesson-hooks/">
+      <div class="rc-tag">5-page teacher pack</div>
+      <div class="rc-title">20 Five-Minute Lesson Hooks — 20 real UK firms, ready to deploy</div>
+    </a>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
