@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School IT Information Sheet — The Business School Simulation</title>
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ink: #0d0d0d;
+    --navy: #0a2540;
+    --grey-700: #555;
+    --grey-500: #888;
+    --grey-300: #ccc;
+    --grey-100: #f5f5f5;
+    --grey-50: #fafafa;
+    --gold: #b45309;
+    --good: #15803d;
+    --calm: #1e6091;
+  }
+  body { font-family: 'Inter', sans-serif; background: var(--grey-100); color: var(--ink); line-height: 1.5; }
+  .num { font-family: 'Roboto Mono', monospace; }
+
+  .nav-bar { position: fixed; top: 0; left: 0; right: 0; background: white; color: var(--ink); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; z-index: 100; border-bottom: 1px solid var(--grey-300); }
+  .nav-bar .logo a { font-weight: 800; font-size: 14px; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+  .nav-bar .print-btn { background: var(--ink); color: white; border: 1px solid var(--ink); padding: 7px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+
+  .pages-wrap { margin-top: 56px; padding: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
+  .page { background: white; border: 1px solid var(--grey-300); aspect-ratio: 1 / 1.414; position: relative; overflow: hidden; padding: 30px 36px; display: flex; flex-direction: column; }
+
+  .top-bar {
+    background: var(--navy);
+    color: white;
+    margin: -30px -36px 16px;
+    padding: 14px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .top-bar .left .tag {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #f4c542;
+    margin-bottom: 3px;
+  }
+  .top-bar .left .title {
+    font-size: 14px;
+    font-weight: 800;
+  }
+  .top-bar .right {
+    text-align: right;
+    font-size: 11px;
+    color: rgba(255,255,255,0.8);
+  }
+  .top-bar .right b { color: #f4c542; }
+
+  h1 {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 4px;
+  }
+  .lead {
+    font-size: 12px;
+    color: var(--grey-700);
+    margin-bottom: 16px;
+    line-height: 1.55;
+  }
+  .lead b { color: var(--ink); }
+
+  /* Whitelist box — KEY content */
+  .whitelist-box {
+    border: 2px solid var(--ink);
+    margin-bottom: 14px;
+  }
+  .whitelist-box .wb-header {
+    background: var(--ink);
+    color: white;
+    padding: 8px 14px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .whitelist-box .wb-header span { color: #f4c542; }
+  .whitelist-box .wb-body { padding: 14px 16px; }
+  .whitelist-box .wb-row {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 14px;
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--grey-300);
+    font-size: 11.5px;
+  }
+  .whitelist-box .wb-row:last-child { border-bottom: none; }
+  .whitelist-box .wb-row .label {
+    font-weight: 800;
+    color: var(--ink);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    padding-top: 2px;
+  }
+  .whitelist-box .wb-row .value {
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .whitelist-box .wb-row .value .domain {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--calm);
+    background: var(--grey-50);
+    padding: 2px 8px;
+    border: 1px solid var(--grey-300);
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .whitelist-box .wb-row .value .port {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .whitelist-box .wb-row .value .note {
+    font-size: 10px;
+    color: var(--grey-700);
+    margin-top: 3px;
+  }
+
+  /* Compliance row */
+  .compliance-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .comp-card {
+    border: 1px solid var(--grey-300);
+    padding: 10px 12px;
+    background: var(--grey-50);
+  }
+  .comp-card.green { border-left: 4px solid var(--good); }
+  .comp-card.calm { border-left: 4px solid var(--calm); }
+  .comp-card .cc-label {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .comp-card .cc-text {
+    font-size: 11px;
+    color: var(--grey-700);
+    line-height: 1.5;
+  }
+  .comp-card .cc-text b { color: var(--ink); }
+
+  /* Data flow */
+  .flow-box {
+    border: 1px solid var(--grey-300);
+    border-left: 4px solid var(--gold);
+    padding: 10px 14px;
+    margin-bottom: 14px;
+  }
+  .flow-box h3 {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--grey-300);
+  }
+  .flow-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .flow-box li {
+    font-size: 11px;
+    color: var(--ink);
+    line-height: 1.55;
+    padding: 2px 0;
+    padding-left: 16px;
+    position: relative;
+  }
+  .flow-box li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--good);
+    font-weight: 800;
+  }
+  .flow-box li b { font-weight: 700; }
+
+  /* Bottom contact */
+  .contact-row {
+    margin-top: auto;
+    background: var(--navy);
+    color: white;
+    padding: 12px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .contact-row .cr-block .cr-label {
+    color: #f4c542;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+  .contact-row .cr-block .cr-value {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .contact-row .cr-block .cr-sub {
+    font-size: 10px;
+    color: rgba(255,255,255,0.75);
+    margin-top: 2px;
+  }
+
+  @page { size: A4 portrait; margin: 0; }
+  @media print {
+    body { background: white; }
+    .nav-bar { display: none !important; }
+    .pages-wrap { margin-top: 0; padding: 0; max-width: none; }
+    .page { margin: 0; border: none; width: 210mm; height: 297mm; aspect-ratio: unset; padding: 14mm 16mm; }
+    .top-bar { margin: -14mm -16mm 12px; padding: 11px 16mm; }
+    .contact-row { background: white !important; color: var(--ink) !important; border: 1.5px solid var(--ink); }
+    .contact-row .cr-block .cr-label { color: var(--gold) !important; }
+    .contact-row .cr-block .cr-sub { color: var(--grey-700) !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav-bar">
+  <div class="logo"><a href="/">The Business School</a></div>
+  <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<div class="pages-wrap">
+
+<div class="page">
+
+  <div class="top-bar">
+    <div class="left">
+      <div class="tag">For your school IT / Network team</div>
+      <div class="title">The Business School Simulation</div>
+    </div>
+    <div class="right">
+      <b>ICO ZC133810</b><br>
+      UK GDPR · KCSIE 2024/25
+    </div>
+  </div>
+
+  <h1>School IT Information Sheet.</h1>
+  <p class="lead">A one-page reference for your school's IT or network team to whitelist The Business School Simulation. <b>All connections are over standard HTTPS — no special protocols, no plugins, no installs.</b> Forward this to IT and they should be able to whitelist in under 5 minutes.</p>
+
+  <div class="whitelist-box">
+    <div class="wb-header">Whitelist request <span>· one wildcard covers everything</span></div>
+    <div class="wb-body">
+
+      <div class="wb-row">
+        <div class="label">Domain</div>
+        <div class="value">
+          <span class="domain">*.thebusiness.school</span>
+          <div class="note">Wildcard covers: <b>thebusiness.school</b> (marketing site), <b>play.thebusiness.school</b> (live simulation), and any future subdomains. One whitelist entry, all access.</div>
+        </div>
+      </div>
+
+      <div class="wb-row">
+        <div class="label">Protocols</div>
+        <div class="value">
+          <span class="port">HTTPS · port 443</span> &nbsp; <span class="port">WSS · port 443</span>
+          <div class="note">Standard HTTPS (TLS 1.2+) plus secure WebSocket for real-time classroom session state. No custom ports.</div>
+        </div>
+      </div>
+
+      <div class="wb-row">
+        <div class="label">Browser</div>
+        <div class="value">
+          Modern browsers: Chrome, Edge, Firefox, Safari (last 3 versions)
+          <div class="note">No installs, no plugins, no extensions, no admin rights required.</div>
+        </div>
+      </div>
+
+      <div class="wb-row">
+        <div class="label">Devices</div>
+        <div class="value">
+          School-managed Windows laptops · Chromebooks · iPads · iMacs · BYOD
+          <div class="note">Browser-based — runs anywhere with a modern browser. No app to manage.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="compliance-grid">
+    <div class="comp-card green">
+      <div class="cc-label">Data &amp; Privacy</div>
+      <div class="cc-text">
+        <b>No student personal data collected.</b> Students join via teacher PIN only — no email, no account, no name. Sessions ephemeral by default; teacher dashboard data hosted in EU (Netlify Frankfurt). UK GDPR registered.
+      </div>
+    </div>
+    <div class="comp-card calm">
+      <div class="cc-label">Safeguarding (KCSIE 2024/25)</div>
+      <div class="cc-text">
+        <b>No chat. No messaging. No user-generated content.</b> Students interact only with the simulation's market mechanics; no peer-to-peer communication. Teacher controls all session triggers and end conditions.
+      </div>
+    </div>
+  </div>
+
+  <div class="flow-box">
+    <h3>What gets sent over the network</h3>
+    <ul>
+      <li><b>Outbound from school:</b> teacher login + PIN generation (small JSON payloads); student decisions during rounds (a few KB per student per round)</li>
+      <li><b>Inbound to school:</b> session state updates over WebSocket (text only, no media); end-of-session AI-generated feedback PDF (~50–200 KB per student)</li>
+      <li><b>No video, no audio, no large media transfers</b> — total bandwidth per 30-student session is typically under 5 MB across the full session</li>
+      <li><b>No third-party trackers or ads</b> — the simulation itself does not load external advertising or social-media scripts</li>
+    </ul>
+  </div>
+
+  <div class="contact-row">
+    <div class="cr-block">
+      <div class="cr-label">IT contact</div>
+      <div class="cr-value">sakari.laajoki@education-tbs.co.uk</div>
+      <div class="cr-sub">Response within one working day. Questions on access, compliance, hosting or DPA welcome.</div>
+    </div>
+    <div class="cr-block">
+      <div class="cr-label">For your records</div>
+      <div class="cr-value">TBS Education Ltd Oy · Lahti, Finland</div>
+      <div class="cr-sub">Company number 3614159-3 · ICO ZC133810 · Full data documentation at thebusiness.school/trust</div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
