@@ -191,11 +191,49 @@
     margin-bottom: 5px;
   }
   .case-page .context {
-    font-size: 13.5px;
+    font-size: 14.5px;
     color: var(--grey-700);
     line-height: 1.7;
     margin-bottom: 16px;
     max-width: 720px;
+  }
+
+  /* Tier 3 vocabulary strip — full-width content filler */
+  .vocab-strip {
+    border: 1px solid var(--grey-300);
+    border-left: 3px solid var(--ink);
+    padding: 11px 14px;
+    background: var(--grey-50);
+    margin-bottom: 12px;
+  }
+  .vocab-strip .vs-label {
+    font-size: 10.5px;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .vocab-strip .vs-text {
+    font-size: 12px;
+    color: var(--grey-900);
+    line-height: 1.7;
+  }
+  .vocab-strip .vs-text b { color: var(--ink); }
+
+  /* Stretch question card — visually distinct from base 2 */
+  .q-card.stretch {
+    background: white;
+    border-left: 3px solid var(--ink);
+    border-top: 1px dashed var(--grey-300);
+    margin-top: 8px;
+    padding-top: 10px;
+  }
+  .q-card.stretch .q-meta .marks { color: var(--ink); font-weight: 800; }
+  .q-card.stretch .q-meta::after {
+    content: ' · Y13 / Paper 3 style';
+    color: var(--grey-700);
+    font-weight: 500;
   }
   .case-page .context b { color: var(--ink); }
 
@@ -228,8 +266,8 @@
     grid-template-columns: 22px 1fr;
     gap: 10px;
     margin-bottom: 10px;
-    font-size: 12.5px;
-    line-height: 1.65;
+    font-size: 13.5px;
+    line-height: 1.7;
     color: var(--grey-900);
   }
   .fact-row:last-child { margin-bottom: 0; }
@@ -262,9 +300,9 @@
     color: var(--calm);
   }
   .q-card .q-text {
-    font-size: 13px;
+    font-size: 13.5px;
     color: var(--ink);
-    line-height: 1.6;
+    line-height: 1.65;
     font-weight: 500;
   }
   .q-card .q-text b { color: var(--ink); }
@@ -478,10 +516,10 @@
 
   <div class="preview-row">
     <div class="preview-stat"><div class="ps-num">5</div><div class="ps-label">UK businesses</div></div>
-    <div class="preview-stat"><div class="ps-num">5</div><div class="ps-label">Curriculum themes</div></div>
-    <div class="preview-stat"><div class="ps-num">10</div><div class="ps-label">Sample questions</div></div>
-    <div class="preview-stat"><div class="ps-num">5</div><div class="ps-label">Discussion prompts</div></div>
+    <div class="preview-stat"><div class="ps-num">15</div><div class="ps-label">Sample questions</div></div>
+    <div class="preview-stat"><div class="ps-num">55+</div><div class="ps-label">Tier 3 terms</div></div>
     <div class="preview-stat"><div class="ps-num">25</div><div class="ps-label">Key facts</div></div>
+    <div class="preview-stat"><div class="ps-num">5</div><div class="ps-label">Pitfall callouts</div></div>
   </div>
 
   <div class="case-list">
@@ -558,8 +596,17 @@
         <div class="q-meta">Question 2 · <span class="marks">16/20 marks · Evaluate</span></div>
         <div class="q-text"><b>Evaluate</b> the likely impact of a brand-portfolio demerger on shareholder value at a UK fast-fashion plc facing multi-year losses.</div>
       </div>
+      <div class="q-card stretch">
+        <div class="q-meta">Stretch · <span class="marks">24 marks · Recommend</span></div>
+        <div class="q-text"><b>Recommend</b>, with reasoning, the most appropriate corporate response for Boohoo Group: full demerger, partial demerger of selected brands only, or strategic refocus while remaining a single group.</div>
+      </div>
     </div>
 
+  </div>
+
+  <div class="vocab-strip">
+    <div class="vs-label">Tier 3 vocabulary · case-specific</div>
+    <div class="vs-text"><b>Demerger</b> · <b>brand portfolio</b> · <b>corporate restructuring</b> · <b>shareholder value</b> · <b>fiduciary duty</b> · <b>integration risk</b> · <b>brand equity</b> · <b>plc</b> · <b>AIM (Alternative Investment Market)</b> · <b>capital allocation</b> · <b>spin-off vs split-off</b></div>
   </div>
 
   <div class="bottom-grid">
@@ -614,8 +661,17 @@
         <div class="q-meta">Question 2 · <span class="marks">16/20 marks · To what extent</span></div>
         <div class="q-text"><b>To what extent</b> has Tesco's "Aldi Price Match" strategy been an effective response to discounter competition in the UK grocery market?</div>
       </div>
+      <div class="q-card stretch">
+        <div class="q-meta">Stretch · <span class="marks">24 marks · Recommend</span></div>
+        <div class="q-text"><b>Recommend</b> a strategic response Tesco should adopt over the next three years given continued discounter market-share growth, balancing brand premium, margin protection, and the risk of losing further share to Aldi and Lidl.</div>
+      </div>
     </div>
 
+  </div>
+
+  <div class="vocab-strip">
+    <div class="vs-label">Tier 3 vocabulary · case-specific</div>
+    <div class="vs-text"><b>Cost leadership</b> · <b>SKU (Stock Keeping Unit)</b> · <b>price match</b> · <b>price elasticity of demand</b> · <b>brand premium</b> · <b>discounter</b> · <b>Porter's generic strategies</b> · <b>economies of scale</b> · <b>supplier concentration</b> · <b>positioning map</b> · <b>private label / own brand</b></div>
   </div>
 
   <div class="bottom-grid">
@@ -670,8 +726,17 @@
         <div class="q-meta">Question 2 · <span class="marks">16/20 marks · Evaluate</span></div>
         <div class="q-text"><b>Evaluate</b> the importance of operational control to Greggs' competitive position in the UK food retail market.</div>
       </div>
+      <div class="q-card stretch">
+        <div class="q-meta">Stretch · <span class="marks">24 marks · Recommend</span></div>
+        <div class="q-text"><b>Recommend</b>, with reasoning, whether Greggs should expand its vertical integration further (e.g. into raw-ingredient farming) or partially outsource production to release capital for store expansion.</div>
+      </div>
     </div>
 
+  </div>
+
+  <div class="vocab-strip">
+    <div class="vs-label">Tier 3 vocabulary · case-specific</div>
+    <div class="vs-text"><b>Vertical integration</b> · <b>supply chain resilience</b> · <b>fixed-cost exposure</b> · <b>capital intensity</b> · <b>operational moat</b> · <b>unit economics</b> · <b>omnichannel retail</b> · <b>capacity utilisation</b> · <b>throughput</b> · <b>just-in-case (JIC)</b> · <b>economies of density</b></div>
   </div>
 
   <div class="bottom-grid">
@@ -726,8 +791,17 @@
         <div class="q-meta">Question 2 · <span class="marks">16/20 marks · Evaluate</span></div>
         <div class="q-text"><b>Evaluate</b> whether a UK SME should adopt a 4-day working week for its full-time workforce.</div>
       </div>
+      <div class="q-card stretch">
+        <div class="q-meta">Stretch · <span class="marks">24 marks · Assess</span></div>
+        <div class="q-text"><b>Assess</b> whether productivity gains from a 4-day working week are more likely to be sustained in knowledge-work sectors (consulting, software) than in customer-facing sectors (retail, hospitality), and justify your reasoning using motivation theory.</div>
+      </div>
     </div>
 
+  </div>
+
+  <div class="vocab-strip">
+    <div class="vs-label">Tier 3 vocabulary · case-specific</div>
+    <div class="vs-text"><b>Hygiene factor</b> · <b>motivator</b> · <b>Herzberg</b> · <b>Maslow</b> · <b>labour productivity</b> · <b>output per hour</b> · <b>organisational change</b> · <b>employee engagement</b> · <b>retention rate</b> · <b>burnout</b> · <b>scientific management (Taylor)</b></div>
   </div>
 
   <div class="bottom-grid">
@@ -782,8 +856,17 @@
         <div class="q-meta">Question 2 · <span class="marks">16/20 marks · Evaluate</span></div>
         <div class="q-text"><b>Evaluate</b> whether the UK government should intervene to stabilise Thames Water rather than allow market mechanisms to resolve the situation.</div>
       </div>
+      <div class="q-card stretch">
+        <div class="q-meta">Stretch · <span class="marks">24 marks · Recommend</span></div>
+        <div class="q-text"><b>Recommend</b> a regulatory and ownership framework that would balance customer protection, infrastructure investment, and investor returns in the UK water sector — using lessons from Thames Water.</div>
+      </div>
     </div>
 
+  </div>
+
+  <div class="vocab-strip">
+    <div class="vs-label">Tier 3 vocabulary · case-specific</div>
+    <div class="vs-text"><b>Privatisation</b> · <b>regulatory capture</b> · <b>natural monopoly</b> · <b>special administration regime</b> · <b>dividend policy</b> · <b>capital adequacy</b> · <b>gearing</b> · <b>Ofwat</b> · <b>externalities</b> · <b>stranded assets</b> · <b>price cap regulation</b></div>
   </div>
 
   <div class="bottom-grid">
