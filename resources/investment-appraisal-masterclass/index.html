@@ -1135,11 +1135,275 @@ body {
 .print-cta:hover { transform: translateY(-2px); }
 .print-cta::before { content: "🖨 "; margin-right: 4px; }
 @media print { .print-cta { display: none; } }
+
+/* ============================================ */
+/* STRICT B&W PRINT MODE — comprehensive override */
+/* Loaded LAST so it overrides all earlier rules. */
+/* Removes ALL colored backgrounds + ALL colored  */
+/* text. Keeps structure via black borders only.  */
+/* Result: ink-friendly, premium B&W typeset.     */
+/* ============================================ */
+
+@media print {
+
+  /* Hard reset of all backgrounds + text */
+  html, body { background: #ffffff !important; }
+  body, .page { background: #ffffff !important; }
+  *, *::before, *::after { color: #1b1b1b !important; }
+
+  /* Page container — remove screen shadow + margins */
+  .page {
+    box-shadow: none !important;
+    margin: 0 !important;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  /* COVER PAGE — strip gradient, treat as normal page */
+  .cover {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    padding: 1.3cm 1.4cm 1.2cm !important;
+  }
+  .cover .page-header { border-bottom-color: #1b1b1b !important; }
+  .cover h1 { color: #1b1b1b !important; }
+  .cover h1 .gold,
+  .cover .gold,
+  .cover-eyebrow,
+  .cover-how h3 { color: #1b1b1b !important; }
+  .cover .sub { color: #1b1b1b !important; }
+
+  /* All gold/branded spans → ink */
+  .gold,
+  .page-header .brand .gold,
+  .page-eyebrow,
+  .page-title { color: #1b1b1b !important; }
+
+  /* Stat cards (cover) — outlined, no fill */
+  .cover-stat {
+    background: #ffffff !important;
+    border: 1px solid #1b1b1b !important;
+  }
+  .cover-stat .num { color: #1b1b1b !important; }
+  .cover-stat .lbl { color: #1b1b1b !important; }
+
+  /* Spec board badges (gold pills) → outlined */
+  .cover-board,
+  .spec-tag {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 1.5px solid #1b1b1b !important;
+  }
+
+  /* "How to use" gold callout → outlined */
+  .cover-how {
+    background: #ffffff !important;
+    border-left: 4px solid #1b1b1b !important;
+    padding: 14px 18px !important;
+  }
+  .cover-how li::before {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 1.5px solid #1b1b1b !important;
+  }
+  .cover-how li { color: #1b1b1b !important; }
+
+  /* Formula blocks (navy) → outlined boxes */
+  .formula-block {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 2px solid #1b1b1b !important;
+  }
+  .formula-block * { color: #1b1b1b !important; }
+  .formula-block .formula .var { color: #1b1b1b !important; font-weight: 700; }
+
+  /* Worked example blocks → outlined */
+  .worked {
+    background: #ffffff !important;
+    border-left: 4px solid #1b1b1b !important;
+  }
+  .worked th {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border-bottom: 2px solid #1b1b1b !important;
+  }
+  .worked td { border-bottom: 1px solid #cccccc !important; }
+  .worked .w-answer {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 2px solid #1b1b1b !important;
+  }
+  .worked .w-answer .answer-label { color: #1b1b1b !important; }
+
+  /* Pros/cons blocks → outlined */
+  .pc-col.pros,
+  .pc-col.cons {
+    background: #ffffff !important;
+    border-left: 3px solid #1b1b1b !important;
+  }
+  .pc-col.pros li::before,
+  .pc-col.cons li::before { color: #1b1b1b !important; }
+
+  /* Pitfall callouts → outlined */
+  .pitfall {
+    background: #ffffff !important;
+    border: 1.5px solid #1b1b1b !important;
+  }
+
+  /* Gold callouts → outlined */
+  .callout-gold {
+    background: #ffffff !important;
+    border: 1.5px solid #1b1b1b !important;
+  }
+
+  /* Concept blocks (indigo) → outlined */
+  .concept {
+    background: #ffffff !important;
+    border-left: 4px solid #1b1b1b !important;
+  }
+
+  /* UK anchor cards → outlined */
+  .uk-anchor {
+    background: #ffffff !important;
+    border: 1px solid #1b1b1b !important;
+  }
+  .uk-anchor .amount { color: #1b1b1b !important; }
+
+  /* Decision framework columns → outlined */
+  .dec-col {
+    background: #ffffff !important;
+    border-top: 3px solid #1b1b1b !important;
+  }
+
+  /* Discount factor table — header outlined, highlight via double border */
+  .df-table th {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 1.5px solid #1b1b1b !important;
+  }
+  .df-table td:first-child {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 1px solid #1b1b1b !important;
+    font-weight: 700;
+  }
+  .df-table .highlight {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 2px double #1b1b1b !important;
+    font-weight: 700;
+  }
+  .df-table td { border: 1px solid #cccccc !important; }
+
+  /* Waterfall visual → outlined bars (no fills) */
+  .waterfall {
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important;
+  }
+  .wf-bar.outflow .bar-fill,
+  .wf-bar.inflow .bar-fill {
+    background: #ffffff !important;
+    border: 1.5px solid #1b1b1b !important;
+  }
+  .wf-bar.net .bar-fill {
+    background: #ffffff !important;
+    border: 3px double #1b1b1b !important;
+  }
+  .wf-bar .bar-amt { color: #1b1b1b !important; }
+
+  /* Decision tree cells → outlined, no fills */
+  .dec-tree {
+    background: #ffffff !important;
+    border: 1px solid #cccccc !important;
+  }
+  .tree-cell,
+  .tree-cell.use-this,
+  .tree-cell.skip {
+    background: #ffffff !important;
+    border-left: 4px solid #1b1b1b !important;
+  }
+
+  /* Qualitative grid cards → outlined */
+  .qual-card {
+    background: #ffffff !important;
+    border: 1px solid #1b1b1b !important;
+  }
+
+  /* Practice Q blocks — head bar outlined, marks badge outlined */
+  .q-block { border: 1.5px solid #1b1b1b !important; }
+  .q-head {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border-bottom: 1.5px solid #1b1b1b !important;
+  }
+  .q-head .q-num { color: #1b1b1b !important; }
+  .q-head .q-marks {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 1.5px solid #1b1b1b !important;
+  }
+  .q-body .q-data {
+    background: #ffffff !important;
+    border-left: 3px solid #1b1b1b !important;
+  }
+  .q-body .q-tag { color: #1b1b1b !important; }
+
+  /* Mark schemes — outlined head bar, outlined step marks */
+  .ms-block { border: 1.5px solid #1b1b1b !important; }
+  .ms-block .ms-head { border-bottom: 2px solid #1b1b1b !important; }
+  .ms-block .ms-num { color: #1b1b1b !important; }
+  .ms-block .ms-topic { color: #1b1b1b !important; }
+  .ms-block .ms-step .step-mark {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 1.5px solid #1b1b1b !important;
+  }
+  .ms-block .ms-step .step-text code {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 1px solid #cccccc !important;
+  }
+  .ms-block .ms-total {
+    background: #ffffff !important;
+    border-left: 4px solid #1b1b1b !important;
+    color: #1b1b1b !important;
+  }
+
+  /* Mistakes list — outlined, ink numbers */
+  .mistake-item {
+    background: #ffffff !important;
+    border-left: 3px solid #1b1b1b !important;
+  }
+  .mistake-item .m-num { color: #1b1b1b !important; }
+  .mistake-item .m-body strong { color: #1b1b1b !important; }
+
+  /* Page footer — outline page number badge */
+  .page-footer {
+    border-top: 1px solid #cccccc !important;
+    color: #1b1b1b !important;
+  }
+  .page-footer .pg-num {
+    background: #ffffff !important;
+    color: #1b1b1b !important;
+    border: 1.5px solid #1b1b1b !important;
+  }
+
+  /* Page header bottom rule */
+  .page-header { border-bottom-color: #1b1b1b !important; }
+  .page-header .topic { color: #1b1b1b !important; }
+  .page-header .brand { color: #1b1b1b !important; }
+
+  /* Hide the print button */
+  .print-cta { display: none !important; }
+
+  /* @page setup — A4 portrait, zero margin (we control via padding) */
+  @page { size: A4 portrait; margin: 0; }
+}
 </style>
 </head>
 <body>
 
-<button class="print-cta" onclick="window.print()">Print / Save as PDF</button>
+<button class="print-cta" onclick="window.print()" title="Opens your browser's print dialog. Choose 'Save as PDF' as the destination to download the file.">Download as PDF (12 pages)</button>
 
 <!-- ============================================ -->
 <!-- PAGE 1 — COVER                                -->
