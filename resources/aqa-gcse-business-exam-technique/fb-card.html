@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1200">
+<meta name="robots" content="noindex">
+<title>AQA GCSE Business 8132 Exam Technique Pack — FB Card 1200×630</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --navy: #0a2540;
+    --navy-light: #1a3a5c;
+    --gold: #f4c542;
+    --green: #15803d;
+    --teal: #0e7490;
+    --amber: #b45309;
+    --burgundy: #9f1239;
+    --white: #ffffff;
+    --grey-light: rgba(255,255,255,0.72);
+  }
+  body {
+    background: #333;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    min-height: 100vh;
+  }
+  .instructions {
+    background: white;
+    color: #1a1a1a;
+    padding: 20px 28px;
+    border-radius: 8px;
+    max-width: 1200px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .instructions h2 { font-size: 16px; margin-bottom: 8px; color: var(--navy); }
+  .instructions ol { margin-left: 22px; }
+  .instructions li { margin-bottom: 4px; }
+  .instructions b { color: var(--navy); }
+  .instructions code {
+    background: #eee; padding: 2px 6px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 12.5px;
+    border-radius: 3px;
+  }
+
+  .card-wrap {
+    width: 1200px;
+    height: 630px;
+    background: var(--navy);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 48px 64px 56px;
+  }
+
+  /* Diagonal accent stripe top-right */
+  .card-wrap::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 320px; height: 320px;
+    background: var(--gold);
+    transform: rotate(45deg);
+    opacity: 0.12;
+  }
+
+  /* Bottom multi-colour stripe = 4 levels */
+  .card-wrap::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 6px;
+    background: linear-gradient(90deg,
+      var(--burgundy) 0%, var(--burgundy) 25%,
+      var(--amber) 25%, var(--amber) 50%,
+      var(--teal) 50%, var(--teal) 75%,
+      var(--green) 75%, var(--green) 100%);
+  }
+
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 18px;
+    z-index: 2;
+    position: relative;
+  }
+  .top-row .brand {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .top-row .brand .gold { color: var(--gold); }
+  .top-row .free-pill {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    border-radius: 2px;
+  }
+
+  .eyebrow {
+    color: var(--gold);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    z-index: 2;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 0.94;
+    letter-spacing: -0.035em;
+    margin-bottom: 14px;
+    z-index: 2;
+    position: relative;
+  }
+  h1 .gold { color: var(--gold); }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--grey-light);
+    line-height: 1.4;
+    max-width: 920px;
+    margin-bottom: 22px;
+    z-index: 2;
+    position: relative;
+  }
+  .subtitle b { color: var(--white); font-weight: 700; }
+
+  .levels-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 22px;
+    z-index: 2;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  .level-pill {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.22);
+    color: var(--white);
+    padding: 8px 16px;
+    font-size: 13.5px;
+    font-weight: 700;
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .level-pill .dot {
+    width: 10px; height: 10px;
+    display: inline-block;
+  }
+  .level-pill.l1 { border-color: var(--burgundy); }
+  .level-pill.l1 .dot { background: var(--burgundy); }
+  .level-pill.l2 { border-color: var(--amber); }
+  .level-pill.l2 .dot { background: var(--amber); }
+  .level-pill.l3 { border-color: var(--teal); }
+  .level-pill.l3 .dot { background: var(--teal); }
+  .level-pill.l4 { border-color: var(--green); }
+  .level-pill.l4 .dot { background: var(--green); }
+
+  .stats {
+    display: flex;
+    gap: 48px;
+    z-index: 2;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: 18px;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+  .stat .num {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .stat .label {
+    font-size: 12px;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-top: 6px;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+    position: relative;
+  }
+  .footer-row .left {
+    font-size: 12px;
+    color: var(--grey-light);
+    line-height: 1.5;
+  }
+  .footer-row .left b { color: var(--white); }
+  .footer-row .url {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+    color: var(--gold);
+    font-weight: 700;
+  }
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  <h2>FB / LinkedIn cover image — how to use</h2>
+  <ol>
+    <li><b>Maximize this browser window</b> — card below is exactly 1200×630 px (Facebook + LinkedIn).</li>
+    <li><b>Press <code>Win + Shift + S</code></b> — opens snipping tool.</li>
+    <li><b>Drag selection</b> around the dark card below (just the card).</li>
+    <li><b>Paste / upload</b> to your Facebook post (Ctrl+V).</li>
+  </ol>
+</div>
+
+<div class="card-wrap">
+
+  <div class="top-row">
+    <div class="brand">The <span class="gold">Business School</span></div>
+    <div class="free-pill">Free · 12-page pack</div>
+  </div>
+
+  <div class="eyebrow">GCSE Business · Y10 + Y11 · 2026 Edition</div>
+
+  <h1>9 &amp; 12 Mark<br><span class="gold">Exam Technique Pack.</span></h1>
+
+  <div class="subtitle">
+    <b>AQA GCSE Business 8132.</b> Step-by-step methods for the two extended-response questions that decide the grade — plus 10 exam-style questions, banded mark schemes, and 2 annotated model answers (L3 + L4).
+  </div>
+
+  <div class="levels-row">
+    <span class="level-pill l1"><span class="dot"></span>L1 · 1–3</span>
+    <span class="level-pill l2"><span class="dot"></span>L2 · 4–6</span>
+    <span class="level-pill l3"><span class="dot"></span>L3 · 7–9</span>
+    <span class="level-pill l4"><span class="dot"></span>L4 · 10–12</span>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">12</div><div class="label">A4 pages</div></div>
+    <div class="stat"><div class="num">10</div><div class="label">Exam-style Qs</div></div>
+    <div class="stat"><div class="num">2</div><div class="label">Annotated models</div></div>
+    <div class="stat"><div class="num">102</div><div class="label">Marks total</div></div>
+    <div class="stat"><div class="num">10</div><div class="label">Top mistakes</div></div>
+  </div>
+
+  <div class="footer-row">
+    <div class="left">
+      <b>AQA 8132 · Paper 1 (3.1–3.4) · Paper 2 (3.5–3.6)</b> — fully mapped.<br>
+      Built in Finland · Engineered with our international studio · ICO ZC133810
+    </div>
+    <div class="url">thebusiness.school/resources/aqa-gcse-business-exam-technique</div>
+  </div>
+
+</div>
+
+</body>
+</html>
