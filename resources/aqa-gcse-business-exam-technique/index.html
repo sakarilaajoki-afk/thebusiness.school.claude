@@ -1203,6 +1203,88 @@ body {
   .page-header { border-bottom-color: #1b1b1b !important; }
 
   .print-cta { display: none !important; }
+
+  /* ============================================ */
+  /* PRINT LAYOUT FIXES                            */
+  /* Prevents q-blocks splitting across pages and  */
+  /* stacks 4-level boxes vertically (1 per row)   */
+  /* so descriptions get full width.               */
+  /* ============================================ */
+
+  /* Keep entire question block together — don't split across pages */
+  .q-block,
+  .model-block {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Keep question text with its mark scheme */
+  .q-block .q-context,
+  .q-block .q-question,
+  .q-block .q-options {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Keep judgement block with its level grid */
+  .q-block .ms-judgement {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* STACK level boxes vertically — one row per level — instead of cramming
+     four narrow columns. Gives each description enough horizontal room. */
+  .q-block .ms-levels {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    margin-top: 6px !important;
+  }
+  .q-block .ms-lvl {
+    display: grid !important;
+    grid-template-columns: 36px 55px 1fr !important;
+    gap: 10px !important;
+    padding: 6px 10px !important;
+    align-items: center !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+  .q-block .ms-lvl .lvl-tag {
+    text-align: center !important;
+    padding: 2px 6px !important;
+  }
+  .q-block .ms-lvl .lvl-marks {
+    text-align: left !important;
+  }
+  .q-block .ms-lvl .lvl-desc {
+    font-size: 10.5px !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Same vertical stacking for option columns to avoid narrow text */
+  .q-block .q-options {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .q-block .q-opt {
+    padding: 8px 12px !important;
+  }
+
+  /* Mark scheme grid — keep 2-column but make sure rows don't break */
+  .q-block .ms-grid {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Page header should stay with its content */
+  .page-header { page-break-after: avoid !important; }
+
+  /* Model answer rows shouldn't break */
+  .model-row { page-break-inside: avoid !important; }
+
+  /* Tighter page padding so more content fits per A4 */
+  .page { padding: 1.2cm 1.3cm 1.1cm !important; }
+
   @page { size: A4 portrait; margin: 0; }
 }
 </style>
