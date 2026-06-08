@@ -1285,6 +1285,106 @@ body {
   /* Tighter page padding so more content fits per A4 */
   .page { padding: 1.2cm 1.3cm 1.1cm !important; }
 
+  /* ============================================ */
+  /* COMPREHENSIVE PAGE-BREAK PROTECTION           */
+  /* Every content block stays together as a unit. */
+  /* Headings stay with the content below them.    */
+  /* ============================================ */
+
+  .stems-box,
+  .callout-six,
+  .chain-block,
+  .chain-example,
+  .level-lift,
+  .golden-rule,
+  .connectives,
+  .use-block,
+  .step-row,
+  .check-item,
+  .mistake-item,
+  .cover-how,
+  .q-type-card,
+  .level-row,
+  .ms-grid,
+  .ms-lvl,
+  .ms-judgement,
+  .model-row,
+  .uk-anchor,
+  .qual-card,
+  .pitfall,
+  .callout-gold,
+  .cover-stat,
+  .credit-line {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Group containers should also try to stay together when small */
+  .steps,
+  .q-types,
+  .level-ladder,
+  .mistakes-grid,
+  .checklist,
+  .cover-stats,
+  .cover-boards {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* Section headings stay with the content below */
+  h3,
+  .page-title-block,
+  .page-eyebrow,
+  .page-title,
+  .page-sub {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Section labels stay with their body content */
+  .stems-box .sb-label,
+  .callout-six .cs-label,
+  .chain-block .chain-label,
+  .chain-example .ex-label,
+  .level-lift .ll-label,
+  .golden-rule .gr-label,
+  .connectives .conn-label,
+  .use-block .ub-label,
+  .cover-how h3 {
+    page-break-after: avoid !important;
+    break-after: avoid !important;
+  }
+
+  /* Compact spacing in print to fit more per page */
+  .page-title-block { margin-bottom: 12px !important; }
+  h3[style] { margin-top: 10px !important; margin-bottom: 6px !important; }
+  .steps, .q-types, .level-ladder { margin: 10px 0 !important; }
+  .step-row { padding: 10px 12px !important; margin-bottom: 6px !important; }
+  .stems-box, .callout-six, .chain-example, .level-lift,
+  .connectives, .callout-gold, .pitfall {
+    padding: 10px 14px !important;
+    margin: 10px 0 !important;
+  }
+  .chain-block, .golden-rule, .use-block {
+    padding: 12px 16px !important;
+    margin: 10px 0 !important;
+  }
+
+  /* Slightly smaller text in print so more content fits A4 */
+  .step-row .step-desc { font-size: 11px !important; }
+  .step-row .step-title { font-size: 12px !important; }
+  .chain-block .chain-formula { font-size: 11.5px !important; line-height: 1.55 !important; }
+  .chain-example .ex-body,
+  .stems-box .sb-body,
+  .level-lift li,
+  .callout-six .cs-body,
+  .callout-gold .cg-body,
+  .pitfall .pf-body { font-size: 11px !important; line-height: 1.5 !important; }
+  .connectives .conn-body { font-size: 11.5px !important; line-height: 1.6 !important; }
+  .golden-rule .gr-title { font-size: 14px !important; }
+  .golden-rule .gr-body { font-size: 11.5px !important; }
+  .level-row .lr-desc { font-size: 11px !important; padding: 10px 14px !important; }
+
   @page { size: A4 portrait; margin: 0; }
 }
 </style>
