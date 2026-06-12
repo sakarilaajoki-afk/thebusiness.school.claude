@@ -64,3 +64,9 @@
   from = "/resources"
   to = "/resources/"
   status = 301
+
+# Short link for the IT information sheet (sent to pilot teachers)
+[[redirects]]
+  from = "/it"
+  to = "/resources/downloads/TBS-School-IT-Information-Sheet.pdf"
+  status = 302
