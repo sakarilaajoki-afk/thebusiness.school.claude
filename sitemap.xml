@@ -65,6 +65,12 @@
 
   <!-- Individual resources -->
   <url>
+    <loc>https://thebusiness.school/resources/year-12-to-13-step-up/</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://thebusiness.school/resources/aqa-gcse-business-exam-technique/</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>monthly</changefreq>
