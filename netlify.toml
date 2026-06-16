@@ -70,3 +70,14 @@
   from = "/it"
   to = "/resources/downloads/TBS-School-IT-Information-Sheet.pdf"
   status = 302
+
+# Pilot page moved to /waitlist (Autumn 2026 cohort full). Keep old links working.
+[[redirects]]
+  from = "/pilot"
+  to = "/waitlist/"
+  status = 301
+
+[[redirects]]
+  from = "/pilot/*"
+  to = "/waitlist/:splat"
+  status = 301
