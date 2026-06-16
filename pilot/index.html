@@ -6,20 +6,20 @@
 <meta name="theme-color" content="#1a1a2e">
 <meta name="robots" content="index, follow, max-image-preview:large">
 
-<title>Pilot Programme — Autumn Term 2026 | The Business School</title>
-<meta name="description" content="Apply for the free Pilot Programme — Autumn Term 2026. Cohort capped at 20 schools. UK A-Level, BTEC, IGCSE and IB Business. 15 September – 15 December 2026.">
+<title>Waitlist — Next Cohort 2027 | The Business School</title>
+<meta name="description" content="The Autumn 2026 pilot is full. Join the waitlist for the next round (early 2027) of The Business School — the live A-Level, BTEC and GCSE Business classroom simulation. Be first to know when places open.">
 <link rel="canonical" href="https://thebusiness.school/pilot/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Business School">
 <meta property="og:url" content="https://thebusiness.school/pilot/">
-<meta property="og:title" content="Pilot Programme — Autumn Term 2026 | The Business School">
-<meta property="og:description" content="Free Pilot Programme for UK A-Level, BTEC, IGCSE and IB Business teachers. Cohort capped at 20 schools. 15 Sept – 15 Dec 2026.">
+<meta property="og:title" content="Waitlist — Next Cohort 2027 | The Business School">
+<meta property="og:description" content="The Autumn 2026 pilot filled in two weeks. Join the waitlist for the next round (early 2027) — A-Level, BTEC & GCSE Business.">
 <meta property="og:image" content="https://thebusiness.school/assets/og-image.png">
 <meta property="og:locale" content="en_GB">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pilot Programme — Autumn Term 2026">
-<meta name="twitter:description" content="Free Pilot Programme. Cohort capped at 20 schools. 15 Sept – 15 Dec 2026.">
+<meta name="twitter:title" content="Waitlist — Next Cohort 2027">
+<meta name="twitter:description" content="The Autumn 2026 pilot is full. Join the waitlist for the next round (early 2027).">
 <meta name="twitter:image" content="https://thebusiness.school/assets/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
@@ -75,12 +75,11 @@
     border-radius:4px; overflow:hidden;
   }
   .capacity-bar .cap-fill {
-    height:100%; width:0%; background:var(--gold);
-    transition:width 0.6s;
+    height:100%; width:100%; background:var(--gold);
   }
   .capacity-bar .cap-count {
     color:#fff; font-family:'Roboto Mono', monospace;
-    font-size:0.9rem; font-weight:700;
+    font-size:0.9rem; font-weight:700; white-space:nowrap;
   }
 
   main { max-width:880px; margin:0 auto; padding:48px 24px 80px; }
@@ -100,29 +99,23 @@
     color:var(--primary); font-size:1.35rem; margin-bottom:14px;
     letter-spacing:-0.01em;
   }
-  .ps-grid {
-    display:grid; grid-template-columns:1fr 1fr; gap:24px;
-    margin-top:18px;
-  }
-  @media (max-width:720px) { .ps-grid { grid-template-columns:1fr; } }
   .ps-col h3 {
     color:var(--primary); font-size:0.9rem; font-weight:800;
     letter-spacing:0.06em; text-transform:uppercase;
-    margin-bottom:10px; padding-bottom:6px;
+    margin:18px 0 10px; padding-bottom:6px;
     border-bottom:2px solid var(--rule);
   }
   .ps-col ul { list-style:none; padding:0; margin:0; }
   .ps-col li {
-    font-size:0.92rem; color:var(--text); margin-bottom:7px;
-    padding-left:20px; position:relative; line-height:1.5;
+    font-size:0.95rem; color:var(--text); margin-bottom:9px;
+    padding-left:22px; position:relative; line-height:1.5;
   }
   .ps-col li::before {
     content:"✓"; position:absolute; left:0; top:0;
     color:var(--good); font-weight:700;
   }
-  .ps-col.expect li::before { content:"→"; color:var(--accent); }
 
-  /* 3-step timeline */
+  /* 4-step timeline */
   .timeline {
     display:grid; grid-template-columns:repeat(4, 1fr); gap:0;
     margin-bottom:36px; border:1px solid var(--rule);
@@ -145,13 +138,6 @@
   }
   .tl-step h3 { color:var(--primary); font-size:0.98rem; margin-bottom:5px; }
   .tl-step p { font-size:0.86rem; color:var(--subtle); line-height:1.5; margin:0; }
-
-  /* Section headings */
-  section.block { margin-bottom:36px; }
-  section.block h2 {
-    color:var(--primary); font-size:1.4rem; margin-bottom:10px;
-    letter-spacing:-0.01em;
-  }
 
   /* The form */
   .form-card {
@@ -197,7 +183,7 @@
   .form-row input:focus,
   .form-row select:focus,
   .form-row textarea:focus { outline:none; border-color:var(--accent); }
-  .form-row textarea { resize:vertical; min-height:80px; }
+  .form-row textarea { resize:vertical; min-height:70px; }
   .form-row .help { font-size:0.82rem; color:var(--subtle); margin-top:4px; }
 
   .form-two-col {
@@ -207,21 +193,15 @@
 
   .checkbox-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px 14px; margin-top:4px; }
   @media (max-width:560px) { .checkbox-grid { grid-template-columns:1fr; } }
-  .cb-row, .radio-row {
+  .cb-row {
     display:flex; align-items:flex-start; gap:8px;
     font-size:0.92rem; color:var(--text); cursor:pointer;
     line-height:1.4;
   }
-  .cb-row input, .radio-row input {
+  .cb-row input {
     width:16px; height:16px; cursor:pointer; flex-shrink:0;
     margin-top:2px;
   }
-
-  .commit-box {
-    background:var(--bg-tint); border:1px solid var(--gold);
-    border-radius:6px; padding:16px 18px; margin-bottom:0;
-  }
-  .commit-box .cb-row { font-weight:600; color:var(--primary); }
 
   .hidden { display:none !important; }
 
@@ -234,7 +214,6 @@
     margin-top:22px;
   }
   .submit-btn:hover { background:var(--accent-hover); }
-  .submit-btn:disabled { background:var(--subtle); cursor:not-allowed; }
 
   .privacy-note {
     margin-top:14px; font-size:0.82rem; color:var(--subtle);
@@ -253,23 +232,16 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "EducationalOccupationalProgram",
-  "name": "The Business School — Autumn 2026 Pilot Programme",
-  "description": "A free 13-week pilot programme of The Business School Simulation for UK A-Level, BTEC, IGCSE and IB Business teachers. Cohort capped at 20 schools.",
-  "provider": {
+  "@type": "WebPage",
+  "name": "The Business School — Waitlist for the Next Cohort (2027)",
+  "description": "The Autumn 2026 pilot of The Business School Simulation is full. Join the waitlist for the next round in early 2027. UK A-Level, BTEC, IGCSE and IB Business.",
+  "url": "https://thebusiness.school/pilot/",
+  "isPartOf": { "@type": "WebSite", "name": "The Business School", "url": "https://thebusiness.school/" },
+  "publisher": {
     "@type": "Organization",
     "name": "The Business School",
     "sameAs": "https://thebusiness.school/"
-  },
-  "url": "https://thebusiness.school/pilot/",
-  "applicationStartDate": "2026-05-15",
-  "applicationDeadline": "2026-09-15",
-  "startDate": "2026-09-15",
-  "endDate": "2026-12-15",
-  "timeToComplete": "P13W",
-  "maximumEnrollment": 20,
-  "occupationalCategory": "Business Education",
-  "educationalCredentialAwarded": "Pilot Programme Completion (Optional)"
+  }
 }
 </script>
 </head>
@@ -290,75 +262,61 @@
 
 <section class="hero-lite">
   <div class="hero-inner">
-    <p class="eyebrow">Autumn 2026 · Pilot Programme</p>
-    <h1>Free Pilot Programme — 20 schools, Autumn Term 2026</h1>
-    <p class="lead">A 13-week classroom pilot of The Business School Simulation. UK A-Level, BTEC, IGCSE and IB Business. Cohort capped at 20 schools.</p>
+    <p class="eyebrow">Autumn 2026 · Waitlist open</p>
+    <h1>The autumn cohort is full. Join the waitlist.</h1>
+    <p class="lead">More than 30 schools joined the Autumn 2026 pilot in two weeks. The waitlist for the next round, in early 2027, is now open. Add your details and you'll be first to hear when places open.</p>
 
     <div class="capacity-bar">
-      <div class="cap-label">Cohort</div>
-      <div class="cap-track"><div class="cap-fill" style="width:0%;"></div></div>
-      <div class="cap-count">0 / 20 slots filled</div>
+      <div class="cap-label">Autumn 2026</div>
+      <div class="cap-track"><div class="cap-fill"></div></div>
+      <div class="cap-count">Cohort full</div>
     </div>
   </div>
 </section>
 
 <main>
 
-  <!-- PROGRAMME SUMMARY -->
+  <!-- WAITLIST SUMMARY -->
   <div class="programme-summary">
-    <div class="ps-header">Programme Overview</div>
+    <div class="ps-header">The Waitlist</div>
     <div class="ps-body">
-      <h2>What this is — and what it isn't</h2>
-      <p>The Pilot Programme exists to validate the simulation in real UK and international classrooms across the Autumn Term 2026, ahead of full release. Pilot schools receive the working classroom-ready build, run it with their students at their own pace, and provide a single end-of-term feedback survey. There is no cost, no licence fee, and no commitment to purchase afterwards.</p>
+      <h2>Why the waitlist is worth being on</h2>
+      <p>The free Autumn 2026 pilot filled faster than expected, so we have closed it to keep the experience strong for the schools taking part. The waitlist is how we line up the next round for early 2027, when paid licences also launch. There is no cost and no commitment to join, and you can try the live demo any time in the meantime.</p>
 
-      <div class="ps-grid">
-        <div class="ps-col deliver">
-          <h3>What we deliver to your school</h3>
-          <ul>
-            <li>Working teacher licence for full 2026/27 academic year (no cost)</li>
-            <li>One-page IT info sheet for your network team (KCSIE 2024/25, UK GDPR)</li>
-            <li>Written getting-started guide (set-up steps, first-lesson suggestions, scheme-of-work fit)</li>
-            <li>Email support throughout the programme</li>
-            <li>Optional monthly drop-in office hour with the founder</li>
-            <li>Curriculum-mapping reference for AQA, Edexcel, OCR, BTEC, IGCSE and IB</li>
-          </ul>
-        </div>
-        <div class="ps-col expect">
-          <h3>What we ask of your school</h3>
-          <ul>
-            <li>Deploy the simulation with at least one Year 12 or Year 13 class between 15 September and 15 December 2026</li>
-            <li>Forward the IT info sheet to your network team for whitelisting</li>
-            <li>Complete a 5-minute end-of-term feedback survey in December 2026</li>
-            <li>Permission for us to reference your school by category (e.g. "UK independent sixth form") — never by name without separate consent</li>
-          </ul>
-        </div>
+      <div class="ps-col">
+        <h3>What waitlist schools get</h3>
+        <ul>
+          <li><strong>First priority</strong> for the next cohort in early 2027, ahead of new applicants</li>
+          <li>A <strong>founders' discount</strong> locked in when paid licences launch</li>
+          <li>First to hear our <strong>Autumn 2026 pilot findings</strong> when they are published in December</li>
+          <li>Access to the <strong>free teacher demo and solo practice</strong> at <a href="https://play.thebusiness.school/" style="color:var(--accent);font-weight:600;">play.thebusiness.school</a> right now</li>
+        </ul>
       </div>
     </div>
   </div>
 
   <!-- 4-STEP TIMELINE -->
   <section class="block">
-    <h2>Timeline</h2>
     <div class="timeline">
       <div class="tl-step">
-        <div class="tl-date">Now → 15 Sept</div>
-        <h3>Apply</h3>
-        <p>5-minute form below. Cohort accepted on a rolling basis until 20 slots are filled.</p>
+        <div class="tl-date">Now</div>
+        <h3>Join the waitlist</h3>
+        <p>2-minute form below. No cost, no commitment, just your details.</p>
       </div>
       <div class="tl-step">
-        <div class="tl-date">Monday 15 Sept</div>
-        <h3>Licence Day</h3>
-        <p>Confirmed pilot schools receive the working licence + written getting-started guide + IT info sheet by email.</p>
+        <div class="tl-date">Sept → Dec 2026</div>
+        <h3>Pilot runs</h3>
+        <p>The current cohort runs the simulation with their classes across the autumn term.</p>
       </div>
       <div class="tl-step">
-        <div class="tl-date">15 Sept → 15 Dec</div>
-        <h3>Run the pilot</h3>
-        <p>13-week window. Deploy whenever fits your scheme of work. Email support throughout.</p>
+        <div class="tl-date">December 2026</div>
+        <h3>Findings published</h3>
+        <p>We publish the pilot findings. Waitlist schools hear first.</p>
       </div>
       <div class="tl-step">
-        <div class="tl-date">Mid-December</div>
-        <h3>Feedback</h3>
-        <p>5-minute survey. Honest feedback shapes the Spring 2027 release.</p>
+        <div class="tl-date">Early 2027</div>
+        <h3>Next round opens</h3>
+        <p>Waitlist schools are contacted first, with a founders' discount.</p>
       </div>
     </div>
   </section>
@@ -366,10 +324,11 @@
   <!-- THE FORM -->
   <form class="form-card" name="pilot-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/pilot/thanks/">
     <input type="hidden" name="form-name" value="pilot-application">
+    <input type="hidden" name="submission_type" value="waitlist">
     <p class="hidden"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
 
-    <h2>Pilot Programme Application</h2>
-    <p class="form-sub">Estimated time: 5 minutes. All required fields marked with <span style="color:var(--err);">*</span>.</p>
+    <h2>Join the waitlist</h2>
+    <p class="form-sub">About 2 minutes. We'll email you the moment the next round opens. Required fields marked with <span style="color:var(--err);">*</span>.</p>
 
     <!-- SECTION 1: CONTACT -->
     <div class="form-section">
@@ -383,14 +342,13 @@
         <div class="form-row">
           <label for="email">School email <span class="req">*</span></label>
           <input type="email" id="email" name="email" required>
-          <div class="help">Your primary contact address — usually your school email.</div>
         </div>
       </div>
 
       <div class="form-row">
         <label for="personal_email">Personal email <span class="opt">(optional but recommended)</span></label>
         <input type="email" id="personal_email" name="personal_email" placeholder="e.g. your Gmail">
-        <div class="help">Some UK school email filters block external messages with attachments. A personal email helps your Licence Day pack reach you reliably on 15 September.</div>
+        <div class="help">Some school email filters block external messages, so a personal email helps us reach you when the next round opens.</div>
       </div>
 
       <div class="form-row">
@@ -430,19 +388,14 @@
           <option>Other</option>
         </select>
       </div>
-
-      <div class="form-row">
-        <label for="dept_size">Business department size <span class="opt">(approximate, optional)</span></label>
-        <input type="text" id="dept_size" name="dept_size" placeholder="e.g. 3 teachers, ~120 Business students total">
-      </div>
     </div>
 
-    <!-- SECTION 3: PILOT FIT -->
+    <!-- SECTION 3: WHAT YOU TEACH -->
     <div class="form-section">
-      <div class="fs-label">Section 3 · Pilot fit</div>
+      <div class="fs-label">Section 3 · What you teach</div>
 
       <div class="form-row">
-        <label>Exam board(s) you teach <span class="req">*</span></label>
+        <label>Exam board(s) you teach <span class="opt">(tick any)</span></label>
         <div class="checkbox-grid">
           <label class="cb-row"><input type="checkbox" name="boards" value="AQA 7132"> AQA 7132</label>
           <label class="cb-row"><input type="checkbox" name="boards" value="Edexcel 9BS0"> Edexcel 9BS0</label>
@@ -450,57 +403,20 @@
           <label class="cb-row"><input type="checkbox" name="boards" value="BTEC Business"> BTEC Business</label>
           <label class="cb-row"><input type="checkbox" name="boards" value="IB Business Management"> IB Business Management</label>
           <label class="cb-row"><input type="checkbox" name="boards" value="Cambridge IGCSE 0450"> Cambridge IGCSE 0450</label>
-          <label class="cb-row"><input type="checkbox" name="boards" value="Pearson IGCSE 4BS1"> Pearson IGCSE 4BS1</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="GCSE Business"> GCSE Business</label>
           <label class="cb-row"><input type="checkbox" name="boards" value="Other"> Other</label>
         </div>
       </div>
 
       <div class="form-row">
-        <label for="cohort">Year groups + estimated students per session <span class="req">*</span></label>
-        <input type="text" id="cohort" name="cohort" placeholder="e.g. Y12 + Y13, ~25 students per session" required>
-      </div>
-
-      <div class="form-row">
-        <label for="it_whitelist">IT setup — can your school whitelist new domains? <span class="req">*</span></label>
-        <select id="it_whitelist" name="it_whitelist" required>
-          <option value="">Select one</option>
-          <option>Yes — we whitelist on request</option>
-          <option>No — we use a strict filter</option>
-          <option>Don't know — would need to ask IT</option>
-        </select>
-        <div class="help">If unsure, we have a 1-page IT info sheet to forward to your network team.</div>
+        <label for="cohort">Year groups <span class="opt">(optional)</span></label>
+        <input type="text" id="cohort" name="cohort" placeholder="e.g. Y12 + Y13">
       </div>
     </div>
 
-    <!-- SECTION 4: COMMITMENT -->
+    <!-- SECTION 4: OPTIONAL -->
     <div class="form-section">
-      <div class="fs-label">Section 4 · Programme commitment</div>
-
-      <div class="commit-box" style="margin-bottom:14px;">
-        <label class="cb-row">
-          <input type="checkbox" name="commit_deploy" value="Yes" required>
-          <span><b>I commit</b> to deploying the simulation with at least one of my classes between <b>15 September and 15 December 2026</b>, at a time that fits my scheme of work. <span class="req">*</span></span>
-        </label>
-      </div>
-
-      <div class="commit-box" style="margin-bottom:14px;">
-        <label class="cb-row">
-          <input type="checkbox" name="commit_feedback" value="Yes" required>
-          <span><b>I commit</b> to completing a 5-minute end-of-term feedback survey in <b>mid-December 2026</b>. <span class="req">*</span></span>
-        </label>
-      </div>
-
-      <div class="commit-box">
-        <label class="cb-row">
-          <input type="checkbox" name="commit_reference" value="Yes">
-          <span>I'm happy for The Business School to reference my school by <b>category only</b> (e.g. "UK Independent Sixth Form" — never by name) in pilot reporting. <span class="opt">(Optional)</span></span>
-        </label>
-      </div>
-    </div>
-
-    <!-- SECTION 5: OPTIONAL -->
-    <div class="form-section">
-      <div class="fs-label">Section 5 · Anything else</div>
+      <div class="fs-label">Section 4 · Anything else</div>
 
       <div class="form-row">
         <label for="referral">How did you hear about us? <span class="opt">(optional)</span></label>
@@ -509,7 +425,6 @@
           <option>Facebook group</option>
           <option>LinkedIn (post or message)</option>
           <option>Email from Sakari</option>
-          <option>TES Resources</option>
           <option>Recommended by a colleague</option>
           <option>Google search</option>
           <option>Other</option>
@@ -517,15 +432,15 @@
       </div>
 
       <div class="form-row">
-        <label for="notes">Anything else we should know? <span class="opt">(optional)</span></label>
-        <textarea id="notes" name="notes" placeholder="School context, scheme-of-work fit, specific timing constraints, prior simulation experience..."></textarea>
+        <label for="notes">Anything you'd like us to know? <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="notes" placeholder="Anything that would help when the next round opens..."></textarea>
       </div>
     </div>
 
-    <button type="submit" class="submit-btn">Submit Pilot Application →</button>
+    <button type="submit" class="submit-btn">Join the waitlist →</button>
 
     <p class="privacy-note">
-      Your information is used only for pilot coordination. We don't sell or share it.<br>
+      Your information is used only to contact you about the next cohort. We don't sell or share it.<br>
       ICO ZC133810 · UK GDPR compliant · <a href="/data-protection/">Privacy Policy</a>
     </p>
   </form>
