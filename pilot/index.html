@@ -55,6 +55,18 @@
   }
   .hero-inner { max-width:880px; margin:0 auto; }
   .hero-lite .eyebrow { color:var(--gold); font-size:0.8rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:14px; }
+  .full-badge {
+    display:inline-flex; align-items:center; gap:12px;
+    background:rgba(255,255,255,0.06); border:1px solid rgba(244,197,66,0.45);
+    padding:7px 9px 7px 18px; border-radius:50px;
+    font-size:0.82rem; font-weight:700; letter-spacing:0.1em;
+    text-transform:uppercase; color:rgba(255,255,255,0.9); margin-bottom:18px;
+  }
+  .full-badge strong {
+    background:var(--gold); color:var(--primary);
+    padding:5px 14px; border-radius:50px;
+    font-weight:900; letter-spacing:0.16em;
+  }
   .hero-lite h1 { font-size:2.4rem; line-height:1.12; margin-bottom:14px; font-weight:800; letter-spacing:-0.01em; }
   .hero-lite .lead { font-size:1.1rem; color:rgba(255,255,255,0.85); max-width:640px; margin-bottom:24px; }
 
@@ -262,7 +274,7 @@
 
 <section class="hero-lite">
   <div class="hero-inner">
-    <p class="eyebrow">Autumn 2026 · Waitlist open</p>
+    <div class="full-badge">Autumn 2026 pilot <strong>Full</strong></div>
     <h1>The autumn cohort is full. Join the waitlist.</h1>
     <p class="lead">More than 30 schools joined the Autumn 2026 pilot in two weeks. The waitlist for the next round, in early 2027, is now open. Add your details and you'll be first to hear when places open.</p>
 
