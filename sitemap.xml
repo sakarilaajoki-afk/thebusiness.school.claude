@@ -65,6 +65,18 @@
 
   <!-- Individual resources -->
   <url>
+    <loc>https://thebusiness.school/resources/operations-lean-masterclass/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://thebusiness.school/resources/motivation-leadership-masterclass/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://thebusiness.school/resources/financial-ratios-masterclass/</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
