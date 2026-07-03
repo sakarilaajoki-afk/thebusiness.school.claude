@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1a1a2e">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<title>Waitlist — Next Cohort 2027 | The Business School</title>
+<meta name="description" content="The Autumn 2026 pilot is full. Join the waitlist for the next round (early 2027) of The Business School — the live A-Level, BTEC and GCSE Business classroom simulation. Be first to know when places open.">
+<link rel="canonical" href="https://thebusiness.school/waitlist/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Business School">
+<meta property="og:url" content="https://thebusiness.school/waitlist/">
+<meta property="og:title" content="Waitlist — Next Cohort 2027 | The Business School">
+<meta property="og:description" content="The Autumn 2026 pilot filled in two weeks. Join the waitlist for the next round (early 2027) — A-Level, BTEC & GCSE Business.">
+<meta property="og:image" content="https://thebusiness.school/assets/og-image.png">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Waitlist — Next Cohort 2027">
+<meta name="twitter:description" content="The Autumn 2026 pilot is full. Join the waitlist for the next round (early 2027).">
+<meta name="twitter:image" content="https://thebusiness.school/assets/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+<style>
+  :root {
+    --primary:#1a1a2e; --primary-light:#16213e; --primary-mid:#0f3460;
+    --accent:#00838f; --accent-hover:#006971; --gold:#f4c542;
+    --text:#2d2d2d; --subtle:#6c757d; --ink:#1b1b1b;
+    --bg-soft:#fafafa; --bg-tint:#fff8e1; --rule:#e5e7eb;
+    --err:#b8333f; --good:#15803d;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    color:var(--text); line-height:1.65; background:#fff;
+  }
+  .nav { background:var(--primary); padding:14px 24px; position:sticky; top:0; z-index:50; }
+  .nav-inner { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; }
+  .nav a.brand { color:#fff; text-decoration:none; font-weight:800; font-size:1.05rem; }
+  .nav a.brand span { color:var(--gold); }
+  .nav-links { display:flex; gap:24px; align-items:center; }
+  .nav-links a { color:rgba(255,255,255,0.85); text-decoration:none; font-size:0.9rem; }
+  .nav-links a:hover { color:#fff; }
+  .nav-links a.cta { background:var(--accent); color:#fff; padding:8px 18px; border-radius:6px; font-weight:600; }
+  .nav-links a.cta:hover { background:var(--accent-hover); }
+  @media (max-width:720px) { .nav-links a:not(.cta) { display:none; } }
+
+  .hero-lite {
+    background:linear-gradient(135deg, var(--primary) 0%, var(--primary-mid) 100%);
+    color:#fff; padding:64px 24px 48px;
+  }
+  .hero-inner { max-width:880px; margin:0 auto; }
+  .hero-lite .eyebrow { color:var(--gold); font-size:0.8rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:14px; }
+  .full-badge {
+    display:inline-flex; align-items:center; gap:12px;
+    background:rgba(255,255,255,0.06); border:1px solid rgba(244,197,66,0.45);
+    padding:7px 9px 7px 18px; border-radius:50px;
+    font-size:0.82rem; font-weight:700; letter-spacing:0.1em;
+    text-transform:uppercase; color:rgba(255,255,255,0.9); margin-bottom:18px;
+  }
+  .full-badge strong {
+    background:var(--gold); color:var(--primary);
+    padding:5px 14px; border-radius:50px;
+    font-weight:900; letter-spacing:0.16em;
+  }
+  .hero-lite h1 { font-size:2.4rem; line-height:1.12; margin-bottom:14px; font-weight:800; letter-spacing:-0.01em; }
+  .hero-lite .lead { font-size:1.1rem; color:rgba(255,255,255,0.85); max-width:640px; margin-bottom:24px; }
+
+  /* Cohort capacity bar */
+  .capacity-bar {
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(244,197,66,0.4);
+    border-radius:8px; padding:14px 18px;
+    display:flex; align-items:center; gap:18px;
+    max-width:640px;
+  }
+  .capacity-bar .cap-label {
+    color:var(--gold); font-size:0.78rem; font-weight:800;
+    letter-spacing:0.14em; text-transform:uppercase;
+  }
+  .capacity-bar .cap-track {
+    flex-grow:1; height:8px; background:rgba(255,255,255,0.15);
+    border-radius:4px; overflow:hidden;
+  }
+  .capacity-bar .cap-fill {
+    height:100%; width:100%; background:var(--gold);
+  }
+  .capacity-bar .cap-count {
+    color:#fff; font-family:'Roboto Mono', monospace;
+    font-size:0.9rem; font-weight:700; white-space:nowrap;
+  }
+
+  main { max-width:880px; margin:0 auto; padding:48px 24px 80px; }
+
+  /* Programme summary box */
+  .programme-summary {
+    border:2px solid var(--primary); border-radius:10px;
+    overflow:hidden; margin-bottom:36px;
+  }
+  .programme-summary .ps-header {
+    background:var(--primary); color:white;
+    padding:14px 24px; font-size:0.85rem; font-weight:800;
+    letter-spacing:0.12em; text-transform:uppercase;
+  }
+  .programme-summary .ps-body { padding:24px 28px; }
+  .programme-summary h2 {
+    color:var(--primary); font-size:1.35rem; margin-bottom:14px;
+    letter-spacing:-0.01em;
+  }
+  .ps-col h3 {
+    color:var(--primary); font-size:0.9rem; font-weight:800;
+    letter-spacing:0.06em; text-transform:uppercase;
+    margin:18px 0 10px; padding-bottom:6px;
+    border-bottom:2px solid var(--rule);
+  }
+  .ps-col ul { list-style:none; padding:0; margin:0; }
+  .ps-col li {
+    font-size:0.95rem; color:var(--text); margin-bottom:9px;
+    padding-left:22px; position:relative; line-height:1.5;
+  }
+  .ps-col li::before {
+    content:"✓"; position:absolute; left:0; top:0;
+    color:var(--good); font-weight:700;
+  }
+
+  /* 4-step timeline */
+  .timeline {
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:0;
+    margin-bottom:36px; border:1px solid var(--rule);
+    border-radius:8px; overflow:hidden;
+  }
+  @media (max-width:720px) { .timeline { grid-template-columns:1fr; } }
+  .tl-step {
+    padding:18px 20px; border-right:1px solid var(--rule);
+    background:var(--bg-soft);
+  }
+  @media (max-width:720px) {
+    .tl-step { border-right:none; border-bottom:1px solid var(--rule); }
+    .tl-step:last-child { border-bottom:none; }
+  }
+  .tl-step:last-child { border-right:none; }
+  .tl-step .tl-date {
+    font-family:'Roboto Mono', monospace;
+    font-size:10px; font-weight:700; color:var(--accent);
+    letter-spacing:0.1em; text-transform:uppercase; margin-bottom:6px;
+  }
+  .tl-step h3 { color:var(--primary); font-size:0.98rem; margin-bottom:5px; }
+  .tl-step p { font-size:0.86rem; color:var(--subtle); line-height:1.5; margin:0; }
+
+  /* The form */
+  .form-card {
+    background:#fff; border:2px solid var(--primary);
+    border-radius:10px; padding:32px;
+  }
+  .form-card h2 {
+    color:var(--primary); margin-top:0;
+    padding-bottom:14px; border-bottom:2px solid var(--rule); margin-bottom:6px;
+  }
+  .form-card .form-sub {
+    color:var(--subtle); font-size:0.9rem; margin-bottom:22px;
+  }
+
+  .form-section {
+    margin-bottom:24px; padding-bottom:20px;
+    border-bottom:1px dashed var(--rule);
+  }
+  .form-section:last-of-type { border-bottom:none; }
+  .form-section .fs-label {
+    font-family:'Roboto Mono', monospace;
+    font-size:10px; font-weight:700; color:var(--accent);
+    letter-spacing:0.1em; text-transform:uppercase; margin-bottom:14px;
+  }
+
+  .form-row { margin-bottom:18px; }
+  .form-row:last-child { margin-bottom:0; }
+  .form-row label {
+    display:block; font-size:0.92rem; font-weight:700;
+    color:var(--primary); margin-bottom:5px;
+  }
+  .form-row label .req { color:var(--err); margin-left:3px; }
+  .form-row label .opt { color:var(--subtle); font-weight:400; font-size:0.82rem; margin-left:6px; }
+  .form-row input[type="text"],
+  .form-row input[type="email"],
+  .form-row select,
+  .form-row textarea {
+    width:100%; padding:10px 12px; font-size:0.95rem;
+    border:1px solid var(--rule); border-radius:6px;
+    font-family:inherit; color:var(--text);
+    transition:border-color 0.15s;
+  }
+  .form-row input:focus,
+  .form-row select:focus,
+  .form-row textarea:focus { outline:none; border-color:var(--accent); }
+  .form-row textarea { resize:vertical; min-height:70px; }
+  .form-row .help { font-size:0.82rem; color:var(--subtle); margin-top:4px; }
+
+  .form-two-col {
+    display:grid; grid-template-columns:1fr 1fr; gap:14px;
+  }
+  @media (max-width:560px) { .form-two-col { grid-template-columns:1fr; } }
+
+  .checkbox-grid { display:grid; grid-template-columns:1fr 1fr; gap:6px 14px; margin-top:4px; }
+  @media (max-width:560px) { .checkbox-grid { grid-template-columns:1fr; } }
+  .cb-row {
+    display:flex; align-items:flex-start; gap:8px;
+    font-size:0.92rem; color:var(--text); cursor:pointer;
+    line-height:1.4;
+  }
+  .cb-row input {
+    width:16px; height:16px; cursor:pointer; flex-shrink:0;
+    margin-top:2px;
+  }
+
+  .commit-box {
+    background:var(--bg-tint); border:1px solid var(--gold);
+    border-radius:6px; padding:16px 18px; margin-bottom:0;
+  }
+  .commit-box .cb-row { font-weight:600; color:var(--primary); }
+
+  .hidden { display:none !important; }
+
+  .submit-btn {
+    background:var(--accent); color:white; border:none;
+    padding:14px 28px; font-size:1rem; font-weight:700;
+    border-radius:6px; cursor:pointer; width:100%;
+    transition:background 0.15s;
+    font-family:inherit;
+    margin-top:22px;
+  }
+  .submit-btn:hover { background:var(--accent-hover); }
+
+  .privacy-note {
+    margin-top:14px; font-size:0.82rem; color:var(--subtle);
+    text-align:center; line-height:1.5;
+  }
+  .privacy-note a { color:var(--accent); }
+
+  footer {
+    background:var(--primary); color:rgba(255,255,255,0.8);
+    padding:36px 24px; margin-top:60px; text-align:center;
+    font-size:0.88rem;
+  }
+  footer a { color:var(--gold); text-decoration:none; }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "The Business School — Waitlist for the Next Cohort (2027)",
+  "description": "The Autumn 2026 pilot of The Business School Simulation is full. Join the waitlist for the next round in early 2027. UK A-Level, BTEC, IGCSE and IB Business.",
+  "url": "https://thebusiness.school/waitlist/",
+  "isPartOf": { "@type": "WebSite", "name": "The Business School", "url": "https://thebusiness.school/" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Business School",
+    "sameAs": "https://thebusiness.school/"
+  }
+}
+</script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="brand">The <span>Business School</span></a>
+    <div class="nav-links">
+      <a href="/for-heads/">For Heads</a>
+      <a href="/for-teachers/">For Teachers</a>
+      <a href="/resources/">Resources</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="https://play.thebusiness.school/" target="_blank" rel="noopener noreferrer" class="cta">Live Demo</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-lite">
+  <div class="hero-inner">
+    <div class="full-badge">Autumn 2026 pilot <strong>Full</strong></div>
+    <h1>The autumn cohort is full. Join the waitlist.</h1>
+    <p class="lead">More than 30 schools joined the Autumn 2026 pilot in two weeks. The waitlist for the next round, in early 2027, is now open. Add your details and you'll be first to hear when places open.</p>
+
+    <div class="capacity-bar">
+      <div class="cap-label">Autumn 2026</div>
+      <div class="cap-track"><div class="cap-fill"></div></div>
+      <div class="cap-count">30 / 30 spots filled</div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <!-- WAITLIST SUMMARY -->
+  <div class="programme-summary">
+    <div class="ps-header">The Waitlist</div>
+    <div class="ps-body">
+      <h2>Why the waitlist is worth being on</h2>
+      <p>The free Autumn 2026 pilot filled faster than expected, so we have closed it to keep the experience strong for the schools taking part. The waitlist is how we line up the next round for early 2027, when paid licences also launch. There is no cost to join. You can try the live demo any time in the meantime.</p>
+
+      <div class="ps-col">
+        <h3>What waitlist schools get</h3>
+        <ul>
+          <li><strong>First priority</strong> for the next cohort in early 2027, ahead of new applicants</li>
+          <li>A <strong>founders' discount</strong> locked in when paid licences launch</li>
+          <li>First to hear our <strong>Autumn 2026 pilot findings</strong> when they are published in December</li>
+          <li>Access to the <strong>free teacher demo and solo practice</strong> at <a href="https://play.thebusiness.school/" style="color:var(--accent);font-weight:600;">play.thebusiness.school</a> right now</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- THE FORM -->
+  <form class="form-card" name="pilot-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/waitlist/thanks/">
+    <input type="hidden" name="form-name" value="pilot-application">
+    <input type="hidden" name="submission_type" value="waitlist">
+    <p class="hidden"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+
+    <h2>Join the waitlist</h2>
+    <p class="form-sub">About 2 minutes. We'll email you the moment the next round opens. Required fields marked with <span style="color:var(--err);">*</span>.</p>
+
+    <!-- SECTION 1: CONTACT -->
+    <div class="form-section">
+      <div class="fs-label">Section 1 · Your contact details</div>
+
+      <div class="form-two-col">
+        <div class="form-row">
+          <label for="name">Full name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">School email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="personal_email">Personal email <span class="req">*</span></label>
+        <input type="email" id="personal_email" name="personal_email" placeholder="e.g. your Gmail" required>
+        <div class="help">Required, because school email filters often block external messages. A personal email guarantees we can reach you when the next round opens.</div>
+      </div>
+
+      <div class="form-row">
+        <label for="role">Your role <span class="req">*</span></label>
+        <select id="role" name="role" required>
+          <option value="">Select your role</option>
+          <option>Head of Business / Economics</option>
+          <option>Business Studies teacher</option>
+          <option>Sixth Form Lead / Director of Sixth Form</option>
+          <option>Curriculum Lead / Deputy Head</option>
+          <option>Headteacher / Principal</option>
+          <option>Other</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- SECTION 2: SCHOOL -->
+    <div class="form-section">
+      <div class="fs-label">Section 2 · About your school</div>
+
+      <div class="form-row">
+        <label for="school">School name &amp; country <span class="req">*</span></label>
+        <input type="text" id="school" name="school" placeholder="e.g. St Andrew's Sixth Form, UK" required>
+      </div>
+
+      <div class="form-row">
+        <label for="school_type">School type <span class="req">*</span></label>
+        <select id="school_type" name="school_type" required>
+          <option value="">Select school type</option>
+          <option>State Sixth Form</option>
+          <option>Independent School / Sixth Form</option>
+          <option>State Comprehensive (11–18)</option>
+          <option>Academy / Free School (11–18)</option>
+          <option>Sixth Form College</option>
+          <option>FE College</option>
+          <option>International School</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="dept_size">Business department size <span class="opt">(approximate, optional)</span></label>
+        <input type="text" id="dept_size" name="dept_size" placeholder="e.g. 3 teachers, ~120 Business students total">
+      </div>
+    </div>
+
+    <!-- SECTION 3: WHAT YOU TEACH -->
+    <div class="form-section">
+      <div class="fs-label">Section 3 · What you teach</div>
+
+      <div class="form-row">
+        <label>Exam board(s) you teach <span class="opt">(tick any)</span></label>
+        <div class="checkbox-grid">
+          <label class="cb-row"><input type="checkbox" name="boards" value="AQA 7132"> AQA 7132</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="Edexcel 9BS0"> Edexcel 9BS0</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="OCR H431"> OCR H431</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="BTEC Business"> BTEC Business</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="IB Business Management"> IB Business Management</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="Cambridge IGCSE 0450"> Cambridge IGCSE 0450</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="GCSE Business"> GCSE Business</label>
+          <label class="cb-row"><input type="checkbox" name="boards" value="Other"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="cohort">Year groups + estimated students per session <span class="opt">(optional)</span></label>
+        <input type="text" id="cohort" name="cohort" placeholder="e.g. Y12 + Y13, ~25 students per session">
+      </div>
+
+      <div class="form-row">
+        <label for="it_whitelist">IT setup: can your school whitelist new domains? <span class="req">*</span></label>
+        <select id="it_whitelist" name="it_whitelist" required>
+          <option value="">Select one</option>
+          <option>Yes — we whitelist on request</option>
+          <option>No — we use a strict filter</option>
+          <option>Don't know — would need to ask IT</option>
+        </select>
+        <div class="help">We'll email you our 1-page IT info sheet within 48 hours of your submission, so your network team can whitelist us ahead of time.</div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: ANYTHING ELSE -->
+    <div class="form-section">
+      <div class="fs-label">Section 4 · Anything else</div>
+
+      <div class="form-row">
+        <label for="referral">How did you hear about us? <span class="opt">(optional)</span></label>
+        <select id="referral" name="referral">
+          <option value="">Select one</option>
+          <option>Facebook group</option>
+          <option>LinkedIn (post or message)</option>
+          <option>Email</option>
+          <option>Recommended by a colleague</option>
+          <option>Google search</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="notes">Anything you'd like us to know? <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="notes" placeholder="Anything that would help when the next round opens..."></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-btn">Join the waitlist →</button>
+
+    <p class="privacy-note">
+      Your information is used only to contact you about the next cohort. We don't sell or share it.<br>
+      ICO ZC133810 · UK GDPR compliant · <a href="/data-protection/">Privacy Policy</a>
+    </p>
+  </form>
+
+</main>
+
+<footer>
+  <p>The Business School · TBS Education Ltd Oy · <a href="/">thebusiness.school</a></p>
+  <p style="margin-top:6px; opacity:0.6; font-size:0.82rem;">Built in Finland · Engineered with our international studio · ICO ZC133810</p>
+</footer>
+
+</body>
+</html>
