@@ -645,7 +645,8 @@
             transition: transform 0.2s;
         }
         .feature-card:hover { transform: translateY(-4px); box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
-        .feature-icon { font-size: 2rem; margin-bottom: 12px; }
+        .feature-icon { width: 46px; height: 46px; border-radius: 12px; background: #e9f3f4; color: var(--accent); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+        .feature-icon svg { width: 24px; height: 24px; }
         .feature-card h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--primary); }
         .feature-card p { color: var(--subtle); font-size: 0.93rem; line-height: 1.6; }
 
@@ -737,6 +738,7 @@
             display: flex; align-items: center; justify-content: center;
             font-size: 0.9rem; font-weight: 800;
         }
+        .dash-icon svg { width: 18px; height: 18px; }
         .dash-item h4 { font-size: 0.95rem; color: var(--primary); margin-bottom: 2px; }
         .dash-item p { color: var(--subtle); font-size: 0.88rem; }
 
@@ -1061,6 +1063,7 @@
     <div class="nav-links">
         <a href="/for-heads/">For Heads</a>
         <a href="/for-teachers/">For Teachers</a>
+        <a href="/resources/">Free Resources</a>
         <a href="/curriculum-mapping/">Curriculum</a>
         <a href="/pricing/">Pricing</a>
         <a href="https://play.thebusiness.school/" target="_blank" rel="noopener noreferrer">Live Demo</a>
@@ -1191,57 +1194,57 @@
         <p class="section-subtitle">A flexible-length experience — 3 phases at any pace the teacher chooses (5-20 min each) — covering financial management, strategy, compliance, and decision-making.</p>
         <div class="features-grid">
             <div class="feature-card">
-                <div class="feature-icon">🏪</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l1.2-3h15.6L21 7"/><path d="M4 7v13h16V7"/><path d="M4 7h16"/><path d="M9.5 20v-6h5v6"/></svg></div>
                 <h3>Live Marketplace</h3>
                 <p>Students list products, set prices, and compete for customers in real time. Pricing too high and customers go elsewhere. Pricing too low and margins suffer. This is price elasticity of demand — taught through direct experience.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🏛️</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M4 21V10M9 21V10M15 21V10M20 21V10"/><path d="M12 3L3.5 9h17z"/></svg></div>
                 <h3>HMRC VAT Portal</h3>
                 <p>Every transaction generates VAT. Students must file VAT returns to HMRC within the game. Late or incorrect filings incur penalties. Tax compliance as a practical skill, not an abstract concept.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🤝</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
                 <h3>Boardroom Negotiations</h3>
                 <p>Six scenario-based negotiation rounds where teams must reach agreements under pressure. Students practise stakeholder management, persuasion, and strategic compromise.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">📈</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg></div>
                 <h3>Investment Decisions</h3>
                 <p>Students allocate capital to assets and manage their balance sheet. They experience the trade-off between liquidity and long-term growth.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🎯</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
                 <h3>Missions</h3>
                 <p>Targeted challenges with cash rewards that guide teams toward specific learning objectives. Missions adapt to gameplay, keeping every student engaged regardless of their current position.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">⚡</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
                 <h3>Teacher-Triggered Crisis Events</h3>
                 <p>Inject real-world disruptions at any point: supply chain crises, demand booms, tax changes, new competitors, recessions, or viral product moments. Each crisis forces real-time strategic adaptation.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">👔</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></div>
                 <h3>Hiring</h3>
                 <p>Recruit specialists to strengthen your company. Hire lawyers to shield your business from rival sabotage attempts, developers to create new products for the marketplace, and other professionals to gain a competitive edge. Every hiring decision affects your budget and strategy.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🕵️</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6l7-3z"/><path d="M12 8.5v4M12 15.5h.01"/></svg></div>
                 <h3>Corporate Sabotage</h3>
                 <p>Deploy covert tactics against competing companies — disrupt their supply chains, poach their talent, or undermine their reputation. But beware: rivals can hire lawyers and take countermeasures. Strategic sabotage adds a layer of corporate rivalry that teaches risk assessment, ethics, and defensive business strategy.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">📊</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M6 3h8l5 5v13H6z"/><path d="M9 17v-3M12 17v-6M15 17v-4"/></svg></div>
                 <h3>AI Performance Reports</h3>
                 <p>Every student receives an individual report generated by AI, analysing their specific decisions, identifying strengths and areas for improvement, and mapping performance to curriculum topics.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🏆</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M7 6H4v1a3 3 0 0 0 3 3M17 6h3v1a3 3 0 0 1-3 3"/></svg></div>
                 <h3>Live Leaderboard &amp; Chat</h3>
                 <p>Real-time class rankings drive healthy competition. In-game chat enables team coordination and cross-company negotiation.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">📜</div>
+                <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.5L7 21l5-2.5L17 21l-1.5-7.5"/></svg></div>
                 <h3>Certificates</h3>
                 <p>Every student receives a printable certificate with their grade (A* to U, mapped to the UK grading system), score, company name, and session details.</p>
             </div>
@@ -1323,42 +1326,42 @@
         <p class="section-subtitle">Monitor, guide, and adapt the lesson in real time with a dedicated teacher interface.</p>
         <div class="dashboard-features">
             <div class="dash-item">
-                <div class="dash-icon">📋</div>
+                <div class="dash-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="4" width="8" height="3" rx="1"/><path d="M8 5H6a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2"/><path d="M9 12h6M9 16h4"/></svg></div>
                 <div>
                     <h4>Live Class Overview</h4>
                     <p>Every student's balance, profit, rank, and activity status at a glance.</p>
                 </div>
             </div>
             <div class="dash-item">
-                <div class="dash-icon">⚡</div>
+                <div class="dash-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div>
                 <div>
                     <h4>Crisis Event Controls</h4>
                     <p>Inject market disruptions at the right teaching moment.</p>
                 </div>
             </div>
             <div class="dash-item">
-                <div class="dash-icon">⏸</div>
+                <div class="dash-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg></div>
                 <div>
                     <h4>Pause &amp; Discuss</h4>
                     <p>Freeze the game for whole-class discussion at any point.</p>
                 </div>
             </div>
             <div class="dash-item">
-                <div class="dash-icon">📖</div>
+                <div class="dash-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5C10.5 5 8 4.5 4 5v13c4-.5 6.5 0 8 1.5 1.5-1.5 4-2 8-1.5V5c-4-.5-6.5 0-8 1.5z"/><path d="M12 6.5v13"/></svg></div>
                 <div>
                     <h4>Lesson Guide</h4>
                     <p>Round-by-round talking points and discussion prompts.</p>
                 </div>
             </div>
             <div class="dash-item">
-                <div class="dash-icon">📺</div>
+                <div class="dash-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></div>
                 <div>
                     <h4>Projector View</h4>
                     <p>Optimised display for classroom projection.</p>
                 </div>
             </div>
             <div class="dash-item">
-                <div class="dash-icon">💾</div>
+                <div class="dash-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v11"/><path d="M8 11l4 4 4-4"/><path d="M5 20h14"/></svg></div>
                 <div>
                     <h4>CSV Export</h4>
                     <p>Download all class data after the session for records and reporting.</p>
