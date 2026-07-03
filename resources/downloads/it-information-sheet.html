@@ -1,358 +1,151 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>School IT Information Sheet — The Business School Simulation</title>
-<meta name="robots" content="noindex">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@500;600;700&display=swap" rel="stylesheet">
-
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  :root {
-    --ink: #0d0d0d;
-    --navy: #0a2540;
-    --grey-700: #555;
-    --grey-500: #888;
-    --grey-300: #ccc;
-    --grey-100: #f5f5f5;
-    --grey-50: #fafafa;
-    --gold: #b45309;
-    --good: #15803d;
-    --calm: #1e6091;
-  }
-  body { font-family: 'Inter', sans-serif; background: var(--grey-100); color: var(--ink); line-height: 1.5; }
-  .num { font-family: 'Roboto Mono', monospace; }
-
-  .nav-bar { position: fixed; top: 0; left: 0; right: 0; background: white; color: var(--ink); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; z-index: 100; border-bottom: 1px solid var(--grey-300); }
-  .nav-bar .logo a { font-weight: 800; font-size: 14px; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
-  .nav-bar .print-btn { background: var(--ink); color: white; border: 1px solid var(--ink); padding: 7px 16px; border-radius: 4px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
-
-  .pages-wrap { margin-top: 56px; padding: 24px; max-width: 900px; margin-left: auto; margin-right: auto; }
-  .page { background: white; border: 1px solid var(--grey-300); aspect-ratio: 1 / 1.414; position: relative; overflow: hidden; padding: 30px 36px; display: flex; flex-direction: column; }
-
-  .top-bar {
-    background: var(--navy);
-    color: white;
-    margin: -30px -36px 16px;
-    padding: 14px 36px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .top-bar .left .tag {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #f4c542;
-    margin-bottom: 3px;
-  }
-  .top-bar .left .title {
-    font-size: 14px;
-    font-weight: 800;
-  }
-  .top-bar .right {
-    text-align: right;
-    font-size: 11px;
-    color: rgba(255,255,255,0.8);
-  }
-  .top-bar .right b { color: #f4c542; }
-
-  h1 {
-    font-size: 26px;
-    font-weight: 900;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 4px;
-  }
-  .lead {
-    font-size: 12px;
-    color: var(--grey-700);
-    margin-bottom: 16px;
-    line-height: 1.55;
-  }
-  .lead b { color: var(--ink); }
-
-  /* Whitelist box — KEY content */
-  .whitelist-box {
-    border: 2px solid var(--ink);
-    margin-bottom: 14px;
-  }
-  .whitelist-box .wb-header {
-    background: var(--ink);
-    color: white;
-    padding: 8px 14px;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-  .whitelist-box .wb-header span { color: #f4c542; }
-  .whitelist-box .wb-body { padding: 14px 16px; }
-  .whitelist-box .wb-row {
-    display: grid;
-    grid-template-columns: 130px 1fr;
-    gap: 14px;
-    padding: 8px 0;
-    border-bottom: 1px dashed var(--grey-300);
-    font-size: 11.5px;
-  }
-  .whitelist-box .wb-row:last-child { border-bottom: none; }
-  .whitelist-box .wb-row .label {
-    font-weight: 800;
-    color: var(--ink);
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 0.06em;
-    padding-top: 2px;
-  }
-  .whitelist-box .wb-row .value {
-    color: var(--ink);
-    line-height: 1.5;
-  }
-  .whitelist-box .wb-row .value .domain {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 13px;
-    font-weight: 700;
-    color: var(--calm);
-    background: var(--grey-50);
-    padding: 2px 8px;
-    border: 1px solid var(--grey-300);
-    border-radius: 3px;
-    display: inline-block;
-  }
-  .whitelist-box .wb-row .value .port {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--ink);
-  }
-  .whitelist-box .wb-row .value .note {
-    font-size: 10px;
-    color: var(--grey-700);
-    margin-top: 3px;
-  }
-
-  /* Compliance row */
-  .compliance-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 14px;
-  }
-  .comp-card {
-    border: 1px solid var(--grey-300);
-    padding: 10px 12px;
-    background: var(--grey-50);
-  }
-  .comp-card.green { border-left: 4px solid var(--good); }
-  .comp-card.calm { border-left: 4px solid var(--calm); }
-  .comp-card .cc-label {
-    font-size: 10px;
-    font-weight: 800;
-    color: var(--ink);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-  }
-  .comp-card .cc-text {
-    font-size: 11px;
-    color: var(--grey-700);
-    line-height: 1.5;
-  }
-  .comp-card .cc-text b { color: var(--ink); }
-
-  /* Data flow */
-  .flow-box {
-    border: 1px solid var(--grey-300);
-    border-left: 4px solid var(--gold);
-    padding: 10px 14px;
-    margin-bottom: 14px;
-  }
-  .flow-box h3 {
-    font-size: 11px;
-    font-weight: 800;
-    color: var(--ink);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-    padding-bottom: 3px;
-    border-bottom: 1px solid var(--grey-300);
-  }
-  .flow-box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .flow-box li {
-    font-size: 11px;
-    color: var(--ink);
-    line-height: 1.55;
-    padding: 2px 0;
-    padding-left: 16px;
-    position: relative;
-  }
-  .flow-box li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--good);
-    font-weight: 800;
-  }
-  .flow-box li b { font-weight: 700; }
-
-  /* Bottom contact */
-  .contact-row {
-    margin-top: auto;
-    background: var(--navy);
-    color: white;
-    padding: 12px 16px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
-  .contact-row .cr-block .cr-label {
-    color: #f4c542;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin-bottom: 3px;
-  }
-  .contact-row .cr-block .cr-value {
-    font-size: 12px;
-    font-weight: 700;
-  }
-  .contact-row .cr-block .cr-sub {
-    font-size: 10px;
-    color: rgba(255,255,255,0.75);
-    margin-top: 2px;
-  }
-
-  @page { size: A4 portrait; margin: 0; }
-  @media print {
-    body { background: white; }
-    .nav-bar { display: none !important; }
-    .pages-wrap { margin-top: 0; padding: 0; max-width: none; }
-    .page { margin: 0; border: none; width: 210mm; height: 297mm; aspect-ratio: unset; padding: 14mm 16mm; }
-    .top-bar { margin: -14mm -16mm 12px; padding: 11px 16mm; }
-    .contact-row { background: white !important; color: var(--ink) !important; border: 1.5px solid var(--ink); }
-    .contact-row .cr-block .cr-label { color: var(--gold) !important; }
-    .contact-row .cr-block .cr-sub { color: var(--grey-700) !important; }
-  }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="/support.js"></script>
 </head>
 <body>
+<x-dc>
+<helmet>
+<title>IT one-sheet — Network requirements | The Business School</title>
+<meta name="description" content="Everything a school IT team needs to run The Business School simulation: domains to whitelist, ports, bandwidth, device requirements and data notes. One page, printable." />
+<link rel="canonical" href="https://thebusiness.school/it/" />
+<meta property="og:title" content="IT one-sheet — Network requirements | The Business School" />
+<meta property="og:url" content="https://thebusiness.school/it/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
+</helmet>
+<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
 
-<div class="nav-bar">
-  <div class="logo"><a href="/">The Business School</a></div>
-  <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
+    <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
+      <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
+        <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
+      </a>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
+          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
+          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
+          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
+          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
+          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
+          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
+          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
+          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+        </button>
+      </sc-if>
+    </nav>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
+      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
+      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
+      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
+      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
+      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
+      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a>
+      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
+      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
+    </div>
+  </sc-if>
+</header>
+
+
+<section style="background:#0e2038;color:#fff;padding:56px 0 62px">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7fe0d7">For your IT team</span>
+    <h1 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(30px,4.2vw,48px);line-height:1.12;letter-spacing:-.015em;margin:14px 0 14px;max-width:760px">IT one-sheet: network requirements.</h1>
+    <p style="font-size:clamp(15.5px,1.5vw,18px);color:#c9d5e8;max-width:640px">Everything needed to run the simulation on a school network, on one page. Forward this to IT — or print it (Ctrl/Cmd&nbsp;+&nbsp;P).</p>
+  </div>
+</section>
+
+<section style="padding:56px 0 72px">
+  <div style="max-width:900px;margin:0 auto;padding:0 24px">
+
+    <div style="border:1px solid #e3e9f1;border-radius:16px;overflow:hidden;background:#fff;margin-bottom:28px">
+      <div style="padding:16px 24px;border-bottom:1px solid #eef2f7;background:#f6f8fb;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#65728c">1 · Domains to whitelist</div>
+      <div style="padding:20px 24px">
+        <p style="font-size:15px;color:#40506e;margin-bottom:14px">Allow these domains through the school's web filter and firewall. All traffic is HTTPS.</p>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;background:#f6f8fb;border:1px solid #e3e9f1;border-radius:9px;padding:11px 14px"><code style="font-size:14px;font-weight:600;color:#0e2038">thebusiness.school</code><span style="font-size:13px;color:#65728c">Website &amp; teacher resources</span></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;background:#f6f8fb;border:1px solid #e3e9f1;border-radius:9px;padding:11px 14px"><code style="font-size:14px;font-weight:600;color:#0e2038">play.thebusiness.school</code><span style="font-size:13px;color:#65728c">The simulation itself — students &amp; teachers</span></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;background:#f6f8fb;border:1px solid #e3e9f1;border-radius:9px;padding:11px 14px"><code style="font-size:14px;font-weight:600;color:#0e2038">*.thebusiness.school</code><span style="font-size:13px;color:#65728c">Simplest rule if wildcards are supported</span></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;background:#f6f8fb;border:1px solid #e3e9f1;border-radius:9px;padding:11px 14px"><code style="font-size:14px;font-weight:600;color:#0e2038">fonts.googleapis.com · fonts.gstatic.com</code><span style="font-size:13px;color:#65728c">Web fonts (usually already allowed)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #e3e9f1;border-radius:16px;overflow:hidden;background:#fff;margin-bottom:28px">
+      <div style="padding:16px 24px;border-bottom:1px solid #eef2f7;background:#f6f8fb;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#65728c">2 · Connections &amp; bandwidth</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0">
+        <div style="padding:20px 24px;border-bottom:1px solid #f0f3f8"><h4 style="font-weight:700;font-size:15px;color:#0e2038;margin-bottom:4px">HTTPS, port 443 only</h4><p style="font-size:14px;color:#40506e">Standard secure web traffic. No custom ports, no VPN, nothing to install.</p></div>
+        <div style="padding:20px 24px;border-bottom:1px solid #f0f3f8"><h4 style="font-weight:700;font-size:15px;color:#0e2038;margin-bottom:4px">WebSocket connections</h4><p style="font-size:14px;color:#40506e">Live gameplay uses secure WebSockets (wss://) to the same domains. Most filters pass these; if the game stalls behind a proxy, allow WebSocket traffic to play.thebusiness.school.</p></div>
+        <div style="padding:20px 24px"><h4 style="font-weight:700;font-size:15px;color:#0e2038;margin-bottom:4px">Light bandwidth</h4><p style="font-size:14px;color:#40506e">Text and small data updates — no video streaming. A full class of 32 runs comfortably on ordinary school Wi-Fi.</p></div>
+        <div style="padding:20px 24px"><h4 style="font-weight:700;font-size:15px;color:#0e2038;margin-bottom:4px">EU cloud hosting</h4><p style="font-size:14px;color:#40506e">Sessions are managed server-side in the EU. No peer-to-peer connections between student devices.</p></div>
+      </div>
+    </div>
+
+    <div style="border:1px solid #e3e9f1;border-radius:16px;overflow:hidden;background:#fff;margin-bottom:28px">
+      <div style="padding:16px 24px;border-bottom:1px solid #eef2f7;background:#f6f8fb;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#65728c">3 · Devices</div>
+      <div style="padding:20px 24px">
+        <p style="font-size:15px;color:#40506e">Any device with a modern browser: Chromebooks, Windows/Mac laptops, iPads and phones. No installation, no browser extensions, no admin rights. Recent versions of Chrome, Edge, Safari and Firefox are all supported.</p>
+      </div>
+    </div>
+
+    <div style="border:1px solid #e3e9f1;border-radius:16px;overflow:hidden;background:#fff;margin-bottom:36px">
+      <div style="padding:16px 24px;border-bottom:1px solid #eef2f7;background:#f6f8fb;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#65728c">4 · Accounts &amp; data</div>
+      <div style="padding:20px 24px">
+        <p style="font-size:15px;color:#40506e;margin-bottom:10px">Students never create accounts. They join a session with a 6-digit PIN — no email, no password, no personal data collected from minors. Only the teacher has a login.</p>
+        <p style="font-size:15px;color:#40506e">Full details on the <a href="/data-protection/" style="color:#0a6b73;font-weight:600;text-decoration:none">data protection</a> and <a href="/trust/" style="color:#0a6b73;font-weight:600;text-decoration:none">trust &amp; safety</a> pages.</p>
+      </div>
+    </div>
+
+    <div style="background:#f6f8fb;border:1px solid #e3e9f1;border-radius:16px;padding:26px 28px;display:flex;flex-wrap:wrap;gap:18px 24px;align-items:center;justify-content:space-between">
+      <div style="max-width:520px">
+        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;color:#0e2038;margin-bottom:5px">Something blocked on your network?</h3>
+        <p style="font-size:14.5px;color:#40506e">Tell us what your filter reports and we'll help you get running — usually it's just the WebSocket rule.</p>
+      </div>
+      <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:12px 22px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff" style-hover="background:#075158">Contact us</a>
+    </div>
+
+  </div>
+</section>
+
+
+<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
+        <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · thebusiness.school</div>
+      </div>
+      <div style="display:flex;gap:38px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </div>
-
-<div class="pages-wrap">
-
-<div class="page">
-
-  <div class="top-bar">
-    <div class="left">
-      <div class="tag">For your school IT / Network team</div>
-      <div class="title">The Business School Simulation</div>
-    </div>
-    <div class="right">
-      <b>ICO ZC133810</b><br>
-      UK GDPR · KCSIE 2024/25
-    </div>
-  </div>
-
-  <h1>School IT Information Sheet.</h1>
-  <p class="lead">A one-page reference for your school's IT or network team to whitelist The Business School Simulation. <b>All connections are over standard HTTPS — no special protocols, no plugins, no installs.</b> Forward this to IT and they should be able to whitelist in under 5 minutes.</p>
-
-  <div class="whitelist-box">
-    <div class="wb-header">Whitelist request <span>· one wildcard covers everything</span></div>
-    <div class="wb-body">
-
-      <div class="wb-row">
-        <div class="label">Domain</div>
-        <div class="value">
-          <span class="domain">*.thebusiness.school</span>
-          <div class="note">Wildcard covers: <b>thebusiness.school</b> (marketing site), <b>play.thebusiness.school</b> (live simulation), and any future subdomains. One whitelist entry, all access.</div>
-        </div>
-      </div>
-
-      <div class="wb-row">
-        <div class="label">Protocols</div>
-        <div class="value">
-          <span class="port">HTTPS · port 443</span> &nbsp; <span class="port">WSS · port 443</span>
-          <div class="note">Standard HTTPS (TLS 1.2+) plus secure WebSocket for real-time classroom session state. No custom ports.</div>
-        </div>
-      </div>
-
-      <div class="wb-row">
-        <div class="label">Browser</div>
-        <div class="value">
-          Modern browsers: Chrome, Edge, Firefox, Safari (last 3 versions)
-          <div class="note">No installs, no plugins, no extensions, no admin rights required.</div>
-        </div>
-      </div>
-
-      <div class="wb-row">
-        <div class="label">Devices</div>
-        <div class="value">
-          School-managed Windows laptops · Chromebooks · iPads · iMacs · BYOD
-          <div class="note">Browser-based — runs anywhere with a modern browser. No app to manage.</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="compliance-grid">
-    <div class="comp-card green">
-      <div class="cc-label">Data &amp; Privacy</div>
-      <div class="cc-text">
-        <b>No student personal data collected.</b> Students join via teacher PIN only — no email, no account, no name. Sessions ephemeral by default; teacher dashboard data hosted in EU (Netlify Frankfurt). UK GDPR registered.
-      </div>
-    </div>
-    <div class="comp-card calm">
-      <div class="cc-label">Safeguarding (KCSIE 2024/25)</div>
-      <div class="cc-text">
-        <b>No chat. No messaging. No user-generated content.</b> Students interact only with the simulation's market mechanics; no peer-to-peer communication. Teacher controls all session triggers and end conditions.
-      </div>
-    </div>
-  </div>
-
-  <div class="flow-box">
-    <h3>What gets sent over the network</h3>
-    <ul>
-      <li><b>Outbound from school:</b> teacher login + PIN generation (small JSON payloads); student decisions during rounds (a few KB per student per round)</li>
-      <li><b>Inbound to school:</b> session state updates over WebSocket (text only, no media); end-of-session AI-generated feedback PDF (~50–200 KB per student)</li>
-      <li><b>No video, no audio, no large media transfers</b> — total bandwidth per 30-student session is typically under 5 MB across the full session</li>
-      <li><b>No third-party trackers or ads</b> — the simulation itself does not load external advertising or social-media scripts</li>
-    </ul>
-  </div>
-
-  <div class="contact-row">
-    <div class="cr-block">
-      <div class="cr-label">IT contact</div>
-      <div class="cr-value">sakari.laajoki@gmail.com</div>
-      <div class="cr-sub">Response within one working day. Questions on access, compliance, hosting or DPA welcome.</div>
-    </div>
-    <div class="cr-block">
-      <div class="cr-label">For your records</div>
-      <div class="cr-value">TBS Education Ltd Oy · Lahti, Finland</div>
-      <div class="cr-sub">Company number 3614159-3 · ICO ZC133810 · Full data documentation at thebusiness.school/trust</div>
-    </div>
-  </div>
-
-</div>
-
-</div>
-
+</x-dc>
 </body>
 </html>
