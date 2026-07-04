@@ -17,11 +17,18 @@
 <meta property="og:url" content="https://thebusiness.school/it/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
+<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}
+@media print{
+  #tbs-header,#tbs-footer,#tbs-forward-box{display:none !important}
+  section{padding:0 !important}
+  body{font-size:12px}
+  a[href]:after{content:none !important}
+}
+</style>
 </helmet>
 <div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
 
-<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
+<header id="tbs-header" style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
   <div style="max-width:1160px;margin:0 auto;padding:0 20px">
     <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
       <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
@@ -72,7 +79,15 @@
   <div style="max-width:1160px;margin:0 auto;padding:0 24px">
     <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7fe0d7">For your IT team</span>
     <h1 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(30px,4.2vw,48px);line-height:1.12;letter-spacing:-.015em;margin:14px 0 14px;max-width:760px">IT one-sheet: network requirements.</h1>
-    <p style="font-size:clamp(15.5px,1.5vw,18px);color:#c9d5e8;max-width:640px">Everything needed to run the simulation on a school network, on one page. Forward this to IT — or print it (Ctrl/Cmd&nbsp;+&nbsp;P).</p>
+    <p style="font-size:clamp(15.5px,1.5vw,18px);color:#c9d5e8;max-width:640px">Everything needed to run the simulation on a school network, on one page.</p>
+    <div id="tbs-forward-box" style="margin-top:22px;max-width:640px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:16px 18px">
+      <div style="font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#7fe0d7;margin-bottom:10px">Two ways to get this to IT</div>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px">
+        <code id="tbs-it-url" style="font-size:14px;color:#fff;background:rgba(255,255,255,.1);border-radius:8px;padding:9px 12px;flex:1;min-width:220px">thebusiness.school/it/</code>
+        <button onclick="navigator.clipboard.writeText('https://thebusiness.school/it/').then(function(){var b=document.getElementById('tbs-copy-btn-label');b.textContent='Copied ✓';setTimeout(function(){b.textContent='Copy link';},2000);})" style="cursor:pointer;font-weight:600;font-size:14px;padding:9px 16px;border-radius:8px;border:1px solid transparent;background:#0a6b73;color:#fff;white-space:nowrap"><span id="tbs-copy-btn-label">Copy link</span></button>
+      </div>
+      <p style="font-size:13.5px;color:#c9d5e8">Copy that link and paste it into an email to IT — <b>or</b> press <b>Ctrl/Cmd&nbsp;+&nbsp;P</b> right now to save this page as a PDF to attach instead.</p>
+    </div>
   </div>
 </section>
 
@@ -129,7 +144,7 @@
 </section>
 
 
-<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
+<footer id="tbs-footer" style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
   <div style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
       <div>
