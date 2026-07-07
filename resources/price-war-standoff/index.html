@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Price War Standoff — The Business School</title>
+<meta name="description" content="A stand-up, whole-class pricing elimination game that teaches price elasticity and competition. Fast rounds, event cards, last trader standing wins." />
+<link rel="canonical" href="https://thebusiness.school/resources/price-war-standoff/" />
+<meta property="og:title" content="Price War Standoff — The Business School" />
+<meta property="og:url" content="https://thebusiness.school/resources/price-war-standoff/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
+</helmet>
+<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
+<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
+    <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
+      <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
+        <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
+      </a>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
+          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
+          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
+          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
+          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
+          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
+          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
+          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
+          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+        </button>
+      </sc-if>
+    </nav>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
+      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
+      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
+      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
+      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
+      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
+      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a>
+      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
+      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
+    </div>
+  </sc-if>
+</header>
+<main style="max-width:860px;margin:0 auto;padding:40px 20px 20px">
+  <nav style="font-size:13px;color:#65728c;margin-bottom:18px"><a href="/resources/" style="color:#0a6b73;text-decoration:none">Resources</a> › <a href="/resources/topics/" style="color:#0a6b73;text-decoration:none">Topic library</a> › Classroom activities</nav>
+  <div style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#b4560f;border:1px solid rgba(180,86,15,.35);background:#fdf6ef;border-radius:999px;padding:4px 12px;margin-bottom:14px">Classroom activity · no worksheets</div>
+  <h1 style="font-family:'Fraunces',Georgia,serif;font-size:34px;font-weight:600;color:#0e2038;line-height:1.2">Price War Standoff</h1>
+  <p style="font-size:16.5px;color:#4a5a78;margin-top:14px">Everyone stands. Everyone runs an ice cream van on the same beach. Each round, players secretly choose a price, an event card shakes the market, and the worst earners sit down. It is loud, it is ruthless, and by the end the class understands elasticity because they have felt it.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px">
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>⏱ 20-30 min</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>👥 Whole class, played individually or in pairs</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>📋 Prep: None (write the three prices on the board; read event cards from this page)</strong></span>
+  </div>
+  <div style="font-size:12.5px;color:#65728c;margin-bottom:8px">Spec links: Edexcel 9BS0 1.2, 2.2 (price elasticity of demand) · AQA GCSE 8132 3.5.2 · AQA A-Level 7132 3.3.3 · OCR J204 5.2</div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:600;color:#0e2038;margin:30px 0 16px">How to run it</h2>
+  <div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">1</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Set the market</div><div style="font-size:14.5px;color:#2a3a58"><p>Everyone stands up. Each player runs an ice cream van on the same beach. Every round they choose one price and show it on fingers held against their chest at the count of three: 2 fingers = LOW £2, 5 fingers = MID £5, 8 fingers (two hands) = HIGH £8. No talking during the choice.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">2</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Read an event card, pay out the round</div><div style="font-size:14.5px;color:#2a3a58"><p>After prices are shown, read one event card aloud. The card changes how fussy customers are about price that round. Use the payout table: each player notes their earnings for the round on scrap paper or just remembers their running total.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">3</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Eliminate the stragglers</div><div style="font-size:14.5px;color:#2a3a58"><p>After rounds 2, 4 and 6, the lowest earners in the room sit down (bottom 25% or so, judged quickly by show of hands: who has under £X?). Seated players become the Market: they get to vote on one event card of their choice later, so they stay involved.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">4</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">The final three</div><div style="font-size:14.5px;color:#2a3a58"><p>Play until three players remain, then run one final round where the Market (seated players) chooses the event card by vote. Highest total wins the beach.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">5</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Debrief: what just happened?</div><div style="font-size:14.5px;color:#2a3a58"><p>Ask: when did HIGH pricing earn the most, and why? (Inelastic demand: heatwave, no competitors nearby.) When did LOW pricing backfire? (Everyone undercutting, price war, tiny margins.) Introduce or reinforce the formula for price elasticity of demand and label each event card elastic or inelastic as a class.</p></div></div></div>
+  <h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 Payout table (write on board)</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><table><tr><th>Your price</th><th>Normal round</th><th>Price-sensitive round (elastic)</th><th>Price-blind round (inelastic)</th></tr><tr><td><strong>LOW £2</strong></td><td>Earn £6</td><td>Earn £10</td><td>Earn £4</td></tr><tr><td><strong>MID £5</strong></td><td>Earn £8</td><td>Earn £6</td><td>Earn £10</td></tr><tr><td><strong>HIGH £8</strong></td><td>Earn £7</td><td>Earn £2</td><td>Earn £14</td></tr></table><p><strong>Undercut penalty:</strong> if more than half the room picks LOW in any round, all LOW players earn only £2 each — the price war destroyed everyone's margin.</p></div><h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 10 event cards (read aloud, one per round)</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><ul><li><strong>1. Heatwave!</strong> 34 degrees, the beach is packed and desperate. Price-blind round (inelastic).</li><li><strong>2. Rain sets in.</strong> Only bargain-hunters remain. Price-sensitive round (elastic).</li><li><strong>3. Payday weekend.</strong> Customers feel rich. Price-blind round (inelastic).</li><li><strong>4. A supermarket opens a freezer aisle nearby.</strong> Cheap substitutes everywhere. Price-sensitive round (elastic).</li><li><strong>5. Normal Tuesday.</strong> Nothing special. Normal round.</li><li><strong>6. Food blogger says your beach has the best ice cream in Britain.</strong> Queues form. Price-blind round (inelastic).</li><li><strong>7. Cost-of-living news dominates the headlines.</strong> Everyone compares prices. Price-sensitive round (elastic).</li><li><strong>8. School holidays begin.</strong> Families with pocket-money budgets. Price-sensitive round (elastic).</li><li><strong>9. Half the vans break down (not yours).</strong> Less competition. Price-blind round (inelastic).</li><li><strong>10. Normal Saturday.</strong> Steady trade. Normal round.</li></ul></div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:32px 0 12px">Variations</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Cartel round: allow 30 seconds of open negotiation before one round. Watch an illegal price-fixing agreement form, then watch someone betray it. Discuss why cartels collapse (and why they are illegal).</li><li style="margin-bottom:8px">Branding upgrade: any player may permanently sacrifice £5 of their total to become a premium brand, earning +£2 on every HIGH price round afterwards.</li><li style="margin-bottom:8px">Pairs mode: play in pairs where one partner sets price and the other tracks earnings and advises, swapping roles halfway.</li></ul>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:26px 0 12px">Teacher tips</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Keep rounds under 60 seconds each. The pace is the point: slow rounds kill the tension.</li><li style="margin-bottom:8px">The undercut penalty is the best teaching moment in the game. When the whole room picks LOW and everyone earns £2, pause and name it: this is a price war.</li><li style="margin-bottom:8px">If a student asks whether they can collude, smile and say nothing. Someone always tries, and it makes the debrief better.</li></ul>
+  <div style="margin:44px 0 10px;border:1px solid rgba(10,107,115,.3);background:#f2f9f9;border-radius:14px;padding:26px 28px">
+    <div style="font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:#0e2038">Want the whole lesson to feel like this?</div>
+    <p style="font-size:14.5px;color:#4a5a78;margin-top:8px">The Business School is a live simulation where your class runs rival firms for a full lesson — pricing wars, hiring, crises, negotiations. Free teacher demo, no installs, students join with a PIN.</p>
+    <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+      <a href="https://play.thebusiness.school" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Try the free demo</a>
+      <a href="/pilot/" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#fff;border:1px solid #0a6b73;color:#0a6b73">Join the waitlist</a>
+    </div>
+  </div>
+</main>
+<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
+        <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · thebusiness.school</div>
+      </div>
+      <div style="display:flex;gap:38px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>

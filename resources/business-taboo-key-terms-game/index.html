@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Business Taboo: The Key Terms Game — The Business School</title>
+<meta name="description" content="Play Taboo with GCSE and A-Level Business key terms. 24 ready-made cards, zero prep, huge laughs and serious revision value." />
+<link rel="canonical" href="https://thebusiness.school/resources/business-taboo-key-terms-game/" />
+<meta property="og:title" content="Business Taboo: The Key Terms Game — The Business School" />
+<meta property="og:url" content="https://thebusiness.school/resources/business-taboo-key-terms-game/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
+</helmet>
+<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
+<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
+    <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
+      <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
+        <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
+      </a>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
+          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
+          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
+          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
+          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
+          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
+          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
+          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
+          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+        </button>
+      </sc-if>
+    </nav>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
+      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
+      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
+      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
+      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
+      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
+      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a>
+      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
+      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
+    </div>
+  </sc-if>
+</header>
+<main style="max-width:860px;margin:0 auto;padding:40px 20px 20px">
+  <nav style="font-size:13px;color:#65728c;margin-bottom:18px"><a href="/resources/" style="color:#0a6b73;text-decoration:none">Resources</a> › <a href="/resources/topics/" style="color:#0a6b73;text-decoration:none">Topic library</a> › Classroom activities</nav>
+  <div style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#b4560f;border:1px solid rgba(180,86,15,.35);background:#fdf6ef;border-radius:999px;padding:4px 12px;margin-bottom:14px">Classroom activity · no worksheets</div>
+  <h1 style="font-family:'Fraunces',Georgia,serif;font-size:34px;font-weight:600;color:#0e2038;line-height:1.2">Business Taboo: The Key Terms Game</h1>
+  <p style="font-size:16.5px;color:#4a5a78;margin-top:14px">Try describing break-even without saying costs, revenue or profit. That is the whole game, and it is much harder and much funnier than it sounds. Students end up explaining terms in their own words, which is exactly what examiners want them to do.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px">
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>⏱ 15-25 min</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>👥 Teams of 4-6, whole class</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>📋 Prep: 5 min printing (or read cards from the screen)</strong></span>
+  </div>
+  <div style="font-size:12.5px;color:#65728c;margin-bottom:8px">Spec links: Edexcel 9BS0 all themes (key terminology) · AQA GCSE 8132 3.1-3.6 · AQA A-Level 7132 3.1-3.10 · OCR J204</div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:600;color:#0e2038;margin:30px 0 16px">How to run it</h2>
+  <div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">1</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Set up in 60 seconds</div><div style="font-size:14.5px;color:#2a3a58"><p>Split the class into teams of 4-6. One describer sits at the front facing their team, with the cards face-down (or the teacher shows cards on their phone). The rest of the team shouts guesses. One student from a rival team stands behind the describer as the referee, watching for banned words.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">2</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Play a round</div><div style="font-size:14.5px;color:#2a3a58"><p>The describer has 90 seconds to get through as many cards as possible. For each card they must get their team to say the term without using the term itself, any part of it, or the three banned words. Correct guess = 1 point. Banned word slip = referee buzzes, card is dead, move on.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">3</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Rotate and keep score</div><div style="font-size:14.5px;color:#2a3a58"><p>Teams take turns, new describer each round. Play 2-3 full rotations. Keep a running score on the board. The buzzing is half the fun, so encourage referees to be dramatic about it.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">4</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Debrief the tricky ones</div><div style="font-size:14.5px;color:#2a3a58"><p>Finish by asking: which cards were hardest and why? Terms that were hard to describe are the ones students only half understand. Note them on the board as revision priorities.</p></div></div></div>
+  <h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 24 Business Taboo cards (term + 3 banned words)</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><table><tr><th>Term</th><th>Banned words</th></tr><tr><td><strong>Break-even</strong></td><td>costs, revenue, profit</td></tr><tr><td><strong>Market share</strong></td><td>percentage, sales, competitors</td></tr><tr><td><strong>Franchise</strong></td><td>brand, McDonald's, fee</td></tr><tr><td><strong>Sole trader</strong></td><td>owner, alone, business</td></tr><tr><td><strong>Cash flow</strong></td><td>money, in, out</td></tr><tr><td><strong>Price elasticity</strong></td><td>demand, change, sensitive</td></tr><tr><td><strong>Economies of scale</strong></td><td>bigger, cheaper, unit</td></tr><tr><td><strong>Opportunity cost</strong></td><td>choice, next, alternative</td></tr><tr><td><strong>Brand loyalty</strong></td><td>customers, repeat, buy</td></tr><tr><td><strong>Dividend</strong></td><td>shareholders, payment, profit</td></tr><tr><td><strong>Merger</strong></td><td>join, two, companies</td></tr><tr><td><strong>Entrepreneur</strong></td><td>risk, start, business</td></tr><tr><td><strong>Market segmentation</strong></td><td>groups, customers, split</td></tr><tr><td><strong>USP</strong></td><td>unique, selling, different</td></tr><tr><td><strong>Batch production</strong></td><td>groups, quantity, factory</td></tr><tr><td><strong>Just-in-time</strong></td><td>stock, delivery, warehouse</td></tr><tr><td><strong>Gross profit</strong></td><td>revenue, cost of sales, minus</td></tr><tr><td><strong>Interest rate</strong></td><td>borrowing, loan, percentage</td></tr><tr><td><strong>Shareholder</strong></td><td>owns, company, invest</td></tr><tr><td><strong>Supply chain</strong></td><td>suppliers, factory, customer</td></tr><tr><td><strong>Product life cycle</strong></td><td>launch, growth, decline</td></tr><tr><td><strong>Penetration pricing</strong></td><td>low, enter, market</td></tr><tr><td><strong>Limited liability</strong></td><td>owners, debts, lose</td></tr><tr><td><strong>Trade union</strong></td><td>workers, strike, pay</td></tr></table></div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:32px 0 12px">Variations</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Reverse Taboo: the describer MUST use all three banned words in their explanation, but still cannot say the term itself.</li><li style="margin-bottom:8px">One-word round: after the first rotation, replay the same cards but the describer may only say ONE word as the clue.</li><li style="margin-bottom:8px">Student-made cards: each team writes 3 new cards for terms from the current topic and plays them against a rival team.</li></ul>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:26px 0 12px">Teacher tips</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Read the banned words aloud to the whole class before each card so the referees and the audience are in on the tension.</li><li style="margin-bottom:8px">Ban gestures too, or half the class will start miming money with their fingers.</li><li style="margin-bottom:8px">Keep dead cards to one side and revisit them at the end. They are your diagnostic list of half-learned terms.</li></ul>
+  <div style="margin:44px 0 10px;border:1px solid rgba(10,107,115,.3);background:#f2f9f9;border-radius:14px;padding:26px 28px">
+    <div style="font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:#0e2038">Want the whole lesson to feel like this?</div>
+    <p style="font-size:14.5px;color:#4a5a78;margin-top:8px">The Business School is a live simulation where your class runs rival firms for a full lesson — pricing wars, hiring, crises, negotiations. Free teacher demo, no installs, students join with a PIN.</p>
+    <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+      <a href="https://play.thebusiness.school" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Try the free demo</a>
+      <a href="/pilot/" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#fff;border:1px solid #0a6b73;color:#0a6b73">Join the waitlist</a>
+    </div>
+  </div>
+</main>
+<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
+        <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · thebusiness.school</div>
+      </div>
+      <div style="display:flex;gap:38px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>

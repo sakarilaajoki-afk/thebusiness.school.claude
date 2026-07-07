@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Dragons&#x27; Den: Would You Have Invested? — The Business School</title>
+<meta name="description" content="Teams judge 6 real anonymised UK startup pitches and invest fake money, then discover what actually happened. Real outcomes included." />
+<link rel="canonical" href="https://thebusiness.school/resources/dragons-den-would-you-invest/" />
+<meta property="og:title" content="Dragons&#x27; Den: Would You Have Invested? — The Business School" />
+<meta property="og:url" content="https://thebusiness.school/resources/dragons-den-would-you-invest/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
+</helmet>
+<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
+<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
+    <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
+      <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
+        <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
+      </a>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
+          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
+          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
+          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
+          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
+          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
+          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
+          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
+          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+        </button>
+      </sc-if>
+    </nav>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
+      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
+      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
+      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
+      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
+      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
+      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a>
+      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
+      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
+    </div>
+  </sc-if>
+</header>
+<main style="max-width:860px;margin:0 auto;padding:40px 20px 20px">
+  <nav style="font-size:13px;color:#65728c;margin-bottom:18px"><a href="/resources/" style="color:#0a6b73;text-decoration:none">Resources</a> › <a href="/resources/topics/" style="color:#0a6b73;text-decoration:none">Topic library</a> › Classroom activities</nav>
+  <div style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#b4560f;border:1px solid rgba(180,86,15,.35);background:#fdf6ef;border-radius:999px;padding:4px 12px;margin-bottom:14px">Classroom activity · no worksheets</div>
+  <h1 style="font-family:'Fraunces',Georgia,serif;font-size:34px;font-weight:600;color:#0e2038;line-height:1.2">Dragons&#x27; Den: Would You Have Invested?</h1>
+  <p style="font-size:16.5px;color:#4a5a78;margin-top:14px">Give teams six anonymised pitches based on real UK companies and a pot of fake money to spread across them. Then reveal what actually happened. The room erupts every time a confident investment turns out to be a spectacular collapse, and hindsight suddenly feels a lot less easy.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px">
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>⏱ 35-50 min</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>👥 Teams of 3-5</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>📋 Prep: 5 min printing (one case pack per team) or project the cases</strong></span>
+  </div>
+  <div style="font-size:12.5px;color:#65728c;margin-bottom:8px">Spec links: Edexcel 9BS0 1.1, 1.5, 3.1 · AQA GCSE 8132 3.1, 3.2 · AQA A-Level 7132 3.1, 3.7 · OCR J204 1.1</div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:600;color:#0e2038;margin:30px 0 16px">How to run it</h2>
+  <div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">1</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Hand out the fund</div><div style="font-size:14.5px;color:#2a3a58"><p>Each team is an investment fund with £100,000 of fake money. Their job: read six anonymised pitches (all real UK companies at their early or turning-point stage) and decide how to split the £100,000 across them. They may put everything in one, spread it evenly, or refuse to invest in any.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">2</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Read the pitches</div><div style="font-size:14.5px;color:#2a3a58"><p>Work through the six cases below. Do not reveal the company names. Teams discuss each one for 3-4 minutes and note initial thoughts: What is the revenue model? Who are the customers? What could kill this business?</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">3</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Lock in allocations</div><div style="font-size:14.5px;color:#2a3a58"><p>Each team writes its allocation on a mini whiteboard or paper: e.g. Case A £40k, Case C £60k. Once written, no changes. Collect the numbers on the board so the whole class can see who backed what.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">4</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">The big reveal</div><div style="font-size:14.5px;color:#2a3a58"><p>Reveal each company and its real outcome one at a time (answers below). Award returns: money placed in the successes multiplies (use the multipliers on the answer card), money placed in the failures is wiped out or slashed. Recalculate each fund's final value.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">5</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Debrief like analysts</div><div style="font-size:14.5px;color:#2a3a58"><p>Ask the winning fund to justify their picks using business language: cash flow, competition, barriers to entry, scalability. Then ask: what warning signs were visible in the failed pitches BEFORE the collapse? List them on the board.</p></div></div></div>
+  <h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 The 6 anonymised pitch cards</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><table><tr><th>Case</th><th>The pitch (do not reveal names)</th></tr><tr><td><strong>Case A</strong></td><td>2007, Scotland. Two friends in their twenties start brewing craft beer in a shed, disgusted by bland mass-market lager. They cannot get bank funding, so they plan to sell shares directly to their customers online, calling them punk investors. Loud, rebellious marketing. Tiny production capacity.</td></tr><tr><td><strong>Case B</strong></td><td>2018, London. A serial entrepreneur who already built two big online businesses wants to sell used cars entirely online: browse, click, and the car arrives on a truck with a money-back guarantee. Needs enormous spending on car stock, depots and TV adverts before making a single pound of profit.</td></tr><tr><td><strong>Case C</strong></td><td>2012, Birmingham. A 19-year-old pizza delivery driver and student starts screen-printing gym clothing in his parents' garage. He posts the clothes to fitness YouTubers for free, hoping they wear them on camera. No shops, no funding, just social media.</td></tr><tr><td><strong>Case D</strong></td><td>2013, London. A former investment banker is frustrated that good restaurants in his area do not deliver. He builds an app connecting restaurants, self-employed couriers on bikes, and hungry customers. He does the first deliveries himself. Fierce competition and thin margins expected.</td></tr><tr><td><strong>Case E</strong></td><td>1999, London. Three university friends sell smoothies at a music festival. A sign asks customers to drop empty bottles in a YES bin or NO bin to vote on whether the founders should quit their jobs. The YES bin overflows. They want to launch fruit smoothies with no additives against giant drinks brands.</td></tr><tr><td><strong>Case F</strong></td><td>2015, London. A team of fintech insiders wants to build a bank with no branches at all: just an app and a bright coral debit card. Regulation is heavy, big banks have huge advantages, and the plan involves years of losses. They will raise money through crowdfunding.</td></tr></table></div><h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 Answer cards: what actually happened (teacher only)</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><table><tr><th>Case</th><th>Company</th><th>Real outcome</th><th>Payout multiplier</th></tr><tr><td><strong>A</strong></td><td>BrewDog</td><td>Equity for Punks crowdfunding raised millions from customers. By 2017 a private equity firm bought a 22% stake valuing BrewDog around £1.8bn. Early crowd investors saw returns of over 2,000%, though later years brought workplace-culture controversies and weaker profits.</td><td>x20</td></tr><tr><td><strong>B</strong></td><td>Cazoo</td><td>Listed on the New York stock exchange in 2021 valued around $8bn. Burned through cash on stock, depots and sponsorships, never reached profit, and collapsed into administration in 2024. Shareholders were effectively wiped out.</td><td>x0</td></tr><tr><td><strong>C</strong></td><td>Gymshark</td><td>The garage brand grew through influencer marketing into one of the UK's fastest-growing companies. In 2020 an investment firm bought a 21% stake valuing Gymshark at over £1bn. Ben Francis became one of Britain's youngest billionaires-in-the-making.</td><td>x15</td></tr><tr><td><strong>D</strong></td><td>Deliveroo</td><td>Grew across dozens of cities, but its 2021 London stock market debut was called one of the worst in the exchange's history, with shares falling around 26% on day one. In 2025 US rival DoorDash agreed to buy Deliveroo for roughly £2.9bn, well below its float value. Early investors did fine; float investors lost money.</td><td>x3</td></tr><tr><td><strong>E</strong></td><td>Innocent Drinks</td><td>The festival YES bin vote became startup legend. Innocent grew into the UK's biggest smoothie brand and Coca-Cola gradually bought the company, taking a majority stake and later moving to full ownership. The founders became multimillionaires.</td><td>x10</td></tr><tr><td><strong>F</strong></td><td>Monzo</td><td>One 2016 crowdfunding round raised £1m in about 96 seconds, a record at the time. After years of losses Monzo reached profitability and by 2024 was valued in the billions with millions of UK customers.</td><td>x8</td></tr></table></div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:32px 0 12px">Variations</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Pitch it live: assign each team ONE case to perform as a 2-minute pitch to the rest of the class before anyone invests.</li><li style="margin-bottom:8px">Add a short-selling rule: teams may bet up to £20k that a case will fail, doubling that money if it does and losing it if the company succeeds.</li><li style="margin-bottom:8px">A-Level stretch: after the reveal, teams write a one-paragraph investment memo explaining one case using Ansoff&#x27;s matrix or a risk-return argument.</li></ul>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:26px 0 12px">Teacher tips</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Do not let the names slip early. The anonymity is what makes teams judge the business model instead of the brand.</li><li style="margin-bottom:8px">Cazoo is the star of the show: it looks like the safest pitch (experienced founder, huge market) and fails hardest. Milk that moment.</li><li style="margin-bottom:8px">Keep the maths light: multipliers are deliberately simple so the focus stays on judgement, not arithmetic.</li></ul>
+  <div style="margin:44px 0 10px;border:1px solid rgba(10,107,115,.3);background:#f2f9f9;border-radius:14px;padding:26px 28px">
+    <div style="font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:#0e2038">Want the whole lesson to feel like this?</div>
+    <p style="font-size:14.5px;color:#4a5a78;margin-top:8px">The Business School is a live simulation where your class runs rival firms for a full lesson — pricing wars, hiring, crises, negotiations. Free teacher demo, no installs, students join with a PIN.</p>
+    <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+      <a href="https://play.thebusiness.school" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Try the free demo</a>
+      <a href="/pilot/" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#fff;border:1px solid #0a6b73;color:#0a6b73">Join the waitlist</a>
+    </div>
+  </div>
+</main>
+<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
+        <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · thebusiness.school</div>
+      </div>
+      <div style="display:flex;gap:38px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>

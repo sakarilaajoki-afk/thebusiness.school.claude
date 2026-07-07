@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Stock Market Shout-Out — The Business School</title>
+<meta name="description" content="A 10-minute live trading pit with shouting brokers, price cards and news events. Students feel supply and demand instead of reading about it." />
+<link rel="canonical" href="https://thebusiness.school/resources/stock-market-shout-out/" />
+<meta property="og:title" content="Stock Market Shout-Out — The Business School" />
+<meta property="og:url" content="https://thebusiness.school/resources/stock-market-shout-out/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
+</helmet>
+<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
+<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
+    <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
+      <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
+        <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
+      </a>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
+          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
+          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
+          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
+          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
+          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
+          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
+          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
+          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+        </button>
+      </sc-if>
+    </nav>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
+      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
+      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
+      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
+      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
+      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
+      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a>
+      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
+      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
+    </div>
+  </sc-if>
+</header>
+<main style="max-width:860px;margin:0 auto;padding:40px 20px 20px">
+  <nav style="font-size:13px;color:#65728c;margin-bottom:18px"><a href="/resources/" style="color:#0a6b73;text-decoration:none">Resources</a> › <a href="/resources/topics/" style="color:#0a6b73;text-decoration:none">Topic library</a> › Classroom activities</nav>
+  <div style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#b4560f;border:1px solid rgba(180,86,15,.35);background:#fdf6ef;border-radius:999px;padding:4px 12px;margin-bottom:14px">Classroom activity · no worksheets</div>
+  <h1 style="font-family:'Fraunces',Georgia,serif;font-size:34px;font-weight:600;color:#0e2038;line-height:1.2">Stock Market Shout-Out</h1>
+  <p style="font-size:16.5px;color:#4a5a78;margin-top:14px">Turn your classroom into a 1980s trading floor for ten glorious, noisy minutes. Brokers shout offers, news flashes hit the market, and prices swing as everyone scrambles to buy low and sell high. Supply and demand stops being a diagram and becomes a feeling.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px">
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>⏱ 15-25 min (10 min of live trading plus setup and debrief)</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>👥 Whole class (works from 12 to 32 students)</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>📋 Prep: 5 min: cut scrap paper into share slips, or use sticky notes</strong></span>
+  </div>
+  <div style="font-size:12.5px;color:#65728c;margin-bottom:8px">Spec links: Edexcel 9BS0 1.2 (markets), 3.5 (stock market flotation) · AQA GCSE 8132 3.5.2, 3.1.4 · AQA A-Level 7132 3.5.2</div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:600;color:#0e2038;margin:30px 0 16px">How to run it</h2>
+  <div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">1</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Open the exchange</div><div style="font-size:14.5px;color:#2a3a58"><p>Five fictional companies are listed (cards below). Every student starts with £100 (tracked on paper) and 2 random share slips. The teacher is the Exchange: current prices live on the board, starting at the prices shown on the company cards.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">2</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Trade in the pit</div><div style="font-size:14.5px;color:#2a3a58"><p>Trading happens standing up, anywhere in the room. Students trade shares with EACH OTHER at any price both agree on: shout, haggle, swap slips and update your own cash total honestly. The board price is only a guide; the real price is whatever someone will pay.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">3</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">News flashes move the market</div><div style="font-size:14.5px;color:#2a3a58"><p>Every 90 seconds, the teacher rings an imaginary bell and reads a news event card. Then the teacher adjusts board prices according to the card. Traders react instantly: dump the airline, grab the chocolate maker, regret everything.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">4</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Close the bell</div><div style="font-size:14.5px;color:#2a3a58"><p>After 10 minutes, trading stops. Everyone values their portfolio: cash plus (shares held x final board price). Highest total wins Trader of the Year. Bankruptcies get a round of applause.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">5</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Debrief: what moved the prices?</div><div style="font-size:14.5px;color:#2a3a58"><p>Ask: why did prices move before the teacher even changed the board? (Traders anticipated: demand shifted on expectations.) Introduce the vocabulary formally: supply, demand, equilibrium, speculation, market sentiment. Connect to why real firms care about share price at all: raising finance, takeover risk, reputation.</p></div></div></div>
+  <h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 5 company cards (starting prices)</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><table><tr><th>Company</th><th>What it does</th><th>Start price</th></tr><tr><td><strong>Choco Bloc plc</strong></td><td>Chocolate bars sold in every corner shop</td><td>£10</td></tr><tr><td><strong>FlyCheap Air plc</strong></td><td>Budget airline, thin margins, big fuel bills</td><td>£8</td></tr><tr><td><strong>GreenVolt plc</strong></td><td>Builds wind farms; growth depends on government policy</td><td>£12</td></tr><tr><td><strong>TrendThreads plc</strong></td><td>Fast-fashion online retailer loved by teenagers</td><td>£6</td></tr><tr><td><strong>SteadyBank plc</strong></td><td>Boring but reliable high-street bank</td><td>£15</td></tr></table></div><h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 8 news event cards (read one every 90 seconds; adjust board prices as shown)</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><ul><li><strong>1.</strong> Heatwave melts chocolate in delivery vans nationwide. Choco Bloc -£3.</li><li><strong>2.</strong> Oil price crashes: airline fuel is suddenly cheap. FlyCheap Air +£4.</li><li><strong>3.</strong> Government announces huge subsidies for wind power. GreenVolt +£5.</li><li><strong>4.</strong> Viral documentary exposes fast-fashion waste. TrendThreads -£3.</li><li><strong>5.</strong> Interest rates rise sharply. SteadyBank +£3, TrendThreads -£1 (customers cut spending).</li><li><strong>6.</strong> Choco Bloc launches a wildly popular new bar with a football star. Choco Bloc +£5.</li><li><strong>7.</strong> Volcanic ash cloud grounds flights across Europe. FlyCheap Air -£4.</li><li><strong>8.</strong> Rumour: SteadyBank is about to be taken over at a premium. SteadyBank +£4. (Optional twist next flash: rumour denied, -£5.)</li></ul></div><h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 Broker rules (project or read aloud)</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><ul><li>You may only trade standing up. Sitting brokers are on lunch break.</li><li>Every trade needs a handshake and both traders updating their own records honestly.</li><li>You may not rip, hide or forge share slips. The Exchange (teacher) can audit anyone.</li><li>All trades freeze while a news flash is being read.</li><li>Final wealth = cash + (shares x final board price). Honesty audit applies to the top three.</li></ul></div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:32px 0 12px">Variations</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Insider round: secretly show two students the next news card before reading it. Reveal afterwards what insider trading did to the market, and why it is illegal.</li><li style="margin-bottom:8px">Broker pairs: one partner trades in the pit, the other manages the records at a desk; swap at half-time. Mirrors front office and back office roles.</li><li style="margin-bottom:8px">Dividend rule: holders of SteadyBank get £1 per share when a bell rings twice, rewarding calm long-term investors over frantic traders.</li></ul>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:26px 0 12px">Teacher tips</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Warn the neighbouring classroom in advance. This game reaches genuine trading-floor volume, and that is by design.</li><li style="margin-bottom:8px">Deliberately mis-time one news card so a rumour spreads before you read it. The pre-move in prices is your best debrief material.</li><li style="margin-bottom:8px">Keep the maths self-managed. Auditing only the top three finishers keeps everyone roughly honest without slowing the game.</li></ul>
+  <div style="margin:44px 0 10px;border:1px solid rgba(10,107,115,.3);background:#f2f9f9;border-radius:14px;padding:26px 28px">
+    <div style="font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:#0e2038">Want the whole lesson to feel like this?</div>
+    <p style="font-size:14.5px;color:#4a5a78;margin-top:8px">The Business School is a live simulation where your class runs rival firms for a full lesson — pricing wars, hiring, crises, negotiations. Free teacher demo, no installs, students join with a PIN.</p>
+    <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+      <a href="https://play.thebusiness.school" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Try the free demo</a>
+      <a href="/pilot/" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#fff;border:1px solid #0a6b73;color:#0a6b73">Join the waitlist</a>
+    </div>
+  </div>
+</main>
+<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
+        <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · thebusiness.school</div>
+      </div>
+      <div style="display:flex;gap:38px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>

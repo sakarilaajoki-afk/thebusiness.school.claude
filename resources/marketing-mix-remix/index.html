@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="/support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Marketing Mix Remix: Relaunch the Boring — The Business School</title>
+<meta name="description" content="Teams get a boring product and a random target market, then 10 minutes to plan a relaunch the class votes on. Product and market cards included." />
+<link rel="canonical" href="https://thebusiness.school/resources/marketing-mix-remix/" />
+<meta property="og:title" content="Marketing Mix Remix: Relaunch the Boring — The Business School" />
+<meta property="og:url" content="https://thebusiness.school/resources/marketing-mix-remix/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
+</helmet>
+<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
+<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
+    <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
+      <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
+        <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
+      </a>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
+          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
+          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
+          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
+          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
+          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
+          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
+          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
+          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+        </button>
+      </sc-if>
+    </nav>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
+      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
+      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
+      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
+      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
+      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
+      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a>
+      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
+      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
+    </div>
+  </sc-if>
+</header>
+<main style="max-width:860px;margin:0 auto;padding:40px 20px 20px">
+  <nav style="font-size:13px;color:#65728c;margin-bottom:18px"><a href="/resources/" style="color:#0a6b73;text-decoration:none">Resources</a> › <a href="/resources/topics/" style="color:#0a6b73;text-decoration:none">Topic library</a> › Classroom activities</nav>
+  <div style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#b4560f;border:1px solid rgba(180,86,15,.35);background:#fdf6ef;border-radius:999px;padding:4px 12px;margin-bottom:14px">Classroom activity · no worksheets</div>
+  <h1 style="font-family:'Fraunces',Georgia,serif;font-size:34px;font-weight:600;color:#0e2038;line-height:1.2">Marketing Mix Remix: Relaunch the Boring</h1>
+  <p style="font-size:16.5px;color:#4a5a78;margin-top:14px">A paperclip. Pensioners who love cruises. Ten minutes. Go. Teams draw one deeply boring product and one wildly specific target market, then remix all four Ps to make the pairing genuinely sellable. The pitches are ridiculous, the thinking underneath is pure marketing mix.</p>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 8px">
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>⏱ 25-35 min</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>👥 Teams of 3-5</strong></span>
+    <span style="border:1px solid #e3e9f1;border-radius:999px;padding:6px 14px;font-size:13px;color:#2a3a58"><strong>📋 Prep: None (draw cards from this page, or cut them out in 5 min)</strong></span>
+  </div>
+  <div style="font-size:12.5px;color:#65728c;margin-bottom:8px">Spec links: Edexcel 9BS0 2.2 (marketing mix) · AQA GCSE 8132 3.5.1-3.5.4 · AQA A-Level 7132 3.3.2-3.3.4 · OCR J204 5.1</div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:600;color:#0e2038;margin:30px 0 16px">How to run it</h2>
+  <div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">1</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Draw your fate</div><div style="font-size:14.5px;color:#2a3a58"><p>Each team draws (or is assigned) ONE product card and ONE target market card at random. No swaps, no matter how absurd the pairing. The absurdity is the exercise.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">2</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Remix the four Ps: 10 minutes</div><div style="font-size:14.5px;color:#2a3a58"><p>Teams must decide: <strong>Product</strong> (how do we adapt or rebrand it for this market?), <strong>Price</strong> (what price and pricing strategy, with one sentence of justification?), <strong>Place</strong> (where exactly would this market buy it?), <strong>Promotion</strong> (one campaign idea and one slogan). All four must appear in the pitch or points are lost.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">3</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">The 90-second pitch</div><div style="font-size:14.5px;color:#2a3a58"><p>Each team pitches to the class in 90 seconds max. Slogans must be delivered with full commitment. Props improvised from pencil cases are strongly encouraged.</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">4</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Class vote with a twist</div><div style="font-size:14.5px;color:#2a3a58"><p>Everyone votes twice: once for funniest pitch and once for the pitch most likely to actually work. Teams cannot vote for themselves. The two awards usually go to different teams, which sets up the debrief question: what separates entertaining marketing from effective marketing?</p></div></div></div><div style="display:flex;gap:14px;margin-bottom:18px"><div style="flex:0 0 34px;height:34px;border-radius:50%;background:#0e2038;color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px">5</div><div><div style="font-weight:700;font-size:15.5px;color:#0e2038;margin-bottom:4px">Debrief the mix</div><div style="font-size:14.5px;color:#2a3a58"><p>Pick the winning most-likely-to-work pitch and map it on the board against the four Ps. Ask: which P did the winners nail? Which P do weak pitches always ignore? (It is almost always Place.) Link to segmentation: the market card forced targeting, and targeting is what made the ideas sharp.</p></div></div></div>
+  <h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 8 boring product cards</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><ul><li><strong>P1.</strong> A single steel paperclip</li><li><strong>P2.</strong> A plain white mug</li><li><strong>P3.</strong> A bar of unscented soap</li><li><strong>P4.</strong> A wooden 30cm ruler</li><li><strong>P5.</strong> A pack of 100 rubber bands</li><li><strong>P6.</strong> A grey umbrella</li><li><strong>P7.</strong> A tin of value baked beans</li><li><strong>P8.</strong> A basic ballpoint pen</li></ul></div><h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 12 target market cards</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><ul><li><strong>M1.</strong> Pensioners who love cruise holidays</li><li><strong>M2.</strong> Professional gamers and streamers</li><li><strong>M3.</strong> New parents running on no sleep</li><li><strong>M4.</strong> Fitness influencers who post everything</li><li><strong>M5.</strong> Festival-goers who camp all weekend</li><li><strong>M6.</strong> City bankers with more money than time</li><li><strong>M7.</strong> Eco-conscious university students</li><li><strong>M8.</strong> Dog owners who treat the dog like a child</li><li><strong>M9.</strong> Long-distance lorry drivers</li><li><strong>M10.</strong> Wedding planners under pressure</li><li><strong>M11.</strong> Twelve-year-olds with pocket money</li><li><strong>M12.</strong> People terrified of technology</li></ul></div><h3 style="font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:600;color:#0e2038;margin:26px 0 10px">🖨 Judging card (project for the vote)</h3><div style="border:1px dashed #b9c5d6;border-radius:12px;padding:18px 20px;background:#fbfcfe;font-size:14px;color:#2a3a58;overflow-x:auto"><table><tr><th>Question</th><th>Look for</th></tr><tr><td>Did the pitch cover all four Ps?</td><td>Product change, price with a reason, a specific place, one promotion idea + slogan</td></tr><tr><td>Was the target market actually targeted?</td><td>Details that only fit THIS market, not everyone</td></tr><tr><td>Funniest pitch vote</td><td>Commitment, slogan delivery, props</td></tr><tr><td>Most likely to work vote</td><td>Would real people in this market genuinely buy it?</td></tr></table></div>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:32px 0 12px">Variations</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Budget constraint: give each team an imaginary £5,000 marketing budget and make them state what the promotion actually costs.</li><li style="margin-bottom:8px">Hostile takeover round: after pitches, teams get 60 seconds to explain how they would beat ONE rival pitch in the same market.</li><li style="margin-bottom:8px">Premium remix: the same product must be pitched twice, once as the cheapest option in the market and once as a luxury version, showing how price repositions a product.</li></ul>
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038;margin:26px 0 12px">Teacher tips</h2>
+  <ul style="padding-left:22px;font-size:14.5px;color:#2a3a58"><li style="margin-bottom:8px">Enforce the no-swap rule kindly but firmly. The paperclip-for-bankers team always complains and then produces the best pitch.</li><li style="margin-bottom:8px">Keep a visible countdown for the 10 planning minutes; scarcity of time produces braver ideas.</li><li style="margin-bottom:8px">Save the best slogans on a classroom wall of fame. Next year&#x27;s classes will try to beat them, and the activity markets itself.</li></ul>
+  <div style="margin:44px 0 10px;border:1px solid rgba(10,107,115,.3);background:#f2f9f9;border-radius:14px;padding:26px 28px">
+    <div style="font-family:'Fraunces',Georgia,serif;font-size:21px;font-weight:600;color:#0e2038">Want the whole lesson to feel like this?</div>
+    <p style="font-size:14.5px;color:#4a5a78;margin-top:8px">The Business School is a live simulation where your class runs rival firms for a full lesson — pricing wars, hiring, crises, negotiations. Free teacher demo, no installs, students join with a PIN.</p>
+    <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+      <a href="https://play.thebusiness.school" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Try the free demo</a>
+      <a href="/pilot/" style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;text-decoration:none;background:#fff;border:1px solid #0a6b73;color:#0a6b73">Join the waitlist</a>
+    </div>
+  </div>
+</main>
+<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
+        <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · thebusiness.school</div>
+      </div>
+      <div style="display:flex;gap:38px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>
