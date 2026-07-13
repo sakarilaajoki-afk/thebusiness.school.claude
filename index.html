@@ -32,6 +32,9 @@
   body{-webkit-font-smoothing:antialiased;overflow-x:hidden}
   @keyframes tbspulse{0%{box-shadow:0 0 0 0 rgba(61,220,132,.5)}70%{box-shadow:0 0 0 8px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
   details summary::-webkit-details-marker{display:none}
+  .founders-hour-card{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:center;background:#0e2038;border-radius:20px;padding:46px 34px 38px}
+  .founders-hour-badge{position:absolute;top:0;left:34px;transform:translateY(-50%);display:inline-flex;align-items:center;border-radius:999px;padding:7px 13px;background:#7fe0d7;color:#0e2038;border:1px solid rgba(14,32,56,.12);box-shadow:0 8px 22px rgba(4,16,31,.22);font-size:11px;font-weight:700;letter-spacing:.16em;line-height:1;text-transform:uppercase}
+  @media(max-width:700px){.founders-hour-card{grid-template-columns:1fr;gap:24px;padding:46px 24px 28px}.founders-hour-badge{left:24px}}
 </style>
 </helmet>
 
@@ -228,6 +231,26 @@
     </div>
   </div>
 </sc-if>
+
+<!-- FOUNDER'S HOUR: one-lesson companion, deliberately distinct from the live multi-firm simulation above -->
+<section style="padding:54px 0;background:#f6f8fb;border-top:1px solid #e3e9f1;border-bottom:1px solid #e3e9f1">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div class="founders-hour-card">
+      <span class="founders-hour-badge">NEW</span>
+      <div>
+        <span style="display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7fe0d7">Founder's Hour - a one-lesson companion</span>
+        <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(24px,3vw,34px);margin:12px 0 12px;line-height:1.14;letter-spacing:-.01em">A free one-hour lesson. Start your pilot today.</h2>
+        <p style="color:#c3cee0;font-size:16px;line-height:1.6;margin-bottom:10px">Separate from our live multi-firm simulation above: this is a single solo lesson. Your students found and run a London café and defend every decision in writing. Vic, our AI mentor, coaches every answer against AO1 to AO4, and you confirm the grade.</p>
+        <p style="color:#8ea3c4;font-size:14px">The live-sim autumn pilot is full. This one you can start right now; no waitlist, no install, works on any browser including phones.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <a href="https://lesson.thebusiness.school/free-class.html" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:16px;padding:16px 24px;border-radius:12px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent">Get your pilot now</a>
+        <a href="https://lesson.thebusiness.school/?class=DEMO" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 24px;border-radius:12px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.3);color:#fff">Try the demo first</a>
+        <span style="text-align:center;font-size:12.5px;color:#8ea3c4">One lesson · about 60 to 75 minutes · Edexcel 9BS0</span>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- TWO DOORS -->
 <section style="padding:78px 0">
@@ -490,6 +513,7 @@
         <summary style="list-style:none;cursor:pointer;font-weight:600;font-size:16px;color:#0e2038;padding:16px 0;display:flex;justify-content:space-between;align-items:center">What does the teacher see and control?<span style="color:#0a6b73;font-size:22px;font-weight:400">＋</span></summary>
         <p style="color:#40506e;font-size:15px;padding:0 0 18px">A live control panel: start and pace the phases, trigger events, watch firm standings, and put a big-screen leaderboard on the projector. Afterwards you get automatic grades, student and class reports, and certificates.</p>
       </details>
+      <p style="text-align:center;margin-top:24px;font-size:15px;color:#40506e">Teachers and IT staff can reach us at <a href="mailto:support@thebusiness.school" style="color:#0a6b73;font-weight:600;text-decoration:none">support@thebusiness.school</a>.</p>
     </div>
   </div>
 </section>
@@ -519,6 +543,7 @@
       <div>
         <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
         <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · ICO registration ZC133810 · thebusiness.school</div>
+        <div style="font-size:12.5px;color:#65728c;margin-top:6px">Support: <a href="mailto:support@thebusiness.school" style="color:#40506e;text-decoration:none">support@thebusiness.school</a></div>
       </div>
       <div style="display:flex;gap:38px;flex-wrap:wrap">
         <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
