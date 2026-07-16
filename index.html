@@ -190,6 +190,7 @@
         <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:30px">
           <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:17px;padding:17px 34px;border-radius:12px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent;box-shadow:0 12px 30px -12px rgba(4,16,31,.6)" style-hover="background:#075158">Join the waitlist</a>
           <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:17px;padding:17px 34px;border-radius:12px;text-decoration:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#fff;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)" style-hover="background:rgba(255,255,255,.2)">I lead a department</a>
+          <a href="#newsims" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:17px;padding:17px 34px;border-radius:12px;text-decoration:none;background:transparent;border:1px solid rgba(255,217,160,.55);color:#ffd9a0" style-hover="border-color:#ffd9a0">See what's new &darr;</a>
         </div>
       </div>
       <div style="max-width:940px;margin:44px auto 0;background:#fff;border:1px solid rgba(255,255,255,.5);border-radius:16px;box-shadow:0 50px 100px -46px rgba(0,0,0,.75);overflow:hidden;color:#16233f">
@@ -525,7 +526,10 @@
 <!-- TWO NEW SIMS — the warm chapter. Placed AFTER the live sim's own story so it never interrupts it.
      Cold Europe-map hero (the live arena) gives way to a warm London sunset (the solo founder's journey). -->
 <style>
-.newsims{position:relative;overflow:hidden;padding:104px 0 84px}
+/* no overflow:hidden here: it would make this section its own scroll container, and the cards'
+   view() timeline would then resolve against it instead of the page, so they never faded in.
+   Nothing overflows anyway, the bg/scrim/melt are all inset:0 to the section's own box. */
+.newsims{position:relative;padding:104px 0 84px}
 .newsims .nsbg{position:absolute;inset:0;background:url('/assets/tbs-web/london-sunset.jpg') center 42%/cover no-repeat}
 .newsims .nsscrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,17,32,.66) 0%,rgba(10,17,32,.34) 42%,rgba(10,17,32,0) 76%),linear-gradient(180deg,rgba(10,17,32,.10) 0%,rgba(10,17,32,.30) 55%,rgba(10,17,32,.60) 100%)}
 .newsims .nsmelt{position:absolute;left:0;right:0;top:0;height:170px;background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.70) 36%,rgba(255,255,255,0) 100%)}
