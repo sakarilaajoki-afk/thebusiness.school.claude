@@ -85,6 +85,16 @@
 </header>
 
 
+<style>
+/* Restrained site-wide scroll reveal. Pure CSS so the template render can never strip it,
+   content is visible by default, and it only engages where scroll-driven animation exists. */
+@keyframes tbsRise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){
+  @media (prefers-reduced-motion: no-preference){
+    .rvl{animation:tbsRise 1s linear both;animation-timeline:view();animation-range:entry 5% entry 75%}
+  }
+}
+</style>
 <!-- HERO -->
 <section style="position:relative;background:#0e2038;color:#fff;overflow:hidden;padding:74px 0 170px">
   <div ref="{{ mapRef }}" style="position:absolute;inset:0;z-index:0;opacity:.95" aria-hidden="true">
@@ -231,7 +241,7 @@
 
 <!-- TWO DOORS -->
 <section style="padding:78px 0">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin:0 auto 44px;text-align:center">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Two people, two questions</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">Whether you choose it or teach it, start here</h2>
@@ -268,7 +278,7 @@
 
 <!-- SIMULATION — editorial two-column rhythm -->
 <section style="padding:78px 0;background:#f6f8fb;border-top:1px solid #e3e9f1;border-bottom:1px solid #e3e9f1">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin-bottom:40px">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">The simulation</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">Real business decisions — not a quiz</h2>
@@ -293,7 +303,7 @@
 
 <!-- INSIDE THE SIMULATION — real screenshots -->
 <section style="padding:78px 0">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin:0 auto 40px;text-align:center">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Inside the simulation</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">The real screens your students will use</h2>
@@ -409,7 +419,7 @@
 
 <!-- THREE STEPS -->
 <section style="padding:78px 0">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin:0 auto 44px;text-align:center">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">In one lesson</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">Running it is three steps</h2>
@@ -436,7 +446,7 @@
 
 <!-- PERSONAL FEEDBACK -->
 <section style="padding:78px 0">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin:0 auto 44px;text-align:center">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">After every session</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">Every student gets personal feedback</h2>
@@ -464,7 +474,7 @@
 
 <!-- CURRICULUM PROOF -->
 <section style="padding:78px 0;background:#f6f8fb;border-top:1px solid #e3e9f1;border-bottom:1px solid #e3e9f1">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="background:#fff;border:1px solid #e3e9f1;border-radius:18px;padding:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:36px;align-items:center">
       <div>
         <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Why Heads trust it</span>
@@ -485,7 +495,7 @@
 
 <!-- OUR STORY -->
 <section style="padding:78px 0">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="background:#0e2038;color:#fff;border-radius:20px;padding:56px 48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:center">
       <div>
         <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8ff0c4">Our story</span>
@@ -505,7 +515,7 @@
 
 <!-- BUILT FOR THE CLASSROOM -->
 <section style="padding:0 0 78px">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin:0 auto 40px;text-align:center">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Technical details</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">Built for the classroom — no IT department required</h2>
@@ -523,7 +533,7 @@
 
 <!-- FAQ -->
 <section id="faq" style="padding:78px 0">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin:0 auto 44px;text-align:center">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Questions</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">What teachers ask first</h2>
@@ -555,7 +565,7 @@
 
 <!-- FINAL CTA -->
 <section id="demo" style="padding:78px 0">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="background:#0e2038;color:#fff;border-radius:20px;padding:52px 40px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
       <div style="max-width:560px">
         <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(24px,3vw,34px);line-height:1.15;letter-spacing:-.01em;margin-bottom:10px">Join the waitlist</h2>
@@ -573,7 +583,7 @@
 <!-- FOOTER -->
 
 <footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
       <div>
         <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
