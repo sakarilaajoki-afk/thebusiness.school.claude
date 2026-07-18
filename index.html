@@ -551,6 +551,10 @@
 .newsims .nscard h3{font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:21px;line-height:1.2;margin:9px 0 8px}
 .newsims .nscard p{font-size:14.5px;line-height:1.55;color:#4a5a75;margin-bottom:18px}
 .newsims .nscta{margin-top:auto;display:inline-flex;align-items:center;gap:7px;align-self:flex-start;font-weight:700;font-size:14.5px;padding:12px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff}
+.newsims .nscard--wip{position:relative;isolation:isolate}
+.newsims .nscard--wip img,.newsims .nscard--wip .nsbody>:not(.nsstatus){filter:blur(1.8px);opacity:.72}
+.newsims .nscard--wip::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.34),rgba(231,241,242,.62) 52%,rgba(255,255,255,.42));backdrop-filter:blur(2.5px);-webkit-backdrop-filter:blur(2.5px)}
+.newsims .nsstatus{position:relative;z-index:2;margin-top:auto;display:inline-flex;align-self:flex-start;font-family:'Roboto Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;font-weight:700;letter-spacing:.08em;color:#075158;background:rgba(230,241,242,.92);border:1px solid rgba(10,107,115,.25);border-radius:999px;padding:8px 12px;box-shadow:0 8px 24px rgba(14,32,56,.08)}
 @media(prefers-reduced-motion:reduce){.newsims .nscard{animation:none;opacity:1;transform:none}}
 </style>
 <section class="newsims" id="newsims">
@@ -571,13 +575,13 @@
           <a class="nscta" href="https://lesson.thebusiness.school/">Try Founder's Hour &rarr;</a>
         </div>
       </div>
-      <div class="nscard">
+      <div class="nscard nscard--wip">
         <img src="/assets/tbs-web/card-build.jpg" alt="Founder Mode, the five-day campaign" loading="lazy">
         <div class="nsbody">
           <div class="nsk">Five short sessions &middot; one week</div>
           <h3>Found a company. Then run it for three years.</h3>
-          <p>A deeper campaign: pricing, crises, competition and a boardroom exit.</p>
-          <a class="nscta" href="https://build.thebusiness.school/">See Founder Mode &rarr;</a>
+          <p>Coming soon</p>
+          <span class="nsstatus">In progress</span>
         </div>
       </div>
     </div>
