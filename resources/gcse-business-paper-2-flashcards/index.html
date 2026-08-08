@@ -210,6 +210,38 @@
   }
   .meta-foot a { color: var(--grey-700); }
   .meta-foot strong { color: var(--ink); font-weight: 700; }
+
+  /* Free teacher group CTA (community funnel) */
+  .group-cta-top {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 16px; flex-wrap: wrap;
+    background: var(--cream); border: 1px solid var(--line);
+    border-left: 4px solid var(--green); border-radius: 10px;
+    padding: 14px 18px; margin: 0 0 28px;
+    text-decoration: none; color: var(--ink);
+  }
+  .group-cta-top:hover { border-color: var(--green); }
+  .group-cta-top__text { font-size: 15px; line-height: 1.45; flex: 1 1 260px; }
+  .group-cta-top__btn {
+    display: inline-block; background: var(--green); color: #FFFFFF;
+    font-weight: 600; font-size: 14px; padding: 10px 18px;
+    border-radius: 6px; white-space: nowrap;
+  }
+  .group-cta-box {
+    border: 1px solid var(--line); border-radius: 10px;
+    padding: 22px 24px; margin: 28px 0; background: #FFFFFF;
+  }
+  .group-cta-box__h { margin: 0 0 8px; color: var(--green); font-size: 18px; }
+  .group-cta-box__p { margin: 0 0 16px; font-size: 15px; color: var(--muted); }
+  .group-cta-box__btn {
+    display: inline-block; background: var(--green); color: #FFFFFF;
+    text-decoration: none; font-weight: 600; font-size: 15px;
+    padding: 12px 22px; border-radius: 6px;
+  }
+  .group-cta-box__btn:hover { opacity: .88; }
+  @media (max-width: 520px) {
+    .group-cta-top__btn, .group-cta-box__btn { display: block; text-align: center; }
+  }
 </style>
 </head>
 <body>
@@ -233,6 +265,11 @@
   <p class="sub">16 printable flashcards covering calculations, marketing application, finance application and exam technique — for Year 11 mock prep.</p>
   <div class="tags">AQA 8132 · Year 11 · Free PDF · Duplex print-ready</div>
 
+  <a class="group-cta-top" href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener">
+    <span class="group-cta-top__text"><strong>Free teacher group</strong> &mdash; new packs land there first, and members vote on what gets built next.</span>
+    <span class="group-cta-top__btn">Join the free group &rarr;</span>
+  </a>
+
   <img src="cover.jpg" alt="Preview of the GCSE Business Paper 2 Flashcards" class="hero-image" width="1200" height="900">
 
   <div class="cta-box">
@@ -241,6 +278,13 @@
       <p class="meta">8 pages · A4 landscape · ~20 KB · duplex long-edge printable</p>
     </div>
     <a class="btn" href="AQA-GCSE-Business-8132-Paper-2-Flashcards.pdf" download id="download-btn">Download free PDF</a>
+  </div>
+
+
+  <div class="group-cta-box">
+    <h3 class="group-cta-box__h">Got the pack? Come and tell us what to build next</h3>
+    <p class="group-cta-box__p">Every pack on this site started as a request in our free Facebook group for UK Business and Economics teachers. Members see new packs first, vote on what gets made, and swap what actually works in the classroom. Free, and it stays free.</p>
+    <a class="group-cta-box__btn" href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener">Join the free group &rarr;</a>
   </div>
 
   <h2>What's inside</h2>
