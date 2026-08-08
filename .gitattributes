@@ -1,0 +1,18 @@
+# Binary assets must never have line endings rewritten (core.autocrlf=true would
+# corrupt them silently, so downloads would arrive broken). Keep this list in sync
+# whenever a new downloadable file type is added to /resources/.
+*.pdf   binary
+*.pptx  binary
+*.docx  binary
+*.xlsx  binary
+*.zip   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.webp  binary
+*.mp3   binary
+*.mp4   binary
+*.woff  binary
+*.woff2 binary
+*.ico   binary
