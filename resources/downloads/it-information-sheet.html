@@ -10,10 +10,10 @@
 <body>
 <x-dc>
 <helmet>
-<title>IT one-sheet — Network requirements | The Business School</title>
+<title>IT one-sheet, Network requirements | The Business School</title>
 <meta name="description" content="Everything a school IT team needs to run The Business School simulation: domains to whitelist, ports, bandwidth, device requirements and data notes. One page, printable." />
 <link rel="canonical" href="https://thebusiness.school/it/" />
-<meta property="og:title" content="IT one-sheet — Network requirements | The Business School" />
+<meta property="og:title" content="IT one-sheet, Network requirements | The Business School" />
 <meta property="og:url" content="https://thebusiness.school/it/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -86,7 +86,7 @@
         <code id="tbs-it-url" style="font-size:14px;color:#fff;background:rgba(255,255,255,.1);border-radius:8px;padding:9px 12px;flex:1;min-width:220px">thebusiness.school/it/</code>
         <button onclick="navigator.clipboard.writeText('https://thebusiness.school/it/').then(function(){var b=document.getElementById('tbs-copy-btn-label');b.textContent='Copied ✓';setTimeout(function(){b.textContent='Copy link';},2000);})" style="cursor:pointer;font-weight:600;font-size:14px;padding:9px 16px;border-radius:8px;border:1px solid transparent;background:#0a6b73;color:#fff;white-space:nowrap"><span id="tbs-copy-btn-label">Copy link</span></button>
       </div>
-      <p style="font-size:13.5px;color:#c9d5e8">Copy that link and paste it into an email to IT — <b>or</b> download the ready-made PDF below to attach directly.</p>
+      <p style="font-size:13.5px;color:#c9d5e8">Copy that link and paste it into an email to IT, <b>or</b> download the ready-made PDF below to attach directly.</p>
       <a href="/resources/downloads/TBS-School-IT-Information-Sheet.pdf" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 18px;border-radius:8px;text-decoration:none;background:#fff;color:#0e2038;margin-top:4px">Download the PDF version ↓</a>
     </div>
   </div>
@@ -101,7 +101,7 @@
         <p style="font-size:15px;color:#40506e;margin-bottom:14px">Allow these domains through the school's web filter and firewall. All traffic is HTTPS.</p>
         <div style="display:flex;flex-direction:column;gap:8px">
           <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;background:#f6f8fb;border:1px solid #e3e9f1;border-radius:9px;padding:11px 14px"><code style="font-size:14px;font-weight:600;color:#0e2038">thebusiness.school</code><span style="font-size:13px;color:#65728c">Website &amp; teacher resources</span></div>
-          <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;background:#f6f8fb;border:1px solid #e3e9f1;border-radius:9px;padding:11px 14px"><code style="font-size:14px;font-weight:600;color:#0e2038">play.thebusiness.school</code><span style="font-size:13px;color:#65728c">The simulation itself — students &amp; teachers</span></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;background:#f6f8fb;border:1px solid #e3e9f1;border-radius:9px;padding:11px 14px"><code style="font-size:14px;font-weight:600;color:#0e2038">play.thebusiness.school</code><span style="font-size:13px;color:#65728c">The simulation itself, students &amp; teachers</span></div>
           <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;background:#f6f8fb;border:1px solid #e3e9f1;border-radius:9px;padding:11px 14px"><code style="font-size:14px;font-weight:600;color:#0e2038">*.thebusiness.school</code><span style="font-size:13px;color:#65728c">Simplest rule if wildcards are supported</span></div>
           <div style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;background:#f6f8fb;border:1px solid #e3e9f1;border-radius:9px;padding:11px 14px"><code style="font-size:14px;font-weight:600;color:#0e2038">fonts.googleapis.com · fonts.gstatic.com</code><span style="font-size:13px;color:#65728c">Web fonts (usually already allowed)</span></div>
         </div>
@@ -113,7 +113,7 @@
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0">
         <div style="padding:20px 24px;border-bottom:1px solid #f0f3f8"><h4 style="font-weight:700;font-size:15px;color:#0e2038;margin-bottom:4px">HTTPS, port 443 only</h4><p style="font-size:14px;color:#40506e">Standard secure web traffic. No custom ports, no VPN, nothing to install.</p></div>
         <div style="padding:20px 24px;border-bottom:1px solid #f0f3f8"><h4 style="font-weight:700;font-size:15px;color:#0e2038;margin-bottom:4px">WebSocket connections</h4><p style="font-size:14px;color:#40506e">Live gameplay uses secure WebSockets (wss://) to the same domains. Most filters pass these; if the game stalls behind a proxy, allow WebSocket traffic to play.thebusiness.school.</p></div>
-        <div style="padding:20px 24px"><h4 style="font-weight:700;font-size:15px;color:#0e2038;margin-bottom:4px">Light bandwidth</h4><p style="font-size:14px;color:#40506e">Text and small data updates — no video streaming. A full class of 32 runs comfortably on ordinary school Wi-Fi.</p></div>
+        <div style="padding:20px 24px"><h4 style="font-weight:700;font-size:15px;color:#0e2038;margin-bottom:4px">Light bandwidth</h4><p style="font-size:14px;color:#40506e">Text and small data updates, no video streaming. A full class of 32 runs comfortably on ordinary school Wi-Fi.</p></div>
         <div style="padding:20px 24px"><h4 style="font-weight:700;font-size:15px;color:#0e2038;margin-bottom:4px">EU cloud hosting</h4><p style="font-size:14px;color:#40506e">Sessions are managed server-side in the EU. No peer-to-peer connections between student devices.</p></div>
       </div>
     </div>
@@ -128,7 +128,7 @@
     <div style="border:1px solid #e3e9f1;border-radius:16px;overflow:hidden;background:#fff;margin-bottom:36px">
       <div style="padding:16px 24px;border-bottom:1px solid #eef2f7;background:#f6f8fb;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#65728c">4 · Accounts &amp; data</div>
       <div style="padding:20px 24px">
-        <p style="font-size:15px;color:#40506e;margin-bottom:10px">Students never create accounts. They join a session with a 6-digit PIN — no email, no password, no personal data collected from minors. Only the teacher has a login. TBS Education Ltd Oy is an ICO-registered data controller (ICO registration ZC133810 — verifiable at ico.org.uk).</p>
+        <p style="font-size:15px;color:#40506e;margin-bottom:10px">Students never create accounts. They join a session with a 6-digit PIN, no email, no password, no personal data collected from minors. Only the teacher has a login. TBS Education Ltd Oy is an ICO-registered data controller (ICO registration ZC133810, verifiable at ico.org.uk).</p>
         <p style="font-size:15px;color:#40506e">Full details on the <a href="/data-protection/" style="color:#0a6b73;font-weight:600;text-decoration:none">data protection</a> and <a href="/trust/" style="color:#0a6b73;font-weight:600;text-decoration:none">trust &amp; safety</a> pages.</p>
       </div>
     </div>
@@ -136,7 +136,7 @@
     <div style="background:#f6f8fb;border:1px solid #e3e9f1;border-radius:16px;padding:26px 28px;display:flex;flex-wrap:wrap;gap:18px 24px;align-items:center;justify-content:space-between">
       <div style="max-width:520px">
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;color:#0e2038;margin-bottom:5px">Something blocked on your network?</h3>
-        <p style="font-size:14.5px;color:#40506e">Tell us what your filter reports and we'll help you get running — usually it's just the WebSocket rule.</p>
+        <p style="font-size:14.5px;color:#40506e">Tell us what your filter reports and we'll help you get running, usually it's just the WebSocket rule.</p>
       </div>
       <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:12px 22px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff" style-hover="background:#075158">Contact us</a>
     </div>
