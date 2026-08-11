@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="UTF-8">
-<title>Data Protection Summary — The Business School</title>
+<title>Data Protection Summary, The Business School</title>
 <style>
   @page { size: A4; margin: 18mm 18mm; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -66,7 +66,7 @@
   <thead><tr><th style="width:24%">Data type</th><th>Detail</th></tr></thead>
   <tbody>
     <tr><td><strong>Teacher</strong></td><td>Name, email, school name, session history</td></tr>
-    <tr><td><strong>Student</strong></td><td>Self-selected nickname only (no real name, no email, no DOB, no photos). PIN-code join — no account, no password.</td></tr>
+    <tr><td><strong>Student</strong></td><td>Self-selected nickname only (no real name, no email, no DOB, no photos). PIN-code join, no account, no password.</td></tr>
     <tr><td><strong>Gameplay</strong></td><td>In-session decisions (purchases, pricing, VAT filing, hiring) and team scores</td></tr>
     <tr><td><strong>Technical</strong></td><td>IP address (server logs only, 30-day auto-purge); browser/device headers; session timestamps</td></tr>
   </tbody>
@@ -77,13 +77,13 @@
   <thead><tr><th style="width:24%">Sub-processor</th><th style="width:24%">Purpose</th><th style="width:22%">Location</th><th>Safeguard</th></tr></thead>
   <tbody>
     <tr><td><strong>Netlify</strong></td><td>Frontend hosting + edge CDN</td><td>Global edge; primary EU edge</td><td>SCC (UK Addendum)</td></tr>
-    <tr><td><strong>Neon</strong></td><td>Postgres database</td><td>AWS US East 1 — EU migration planned May 2026</td><td>SCC (UK Addendum); AES-256 at rest; TLS 1.2+ in transit</td></tr>
+    <tr><td><strong>Neon</strong></td><td>Postgres database</td><td>AWS US East 1, EU migration planned May 2026</td><td>SCC (UK Addendum); AES-256 at rest; TLS 1.2+ in transit</td></tr>
     <tr><td><strong>Anthropic</strong></td><td>AI inference for end-of-session reports (Claude API)</td><td>EU and US regions</td><td>SCC (UK Addendum); no student personal identifiers sent to model</td></tr>
   </tbody>
 </table>
 
 <h2>Retention</h2>
-<p><strong>Free tier sessions:</strong> ephemeral — auto-deleted within 24 hours of session end. <strong>Paid tier saved sessions:</strong> teacher-controlled deletion. <strong>Teacher accounts:</strong> retained during subscription, deleted within 30 days of termination. <strong>Server logs (IP):</strong> 30 days, auto-purged.</p>
+<p><strong>Free tier sessions:</strong> ephemeral, auto-deleted within 24 hours of session end. <strong>Paid tier saved sessions:</strong> teacher-controlled deletion. <strong>Teacher accounts:</strong> retained during subscription, deleted within 30 days of termination. <strong>Server logs (IP):</strong> 30 days, auto-purged.</p>
 
 <h2>Sharing</h2>
 <p>No sale, no rental, no advertising profiling. The three sub-processors above process data solely to deliver their infrastructure or inference services. No marketing tracking cookies. PIN-code join eliminates credential risks.</p>

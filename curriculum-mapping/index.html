@@ -10,10 +10,10 @@
 <body>
 <x-dc>
 <helmet>
-<title>Curriculum mapping — Edexcel 9BS0 | The Business School</title>
+<title>Curriculum mapping, Edexcel 9BS0 | The Business School</title>
 <meta name="description" content="Every decision in the simulation is tagged to the Edexcel A-Level Business specification (9BS0), shown as a plain student label and the exact teacher sub-code. Also works for AQA, BTEC and IGCSE." />
 <link rel="canonical" href="https://thebusiness.school/curriculum-mapping/" />
-<meta property="og:title" content="Curriculum mapping — Edexcel 9BS0 | The Business School" />
+<meta property="og:title" content="Curriculum mapping, Edexcel 9BS0 | The Business School" />
 <meta property="og:url" content="https://thebusiness.school/curriculum-mapping/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -72,7 +72,7 @@
   <div style="max-width:1160px;margin:0 auto;padding:0 24px">
     <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7fe0d7">Curriculum mapping</span>
     <h1 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(32px,4.4vw,50px);line-height:1.12;letter-spacing:-.015em;margin:14px 0 16px;max-width:760px">Every decision carries its exam code.</h1>
-    <p style="font-size:clamp(16px,1.5vw,18.5px);color:#c9d5e8;max-width:620px">Students see a plain theme label. Open the teacher view and each decision shows its exact Edexcel 9BS0 sub-code — strong across Themes 1–3, with Theme 4 expanding.</p>
+    <p style="font-size:clamp(16px,1.5vw,18.5px);color:#c9d5e8;max-width:620px">Students see a plain theme label. Open the teacher view and each decision shows its exact Edexcel 9BS0 sub-code, strong across Themes 1-3, with Theme 4 expanding.</p>
     <div style="margin-top:24px"><a href="/curriculum-mapping/TBS-Curriculum-Mapping-2026.pdf" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent" style-hover="background:#075158">Download the full mapping (PDF)</a></div>
   </div>
 </section>
@@ -80,8 +80,8 @@
 <section style="padding:64px 0">
   <div style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-bottom:40px">
-      <div style="background:#f6f8fb;border:1px solid #e3e9f1;border-radius:14px;padding:26px"><h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;color:#0e2038;margin-bottom:8px">Student layer</h3><p style="font-size:15px;color:#40506e">A plain, in-context instruction — “Set your price”, “File your VAT return”. No jargon, no distraction from the task.</p></div>
-      <div style="background:#f6f8fb;border:1px solid #e3e9f1;border-radius:14px;padding:26px"><h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;color:#0e2038;margin-bottom:8px">Teacher / Pearson layer</h3><p style="font-size:15px;color:#40506e">The same action, tagged with its exact Edexcel 9BS0 sub-code — so you can audit coverage against your scheme of work.</p></div>
+      <div style="background:#f6f8fb;border:1px solid #e3e9f1;border-radius:14px;padding:26px"><h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;color:#0e2038;margin-bottom:8px">Student layer</h3><p style="font-size:15px;color:#40506e">A plain, in-context instruction, “Set your price”, “File your VAT return”. No jargon, no distraction from the task.</p></div>
+      <div style="background:#f6f8fb;border:1px solid #e3e9f1;border-radius:14px;padding:26px"><h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;color:#0e2038;margin-bottom:8px">Teacher / Pearson layer</h3><p style="font-size:15px;color:#40506e">The same action, tagged with its exact Edexcel 9BS0 sub-code, so you can audit coverage against your scheme of work.</p></div>
     </div>
 
     <sc-for list="{{ themes }}" as="t" hint-placeholder-count="3">
@@ -126,25 +126,25 @@ class Component extends DCLogic {
   renderVals() {
     return {
       themes: [
-        { name: 'Theme 1 — Marketing & people', note: 'Meeting customer needs, the market, managing people', rows: [
+        { name: 'Theme 1, Marketing & people', note: 'Meeting customer needs, the market, managing people', rows: [
           { label: 'Set your price for Office Coffee', code: 'Edexcel 1.3' },
           { label: 'Research the market before you launch', code: 'Edexcel 1.1' },
           { label: 'Allocate your marketing budget across channels', code: 'Edexcel 1.4' },
           { label: 'Hire staff to build capacity', code: 'Edexcel 1.5' },
         ]},
-        { name: 'Theme 2 — Managing business activities', note: 'Finance, cash flow and the role of the state', rows: [
+        { name: 'Theme 2, Managing business activities', note: 'Finance, cash flow and the role of the state', rows: [
           { label: 'Choose a source of finance', code: 'Edexcel 2.1' },
           { label: 'Manage cash flow across the phase', code: 'Edexcel 2.2' },
           { label: 'File your VAT return', code: 'Edexcel 2.3' },
           { label: 'Read the profit and loss position', code: 'Edexcel 2.4' },
         ]},
-        { name: 'Theme 3 — Business decisions & strategy', note: 'Objectives, competition and growth', rows: [
+        { name: 'Theme 3, Business decisions & strategy', note: 'Objectives, competition and growth', rows: [
           { label: 'Win the contract vs rivals', code: 'Edexcel 1.2 · 3.5' },
           { label: 'Respond to a market crisis', code: 'Edexcel 3.6' },
           { label: 'Choose a growth strategy', code: 'Edexcel 3.2' },
           { label: 'Set the firm’s objectives', code: 'Edexcel 3.1' },
         ]},
-        { name: 'Theme 4 — Global business', note: 'Expanding — an area we are building out', rows: [
+        { name: 'Theme 4, Global business', note: 'Expanding, an area we are building out', rows: [
           { label: 'Weigh an international opportunity', code: 'Edexcel 4.1 (expanding)' },
         ]},
       ],

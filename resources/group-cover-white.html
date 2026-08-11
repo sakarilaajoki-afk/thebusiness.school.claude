@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1640">
+<meta name="robots" content="noindex">
+<title>FB Group Cover (White) — 1640×856</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  :root { --navy:#0a2540; --ink:#13202b; --gold:#e0a91b; --gold-soft:#f4c542; --teal:#0e7490; --slate:#5b6773; --line:#e6eaf0; --paper:#ffffff; }
+  body { background:#444; padding:40px; font-family:'Inter',sans-serif; color:var(--ink); display:flex; flex-direction:column; align-items:center; gap:24px; min-height:100vh; }
+  .instructions { background:#fff; color:#1a1a1a; padding:18px 26px; border-radius:8px; max-width:1640px; width:100%; font-size:14px; line-height:1.55; }
+  .instructions h2 { font-size:16px; margin-bottom:6px; color:var(--navy); }
+  .instructions ol { margin-left:22px; }
+  .instructions li { margin-bottom:3px; }
+  .instructions b { color:var(--navy); }
+  .instructions code { background:#eee; padding:2px 6px; font-family:'Roboto Mono',monospace; font-size:12.5px; border-radius:3px; }
+
+  .cover { width:1640px; height:856px; background:var(--paper); color:var(--ink); position:relative; overflow:hidden; box-shadow:0 8px 32px rgba(0,0,0,0.4); display:flex; flex-direction:column; justify-content:center; padding:0 120px; }
+  /* subtle gold corner accent */
+  .cover::before { content:''; position:absolute; top:-160px; right:-160px; width:520px; height:520px; background:var(--gold-soft); transform:rotate(45deg); opacity:0.10; }
+  /* navy left rule */
+  .cover::after { content:''; position:absolute; top:0; left:0; width:14px; height:100%; background:linear-gradient(180deg, var(--navy) 0%, var(--teal) 100%); }
+
+  .brand-row { position:absolute; top:64px; left:120px; z-index:2; }
+  .brand { font-size:30px; font-weight:800; letter-spacing:-0.01em; color:var(--navy); }
+  .brand .dot { color:var(--gold); }
+  .company { font-family:'Roboto Mono',monospace; font-size:14px; font-weight:600; letter-spacing:0.22em; text-transform:uppercase; color:var(--slate); margin-top:8px; }
+
+  .eyebrow { color:var(--gold); font-family:'Roboto Mono',monospace; font-size:18px; font-weight:700; letter-spacing:0.26em; text-transform:uppercase; margin-bottom:20px; z-index:2; }
+  h1 { font-size:84px; font-weight:900; line-height:1.0; letter-spacing:-0.035em; margin-bottom:24px; z-index:2; color:var(--navy); max-width:1250px; }
+  h1 .g { color:var(--gold); }
+  .sub { font-size:26px; font-weight:500; color:var(--slate); line-height:1.45; max-width:1120px; margin-bottom:36px; z-index:2; }
+  .sub b { color:var(--ink); font-weight:700; }
+
+  .pills { display:flex; gap:14px; z-index:2; flex-wrap:wrap; }
+  .pill { background:#fff; border:1.5px solid var(--navy); color:var(--navy); padding:10px 22px; font-size:18px; font-weight:700; border-radius:3px; letter-spacing:0.02em; }
+
+  .foot { position:absolute; bottom:58px; left:120px; right:120px; display:flex; justify-content:space-between; align-items:flex-end; z-index:2; }
+  .foot .l { font-size:17px; color:var(--slate); }
+  .foot .l b { color:var(--navy); }
+  .foot .url { font-family:'Roboto Mono',monospace; font-size:22px; color:var(--navy); font-weight:700; }
+  .foot .url span { color:var(--gold); }
+</style>
+</head>
+<body>
+
+<div class="instructions">
+  <h2>Facebook group cover (white) — how to use</h2>
+  <ol>
+    <li><b>Maximize this window</b> — the card below is 1640×856 px (FB group cover size).</li>
+    <li><b>Press <code>Win + Shift + S</code></b>, drag a box around the card, save it.</li>
+    <li>In the group: <b>Muokkaa</b> on the cover → upload the saved image.</li>
+  </ol>
+</div>
+
+<div class="cover">
+  <div class="brand-row">
+    <div class="brand">The Business School<span class="dot">.</span></div>
+    <div class="company">TBS Education Ltd · Finland</div>
+  </div>
+
+  <div class="eyebrow">A-Level · BTEC · GCSE Business</div>
+  <h1>The live classroom<br><span class="g">simulation.</span></h1>
+  <div class="sub"><b>Your students run a real company in a single lesson.</b> No accounts, no installs, just a PIN.</div>
+
+  <div class="pills">
+    <span class="pill">AQA</span>
+    <span class="pill">Edexcel</span>
+    <span class="pill">OCR</span>
+    <span class="pill">BTEC</span>
+  </div>
+
+  <div class="foot">
+    <div class="l"><b>Built in Finland</b> for UK Business classrooms</div>
+    <div class="url">thebusiness<span>.</span>school</div>
+  </div>
+</div>
+
+</body>
+</html>
