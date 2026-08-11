@@ -3,174 +3,668 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-<script src="/support.js"></script>
+<title>Free Business and Economics Teaching Resources | The Business School</title>
+<meta name="description" content="The free resource library for Business and Economics teachers: complete packs with answers, revision pages, classroom games and quick downloads. GCSE, IGCSE, A Level, BTEC and IB. No sign up.">
+<link rel="canonical" href="https://thebusiness.school/resources/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Resource Library | The Business School">
+<meta property="og:description" content="63 free resources for Business and Economics teachers: complete packs with answers, revision pages and classroom games. GCSE to A Level, BTEC and IB.">
+<meta property="og:url" content="https://thebusiness.school/resources/">
+<meta property="og:site_name" content="The Business School">
+<meta property="og:image" content="https://thebusiness.school/assets/tbs-web/og-resources.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://thebusiness.school/assets/tbs-web/og-resources.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:#fff;color:#1F2724;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+a{text-decoration:none}
+
+/* header (site navy, static, CSS only menu) */
+.hd{position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08)}
+.hd nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;white-space:nowrap}
+.brand b{width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em}
+.hlinks{display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0}
+.hlinks a{color:inherit;white-space:nowrap}
+.hlinks a:hover{color:#fff}
+.hcta{display:inline-flex;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;white-space:nowrap;background:#0a6b73;color:#fff}
+.mtoggle{position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden}
+.mtoggle:focus-visible ~ div .mburger{outline:2px solid #fff;outline-offset:2px}
+.mburger{display:none;width:44px;height:44px;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;place-items:center;color:#fff}
+.mmenu{display:none}
+@media(max-width:900px){
+  .hlinks,.hcta.desk{display:none}
+  .mburger{display:grid}
+  .mtoggle:checked ~ .mmenu{display:flex;flex-direction:column;gap:2px;background:#0e2038;border-top:1px solid rgba(255,255,255,.1);padding:10px 20px 22px}
+  .mmenu a{color:#e8edf5;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
+  .mmenu a.mm-cta{margin-top:14px;border:0;display:inline-flex;align-items:center;justify-content:center;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;background:#0a6b73;color:#fff}
+}
+
+/* hero */
+.hero{background:linear-gradient(160deg,#0B3D2E 0%,#10513F 100%);color:#fff;padding:66px 0 60px;position:relative;overflow:hidden}
+.hero .dec{position:absolute;right:4%;top:50%;transform:translateY(-52%);font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:360px;line-height:1;color:rgba(255,255,255,.055);pointer-events:none;user-select:none}
+@media(max-width:1020px){.hero .dec{display:none}}
+.hero .wrap{position:relative}
+.kick{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#9fd8c4}
+.hero h1{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(34px,4.6vw,54px);line-height:1.08;letter-spacing:-.015em;margin:14px 0 16px}
+.hero p{font-size:clamp(16px,1.5vw,18.5px);color:#d7e6de;max-width:640px}
+.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.stat{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:8px 16px;font-size:13.5px;font-weight:600;color:#eaf4ee;background:rgba(255,255,255,.06)}
+
+/* sections */
+.sec{padding:56px 0 8px}
+.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.sechead h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(23px,2.6vw,30px);color:#0B3D2E}
+.sechead p{font-size:14.5px;color:#55636B}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #DDE5E1;border-radius:14px;overflow:hidden;transition:box-shadow .15s ease,transform .15s ease}
+.card:hover{box-shadow:0 14px 34px -18px rgba(11,61,46,.45);transform:translateY(-2px)}
+.cover{display:flex;flex-direction:column;justify-content:flex-end;gap:4px;min-height:118px;padding:16px 18px;background:linear-gradient(140deg,#0B3D2E 0%,#10513F 88%);position:relative}
+.cover.lc{background:linear-gradient(140deg,#083227 0%,#0B3D2E 70%)}
+.cover.gm{background:linear-gradient(140deg,#0b3a3f 0%,#0a6b73 96%)}
+.cover.gm .ck{color:#9adfda}
+.cnew{position:absolute;top:12px;right:12px;background:#C9A227;color:#241c04;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+.ck{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#9fd8c4}
+.ct{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19.5px;line-height:1.2;color:#fff}
+.cbody{display:flex;flex-direction:column;gap:12px;padding:14px 18px 16px;flex:1}
+.cdesc{font-size:13.8px;line-height:1.5;color:#41504c}
+.cbadges{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.fmt{font-size:11px;font-weight:700;letter-spacing:.05em;color:#0B3D2E;background:#F4F7F4;border:1px solid #DDE5E1;border-radius:6px;padding:3px 8px}
+.fmt.free{color:#fff;background:#0B3D2E;border-color:#0B3D2E}
+
+/* topic library banner */
+.tl{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;border:1px solid #DDE5E1;background:#F4F7F4;border-left:5px solid #0B3D2E;border-radius:14px;padding:24px 26px;margin-top:26px}
+.tl h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0B3D2E}
+.tl p{font-size:14.5px;color:#55636B;margin-top:5px;max-width:640px}
+.tl .go{display:inline-flex;font-weight:600;font-size:14.5px;padding:12px 20px;border-radius:10px;background:#0B3D2E;color:#fff;white-space:nowrap}
+
+/* filters */
+.toolbar{display:flex;flex-direction:column;gap:12px;margin-bottom:22px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chips .lab{font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#55636B;margin-right:2px}
+.chip{border:1px solid #DDE5E1;background:#fff;color:#1F2724;font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;padding:8px 15px;border-radius:999px;cursor:pointer}
+.chip.on{background:#0B3D2E;border-color:#0B3D2E;color:#fff}
+.searchrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.search{flex:1 1 260px;max-width:380px;border:1px solid #DDE5E1;border-radius:10px;padding:10px 14px;font-family:'Inter',sans-serif;font-size:14px;color:#1F2724;background:#fff}
+.count{font-size:13px;color:#55636B}
+.card.hide{display:none}
+.noresults{display:none;font-size:14.5px;color:#55636B;padding:22px 0}
+
+/* quick downloads */
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.qrow{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;border:1px solid #DDE5E1;border-radius:12px;padding:13px 16px;background:#fff;transition:box-shadow .15s ease}
+.qrow:hover{box-shadow:0 10px 24px -16px rgba(11,61,46,.5)}
+.qtx{display:flex;flex-direction:column;gap:2px;min-width:0}
+.qt{font-size:14px;font-weight:600;color:#1F2724;line-height:1.35}
+.qs{font-size:12px;color:#55636B}
+.qb{display:flex;gap:5px;flex:0 0 auto}
+
+/* premium */
+.prem{background:linear-gradient(160deg,#07261d 0%,#0B3D2E 100%);color:#fff;padding:64px 0 68px;margin-top:56px}
+.prem .kick{color:#C9A227}
+.prem h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(26px,3.2vw,38px);margin:12px 0 12px}
+.prem .sub{color:#cfe2d8;font-size:16px;max-width:640px}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;margin-top:32px}
+.pcard{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:14px;position:relative}
+.psoon{position:absolute;top:18px;right:18px;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#241c04;background:#C9A227;padding:5px 11px;border-radius:999px}
+.pk{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#C9A227}
+.pt{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:23px;line-height:1.2;color:#fff}
+.pcard ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:14.5px;color:#d9e8e0}
+.pcard li{padding-left:22px;position:relative}
+.pcard li::before{content:"";position:absolute;left:0;top:8px;width:10px;height:10px;border-radius:3px;background:#C9A227}
+.prow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:auto;padding-top:6px}
+.price{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:30px;color:#fff}
+.pbuy{display:inline-flex;font-weight:700;font-size:15px;padding:13px 26px;border-radius:10px;background:#C9A227;color:#241c04}
+.pguar{display:flex;align-items:center;gap:9px;font-size:13px;color:#d9e8e0}
+.pguar svg{flex:0 0 auto}
+.pnote{font-size:12.5px;color:#9db8ac}
+.pfree{margin-top:26px;font-size:13.5px;color:#9db8ac}
+
+/* trust */
+.trust{border-top:1px solid #DDE5E1;border-bottom:1px solid #DDE5E1;background:#F4F7F4;padding:34px 0;margin-top:0}
+.trow{display:flex;gap:26px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.tfact{font-size:14px;color:#1F2724;font-weight:600;display:flex;align-items:center;gap:9px}
+.tfact svg{flex:0 0 auto}
+.tco{font-size:12.5px;color:#55636B}
+
+/* group cta */
+.gcta{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border:1px solid #DDE5E1;border-radius:14px;padding:20px 24px;margin:44px auto}
+.gcta p{font-size:14.5px;color:#55636B;max-width:620px}
+.gcta b{color:#1F2724}
+.gcta .go{display:inline-flex;font-weight:600;font-size:14px;padding:11px 20px;border-radius:10px;border:1.5px solid #0B3D2E;color:#0B3D2E;white-space:nowrap}
+.gcta .go:hover{background:#0B3D2E;color:#fff}
+
+/* footer */
+.ft{border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb}
+.ftop{display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px}
+.fbrand{display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038}
+.fbrand b{width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em}
+.fcols{display:flex;gap:38px;flex-wrap:wrap}
+.fcols div{display:flex;flex-direction:column;gap:9px}
+.fcols a{color:#40506e}
+.fcols a:hover{color:#0e2038}
+@media(prefers-reduced-motion:reduce){.card,.qrow{transition:none}.card:hover{transform:none}}
+/* print: teachers print pages; force dark text on light so nothing comes out white on white */
+@media print{
+  .hd,.mmenu,.hero .dec,.gcta,.searchrow,.chips{display:none!important}
+  .hero,.prem{background:none!important;color:#111!important;padding:20px 0}
+  .hero h1,.prem h2,.pt,.price{color:#111!important}
+  .hero p,.prem .sub,.pcard ul,.pguar,.pnote,.pfree{color:#333!important}
+  .kick,.pk{color:#555!important}
+  .stat{border-color:#999;color:#111!important;background:none}
+  .cover,.cover.lc,.cover.gm{background:#eef3f0!important}
+  .ck{color:#555!important}
+  .ct{color:#111!important}
+  .cnew,.psoon{background:#ddd!important;color:#111!important}
+  .fmt.free{background:#eee!important;color:#111!important;border-color:#999}
+  .pcard{border-color:#bbb}
+}
+</style>
 </head>
 <body>
-<x-dc>
-<helmet>
-<title>Free teaching resources — The Business School</title>
-<meta name="description" content="Free resources for Business teachers: curriculum mapping, the live demo and classroom guides — for A-Level, BTEC, IB and GCSE/IGCSE Business." />
-<link rel="canonical" href="https://thebusiness.school/resources/" />
-<meta property="og:title" content="Free teaching resources — The Business School" />
-<meta property="og:url" content="https://thebusiness.school/resources/" />
-<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
-</helmet>
-<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
 
-<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
-    <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
-      <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
-        <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
-      </a>
-      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
-        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
-          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
-          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
-          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
-          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
-          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
-          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a>
-        </div>
-        <div style="display:flex;gap:10px;align-items:center">
-          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
-          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
-        </div>
-      </sc-if>
-      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
-        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
-          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </sc-if>
-          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </sc-if>
-        </button>
-      </sc-if>
+<header class="hd">
+  <input class="mtoggle" type="checkbox" id="mnav" aria-label="Open menu">
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="/"><b>TBS</b> The Business School</a>
+      <div class="hlinks">
+        <a href="/for-heads/">For Heads</a>
+        <a href="/for-teachers/">For Teachers</a>
+        <a href="/curriculum-mapping/">Curriculum</a>
+        <a href="/pricing/">Licensing</a>
+        <a href="/resources/">Resources</a>
+        <a href="/curriculum-faq/">FAQ</a>
+      </div>
+      <a class="hcta desk" href="/pilot/">Join the waitlist</a>
+      <label class="mburger" for="mnav" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </label>
     </nav>
   </div>
-  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
-      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
-      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
-      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
-      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
-      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
-      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a>
-      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
-      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
-    </div>
-  </sc-if>
+  <div class="mmenu">
+    <a href="/for-heads/">For Heads</a>
+    <a href="/for-teachers/">For Teachers</a>
+    <a href="/curriculum-mapping/">Curriculum</a>
+    <a href="/pricing/">Licensing</a>
+    <a href="/resources/">Resources</a>
+    <a href="/curriculum-faq/">FAQ</a>
+    <a class="mm-cta" href="/pilot/">Join the waitlist</a>
+  </div>
 </header>
 
-
-<section style="background:#0e2038;color:#fff;padding:64px 0 70px">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
-    <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7fe0d7">Free teaching resources</span>
-    <h1 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(32px,4.4vw,50px);line-height:1.12;letter-spacing:-.015em;margin:14px 0 16px;max-width:760px">Free resources for Business teachers.</h1>
-    <p style="font-size:clamp(16px,1.5vw,18.5px);color:#c9d5e8;max-width:620px">Curriculum mapping, classroom guides and the live demo — free to use, whichever specification you teach. Pick your qualification.</p>
-    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:26px">
-      <a href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;font-weight:700;font-size:15px;padding:14px 24px;border-radius:10px;background:#fff;color:#0e2038;text-decoration:none;white-space:nowrap">Join the free group →</a>
-      <span style="font-size:14.5px;color:#c9d5e8;max-width:420px">New packs land in the group first, and members vote on what gets built next.</span>
+<section class="hero">
+  <span class="dec" aria-hidden="true">&pound;</span>
+  <div class="wrap">
+    <span class="kick">Free teaching resources</span>
+    <h1>The resource library.</h1>
+    <p>Complete packs, revision pages, quick downloads and classroom games for Business and Economics teachers. Every full pack includes the answers. Free to download, free to share with your department, no sign up.</p>
+    <div class="stats">
+      <span class="stat">63 free resources</span>
+      <span class="stat">64 topic revision pages</span>
+      <span class="stat">12 classroom games</span>
+      <span class="stat">Answers included</span>
     </div>
   </div>
 </section>
 
-<section style="max-width:1160px;margin:0 auto;padding:26px 20px 0">
-  <a href="/resources/topics/" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border:1px solid rgba(10,107,115,.35);background:#f2f9f9;border-radius:14px;padding:22px 26px;text-decoration:none">
+<section class="sec" id="latest">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>New this month</h2>
+      <p>The latest full packs. Word and PowerPoint included where you see the badges.</p>
+    </div>
+    <div class="grid4">
+<a class="card lcard" href="/resources/a-level-business-evaluation-which-sentence-earns-which-mark/">
+  <span class="cover lc"><span class="cnew">New</span><span class="ck">A Level Business</span><span class="ct">Which Sentence Earns Which Mark</span></span>
+  <span class="cbody"><span class="cdesc">Three model answers with every sentence tagged for what it earns and why, plus four complete lessons with answers. AQA 7132 and Edexcel 9BS0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card lcard" href="/resources/a-level-economics-data-response-decoder/">
+  <span class="cover lc"><span class="cnew">New</span><span class="ck">A Level Economics</span><span class="ct">The Data Response Decoder</span></span>
+  <span class="cbody"><span class="cdesc">A six step method for reading an extract, two extracts with full data, and model answers with every sentence tagged. AQA 7136 and Edexcel 9EC0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card lcard" href="/resources/igcse-business-0450-paper-2-method-pack/">
+  <span class="cover lc"><span class="cnew">New</span><span class="ck">Cambridge IGCSE</span><span class="ct">The Case Study Paper</span></span>
+  <span class="cbody"><span class="cdesc">A Paper 2 method pack: a six step case study method, four complete lessons with answers, and two case studies with complete figures.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card lcard" href="/resources/a-level-economics-diagram-bank/">
+  <span class="cover lc"><span class="cnew">New</span><span class="ck">A Level Economics</span><span class="ct">The Diagram Bank</span></span>
+  <span class="cbody"><span class="cdesc">26 core diagrams drawn properly, each with a checklist of what earns the mark and the mistake examiners see on it.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+</a>
+    </div>
+    <div class="tl">
+      <div>
+        <h3>The Topic Library: 64 revision pages</h3>
+        <p>Notes, key terms, practice questions and examiner tips for every major topic. Edexcel A Level, AQA GCSE, Cambridge IGCSE, BTEC and IB.</p>
+      </div>
+      <a class="go" href="/resources/topics/">Browse the Topic Library</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="library">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>Browse the library</h2>
+      <p>Filter by level or subject, or just search.</p>
+    </div>
+    <div class="toolbar">
+      <div class="chips" id="lvlchips">
+        <span class="lab">Level</span>
+        <button type="button" class="chip on" aria-pressed="true" data-lvl="all">All</button>
+        <button type="button" class="chip" aria-pressed="false" data-lvl="alevel">A Level</button>
+        <button type="button" class="chip" aria-pressed="false" data-lvl="gcse">GCSE</button>
+        <button type="button" class="chip" aria-pressed="false" data-lvl="igcse">IGCSE</button>
+        <button type="button" class="chip" aria-pressed="false" data-lvl="btec">BTEC</button>
+        <button type="button" class="chip" aria-pressed="false" data-lvl="ib">IB</button>
+        <button type="button" class="chip" aria-pressed="false" data-lvl="game">Classroom games</button>
+      </div>
+      <div class="chips" id="subjchips">
+        <span class="lab">Subject</span>
+        <button type="button" class="chip on" aria-pressed="true" data-subj="all">All</button>
+        <button type="button" class="chip" aria-pressed="false" data-subj="business">Business</button>
+        <button type="button" class="chip" aria-pressed="false" data-subj="economics">Economics</button>
+      </div>
+      <div class="searchrow">
+        <input class="search" id="q" type="search" placeholder="Search the library" aria-label="Search the library">
+        <span class="count" id="count"></span>
+      </div>
+    </div>
+    <div class="grid" id="cards">
+<a class="card" href="/resources/a-level-business-evaluation-which-sentence-earns-which-mark/" data-lvl="alevel" data-subj="business" data-name="which sentence earns which mark a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Which Sentence Earns Which Mark</span></span>
+  <span class="cbody"><span class="cdesc">Three model answers with every sentence tagged for what it earns and why, plus four complete lessons with answers. AQA 7132 and Edexcel 9BS0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-economics-data-response-decoder/" data-lvl="alevel" data-subj="economics" data-name="the data response decoder a level economics">
+  <span class="cover"><span class="ck">A Level Economics</span><span class="ct">The Data Response Decoder</span></span>
+  <span class="cbody"><span class="cdesc">A six step method for reading an extract, two extracts with full data, and model answers with every sentence tagged. AQA 7136 and Edexcel 9EC0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/igcse-business-0450-paper-2-method-pack/" data-lvl="igcse" data-subj="business" data-name="the case study paper cambridge igcse">
+  <span class="cover"><span class="ck">Cambridge IGCSE</span><span class="ct">The Case Study Paper</span></span>
+  <span class="cbody"><span class="cdesc">A Paper 2 method pack: a six step case study method, four complete lessons with answers, and two case studies with complete figures.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-economics-diagram-bank/" data-lvl="alevel" data-subj="economics" data-name="the diagram bank a level economics">
+  <span class="cover"><span class="ck">A Level Economics</span><span class="ct">The Diagram Bank</span></span>
+  <span class="cbody"><span class="cdesc">26 core diagrams drawn properly, each with a checklist of what earns the mark and the mistake examiners see on it.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-revision-pack/" data-lvl="alevel" data-subj="business" data-name="the revision pack a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Revision Pack</span></span>
+  <span class="cbody"><span class="cdesc">10 exam style questions with KAAE mark schemes and examiner tips, built on real company case studies.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/essay-kit/" data-lvl="alevel" data-subj="business" data-name="the essay kit a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Essay Kit</span></span>
+  <span class="cbody"><span class="cdesc">Technique for the 16, 20 and 25 mark extended responses: structures, sentence frames and marked examples.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/examiners-eye/" data-lvl="alevel" data-subj="business" data-name="the examiner&#x27;s eye a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Examiner&#x27;s Eye</span></span>
+  <span class="cbody"><span class="cdesc">How answers become marks: the level descriptors in plain English and what moves an answer up a band.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/model-answers/" data-lvl="alevel" data-subj="business" data-name="five model answers a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Five Model Answers</span></span>
+  <span class="cbody"><span class="cdesc">Five full Level 4 standard model answers showing exactly what top band writing looks like.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/sentence-stem-library/" data-lvl="alevel" data-subj="business" data-name="the sentence stem library a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Sentence Stem Library</span></span>
+  <span class="cbody"><span class="cdesc">65 ready to deploy sentence stems that push student writing into analysis and evaluation.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/knowledge-organisers/" data-lvl="alevel" data-subj="business" data-name="knowledge organisers a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Knowledge Organisers</span></span>
+  <span class="cbody"><span class="cdesc">Five single page knowledge organisers covering the core of the A Level Business specification.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/lesson-hooks/" data-lvl="alevel" data-subj="business" data-name="20 lesson hooks a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">20 Lesson Hooks</span></span>
+  <span class="cbody"><span class="cdesc">Twenty lesson starters of five minutes each, across the specification and ready to project.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/calculation-cheat-sheet/" data-lvl="alevel" data-subj="business" data-name="calculation cheat sheet a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Calculation Cheat Sheet</span></span>
+  <span class="cbody"><span class="cdesc">All 26 formulas students need, each with what it means and a worked number.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/command-words-decoded/" data-lvl="alevel" data-subj="business" data-name="command words decoded a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Command Words Decoded</span></span>
+  <span class="cbody"><span class="cdesc">The nine command words that decide marks, decoded into what each one actually wants.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/costa-coffee-case-study/" data-lvl="alevel" data-subj="business" data-name="costa coffee plc a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Costa Coffee plc</span></span>
+  <span class="cbody"><span class="cdesc">A real company case study with figures and exam style questions on a business students know.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/uk-business-cases-2026/" data-lvl="alevel" data-subj="business" data-name="uk business cases 2026 a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">UK Business Cases 2026</span></span>
+  <span class="cbody"><span class="cdesc">Five real UK business case briefs from the past year, each with questions attached.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/uk-business-failures/" data-lvl="alevel" data-subj="business" data-name="uk business failures a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">UK Business Failures</span></span>
+  <span class="cbody"><span class="cdesc">Six recent UK business failures as case studies: what went wrong and the theory each one teaches.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/financial-ratios-masterclass/" data-lvl="alevel" data-subj="business" data-name="financial ratios masterclass a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Financial Ratios Masterclass</span></span>
+  <span class="cbody"><span class="cdesc">An eight page teaching pack on ratio analysis: liquidity, gearing, profitability and what the numbers mean.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/investment-appraisal-masterclass/" data-lvl="alevel" data-subj="business" data-name="investment appraisal masterclass a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Investment Appraisal Masterclass</span></span>
+  <span class="cbody"><span class="cdesc">A twelve page teaching pack: payback, ARR, NPV and IRR with worked examples and practice.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/motivation-leadership-masterclass/" data-lvl="alevel" data-subj="business" data-name="motivation and leadership a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Motivation and Leadership</span></span>
+  <span class="cbody"><span class="cdesc">An eight page teaching pack on people management: motivation theory and leadership styles in practice.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/operations-lean-masterclass/" data-lvl="alevel" data-subj="business" data-name="operations and lean a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Operations and Lean</span></span>
+  <span class="cbody"><span class="cdesc">An eight page teaching pack on operations management and lean production, with practice built in.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/marketing-strategy-pack/" data-lvl="alevel" data-subj="business" data-name="marketing strategy pack a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Marketing Strategy Pack</span></span>
+  <span class="cbody"><span class="cdesc">A six page revision pack covering the five most tested marketing strategy areas.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/paper-2-pack/" data-lvl="alevel" data-subj="business" data-name="the paper 2 pack a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Paper 2 Pack</span></span>
+  <span class="cbody"><span class="cdesc">A six page revision pack: the five most likely Paper 2 topics with practice questions.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/paper-3-pack/" data-lvl="alevel" data-subj="business" data-name="the paper 3 pack a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Paper 3 Pack</span></span>
+  <span class="cbody"><span class="cdesc">A six page revision pack built for the pre release case study paper.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/after-paper-1/" data-lvl="alevel" data-subj="business" data-name="the 6 day plan a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The 6 Day Plan</span></span>
+  <span class="cbody"><span class="cdesc">A single page study plan for the six days between Paper 1 and Paper 2.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/tuesday-morning-sheet/" data-lvl="alevel" data-subj="business" data-name="the tuesday morning sheet a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Tuesday Morning Sheet</span></span>
+  <span class="cbody"><span class="cdesc">A one page A4 cramming sheet: command words, formulas and structures for the exam morning.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/summer-bridging-pack/" data-lvl="alevel" data-subj="business" data-name="the summer bridging pack a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Summer Bridging Pack</span></span>
+  <span class="cbody"><span class="cdesc">A six week Year 12 to Year 13 summer programme with weekly tasks and answers.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/year-12-to-13-step-up/" data-lvl="alevel" data-subj="business" data-name="the step up pack a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Step Up Pack</span></span>
+  <span class="cbody"><span class="cdesc">An eight page teacher pack for the jump from Year 12 to Year 13: what changes and how to close the gap.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/final-lesson-pack/" data-lvl="alevel" data-subj="business" data-name="the final lesson a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Final Lesson</span></span>
+  <span class="cbody"><span class="cdesc">A ready to deliver final lesson for Year 13, built for the last session before study leave.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/break-even-worksheet/" data-lvl="alevel" data-subj="business" data-name="break even worksheet a level business">
+  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Break Even Worksheet</span></span>
+  <span class="cbody"><span class="cdesc">Eight calculation questions on break even analysis, with full answers.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/gcse-business-paper-2-flashcards/" data-lvl="gcse" data-subj="business" data-name="paper 2 flashcards aqa gcse">
+  <span class="cover"><span class="ck">AQA GCSE</span><span class="ct">Paper 2 Flashcards</span></span>
+  <span class="cbody"><span class="cdesc">16 printable flashcards covering the topics most likely to appear on AQA 8132 Paper 2.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/non-specialist-business-survival-pack/" data-lvl="any" data-subj="business" data-name="the survival pack new to business?">
+  <span class="cover"><span class="ck">New to Business?</span><span class="ct">The Survival Pack</span></span>
+  <span class="cbody"><span class="cdesc">Five complete first lessons with minute by minute plans, worksheets and full teacher answers. No subject background needed.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/btec-business-pass-merit-distinction/" data-lvl="btec" data-subj="business" data-name="pass, merit, distinction: decoded btec business">
+  <span class="cover"><span class="ck">BTEC Business</span><span class="ct">Pass, Merit, Distinction: Decoded</span></span>
+  <span class="cbody"><span class="cdesc">An eight page teacher pack on what separates Pass, Merit and Distinction in BTEC Level 3 National in Business.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/btec-enterprise-assessment-overview/" data-lvl="btec" data-subj="business" data-name="how the assessment works btec enterprise">
+  <span class="cover"><span class="ck">BTEC Enterprise</span><span class="ct">How the Assessment Works</span></span>
+  <span class="cbody"><span class="cdesc">Components, internal and external assessment and grading for the BTEC Tech Award in Enterprise, explained.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/ib-business-management-toolkit/" data-lvl="ib" data-subj="business" data-name="the ib toolkit ib business">
+  <span class="cover"><span class="ck">IB Business</span><span class="ct">The IB Toolkit</span></span>
+  <span class="cbody"><span class="cdesc">Every Business Management Toolkit tool explained with examples: SWOT, STEEPLE, BCG, Ansoff and more.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/business-heads-up/" data-lvl="game" data-subj="business" data-name="business heads up classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Business Heads Up</span></span>
+  <span class="cbody"><span class="cdesc">The forehead card guessing game with 30 business terms in three difficulty levels.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/business-taboo-key-terms-game/" data-lvl="game" data-subj="business" data-name="business taboo classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Business Taboo</span></span>
+  <span class="cbody"><span class="cdesc">Describe the key term without saying the banned words. 24 ready made cards for GCSE and A Level.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/business-balderdash-real-or-fake/" data-lvl="game" data-subj="business" data-name="business balderdash classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Business Balderdash</span></span>
+  <span class="cbody"><span class="cdesc">Teams bet points on whether strange business facts are real or fake. 12 real and 8 fake statements.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/business-escape-challenge/" data-lvl="game" data-subj="business" data-name="the escape challenge classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">The Escape Challenge</span></span>
+  <span class="cbody"><span class="cdesc">A 30 minute printable escape room: five business puzzles hiding lock codes.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/crisis-cabinet-role-play/" data-lvl="game" data-subj="business" data-name="crisis cabinet classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Crisis Cabinet</span></span>
+  <span class="cbody"><span class="cdesc">Teams become company boards facing a breaking crisis, then hold a press conference.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/dragons-den-would-you-invest/" data-lvl="game" data-subj="business" data-name="would you invest? classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Would You Invest?</span></span>
+  <span class="cbody"><span class="cdesc">Teams judge six real anonymised UK startup pitches and invest fake money.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/guess-the-business-logo-figures/" data-lvl="game" data-subj="business" data-name="guess the business classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Guess the Business</span></span>
+  <span class="cbody"><span class="cdesc">A projectable UK business quiz: 20 rounds of three clues each.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/marketing-mix-remix/" data-lvl="game" data-subj="business" data-name="marketing mix remix classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Marketing Mix Remix</span></span>
+  <span class="cbody"><span class="cdesc">Teams get a boring product and a random target market, then ten minutes to build a campaign.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/price-war-standoff/" data-lvl="game" data-subj="business" data-name="price war standoff classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Price War Standoff</span></span>
+  <span class="cbody"><span class="cdesc">A stand up, whole class pricing elimination game that teaches price elasticity.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/stock-market-shout-out/" data-lvl="game" data-subj="business" data-name="stock market shout out classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Stock Market Shout Out</span></span>
+  <span class="cbody"><span class="cdesc">A ten minute live trading pit with shouting brokers, price cards and news shocks.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/supply-chain-paper-planes/" data-lvl="game" data-subj="business" data-name="supply chain paper planes classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">Supply Chain Paper Planes</span></span>
+  <span class="cbody"><span class="cdesc">Teams run paper plane factories under changing cost and quality rules.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/the-negotiation-gauntlet/" data-lvl="game" data-subj="business" data-name="the negotiation gauntlet classroom game">
+  <span class="cover gm"><span class="ck">Classroom game</span><span class="ct">The Negotiation Gauntlet</span></span>
+  <span class="cbody"><span class="cdesc">Speed dating style pair negotiations with five mini scenarios and hidden agendas.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
+</a>
+    </div>
+    <p class="noresults" id="noresults">Nothing matches those filters yet. Try widening them, or tell us in the free group what you need and it goes on the build list.</p>
+  </div>
+</section>
+
+<section class="sec" id="quick">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>Quick downloads</h2>
+      <p>Single sheets and short packs. Click and the PDF downloads.</p>
+    </div>
+    <div class="qgrid">
+<a class="qrow" href="/resources/a-level-financial-ratios-cheat-sheet.pdf" download><span class="qtx"><span class="qt">Financial Ratios Cheat Sheet</span><span class="qs">A Level Business, 1 page</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/year-12-business-first-lesson-back.pdf" download><span class="qtx"><span class="qt">Year 12: First Lesson Back</span><span class="qs">A Level Business, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/gcse-business-first-lesson-back.pdf" download><span class="qtx"><span class="qt">GCSE: First Lesson Back</span><span class="qs">GCSE Business, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/btec-business-first-lesson-back.pdf" download><span class="qtx"><span class="qt">BTEC: First Lesson Back</span><span class="qs">BTEC Level 3, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/september-business-starter-bank.pdf" download><span class="qtx"><span class="qt">September Starter Bank</span><span class="qs">GCSE and A Level, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/year-12-business-autumn-scheme-of-work-at-a-glance.pdf" download><span class="qtx"><span class="qt">Year 12 Autumn Scheme of Work at a Glance</span><span class="qs">A Level Business, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/gymshark-case-study-pack.pdf" download><span class="qtx"><span class="qt">Gymshark: Case Study Pack</span><span class="qs">GCSE and A Level, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/aldi-business-case-study.pdf" download><span class="qtx"><span class="qt">Aldi: Business Case Study</span><span class="qs">Case study, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/ms-cyber-attack-business-case-study.pdf" download><span class="qtx"><span class="qt">The M&amp;S Cyber Attack 2025: Case Study Pack</span><span class="qs">Case study, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/uk-business-year-quiz-2025-26.pdf" download><span class="qtx"><span class="qt">The UK Business Year Quiz 2025/26</span><span class="qs">Quiz, 10 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/business-ownership-structures-knowledge-organiser.pdf" download><span class="qtx"><span class="qt">Ownership Structures: Knowledge Organiser</span><span class="qs">GCSE and A Level, 5 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/external-influences-knowledge-organiser.pdf" download><span class="qtx"><span class="qt">External Influences: Knowledge Organiser</span><span class="qs">GCSE and A Level, 6 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/motivation-at-work-key-terms-flashcards.pdf" download><span class="qtx"><span class="qt">Motivation at Work: Flashcards</span><span class="qs">GCSE and A Level, 6 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/gcse-igcse-break-even-made-visual.pdf" download><span class="qtx"><span class="qt">Break Even Made Visual</span><span class="qs">GCSE and IGCSE, 1 page</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/btec-command-verbs-decoded.pdf" download><span class="qtx"><span class="qt">BTEC Command Verbs Decoded</span><span class="qs">BTEC Level 3, 1 page</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/ib-ansoff-bcg-strategic-tools.pdf" download><span class="qtx"><span class="qt">Strategic Tools: Ansoff and BCG</span><span class="qs">IB Business, 1 page</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+<a class="qrow" href="/resources/post-exam-year-12-business-decision-challenges.pdf" download><span class="qtx"><span class="qt">Post Exam Year 12: Decision Challenges</span><span class="qs">A Level Business, 7 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="prem" id="premium">
+  <div class="wrap">
+    <span class="kick">Premium</span>
+    <h2>Full course, done for you.</h2>
+    <p class="sub">Two complete year long courses are in the final stages of production: every week planned, every lesson resourced, every answer written. The free library above stays free.</p>
+    <div class="pgrid">
+      <div class="pcard">
+        <span class="psoon">Launching soon</span>
+        <span class="pk">A Level Business</span>
+        <span class="pt">The Complete Year</span>
+        <ul>
+          <li>A full year scheme of work, week by week</li>
+          <li>Every lesson planned: objectives, timings, tasks and answers</li>
+          <li>Assessment and homework built into each unit</li>
+          <li>Fully editable Word and PowerPoint throughout</li>
+        </ul>
+        <div class="prow">
+          <span class="price">&pound;99</span>
+          <!-- AT LAUNCH: replace the href below with the Gumroad product link and change the button text to "Buy now" -->
+          <a class="pbuy" href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener">Get launch news</a>
+        </div>
+        <div class="pguar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z" stroke="#C9A227" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#C9A227" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>14 day money back guarantee, no questions asked</div>
+        <span class="pnote">Secure checkout via Gumroad when it launches. Launch news lands in the free group first.</span>
+      </div>
+      <div class="pcard">
+        <span class="psoon">Launching soon</span>
+        <span class="pk">A Level Economics</span>
+        <span class="pt">The Complete Year</span>
+        <ul>
+          <li>A full year scheme of work, week by week</li>
+          <li>Every lesson planned: objectives, timings, tasks and answers</li>
+          <li>Assessment and homework built into each unit</li>
+          <li>Fully editable Word and PowerPoint throughout</li>
+        </ul>
+        <div class="prow">
+          <span class="price">&pound;99</span>
+          <!-- AT LAUNCH: replace the href below with the Gumroad product link and change the button text to "Buy now" -->
+          <a class="pbuy" href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener">Get launch news</a>
+        </div>
+        <div class="pguar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z" stroke="#C9A227" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#C9A227" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>14 day money back guarantee, no questions asked</div>
+        <span class="pnote">Secure checkout via Gumroad when it launches. Launch news lands in the free group first.</span>
+      </div>
+    </div>
+    <p class="pfree">Premium funds the free library. Nothing that is free today goes behind a paywall.</p>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap trow">
+    <span class="tfact"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#0B3D2E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Answers included in every full pack</span>
+    <span class="tfact"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#0B3D2E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>No sign up, no email wall</span>
+    <span class="tfact"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#0B3D2E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Free to share within your department</span>
+    <span class="tco">Made by <b>TBS Education Ltd Oy</b> &middot; Company number 3614159-3 &middot; ICO ZC133810 &middot; Written by Sakari Laajoki</span>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="gcta">
+    <p><b>The free teacher group.</b> New packs land there first, and members vote on what gets built next. No spam, just the packs.</p>
+    <a class="go" href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener">Join the free group</a>
+  </div>
+</div>
+
+<footer class="ft">
+  <div class="wrap ftop">
     <div>
-      <div style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038">NEW · Topic library — 76 revision pages &amp; classroom games</div>
-      <div style="font-size:14.5px;color:#4a5a78;margin-top:6px">Notes, key terms, practice questions and examiner tips for every major topic — plus 12 classroom games students actually enjoy. Edexcel A-Level, AQA GCSE, Cambridge IGCSE, BTEC and IB.</div>
+      <a class="fbrand" href="/"><b>TBS</b> The Business School</a>
+      <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy &middot; company number 3614159-3 &middot; ICO registration ZC133810 &middot; thebusiness.school</div>
     </div>
-    <span style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;background:#0a6b73;color:#fff;white-space:nowrap">Browse topics →</span>
-  </a>
-</section>
-
-<section style="padding:64px 0">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
-    <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:26px;color:#0e2038;margin-bottom:6px">New downloads</h2>
-    <p style="font-size:14.5px;color:#40506e;margin-bottom:20px">Full packs with answers included. Free to download, free to share with your department, no sign-up.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;margin-bottom:44px">
-      <a href="/resources/a-level-business-evaluation-which-sentence-earns-which-mark/" style="display:block;text-decoration:none;background:#fff;border:1px solid #e3e9f1;border-left:4px solid #0a6b73;border-radius:14px;padding:28px">
-        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0e2038;margin-bottom:6px">A Level Business: Which Sentence Earns Which Mark</h3>
-        <p style="font-size:14.5px;color:#40506e">Three model answers with every single sentence tagged for what it earns and why, plus four complete lessons. AQA 7132 and Edexcel 9BS0.</p>
-        <p style="font-size:13px;color:#65728c;margin-top:10px">PDF, editable Word and 35 slides →</p>
-      </a>
-      <a href="/resources/a-level-economics-data-response-decoder/" style="display:block;text-decoration:none;background:#fff;border:1px solid #e3e9f1;border-left:4px solid #0a6b73;border-radius:14px;padding:28px">
-        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0e2038;margin-bottom:6px">A Level Economics: The Data Response Decoder</h3>
-        <p style="font-size:14.5px;color:#40506e">A six step method for reading an extract, two extracts with full data, and model answers with every sentence tagged. AQA 7136 and Edexcel 9EC0.</p>
-        <p style="font-size:13px;color:#65728c;margin-top:10px">PDF, editable Word and 35 slides →</p>
-      </a>
-      <a href="/resources/igcse-business-0450-paper-2-method-pack/" style="display:block;text-decoration:none;background:#fff;border:1px solid #e3e9f1;border-left:4px solid #0a6b73;border-radius:14px;padding:28px">
-        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0e2038;margin-bottom:6px">Cambridge IGCSE 0450: The Case Study Paper</h3>
-        <p style="font-size:14.5px;color:#40506e">A Paper 2 method pack: a six step case study method, four complete lessons with full answers, and two case studies with complete figures. Cambridge IGCSE Business 0450.</p>
-        <p style="font-size:13px;color:#65728c;margin-top:10px">PDF, editable Word and 52 slides →</p>
-      </a>
-      <a href="/resources/a-level-economics-diagram-bank/" style="display:block;text-decoration:none;background:#fff;border:1px solid #e3e9f1;border-left:4px solid #0a6b73;border-radius:14px;padding:28px">
-        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0e2038;margin-bottom:6px">A-Level Economics: The Diagram Bank</h3>
-        <p style="font-size:14.5px;color:#40506e">26 core diagrams drawn properly, each with a checklist of what earns the mark and the mistake examiners see. AQA 7136 · Edexcel 9EC0.</p>
-        <p style="font-size:13px;color:#65728c;margin-top:10px">33-page PDF + 29 slides →</p>
-      </a>
-      <a href="/resources/non-specialist-business-survival-pack/" style="display:block;text-decoration:none;background:#fff;border:1px solid #e3e9f1;border-left:4px solid #0a6b73;border-radius:14px;padding:28px">
-        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0e2038;margin-bottom:6px">New to Teaching Business? The Survival Pack</h3>
-        <p style="font-size:14.5px;color:#40506e">Five complete first lessons with minute-by-minute plans, worksheets and full teacher answers. No subject background needed.</p>
-        <p style="font-size:13px;color:#65728c;margin-top:10px">21-page PDF + 12 slides →</p>
-      </a>
-    </div>
-
-    <a href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;border:1px solid rgba(10,107,115,.35);background:#f2f9f9;border-radius:14px;padding:22px 26px;text-decoration:none;margin-bottom:44px">
-      <div>
-        <div style="font-family:'Fraunces',Georgia,serif;font-size:22px;font-weight:600;color:#0e2038">Downloaded a pack? Tell us what to build next</div>
-        <div style="font-size:14.5px;color:#4a5a78;margin-top:6px">Every pack here started as a request in our free Facebook group for UK Business and Economics teachers. Members see new packs first and vote on what gets made. Free, and it stays free.</div>
-      </div>
-      <span style="display:inline-flex;font-weight:600;font-size:14px;padding:11px 18px;border-radius:10px;background:#0a6b73;color:#fff;white-space:nowrap">Join the free group →</span>
-    </a>
-
-    <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:26px;color:#0e2038;margin-bottom:20px">By qualification</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-bottom:44px">
-      <a href="/resources/a-level/" style="display:block;text-decoration:none;background:#fff;border:1px solid #e3e9f1;border-radius:14px;padding:28px;transition:.2s" style-hover="box-shadow:0 20px 50px -34px rgba(18,35,63,.4);transform:translateY(-3px)">
-        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0e2038;margin-bottom:6px">A-Level Business</h3>
-        <p style="font-size:14.5px;color:#40506e">Edexcel 9BS0 mapped decision by decision; works for AQA 7132 too.</p>
-      </a>
-      <a href="/resources/btec/" style="display:block;text-decoration:none;background:#fff;border:1px solid #e3e9f1;border-radius:14px;padding:28px;transition:.2s" style-hover="box-shadow:0 20px 50px -34px rgba(18,35,63,.4);transform:translateY(-3px)">
-        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0e2038;margin-bottom:6px">BTEC Business</h3>
-        <p style="font-size:14.5px;color:#40506e">An applied, assignment-friendly activity with real UK business context.</p>
-      </a>
-      <a href="/resources/ib/" style="display:block;text-decoration:none;background:#fff;border:1px solid #e3e9f1;border-radius:14px;padding:28px;transition:.2s" style-hover="box-shadow:0 20px 50px -34px rgba(18,35,63,.4);transform:translateY(-3px)">
-        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0e2038;margin-bottom:6px">IB Business Management</h3>
-        <p style="font-size:14.5px;color:#40506e">A live decision-making activity for concepts, finance and operations.</p>
-      </a>
-      <a href="/resources/gcse-igcse/" style="display:block;text-decoration:none;background:#fff;border:1px solid #e3e9f1;border-radius:14px;padding:28px;transition:.2s" style-hover="box-shadow:0 20px 50px -34px rgba(18,35,63,.4);transform:translateY(-3px)">
-        <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0e2038;margin-bottom:6px">GCSE / IGCSE Business</h3>
-        <p style="font-size:14.5px;color:#40506e">An accessible team activity introducing pricing, costs and competition.</p>
-      </a>
-    </div>
-    <dc-import name="WaitlistCta" hint-size="100%,140px"></dc-import>
-  </div>
-</section>
-
-
-<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
-    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
-      <div>
-        <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
-        <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · ICO registration ZC133810 · thebusiness.school</div>
-      </div>
-      <div style="display:flex;gap:38px;flex-wrap:wrap">
-        <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
-        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
-        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
-      </div>
+    <div class="fcols">
+      <div><a href="/for-heads/">For Heads</a><a href="/for-teachers/">For Teachers</a><a href="/pricing/">Licensing</a></div>
+      <div><a href="/curriculum-mapping/">Curriculum</a><a href="/resources/topics/">Topic Library</a><a href="/curriculum-faq/">FAQ</a></div>
+      <div><a href="/trust/">Trust &amp; safety</a><a href="/data-protection/">Data protection</a><a href="/pilot/">Waitlist</a></div>
     </div>
   </div>
 </footer>
 
-</div>
-</x-dc>
+<script>
+(function(){
+  var lvl="all", subj="all", q="";
+  var cards=[].slice.call(document.querySelectorAll("#cards .card"));
+  var count=document.getElementById("count"), none=document.getElementById("noresults");
+  function apply(){
+    var shown=0;
+    cards.forEach(function(c){
+      var ok=(lvl==="all"||c.dataset.lvl===lvl||(lvl!=="game"&&c.dataset.lvl==="any"))
+          &&(subj==="all"||c.dataset.subj===subj)
+          &&(!q||c.dataset.name.indexOf(q)>-1||c.textContent.toLowerCase().indexOf(q)>-1);
+      c.classList.toggle("hide",!ok); if(ok)shown++;
+    });
+    count.textContent="Showing "+shown+" of "+cards.length;
+    none.style.display=shown?"none":"block";
+  }
+  function wire(id,attr,set){
+    var box=document.getElementById(id);
+    box.addEventListener("click",function(e){
+      var b=e.target.closest(".chip"); if(!b)return;
+      [].forEach.call(box.querySelectorAll(".chip"),function(x){x.classList.remove("on");x.setAttribute("aria-pressed","false")});
+      b.classList.add("on"); b.setAttribute("aria-pressed","true"); set(b.dataset[attr]); apply();
+    });
+  }
+  wire("lvlchips","lvl",function(v){lvl=v});
+  wire("subjchips","subj",function(v){subj=v});
+  document.getElementById("q").addEventListener("input",function(e){q=e.target.value.trim().toLowerCase();apply();});
+  apply();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"The Business School","item":"https://thebusiness.school/"},
+      {"@type":"ListItem","position":2,"name":"Free resources","item":"https://thebusiness.school/resources/"}
+    ]},
+    {"@type":"ItemList","name":"Free Business and Economics teaching resources","itemListElement":[
+{"@type": "ListItem", "position": 1, "name": "A Level Business: Which Sentence Earns Which Mark", "url": "https://thebusiness.school/resources/a-level-business-evaluation-which-sentence-earns-which-mark/"},
+{"@type": "ListItem", "position": 2, "name": "A Level Economics: The Data Response Decoder", "url": "https://thebusiness.school/resources/a-level-economics-data-response-decoder/"},
+{"@type": "ListItem", "position": 3, "name": "Cambridge IGCSE: The Case Study Paper", "url": "https://thebusiness.school/resources/igcse-business-0450-paper-2-method-pack/"},
+{"@type": "ListItem", "position": 4, "name": "A Level Economics: The Diagram Bank", "url": "https://thebusiness.school/resources/a-level-economics-diagram-bank/"},
+{"@type": "ListItem", "position": 5, "name": "A Level Business: The Revision Pack", "url": "https://thebusiness.school/resources/a-level-business-revision-pack/"},
+{"@type": "ListItem", "position": 6, "name": "A Level Business: The Essay Kit", "url": "https://thebusiness.school/resources/essay-kit/"},
+{"@type": "ListItem", "position": 7, "name": "A Level Business: The Examiner's Eye", "url": "https://thebusiness.school/resources/examiners-eye/"},
+{"@type": "ListItem", "position": 8, "name": "A Level Business: Five Model Answers", "url": "https://thebusiness.school/resources/model-answers/"},
+{"@type": "ListItem", "position": 9, "name": "A Level Business: The Sentence Stem Library", "url": "https://thebusiness.school/resources/sentence-stem-library/"},
+{"@type": "ListItem", "position": 10, "name": "A Level Business: Knowledge Organisers", "url": "https://thebusiness.school/resources/knowledge-organisers/"},
+{"@type": "ListItem", "position": 11, "name": "A Level Business: 20 Lesson Hooks", "url": "https://thebusiness.school/resources/lesson-hooks/"},
+{"@type": "ListItem", "position": 12, "name": "A Level Business: Calculation Cheat Sheet", "url": "https://thebusiness.school/resources/calculation-cheat-sheet/"},
+{"@type": "ListItem", "position": 13, "name": "A Level Business: Command Words Decoded", "url": "https://thebusiness.school/resources/command-words-decoded/"},
+{"@type": "ListItem", "position": 14, "name": "A Level Business: Costa Coffee plc", "url": "https://thebusiness.school/resources/costa-coffee-case-study/"},
+{"@type": "ListItem", "position": 15, "name": "A Level Business: UK Business Cases 2026", "url": "https://thebusiness.school/resources/uk-business-cases-2026/"},
+{"@type": "ListItem", "position": 16, "name": "A Level Business: UK Business Failures", "url": "https://thebusiness.school/resources/uk-business-failures/"},
+{"@type": "ListItem", "position": 17, "name": "A Level Business: Financial Ratios Masterclass", "url": "https://thebusiness.school/resources/financial-ratios-masterclass/"},
+{"@type": "ListItem", "position": 18, "name": "A Level Business: Investment Appraisal Masterclass", "url": "https://thebusiness.school/resources/investment-appraisal-masterclass/"},
+{"@type": "ListItem", "position": 19, "name": "A Level Business: Motivation and Leadership", "url": "https://thebusiness.school/resources/motivation-leadership-masterclass/"},
+{"@type": "ListItem", "position": 20, "name": "A Level Business: Operations and Lean", "url": "https://thebusiness.school/resources/operations-lean-masterclass/"},
+{"@type": "ListItem", "position": 21, "name": "A Level Business: Marketing Strategy Pack", "url": "https://thebusiness.school/resources/marketing-strategy-pack/"},
+{"@type": "ListItem", "position": 22, "name": "A Level Business: The Paper 2 Pack", "url": "https://thebusiness.school/resources/paper-2-pack/"},
+{"@type": "ListItem", "position": 23, "name": "A Level Business: The Paper 3 Pack", "url": "https://thebusiness.school/resources/paper-3-pack/"},
+{"@type": "ListItem", "position": 24, "name": "A Level Business: The 6 Day Plan", "url": "https://thebusiness.school/resources/after-paper-1/"},
+{"@type": "ListItem", "position": 25, "name": "A Level Business: The Tuesday Morning Sheet", "url": "https://thebusiness.school/resources/tuesday-morning-sheet/"},
+{"@type": "ListItem", "position": 26, "name": "A Level Business: The Summer Bridging Pack", "url": "https://thebusiness.school/resources/summer-bridging-pack/"},
+{"@type": "ListItem", "position": 27, "name": "A Level Business: The Step Up Pack", "url": "https://thebusiness.school/resources/year-12-to-13-step-up/"},
+{"@type": "ListItem", "position": 28, "name": "A Level Business: The Final Lesson", "url": "https://thebusiness.school/resources/final-lesson-pack/"},
+{"@type": "ListItem", "position": 29, "name": "A Level Business: Break Even Worksheet", "url": "https://thebusiness.school/resources/break-even-worksheet/"},
+{"@type": "ListItem", "position": 30, "name": "AQA GCSE: Paper 2 Flashcards", "url": "https://thebusiness.school/resources/gcse-business-paper-2-flashcards/"},
+{"@type": "ListItem", "position": 31, "name": "New to Business?: The Survival Pack", "url": "https://thebusiness.school/resources/non-specialist-business-survival-pack/"},
+{"@type": "ListItem", "position": 32, "name": "BTEC Business: Pass, Merit, Distinction: Decoded", "url": "https://thebusiness.school/resources/btec-business-pass-merit-distinction/"},
+{"@type": "ListItem", "position": 33, "name": "BTEC Enterprise: How the Assessment Works", "url": "https://thebusiness.school/resources/btec-enterprise-assessment-overview/"},
+{"@type": "ListItem", "position": 34, "name": "IB Business: The IB Toolkit", "url": "https://thebusiness.school/resources/ib-business-management-toolkit/"},
+{"@type": "ListItem", "position": 35, "name": "Classroom game: Business Heads Up", "url": "https://thebusiness.school/resources/business-heads-up/"},
+{"@type": "ListItem", "position": 36, "name": "Classroom game: Business Taboo", "url": "https://thebusiness.school/resources/business-taboo-key-terms-game/"},
+{"@type": "ListItem", "position": 37, "name": "Classroom game: Business Balderdash", "url": "https://thebusiness.school/resources/business-balderdash-real-or-fake/"},
+{"@type": "ListItem", "position": 38, "name": "Classroom game: The Escape Challenge", "url": "https://thebusiness.school/resources/business-escape-challenge/"},
+{"@type": "ListItem", "position": 39, "name": "Classroom game: Crisis Cabinet", "url": "https://thebusiness.school/resources/crisis-cabinet-role-play/"},
+{"@type": "ListItem", "position": 40, "name": "Classroom game: Would You Invest?", "url": "https://thebusiness.school/resources/dragons-den-would-you-invest/"},
+{"@type": "ListItem", "position": 41, "name": "Classroom game: Guess the Business", "url": "https://thebusiness.school/resources/guess-the-business-logo-figures/"},
+{"@type": "ListItem", "position": 42, "name": "Classroom game: Marketing Mix Remix", "url": "https://thebusiness.school/resources/marketing-mix-remix/"},
+{"@type": "ListItem", "position": 43, "name": "Classroom game: Price War Standoff", "url": "https://thebusiness.school/resources/price-war-standoff/"},
+{"@type": "ListItem", "position": 44, "name": "Classroom game: Stock Market Shout Out", "url": "https://thebusiness.school/resources/stock-market-shout-out/"},
+{"@type": "ListItem", "position": 45, "name": "Classroom game: Supply Chain Paper Planes", "url": "https://thebusiness.school/resources/supply-chain-paper-planes/"},
+{"@type": "ListItem", "position": 46, "name": "Classroom game: The Negotiation Gauntlet", "url": "https://thebusiness.school/resources/the-negotiation-gauntlet/"}
+    ]}
+  ]
+}
+</script>
+
 </body>
 </html>
