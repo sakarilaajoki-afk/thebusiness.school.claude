@@ -76,6 +76,12 @@
   to = "/resources/downloads/it-information-sheet.html"
   status = 301
 
+# Revision pack renamed (evergreen). Keep old shared links working.
+[[redirects]]
+  from = "/resources/a-level-business-revision-pack/TBS_A-Level_Business_Revision_Pack_May2026.pdf"
+  to = "/resources/a-level-business-revision-pack/TBS-A-Level-Business-Revision-Pack.pdf"
+  status = 301
+
 # Pilot page moved to /waitlist (Autumn 2026 cohort full). Keep old links working.
 [[redirects]]
   from = "/pilot"

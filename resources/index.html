@@ -71,6 +71,10 @@ a{text-decoration:none}
 .card:hover{box-shadow:0 14px 34px -18px rgba(11,61,46,.45);transform:translateY(-2px)}
 .cover{display:flex;flex-direction:column;justify-content:flex-end;gap:4px;min-height:118px;padding:16px 18px;background:linear-gradient(140deg,#0B3D2E 0%,#10513F 88%);position:relative}
 .cover.lc{background:linear-gradient(140deg,#083227 0%,#0B3D2E 70%)}
+.cover.has{min-height:158px;background-size:cover;background-position:top center;background-color:#0B3D2E}
+.cover.has::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,29,22,.08) 30%,rgba(7,29,22,.82) 78%,rgba(7,29,22,.92) 100%)}
+.cover.has .ck,.cover.has .ct{position:relative}
+.cover.has .cnew{z-index:1}
 .cover.gm{background:linear-gradient(140deg,#0b3a3f 0%,#0a6b73 96%)}
 .cover.gm .ck{color:#9adfda}
 .cnew{position:absolute;top:12px;right:12px;background:#C9A227;color:#241c04;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
@@ -228,19 +232,19 @@ a{text-decoration:none}
     </div>
     <div class="grid4">
 <a class="card lcard" href="/resources/a-level-business-evaluation-which-sentence-earns-which-mark/">
-  <span class="cover lc"><span class="cnew">New</span><span class="ck">A Level Business</span><span class="ct">Which Sentence Earns Which Mark</span></span>
+  <span class="cover has lc" style="background-image:url('/resources/a-level-business-evaluation-which-sentence-earns-which-mark/cover.jpg')"><span class="cnew">New</span><span class="ck">A Level Business</span><span class="ct">Which Sentence Earns Which Mark</span></span>
   <span class="cbody"><span class="cdesc">Three model answers with every sentence tagged for what it earns and why, plus four complete lessons with answers. AQA 7132 and Edexcel 9BS0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card lcard" href="/resources/a-level-economics-data-response-decoder/">
-  <span class="cover lc"><span class="cnew">New</span><span class="ck">A Level Economics</span><span class="ct">The Data Response Decoder</span></span>
+  <span class="cover has lc" style="background-image:url('/resources/a-level-economics-data-response-decoder/cover.jpg')"><span class="cnew">New</span><span class="ck">A Level Economics</span><span class="ct">The Data Response Decoder</span></span>
   <span class="cbody"><span class="cdesc">A six step method for reading an extract, two extracts with full data, and model answers with every sentence tagged. AQA 7136 and Edexcel 9EC0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card lcard" href="/resources/igcse-business-0450-paper-2-method-pack/">
-  <span class="cover lc"><span class="cnew">New</span><span class="ck">Cambridge IGCSE</span><span class="ct">The Case Study Paper</span></span>
+  <span class="cover has lc" style="background-image:url('/resources/igcse-business-0450-paper-2-method-pack/cover.jpg')"><span class="cnew">New</span><span class="ck">Cambridge IGCSE</span><span class="ct">The Case Study Paper</span></span>
   <span class="cbody"><span class="cdesc">A Paper 2 method pack: a six step case study method, four complete lessons with answers, and two case studies with complete figures.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card lcard" href="/resources/a-level-economics-diagram-bank/">
-  <span class="cover lc"><span class="cnew">New</span><span class="ck">A Level Economics</span><span class="ct">The Diagram Bank</span></span>
+  <span class="cover has lc" style="background-image:url('/resources/a-level-economics-diagram-bank/cover.jpg')"><span class="cnew">New</span><span class="ck">A Level Economics</span><span class="ct">The Diagram Bank</span></span>
   <span class="cbody"><span class="cdesc">26 core diagrams drawn properly, each with a checklist of what earns the mark and the mistake examiners see on it.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
     </div>
@@ -284,24 +288,24 @@ a{text-decoration:none}
     </div>
     <div class="grid" id="cards">
 <a class="card" href="/resources/a-level-business-evaluation-which-sentence-earns-which-mark/" data-lvl="alevel" data-subj="business" data-name="which sentence earns which mark a level business">
-  <span class="cover"><span class="ck">A Level Business</span><span class="ct">Which Sentence Earns Which Mark</span></span>
+  <span class="cover has" style="background-image:url('/resources/a-level-business-evaluation-which-sentence-earns-which-mark/cover.jpg')"><span class="ck">A Level Business</span><span class="ct">Which Sentence Earns Which Mark</span></span>
   <span class="cbody"><span class="cdesc">Three model answers with every sentence tagged for what it earns and why, plus four complete lessons with answers. AQA 7132 and Edexcel 9BS0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card" href="/resources/a-level-economics-data-response-decoder/" data-lvl="alevel" data-subj="economics" data-name="the data response decoder a level economics">
-  <span class="cover"><span class="ck">A Level Economics</span><span class="ct">The Data Response Decoder</span></span>
+  <span class="cover has" style="background-image:url('/resources/a-level-economics-data-response-decoder/cover.jpg')"><span class="ck">A Level Economics</span><span class="ct">The Data Response Decoder</span></span>
   <span class="cbody"><span class="cdesc">A six step method for reading an extract, two extracts with full data, and model answers with every sentence tagged. AQA 7136 and Edexcel 9EC0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card" href="/resources/igcse-business-0450-paper-2-method-pack/" data-lvl="igcse" data-subj="business" data-name="the case study paper cambridge igcse">
-  <span class="cover"><span class="ck">Cambridge IGCSE</span><span class="ct">The Case Study Paper</span></span>
+  <span class="cover has" style="background-image:url('/resources/igcse-business-0450-paper-2-method-pack/cover.jpg')"><span class="ck">Cambridge IGCSE</span><span class="ct">The Case Study Paper</span></span>
   <span class="cbody"><span class="cdesc">A Paper 2 method pack: a six step case study method, four complete lessons with answers, and two case studies with complete figures.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card" href="/resources/a-level-economics-diagram-bank/" data-lvl="alevel" data-subj="economics" data-name="the diagram bank a level economics">
-  <span class="cover"><span class="ck">A Level Economics</span><span class="ct">The Diagram Bank</span></span>
+  <span class="cover has" style="background-image:url('/resources/a-level-economics-diagram-bank/cover.jpg')"><span class="ck">A Level Economics</span><span class="ct">The Diagram Bank</span></span>
   <span class="cbody"><span class="cdesc">26 core diagrams drawn properly, each with a checklist of what earns the mark and the mistake examiners see on it.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card" href="/resources/a-level-business-revision-pack/" data-lvl="alevel" data-subj="business" data-name="the revision pack a level business">
-  <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Revision Pack</span></span>
-  <span class="cbody"><span class="cdesc">10 exam style questions with KAAE mark schemes and examiner tips, built on real company case studies.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></span>
+  <span class="cover has" style="background-image:url('/resources/a-level-business-revision-pack/cover.jpg')"><span class="ck">A Level Business</span><span class="ct">The Revision Pack</span></span>
+  <span class="cbody"><span class="cdesc">10 exam style questions with KAAE mark schemes and examiner tips, built on real company case studies.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card" href="/resources/essay-kit/" data-lvl="alevel" data-subj="business" data-name="the essay kit a level business">
   <span class="cover"><span class="ck">A Level Business</span><span class="ct">The Essay Kit</span></span>
@@ -400,11 +404,11 @@ a{text-decoration:none}
   <span class="cbody"><span class="cdesc">Eight calculation questions on break even analysis, with full answers.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card" href="/resources/gcse-business-paper-2-flashcards/" data-lvl="gcse" data-subj="business" data-name="paper 2 flashcards aqa gcse">
-  <span class="cover"><span class="ck">AQA GCSE</span><span class="ct">Paper 2 Flashcards</span></span>
+  <span class="cover has" style="background-image:url('/resources/gcse-business-paper-2-flashcards/cover.jpg')"><span class="ck">AQA GCSE</span><span class="ct">Paper 2 Flashcards</span></span>
   <span class="cbody"><span class="cdesc">16 printable flashcards covering the topics most likely to appear on AQA 8132 Paper 2.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card" href="/resources/non-specialist-business-survival-pack/" data-lvl="any" data-subj="business" data-name="the survival pack new to business?">
-  <span class="cover"><span class="ck">New to Business?</span><span class="ct">The Survival Pack</span></span>
+  <span class="cover has" style="background-image:url('/resources/non-specialist-business-survival-pack/cover.jpg')"><span class="ck">New to Business?</span><span class="ct">The Survival Pack</span></span>
   <span class="cbody"><span class="cdesc">Five complete first lessons with minute by minute plans, worksheets and full teacher answers. No subject background needed.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card" href="/resources/btec-business-pass-merit-distinction/" data-lvl="btec" data-subj="business" data-name="pass, merit, distinction: decoded btec business">
@@ -521,7 +525,7 @@ a{text-decoration:none}
           <!-- AT LAUNCH: replace the href below with the Gumroad product link and change the button text to "Buy now" -->
           <a class="pbuy" href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener">Get launch news</a>
         </div>
-        <div class="pguar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z" stroke="#C9A227" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#C9A227" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>14 day money back guarantee, no questions asked</div>
+        <div class="pguar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z" stroke="#C9A227" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#C9A227" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><a href="/refunds/" style="color:#d9e8e0;text-decoration:underline">14 day money back guarantee</a>, no questions asked</div>
         <span class="pnote">Secure checkout via Gumroad when it launches. Launch news lands in the free group first.</span>
       </div>
       <div class="pcard">
@@ -539,7 +543,7 @@ a{text-decoration:none}
           <!-- AT LAUNCH: replace the href below with the Gumroad product link and change the button text to "Buy now" -->
           <a class="pbuy" href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener">Get launch news</a>
         </div>
-        <div class="pguar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z" stroke="#C9A227" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#C9A227" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>14 day money back guarantee, no questions asked</div>
+        <div class="pguar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6l8-4z" stroke="#C9A227" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" stroke="#C9A227" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><a href="/refunds/" style="color:#d9e8e0;text-decoration:underline">14 day money back guarantee</a>, no questions asked</div>
         <span class="pnote">Secure checkout via Gumroad when it launches. Launch news lands in the free group first.</span>
       </div>
     </div>
