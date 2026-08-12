@@ -68,6 +68,8 @@ h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:26px;color:#0B
 .card h3{font-size:16px;color:#0B3D2E;margin-bottom:6px}
 .card p{font-size:14.5px;color:#4a5a56}
 table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14.5px}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0}
+.tscroll table{margin:0;min-width:404px}
 th,td{border:1px solid #DDE5E1;padding:9px 13px;text-align:left;vertical-align:top}
 th{background:#F4F7F4;color:#0B3D2E}
 ul.plain{list-style:none;display:flex;flex-direction:column;gap:9px;margin:12px 0}
@@ -157,6 +159,7 @@ ul.plain li::before{content:"";position:absolute;left:0;top:8px;width:11px;heigh
 
   <section class="blk">
     <h2>The year at a glance</h2>
+    <div class="tscroll">
     <table>
       <tr><th>Unit</th><th>Weeks</th><th>AQA 7132</th><th>Edexcel 9BS0</th></tr>
       <tr><td>1. Starting a business</td><td>1 to 4</td><td>3.1 What is business</td><td>1.5 Entrepreneurs and leaders</td></tr>
@@ -166,6 +169,7 @@ ul.plain li::before{content:"";position:absolute;left:0;top:8px;width:11px;heigh
       <tr><td>5. Finance</td><td>19 to 24</td><td>3.5 Financial performance</td><td>2.1 Raising finance, 2.2 Financial planning, 2.3 Managing finance</td></tr>
       <tr><td>6. Operations and the wider world</td><td>25 to 30</td><td>3.4 Operational performance, external environment from 3.1</td><td>2.4 Resource management, 2.5 External influences</td></tr>
     </table>
+    </div>
   </section>
 
   <section class="blk">
