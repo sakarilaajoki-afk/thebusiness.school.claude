@@ -92,3 +92,10 @@
   from = "/pilot/*"
   to = "/waitlist/:splat"
   status = 301
+
+# The download counter must reach the server every single time, or it counts nothing
+[[headers]]
+  for = "/count/*"
+  [headers.values]
+    Cache-Control = "no-store, max-age=0"
+    X-Robots-Tag = "noindex, nofollow"
