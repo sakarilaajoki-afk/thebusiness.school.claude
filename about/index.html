@@ -56,8 +56,16 @@ main li{margin-bottom:7px}
 .callout{background:#F4F7F4;border:1px solid #DDE5E1;border-left:4px solid #0B3D2E;border-radius:12px;padding:18px 22px;margin:20px 0}
 .meta{font-size:13.5px;color:#55636B}
 .founder{display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;margin:26px 0}
-.fphoto{flex:0 0 210px;aspect-ratio:4/5;border-radius:14px;background:linear-gradient(160deg,#0B3D2E,#10513F);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#9fd8c4;font-size:12.5px;text-align:center;padding:16px}
-.fphoto svg{opacity:.8}
+.fphoto{flex:0 0 210px}
+.fphoto img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid #DDE5E1}
+.fphoto figcaption{font-size:12.5px;color:#55636B;margin-top:9px;line-height:1.45}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:26px;margin:22px 0 6px}
+.person img{display:block;width:100%;max-width:210px;height:auto;border-radius:14px;border:1px solid #DDE5E1}
+.person h3{font-size:17px;margin:13px 0 5px;color:#0B3D2E}
+.person p{font-size:14.5px;color:#55636B;margin:0}
+.evidence{margin:30px 0 6px}
+.evidence img{display:block;width:100%;max-width:620px;height:auto;border-radius:14px;border:1px solid #DDE5E1}
+.evidence figcaption{font-size:13px;color:#55636B;margin-top:10px;max-width:620px;line-height:1.5}
 .ftext{flex:1 1 320px}
 .ft{border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb}
 .ftop{display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px}
@@ -116,10 +124,10 @@ main li{margin-bottom:7px}
   <div class="wrap">
 
     <div class="founder">
-      <div class="fphoto">
-        <svg width="54" height="54" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#9fd8c4" stroke-width="1.6"/><path d="M4 20c1.5-3.5 4.5-5 8-5s6.5 1.5 8 5" stroke="#9fd8c4" stroke-width="1.6" stroke-linecap="round"/></svg>
-        <span>Photo of Sakari coming here</span>
-      </div>
+      <figure class="fphoto">
+        <img src="founder.jpg" alt="Sakari Laajoki, founder of The Business School" width="640" height="640">
+        <figcaption>Sakari Laajoki, founder</figcaption>
+      </figure>
       <div class="ftext">
         <h2 style="margin-top:0">The short version</h2>
         <p>At 17 I was running events with real money on the line: my own. Ticket sales, venue deposits, suppliers to pay. Then I made a tax mistake that no classroom had prepared me for, and I paid for it in the most educational way possible.</p>
@@ -134,6 +142,32 @@ main li{margin-bottom:7px}
 
     <h2>Why it exists</h2>
     <p>Most business teaching has to happen on paper, and paper cannot answer back. A simulation can. When a student underprices their coffee and watches their cash run out, they have learned something a definition could never teach them. We build so that the first real consequence a young person meets is a safe one, inside a lesson, not an expensive one at 17 with their own money.</p>
+
+    <h2>Who is behind it</h2>
+    <p>A small company, and it says so rather than pretending otherwise. What follows is everyone with a formal role.</p>
+
+    <div class="people">
+      <div class="person">
+        <img src="founder.jpg" alt="Sakari Laajoki" width="640" height="640" loading="lazy">
+        <h3>Sakari Laajoki, founder</h3>
+        <p>Writes the teaching material, runs the company, answers the support email himself.</p>
+      </div>
+      <div class="person">
+        <img src="board-olli-pekka-laajoki.jpg" alt="Olli-Pekka Laajoki, board member" width="560" height="560" loading="lazy">
+        <h3>Olli-Pekka Laajoki, board</h3>
+        <p>Ten years teaching in Finnish vocational education. The reason every pack is read by someone who has stood in front of a class at eight in the morning.</p>
+      </div>
+    </div>
+
+    <p>The simulation itself is built with an external development team, so the software side does not rest on one person either.</p>
+
+    <figure class="evidence">
+      <img src="schools-and-academies-show.jpg" alt="The Schools and Academies Show at ExCeL London" width="1000" height="1022" loading="lazy">
+      <figcaption>The Schools and Academies Show, ExCeL London. We go to the events UK schools actually attend, because a product for British classrooms should not be designed entirely from Finland.</figcaption>
+    </figure>
+
+    <h2>If you email us</h2>
+    <p>Support is answered within 24 hours, and by a person who knows the material rather than a ticket queue. If a pack does not earn its place in your teaching, say so and the price comes back inside 14 days, no forms and no argument.</p>
 
     <h2>The company</h2>
     <div class="callout">
