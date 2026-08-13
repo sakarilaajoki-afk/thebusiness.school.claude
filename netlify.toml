@@ -93,6 +93,40 @@
   to = "/waitlist/:splat"
   status = 301
 
+# Working backups must never be served.
+# publish = "." means anything inside the repo goes live, so a backup folder left
+# in /resources keeps the superseded, uncorrected version of a pack publicly
+# downloadable. That is exactly how the withdrawn 9-mark pack stayed reachable
+# after its page said the download was off. Keep new backups OUTSIDE this repo;
+# these rules cover the ones already here.
+[[redirects]]
+  from = "/resources/_varmuuskopio-2026-08-13-numerokorjaus/*"
+  to = "/resources/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/resources/gcse-business-which-sentence-earns-which-mark/_varmuuskopio-2026-08-13-korjaus/*"
+  to = "/resources/"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/resources/a-level-business-the-first-fortnight/_backup-2026-08-13-before-correction/*"
+  to = "/resources/"
+  status = 404
+  force = true
+
+[[headers]]
+  for = "/resources/*_varmuuskopio*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/resources/*_backup*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 # The download counter must reach the server every single time, or it counts nothing
 [[headers]]
   for = "/count/*"
