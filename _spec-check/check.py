@@ -152,13 +152,27 @@ def check_btec_tech_award(path, t):
         return
     if not re.search(r"2022", t):
         return
-    if re.search(r"[A-C]\.[12][PMD]\d", t):
+    def asserted(pat):
+        """True only where the page states the thing, not where it denies it.
+
+        A page that correctly says the 2022 award does NOT use these must not
+        be flagged for containing the words. Look at the 90 characters before
+        each hit for a negation.
+        """
+        for m in re.finditer(pat, t, re.I):
+            before = t[max(0, m.start() - 90):m.start()]
+            if not re.search(r"\bnot\b|\bno\b|does not|never|rather than|instead of|belongs to the previous",
+                             before, re.I):
+                return True
+        return False
+
+    if asserted(r"[A-C]\.[12][PMD]\d"):
         add("ERROR", path, "criteria codes like A.2P1 do not exist in the 2022 Tech Award",
             "the 2022 internal components use Mark Bands 0 to 4 against Learning outcomes")
-    if re.search(r"Pass,? Merit and Distinction criteria", t, re.I):
+    if asserted(r"Pass,? Merit and Distinction criteria"):
         add("ERROR", path, "the 2022 Tech Award has no Pass/Merit/Distinction criteria",
             Q["btec-tech-award-enterprise-2022"]["internal_assessment_model"]["warning"])
-    if re.search(r"learning aims?", t, re.I) and "Tech Award" in t:
+    if asserted(r"learning aims?"):
         add("WARN", path, "the 2022 Tech Award uses 'learning outcomes', not 'learning aims'", "learning aim")
 
 
