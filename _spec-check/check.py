@@ -125,6 +125,9 @@ def check_excluded_content(path, t):
     """Content the board says it will not assess, taught as if it will be."""
     low = t.lower()
     if "8132" in t:
+        if re.search(r"maslow|herzberg|taylor|mayo", low) and re.search(r"motivat", low):
+            add("WARN", path, "AQA 8132 does not examine motivational theories",
+                'AQA 3.4.3: "Specific motivational theories (such as Maslow) will not be examined."')
         if re.search(r"calculate the break[- ]even", low):
             add("ERROR", path, "AQA 8132 excludes this",
                 'AQA: "Students will not be expected to draw break-even charts or use the break-even formula."')
