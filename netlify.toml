@@ -99,6 +99,15 @@
 # downloadable. That is exactly how the withdrawn 9-mark pack stayed reachable
 # after its page said the download was off. Keep new backups OUTSIDE this repo;
 # these rules cover the ones already here.
+# The spec checker and its registry of verified board facts live in the repo so
+# they travel with the content they check, but they are internal tooling and
+# have no business being served.
+[[redirects]]
+  from = "/_spec-check/*"
+  to = "/resources/"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/resources/_varmuuskopio-2026-08-13-numerokorjaus/*"
   to = "/resources/"
