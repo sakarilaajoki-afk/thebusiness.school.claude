@@ -1,0 +1,50 @@
+{
+  "_README": "Share card text. These are the images that travel, so the specification line matters more here than anywhere. No long dashes: they read as machine-written and Sakari has asked for them out of everything that goes out.",
+
+  "_verified": {
+    "AQA 7132 and OCR H431": "both outgoing. AQA: continue for cohorts taking exams in 2027, replaced by 7138 from September 2026. OCR: final assessment summer 2027, replaced by H436. Edexcel 9BS0 is unchanged for September 2026.",
+    "Edexcel 3.5": "Assessing competitiveness, containing 3.5.2 Ratio analysis, which calculates gearing and ROCE only. The margins are 2.3.1 and the current ratio 2.3.2, so the old label 'Theme 3.5 finance' was too narrow for a nine-ratio pack.",
+    "BTEC L3 verb ladder": "counted across the whole Extended Certificate specification: Pass uses Explain 7, Explore 3, Describe 3 and five others; Merit uses Analyse 11, Assess 6, Compare 2; Distinction uses Evaluate 15, Justify 2, Assess 1."
+  },
+
+  "cards": {
+    "financial-ratios-masterclass": {
+      "pill": "FREE · 8-PAGE PACK",
+      "eyebrow": "A-Level Business · Y12 + Y13 · 2026 edition",
+      "title": "Financial Ratios<br><em>Masterclass.</em>",
+      "desc": "<b>Profitability. Liquidity. Gearing.</b> Every formula worked on one firm from start to finish, plus how to interpret each ratio, practice questions with mark schemes, and the mistakes that cost marks.",
+      "chips": [["Profitability · ROCE", "#2a9d8f"], ["Liquidity · Acid test", "#5b6ee1"], ["Gearing & efficiency", "#e76f51"]],
+      "stats": [["9", "Ratios"], ["1", "Firm, fully worked"], ["6", "Practice + schemes"], ["6", "Mistakes fixed"]],
+      "spec": "AQA 7132 · Edexcel 9BS0 · OCR H431",
+      "note": "7132 and H431 run to summer 2027. New Year 12 groups are on AQA 7138 and OCR H436.",
+      "legal": "Built in Finland · Engineered with our international studio · ICO ZC133810",
+      "url": "thebusiness.school/resources/financial-ratios-masterclass"
+    },
+
+    "year-12-to-13-step-up": {
+      "pill": "FREE · 8-PAGE PACK",
+      "eyebrow": "A-Level Business · End of Year 12 · 2026 edition",
+      "flow": ["Year 12", "Year 13"],
+      "title": "The Step-Up <em>Pack.</em>",
+      "desc": "<b>The jump to Year 13 is not more content, it is better judgement.</b> What gets harder, the marks shift, two ready-to-set summer tasks, the 5 habits of a Level-4 student, and a first-lesson diagnostic.",
+      "stats": [["2", "Summer tasks"], ["5", "Level-4 habits"], ["1", "Diagnostic"], ["8", "A4 pages"]],
+      "spec": "AQA 7132 · Edexcel 9BS0 · OCR H431",
+      "note": "Set it now, bank the September head-start. 7132 and H431 run to summer 2027; a Year 12 starting September 2026 is on AQA 7138 or OCR H436.",
+      "legal": "Built in Finland · Engineered with our international studio · ICO ZC133810",
+      "url": "thebusiness.school/resources/year-12-to-13-step-up"
+    },
+
+    "btec-business-pass-merit-distinction": {
+      "pill": "FREE · 8-PAGE PACK",
+      "eyebrow": "Pearson BTEC Level 3 · Business · 2026 edition",
+      "flow": ["Pass", "Merit", "Distinction"],
+      "title": "<em>Decoded.</em>",
+      "desc": "<b>The verb is the grade.</b> The command-word ladder from Pass to Distinction, the grading-verb bank, and the same answer written at all three grades so learners see exactly what each one adds.",
+      "stats": [["3", "Grade tiers"], ["20+", "Command words"], ["1", "Answer × 3 grades"], ["8", "Capping mistakes"]],
+      "spec": "Pearson BTEC Level 3 National in Business",
+      "note": "Works across every internally assessed unit. The ladder is the rule, not an absolute: Assess turns up at Distinction as well as at Merit.",
+      "legal": "Built in Finland · Engineered with our international studio · ICO ZC133810",
+      "url": "thebusiness.school/resources/btec-business-pass-merit-distinction"
+    }
+  }
+}

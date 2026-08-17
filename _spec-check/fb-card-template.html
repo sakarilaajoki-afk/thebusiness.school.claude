@@ -1,0 +1,89 @@
+<meta charset="utf-8">
+<title>FB card template</title>
+<!--
+  Share card template, 1200x630 rendered at 2x to 2400x1260.
+
+  These are the images that travel: they are what a teacher sees when a link is
+  posted. They also had the text baked into pixels, so they kept naming an
+  outgoing specification long after every page had been corrected.
+
+  Regenerate:  python _spec-check/regen-fb-cards.py
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1200px; height:630px; }
+  body { font-family:'Inter',system-ui,sans-serif; background:#16233f; color:#fff;
+         position:relative; overflow:hidden; }
+  .wedge { position:absolute; top:0; right:0; width:430px; height:430px;
+           background:#1e2f49; clip-path:polygon(100% 0, 100% 100%, 0 0); }
+  .pad { position:relative; padding:38px 44px; height:100%; display:flex; flex-direction:column; }
+  .brand { font-size:19px; font-weight:700; }
+  .brand b { color:#f0b429; font-weight:800; }
+  .pill { position:absolute; top:36px; right:44px; background:#f0b429; color:#16233f;
+          font-size:12px; font-weight:800; letter-spacing:.09em; padding:7px 13px; }
+  .eyebrow { margin-top:20px; font-family:'Roboto Mono',monospace; font-size:13px;
+             font-weight:700; letter-spacing:.22em; color:#f0b429; text-transform:uppercase; }
+  .flow { display:flex; align-items:center; gap:13px; margin-top:20px; }
+  .flow span { font-family:'Roboto Mono',monospace; font-size:19px; font-weight:700;
+               padding:8px 16px; border:1px solid rgba(255,255,255,.3); color:#fff; }
+  .flow span.on { background:#f0b429; color:#16233f; border-color:#f0b429; }
+  .flow i { font-style:normal; color:#8fa0bd; font-size:20px; }
+  h1 { margin-top:18px; font-size:62px; font-weight:900; letter-spacing:-.025em; line-height:1.0; }
+  h1 em { font-style:normal; color:#f0b429; }
+  h1.two { font-size:56px; }
+  .desc { margin-top:20px; font-size:20px; line-height:1.45; color:#c8d3e6; max-width:760px; }
+  .desc b { color:#fff; font-weight:700; }
+  .chips { display:flex; gap:11px; margin-top:22px; }
+  .chip { font-size:14px; font-weight:600; color:#dbe4f2; padding:7px 13px;
+          border:1px solid rgba(255,255,255,.22); display:flex; align-items:center; gap:8px; }
+  .chip s { width:9px; height:9px; display:block; text-decoration:none; }
+  .stats { margin-top:auto; display:flex; gap:60px; }
+  .stat u { display:block; text-decoration:none; font-size:38px; font-weight:800; color:#f0b429; line-height:1; }
+  .stat span { display:block; margin-top:5px; font-size:11px; font-weight:700;
+               letter-spacing:.1em; text-transform:uppercase; color:#9fb0cc; }
+  .foot { margin-top:22px; display:flex; justify-content:space-between; align-items:flex-end; gap:24px; }
+  .foot .l { font-size:13.5px; line-height:1.5; }
+  .foot .l b { color:#f0b429; font-weight:700; }
+  .foot .l div { color:#8fa0bd; }
+  .foot .r { font-family:'Roboto Mono',monospace; font-size:13px; color:#f0b429; white-space:nowrap; }
+  .stripe { position:absolute; left:0; right:0; bottom:0; height:7px; display:flex; }
+  .stripe i { flex:1; }
+</style>
+<div class="wedge"></div>
+<div class="pill" id="pill"></div>
+<div class="pad">
+  <div class="brand">The <b>Business School</b></div>
+  <div class="eyebrow" id="eyebrow"></div>
+  <div class="flow" id="flow"></div>
+  <h1 id="title"></h1>
+  <div class="desc" id="desc"></div>
+  <div class="chips" id="chips"></div>
+  <div class="stats" id="stats"></div>
+  <div class="foot">
+    <div class="l"><b id="spec"></b><div id="note"></div><div id="legal"></div></div>
+    <div class="r" id="url"></div>
+  </div>
+</div>
+<div class="stripe"><i style="background:#2a9d8f"></i><i style="background:#5b6ee1"></i><i style="background:#e76f51"></i><i style="background:#f0b429"></i></div>
+<script>
+  const d = JSON.parse(decodeURIComponent(new URLSearchParams(location.search).get('d') || '{}'));
+  const el = id => document.getElementById(id);
+  el('pill').textContent = d.pill || '';
+  el('eyebrow').textContent = d.eyebrow || '';
+  el('title').innerHTML = d.title || '';
+  if ((d.title || '').replace(/<[^>]+>/g, '').length > 22) el('title').classList.add('two');
+  el('desc').innerHTML = d.desc || '';
+  el('spec').textContent = d.spec || '';
+  el('note').textContent = d.note || '';
+  el('legal').textContent = d.legal || '';
+  el('url').textContent = d.url || '';
+  el('flow').innerHTML = (d.flow || []).map((f, i, a) =>
+    '<span class="' + (i === a.length - 1 ? 'on' : '') + '">' + f + '</span>').join('<i>&rarr;</i>');
+  el('chips').innerHTML = (d.chips || []).map(c =>
+    '<div class="chip"><s style="background:' + c[1] + '"></s>' + c[0] + '</div>').join('');
+  el('stats').innerHTML = (d.stats || []).map(s =>
+    '<div class="stat"><u>' + s[0] + '</u><span>' + s[1] + '</span></div>').join('');
+</script>

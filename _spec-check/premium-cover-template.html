@@ -1,0 +1,77 @@
+<meta charset="utf-8">
+<title>Premium cover template</title>
+<!--
+  Premium pack cover, 1200x900.
+
+  Regenerate:  python _spec-check/regen-premium-cover.py
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1200px; height:900px; }
+  body { font-family:'Inter',system-ui,sans-serif; background:#fff; color:#111;
+         position:relative; overflow:hidden; padding:58px 62px; }
+  .box { display:inline-block; background:#111; color:#fff; font-weight:800;
+         padding:11px 20px; box-shadow:9px 9px 0 rgba(17,17,17,.16); }
+  .eyebrow { font-size:24px; letter-spacing:.02em; }
+  h1 { margin:30px 0 26px; font-size:52px; font-weight:800; letter-spacing:-.01em; }
+  .badge { font-size:34px; padding:13px 24px; }
+  .row { margin-top:26px; }
+  .row .box { font-size:23px; }
+  .inside { margin-top:34px; width:640px; border:3px solid #111;
+            box-shadow:9px 9px 0 rgba(17,17,17,.16); }
+  .inside h2 { background:#111; color:#fff; font-size:24px; font-weight:800; padding:11px 20px; }
+  .inside ul { list-style:none; padding:18px 20px 20px; }
+  .inside li { font-size:18.5px; font-weight:600; padding-left:22px; position:relative;
+               margin-bottom:11px; line-height:1.35; }
+  .inside li::before { content:''; position:absolute; left:0; top:7px;
+                       width:9px; height:9px; background:#111; }
+  .foot { position:absolute; left:62px; bottom:52px; }
+  .foot .box { font-size:24px; }
+  .dots { position:absolute; width:190px; height:150px; opacity:.9; }
+  .dots.a { top:58px; right:62px; } .dots.b { bottom:126px; left:748px; width:120px; height:110px; }
+  .star { position:absolute; right:96px; }
+  .star.one { top:150px; } .star.two { top:390px; right:120px; }
+  .star text { fill:#fff; font-family:'Inter',sans-serif; font-weight:800; text-anchor:middle; }
+</style>
+<div class="eyebrow box" id="eyebrow"></div>
+<h1 id="title"></h1>
+<div><span class="box badge" id="badge"></span></div>
+<div class="row"><span class="box" id="meta1"></span></div>
+<div class="row"><span class="box" id="meta2"></span></div>
+<div class="inside"><h2 id="insideTitle" style="text-transform:uppercase">What is inside</h2><ul id="bullets"></ul></div>
+<div class="foot"><span class="box" id="footline"></span></div>
+
+<svg class="dots a" viewBox="0 0 190 150"><g fill="#111" id="d1"></g></svg>
+<svg class="dots b" viewBox="0 0 120 110"><g fill="#111" id="d2"></g></svg>
+<svg class="star one" width="230" height="230" viewBox="0 0 100 100">
+  <polygon id="s1" fill="#111"/><text x="50" y="45" font-size="10" id="t1a"></text>
+  <text x="50" y="57" font-size="10" id="t1b"></text><text x="50" y="69" font-size="10" id="t1c"></text></svg>
+<svg class="star two" width="195" height="195" viewBox="0 0 100 100">
+  <polygon id="s2" fill="#111"/><text x="50" y="47" font-size="11" id="t2a"></text>
+  <text x="50" y="61" font-size="11" id="t2b"></text></svg>
+<script>
+  const d = JSON.parse(decodeURIComponent(new URLSearchParams(location.search).get('d') || '{}'));
+  const el = i => document.getElementById(i), set = (i, v) => { if (v) el(i).textContent = v; };
+  set('eyebrow', d.eyebrow); set('title', d.title); set('badge', d.badge);
+  set('meta1', d.meta1); set('meta2', d.meta2); set('footline', d.footline);
+  el('bullets').innerHTML = (d.bullets || []).map(b => '<li>' + b + '</li>').join('');
+  const star = (n, R, r) => Array.from({length: n * 2}, (_, i) => {
+    const a = Math.PI * i / n - Math.PI / 2, rad = i % 2 ? r : R;
+    return (50 + rad * Math.cos(a)).toFixed(1) + ',' + (50 + rad * Math.sin(a)).toFixed(1);
+  }).join(' ');
+  el('s1').setAttribute('points', star(14, 50, 41));
+  el('s2').setAttribute('points', star(12, 50, 40));
+  const b1 = (d.star1 || []), b2 = (d.star2 || []);
+  ['t1a','t1b','t1c'].forEach((i, k) => set(i, b1[k]));
+  ['t2a','t2b'].forEach((i, k) => set(i, b2[k]));
+  const grid = (g, cols, rows, step) => {
+    let s = '';
+    for (let y = 0; y < rows; y++) for (let x = 0; x < cols; x++)
+      s += '<circle cx="' + (x * step + 4) + '" cy="' + (y * step + 4) + '" r="3.1"/>';
+    el(g).innerHTML = s;
+  };
+  grid('d1', 10, 8, 20); grid('d2', 6, 6, 20);
+</script>

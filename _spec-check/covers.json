@@ -1,14 +1,13 @@
 {
   "_README": "Text for the four pack covers. Page counts and mark totals below were counted from the pack PDFs on 16 August 2026, not copied from the old covers, which had four wrong page counts and one wrong mark total between them. If a pack is re-exported, recount and regenerate rather than editing the picture.",
-
   "_verified": {
     "a-level-business": "77 pages, six tests at 52 marks = 312",
     "a-level-economics": "80 pages, 40+40+45+45+50+50 = 270",
     "gcse-business": "151 pages, 40+40+45+45+50+50 = 270",
-    "igcse-economics-0455": "120 pages, 40+50+50+50+40+40 = 270"
+    "igcse-economics-0455": "120 pages, 40+50+50+50+40+40 = 270",
+    "week1 samples": "page counts recounted 16 Aug 2026 from the corrected samples: A-Level Business 6 (was 5), Economics 5, GCSE Business 8, IGCSE 0455 8 (was 7). The two that changed grew because the corrections added content."
   },
   "_dropped": "The diagram counts are gone from the Economics and IGCSE covers. The Economics cover said 20 while the pack's own free sample says 18, and the IGCSE cover said eleven while its sample says thirteen. Neither could be settled by counting the PDF, because the diagrams are vector line art that no reliable detector separates from table rules. Put a number back only once somebody has paged through and counted.",
-
   "covers": {
     "a-level-business": {
       "eyebrow": "AQA 7132  |  EDEXCEL 9BS0",
@@ -24,7 +23,6 @@
       "formats": "77 page PDF  |  Word  |  PowerPoint",
       "note": "7132 runs to summer 2027. A Year 12 starting September 2026 is on AQA 7138."
     },
-
     "a-level-economics": {
       "eyebrow": "AQA 7136  |  EDEXCEL 9EC0",
       "title": "A-Level Economics",
@@ -39,7 +37,6 @@
       "formats": "80 page PDF  |  Word  |  PowerPoint",
       "note": ""
     },
-
     "gcse-business": {
       "eyebrow": "AQA 8132  |  EDEXCEL 1BS0",
       "title": "GCSE Business",
@@ -54,7 +51,6 @@
       "formats": "151 page PDF  |  Word  |  PowerPoint",
       "note": ""
     },
-
     "igcse-economics-0455": {
       "eyebrow": "CAMBRIDGE IGCSE  |  0455",
       "title": "IGCSE Economics",
@@ -67,6 +63,62 @@
       ],
       "kicker": "60 lessons, every answer written",
       "formats": "120 page PDF  |  Word  |  PowerPoint",
+      "note": "Written against the syllabus for 2026, with the 2027 to 2029 figures printed alongside."
+    },
+    "week1-a-level-business": {
+      "eyebrow": "AQA 7132  |  EDEXCEL 9BS0",
+      "title": "A-Level Business",
+      "badge": "Week 1, free",
+      "meta": "Week 1 of 30  |  Year 12  |  free, no sign up",
+      "bullets": [
+        "Both taught lessons, written out in full",
+        "Every task with the answers included",
+        "The year map so you see what follows"
+      ],
+      "kicker": "6 pages, PDF and editable Word",
+      "formats": "Week 1 of The Complete Year",
+      "note": "7132 runs to summer 2027. A Year 12 starting September 2026 is on AQA 7138."
+    },
+    "week1-a-level-economics": {
+      "eyebrow": "AQA 7136  |  EDEXCEL 9EC0",
+      "title": "A-Level Economics",
+      "badge": "Week 1, free",
+      "meta": "Week 1 of 30  |  Year 12  |  free, no sign up",
+      "bullets": [
+        "Both taught lessons, written out in full",
+        "Every task with the answers included",
+        "The year map so you see what follows"
+      ],
+      "kicker": "5 pages, PDF and editable Word",
+      "formats": "Week 1 of The Complete Year",
+      "note": ""
+    },
+    "week1-gcse-business": {
+      "eyebrow": "AQA 8132  |  EDEXCEL 1BS0",
+      "title": "GCSE Business",
+      "badge": "Week 1, free",
+      "meta": "Week 1 of 30  |  Year 10  |  free, no sign up",
+      "bullets": [
+        "Both taught lessons, written out in full",
+        "The photocopiable student sheet",
+        "Every task with the answers included"
+      ],
+      "kicker": "8 pages, PDF and editable Word",
+      "formats": "Week 1 of The Complete Year",
+      "note": ""
+    },
+    "week1-igcse-economics-0455": {
+      "eyebrow": "CAMBRIDGE IGCSE  |  0455",
+      "title": "IGCSE Economics",
+      "badge": "Week 1, free",
+      "meta": "Week 1 of 30  |  free, no sign up",
+      "bullets": [
+        "Both taught lessons, written out in full",
+        "Every task with the answers included",
+        "The year map so you see what follows"
+      ],
+      "kicker": "8 pages, PDF and editable Word",
+      "formats": "Week 1 of The Complete Year",
       "note": "Written against the syllabus for 2026, with the 2027 to 2029 figures printed alongside."
     }
   }
