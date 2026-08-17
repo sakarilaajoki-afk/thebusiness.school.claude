@@ -273,7 +273,10 @@
         "3.6.4": "Making human resource decisions: improving motivation and engagement",
         "3.7.4": "Analysing the external environment: political and legal change",
         "3.7.6": "Analysing the external environment: social and technological change"
-      }
+      },
+      "status_quote": "Your current A-level specification is outgoing. Continue using it for cohorts taking exams in 2027.",
+      "status_reverified": "2026-08-17",
+      "command_words_reverified": "2026-08-17, all seven confirmed, Assess still absent"
     },
     "aqa-alevel-business-7138": {
       "name": "AQA A-level Business 7138",
@@ -317,7 +320,7 @@
         "3.2.1": "People management",
         "3.2.2": "Operations management",
         "3.2.3": "Managing business culture (A-level)",
-        "3.3": "Business and society, business and the external environment and business strategy",
+        "3.3": "Business and society, business and the external environment, and business strategy (A-level only)",
         "3.3.1": "Business and society",
         "3.3.2": "Business and the external environment",
         "3.3.3": "Strategy",
@@ -382,7 +385,8 @@
         "inference": "NOT AQA's. A-level SAMs Question 2.5 is the fifth question of the second case study and is worth 15. Five questions from tariffs 6, 9 and 15 totalling 45 admit only {9,9,9,9,9} and {6,6,9,9,15}, so that case study is 6, 6, 9, 9, 15. Proved for one case study only."
       },
       "as_design_quote": "The AS specification is designed to be taken over one or two years with all assessments taken at the end of the course.",
-      "as_design_note": "The word 'stand-alone' does NOT appear about the AS in this specification. 'Standalone' appears only about Paper 1 in section 4.6."
+      "as_design_note": "The word 'stand-alone' does NOT appear about the AS in this specification. 'Standalone' appears only about Paper 1 in section 4.6.",
+      "a_level_only": "The WHOLE of Unit 3.3 carries \"(A-level only)\" on its heading, plus section 3.2.3 Managing business culture, which carries \"(A-level)\". Nothing in Units 3.1 and 3.2 is otherwise flagged, and the AS papers assess only Units 3.1 and 3.2. Do not describe the A-level only material as scattered: it is still a block at the end."
     },
     "edexcel-alevel-business-9bs0": {
       "name": "Pearson Edexcel A-level Business 9BS0",
