@@ -852,7 +852,7 @@
     },
     "aqa-alevel-economics-7136": {
       "name": "AQA A-level Economics 7136",
-      "status": "current, unchanged for September 2026",
+      "status": "no replacement announced. AQA's 7136 page carries no withdrawal or replacement notice, checked 2026-08-17.",
       "source": "https://filestore.aqa.org.uk/resources/economics/specifications/AQA-7135-7136-SP-2015.PDF",
       "spec_version": "1.3, 29 June 2022",
       "verified": "2026-08-17",
@@ -963,7 +963,9 @@
         "To what extent / Evaluate": "Accurate knowledge and understanding; apply to context and/or use relevant examples; evidence fully and reliably integrated; use of economic theory applied appropriately; logical and coherent chains of reasoning; and evaluation which is supported by chains of reasoning, in context, with critical awareness and informed judgements."
       },
       "commands_note": "Pearson groups 'To what extent' and 'Evaluate' as a single row in the Getting Started taxonomy table. Assess and Discuss are listed separately. The guide gives no mark tariffs against these commands.",
-      "section_ao_note": "Section A assesses breadth, with a greater focus on AO1 and AO2. Section B is based on stimulus material and places greater emphasis on depth (AO3 and AO4)."
+      "section_ao_note": "Section A assesses breadth, with a greater focus on AO1 and AO2. Section B is based on stimulus material and places greater emphasis on depth (AO3 and AO4).",
+      "status": "no replacement announced. Pearson's qualification page for Economics A 2015 carries no withdrawal or replacement notice, checked 2026-08-17.",
+      "status_warning": "Pearson's published September 2026 continuation statement covers GCE Business, NOT Economics. The URL qualifications.pearson.com/en/news-policy/subject-updates/economics/gce-economics-delivery-support.html 404s. Do not write that Pearson has confirmed 9EC0 is unchanged; only that no replacement is announced."
     }
   },
   "_unverified": [
