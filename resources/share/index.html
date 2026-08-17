@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="/support.js"></script>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Share a free Business or Economics resource with other teachers. Free only, and every board claim is checked before it goes up.">
+<meta property="og:image" content="https://thebusiness.school/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="The Business School">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Post a free resource, Business and Economics | The Business School</title>
+<meta name="description" content="Share a free Business or Economics resource with other teachers. Free only, no paywalls, and every exam board claim is checked against the board own published document before it goes up." />
+<link rel="canonical" href="https://thebusiness.school/resources/share/" />
+<meta property="og:title" content="Post a free resource, Business and Economics" />
+<meta property="og:url" content="https://thebusiness.school/resources/share/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
+<style media="print">header, footer, nav, .no-print { display: none !important; } body { background: #fff !important; } main { padding: 0 !important; max-width: 100% !important; }</style>
+</helmet>
+<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
+<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
+    <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
+      <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
+        <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
+      </a>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
+          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
+          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
+          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
+          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
+          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
+          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center">
+          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
+          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
+        </div>
+      </sc-if>
+      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
+          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </sc-if>
+        </button>
+      </sc-if>
+    </nav>
+  </div>
+  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
+      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
+      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
+      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
+      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
+      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
+      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a>
+      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
+      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
+    </div>
+  </sc-if>
+</header>
+<main style="max-width:860px;margin:0 auto;padding:40px 20px 20px">
+  <nav style="font-size:13px;color:#65728c;margin-bottom:18px"><a href="/resources/" style="color:#0a6b73;text-decoration:none">Resources</a> &rsaquo; Post a resource</nav>
+
+  <div style="font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8a7320;margin-bottom:8px">Free only &middot; Business and Economics</div>
+  <h1 style="font-family:'Fraunces',Georgia,serif;font-size:40px;font-weight:600;color:#0e2038;line-height:1.1;margin-bottom:14px">Post a free resource</h1>
+  <p style="font-size:17px;color:#2a3a58;line-height:1.6;max-width:70ch">If you have made something that worked in your classroom, put it here and another teacher can use it on Monday. Everything on this page is free to download, with no sign up and no paywall, and it stays that way.</p>
+
+  <div style="background:#f4f7fb;border:1px solid #e3e9f1;border-radius:14px;padding:22px 24px;margin:26px 0">
+    <div style="font-weight:700;color:#0e2038;margin-bottom:8px">One thing to know before you send anything</div>
+    <p style="font-size:15px;color:#2a3a58;line-height:1.55;margin-bottom:10px">Nothing goes up automatically. Every submission is read first, and any claim about an exam board is checked against that board&rsquo;s own published specification or mark scheme before the file is published. That is slower, and it is the whole point: a teacher who downloads from here should not have to check the tariffs themselves.</p>
+    <p style="font-size:15px;color:#2a3a58;line-height:1.55;margin:0">It also means the fastest way to get published is to make the checking easy. If your resource says a question is worth nine marks, or names a specification code, say where you got it.</p>
+  </div>
+
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:25px;font-weight:600;color:#0e2038;margin:38px 0 12px">What gets published</h2>
+  <ul style="font-size:15.5px;color:#2a3a58;line-height:1.65;padding-left:20px;max-width:72ch">
+    <li><b>Free, permanently.</b> No paywall, no email wall, no &ldquo;free sample of&rdquo;. If it is a taster for something paid, this is not the place.</li>
+    <li><b>Business or Economics</b>, any level: GCSE, IGCSE, A-Level, BTEC, IB.</li>
+    <li><b>Yours to give.</b> Your own work, or work you hold the rights to. Not scanned textbook pages, not past papers, not mark schemes: those belong to the publisher or the board and we cannot host them.</li>
+    <li><b>Usable as it stands.</b> A worksheet, a starter bank, a case study, a game, a knowledge organiser, a set of model answers. It does not need to be pretty.</li>
+    <li><b>Checkable.</b> If it makes a claim about what a board wants, that claim has to survive being looked up.</li>
+  </ul>
+
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:25px;font-weight:600;color:#0e2038;margin:38px 0 12px">What happens after you send it</h2>
+  <ol style="font-size:15.5px;color:#2a3a58;line-height:1.65;padding-left:20px;max-width:72ch">
+    <li>It is read, usually within a week.</li>
+    <li>Every board claim in it is checked against the board&rsquo;s own document. If something is off, you get told exactly what and where, with the link, and you can fix it or let us fix it.</li>
+    <li>It goes up with your name and your school on it, unless you would rather it did not.</li>
+    <li>It stays free. If you ever want it taken down, one email and it is gone.</li>
+  </ol>
+
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:25px;font-weight:600;color:#0e2038;margin:38px 0 12px">Send it</h2>
+  <form name="free-resource" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" action="/resources/share/thanks/" style="background:#fff;border:1px solid #e3e9f1;border-radius:16px;padding:28px;box-shadow:0 20px 50px -40px rgba(18,35,63,.5)">
+    <input type="hidden" name="form-name" value="free-resource" />
+    <input type="hidden" name="source" value="resources-share" />
+    <p style="display:none"><label>Leave this empty: <input name="bot-field" /></label></p>
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px;margin-top:0" for="name">Your name</label>
+    <input id="name" type="text" name="name" required style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px" />
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="email">Email</label>
+    <input id="email" type="email" name="email" required style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px" />
+    <div style="font-size:12px;color:#65728c;margin-top:5px">Used to reply about this resource. Nothing else, and no list.</div>
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="school">School or college (optional)</label>
+    <input id="school" type="text" name="school" style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px" />
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="credit">How you would like to be credited</label>
+    <select id="credit" name="credit" style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px">
+      <option>Name and school</option>
+      <option>Name only</option>
+      <option>School only</option>
+      <option>No credit, publish it anonymously</option>
+    </select>
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="title">What is it called</label>
+    <input id="title" type="text" name="title" required placeholder="Break-even starter bank, 20 questions" style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px" />
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="level">Level</label>
+    <select id="level" name="level" required style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px">
+      <option value="">Choose one</option>
+      <option>GCSE Business</option>
+      <option>IGCSE Business</option>
+      <option>IGCSE Economics</option>
+      <option>A-Level Business</option>
+      <option>A-Level Economics</option>
+      <option>BTEC Business</option>
+      <option>BTEC Tech Award Enterprise</option>
+      <option>IB Business Management</option>
+      <option>More than one, or none of these</option>
+    </select>
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="board">Which specification, and which version</label>
+    <input id="board" type="text" name="board" placeholder="AQA 8132, or Edexcel 9BS0, or none in particular" style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px" />
+    <div style="font-size:12px;color:#65728c;margin-top:5px">If it is written for a class starting now, say so. Several specifications changed for September 2026.</div>
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="what">What it is, and what it is for</label>
+    <textarea id="what" name="what" rows="4" required placeholder="What a teacher gets, how long it takes, and what it is good for. Three or four lines is plenty." style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;resize:vertical"></textarea>
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="sources">Where any board claims come from</label>
+    <textarea id="sources" name="sources" rows="3" placeholder="For example: tariffs from the AQA 8132 specification, mark bands from the June 2023 mark scheme. Leave blank if it makes no board claims." style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;resize:vertical"></textarea>
+    <div style="font-size:12px;color:#65728c;margin-top:5px">This is the field that gets a resource published quickly.</div>
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="file">The file</label>
+    <input id="file" type="file" name="file" required accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.zip" style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;padding:10px" />
+    <div style="font-size:12px;color:#65728c;margin-top:5px">PDF, Word, PowerPoint, Excel or a zip. Under 8&nbsp;MB. Send the editable version too if you have one, inside a zip.</div>
+
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="link">Or a link to it (optional)</label>
+    <input id="link" type="url" name="link" placeholder="https://" style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px" />
+
+    <div style="border-top:1px solid #e3e9f1;margin:22px 0 0;padding-top:18px">
+      <label style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#2a3a58;line-height:1.5;margin-bottom:11px">
+        <input type="checkbox" name="rights" value="yes" required style="margin-top:3px;flex:0 0 auto" />
+        <span>This is my own work, or I hold the rights to share it. It does not reproduce past papers, mark schemes or textbook pages.</span>
+      </label>
+      <label style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#2a3a58;line-height:1.5;margin-bottom:11px">
+        <input type="checkbox" name="licence" value="yes" required style="margin-top:3px;flex:0 0 auto" />
+        <span>I am happy for it to be hosted here and downloaded free by other teachers. I keep the copyright, and I can ask for it to be removed at any time.</span>
+      </label>
+      <label style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#2a3a58;line-height:1.5">
+        <input type="checkbox" name="accuracy" value="yes" required style="margin-top:3px;flex:0 0 auto" />
+        <span>Any claim it makes about an exam board is one I believe is right, and I am happy for it to be checked and corrected before publication.</span>
+      </label>
+    </div>
+
+    <button type="submit" style="margin-top:22px;width:100%;background:#0a6b73;color:#fff;border:none;border-radius:10px;padding:15px 20px;font-family:'Inter',sans-serif;font-size:16px;font-weight:600;cursor:pointer">Send the resource</button>
+    <div style="font-size:12px;color:#65728c;margin-top:12px;text-align:center">No account, no sign up. See the <a href="/privacy/" style="color:#0a6b73">privacy notice</a>.</div>
+  </form>
+
+  <h2 style="font-family:'Fraunces',Georgia,serif;font-size:25px;font-weight:600;color:#0e2038;margin:38px 0 12px">Why bother</h2>
+  <p style="font-size:15.5px;color:#2a3a58;line-height:1.65;max-width:72ch">Because the good stuff is sitting on hard drives. Most departments have a worksheet that works every year and never leaves the building. Putting it here costs nothing, keeps your name on it, and saves somebody a Sunday evening.</p>
+  <p style="font-size:15.5px;color:#2a3a58;line-height:1.65;max-width:72ch;margin-top:12px">And if you would rather just take rather than give, that is fine too. Everything in the <a href="/resources/" style="color:#0a6b73">resource library</a> is free and always will be.</p>
+</main>
+<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
+      <div>
+        <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
+        <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · ICO registration ZC133810 · thebusiness.school</div>
+      </div>
+      <div style="display:flex;gap:38px;flex-wrap:wrap">
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+</body>
+</html>
