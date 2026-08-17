@@ -1,0 +1,73 @@
+{
+  "_README": "Text for the four pack covers. Page counts and mark totals below were counted from the pack PDFs on 16 August 2026, not copied from the old covers, which had four wrong page counts and one wrong mark total between them. If a pack is re-exported, recount and regenerate rather than editing the picture.",
+
+  "_verified": {
+    "a-level-business": "77 pages, six tests at 52 marks = 312",
+    "a-level-economics": "80 pages, 40+40+45+45+50+50 = 270",
+    "gcse-business": "151 pages, 40+40+45+45+50+50 = 270",
+    "igcse-economics-0455": "120 pages, 40+50+50+50+40+40 = 270"
+  },
+  "_dropped": "The diagram counts are gone from the Economics and IGCSE covers. The Economics cover said 20 while the pack's own free sample says 18, and the IGCSE cover said eleven while its sample says thirteen. Neither could be settled by counting the PDF, because the diagrams are vector line art that no reliable detector separates from table rules. Put a number back only once somebody has paged through and counted.",
+
+  "covers": {
+    "a-level-business": {
+      "eyebrow": "AQA 7132  |  EDEXCEL 9BS0",
+      "title": "A-Level Business",
+      "badge": "The Complete Year",
+      "meta": "Year 12  |  30 weeks  |  90 planned hours",
+      "bullets": [
+        "Six unit tests, 312 marks",
+        "Six question banks, 72 questions",
+        "30 retrieval starters, projectable"
+      ],
+      "kicker": "60 lessons, every answer written",
+      "formats": "77 page PDF  |  Word  |  PowerPoint",
+      "note": "7132 runs to summer 2027. A Year 12 starting September 2026 is on AQA 7138."
+    },
+
+    "a-level-economics": {
+      "eyebrow": "AQA 7136  |  EDEXCEL 9EC0",
+      "title": "A-Level Economics",
+      "badge": "The Complete Year",
+      "meta": "Year 12  |  30 weeks  |  90 planned hours",
+      "bullets": [
+        "Six unit assessments, 270 marks",
+        "Six question banks, 72 questions",
+        "30 retrieval starters, projectable"
+      ],
+      "kicker": "60 lessons, every answer written",
+      "formats": "80 page PDF  |  Word  |  PowerPoint",
+      "note": ""
+    },
+
+    "gcse-business": {
+      "eyebrow": "AQA 8132  |  EDEXCEL 1BS0",
+      "title": "GCSE Business",
+      "badge": "The Complete Year",
+      "meta": "Year 10  |  30 weeks  |  90 planned hours",
+      "bullets": [
+        "Six unit tests, 270 marks",
+        "Six question banks, 72 questions",
+        "Photocopiable sheets, answers removed"
+      ],
+      "kicker": "60 lessons and 60 student sheets",
+      "formats": "151 page PDF  |  Word  |  PowerPoint",
+      "note": ""
+    },
+
+    "igcse-economics-0455": {
+      "eyebrow": "CAMBRIDGE IGCSE  |  0455",
+      "title": "IGCSE Economics",
+      "badge": "The Complete Year",
+      "meta": "Full syllabus  |  30 weeks  |  90 planned hours",
+      "bullets": [
+        "Six unit tests, 270 marks",
+        "30 retrieval quizzes, 150 questions",
+        "Both syllabus versions referenced"
+      ],
+      "kicker": "60 lessons, every answer written",
+      "formats": "120 page PDF  |  Word  |  PowerPoint",
+      "note": "Written against the syllabus for 2026, with the 2027 to 2029 figures printed alongside."
+    }
+  }
+}
