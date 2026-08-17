@@ -195,6 +195,44 @@ def check_ocr_levels(path, t):
             "Evaluate and Discuss both reach 20 marks on H431/03")
 
 
+
+def check_counts():
+    """A hard-coded count on a page goes stale silently.
+
+    The site said "63 free resources" while the library held 55, and had been
+    wrong by ten for some time. Nobody notices until a reader counts. So the
+    counts that are still written by hand get compared against the cards and
+    the links they describe, every run.
+    """
+    import io as _io
+    root = os.path.dirname(RES)
+    pages = {
+        os.path.join(RES, "index.html"): [
+            (r"(\d+) free downloads", lambda s: len(re.findall(r'<a class="card" href=', s)), "library cards"),
+        ],
+        os.path.join(RES, "topics", "index.html"): [
+            (r"(\d+) free resources", lambda s: len(set(re.findall(r'href="(/resources/[a-z0-9\-]+/)"', s))), "topic links"),
+        ],
+    }
+    for path, rules in pages.items():
+        if not os.path.exists(path):
+            continue
+        s = _io.open(path, encoding="utf-8").read()
+        for pattern, counter, what in rules:
+            real = counter(s)
+            for claimed in set(re.findall(pattern, s)):
+                if int(claimed) != real:
+                    add("ERROR", path, "the page claims %s but there are %d %s" % (claimed, real, what),
+                        "counts written by hand go stale; regenerate or drop the number")
+
+    home = os.path.join(root, "index.html")
+    if os.path.exists(home):
+        s = _io.open(home, encoding="utf-8").read()
+        for claimed in set(re.findall(r"(\d+) free resources", s)):
+            add("ERROR", home, "the home page carries a hard-coded resource count of %s" % claimed,
+                "the home page must not carry a number it cannot recount; say 'free resource hub'")
+
+
 CHECKS = [check_aqa_gcse_codes, check_aqa_alevel_codes, check_currency,
           check_excluded_content, check_ao_attribution, check_btec_tech_award,
           check_ib, check_ocr_levels]
@@ -211,6 +249,8 @@ def main():
         t = re.sub(r"[ \t]+", " ", t)
         for c in CHECKS:
             c(p, t)
+
+    check_counts()
 
     order = {"ERROR": 0, "WARN": 1, "SKIP": 2}
     findings.sort(key=lambda f: (order.get(f[0], 3), f[1]))
