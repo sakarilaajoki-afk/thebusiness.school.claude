@@ -22,6 +22,7 @@ PACKS = {
 }
 
 SOURCES = {
+    '9ec001': 'edx-9ec001-ms-jun23.pdf',
     '7138': 'aqa-7137-7138-spec.pdf',
     '7132': 'aqa-7131-7132-spec.pdf',
     '7132p1': 'aqa-71321-ms-jun23.pdf',
@@ -223,6 +224,19 @@ absent('ECO', 'Choice sits inside Papers 1 and 2', 'choice in Paper 3 stated as 
 fact('ECO', '7136', 'The specification describes a choice of questions in Papers 1 and 2 only',
      'Section A: data response questions requiring written answers, choice of one from two contexts worth 40 marks',
      'choice claim matches the spec')
+
+# Edexcel's two grids, added after the AQA side was found to be twice the size
+quote('ECO', '9ec001', 'Knowledge 4, Application 4, Analysis 8', 'Edexcel KAA split')
+fact('ECO', '9ec001', 'Evaluation is capped at 9 marks', 'Evaluation 9', 'evaluation pot is 9')
+fact('ECO', '9ec001', '13 to 16', 'Level 4 13-16', 'KAA top band')
+fact('ECO', '9ec001', '7 to 9', 'Level 3 7-9 Evaluative comments supported by relevant reasoning', 'evaluation top band')
+quote('ECO', '9ec001', 'No evaluative comments', 'evaluation zero row')
+quote('ECO', '9ec001', 'A completely inaccurate response', 'KAA zero row')
+fact('ECO', '9ec001', 'candidates must refer to the energy market',
+     'for Level 4 KAA candidates must refer to the energy market', 'context gate')
+checks += 1
+if 16 + 9 != 25:
+    fails.append('ECO MATHS Edexcel split does not make 25')
 absent('ECO', 'are both unchanged for a course starting', 'the unsourced Pearson currency claim')
 # Pearson's two pages say different things, and the pack quotes both
 checks += 1
