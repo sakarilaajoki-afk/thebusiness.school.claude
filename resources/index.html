@@ -64,6 +64,19 @@ a{text-decoration:none}
 .sechead h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(23px,2.6vw,30px);color:#0B3D2E}
 .sechead p{font-size:14.5px;color:#55636B}
 
+
+/* teacher submissions: the entry point sat at 79% of the page, below the whole
+   library, so nobody found it. It belongs directly under the hero. */
+.sharestrip{background:#F4F7F4;border-bottom:1px solid #DDE5E1;padding:26px 0}
+.ss{display:flex;align-items:center;justify-content:space-between;gap:26px;flex-wrap:wrap}
+.ss-l{flex:1 1 420px;min-width:0}
+.ss-k{display:block;font-size:11.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73;margin-bottom:7px}
+.ss h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(20px,2.2vw,25px);color:#0B3D2E;margin-bottom:6px}
+.ss p{font-size:14.5px;line-height:1.55;color:#4a5a53;max-width:620px}
+.ss-btn{display:inline-block;background:#0B3D2E;color:#fff;font-weight:600;font-size:15.5px;padding:14px 26px;border-radius:10px;white-space:nowrap;text-decoration:none}
+.ss-btn:hover{opacity:.9}
+@media(max-width:640px){.ss-btn{display:block;width:100%;text-align:center}}
+
 /* cards */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
 .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
@@ -228,6 +241,19 @@ a{text-decoration:none}
       <span class="stat">64 topic revision pages</span>
       <span class="stat">12 classroom games</span>
       <span class="stat">Answers included</span>
+    </div>
+  </div>
+</section>
+
+<section class="sharestrip">
+  <div class="wrap">
+    <div class="ss">
+      <div class="ss-l">
+        <span class="ss-k">From teachers, not just from us</span>
+        <h2>Made something that works? Put it on this shelf.</h2>
+        <p>If you have a worksheet, a starter, a case study or a game your classes actually respond to, add it here and it goes out free under your name. No account, no upload limit, no catch.</p>
+      </div>
+      <a class="ss-btn" href="/resources/share/">Post a free resource &rarr;</a>
     </div>
   </div>
 </section>
