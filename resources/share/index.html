@@ -16,10 +16,6 @@
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="The Business School">
 <meta name="twitter:card" content="summary_large_image">
-</head>
-<body>
-<x-dc>
-<helmet>
 <title>Post a free resource, Business and Economics | The Business School</title>
 <meta name="description" content="Share a free Business or Economics resource with other teachers. Free only, no paywalls, and every exam board claim is checked against the board own published document before it goes up." />
 <link rel="canonical" href="https://thebusiness.school/resources/share/" />
@@ -29,7 +25,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
 <style media="print">header, footer, nav, .no-print { display: none !important; } body { background: #fff !important; } main { padding: 0 !important; max-width: 100% !important; }</style>
-</helmet>
+</head>
+<body>
 <div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
 <header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
   <div style="max-width:1160px;margin:0 auto;padding:0 20px">
@@ -93,7 +90,7 @@
   <ul style="font-size:15.5px;color:#2a3a58;line-height:1.65;padding-left:20px;max-width:72ch">
     <li><b>Free, permanently.</b> No paywall, no email wall, no &ldquo;free sample of&rdquo;. If it is a taster for something paid, this is not the place.</li>
     <li><b>Business or Economics</b>, any level: GCSE, IGCSE, A-Level, BTEC, IB.</li>
-    <li><b>Yours to give.</b> Your own work, or work you hold the rights to. Not scanned textbook pages, not past papers, not mark schemes: those belong to the publisher or the board and we cannot host them.</li>
+    <li><b>Yours to give.</b> Your own work, or work you hold the rights to. Quote a board where you are explaining it, for example a mark band in a set of model answers. What cannot go up is a past paper, a whole mark scheme or scanned textbook pages, because those belong to the board or the publisher and we</li>
     <li><b>Usable as it stands.</b> A worksheet, a starter bank, a case study, a game, a knowledge organiser, a set of model answers. It does not need to be pretty.</li>
     <li><b>Checkable.</b> If it makes a claim about what a board wants, that claim has to survive being looked up.</li>
   </ul>
@@ -103,7 +100,7 @@
     <li>It is read, usually within a week.</li>
     <li>Every board claim in it is checked against the board&rsquo;s own document. If something is off, you get told exactly what and where, with the link, and you can fix it or let us fix it.</li>
     <li>It goes up with your name and your school on it, unless you would rather it did not.</li>
-    <li>It stays free. If you ever want it taken down, one email and it is gone.</li>
+    <li>It stays free. If you ever want it taken down, email <a href="mailto:support@thebusiness.school" style="color:#0a6b73">support@thebusiness.school</a> and it comes down. That is also the address if you spot something wrong in anything on the hub, ours included.</li>
   </ol>
 
   <h2 style="font-family:'Fraunces',Georgia,serif;font-size:25px;font-weight:600;color:#0e2038;margin:38px 0 12px">Send it</h2>
@@ -158,17 +155,18 @@
     <textarea id="sources" name="sources" rows="3" placeholder="For example: tariffs from the AQA 8132 specification, mark bands from the June 2023 mark scheme. Leave blank if it makes no board claims." style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;resize:vertical"></textarea>
     <div style="font-size:12px;color:#65728c;margin-top:5px">This is the field that gets a resource published quickly.</div>
 
-    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="file">The file</label>
-    <input id="file" type="file" name="file" required accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.zip" style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;padding:10px" />
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="file">The file, or a link to it below</label>
+    <p style="font-size:12.5px;color:#65728c;margin:0 0 6px">Up to 8 MB, which is the upload limit here. Anything bigger, put it in Drive or Dropbox and paste the link instead.</p>
+    <input id="file" type="file" name="file" accept=".pdf,.docx,.doc,.pptx,.ppt,.xlsx,.zip" style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;padding:10px" />
     <div style="font-size:12px;color:#65728c;margin-top:5px">PDF, Word, PowerPoint, Excel or a zip. Under 8&nbsp;MB. Send the editable version too if you have one, inside a zip.</div>
 
-    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="link">Or a link to it (optional)</label>
+    <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="link">Or a link to it</label>
     <input id="link" type="url" name="link" placeholder="https://" style="font-family:'Inter',sans-serif;font-size:15px;color:#16233f;width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px" />
 
     <div style="border-top:1px solid #e3e9f1;margin:22px 0 0;padding-top:18px">
       <label style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#2a3a58;line-height:1.5;margin-bottom:11px">
         <input type="checkbox" name="rights" value="yes" required style="margin-top:3px;flex:0 0 auto" />
-        <span>This is my own work, or I hold the rights to share it. It does not reproduce past papers, mark schemes or textbook pages.</span>
+        <span>This is my own work, or I hold the rights to share it. Quoting a board, for example a mark band you are explaining, is fine. Reproducing a past paper, a whole mark scheme or textbook pages is not.</span>
       </label>
       <label style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:#2a3a58;line-height:1.5;margin-bottom:11px">
         <input type="checkbox" name="licence" value="yes" required style="margin-top:3px;flex:0 0 auto" />
@@ -198,12 +196,13 @@
       <div style="display:flex;gap:38px;flex-wrap:wrap">
         <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a></div>
         <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
-        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/contact/" style="color:#65728c;text-decoration:none">Contact</a>
+        <a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
       </div>
     </div>
   </div>
 </footer>
 </div>
-</x-dc>
+<script src="share-guard.js" defer></script>
 </body>
 </html>
