@@ -210,6 +210,13 @@ quote('ECO', '9ec0', 'and evaluation which is supported by relevant reasoning, i
       'Discuss wording')
 quote('ECO', '9ec0', 'with critical awareness and informed judgements.', 'To what extent wording')
 
+
+# the pack must not turn the absence of the word "choice" in AQA's Paper 3 line
+# into a positive statement that Paper 3 has none
+absent('ECO', 'Choice sits inside Papers 1 and 2', 'choice in Paper 3 stated as fact')
+fact('ECO', '7136', 'The specification describes a choice of questions in Papers 1 and 2 only',
+     'Section A: data response questions requiring written answers, choice of one from two contexts worth 40 marks',
+     'choice claim matches the spec')
 absent('ECO', 'are both unchanged for a course starting', 'the unsourced Pearson currency claim')
 # Pearson's two pages say different things, and the pack quotes both
 checks += 1
