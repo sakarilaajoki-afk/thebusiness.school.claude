@@ -77,6 +77,7 @@ a{text-decoration:none}
 .ss-btn:hover{opacity:.9}
 @media(max-width:640px){.ss-btn{display:block;width:100%;text-align:center}}
 
+.fmtnote{font-size:13.5px;color:#55636B;margin:-6px 0 16px}
 /* cards */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
 .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
@@ -237,7 +238,7 @@ a{text-decoration:none}
     <h1>The resource library.</h1>
     <p>Complete packs, revision pages, quick downloads and classroom games for Business and Economics teachers. Every full pack includes the answers. Free to download, free to share with your department, no sign up.</p>
     <div class="stats">
-      <span class="stat">63 free resources</span>
+      <span class="stat">55 free downloads</span>
       <span class="stat">64 topic revision pages</span>
       <span class="stat">12 classroom games</span>
       <span class="stat">Answers included</span>
@@ -315,231 +316,238 @@ a{text-decoration:none}
         <button type="button" class="chip" aria-pressed="false" data-subj="business">Business</button>
         <button type="button" class="chip" aria-pressed="false" data-subj="economics">Economics</button>
       </div>
+      <div class="chips" id="fmtchips">
+        <span class="lab">Format</span>
+        <button type="button" class="chip on" aria-pressed="true" data-fmt="all">All</button>
+        <button type="button" class="chip" aria-pressed="false" data-fmt="word">Editable</button>
+        <button type="button" class="chip" aria-pressed="false" data-fmt="slides">Slides</button>
+      </div>
       <div class="searchrow">
         <input class="search" id="q" type="search" placeholder="Search the library" aria-label="Search the library">
         <span class="count" id="count"></span>
       </div>
     </div>
+      <p class="fmtnote">Editable means a Word file is included, so you can change the business, the figures or the questions before you set it.</p>
     <div class="grid" id="cards">
-<a class="card" href="/resources/a-level-business-7138-switchover/" data-lvl="alevel" data-subj="business" data-name="a level business aqa 7138 switchover pack new specification september 2026">
+<a class="card" href="/resources/a-level-business-7138-switchover/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business aqa 7138 switchover pack new specification september 2026">
   <span class="thumb" style="background-image:url('/resources/a-level-business-7138-switchover/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The 7138 Switchover Pack</span><span class="cdesc">AQA 7138 starts in September 2026 and your Year 13 still sits 7132. Which group sits what, ten sections becoming three units, the papers, the five command words, and why the nine mark question changed job.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/a-level-economics-first-term-survival-pack/" data-lvl="alevel" data-subj="economics" data-name="a level economics first term survival pack year 12 quantitative skills mark grids">
+<a class="card" href="/resources/a-level-economics-first-term-survival-pack/" data-fmt="word pdf" data-lvl="alevel" data-subj="economics" data-name="a level economics first term survival pack year 12 quantitative skills mark grids">
   <span class="thumb" style="background-image:url('/resources/a-level-economics-first-term-survival-pack/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">The First Term Survival Pack</span><span class="cdesc">A real AQA paper mapped question by question, both levels of response grids quoted, Edexcel's three commands in Pearson's words, and a nine question quantitative baseline with answers.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/gcse-business-which-sentence-earns-which-mark/" data-lvl="gcse" data-subj="business" data-name="gcse business which sentence earns which mark">
+<a class="card" href="/resources/gcse-business-which-sentence-earns-which-mark/" data-fmt="word pdf" data-lvl="gcse" data-subj="business" data-name="gcse business which sentence earns which mark">
   <span class="thumb" style="background-image:url('/resources/gcse-business-which-sentence-earns-which-mark/cover.jpg')"></span>
   <span class="cbody"><span class="ck">GCSE Business</span><span class="ct">Which Sentence Earns Which Mark</span><span class="cdesc">Four long answers for the 9 and 12 mark questions, every sentence tagged for what it earns and why, with the sentences that earn nothing marked as well. AQA 8132 and Edexcel 1BS0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/first-half-term-of-starters/" data-lvl="any" data-subj="all" data-name="business and economics your first half term of starters">
+<a class="card" href="/resources/first-half-term-of-starters/" data-fmt="word pdf" data-lvl="any" data-subj="all" data-name="business and economics your first half term of starters">
   <span class="thumb" style="background-image:url('/resources/first-half-term-of-starters/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Business and Economics</span><span class="ct">Your First Half Term of Starters</span><span class="cdesc">Seven weeks of Do Now starters, three a week for Business and three for Economics, five questions in each. From week three the questions reach back, so the recall is built into the sequence.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/a-level-business-the-first-fortnight/" data-lvl="alevel" data-subj="business" data-name="a level business the first fortnight">
+<a class="card" href="/resources/a-level-business-the-first-fortnight/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business the first fortnight">
   <span class="thumb" style="background-image:url('/resources/a-level-business-the-first-fortnight/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The First Fortnight</span><span class="cdesc">September marking, before any mark scheme exists on your desk. Six questions from the opening unit with realistic Year 12 answers marked sentence by sentence, including the method marks that get marked wrongly in both directions.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
 
-<a class="card" href="/resources/a-level-business-complete-year/#free" data-lvl="alevel" data-subj="business" data-name="week 1 free a level business complete year sample">
+<a class="card" href="/resources/a-level-business-complete-year/#free" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="week 1 free a level business complete year sample">
   <span class="thumb" style="background-image:url('/resources/covers/week1-a-level-business.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business  &middot;  Week 1 free</span><span class="ct">Week 1 of the Complete Year</span><span class="cdesc">The first week of Year 12 written out in full: both taught lessons, every task with its answers, and the year map. Five pages, PDF and editable Word. AQA 7132 (7138 from September 2026) and Edexcel 9BS0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/a-level-economics-the-complete-year/#free" data-lvl="alevel" data-subj="economics" data-name="week 1 free a level economics complete year sample">
+<a class="card" href="/resources/a-level-economics-the-complete-year/#free" data-fmt="word pdf" data-lvl="alevel" data-subj="economics" data-name="week 1 free a level economics complete year sample">
   <span class="thumb" style="background-image:url('/resources/covers/week1-a-level-economics.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Economics  &middot;  Week 1 free</span><span class="ct">Week 1 of the Complete Year</span><span class="cdesc">The first week of Year 12 written out in full: both taught lessons, every task with its answers, and the year map. Five pages, PDF and editable Word. AQA 7136 and Edexcel 9EC0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/gcse-business-complete-year/#free" data-lvl="gcse" data-subj="business" data-name="week 1 free gcse business complete year sample">
+<a class="card" href="/resources/gcse-business-complete-year/#free" data-fmt="word pdf" data-lvl="gcse" data-subj="business" data-name="week 1 free gcse business complete year sample">
   <span class="thumb" style="background-image:url('/resources/covers/week1-gcse-business.jpg')"></span>
   <span class="cbody"><span class="ck">GCSE Business  &middot;  Week 1 free</span><span class="ct">Week 1 of the Complete Year</span><span class="cdesc">The first week of Year 10 written out in full: both taught lessons, the photocopiable student sheet, and every task with its answers. Eight pages, PDF and editable Word. AQA 8132 and Edexcel 1BS0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/igcse-economics-0455-complete-year/#free" data-lvl="igcse" data-subj="economics" data-name="week 1 free igcse economics 0455 complete year sample">
+<a class="card" href="/resources/igcse-economics-0455-complete-year/#free" data-fmt="word pdf" data-lvl="igcse" data-subj="economics" data-name="week 1 free igcse economics 0455 complete year sample">
   <span class="thumb" style="background-image:url('/resources/covers/week1-igcse-economics-0455.jpg')"></span>
   <span class="cbody"><span class="ck">IGCSE Economics 0455  &middot;  Week 1 free</span><span class="ct">Week 1 of the Complete Year</span><span class="cdesc">The first week written out in full: both taught lessons, every task with its answers, and the year map. Seven pages, PDF and editable Word. Cambridge IGCSE Economics 0455.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
 
-<a class="card" href="/resources/a-level-business-evaluation-which-sentence-earns-which-mark/" data-lvl="alevel" data-subj="business" data-name="which sentence earns which mark a level business">
+<a class="card" href="/resources/a-level-business-evaluation-which-sentence-earns-which-mark/" data-fmt="word slides pdf" data-lvl="alevel" data-subj="business" data-name="which sentence earns which mark a level business">
   <span class="thumb" style="background-image:url('/resources/a-level-business-evaluation-which-sentence-earns-which-mark/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Which Sentence Earns Which Mark</span><span class="cdesc">Three model answers with every sentence tagged for what it earns and why, plus four complete lessons with answers. AQA 7132 (7138 from September 2026) and Edexcel 9BS0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/a-level-economics-data-response-decoder/" data-lvl="alevel" data-subj="economics" data-name="the data response decoder a level economics">
+<a class="card" href="/resources/a-level-economics-data-response-decoder/" data-fmt="word slides pdf" data-lvl="alevel" data-subj="economics" data-name="the data response decoder a level economics">
   <span class="thumb" style="background-image:url('/resources/a-level-economics-data-response-decoder/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">The Data Response Decoder</span><span class="cdesc">A six step method for reading an extract, two extracts with full data, and model answers with every sentence tagged. AQA 7136 and Edexcel 9EC0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/igcse-business-0450-paper-2-method-pack/" data-lvl="igcse" data-subj="business" data-name="the case study paper cambridge igcse">
+<a class="card" href="/resources/igcse-business-0450-paper-2-method-pack/" data-fmt="word slides pdf" data-lvl="igcse" data-subj="business" data-name="the case study paper cambridge igcse">
   <span class="thumb" style="background-image:url('/resources/igcse-business-0450-paper-2-method-pack/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Cambridge IGCSE</span><span class="ct">The Case Study Paper</span><span class="cdesc">A Paper 2 method pack: a six step case study method, four complete lessons with answers, and two case studies with complete figures.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/a-level-economics-diagram-bank/" data-lvl="alevel" data-subj="economics" data-name="the diagram bank a level economics">
+<a class="card" href="/resources/a-level-economics-diagram-bank/" data-fmt="slides pdf" data-lvl="alevel" data-subj="economics" data-name="the diagram bank a level economics">
   <span class="thumb" style="background-image:url('/resources/a-level-economics-diagram-bank/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">The Diagram Bank</span><span class="cdesc">26 core diagrams drawn properly, each with a checklist of what earns the mark and the mistake examiners see on it.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/a-level-business-revision-pack/" data-lvl="alevel" data-subj="business" data-name="the revision pack a level business">
+<a class="card" href="/resources/a-level-business-revision-pack/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="the revision pack a level business">
   <span class="thumb" style="background-image:url('/resources/a-level-business-revision-pack/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Revision Pack</span><span class="cdesc">10 exam style questions with KAAE mark schemes and examiner tips, built on real company case studies.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/essay-kit/" data-lvl="alevel" data-subj="business" data-name="the essay kit a level business">
+<a class="card" href="/resources/essay-kit/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the essay kit a level business">
   <span class="thumb" style="background-image:url('/resources/essay-kit/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Essay Kit</span><span class="cdesc">Technique for the 16, 20 and 25 mark extended responses: structures, sentence frames and marked examples.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/examiners-eye/" data-lvl="alevel" data-subj="business" data-name="the examiner&#x27;s eye a level business">
+<a class="card" href="/resources/examiners-eye/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the examiner&#x27;s eye a level business">
   <span class="thumb" style="background-image:url('/resources/examiners-eye/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Examiner&#x27;s Eye</span><span class="cdesc">How answers become marks: the level descriptors in plain English and what moves an answer up a band.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/model-answers/" data-lvl="alevel" data-subj="business" data-name="five model answers a level business">
+<a class="card" href="/resources/model-answers/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="five model answers a level business">
   <span class="thumb" style="background-image:url('/resources/model-answers/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Five Model Answers</span><span class="cdesc">Five full Level 4 standard model answers showing exactly what top band writing looks like.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/sentence-stem-library/" data-lvl="alevel" data-subj="business" data-name="the sentence stem library a level business">
+<a class="card" href="/resources/sentence-stem-library/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the sentence stem library a level business">
   <span class="thumb" style="background-image:url('/resources/sentence-stem-library/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Sentence Stem Library</span><span class="cdesc">65 ready to deploy sentence stems that push student writing into analysis and evaluation.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/knowledge-organisers/" data-lvl="alevel" data-subj="business" data-name="knowledge organisers a level business">
+<a class="card" href="/resources/knowledge-organisers/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="knowledge organisers a level business">
   <span class="thumb" style="background-image:url('/resources/knowledge-organisers/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Knowledge Organisers</span><span class="cdesc">Five single page knowledge organisers covering the core of the A Level Business specification.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/lesson-hooks/" data-lvl="alevel" data-subj="business" data-name="20 lesson hooks a level business">
+<a class="card" href="/resources/lesson-hooks/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="20 lesson hooks a level business">
   <span class="thumb" style="background-image:url('/resources/lesson-hooks/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">20 Lesson Hooks</span><span class="cdesc">Twenty lesson starters of five minutes each, across the specification and ready to project.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/calculation-cheat-sheet/" data-lvl="alevel" data-subj="business" data-name="calculation cheat sheet a level business">
+<a class="card" href="/resources/calculation-cheat-sheet/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="calculation cheat sheet a level business">
   <span class="thumb" style="background-image:url('/resources/calculation-cheat-sheet/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Calculation Cheat Sheet</span><span class="cdesc">All 26 formulas students need, each with what it means and a worked number.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/command-words-decoded/" data-lvl="alevel" data-subj="business" data-name="command words decoded a level business">
+<a class="card" href="/resources/command-words-decoded/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="command words decoded a level business">
   <span class="thumb" style="background-image:url('/resources/command-words-decoded/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Command Words Decoded</span><span class="cdesc">The nine command words that decide marks, decoded into what each one actually wants.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/costa-coffee-case-study/" data-lvl="alevel" data-subj="business" data-name="costa coffee a level business">
+<a class="card" href="/resources/costa-coffee-case-study/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="costa coffee a level business">
   <span class="thumb" style="background-image:url('/resources/costa-coffee-case-study/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Costa Coffee</span><span class="cdesc">A real company case study with figures and exam style questions on a business students know.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/uk-business-cases-2026/" data-lvl="alevel" data-subj="business" data-name="uk business cases 2026 a level business">
+<a class="card" href="/resources/uk-business-cases-2026/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="uk business cases 2026 a level business">
   <span class="thumb" style="background-image:url('/resources/uk-business-cases-2026/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">UK Business Cases 2026</span><span class="cdesc">Five real UK business case briefs from the past year, each with questions attached.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/uk-business-failures/" data-lvl="alevel" data-subj="business" data-name="uk business failures a level business">
+<a class="card" href="/resources/uk-business-failures/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="uk business failures a level business">
   <span class="thumb" style="background-image:url('/resources/uk-business-failures/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">UK Business Failures</span><span class="cdesc">Six recent UK business failures as case studies: what went wrong and the theory each one teaches.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/financial-ratios-masterclass/" data-lvl="alevel" data-subj="business" data-name="financial ratios masterclass a level business">
+<a class="card" href="/resources/financial-ratios-masterclass/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="financial ratios masterclass a level business">
   <span class="thumb" style="background-image:url('/resources/financial-ratios-masterclass/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Financial Ratios Masterclass</span><span class="cdesc">An eight page teaching pack on ratio analysis: liquidity, gearing, profitability and what the numbers mean.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/investment-appraisal-masterclass/" data-lvl="alevel" data-subj="business" data-name="investment appraisal masterclass a level business">
+<a class="card" href="/resources/investment-appraisal-masterclass/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="investment appraisal masterclass a level business">
   <span class="thumb" style="background-image:url('/resources/investment-appraisal-masterclass/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Investment Appraisal Masterclass</span><span class="cdesc">A twelve page teaching pack: payback, ARR, NPV and IRR with worked examples and practice.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/motivation-leadership-masterclass/" data-lvl="alevel" data-subj="business" data-name="motivation and leadership a level business">
+<a class="card" href="/resources/motivation-leadership-masterclass/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="motivation and leadership a level business">
   <span class="thumb" style="background-image:url('/resources/motivation-leadership-masterclass/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Motivation and Leadership</span><span class="cdesc">An eight page teaching pack on people management: motivation theory and leadership styles in practice.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/operations-lean-masterclass/" data-lvl="alevel" data-subj="business" data-name="operations and lean a level business">
+<a class="card" href="/resources/operations-lean-masterclass/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="operations and lean a level business">
   <span class="thumb" style="background-image:url('/resources/operations-lean-masterclass/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Operations and Lean</span><span class="cdesc">An eight page teaching pack on operations management and lean production, with practice built in.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/marketing-strategy-pack/" data-lvl="alevel" data-subj="business" data-name="marketing strategy pack a level business">
+<a class="card" href="/resources/marketing-strategy-pack/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="marketing strategy pack a level business">
   <span class="thumb" style="background-image:url('/resources/marketing-strategy-pack/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Marketing Strategy Pack</span><span class="cdesc">A six page revision pack covering the five most tested marketing strategy areas.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/paper-2-pack/" data-lvl="alevel" data-subj="business" data-name="the paper 2 pack a level business">
+<a class="card" href="/resources/paper-2-pack/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the paper 2 pack a level business">
   <span class="thumb" style="background-image:url('/resources/paper-2-pack/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Paper 2 Pack</span><span class="cdesc">A six page revision pack: the five most likely Paper 2 topics with practice questions.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/paper-3-pack/" data-lvl="alevel" data-subj="business" data-name="the paper 3 pack a level business">
+<a class="card" href="/resources/paper-3-pack/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the paper 3 pack a level business">
   <span class="thumb" style="background-image:url('/resources/paper-3-pack/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Paper 3 Pack</span><span class="cdesc">A six page revision pack built for the pre release case study paper.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/after-paper-1/" data-lvl="alevel" data-subj="business" data-name="the 6 day plan a level business">
+<a class="card" href="/resources/after-paper-1/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the 6 day plan a level business">
   <span class="thumb" style="background-image:url('/resources/after-paper-1/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The 6 Day Plan</span><span class="cdesc">A single page study plan for the six days between Paper 1 and Paper 2.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/tuesday-morning-sheet/" data-lvl="alevel" data-subj="business" data-name="the tuesday morning sheet a level business">
+<a class="card" href="/resources/tuesday-morning-sheet/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the tuesday morning sheet a level business">
   <span class="thumb" style="background-image:url('/resources/tuesday-morning-sheet/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Tuesday Morning Sheet</span><span class="cdesc">A one page A4 cramming sheet: command words, formulas and structures for the exam morning.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/summer-bridging-pack/" data-lvl="alevel" data-subj="business" data-name="the summer bridging pack a level business">
+<a class="card" href="/resources/summer-bridging-pack/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the summer bridging pack a level business">
   <span class="thumb" style="background-image:url('/resources/summer-bridging-pack/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Summer Bridging Pack</span><span class="cdesc">A six week Year 12 to Year 13 summer programme with weekly tasks and answers.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/year-12-to-13-step-up/" data-lvl="alevel" data-subj="business" data-name="the step up pack a level business">
+<a class="card" href="/resources/year-12-to-13-step-up/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the step up pack a level business">
   <span class="thumb" style="background-image:url('/resources/year-12-to-13-step-up/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Step Up Pack</span><span class="cdesc">An eight page teacher pack for the jump from Year 12 to Year 13: what changes and how to close the gap.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/final-lesson-pack/" data-lvl="alevel" data-subj="business" data-name="the final lesson a level business">
+<a class="card" href="/resources/final-lesson-pack/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="the final lesson a level business">
   <span class="thumb" style="background-image:url('/resources/final-lesson-pack/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The Final Lesson</span><span class="cdesc">A ready to deliver final lesson for Year 13, built for the last session before study leave.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/break-even-worksheet/" data-lvl="alevel" data-subj="business" data-name="break even worksheet a level business">
+<a class="card" href="/resources/break-even-worksheet/" data-fmt="" data-lvl="alevel" data-subj="business" data-name="break even worksheet a level business">
   <span class="thumb" style="background-image:url('/resources/break-even-worksheet/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Break Even Worksheet</span><span class="cdesc">Eight calculation questions on break even analysis, with full answers.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/gcse-business-paper-2-flashcards/" data-lvl="gcse" data-subj="business" data-name="paper 2 flashcards aqa gcse">
+<a class="card" href="/resources/gcse-business-paper-2-flashcards/" data-fmt="pdf" data-lvl="gcse" data-subj="business" data-name="paper 2 flashcards aqa gcse">
   <span class="thumb" style="background-image:url('/resources/gcse-business-paper-2-flashcards/cover.jpg')"></span>
   <span class="cbody"><span class="ck">AQA GCSE</span><span class="ct">Paper 2 Flashcards</span><span class="cdesc">16 printable flashcards covering the topics most likely to appear on AQA 8132 Paper 2.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/non-specialist-business-survival-pack/" data-lvl="any" data-subj="business" data-name="the survival pack new to business?">
+<a class="card" href="/resources/non-specialist-business-survival-pack/" data-fmt="slides pdf" data-lvl="any" data-subj="business" data-name="the survival pack new to business?">
   <span class="thumb" style="background-image:url('/resources/non-specialist-business-survival-pack/cover.jpg')"></span>
   <span class="cbody"><span class="ck">New to Business?</span><span class="ct">The Survival Pack</span><span class="cdesc">Five complete first lessons with minute by minute plans, worksheets and full teacher answers. No subject background needed.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/btec-business-pass-merit-distinction/" data-lvl="btec" data-subj="business" data-name="pass, merit, distinction: decoded btec business">
+<a class="card" href="/resources/btec-business-pass-merit-distinction/" data-fmt="" data-lvl="btec" data-subj="business" data-name="pass, merit, distinction: decoded btec business">
   <span class="thumb" style="background-image:url('/resources/btec-business-pass-merit-distinction/cover.jpg')"></span>
   <span class="cbody"><span class="ck">BTEC Business</span><span class="ct">Pass, Merit, Distinction: Decoded</span><span class="cdesc">An eight page teacher pack on what separates Pass, Merit and Distinction in BTEC Level 3 National in Business.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/btec-enterprise-assessment-overview/" data-lvl="btec" data-subj="business" data-name="how the assessment works btec enterprise">
+<a class="card" href="/resources/btec-enterprise-assessment-overview/" data-fmt="" data-lvl="btec" data-subj="business" data-name="how the assessment works btec enterprise">
   <span class="thumb" style="background-image:url('/resources/btec-enterprise-assessment-overview/cover.jpg')"></span>
   <span class="cbody"><span class="ck">BTEC Enterprise</span><span class="ct">How the Assessment Works</span><span class="cdesc">Components, internal and external assessment and grading for the BTEC Tech Award in Enterprise, explained.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/ib-business-management-toolkit/" data-lvl="ib" data-subj="business" data-name="the ib toolkit ib business">
+<a class="card" href="/resources/ib-business-management-toolkit/" data-fmt="" data-lvl="ib" data-subj="business" data-name="the ib toolkit ib business">
   <span class="thumb" style="background-image:url('/resources/ib-business-management-toolkit/cover.jpg')"></span>
   <span class="cbody"><span class="ck">IB Business</span><span class="ct">The IB Toolkit</span><span class="cdesc">Every Business Management Toolkit tool explained with examples: SWOT, STEEPLE, BCG, Ansoff and more.</span><span class="cbadges"><span class="fmt">Print ready</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/business-heads-up/" data-lvl="game" data-subj="business" data-name="business heads up classroom game">
+<a class="card" href="/resources/business-heads-up/" data-fmt="" data-lvl="game" data-subj="business" data-name="business heads up classroom game">
   <span class="thumb" style="background-image:url('/resources/business-heads-up/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Business Heads Up</span><span class="cdesc">The forehead card guessing game with 30 business terms in three difficulty levels.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/business-taboo-key-terms-game/" data-lvl="game" data-subj="business" data-name="business taboo classroom game">
+<a class="card" href="/resources/business-taboo-key-terms-game/" data-fmt="" data-lvl="game" data-subj="business" data-name="business taboo classroom game">
   <span class="thumb" style="background-image:url('/resources/business-taboo-key-terms-game/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Business Taboo</span><span class="cdesc">Describe the key term without saying the banned words. 24 ready made cards for GCSE and A Level.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/business-balderdash-real-or-fake/" data-lvl="game" data-subj="business" data-name="business balderdash classroom game">
+<a class="card" href="/resources/business-balderdash-real-or-fake/" data-fmt="" data-lvl="game" data-subj="business" data-name="business balderdash classroom game">
   <span class="thumb" style="background-image:url('/resources/business-balderdash-real-or-fake/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Business Balderdash</span><span class="cdesc">Teams bet points on whether strange business facts are real or fake. 12 real and 8 fake statements.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/business-escape-challenge/" data-lvl="game" data-subj="business" data-name="the escape challenge classroom game">
+<a class="card" href="/resources/business-escape-challenge/" data-fmt="" data-lvl="game" data-subj="business" data-name="the escape challenge classroom game">
   <span class="thumb" style="background-image:url('/resources/business-escape-challenge/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">The Escape Challenge</span><span class="cdesc">A 30 minute printable escape room: five business puzzles hiding lock codes.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/crisis-cabinet-role-play/" data-lvl="game" data-subj="business" data-name="crisis cabinet classroom game">
+<a class="card" href="/resources/crisis-cabinet-role-play/" data-fmt="" data-lvl="game" data-subj="business" data-name="crisis cabinet classroom game">
   <span class="thumb" style="background-image:url('/resources/crisis-cabinet-role-play/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Crisis Cabinet</span><span class="cdesc">Teams become company boards facing a breaking crisis, then hold a press conference.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/dragons-den-would-you-invest/" data-lvl="game" data-subj="business" data-name="would you invest? classroom game">
+<a class="card" href="/resources/dragons-den-would-you-invest/" data-fmt="" data-lvl="game" data-subj="business" data-name="would you invest? classroom game">
   <span class="thumb" style="background-image:url('/resources/dragons-den-would-you-invest/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Would You Invest?</span><span class="cdesc">Teams judge six real anonymised UK startup pitches and invest fake money.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/guess-the-business-logo-figures/" data-lvl="game" data-subj="business" data-name="guess the business classroom game">
+<a class="card" href="/resources/guess-the-business-logo-figures/" data-fmt="" data-lvl="game" data-subj="business" data-name="guess the business classroom game">
   <span class="thumb" style="background-image:url('/resources/guess-the-business-logo-figures/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Guess the Business</span><span class="cdesc">A projectable UK business quiz: 20 rounds of three clues each.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/marketing-mix-remix/" data-lvl="game" data-subj="business" data-name="marketing mix remix classroom game">
+<a class="card" href="/resources/marketing-mix-remix/" data-fmt="" data-lvl="game" data-subj="business" data-name="marketing mix remix classroom game">
   <span class="thumb" style="background-image:url('/resources/marketing-mix-remix/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Marketing Mix Remix</span><span class="cdesc">Teams get a boring product and a random target market, then ten minutes to build a campaign.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/price-war-standoff/" data-lvl="game" data-subj="business" data-name="price war standoff classroom game">
+<a class="card" href="/resources/price-war-standoff/" data-fmt="" data-lvl="game" data-subj="business" data-name="price war standoff classroom game">
   <span class="thumb" style="background-image:url('/resources/price-war-standoff/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Price War Standoff</span><span class="cdesc">A stand up, whole class pricing elimination game that teaches price elasticity.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/stock-market-shout-out/" data-lvl="game" data-subj="business" data-name="stock market shout out classroom game">
+<a class="card" href="/resources/stock-market-shout-out/" data-fmt="" data-lvl="game" data-subj="business" data-name="stock market shout out classroom game">
   <span class="thumb" style="background-image:url('/resources/stock-market-shout-out/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Stock Market Shout Out</span><span class="cdesc">A ten minute live trading pit with shouting brokers, price cards and news shocks.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/supply-chain-paper-planes/" data-lvl="game" data-subj="business" data-name="supply chain paper planes classroom game">
+<a class="card" href="/resources/supply-chain-paper-planes/" data-fmt="" data-lvl="game" data-subj="business" data-name="supply chain paper planes classroom game">
   <span class="thumb" style="background-image:url('/resources/supply-chain-paper-planes/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">Supply Chain Paper Planes</span><span class="cdesc">Teams run paper plane factories under changing cost and quality rules.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card" href="/resources/the-negotiation-gauntlet/" data-lvl="game" data-subj="business" data-name="the negotiation gauntlet classroom game">
+<a class="card" href="/resources/the-negotiation-gauntlet/" data-fmt="" data-lvl="game" data-subj="business" data-name="the negotiation gauntlet classroom game">
   <span class="thumb" style="background-image:url('/resources/the-negotiation-gauntlet/cover.jpg')"></span>
   <span class="cbody"><span class="ck">Classroom game</span><span class="ct">The Negotiation Gauntlet</span><span class="cdesc">Speed dating style pair negotiations with five mini scenarios and hidden agendas.</span><span class="cbadges"><span class="fmt">Play from the page</span><span class="fmt free">Free</span></span></span>
 </a>
@@ -696,7 +704,7 @@ a{text-decoration:none}
 
 <script>
 (function(){
-  var lvl="all", subj="all", q="";
+  var lvl="all", subj="all", fmt="all", q="";
   var cards=[].slice.call(document.querySelectorAll("#cards .card"));
   var count=document.getElementById("count"), none=document.getElementById("noresults");
   function apply(){
@@ -704,6 +712,7 @@ a{text-decoration:none}
     cards.forEach(function(c){
       var ok=(lvl==="all"||c.dataset.lvl===lvl||(lvl!=="game"&&c.dataset.lvl==="any"))
           &&(subj==="all"||c.dataset.subj===subj)
+          &&(fmt==="all"||(c.dataset.fmt||"").split(" ").indexOf(fmt)>-1)
           &&(!q||c.dataset.name.indexOf(q)>-1||c.textContent.toLowerCase().indexOf(q)>-1);
       c.classList.toggle("hide",!ok); if(ok)shown++;
     });
@@ -720,6 +729,7 @@ a{text-decoration:none}
   }
   wire("lvlchips","lvl",function(v){lvl=v});
   wire("subjchips","subj",function(v){subj=v});
+  wire("fmtchips","fmt",function(v){fmt=v});
   document.getElementById("q").addEventListener("input",function(e){q=e.target.value.trim().toLowerCase();apply();});
   apply();
 })();
