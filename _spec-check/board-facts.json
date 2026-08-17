@@ -354,7 +354,35 @@
       },
       "extended_response_quote": "15-mark questions in both AS and A-level papers assess learners' ability to analyse, evaluate, and make judgements. In A-level Paper 3, extended responses take a strategic view, asking learners to solve a business problem or recommend a course of action to achieve a specific outcome.",
       "synoptic_quote": "Synopticity occurs when learners draw on knowledge from different parts of the specification. This is especially relevant in AS paper 2 and A-level paper 3.",
-      "scaling": "Each A-level paper 90 raw marks, scaling factor x1, total scaled mark 270."
+      "scaling": "A-level: each paper 90 raw, scaling factor x1, total scaled mark 270. AS: each paper 80 raw, scaling factor x1, total scaled mark 160.",
+      "as_scaling_total": 160,
+      "sophisticated_concepts": {
+        "where": "Annex 8, Annex: Sophisticated concepts. The rule that they are credited is in section 4.6, Synoptic assessment.",
+        "definition_quote": "Learners that make use of relevant theories, concepts, models and frameworks in their responses, that are not the direct focus of a question are making use of sophisticated concepts. The appropriate use of these sophisticated concepts strengthens the quality of their analysis.",
+        "credit_quote": "All 15-mark questions award the use of sophisticated concepts (Annex 8). Accurate use will be credited.",
+        "level_quote": "The use of sophisticated concepts is identified as a typical characteristic of a Level 5 response; it demonstrates a strong, sophisticated understanding of the subject. However, where the use of sophisticated concepts is demonstrated in any response, the impact on the quality of analysis will be recognised.",
+        "implies": "The 15-mark levels of response grid runs to five levels.",
+        "counts": {
+          "models_and_frameworks": 13,
+          "theorists": 3,
+          "financial_concepts": 22,
+          "analytical_concepts": 8
+        },
+        "theorists": [
+          "Taylor",
+          "Maslow",
+          "Herzberg"
+        ],
+        "note": "This category has no equivalent on 7132."
+      },
+      "sams": {
+        "status": "published. The specification cites sample assessment material question numbers in section 4.6.",
+        "as_quote": "One 15-mark question in paper 2 (e.g. Question 2.6) will require learners to draw together knowledge and understanding from across the full AS course.",
+        "alevel_quote": "One 15-mark question in paper 3 (e.g. SAMs Question 2.5) will require learners to draw together knowledge and skills from across the full course.",
+        "inference": "NOT AQA's. A-level SAMs Question 2.5 is the fifth question of the second case study and is worth 15. Five questions from tariffs 6, 9 and 15 totalling 45 admit only {9,9,9,9,9} and {6,6,9,9,15}, so that case study is 6, 6, 9, 9, 15. Proved for one case study only."
+      },
+      "as_design_quote": "The AS specification is designed to be taken over one or two years with all assessments taken at the end of the course.",
+      "as_design_note": "The word 'stand-alone' does NOT appear about the AS in this specification. 'Standalone' appears only about Paper 1 in section 4.6."
     },
     "edexcel-alevel-business-9bs0": {
       "name": "Pearson Edexcel A-level Business 9BS0",
