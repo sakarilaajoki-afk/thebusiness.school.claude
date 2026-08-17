@@ -968,8 +968,11 @@
       },
       "commands_note": "Pearson groups 'To what extent' and 'Evaluate' as a single row in the Getting Started taxonomy table. Assess and Discuss are listed separately. The guide gives no mark tariffs against these commands.",
       "section_ao_note": "Section A assesses breadth, with a greater focus on AO1 and AO2. Section B is based on stimulus material and places greater emphasis on depth (AO3 and AO4).",
-      "status": "no replacement announced. Pearson's qualification page for Economics A 2015 carries no withdrawal or replacement notice, checked 2026-08-17.",
-      "status_warning": "Pearson's published September 2026 continuation statement covers GCE Business, NOT Economics. The URL qualifications.pearson.com/en/news-policy/subject-updates/economics/gce-economics-delivery-support.html 404s. Do not write that Pearson has confirmed 9EC0 is unchanged; only that no replacement is announced."
+      "status": "no replacement announced, and no September 2026 assurance either",
+      "status_warning": "Pearson gave GCE Business an explicit September 2026 assurance on 28 April 2026 and did NOT give Economics one the next day. Do not carry the Business sentence across. Finding the page took a real search: the slug is gce-economics-A-delivery-support, and guessing it from the Business pattern 404s. The subject news list at qualifications.pearson.com/en/subjects/economics.updates.html?facets=-all is JS-rendered, so it needs a real browser, not a plain fetch.",
+      "status_source": "https://qualifications.pearson.com/en/news-policy/subject-updates/economics/gce-economics-a-delivery-support.html",
+      "status_date": "29 April 2026",
+      "status_quote": "the final report of the Curriculum and Assessment Review and the timelines have been published ... we are now considering the implications for A level Economics. We will keep you informed of any further developments."
     }
   },
   "_unverified": [

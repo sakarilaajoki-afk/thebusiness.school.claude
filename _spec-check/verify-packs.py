@@ -1,16 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Check the published A-level packs back against the boards' own documents.
+"""Check the two published packs back against the board PDFs, claim by claim.
 
-Run this before publishing a pack and again after any edit to it. It reads the
-SHIPPED pdf, not the draft, so what is checked is what a teacher downloads.
+Reads the SHIPPED pdf, not the draft HTML, so what is checked is what a teacher
+downloads. A quote must appear in the board document character for character
+after whitespace and quote-mark normalisation. A number must appear in the pack
+AND in the board document in the stated context.
 
-It found a real error on its first run: the pack said the 7138 A-level only
-material was three scattered sections when AQA marks the whole of Unit 3.3
-"(A-level only)".
-
-The board PDFs are not kept in this repo, because they are the boards' documents
-to distribute, not ours. Download them into a folder named `board` next to this
-script, using the file names in SOURCES below. Every URL is in board-facts.json.
+Exit code is non-zero if anything fails.
 """
 import io, os, re, sys, unicodedata
 import fitz
@@ -215,6 +211,12 @@ quote('ECO', '9ec0', 'and evaluation which is supported by relevant reasoning, i
 quote('ECO', '9ec0', 'with critical awareness and informed judgements.', 'To what extent wording')
 
 absent('ECO', 'are both unchanged for a course starting', 'the unsourced Pearson currency claim')
+# Pearson's two pages say different things, and the pack quotes both
+checks += 1
+for q in ['learners beginning the course in September 2026 will continue to follow the current established specification',
+          'we are now considering the implications for A level Economics. We will keep you informed of any further developments.']:
+    if norm(q) not in pack['ECO']:
+        fails.append('ECO QUOTE Pearson currency | pack is missing "%s"' % q[:60])
 
 # ------------------------------------------------------------- the arithmetic
 print('checking the arithmetic printed in the Economics baseline test')
