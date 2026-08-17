@@ -78,6 +78,23 @@ a{text-decoration:none}
 @media(max-width:640px){.ss-btn{display:block;width:100%;text-align:center}}
 
 .fmtnote{font-size:13.5px;color:#55636B;margin:-6px 0 16px}
+
+/* live tools: hosted simulations, not downloads, so they sit outside the
+   counted library grid */
+.live{padding:52px 0 8px}
+.livegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.lt{display:flex;flex-direction:column;background:#fff;border:1px solid #DDE5E1;border-radius:14px;padding:24px 26px;min-width:0;transition:box-shadow .15s ease,transform .15s ease}
+.lt:hover{box-shadow:0 14px 34px -18px rgba(11,61,46,.45);transform:translateY(-2px)}
+.lt .tag{align-self:flex-start;font-size:10.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:13px}
+.lt .tag.pilot{background:#FDF3DC;color:#7A5A00;border:1px solid #E3C46A}
+.lt .tag.used{background:#E4F1EA;color:#0B3D2E;border:1px solid #A8CDBA}
+.lt h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0B3D2E;margin-bottom:4px}
+.lt .who{font-size:13px;font-weight:600;color:#0a6b73;margin-bottom:10px}
+.lt p{font-size:14.5px;line-height:1.6;color:#4a5a53;margin-bottom:11px}
+.lt .note{font-size:13px;color:#55636B;background:#F4F7F4;border-left:3px solid #C9D4CE;padding:10px 13px;border-radius:0 6px 6px 0;margin-bottom:16px}
+.lt .go{margin-top:auto;align-self:flex-start;background:#0B3D2E;color:#fff;font-weight:600;font-size:15px;padding:12px 22px;border-radius:9px;text-decoration:none}
+.lt .go:hover{opacity:.9}
+
 /* cards */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
 .grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
@@ -289,6 +306,38 @@ a{text-decoration:none}
         <p>Notes, key terms, practice questions and examiner tips for every major topic. Edexcel A Level, AQA GCSE, Cambridge IGCSE, BTEC and IB.</p>
       </div>
       <a class="go" href="/resources/topics/">Browse the Topic Library</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec live" id="live">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>Run it in the room</h2>
+      <p>Two simulations you open in a browser. Nothing to install, nothing to download.</p>
+    </div>
+    <div class="livegrid">
+
+      <div class="lt">
+        <span class="tag used">Used in lessons</span>
+        <h3>Founder&rsquo;s Hour</h3>
+        <div class="who">One lesson &middot; Key Stage 4 and 5 &middot; students work solo</div>
+        <p>Found a caf&eacute; and survive its first year. Students make the opening decisions, defend each one in writing, and get pushed back on by Vic, the mentor in the game. You mark the writing; the game does not put a grade on anyone.</p>
+        <p>It runs about an hour and it fills a lesson on its own. There is a class dashboard so you can see every student&rsquo;s decisions and writing as they go.</p>
+        <div class="note">It has been run with real classes. One pilot hit slow responses when a whole class typed at once, which we have worked on since. Worth knowing before you book a lesson round it.</div>
+        <a class="go" href="https://lesson.thebusiness.school/" target="_blank" rel="noopener">Try Founder&rsquo;s Hour &rarr;</a>
+      </div>
+
+      <div class="lt">
+        <span class="tag pilot">In pilot</span>
+        <h3>Market Simulation Studio</h3>
+        <div class="who">You build it &middot; any level &middot; students play in groups</div>
+        <p>Build your own market simulation for your class without writing anything technical. Start from one that already works, change the products, the customers and the numbers, and run it. Every copy is yours to change and the original is never touched.</p>
+        <p>Use it for a market you actually teach, or for the local businesses your students know.</p>
+        <div class="note">This one is in pilot. It is finished and it works, and what it has not had yet is thirty teenagers finding the holes in it. If you try it, tell us what broke and what you would change: <a href="mailto:support@thebusiness.school">support@thebusiness.school</a>. That feedback is the whole reason it is here.</div>
+        <a class="go" href="https://market.thebusiness.school/explore" target="_blank" rel="noopener">Open the Studio &rarr;</a>
+      </div>
+
     </div>
   </div>
 </section>
