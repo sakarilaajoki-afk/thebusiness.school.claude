@@ -174,8 +174,14 @@ fact('ECO', '7136', 'Total scaled mark 240', 'Total scaled mark: 240', 'AQA scal
 fact('ECO', '7136', 'A multiple choice, 30 marks. B case study, 50 marks.',
      'Section A: multiple choice questions worth 30 marks . Section B: case study questions requiring written answers, worth 50 marks',
      'AQA Paper 3 sections')
-fact('ECO', '7136', '5 to 8 7 to 10 9 to 11 7 to 10', 'AO1 5-8 5-8 7-10 20-23', 'AQA AO ranges')
-fact('ECO', '7136', '20 to 23 26 to 29 26 to 29 22 to 25', 'AO4 7-10 7-10 5-8 22-25', 'AQA AO overall')
+fact('ECO', '7136', 'AO1 20 to 23, AO2 26 to 29, AO3 26 to 29 and AO4 22 to 25',
+     'AO1 5-8 5-8 7-10 20-23', 'AQA AO ranges')
+quote('ECO', '7136', 'Assessment objectives (AOs) are set by Ofqual and are the same '
+      'across all AS and A-level Economics specifications and all exam boards.',
+      "AOs are Ofqual's and shared")
+fact('ECO', '7136', 'draw together different areas of the specification',
+     'questions in Section B of Paper 3 are extended response questions which require a student to draw together different areas of the specification',
+     'Paper 3 Section B is synoptic')
 
 quote('ECO', '7136', 'The assessment of quantitative skills will include at least Level 2 mathematical '
       'skills as a minimum of 20% of the overall A-level marks.', 'AQA 20%')
