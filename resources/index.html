@@ -169,6 +169,14 @@ a{text-decoration:none}
 .pnote{font-size:12.5px;color:#9db8ac}
 .pfree{margin-top:26px;font-size:13.5px;color:#9db8ac}
 
+/* coming soon: blur everything except the title and the overlay, so the
+   card reads as "not yet", not as a broken free download */
+.pcard.soon{cursor:default}
+.pcard.soon .pblur{filter:blur(3.5px);opacity:.5;pointer-events:none;user-select:none}
+.psoon.later{background:#3a4a44;color:#fff;box-shadow:0 3px 12px rgba(0,0,0,.35)}
+.pcomingnote{position:relative;z-index:2;font-size:13px;color:#cfe2d8;margin-top:2px}
+.pbuy.disabled{background:rgba(255,255,255,.14);color:#cfe2d8;cursor:not-allowed;box-shadow:none}
+
 /* trust */
 .trust{border-top:1px solid #DDE5E1;border-bottom:1px solid #DDE5E1;background:#F4F7F4;padding:34px 0;margin-top:0}
 .trow{display:flex;gap:26px;flex-wrap:wrap;align-items:center;justify-content:space-between}
@@ -603,6 +611,44 @@ a{text-decoration:none}
     </div>
     <p class="fmtnote" style="margin:22px 0 0">Everything we have ever got wrong on a resource, and when we fixed it, is on the <a href="/resources/corrections/" style="color:#0a6b73">corrections page</a>. If you downloaded something before 16 August 2026, check it there.</p>
     <p class="noresults" id="noresults">Nothing matches those filters yet. Try widening them, or tell us in the free group what you need and it goes on the build list.</p>
+  </div>
+</section>
+
+<section class="prem" id="complete-year-packs">
+  <div class="wrap">
+    <h2>Complete Year teaching packs</h2>
+    <p class="sub">Full-year, editable teaching programmes with lessons, assessments, answers and classroom resources.</p>
+    <div class="pgrid">
+      <a class="pcard live" href="/resources/a-level-economics-the-complete-year/">
+        <span class="psoon">Premium</span>
+        <img class="pcover" src="/resources/covers/a-level-economics.jpg" alt="A-Level Economics: The Complete Year 12, the pack cover" width="640" height="480" loading="lazy" decoding="async">
+        <div class="pbody">
+          <span class="pt">A-Level Economics: The Complete Year 12</span>
+          <ul>
+          <li>AQA 7136 and Edexcel Economics A 9EC0</li>
+          <li>30 weeks</li>
+          <li>60 taught lessons</li>
+          <li>Six assessments</li>
+          <li>PDF, editable Word and PowerPoint</li>
+          <li>Founding price &pound;49</li>
+          </ul>
+          <div class="prow"><span class="pbuy">View the complete year</span></div>
+        </div>
+      </a>
+      <div class="pcard soon" aria-label="A-Level Business: The Complete Year 12, coming soon, not yet available to buy">
+        <span class="psoon later">Coming soon</span>
+        <div class="pblur">
+          <img class="pcover" src="/resources/covers/a-level-business.jpg" alt="" width="640" height="480" loading="lazy" decoding="async" aria-hidden="true">
+        </div>
+        <div class="pbody">
+          <span class="pt">A-Level Business: The Complete Year 12</span>
+          <p class="pcomingnote">Final quality checks in progress.</p>
+          <div class="pblur">
+            <div class="prow"><span class="pbuy disabled">Loading&hellip;</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
