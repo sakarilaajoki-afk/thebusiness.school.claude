@@ -25,7 +25,7 @@ D = {
    "30 retrieval quizzes, 150 questions with answers",
    "Written against the 2026 syllabus, with the 2027 to 2029 figures alongside",
    "PDF, editable Word and PowerPoint included"],
- "footline": "120 PAGES  |  PRINT AND TEACH  |  14 DAY MONEY BACK GUARANTEE",
+ "footline": "120 PAGES  |  PRINT AND TEACH  |  FREE SAMPLE BEFORE YOU BUY",
  "star1": ["THE", "PREMIUM", "PACK"],
  "star2": ["FULLY", "EDITABLE"],
 }
