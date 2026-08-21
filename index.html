@@ -9,7 +9,7 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" as="image" href="/assets/tbs-web/motor-teacher-live.png">
+<link rel="preload" as="image" href="/assets/tbs-web/motor-entry-live.png">
 </head>
 <body>
 <x-dc>
@@ -328,51 +328,32 @@
 
 <!-- INSIDE THE SIMULATION, real screenshots -->
 <style>
-.motor-shot{display:block;width:100%;aspect-ratio:1295/809;object-fit:cover;object-position:center}
+.motor-shot{display:block;width:100%;height:auto}
+.motor-shot-grid{display:grid;grid-template-columns:1fr;gap:24px}
 </style>
 <section style="padding:78px 0">
   <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin:0 auto 40px;text-align:center">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Inside the simulation</span>
-      <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">The real screens your students will use</h2>
-      <p style="color:#40506e;font-size:16.5px">Not mockups, screenshots from the live simulation at play.thebusiness.school.</p>
+      <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">The real Motor Trade simulation</h2>
+      <p style="color:#40506e;font-size:16.5px">Live product screens from play.thebusiness.school, shown at a readable size.</p>
     </div>
     <figure style="margin:0 0 20px;background:#fff;border:1px solid #e3e9f1;border-radius:16px;overflow:hidden;box-shadow:0 30px 70px -45px rgba(18,35,63,.45)">
-      <img class="motor-shot" src="/assets/tbs-web/motor-teacher-live.png" width="1295" height="809" alt="Teacher live view: the classroom net position chart with round controls and role tabs on one page" />
-      <figcaption style="padding:14px 20px;border-top:1px solid #eef2f7;font-size:14.5px;color:#0e2038;font-weight:600;text-align:center">Run the whole live lesson from one clear teacher view.</figcaption>
+      <img class="motor-shot" src="/assets/tbs-web/motor-entry-live.png" width="1440" height="900" alt="The live Motor Trade Edition entry screen with Teacher, Student and Solo Practice choices" />
+      <figcaption style="padding:14px 20px;border-top:1px solid #eef2f7;font-size:14.5px;color:#0e2038;font-weight:600;text-align:center">Teachers create the room, students enter the PIN and solo practice remains available.</figcaption>
     </figure>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px">
+    <div class="motor-shot-grid">
       <figure style="margin:0;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden">
-        <img class="motor-shot" src="/assets/tbs-web/motor-teacher-setup.png" width="1295" height="809" loading="lazy" decoding="async" alt="Lesson setup screen: teacher chooses GCSE or A-level, round length and student evidence report" style="border-bottom:1px solid #eef2f7" />
-        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Choose the qualification level and lesson time before students join.</figcaption>
+        <img class="motor-shot" src="/assets/tbs-web/motor-operations-live-actual.png" width="1440" height="900" loading="lazy" decoding="async" alt="Live Motor Operations workspace with vehicle stock, wholesale offers and forecourt capacity" style="border-bottom:1px solid #eef2f7" />
+        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Operations controls stock, preparation and forecourt capacity in the live game.</figcaption>
       </figure>
       <figure style="margin:0;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden">
-        <img class="motor-shot" src="/assets/tbs-web/motor-join-lobby.png" width="1295" height="809" loading="lazy" decoding="async" alt="Join lobby screen: the game PIN and the list of students who have joined so far" style="border-bottom:1px solid #eef2f7" />
-        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Students enter one PIN. Teams and roles appear when the session starts.</figcaption>
+        <img class="motor-shot" src="/assets/tbs-web/motor-sales-live-actual.png" width="1440" height="900" loading="lazy" decoding="async" alt="Live Motor Sales and Marketing workspace with campaign choices and evidence from earlier campaigns" style="border-bottom:1px solid #eef2f7" />
+        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Sales and Marketing chooses a vehicle line and campaign using cost and enquiry evidence.</figcaption>
       </figure>
       <figure style="margin:0;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden">
-        <img class="motor-shot" src="/assets/tbs-web/motor-firm-location.png" width="1295" height="809" loading="lazy" decoding="async" alt="Firm setup screen: a team chooses their dealership location on a London map" style="border-bottom:1px solid #eef2f7" />
-        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Each firm opens a London dealership and accepts a real cost and demand trade-off.</figcaption>
-      </figure>
-      <figure style="margin:0;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden">
-        <img class="motor-shot" src="/assets/tbs-web/motor-sales-customer-request.png" width="1309" height="818" loading="lazy" decoding="async" alt="Sales and Marketing screen: a customer request for an accessible family vehicle" style="border-bottom:1px solid #eef2f7" />
-        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Sales prices customer requests and works with other firms when stock is missing.</figcaption>
-      </figure>
-      <figure style="margin:0;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden">
-        <img class="motor-shot" src="/assets/tbs-web/motor-operations-forecourt.png" width="1295" height="809" loading="lazy" decoding="async" alt="Operations screen: the shared vehicle forecourt with stock, cost and retail price per vehicle" style="border-bottom:1px solid #eef2f7" />
-        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Operations buys, prepares and controls every vehicle on the shared forecourt.</figcaption>
-      </figure>
-      <figure style="margin:0;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden">
-        <img class="motor-shot" src="/assets/tbs-web/motor-finance-vat.png" width="1295" height="809" loading="lazy" decoding="async" alt="Finance screen: a VAT return by vehicle sold, alongside loan facilities and repayment terms" style="border-bottom:1px solid #eef2f7" />
-        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Finance manages cash, VAT, loans, investment and commercial risk.</figcaption>
-      </figure>
-      <figure style="margin:0;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden">
-        <img class="motor-shot" src="/assets/tbs-web/motor-live-chart.png" width="1295" height="809" loading="lazy" decoding="async" alt="Live lesson screen: a net position bar chart ranking all eight firms" style="border-bottom:1px solid #eef2f7" />
-        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Eight firms compete in the same market while results update across the room.</figcaption>
-      </figure>
-      <figure style="margin:0;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden">
-        <img class="motor-shot" src="/assets/tbs-web/motor-session-end.png" width="1295" height="809" loading="lazy" decoding="async" alt="Session end screen: the class result view before the top three firms are revealed" style="border-bottom:1px solid #eef2f7" />
-        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">The lesson ends with firm results, private student evidence and teacher analysis.</figcaption>
+        <img class="motor-shot" src="/assets/tbs-web/motor-finance-live-actual.png" width="1440" height="900" loading="lazy" decoding="async" alt="Live Motor Finance workspace showing the HMRC Portal and VAT filing" style="border-bottom:1px solid #eef2f7" />
+        <figcaption style="padding:13px 18px;font-size:13.5px;color:#40506e">Finance sees the firm cash and files Motor VAT through the live HMRC workspace.</figcaption>
       </figure>
     </div>
     <div style="text-align:center;margin-top:32px">
