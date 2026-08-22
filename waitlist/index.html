@@ -100,31 +100,35 @@
         </ul>
         <p style="font-size:14px;color:#65728c;margin-top:26px">No spam, ever. Your details are used only to respond. See the<a href="/data-protection/" style="color:#0a6b73;font-weight:600;text-decoration:none">data protection</a> page.</p>
       </div>
-      <form name="pilot-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/waitlist/thanks/" style="background:#fff;border:1px solid #e3e9f1;border-radius:16px;padding:28px;box-shadow:0 20px 50px -40px rgba(18,35,63,.5)">
+      <form name="pilot-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/waitlist/thanks/" onSubmit="{{ onSubmit }}" style="background:#fff;border:1px solid #e3e9f1;border-radius:16px;padding:28px;box-shadow:0 20px 50px -40px rgba(18,35,63,.5)">
         <input type="hidden" name="form-name" value="pilot-application" />
         <input type="hidden" name="submission_type" value="waitlist" />
         <input type="hidden" name="source" value="waitlist-page" />
         <p style="display:none"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:0 0 5px" for="name">Full name</label>
+        <sc-if value="{{ validationError }}">
+          <p role="alert" aria-live="assertive" style="margin:0 0 14px;padding:11px 13px;border:1px solid #b42318;border-radius:9px;background:#fff4f2;color:#912018;font-size:13.5px;font-weight:600">{{ validationError }}</p>
+        </sc-if>
+
+        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:0 0 5px" for="name">Full name *</label>
         <input id="name" type="text" name="name" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="email">School email</label>
+        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="email">School email *</label>
         <input id="email" type="email" name="email" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
 
         <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="phone">Phone or WhatsApp (optional)</label>
         <input id="phone" type="tel" name="phone" autocomplete="tel" placeholder="Optional, for a quick message when a spot opens" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
 
         <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="personal_email">Personal email</label>
-        <input id="personal_email" type="email" name="personal_email" required placeholder="Used only if school filters block replies" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
+        <input id="personal_email" type="email" name="personal_email" placeholder="Used only if school filters block replies" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="role">Your role</label>
+        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="role">Your role *</label>
         <select id="role" name="role" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select your role</option><option>Head of Business / Economics</option><option>Business Studies teacher</option><option>Sixth Form Lead / Director of Sixth Form</option><option>Curriculum Lead / Deputy Head</option><option>Headteacher / Principal</option><option>Other</option></select>
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="school">School name &amp; country</label>
+        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="school">School name &amp; country *</label>
         <input id="school" type="text" name="school" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="school_type">School type</label>
+        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="school_type">School type *</label>
         <select id="school_type" name="school_type" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select school type</option><option>State Sixth Form</option><option>Independent School / Sixth Form</option><option>State Comprehensive (11-18)</option><option>Academy / Free School (11-18)</option><option>Sixth Form College</option><option>FE College</option><option>International School</option><option>Other</option></select>
 
         <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="dept_size">Business department size <span style="font-weight:400;color:#65728c">(optional)</span></label>
@@ -148,7 +152,7 @@
         <input id="cohort" type="text" name="cohort" placeholder="e.g. Y12 + Y13, 25 students per session" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
 
         <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="it_whitelist">Can your school whitelist new domains?</label>
-        <select id="it_whitelist" name="it_whitelist" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select one</option><option>Yes - we whitelist on request</option><option>No - we use a strict filter</option><option>Don't know - would need to ask IT</option></select>
+        <select id="it_whitelist" name="it_whitelist" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select one</option><option>Yes - we whitelist on request</option><option>No - we use a strict filter</option><option>Don't know - would need to ask IT</option></select>
 
         <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="referral">How did you hear about us? <span style="font-weight:400;color:#65728c">(optional)</span></label>
         <select id="referral" name="referral" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select one</option><option>Facebook group</option><option>LinkedIn (post or message)</option><option>Email</option><option>Recommended by a colleague</option><option>Google search</option><option>Other</option></select>
@@ -184,12 +188,28 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 class Component extends DCLogic {
-  state = { submitted: false };
+  state = { validationError: "" };
   renderVals() {
     return {
-      submitted: this.state.submitted,
-      notSubmitted: !this.state.submitted,
-      onSubmit: (e) => { e.preventDefault(); this.setState({ submitted: true }); },
+      validationError: this.state.validationError,
+      onSubmit: (e) => {
+        const form = e.currentTarget;
+        const requiredFields = [
+          { field: form.elements.name, message: "Please enter your full name." },
+          { field: form.elements.email, message: "Please enter your school email." },
+          { field: form.elements.role, message: "Please select your role." },
+          { field: form.elements.school, message: "Please enter your school name and country." },
+          { field: form.elements.school_type, message: "Please select your school type." },
+        ];
+        let invalid = requiredFields.find(({ field }) => !field || !field.value.trim());
+        if (!invalid && !form.elements.email.validity.valid) {
+          invalid = { field: form.elements.email, message: "Please enter a valid school email address." };
+        }
+        if (invalid) {
+          e.preventDefault();
+          this.setState({ validationError: invalid.message }, () => invalid.field && invalid.field.focus());
+        }
+      },
     };
   }
 }
