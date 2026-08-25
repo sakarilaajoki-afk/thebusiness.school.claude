@@ -156,6 +156,47 @@
         <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="notes">Anything you'd like us to know?</label>
         <textarea id="notes" name="notes" style="width:100%;min-height:84px;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"></textarea>
 
+        <fieldset style="border:1px solid #e3e9f1;border-radius:11px;background:#f6f8fb;margin:20px 0 0;padding:16px 18px 14px">
+          <legend style="font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#0a6b73;padding:0 6px">Two things we ask back</legend>
+          <p style="font-size:13.5px;color:#40506e;margin:0 0 11px">Places are limited, so they go to people who will actually use them. Both of these are small, and we will hold you to them.</p>
+          <label style="display:flex;gap:9px;align-items:flex-start;font-size:14px;color:#16233f;margin-bottom:9px;cursor:pointer">
+            <input type="checkbox" name="commitment" value="Will run a session with a class" required style="margin-top:3px;flex:0 0 auto" />
+            <span>I will run at least one session with a real class, not only click through it on my own.</span>
+          </label>
+          <label style="display:flex;gap:9px;align-items:flex-start;font-size:14px;color:#16233f;cursor:pointer">
+            <input type="checkbox" name="commitment" value="Will send feedback afterwards" required style="margin-top:3px;flex:0 0 auto" />
+            <span>I will send one honest paragraph afterwards, including the parts that did not work.</span>
+          </label>
+        </fieldset>
+
+        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="readiness">How soon could you run it?</label>
+        <select id="readiness" name="readiness" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select one</option><option>Within a month of a place opening</option><option>This academic year</option><option>Next academic year</option><option>Not sure yet</option></select>
+
+        <script>
+          /* The template renderer strips the required attribute off every field,
+             so the form would submit completely empty and did. Restore it as a
+             property after the render, and keep re-applying because the render
+             runs again after this script first fires. The two commitment boxes
+             are the reason this matters most: unchecked they are decoration. */
+          (function(){
+            var NAMES = ["commitment", "email", "it_whitelist", "name", "personal_email", "readiness", "role", "school", "school_type"];
+            function fix(){
+              var f = document.querySelector('form[name="pilot-application"]');
+              if (!f) return false;
+              var done = true;
+              NAMES.forEach(function(n){
+                var els = f.querySelectorAll('[name="' + n + '"]');
+                if (!els.length) { done = false; return; }
+                Array.prototype.forEach.call(els, function(el){ el.required = true; });
+              });
+              return done && !f.checkValidity();
+            }
+            var tries = 0;
+            var t = setInterval(function(){ if (fix() || ++tries > 25) clearInterval(t); }, 200);
+            window.addEventListener('load', fix);
+          })();
+        </script>
+
         <button type="submit" style="width:100%;justify-content:center;display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;cursor:pointer;background:#0a6b73;color:#fff;border:1px solid transparent;margin-top:18px">Join the waitlist</button>
         <p style="font-size:12.5px;color:#65728c;margin-top:14px;text-align:center">Your information is used only to contact you about the next cohort. ICO ZC133810 · UK GDPR compliant · <a href="/data-protection/" style="color:#0a6b73;font-weight:600;text-decoration:none">Privacy Policy</a></p>
       </form>
