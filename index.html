@@ -310,6 +310,10 @@
 
 <!-- INSIDE THE SIMULATION, real screenshots -->
 <style>
+.motor-film{margin:0 0 26px;background:#0e2038;border:1px solid #e3e9f1;border-radius:16px;overflow:hidden;
+  box-shadow:0 28px 60px -38px rgba(18,35,63,.45)}
+.motor-film video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0e2038}
+.motor-film figcaption{padding:18px 22px;font-size:16px;font-weight:600;color:#fff;text-align:center}
 .motor-gal-hero{margin:0 0 26px;background:#fff;border:1px solid #e3e9f1;border-radius:16px;overflow:hidden;
   box-shadow:0 28px 60px -38px rgba(18,35,63,.45)}
 .motor-gal-hero img{display:block;width:100%;height:auto;border-bottom:1px solid #eef2f7}
@@ -323,6 +327,42 @@
 </style>
 <section style="padding:78px 0">
   <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <figure class="motor-film">
+      <video id="motor-film" poster="/assets/tbs-web/motor-film-poster.jpg" preload="metadata"
+             muted autoplay loop playsinline controls
+             width="1920" height="1080"
+             aria-label="A short film of a live Motor Trade lesson, from sign in to the end of the session">
+        <source src="/assets/tbs-web/motor-film.mp4" type="video/mp4">
+        Your browser cannot play this film. <a href="/assets/tbs-web/motor-film.mp4">Download it instead</a>.
+      </video>
+      <figcaption>Just over a minute inside a live Motor Trade lesson. Sound is off, turn it on if you want it.</figcaption>
+    </figure>
+    <script>
+      /* Two things fight us here. The template renderer strips valueless muted,
+         loop and controls attributes off the video tag, and it re-renders after
+         this script first runs, wiping anything set too early. So set them as
+         properties and keep re-applying until they stick. Without muted every
+         browser refuses to autoplay, and without controls there would be no way
+         to start it by hand either. Reduced motion gets the poster and a button. */
+      (function(){
+        function setup(){
+          var v = document.getElementById("motor-film");
+          if (!v) return false;
+          var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+          v.muted = true;
+          v.controls = true;
+          v.playsInline = true;
+          v.loop = !still;
+          if (still) { v.autoplay = false; v.removeAttribute("autoplay"); v.pause(); }
+          else if (v.paused) { var p = v.play(); if (p && p.catch) { p.catch(function(){}); } }
+          return v.muted === true && v.controls === true;
+        }
+        var tries = 0;
+        var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
+        window.addEventListener("load", setup);
+      })();
+    </script>
+
     <figure class="motor-gal-hero">
       <img src="/assets/tbs-web/motor-00-entry.png" width="1920" height="1080" alt="Entry screen at play.thebusiness.school with Teacher, Student and Solo Practice" />
       <figcaption>Teacher, student or solo practice. That is the whole sign in.</figcaption>
