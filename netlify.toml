@@ -126,6 +126,15 @@
   status = 404
   force = true
 
+# The pre-redesign site is still in the repo, and publish = "." was serving it.
+# It carried a contact form that told teachers "We'll be in touch within 24 hours"
+# even when the submission failed, and published a personal email address.
+[[redirects]]
+  from = "/_legacy/*"
+  to = "/"
+  status = 404
+  force = true
+
 [[headers]]
   for = "/resources/*_varmuuskopio*"
   [headers.values]
