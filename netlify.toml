@@ -135,6 +135,22 @@
   status = 404
   force = true
 
+# The 7 May 2026 trade-show A5 flyer describes the same withdrawn retail edition:
+# an auto-graded quiz, an A* to U certificate, spec-tagged certificates, a teacher
+# CSV export for moderation and "Ofsted-ready" written evidence. None of that is
+# true of the Motor Trade Edition, its pilot pricing expired in July 2026, and no
+# page links to it, so publish = "." must not keep serving it as if it were current.
+[[redirects]]
+  from = "/flyer/*"
+  to = "/"
+  status = 404
+  force = true
+
+[[headers]]
+  for = "/flyer/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 [[headers]]
   for = "/resources/*_varmuuskopio*"
   [headers.values]
