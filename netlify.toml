@@ -88,6 +88,12 @@
   to = "/waitlist/"
   status = 301
 
+# Short link for the class briefing deck, so it can be read out loud
+[[redirects]]
+  from = "/powerpoint"
+  to = "/slides/"
+  status = 301
+
 [[redirects]]
   from = "/pilot/*"
   to = "/waitlist/:splat"
