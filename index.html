@@ -350,7 +350,7 @@
     <div style="max-width:680px;margin-bottom:40px">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">The simulation</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">Real business decisions, not a quiz</h2>
-      <p style="color:#40506e;font-size:16.5px">Up to eight firms of three or four students compete in one shared market, live. We moved the simulation from a coffee shop chain to a vehicle dealership network, because a missing product now forces a real negotiation with a competitor, not just a lower price.</p>
+      <p style="color:#40506e;font-size:16.5px">Up to eight firms of three or four students compete in one shared market, live. We moved the simulation from a coffee shop chain to a vehicle dealership network, because a missing product often means a real negotiation with a competitor, not just a lower price.</p>
     </div>
     <div style="background:#fff;border:1px solid #e3e9f1;border-radius:16px;overflow:hidden">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;padding:16px 26px;border-bottom:1px solid #eef2f7;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#65728c">
@@ -409,7 +409,7 @@
       </figure>
       <figure class="motor-gal-item">
         <img src="/assets/tbs-web/motor-05-fleet-deal.png" width="1920" height="1080" loading="lazy" decoding="async" alt="CEO deal desk with the team input table and one sealed price" />
-        <figcaption>The whole firm feeds one sealed bid.</figcaption>
+        <figcaption>The whole firm feeds the sealed bid.</figcaption>
       </figure>
       <figure class="motor-gal-item">
         <img src="/assets/tbs-web/motor-06-trade.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Trade request naming the Sales contact at a rival dealership" />
@@ -768,9 +768,9 @@ class Component extends DCLogic {
     this.tickers = [
       'Volt Motors undercut Parkside Family Cars on the EV hatchback and won the shared customer.',
       'Round 2: Scale up. Staff and sabotage are open, and a fleet tender opens halfway through.',
-      'Fleet tender: one sealed total price per firm, and the lowest price wins.',
+      'Fleet tender: each firm sends a sealed total price, and the lowest price wins.',
       'VAT returns open in the last 90 seconds of every round.',
-      'Knowledge Check: a correct answer adds £400 to the firm\'s cash, a wrong one costs £200.',
+      'Knowledge Check: ten questions in rounds 2 and 3, the same for everyone in the class.',
     ];
     this.tickCount = 0;
     this.sim = setInterval(() => {
@@ -864,7 +864,7 @@ class Component extends DCLogic {
       mechanics: [
         { title: 'Pricing & the market', body: 'Set retail prices against rival dealerships. When two firms sell the same model, the lower price wins the shared customers.', teaches: 'Price elasticity, competition and market structure' },
         { title: 'VAT & compliance', body: 'File VAT on the second hand margin scheme through an HMRC-style portal each round. Dealers pay VAT on the margin, not the sale price. Unfiled VAT stays on the books and lowers the firm\'s net position until it is paid.', teaches: 'Taxation, cash flow and the role of the state' },
-        { title: 'Boardroom deals', body: 'Trade cars with rival dealerships, agree CEO to CEO deals, and send one sealed price for a fleet tender.', teaches: 'Communication, negotiation and decision-making' },
+        { title: 'Boardroom deals', body: 'Trade cars with rival dealerships, agree CEO to CEO deals, and send a sealed price for a fleet tender.', teaches: 'Communication, negotiation and decision-making' },
         { title: 'Finance & investment', body: 'Take one of three loans with a stated finance charge, and invest spare cash in property or in funds whose prices move during the lesson.', teaches: 'Sources of finance, risk and return' },
         { title: 'Marketing & hiring', body: 'Book one of six marketing campaigns, and hire staff from round 2, each with a salary and one clear benefit.', teaches: 'The marketing mix and human resources' },
         { title: 'Crises & sabotage', body: 'In round 3 you can start a crisis that hits every firm. Firms can also pay for one sabotage per round against a rival.', teaches: 'Risk, external shocks and business strategy' },
