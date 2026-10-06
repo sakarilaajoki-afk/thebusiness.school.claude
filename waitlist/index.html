@@ -170,9 +170,9 @@
           </label>
         </fieldset>
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="readiness">When could you run your first session with a real class?</label>
+        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="readiness">When could you run your first session with a real class? <span style="font-weight:400;color:#65728c">(optional)</span></label>
         <p style="font-size:12.5px;color:#65728c;margin:0 0 6px">An approximate week or month is fine.</p>
-        <input id="readiness" type="text" name="readiness" required placeholder="e.g. week beginning 18 January 2027" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
+        <input id="readiness" type="text" name="readiness" placeholder="e.g. week beginning 18 January 2027" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
 
         <script>
           /* The template renderer strips the required attribute off every field,
@@ -181,7 +181,7 @@
              runs again after this script first fires. The two commitment boxes
              are the reason this matters most: unchecked they are decoration. */
           (function(){
-            var NAMES = ["commitment", "email", "it_whitelist", "name", "personal_email", "readiness", "role", "school", "school_type"];
+            var NAMES = ["commitment", "email", "it_whitelist", "name", "personal_email", "role", "school", "school_type"];
             function fix(){
               var f = document.querySelector('form[name="pilot-application"]');
               if (!f) return false;
