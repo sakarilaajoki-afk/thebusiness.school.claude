@@ -99,6 +99,68 @@
   to = "/waitlist/:splat"
   status = 301
 
+# Complete Year products unlisted 8 Oct 2026 (owner decision). Files stay in the repo;
+# restore by deleting these rules and the git revert of the hub change.
+[[redirects]]
+  from = "/resources/a-level-business-complete-year/*"
+  to = "/resources/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/resources/a-level-economics-the-complete-year/*"
+  to = "/resources/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/resources/gcse-business-complete-year/*"
+  to = "/resources/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/resources/igcse-economics-0455-complete-year/*"
+  to = "/resources/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/resources/complete-year/*"
+  to = "/resources/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/resources/complete-year"
+  to = "/resources/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/resources/a-level-business-complete-year"
+  to = "/resources/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/resources/a-level-economics-the-complete-year"
+  to = "/resources/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/resources/gcse-business-complete-year"
+  to = "/resources/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/resources/igcse-economics-0455-complete-year"
+  to = "/resources/"
+  status = 302
+  force = true
+
 # Working backups must never be served.
 # publish = "." means anything inside the repo goes live, so a backup folder left
 # in /resources keeps the superseded, uncorrected version of a pack publicly
