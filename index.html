@@ -9,7 +9,7 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" as="image" href="/assets/tbs-web/motor-v3-00-entry.png">
+<link rel="preload" as="image" href="/assets/tbs-web/motor-v4-00-entry.png">
 </head>
 <body>
 <x-dc>
@@ -22,7 +22,7 @@
 <meta property="og:title" content="The Business School, Live A-Level Business Simulation" />
 <meta property="og:description" content="Up to 8 student teams run rival UK firms in a live classroom simulation, with key decisions linked to Edexcel topics. Joined by a PIN. Free teacher demo." />
 <meta property="og:url" content="https://thebusiness.school/" />
-<meta property="og:image" content="https://thebusiness.school/assets/og-cover.png" />
+<meta property="og:image" content="https://thebusiness.school/assets/og-cover.png?v=20261005a" />
 <meta name="twitter:card" content="summary_large_image" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"SoftwareApplication","name":"The Business School","applicationCategory":"EducationalApplication","operatingSystem":"Web browser","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP","description":"Free teacher demo"},"description":"A live multiplayer classroom business simulation for UK A-Level, BTEC and IGCSE Business, with key decisions linked to Edexcel topics.","publisher":{"@type":"Organization","name":"TBS Education Ltd Oy","identifier":"3614159-3","url":"https://thebusiness.school"}}
@@ -380,62 +380,68 @@
   box-shadow:0 18px 40px -32px rgba(18,35,63,.36);display:flex;flex-direction:column}
 .motor-gal-item img{display:block;width:100%;height:auto;border-bottom:1px solid #eef2f7}
 .motor-gal-item figcaption{padding:14px 18px 16px;font-size:14.5px;line-height:1.45;color:#0e2038;font-weight:500}
-@media(max-width:860px){.motor-gal{grid-template-columns:minmax(0,1fr);gap:18px}}
+.motor-gal-item:last-child:nth-child(odd){grid-column:1/-1;justify-self:center;width:calc(50% - 11px)}
+@media(max-width:860px){.motor-gal{grid-template-columns:minmax(0,1fr);gap:18px}
+  .motor-gal-item:last-child:nth-child(odd){width:auto;justify-self:stretch}}
 </style>
 <section style="padding:78px 0">
   <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
 
     <figure class="motor-gal-hero">
-      <img src="/assets/tbs-web/motor-v3-00-entry.png" width="1920" height="1080" alt="Entry screen at play.thebusiness.school with the Teacher, Student and Teacher Demo choices" />
+      <img src="/assets/tbs-web/motor-v4-00-entry.png" width="1920" height="1080" alt="Entry screen at play.thebusiness.school with the Teacher, Student and Teacher Demo choices" />
       <figcaption>Teacher, student or a guided walkthrough. That is the whole sign in.</figcaption>
     </figure>
 
     <div class="motor-gal">
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-02-lobby.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Join lobby showing the game PIN and the students who have joined the room" />
+        <img src="/assets/tbs-web/motor-v4-01-lobby.png" width="1920" height="1080" loading="lazy" decoding="async" alt="The teacher's waiting room with the game PIN at the top and the names of the students who have joined" />
         <figcaption>From 6 to 32 students in the room, joined with one PIN.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-v3-01-setup.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Teacher session setup with the course, the year group and the minutes per round" />
+        <img src="/assets/tbs-web/motor-v4-02-setup.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Teacher session setup with the course, the year group and the minutes per round" />
         <figcaption>You pick the course, the year group and how long each round runs.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-v3-03-forecourt.png" width="1920" height="1080" loading="lazy" decoding="async" alt="The firm stock page with six of ten vehicle spaces used" />
+        <img src="/assets/tbs-web/motor-v4-03-tutorial.png" width="1920" height="1080" loading="lazy" decoding="async" alt="The first tutorial slide on a Sales and Marketing student's screen: a guide in a suit explains that Do now shows your next task, with Skip tutorial and Next buttons" />
+        <figcaption>Each student starts with a short tutorial for their own role.</figcaption>
+      </figure>
+      <figure class="motor-gal-item">
+        <img src="/assets/tbs-web/motor-v4-04-stock.png" width="1920" height="1080" loading="lazy" decoding="async" alt="The firm stock page with six of ten vehicle spaces used" />
         <figcaption>Real vehicles, real space limits.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-v3-04-trade.png" width="1920" height="1080" loading="lazy" decoding="async" alt="A Do now card for buying a used hatchback from another dealer, waiting for a rival firm to send a price" />
+        <img src="/assets/tbs-web/motor-v4-05-trade.png" width="1920" height="1080" loading="lazy" decoding="async" alt="A Do now card: a fleet customer needs two 4x4 SUVs, the firm has none in stock and waits for a rival dealer to send a price" />
         <figcaption>A missing car means asking a rival firm for a price.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-v3-05-marketing.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Marketing page with campaigns from paid search to launch weekend and their prices" />
+        <img src="/assets/tbs-web/motor-v4-06-marketing.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Marketing page with campaigns from paid search to a motoring magazine feature, each with its price and its bonus on the firm's next sales" />
         <figcaption>Sales and Marketing books one campaign a round.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-v3-06-staff.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Staff page where the CEO can hire specialists for a round" />
+        <img src="/assets/tbs-web/motor-v4-07-staff.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Staff page where the CEO can hire specialists for a round" />
         <figcaption>The CEO can hire staff from round 2, each for one round.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-v3-07-finance-vat.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Finance page with the VAT return on the second hand margin scheme and the loans below it" />
+        <img src="/assets/tbs-web/motor-v4-08-finance-vat.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Finance page with the VAT return on the second-hand margin scheme and the three loans below it" />
         <figcaption>Finance files the VAT return and takes the loans.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-v3-09-investments.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Investments page with a live price chart for a fund" />
+        <img src="/assets/tbs-web/motor-v4-09-investments.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Investments page with a price chart for a fund and three property investments" />
         <figcaption>Spare cash can work, or it can fall.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-v3-10-sabotage.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Sabotage page with four costed actions and a target firm" />
+        <img src="/assets/tbs-web/motor-v4-10-sabotage.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Sabotage page with four costed actions and a target firm" />
         <figcaption>One costed attack per round, and the target firm finds out.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/motor-v3-11-teacher.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Teacher page with the net position of every firm, pause and stop buttons" />
+        <img src="/assets/tbs-web/motor-v4-11-teacher.png" width="1920" height="1080" loading="lazy" decoding="async" alt="Teacher page with the net position and logo of every firm, pause and stop buttons" />
         <figcaption>The whole class on one page, with pause and stop one click away.</figcaption>
       </figure>
     </div>
 
     <div style="text-align:center;margin-top:40px">
       <a href="https://play.thebusiness.school/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:14px 28px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent">Try the Teacher Demo, play.thebusiness.school</a>
-      <p style="font-size:13.5px;color:#65728c;margin-top:13px">The Teacher Demo shows the real game in six steps. Free, no PIN, no licence.</p>
+      <p style="font-size:13.5px;color:#65728c;margin-top:13px">The Teacher Demo shows the real game in seven steps. Free, no PIN, no licence.</p>
     </div>
 
 
