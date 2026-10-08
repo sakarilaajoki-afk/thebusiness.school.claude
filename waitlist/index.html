@@ -1,241 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-<script src="/support.js"></script>
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta property="og:type" content="website">
-<meta property="og:description" content="Our autumn pilot is full. Join the waitlist for the next round and we'll be in touch when places open. Or try the demo now at play.thebusiness.school.">
-<meta property="og:image" content="https://thebusiness.school/assets/og-cover.png?v=20261006a">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:site_name" content="The Business School">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://thebusiness.school/assets/og-cover.png?v=20261006a">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e2038">
+  <title>Join the waitlist | The Business School</title>
+  <meta name="description" content="Bring your next Business lesson to life. Join the waitlist for The Business School's live classroom simulation.">
+  <link rel="canonical" href="https://thebusiness.school/waitlist/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Join the waitlist | The Business School">
+  <meta property="og:description" content="Bring your next Business lesson to life. Join the waitlist for our live classroom simulation.">
+  <meta property="og:url" content="https://thebusiness.school/waitlist/">
+  <meta property="og:image" content="https://thebusiness.school/assets/og-cover.png?v=20261006b">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/waitlist/style.css">
 </head>
 <body>
-<x-dc>
-<helmet>
-<title>Join the waitlist | The Business School</title>
-<meta name="description" content="Our autumn pilot is full. Join the waitlist for the next round and we'll be in touch when places open. Or try the demo now at play.thebusiness.school." />
-<link rel="canonical" href="https://thebusiness.school/waitlist/" />
-<meta property="og:title" content="Join the waitlist | The Business School" />
-<meta property="og:url" content="https://thebusiness.school/waitlist/" />
-<link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{-webkit-font-smoothing:antialiased;overflow-x:hidden}</style>
-</helmet>
-<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
-
-<header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
-    <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
-      <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
-        <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
-      </a>
-      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
-        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
-          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
-          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
-          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
-          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
-          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
-          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a><a href="/about/" style="color:inherit;text-decoration:none;white-space:nowrap">About</a>
-        </div>
-        <div style="display:flex;gap:10px;align-items:center">
-          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
-          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
-        </div>
-      </sc-if>
-      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
-        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
-          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </sc-if>
-          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </sc-if>
-        </button>
-      </sc-if>
-    </nav>
-  </div>
-  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
-      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
-      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
-      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
-      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
-      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
-      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a><a href="/about/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">About</a>
-      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
-      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="/"><span class="logo" aria-hidden="true">TBS</span>The Business School</a>
+      <nav aria-label="Main navigation">
+        <a href="/for-teachers/">For Teachers</a>
+        <a href="/for-heads/">For Heads</a>
+        <a href="/resources/">Resources</a>
+        <a class="nav-cta" href="#application">Join the waitlist</a>
+      </nav>
     </div>
-  </sc-if>
-</header>
+  </header>
 
-
-<section style="background:#0e2038;color:#fff;padding:60px 0 66px">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
-    <div style="display:inline-flex;align-items:center;gap:9px;margin-bottom:16px;padding:7px 14px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.06);font-size:12.5px;font-weight:600;color:#c9d5e8"><span style="width:7px;height:7px;border-radius:50%;background:#f0b53d;display:inline-block"></span>Autumn 2026 pilot cohort, full (30/30 schools). Waitlist open for the next round.</div>
-    <div style="font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7fe0d7;margin:0 0 12px">Live classroom simulation for A-Level and BTEC Business</div>
-    <h1 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(32px,4.4vw,50px);line-height:1.12;letter-spacing:-.015em;margin:0 0 16px;max-width:760px">Join the waitlist.</h1>
-    <p style="font-size:clamp(16px,1.5vw,18.5px);color:#c9d5e8;max-width:600px">The Business School runs live in one lesson: your class competes as rival firms, joining by a six digit PIN, with nothing to install, joining with a nickname they choose. Join the waitlist for the next round and we will be in touch when places open.</p>
-    <p style="font-size:14px;color:#8ea3c4;margin-top:12px">Or try the demo now: <a href="https://play.thebusiness.school/" style="color:#7fe0d7;font-weight:600;text-decoration:none">play.thebusiness.school</a></p>
-  </div>
-</section>
-
-<section style="padding:56px 0 78px">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:44px;align-items:start">
-      <div>
-        <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(22px,2.6vw,28px);color:#0e2038;line-height:1.15;margin-bottom:16px">What happens next</h2>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:16px">
-          <li style="display:flex;gap:12px;font-size:15.5px;color:#40506e"><span style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0a6b73;font-size:20px;line-height:1">1</span><span>You're on the list, and we'll be in touch as soon as places open in the next round.</span></li>
-          <li style="display:flex;gap:12px;font-size:15.5px;color:#40506e"><span style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0a6b73;font-size:20px;line-height:1">2</span><span>Meanwhile, try the demo at <a href="https://play.thebusiness.school/" style="color:#0a6b73;font-weight:600;text-decoration:none">play.thebusiness.school</a>. Nothing to install, no student sign-ups.</span></li>
-          <li style="display:flex;gap:12px;font-size:15.5px;color:#40506e"><span style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0a6b73;font-size:20px;line-height:1">3</span><span>If it fits, extend it to a free department pilot and request a per-school or per-MAT quote.</span></li>
-        </ul>
-        <p style="font-size:14px;color:#65728c;margin-top:26px">No spam, ever. Your details are used only to respond. See the<a href="/data-protection/" style="color:#0a6b73;font-weight:600;text-decoration:none">data protection</a> page.</p>
+  <main class="map-page">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Live classroom simulation · waitlist open</p>
+          <h1 id="hero-title">Bring your next Business lesson to life.</h1>
+          <p class="hero-copy">6–32 students run rival motor dealerships in one live lesson. They set prices, manage stock and respond to what competing firms do. Students join with a PIN; there’s nothing to install.</p>
+          <a class="more-link" href="/">See how it works <span aria-hidden="true">→</span></a>
+          <figure class="testimonial">
+            <blockquote>“Students really enjoyed the game.”</blockquote>
+            <figcaption>Lyn Pryde · Gulf English School, Kuwait</figcaption>
+          </figure>
+        </div>
+        <figure class="film">
+          <video controls playsinline preload="none" poster="/assets/tbs-web/motor-film-poster.jpg" aria-label="Short film of the live Motor Trade classroom simulation">
+            <source src="/assets/tbs-web/motor-film.mp4" type="video/mp4">
+            <a href="/">See the simulation on our website</a>.
+          </video>
+          <figcaption>A short look at the live classroom simulation</figcaption>
+        </figure>
       </div>
-      <form name="pilot-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/waitlist/thanks/" style="background:#fff;border:1px solid #e3e9f1;border-radius:16px;padding:28px;box-shadow:0 20px 50px -40px rgba(18,35,63,.5)">
-        <input type="hidden" name="form-name" value="pilot-application" />
-        <input type="hidden" name="submission_type" value="waitlist" />
-        <input type="hidden" name="source" value="waitlist-page" />
-        <p style="display:none"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+    </section>
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:0 0 5px" for="name">Full name</label>
-        <input id="name" type="text" name="name" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
+    <section class="application-section" aria-labelledby="application-title">
+      <div class="wrap">
+        <form id="application" name="pilot-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/waitlist/thanks/" class="application-form">
+          <input type="hidden" name="form-name" value="pilot-application">
+          <input type="hidden" name="submission_type" value="waitlist">
+          <input type="hidden" name="source" value="waitlist-page">
+          <p class="honeypot"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="email">School email</label>
-        <input id="email" type="email" name="email" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
-
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="phone">Phone or WhatsApp (optional)</label>
-        <input id="phone" type="tel" name="phone" autocomplete="tel" placeholder="Optional, for a quick message when a spot opens" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
-
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="personal_email">Personal email</label>
-        <input id="personal_email" type="email" name="personal_email" required placeholder="Used only if school filters block replies" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
-
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="role">Your role</label>
-        <select id="role" name="role" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select your role</option><option>Head of Business / Economics</option><option>Business Studies teacher</option><option>Sixth Form Lead / Director of Sixth Form</option><option>Curriculum Lead / Deputy Head</option><option>Headteacher / Principal</option><option>Other</option></select>
-
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="school">School name &amp; country</label>
-        <input id="school" type="text" name="school" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
-
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="school_type">School type</label>
-        <select id="school_type" name="school_type" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select school type</option><option>State Sixth Form</option><option>Independent School / Sixth Form</option><option>State Comprehensive (11-18)</option><option>Academy / Free School (11-18)</option><option>Sixth Form College</option><option>FE College</option><option>International School</option><option>Other</option></select>
-
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="dept_size">Business department size <span style="font-weight:400;color:#65728c">(optional)</span></label>
-        <input id="dept_size" type="text" name="dept_size" placeholder="e.g. 3 teachers, 120 Business students" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
-
-        <fieldset style="border:0;margin:12px 0 0;padding:0">
-          <legend style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:0 0 7px">Exam board(s) you teach <span style="font-weight:400;color:#65728c">(optional)</span></legend>
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px 12px;font-size:13.5px;color:#40506e">
-            <label><input type="checkbox" name="boards" value="AQA 7132" /> AQA 7132</label>
-            <label><input type="checkbox" name="boards" value="Edexcel 9BS0" /> Edexcel 9BS0</label>
-            <label><input type="checkbox" name="boards" value="OCR H431" /> OCR H431</label>
-            <label><input type="checkbox" name="boards" value="BTEC Business" /> BTEC Business</label>
-            <label><input type="checkbox" name="boards" value="IB Business Management" /> IB Business</label>
-            <label><input type="checkbox" name="boards" value="Cambridge IGCSE 0450" /> Cambridge IGCSE</label>
-            <label><input type="checkbox" name="boards" value="GCSE Business" /> GCSE Business</label>
-            <label><input type="checkbox" name="boards" value="Other" /> Other</label>
+          <h2 id="application-title">Join the waitlist</h2>
+          <p class="form-lead">For Business teachers and school leaders planning a class session. Joining is free and is not a purchase; we’ll explain any licence terms before you decide to proceed.</p>
+          <div class="fields">
+            <div class="field"><label for="full-name">Full name *</label><input id="full-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="school-email">School email *</label><input id="school-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="field"><label for="role">Your role *</label><select id="role" name="role" required><option value="">Select your role</option><option>Business teacher</option><option>Head of Business / Economics</option><option>Curriculum Lead / school leader</option><option>Other</option></select></div>
+            <div class="field"><label for="school">School and country *</label><input id="school" name="school" autocomplete="organization" required></div>
+            <div class="field full"><label for="personal-email">Alternative email (optional)</label><input id="personal-email" name="personal_email" type="email" placeholder="If your school filters outside email"></div>
           </div>
-        </fieldset>
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="cohort">Year groups + estimated students per session <span style="font-weight:400;color:#65728c">(optional)</span></label>
-        <input id="cohort" type="text" name="cohort" placeholder="e.g. Y12 + Y13, 25 students per session" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
+          <h3 class="section-title">Your class</h3>
+          <div class="fields">
+            <fieldset class="field full" id="qualification-group"><legend>Qualification(s) you teach *</legend><div class="checks">
+              <label class="check"><input type="checkbox" name="qualification" value="A-level Business">A-level Business</label>
+              <label class="check"><input type="checkbox" name="qualification" value="GCSE Business">GCSE Business</label>
+              <label class="check"><input type="checkbox" name="qualification" value="BTEC Business">BTEC Business</label>
+              <label class="check"><input type="checkbox" name="qualification" value="Cambridge IGCSE Business">Cambridge IGCSE Business</label>
+              <label class="check"><input type="checkbox" name="qualification" value="IB Business Management">IB Business Management</label>
+              <label class="check"><input type="checkbox" name="qualification" value="Other">Other</label>
+            </div><p class="field-error" id="qualification-error" role="alert" hidden>Please choose at least one qualification.</p></fieldset>
+            <div class="field"><label for="exam-board">Exam board or specification (optional)</label><input id="exam-board" name="exam_board" placeholder="For example, Edexcel 9BS0"></div>
+            <div class="field"><label for="year-group">Year group / learner age *</label><input id="year-group" name="year_group" placeholder="For example, Year 12 / age 16–17" required></div>
+            <div class="field"><label for="class-size">Typical class size (optional)</label><input id="class-size" name="class_size" placeholder="An estimate is fine, e.g. 20–25"></div>
+            <div class="field"><label for="timing">When could you run a session? (optional)</label><select id="timing" name="timing"><option value="">Choose one</option><option>Within 2 weeks of access</option><option>Within a month of access</option><option>Later this term</option><option>Not sure yet</option></select></div>
+            <div class="field full"><label for="referral">How did you hear about us? (optional)</label><select id="referral" name="referral"><option value="">Choose one</option><option>Another teacher</option><option>Facebook group</option><option>LinkedIn</option><option>Search</option><option>Email</option><option>Other</option></select></div>
+          </div>
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="it_whitelist">Can your school whitelist new domains?</label>
-        <select id="it_whitelist" name="it_whitelist" required style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select one</option><option>Yes - we whitelist on request</option><option>No - we use a strict filter</option><option>Don't know - would need to ask IT</option></select>
+          <h3 class="section-title">Your classroom plan</h3>
+          <p class="commit-note">A genuine classroom plan helps us offer access to schools ready to use it.</p>
+          <div class="commitments">
+            <label class="check"><input type="checkbox" name="classroom_intent" value="yes" required>My school intends to try the simulation with a class when access is available.</label>
+            <label class="check"><input type="checkbox" name="feedback_opt_in" value="yes">I’d be happy to share brief feedback afterwards (optional).</label>
+          </div>
+          <button type="submit" class="button">Join the waitlist</button>
+          <p class="micro">We’ll use these details to contact you about classroom access. <a href="/data-protection/">Privacy information</a>.</p>
+        </form>
 
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="referral">How did you hear about us? <span style="font-weight:400;color:#65728c">(optional)</span></label>
-        <select id="referral" name="referral" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"><option value="">Select one</option><option>Facebook group</option><option>LinkedIn (post or message)</option><option>Email</option><option>Recommended by a colleague</option><option>Google search</option><option>Other</option></select>
-
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:12px 0 5px" for="notes">Anything you'd like us to know?</label>
-        <textarea id="notes" name="notes" style="width:100%;min-height:84px;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f"></textarea>
-
-        <fieldset style="border:1px solid #e3e9f1;border-radius:11px;background:#f6f8fb;margin:20px 0 0;padding:16px 18px 14px">
-          <legend style="font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#0a6b73;padding:0 6px">Two things we ask back</legend>
-          <p style="font-size:13.5px;color:#40506e;margin:0 0 11px">Places are limited, so they go to people who will actually use them. Both of these are small, and we will hold you to them.</p>
-          <label style="display:flex;gap:9px;align-items:flex-start;font-size:14px;color:#16233f;margin-bottom:9px;cursor:pointer">
-            <input type="checkbox" name="commitment" value="Will run a session with a class" required style="margin-top:3px;flex:0 0 auto" />
-            <span>I will run at least one session with a real class, not only click through it on my own.</span>
-          </label>
-          <label style="display:flex;gap:9px;align-items:flex-start;font-size:14px;color:#16233f;cursor:pointer">
-            <input type="checkbox" name="commitment" value="Will send feedback afterwards" required style="margin-top:3px;flex:0 0 auto" />
-            <span>I will send one honest paragraph afterwards, including the parts that did not work.</span>
-          </label>
-        </fieldset>
-
-        <label style="display:block;font-size:12.5px;font-weight:600;color:#40506e;margin:14px 0 5px" for="readiness">When could you run your first session with a real class? <span style="font-weight:400;color:#65728c">(optional)</span></label>
-        <p style="font-size:12.5px;color:#65728c;margin:0 0 6px">An approximate week or month is fine.</p>
-        <input id="readiness" type="text" name="readiness" placeholder="e.g. week beginning 18 January 2027" style="width:100%;padding:12px 13px;border:1px solid #e3e9f1;border-radius:9px;font-family:'Inter',sans-serif;font-size:15px;color:#16233f" />
-
-        <script>
-          /* The template renderer strips the required attribute off every field,
-             so the form would submit completely empty and did. Restore it as a
-             property after the render, and keep re-applying because the render
-             runs again after this script first fires. The two commitment boxes
-             are the reason this matters most: unchecked they are decoration. */
-          (function(){
-            var NAMES = ["commitment", "email", "it_whitelist", "name", "personal_email", "role", "school", "school_type"];
-            function fix(){
-              var f = document.querySelector('form[name="pilot-application"]');
-              if (!f) return false;
-              var done = true;
-              NAMES.forEach(function(n){
-                var els = f.querySelectorAll('[name="' + n + '"]');
-                if (!els.length) { done = false; return; }
-                Array.prototype.forEach.call(els, function(el){ el.required = true; });
-              });
-              return done && !f.checkValidity();
-            }
-            var tries = 0;
-            var t = setInterval(function(){ if (fix() || ++tries > 25) clearInterval(t); }, 200);
-            window.addEventListener('load', fix);
-          })();
-        </script>
-
-        <button type="submit" style="width:100%;justify-content:center;display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;cursor:pointer;background:#0a6b73;color:#fff;border:1px solid transparent;margin-top:18px">Join the waitlist</button>
-        <p style="font-size:12.5px;color:#65728c;margin-top:14px;text-align:center">Your information is used only to contact you about the next cohort. ICO ZC133810 · UK GDPR compliant · <a href="/data-protection/" style="color:#0a6b73;font-weight:600;text-decoration:none">Privacy Policy</a></p>
-      </form>
-    </div>
-  </div>
-</section>
-
-
-<footer style="border-top:1px solid #e3e9f1;padding:44px 0;color:#65728c;font-size:13.5px;background:#f6f8fb;font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
-    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:26px">
-      <div>
-        <a href="/" style="display:flex;align-items:center;gap:11px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:16px;color:#0e2038;text-decoration:none"><span style="width:32px;height:32px;border-radius:8px;background:#0e2038;color:#fff;display:grid;place-items:center;font-family:'Inter',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em">TBS</span> The Business School</a>
-        <div style="font-size:12.5px;color:#65728c;margin-top:12px">TBS Education Ltd Oy · company number 3614159-3 · ICO registration ZC133810 · thebusiness.school</div>
+        <div class="followup"><h2>What happens next?</h2><p>We’ll email you within 48 hours from <a href="mailto:support@thebusiness.school">support@thebusiness.school</a>. If you haven’t heard from us by then, please check your junk folder. You can also join our <a href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener noreferrer">Facebook group for Business teachers</a>.</p></div>
       </div>
-      <div style="display:flex;gap:38px;flex-wrap:wrap">
-        <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a><a href="/about/" style="color:#40506e;text-decoration:none">About</a><a href="/contact/" style="color:#40506e;text-decoration:none">Contact</a></div>
-        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Waitlist</a></div>
-        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/refunds/" style="color:#40506e;text-decoration:none">Refund policy</a><a href="/privacy/" style="color:#40506e;text-decoration:none">Privacy</a><a href="/terms/" style="color:#40506e;text-decoration:none">Terms</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script>
-class Component extends DCLogic {
-  state = { submitted: false };
-  renderVals() {
-    return {
-      submitted: this.state.submitted,
-      notSubmitted: !this.state.submitted,
-      onSubmit: (e) => { e.preventDefault(); this.setState({ submitted: true }); },
-    };
-  }
-}
-</script>
+    </section>
+  </main>
+  <footer><div class="wrap">The Business School · TBS Education Ltd Oy</div></footer>
+  <script>
+    const form = document.getElementById('application');
+    const qualificationError = document.getElementById('qualification-error');
+    function checkQualifications() {
+      const chosen = !!form.querySelector('input[name="qualification"]:checked');
+      qualificationError.hidden = chosen;
+      document.getElementById('qualification-group').setAttribute('aria-invalid', String(!chosen));
+      return chosen;
+    }
+    form.addEventListener('submit', function (event) {
+      if (!checkQualifications()) {
+        event.preventDefault();
+        qualificationError.scrollIntoView({ block: 'center' });
+      }
+    });
+    form.querySelectorAll('input[name="qualification"]').forEach(function (input) {
+      input.addEventListener('change', function () { if (form.querySelector('input[name="qualification"]:checked')) qualificationError.hidden = true; });
+    });
+  </script>
 </body>
 </html>
