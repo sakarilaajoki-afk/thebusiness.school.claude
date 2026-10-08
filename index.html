@@ -130,7 +130,7 @@
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
             <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent" style-hover="background:#075158">Join the waitlist</a>
             <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff" style-hover="background:rgba(255,255,255,.18)">I lead a department</a>
-            <a href="#newsims" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;background:transparent;border:1px solid rgba(255,217,160,.5);color:#ffd9a0" style-hover="border-color:#ffd9a0">See what's new &darr;</a>
+            <a href="#newsims" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;background:transparent;border:1px solid rgba(255,217,160,.5);color:#ffd9a0" style-hover="border-color:#ffd9a0">See what's coming &darr;</a>
           </div>
           <p style="margin-top:15px;font-size:13.5px;color:#8fa1bf">Or try the demo now: <a href="https://play.thebusiness.school/" style="color:#7fe0d7;font-weight:600;text-decoration:none">play.thebusiness.school</a></p>
           <div style="margin-top:26px;display:flex;gap:30px;flex-wrap:wrap;font-size:13.5px;color:#c9d5e8">
@@ -683,32 +683,33 @@
 .newsims .nscard--wip::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.34),rgba(231,241,242,.62) 52%,rgba(255,255,255,.42));backdrop-filter:blur(2.5px);-webkit-backdrop-filter:blur(2.5px)}
 .newsims .nsstatus{position:relative;z-index:2;margin-top:auto;display:inline-flex;align-self:flex-start;font-family:'Roboto Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;font-weight:700;letter-spacing:.08em;color:#075158;background:rgba(230,241,242,.92);border:1px solid rgba(10,107,115,.25);border-radius:999px;padding:8px 12px;box-shadow:0 8px 24px rgba(14,32,56,.08)}
 @media(prefers-reduced-motion:reduce){.newsims .nscard{animation:none;opacity:1;transform:none}}
+.newsims .nssolo .nsstage{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0e2038;border-bottom:1px solid #e9eef5}
+.newsims .nssolo .nsstage img{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;filter:blur(7px) saturate(1.05);aspect-ratio:auto;border:0}
+.newsims .nssolo .nsstage::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,56,.30),rgba(14,32,56,.62))}
+.newsims .nsload{position:absolute;z-index:2;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:14px}
+.newsims .nsload i{width:58px;height:58px;border-radius:50%;border:4px solid rgba(255,255,255,.28);border-top-color:#fff;animation:nsspin 1.1s linear infinite}
+.newsims .nsload b{font-family:'Roboto Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(10,107,115,.92);border-radius:999px;padding:8px 16px;box-shadow:0 10px 30px -8px rgba(0,0,0,.6)}
+@keyframes nsspin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.newsims .nsload i{animation:none}}
+
 </style>
 <section class="newsims" id="newsims">
   <div class="nsbg"></div>
   <div class="nsscrim"></div>
   <div class="nsmelt"></div>
   <div class="nsinner">
-    <span class="nseyebrow">New &middot; two solo sims</span>
-    <h2>Two new ways to run it. One student, one caf&eacute;.</h2>
-    <p class="nssub">The live sim above is your whole class competing in one lesson. These two are solo: one student, one caf&eacute;, and every decision defended in their own words.</p>
-    <div class="nscards">
-      <div class="nscard">
-        <img src="/assets/tbs-web/card-lesson.jpg" alt="Founder's Hour, the one-lesson sim" loading="lazy">
-        <div class="nsbody">
-          <div class="nsk">One lesson &middot; 60 to 75 min</div>
-          <h3>Found a caf&eacute;. Survive its first year.</h3>
-          <p>Vic, our AI mentor, coaches every answer to exam standard. You confirm the grade.</p>
-          <a class="nscta" href="https://lesson.thebusiness.school/">Try Founder's Hour &rarr;</a>
+    <span class="nseyebrow">New solo sim coming</span>
+    <h2>Solo mode is coming to the game too.</h2>
+    <div class="nscards" style="grid-template-columns:minmax(280px,520px)">
+      <div class="nscard nssolo">
+        <div class="nsstage" aria-hidden="true">
+          <img src="/assets/tbs-web/motor-v4-04-stock.png" alt="" loading="lazy">
+          <span class="nsload"><i></i><b>In progress</b></span>
         </div>
-      </div>
-      <div class="nscard nscard--wip">
-        <img src="/assets/tbs-web/card-build.jpg" alt="Founder Mode, the five-day campaign" loading="lazy">
         <div class="nsbody">
-          <div class="nsk">Five short sessions &middot; one week</div>
-          <h3>Found a company. Then run it for three years.</h3>
-          <p>Coming soon</p>
-          <span class="nsstatus">In progress</span>
+          <div class="nsk">Solo mode</div>
+          <h3>One student, on their own</h3>
+          <p>Coming soon.</p>
         </div>
       </div>
     </div>
