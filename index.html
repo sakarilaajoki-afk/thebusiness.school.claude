@@ -683,6 +683,14 @@
 .newsims .nscard--wip::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.34),rgba(231,241,242,.62) 52%,rgba(255,255,255,.42));backdrop-filter:blur(2.5px);-webkit-backdrop-filter:blur(2.5px)}
 .newsims .nsstatus{position:relative;z-index:2;margin-top:auto;display:inline-flex;align-self:flex-start;font-family:'Roboto Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-size:10.5px;font-weight:700;letter-spacing:.08em;color:#075158;background:rgba(230,241,242,.92);border:1px solid rgba(10,107,115,.25);border-radius:999px;padding:8px 12px;box-shadow:0 8px 24px rgba(14,32,56,.08)}
 @media(prefers-reduced-motion:reduce){.newsims .nscard{animation:none;opacity:1;transform:none}}
+.newsims .nssolo .nsstage{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0e2038;border-bottom:1px solid #e9eef5}
+.newsims .nssolo .nsstage img{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;filter:blur(7px) saturate(1.05);aspect-ratio:auto;border:0}
+.newsims .nssolo .nsstage::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,56,.30),rgba(14,32,56,.62))}
+.newsims .nsplay{position:absolute;z-index:2;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(10,107,115,.92);box-shadow:0 14px 40px -8px rgba(0,0,0,.6);padding-left:4px}
+.newsims .nsplay::before{content:"";position:absolute;inset:-9px;border-radius:50%;border:2px solid rgba(255,255,255,.55);animation:nspulse 2.4s ease-out infinite}
+@keyframes nspulse{0%{transform:scale(.88);opacity:.9}100%{transform:scale(1.5);opacity:0}}
+@media(prefers-reduced-motion:reduce){.newsims .nsplay::before{animation:none;opacity:.5}}
+
 </style>
 <section class="newsims" id="newsims">
   <div class="nsbg"></div>
@@ -691,8 +699,12 @@
   <div class="nsinner">
     <span class="nseyebrow">New solo sim coming</span>
     <h2>Solo mode is coming to the game too.</h2>
-    <div class="nscards" style="grid-template-columns:minmax(280px,400px)">
-      <div class="nscard">
+    <div class="nscards" style="grid-template-columns:minmax(280px,520px)">
+      <div class="nscard nssolo">
+        <div class="nsstage" aria-hidden="true">
+          <img src="/assets/tbs-web/motor-v4-04-stock.png" alt="" loading="lazy">
+          <span class="nsplay"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8 5.5v13l11-6.5z" fill="#fff"/></svg></span>
+        </div>
         <div class="nsbody">
           <div class="nsk">Solo mode</div>
           <h3>One student, on their own</h3>
