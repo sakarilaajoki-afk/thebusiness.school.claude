@@ -99,8 +99,8 @@
   to = "/waitlist/:splat"
   status = 301
 
-# Complete Year products unlisted 8 Oct 2026 (owner decision). Files stay in the repo;
-# restore by deleting these rules and the git revert of the hub change.
+# Complete Year products withdrawn. Keep these redirects for old shared links.
+# Product files were removed from this checkout; Git history preserves recovery.
 [[redirects]]
   from = "/resources/a-level-business-complete-year/*"
   to = "/resources/"
