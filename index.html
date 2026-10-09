@@ -38,7 +38,10 @@
   details summary::-webkit-details-marker{display:none}
   /* Keep the product visible, but make the surrounding site feel like a school resource. */
   #tbs-home h1,#tbs-home h2,#tbs-home h3{font-family:'Inter',system-ui,sans-serif!important;letter-spacing:-.035em!important}
-  #tbs-home .tbs-facet{background:#eef1f4 url('/assets/tbs-web/facet-background.svg') center/cover no-repeat!important}
+  #tbs-home [style*="Fraunces"]{font-family:'Inter',system-ui,sans-serif!important}
+  /* One continuous faceted surface behind copy, cards and product screenshots. */
+  #tbs-home{background:#e8ebef url('/assets/tbs-web/facet-background.svg') center top/1600px 1600px repeat-y!important}
+  #tbs-home .tbs-facet{background:transparent!important}
   #tbs-home .tbs-facet [style*="background:#fff"][style*="border-radius"]{border-radius:8px!important;box-shadow:0 2px 9px rgba(14,32,56,.06)}
   .tbs-nav-links{display:flex;align-items:center;gap:24px}
   .tbs-nav-links a{color:#dbe4ef;text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap}

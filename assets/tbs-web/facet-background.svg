@@ -1,16 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 960" preserveAspectRatio="xMidYMid slice">
-  <rect width="1600" height="960" fill="#eef1f4"/>
-  <path d="M0 0h630L370 348 0 248Z" fill="#e7ebef"/>
-  <path d="M630 0h410L812 318 370 348Z" fill="#f4f6f8"/>
-  <path d="M1040 0h560v178l-422 255-366-115Z" fill="#e5e9ee"/>
-  <path d="M0 248 370 348 182 698 0 646Z" fill="#f3f5f7"/>
-  <path d="m370 348 442-30 152 332-782 48Z" fill="#e8ecf0"/>
-  <path d="m812 318 366 115-214 217Z" fill="#f5f7f9"/>
-  <path d="m1178 433 422-255v498l-636-26Z" fill="#eaedf1"/>
-  <path d="M0 646 182 698 480 960H0Z" fill="#e7ebef"/>
-  <path d="m182 698 782-48-184 310H480Z" fill="#f2f4f6"/>
-  <path d="m964 650 636 26v284H780Z" fill="#e6eaee"/>
-  <g fill="none" stroke="#d9e0e6" stroke-width="1.5" opacity=".48">
-    <path d="m0 248 370 100L630 0m-260 348 442-30L1040 0m-228 318 366 115 422-255M182 698 370 348m-188 350 782-48 214-217m-214 217L780 960"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="ground" cx="46%" cy="32%" r="85%"><stop stop-color="#fafbfd"/><stop offset=".58" stop-color="#eceff3"/><stop offset="1" stop-color="#dfe4e9"/></radialGradient>
+    <linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbfcfd"/><stop offset=".52" stop-color="#edf1f4"/><stop offset="1" stop-color="#d8dee5"/></linearGradient>
+    <linearGradient id="b" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#d5dbe2"/><stop offset=".52" stop-color="#e9edf1"/><stop offset="1" stop-color="#f9fafb"/></linearGradient>
+    <linearGradient id="c" x1="0" y1="0" x2=".92" y2="1"><stop stop-color="#e7ebef"/><stop offset=".48" stop-color="#f9fafb"/><stop offset="1" stop-color="#e2e7ec"/></linearGradient>
+    <linearGradient id="d" x1="0" y1="0" x2="1" y2=".75"><stop stop-color="#cdd4dc"/><stop offset=".38" stop-color="#e8edf1"/><stop offset="1" stop-color="#f8fafb"/></linearGradient>
+    <linearGradient id="e" x1="0" y1=".15" x2="1" y2="1"><stop stop-color="#fbfcfd"/><stop offset=".66" stop-color="#e4e9ed"/><stop offset="1" stop-color="#d3dae1"/></linearGradient>
+    <linearGradient id="f" x1="0" y1="1" x2=".8" y2="0"><stop stop-color="#eef1f4"/><stop offset=".5" stop-color="#dce2e8"/><stop offset="1" stop-color="#f7f9fa"/></linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="23"/></filter>
+    <linearGradient id="edgefade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e8ebef"/><stop offset=".11" stop-color="#e8ebef" stop-opacity="0"/><stop offset=".89" stop-color="#e8ebef" stop-opacity="0"/><stop offset="1" stop-color="#e8ebef"/></linearGradient>
+  </defs>
+  <rect width="1600" height="1600" fill="url(#ground)"/>
+  <path d="M0 0h550L338 290 0 216Z" fill="url(#a)"/>
+  <path d="M550 0h505L783 360 338 290Z" fill="url(#c)"/>
+  <path d="M1055 0h545v258l-452 211-365-109Z" fill="url(#b)"/>
+  <path d="M0 216 338 290 145 714 0 624Z" fill="url(#d)"/>
+  <path d="m338 290 445 70-235 420-403-66Z" fill="url(#e)"/>
+  <path d="m783 360 365 109-162 312-438-1Z" fill="url(#f)"/>
+  <path d="m1148 469 452-211v446l-614 77Z" fill="url(#a)"/>
+  <path d="M0 624 145 714 0 1043Z" fill="url(#c)"/>
+  <path d="m145 714 403 66-66 475L0 1043Z" fill="url(#b)"/>
+  <path d="m548 780 438 1 126 433-630 41Z" fill="url(#c)"/>
+  <path d="m986 781 614-77v434l-488 76Z" fill="url(#d)"/>
+  <path d="M0 1043 482 1255 206 1600H0Z" fill="url(#e)"/>
+  <path d="m482 1255 630-41-264 386H206Z" fill="url(#f)"/>
+  <path d="m1112 1214 488-76v462H848Z" fill="url(#a)"/>
+  <g fill="none" stroke="#aeb8c3" stroke-opacity=".26" stroke-width="17" filter="url(#soft)">
+    <path d="M550 0 338 290 145 714 0 1043"/>
+    <path d="m1055 0-272 360 203 421 126 433-264 386"/>
+    <path d="m1600 258-452 211-162 312"/>
+    <path d="m145 714 403 66 438 1 614-77"/>
   </g>
+  <g fill="none" stroke="#fff" stroke-opacity=".36" stroke-width="2">
+    <path d="M550 0 338 290 0 216m338 74 445 70L1055 0m-272 360 365 109 452-211M145 714l403 66 438 1 614-77M0 1043l482 212 630-41 488-76"/>
+  </g>
+  <rect width="1600" height="1600" fill="url(#edgefade)"/>
 </svg>
