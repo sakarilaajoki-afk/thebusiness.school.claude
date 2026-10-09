@@ -36,10 +36,24 @@
   body{-webkit-font-smoothing:antialiased;overflow-x:hidden}
   @keyframes tbspulse{0%{box-shadow:0 0 0 0 rgba(61,220,132,.5)}70%{box-shadow:0 0 0 8px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
   details summary::-webkit-details-marker{display:none}
+  /* Keep the product visible, but make the surrounding site feel like a school resource. */
+  #tbs-home h1,#tbs-home h2,#tbs-home h3{font-family:'Inter',system-ui,sans-serif!important;letter-spacing:-.035em!important}
+  #tbs-home .tbs-facet{background:#eef1f4 url('/assets/tbs-web/facet-background.svg') center/cover no-repeat!important}
+  #tbs-home .tbs-facet [style*="background:#fff"][style*="border-radius"]{border-radius:8px!important;box-shadow:0 2px 9px rgba(14,32,56,.06)}
+  .tbs-nav-links{display:flex;align-items:center;gap:24px}
+  .tbs-nav-links a{color:#dbe4ef;text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap}
+  .tbs-nav-links a:hover,.tbs-mobile-nav a:hover{text-decoration:underline;text-underline-offset:4px}
+  .tbs-nav-links .tbs-nav-cta{padding:9px 15px;background:#0a6b73;border-radius:6px;color:#fff;font-weight:600}
+  .tbs-mobile-nav{display:none;position:relative}
+  .tbs-mobile-nav summary{list-style:none;cursor:pointer;color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:6px;padding:7px 12px;font-size:14px;font-weight:600}
+  .tbs-mobile-nav summary::-webkit-details-marker{display:none}
+  .tbs-mobile-nav>div{position:absolute;right:0;top:calc(100% + 10px);width:min(280px,calc(100vw - 40px));padding:12px 18px;background:#0e2038;border:1px solid #39506c;border-radius:7px;box-shadow:0 12px 28px rgba(5,19,36,.28)}
+  .tbs-mobile-nav a{display:block;padding:10px 2px;color:#eef3f8;text-decoration:none;font-size:15px}
+  @media(max-width:900px){.tbs-nav-links{display:none}.tbs-mobile-nav{display:block}}
 </style>
 </helmet>
 
-<div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
+<div id="tbs-home" style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
 
 
 <header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
@@ -48,44 +62,23 @@
       <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
         <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
       </a>
-      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
-        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
-          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
-          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
-          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
-          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
-          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
-          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a><a href="/about/" style="color:inherit;text-decoration:none;white-space:nowrap">About</a>
+      <div class="tbs-nav-links">
+        <a href="/for-teachers/">For Teachers</a>
+        <a href="/for-heads/">For Heads</a>
+        <a href="/resources/">Resources</a>
+        <a href="/pilot/" class="tbs-nav-cta">Join the waitlist</a>
+      </div>
+      <details class="tbs-mobile-nav">
+        <summary>Menu</summary>
+        <div>
+          <a href="/for-teachers/">For Teachers</a>
+          <a href="/for-heads/">For Heads</a>
+          <a href="/resources/">Resources</a>
+          <a href="/pilot/">Join the waitlist</a>
         </div>
-        <div style="display:flex;gap:10px;align-items:center">
-          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
-          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Join the waitlist</a>
-        </div>
-      </sc-if>
-      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
-        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
-          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </sc-if>
-          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </sc-if>
-        </button>
-      </sc-if>
+      </details>
     </nav>
   </div>
-  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
-      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
-      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
-      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
-      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
-      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
-      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a><a href="/about/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">About</a>
-      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
-      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
-    </div>
-  </sc-if>
 </header>
 
 <style>
@@ -102,15 +95,7 @@
 <section style="position:relative;background:#0e2038;color:#fff;overflow:hidden;padding:74px 0 170px">
   <div ref="{{ mapRef }}" style="position:absolute;inset:0;z-index:0;opacity:.95" aria-hidden="true">
     <img src="/assets/tbs-web/hero-map.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%" />
-    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,56,.55) 0%,rgba(14,32,56,.3) 34%,rgba(14,32,56,.12) 66%,rgba(14,32,56,.35) 100%)"></div>
-    <sc-for list="{{ mapMarkers }}" as="mk" hint-placeholder-count="0">
-      <div style="{{ mk.wrapStyle }}">
-        <span style="{{ mk.dotStyle }}"></span>
-        <sc-if value="{{ mk.label }}" hint-placeholder-val="{{ false }}">
-          <span style="font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#ffe9b8;white-space:nowrap;background:rgba(10,20,38,.68);border:1px solid rgba(227,169,44,.45);border-radius:999px;padding:5px 12px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)">{{ mk.label }}</span>
-        </sc-if>
-      </div>
-    </sc-for>
+    <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,56,.68) 0%,rgba(14,32,56,.56) 42%,rgba(14,32,56,.42) 72%,rgba(14,32,56,.5) 100%)"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:220px;background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 62%,#ffffff 100%)"></div>
   </div>
   <div style="position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:0 24px">
@@ -125,7 +110,7 @@
               <span style="width:7px;height:7px;border-radius:50%;background:#f0b53d;display:inline-block"></span>Autumn 2026 pilot cohort, full (30/30 schools). Waitlist open.
             </div>
           </sc-if>
-          <h1 style="font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.015em;color:#fff;font-size:clamp(34px,4.7vw,55px);margin:16px 0 18px">Your students run rival firms, live, in one lesson.</h1>
+          <h1 style="font-weight:700;line-height:1.1;color:#fff;font-size:clamp(38px,4.7vw,58px);margin:16px 0 18px">Bring your next Business lesson to life.</h1>
           <p style="font-size:clamp(16px,1.5vw,18.5px);color:#c9d5e8;max-width:520px">A browser-based business simulation where up to eight student teams compete in one market: pricing, VAT, hiring, investment and boardroom deals. Key decisions are linked to Edexcel topics. No install, students join with a PIN.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
             <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent" style-hover="background:#075158">Join the waitlist</a>
@@ -178,35 +163,29 @@
     <sc-if value="{{ isProjector }}" hint-placeholder-val="{{ false }}">
       <div style="text-align:center;max-width:860px;margin:0 auto">
         <span style="font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#a9e6df;text-shadow:0 1px 12px rgba(4,16,31,.8)">A-Level · BTEC · IGCSE Business</span>
-        <h1 style="font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.04;letter-spacing:-.02em;color:#fff;font-size:clamp(46px,7vw,88px);margin:18px 0 0;text-shadow:0 2px 8px rgba(4,16,31,.55),0 8px 40px rgba(4,16,31,.65)">The Business School</h1>
-        <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin:18px auto 0;max-width:560px">
-          <span style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(240,181,61,.75))"></span>
-          <span style="font-family:'Fraunces',Georgia,serif;font-size:clamp(16px,2vw,24px);font-weight:500;letter-spacing:.01em;color:#f3e0b7;text-align:center;text-shadow:0 1px 10px rgba(4,16,31,.8)">Bring your next Business lesson to life.</span>
-          <span style="flex:1;height:1px;background:linear-gradient(90deg,rgba(240,181,61,.75),transparent)"></span>
-        </div>
-        <p style="font-size:clamp(17.5px,1.9vw,22px);font-weight:600;color:#fff;max-width:660px;margin:24px auto 0;line-height:1.55;text-shadow:0 1px 3px rgba(4,16,31,.9),0 2px 18px rgba(4,16,31,.85)">Your students run rival firms, live, in one lesson. Pricing, VAT, hiring and boardroom deals, with key decisions linked to Edexcel topics. No install, students join with a PIN.</p>
+        <h1 style="font-weight:700;line-height:1.08;color:#fff;font-size:clamp(42px,6.2vw,72px);margin:18px auto 0;max-width:900px;text-shadow:0 2px 16px rgba(4,16,31,.65)">Bring your next Business lesson to life.</h1>
+        <p style="font-size:clamp(17.5px,1.9vw,21px);font-weight:500;color:#f0f4f8;max-width:680px;margin:24px auto 0;line-height:1.55;text-shadow:0 1px 7px rgba(4,16,31,.65)">Your students run rival firms, live, in one lesson. Pricing, VAT, hiring and boardroom deals, with key decisions linked to Edexcel topics. No install, students join with a PIN.</p>
         <sc-if value="{{ pilotBadge }}" hint-placeholder-val="{{ true }}">
-          <div style="display:inline-flex;align-items:center;gap:9px;margin:24px auto 0;padding:10px 20px;border:1px solid rgba(255,255,255,.3);border-radius:999px;background:rgba(10,20,38,.55);font-size:15px;font-weight:600;color:#e2eaf6">
-            <span style="width:7px;height:7px;border-radius:50%;background:#f0b53d;display:inline-block"></span>Autumn 2026 pilot cohort, full (30/30 schools). Waitlist open.
+          <div style="display:inline-flex;align-items:center;margin:24px auto 0;padding:9px 14px;border:1px solid rgba(255,255,255,.26);border-radius:6px;background:rgba(10,20,38,.42);font-size:14px;font-weight:600;color:#e2eaf6">
+            Autumn 2026 pilot cohort, full (30/30 schools). Waitlist open.
           </div>
         </sc-if>
         <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:30px">
-          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;padding:15px 26px;border-radius:12px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent;box-shadow:0 12px 30px -12px rgba(4,16,31,.6)" style-hover="background:#075158">Join the waitlist</a>
-          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;padding:15px 26px;border-radius:12px;text-decoration:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#fff;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)" style-hover="background:rgba(255,255,255,.2)">I lead a department</a>
-          <a href="/resources/" style="display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:16px;padding:15px 26px;border-radius:12px;text-decoration:none;background:#fff;color:#0B3D2E;border:1px solid transparent;box-shadow:0 12px 30px -14px rgba(0,0,0,.6)" style-hover="background:#eaf4ee">Free resource hub &rarr;</a>
+          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;padding:15px 26px;border-radius:6px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent" style-hover="background:#075158">Join the waitlist</a>
+          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;padding:15px 26px;border-radius:6px;text-decoration:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#fff" style-hover="background:rgba(255,255,255,.2)">I lead a department</a>
+          <a href="/resources/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;padding:15px 12px;text-decoration:underline;text-underline-offset:4px;color:#fff">Free teaching resources &rarr;</a>
           
         </div>
         <p style="margin-top:18px;font-size:15px;color:#c3cee0">Complete packs with the answers, revision pages and classroom games. Free to download, no sign up.</p>
       </div>
-      <div style="max-width:940px;margin:44px auto 0;background:#fff;border:1px solid rgba(255,255,255,.5);border-radius:16px;box-shadow:0 50px 100px -46px rgba(0,0,0,.75);overflow:hidden;color:#16233f">
+      <div style="max-width:940px;margin:44px auto 0;background:#fff;border:1px solid #dce3e9;border-radius:8px;box-shadow:0 18px 44px -28px rgba(0,0,0,.55);overflow:hidden;color:#16233f">
         <div style="background:#0c1a2e;padding:9px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,255,255,.08)">
-          <span style="width:9px;height:9px;border-radius:50%;background:#f0b53d"></span><span style="width:9px;height:9px;border-radius:50%;background:#3ddc84"></span><span style="width:9px;height:9px;border-radius:50%;background:#4a5d7e"></span>
-          <span style="margin-left:8px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#9fb0cf">Live class view</span>
+          <span style="font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#c6d3e6">Example class view</span>
         </div>
         <div style="background:#122a49;color:#fff;padding:13px 20px;display:flex;align-items:center;justify-content:space-between">
           <div style="font-weight:700;letter-spacing:.2em;font-size:21px">4 7 2 9 1 3<small style="display:block;font-weight:500;letter-spacing:.09em;font-size:9.5px;color:#a9b7d0;text-transform:uppercase;margin-top:2px">Join at play.thebusiness.school</small></div>
           <div style="text-align:right">
-            <div style="font-size:12.5px;font-weight:600;color:#8ff0c4;display:flex;align-items:center;gap:7px;justify-content:flex-end"><span style="width:8px;height:8px;border-radius:50%;background:#3ddc84;animation:tbspulse 2s infinite"></span> 8 firms trading</div>
+            <div style="font-size:12.5px;font-weight:600;color:#c6d3e6">Classroom market overview</div>
             <div style="font-size:10.5px;color:#a9b7d0;margin-top:3px">Round 2 of 3 · {{ phaseTimer }} left</div>
           </div>
         </div>
@@ -308,7 +287,7 @@
 </sc-if>
 
 <!-- TWO DOORS -->
-<section style="padding:78px 0">
+<section class="tbs-facet" style="padding:78px 0">
   <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin:0 auto 44px;text-align:center">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Two people, two questions</span>
@@ -345,7 +324,7 @@
 </section>
 
 <!-- SIMULATION, editorial two-column rhythm -->
-<section style="padding:78px 0;background:#f6f8fb;border-top:1px solid #e3e9f1;border-bottom:1px solid #e3e9f1">
+<section class="tbs-facet" style="padding:78px 0;border-top:1px solid #dce3e9;border-bottom:1px solid #dce3e9">
   <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin-bottom:40px">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">The simulation</span>
@@ -449,7 +428,7 @@
 </section>
 
 <!-- HOW TO USE IT -->
-<section style="padding:78px 0">
+<section class="tbs-facet" style="padding:78px 0">
   <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="max-width:680px;margin:0 auto 44px;text-align:center">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">In one lesson</span>
@@ -543,7 +522,7 @@
 </section>
 
 <!-- CURRICULUM PROOF -->
-<section style="padding:78px 0;background:#f6f8fb;border-top:1px solid #e3e9f1;border-bottom:1px solid #e3e9f1">
+<section class="tbs-facet" style="padding:78px 0;border-top:1px solid #dce3e9;border-bottom:1px solid #dce3e9">
   <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
     <div style="background:#fff;border:1px solid #e3e9f1;border-radius:18px;padding:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:36px;align-items:center">
       <div>
@@ -803,7 +782,6 @@ class Component extends DCLogic {
       'Round 2: Scale up. Staff and sabotage are open, and a fleet tender opens halfway through.',
       'Fleet tender: each firm sends a sealed total price, and the lowest price wins.',
       'VAT returns open in the last 90 seconds of every round.',
-      'Knowledge Check: ten questions in rounds 2 and 3, the same for everyone in the class.',
     ];
     this.tickCount = 0;
     this.sim = setInterval(() => {
