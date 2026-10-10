@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a teaching resource | The Business School</title>
+  <meta name="description" content="Tell The Business School which Business or Economics topic and qualification you need a teaching resource for.">
+  <link rel="canonical" href="https://thebusiness.school/resources/request/">
+  <style>
+    :root{font-family:Arial,Helvetica,sans-serif;color:#173145;background:#f4f7f6}
+    *{box-sizing:border-box}
+    body{margin:0}
+    a{color:#086b73}
+    .top{background:#fff;border-bottom:1px solid #dce7e5}
+    .top-inner,.shell{max-width:790px;margin:auto;padding:0 22px}
+    .top-inner{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:700;text-decoration:none;color:#183d3a;font-size:18px}
+    .back{font-size:14px;text-decoration:none}
+    main{padding:50px 0 80px}
+    .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#0a6b73}
+    h1{font-family:Georgia,serif;font-size:clamp(35px,5vw,50px);line-height:1.1;margin:14px 0 16px;font-weight:600}
+    .intro{font-size:17px;line-height:1.55;max-width:66ch;margin:0 0 28px;color:#405467}
+    form{background:#fff;border:1px solid #dce7e5;border-radius:14px;padding:clamp(22px,5vw,36px);box-shadow:0 18px 45px -38px #203b45}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    .field{margin-bottom:18px}
+    label{display:block;font-weight:700;font-size:14px;margin-bottom:7px}
+    .optional{font-weight:400;color:#60717c}
+    input,select,textarea{width:100%;font:inherit;font-size:16px;padding:12px 13px;border:1px solid #bfcfce;border-radius:8px;color:#173145;background:#fff}
+    input:focus,select:focus,textarea:focus{outline:3px solid #a4d6d5;outline-offset:1px}
+    textarea{min-height:105px;resize:vertical}
+    .hint{font-size:13px;color:#60717c;margin:6px 0 0;line-height:1.45}
+    button{background:#0a6b73;color:#fff;border:0;border-radius:8px;padding:14px 21px;font:inherit;font-weight:700;cursor:pointer}
+    button:hover{background:#075760}
+    .fine{font-size:13px;color:#536778;line-height:1.5;margin:14px 0 0}
+    .direct{font-size:14px;line-height:1.55;margin:22px 0 0}
+    .honeypot{position:absolute;left:-9999px}
+    @media(max-width:620px){.grid{grid-template-columns:1fr} main{padding-top:36px}}
+  </style>
+</head>
+<body>
+  <header class="top"><div class="top-inner"><a class="brand" href="/">TBS The Business School</a><a class="back" href="/resources/">&larr; Resource Hub</a></div></header>
+  <main class="shell">
+    <span class="eyebrow">Help shape the library</span>
+    <h1>Request a resource.</h1>
+    <p class="intro">What are you teaching next? Tell us the exact course and topic. TBS reviews requests when planning new Business and Economics materials; a request does not guarantee a new pack.</p>
+    <form name="resource-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/resources/request/thanks/">
+      <input type="hidden" name="form-name" value="resource-request">
+      <input type="hidden" name="subject" value="New Resource Hub request">
+      <p class="honeypot"><label>Leave this blank <input name="bot-field" type="text" tabindex="-1" autocomplete="off"></label></p>
+      <div class="field"><label for="email">Your email *</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+      <div class="grid">
+        <div class="field"><label for="qualification">Qualification *</label><select id="qualification" name="qualification" required><option value="">Choose one</option><option>A Level Business</option><option>A Level Economics</option><option>GCSE Business</option><option>GCSE Economics</option><option>IGCSE Business</option><option>IGCSE Economics</option><option>BTEC Business</option><option>Other</option></select></div>
+        <div class="field"><label for="board">Exam board or specification *</label><input id="board" name="board" type="text" placeholder="e.g. Pearson Edexcel 9BS0" required><p class="hint">A board name or code is enough.</p></div>
+      </div>
+      <div class="field"><label for="topic">Topic you need *</label><input id="topic" name="topic" type="text" placeholder="e.g. cash-flow forecasting" required></div>
+      <div class="grid">
+        <div class="field"><label for="week">When will you teach it? <span class="optional">(optional)</span></label><input id="week" name="teaching_week" type="text" placeholder="e.g. week beginning 2 November"></div>
+        <div class="field"><label for="format">Most useful format <span class="optional">(optional)</span></label><select id="format" name="preferred_format"><option value="">No preference</option><option>Editable worksheet</option><option>Slides</option><option>Group activity</option><option>Case study</option><option>Other</option></select></div>
+      </div>
+      <div class="field"><label for="notes">Anything else? <span class="optional">(optional)</span></label><textarea id="notes" name="notes" placeholder="Class context or the problem you want the resource to solve"></textarea></div>
+      <button type="submit">Send request</button>
+      <p class="fine">We use these details to review your suggestion and, if needed, reply to you. See our <a href="/privacy/">privacy information</a>.</p>
+    </form>
+    <p class="direct">Prefer to email us directly, or having trouble with the form? Write to <a href="mailto:support@thebusiness.school?subject=Teaching%20resource%20request">support@thebusiness.school</a> with your qualification, board and topic.</p>
+  </main>
+</body>
+</html>
