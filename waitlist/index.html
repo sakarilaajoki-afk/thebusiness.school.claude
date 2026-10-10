@@ -66,12 +66,15 @@
           <p class="honeypot"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
           <h2 id="application-title">Join the waitlist</h2>
-          <p class="form-lead">For Business teachers and school leaders planning a class session. Joining is free and is not a purchase; we’ll explain any licence terms before you decide to proceed.</p>
+          <p class="form-lead">For Business teachers and school leaders planning a class session. Please tell us about the class you have in mind; approximate answers are fine. Joining is free and is not a purchase. We’ll explain any licence terms before you decide to proceed.</p>
           <div class="fields">
             <div class="field"><label for="full-name">Full name *</label><input id="full-name" name="name" autocomplete="name" required></div>
             <div class="field"><label for="school-email">School email *</label><input id="school-email" name="email" type="email" autocomplete="email" required></div>
             <div class="field"><label for="role">Your role *</label><select id="role" name="role" required><option value="">Select your role</option><option>Business teacher</option><option>Head of Business / Economics</option><option>Curriculum Lead / school leader</option><option>Other</option></select></div>
-            <div class="field"><label for="school">School and country *</label><input id="school" name="school" autocomplete="organization" required></div>
+            <div class="field"><label for="school">School name *</label><input id="school" name="school" autocomplete="organization" required></div>
+            <div class="field"><label for="country">Country *</label><input id="country" name="country" autocomplete="country-name" required></div>
+            <div class="field"><label for="school-type">School type *</label><select id="school-type" name="school_type" required><option value="">Select school type</option><option>State school / academy</option><option>Sixth form / FE college</option><option>Independent school</option><option>International school</option><option>Other</option></select></div>
+            <div class="field"><label for="department-size">Business / Economics teachers at your school *</label><select id="department-size" name="dept_size" required><option value="">Approximate number</option><option>1</option><option>2–3</option><option>4–6</option><option>7 or more</option><option>Not sure yet</option></select></div>
             <div class="field full"><label for="personal-email">Alternative email (optional)</label><input id="personal-email" name="personal_email" type="email" placeholder="If your school filters outside email"></div>
           </div>
 
@@ -85,11 +88,12 @@
               <label class="check"><input type="checkbox" name="qualification" value="IB Business Management">IB Business Management</label>
               <label class="check"><input type="checkbox" name="qualification" value="Other">Other</label>
             </div><p class="field-error" id="qualification-error" role="alert" hidden>Please choose at least one qualification.</p></fieldset>
-            <div class="field"><label for="exam-board">Exam board or specification (optional)</label><input id="exam-board" name="exam_board" placeholder="For example, Edexcel 9BS0"></div>
+            <div class="field"><label for="exam-board">Exam board or specification *</label><input id="exam-board" name="exam_board" placeholder="For example, Edexcel 9BS0; or Not sure yet" required></div>
             <div class="field"><label for="year-group">Year group / learner age *</label><input id="year-group" name="year_group" placeholder="For example, Year 12 / age 16–17" required></div>
-            <div class="field"><label for="class-size">Typical class size (optional)</label><input id="class-size" name="class_size" placeholder="An estimate is fine, e.g. 20–25"></div>
-            <div class="field"><label for="timing">When could you run a session? (optional)</label><select id="timing" name="timing"><option value="">Choose one</option><option>Within 2 weeks of access</option><option>Within a month of access</option><option>Later this term</option><option>Not sure yet</option></select></div>
-            <div class="field full"><label for="referral">How did you hear about us? (optional)</label><select id="referral" name="referral"><option value="">Choose one</option><option>Another teacher</option><option>Facebook group</option><option>LinkedIn</option><option>Search</option><option>Email</option><option>Other</option></select></div>
+            <div class="field"><label for="class-size">Students in a typical session *</label><select id="class-size" name="class_size" required><option value="">Approximate number</option><option>1–5</option><option>6–15</option><option>16–25</option><option>26–32</option><option>33 or more</option><option>No class assigned yet</option></select></div>
+            <div class="field"><label for="timing">When could you run a session? *</label><select id="timing" name="timing" required><option value="">Choose one</option><option>Within 2 weeks of access</option><option>Within a month of access</option><option>Later this term</option><option>Not sure yet</option></select></div>
+            <div class="field"><label for="school-it">Can school devices access new teaching websites? *</label><select id="school-it" name="it_whitelist" required><option value="">Choose one</option><option>Yes</option><option>Our IT team may need to allow the site</option><option>Not checked yet</option></select></div>
+            <div class="field"><label for="referral">How did you hear about us? *</label><select id="referral" name="referral" required><option value="">Choose one</option><option>Another teacher</option><option>Facebook group</option><option>LinkedIn</option><option>Search</option><option>Email</option><option>Other / not sure</option></select></div>
           </div>
 
           <h3 class="section-title">Your classroom plan</h3>
