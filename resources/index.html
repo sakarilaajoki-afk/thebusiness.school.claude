@@ -203,28 +203,22 @@ a{text-decoration:none}
 .fcols a:hover{color:#0e2038}
 @media(prefers-reduced-motion:reduce){.card,.qrow{transition:none}.card:hover{transform:none}}
 /* hub intro video: poster button opens a larger player; no video bytes load before the click, nothing autoplays */
-.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,680px);gap:52px;align-items:center}
+.hero.has-video{padding-bottom:56px}
 .hero.has-video .dec{display:none}
-@media(max-width:1020px){.hero-grid{grid-template-columns:minmax(0,1fr);gap:30px}}
-.hvid{margin:0}
-.hvid-open{position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:0;border-radius:18px;overflow:hidden;background:#0a3226;cursor:pointer;
- box-shadow:0 26px 50px -26px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.14);color:#fff;font-family:'Inter',sans-serif;text-align:left}
-.hvid-open img{display:block;width:100%;height:100%;object-fit:cover}
-.hvid-open::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,56,0) 55%,rgba(14,32,56,.55) 100%)}
-.hvid-ic{position:absolute;z-index:1;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:rgba(255,255,255,.95);box-shadow:0 10px 26px -8px rgba(0,0,0,.5);transition:transform .15s ease}
-.hvid-ic::after{content:"";position:absolute;left:33px;top:26px;border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #0B3D2E}
-.hvid-lab{position:absolute;z-index:1;left:18px;bottom:18px;background:rgba(14,32,56,.88);border-radius:999px;padding:10px 18px;font-size:15px;font-weight:600}
-.hvid-open:hover .hvid-ic{transform:scale(1.06)}
-.hvid-open:focus-visible{outline:3px solid #9fd8c4;outline-offset:3px}
-.hvid-tx{margin-top:10px;font-size:13.5px;color:#d7e6de}
+/* wide intro video: plays muted in a loop when visible; a click restarts it with sound */
+.hvid{position:relative;margin:40px 0 0;width:min(1400px,calc(100vw - 32px));left:50%;transform:translateX(-50%)}
+.hvid-frame{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:#06140f;box-shadow:0 40px 90px -40px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.14)}
+.hvid video{display:block;width:100%;height:100%;object-fit:cover}
+.hvid-snd{position:absolute;left:22px;bottom:22px;display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.28);background:rgba(8,22,16,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;border-radius:999px;padding:10px 20px 10px 10px;font:600 16px/1 'Inter',sans-serif;cursor:pointer}
+.hvid-snd .ic{width:38px;height:38px;border-radius:50%;background:#fff;position:relative;flex:0 0 auto}
+.hvid-snd .ic::after{content:"";position:absolute;left:15px;top:11px;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #0B3D2E}
+.hvid-snd:hover{background:rgba(11,61,46,.92)}
+.hvid-snd:focus-visible{outline:3px solid #9fd8c4;outline-offset:3px}
+.hvid.sound .hvid-snd{display:none}
+.hvid-tx{margin-top:12px;font-size:13.5px;color:#d7e6de}
 .hvid-tx summary{cursor:pointer;color:#9fd8c4;font-weight:600}
 .hero .hvid-tx p{font-size:13.5px;max-width:none;margin-top:6px;color:#d7e6de}
-.hvid-dlg{width:min(1200px,94vw);max-width:none;padding:0;border:0;border-radius:14px;background:#000;overflow:visible;margin:auto}
-.hvid-dlg::backdrop{background:rgba(6,18,14,.84)}
-.hvid-dlg video{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:14px;background:#000}
-.hvid-x{position:absolute;right:0;top:-48px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.1);color:#fff;font:600 24px/1 'Inter',sans-serif;cursor:pointer}
-.hvid-x:focus-visible{outline:3px solid #9fd8c4;outline-offset:2px}
-@media(prefers-reduced-motion:reduce){.hvid-ic{transition:none}.hvid-open:hover .hvid-ic{transform:none}}
+@media(max-width:640px){.hvid{margin-top:28px}.hvid-frame{border-radius:14px}.hvid-snd{left:12px;bottom:12px;font-size:14px;padding:8px 14px 8px 8px}.hvid-snd .ic{width:30px;height:30px}.hvid-snd .ic::after{left:12px;top:8px;border-width:7px 0 7px 11px}}
 /* print: teachers print pages; force dark text on light so nothing comes out white on white */
 @media print{
   .hd,.mmenu,.hero .dec,.gcta,.searchrow,.chips{display:none!important}
@@ -282,7 +276,7 @@ a{text-decoration:none}
 
 <section class="hero has-video">
   <span class="dec" aria-hidden="true">&pound;</span>
-  <div class="wrap hero-grid">
+  <div class="wrap">
     <div>
     <span class="kick">Free teaching resources</span>
     <h1>The resource library.</h1>
@@ -295,9 +289,13 @@ a{text-decoration:none}
     </div>
     </div>
     <figure class="hvid" id="hvid">
-      <button class="hvid-open" type="button" aria-haspopup="dialog" aria-label="Play the 29-second video, with sound: how the resource library works">
-        <img src="/assets/video/library-intro-v1/poster.webp" width="1280" height="720" alt="" decoding="async"><span class="hvid-ic" aria-hidden="true"></span><span class="hvid-lab">How the library works &middot; 29 sec</span>
-      </button>
+      <div class="hvid-frame">
+        <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/video/library-intro-v1/poster.webp" aria-label="How the resource library works, 29-second video with subtitles">
+          <source src="/assets/video/library-intro-v1/library-intro-720p.mp4" type="video/mp4" media="(max-width: 900px)">
+          <source src="/assets/video/library-intro-v1/library-intro-1080p.mp4" type="video/mp4">
+        </video>
+        <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with sound &middot; 29 sec</button>
+      </div>
       <details class="hvid-tx"><summary>Read the video text</summary>
         <p>Need a Business or Economics lesson for your course? Pick your level and subject to see only what matches. Open one to see what&rsquo;s inside. Students get the scenario and the tasks. You get the lesson plan and the answers. For A level, GCSE, IGCSE and BTEC. Free to download, with no sign-up, at thebusiness.school.</p>
       </details>
@@ -901,25 +899,20 @@ a{text-decoration:none}
 }
 </script>
 
-<dialog class="hvid-dlg" id="hvid-dlg" aria-label="How the resource library works">
-  <button class="hvid-x" type="button" aria-label="Close the video">&times;</button>
-  <video preload="none" playsinline controls width="1280" height="720" poster="/assets/video/library-intro-v1/poster.webp">
-    <source src="/assets/video/library-intro-v1/library-intro-720p.mp4" type="video/mp4" media="(max-width: 900px)">
-    <source src="/assets/video/library-intro-v1/library-intro-1080p.mp4" type="video/mp4">
-  </video>
-</dialog>
 <script>
 (function(){
-  var o=document.querySelector('.hvid-open'), d=document.getElementById('hvid-dlg'); if(!o||!d) return;
-  var v=d.querySelector('video'), x=d.querySelector('.hvid-x');
-  o.addEventListener('click',function(){
-    if(d.showModal){ d.showModal(); } else { d.setAttribute('open',''); }
-    var p=v.play(); if(p&&p.catch)p.catch(function(){});
+  var f=document.getElementById('hvid'); if(!f) return;
+  var v=f.querySelector('video'), b=f.querySelector('.hvid-snd');
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c=navigator.connection, save=c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||''));
+  function start(){ if(rm||save||f.classList.contains('sound')) return; v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
+  }
+  b.addEventListener('click',function(){
+    f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
+    var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
   });
-  function shut(){ v.pause(); if(d.open){ if(d.close)d.close(); else d.removeAttribute('open'); } o.focus(); }
-  x.addEventListener('click',shut);
-  d.addEventListener('click',function(e){ if(e.target===d) shut(); });
-  d.addEventListener('close',function(){ v.pause(); });
 })();
 </script>
 </body>
