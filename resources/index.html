@@ -202,6 +202,29 @@ a{text-decoration:none}
 .fcols a{color:#40506e}
 .fcols a:hover{color:#0e2038}
 @media(prefers-reduced-motion:reduce){.card,.qrow{transition:none}.card:hover{transform:none}}
+/* hub intro video: poster button opens a larger player; no video bytes load before the click, nothing autoplays */
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,680px);gap:52px;align-items:center}
+.hero.has-video .dec{display:none}
+@media(max-width:1020px){.hero-grid{grid-template-columns:minmax(0,1fr);gap:30px}}
+.hvid{margin:0}
+.hvid-open{position:relative;display:block;width:100%;aspect-ratio:16/9;padding:0;border:0;border-radius:18px;overflow:hidden;background:#0a3226;cursor:pointer;
+ box-shadow:0 26px 50px -26px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.14);color:#fff;font-family:'Inter',sans-serif;text-align:left}
+.hvid-open img{display:block;width:100%;height:100%;object-fit:cover}
+.hvid-open::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,56,0) 55%,rgba(14,32,56,.55) 100%)}
+.hvid-ic{position:absolute;z-index:1;left:50%;top:50%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:rgba(255,255,255,.95);box-shadow:0 10px 26px -8px rgba(0,0,0,.5);transition:transform .15s ease}
+.hvid-ic::after{content:"";position:absolute;left:33px;top:26px;border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #0B3D2E}
+.hvid-lab{position:absolute;z-index:1;left:18px;bottom:18px;background:rgba(14,32,56,.88);border-radius:999px;padding:10px 18px;font-size:15px;font-weight:600}
+.hvid-open:hover .hvid-ic{transform:scale(1.06)}
+.hvid-open:focus-visible{outline:3px solid #9fd8c4;outline-offset:3px}
+.hvid-tx{margin-top:10px;font-size:13.5px;color:#d7e6de}
+.hvid-tx summary{cursor:pointer;color:#9fd8c4;font-weight:600}
+.hero .hvid-tx p{font-size:13.5px;max-width:none;margin-top:6px;color:#d7e6de}
+.hvid-dlg{width:min(1200px,94vw);max-width:none;padding:0;border:0;border-radius:14px;background:#000;overflow:visible;margin:auto}
+.hvid-dlg::backdrop{background:rgba(6,18,14,.84)}
+.hvid-dlg video{display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:14px;background:#000}
+.hvid-x{position:absolute;right:0;top:-48px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.1);color:#fff;font:600 24px/1 'Inter',sans-serif;cursor:pointer}
+.hvid-x:focus-visible{outline:3px solid #9fd8c4;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){.hvid-ic{transition:none}.hvid-open:hover .hvid-ic{transform:none}}
 /* print: teachers print pages; force dark text on light so nothing comes out white on white */
 @media print{
   .hd,.mmenu,.hero .dec,.gcta,.searchrow,.chips{display:none!important}
@@ -257,9 +280,10 @@ a{text-decoration:none}
   </div>
 </header>
 
-<section class="hero">
+<section class="hero has-video">
   <span class="dec" aria-hidden="true">&pound;</span>
-  <div class="wrap">
+  <div class="wrap hero-grid">
+    <div>
     <span class="kick">Free teaching resources</span>
     <h1>The resource library.</h1>
     <p>Complete packs, revision pages, quick downloads and classroom games for Business and Economics teachers. Every full pack includes the answers. Free to download, free to share with your department, no sign up.</p>
@@ -269,6 +293,15 @@ a{text-decoration:none}
       <span class="stat">12 classroom games</span>
       <span class="stat">Answers included</span>
     </div>
+    </div>
+    <figure class="hvid" id="hvid">
+      <button class="hvid-open" type="button" aria-haspopup="dialog" aria-label="Play the 29-second video, with sound: how the resource library works">
+        <img src="/assets/video/library-intro-v1/poster.webp" width="1280" height="720" alt="" decoding="async"><span class="hvid-ic" aria-hidden="true"></span><span class="hvid-lab">How the library works &middot; 29 sec</span>
+      </button>
+      <details class="hvid-tx"><summary>Read the video text</summary>
+        <p>Need a Business or Economics lesson for your course? Pick your level and subject to see only what matches. Open one to see what&rsquo;s inside. Students get the scenario and the tasks. You get the lesson plan and the answers. For A level, GCSE, IGCSE and BTEC. Free to download, with no sign-up, at thebusiness.school.</p>
+      </details>
+    </figure>
   </div>
 </section>
 
@@ -868,5 +901,26 @@ a{text-decoration:none}
 }
 </script>
 
+<dialog class="hvid-dlg" id="hvid-dlg" aria-label="How the resource library works">
+  <button class="hvid-x" type="button" aria-label="Close the video">&times;</button>
+  <video preload="none" playsinline controls width="1280" height="720" poster="/assets/video/library-intro-v1/poster.webp">
+    <source src="/assets/video/library-intro-v1/library-intro-720p.mp4" type="video/mp4" media="(max-width: 900px)">
+    <source src="/assets/video/library-intro-v1/library-intro-1080p.mp4" type="video/mp4">
+  </video>
+</dialog>
+<script>
+(function(){
+  var o=document.querySelector('.hvid-open'), d=document.getElementById('hvid-dlg'); if(!o||!d) return;
+  var v=d.querySelector('video'), x=d.querySelector('.hvid-x');
+  o.addEventListener('click',function(){
+    if(d.showModal){ d.showModal(); } else { d.setAttribute('open',''); }
+    var p=v.play(); if(p&&p.catch)p.catch(function(){});
+  });
+  function shut(){ v.pause(); if(d.open){ if(d.close)d.close(); else d.removeAttribute('open'); } o.focus(); }
+  x.addEventListener('click',shut);
+  d.addEventListener('click',function(e){ if(e.target===d) shut(); });
+  d.addEventListener('close',function(){ v.pause(); });
+})();
+</script>
 </body>
 </html>
