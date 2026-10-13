@@ -61,8 +61,7 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .buyrow{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:26px}
 .price{font-size:28px;font-weight:600;color:var(--green);line-height:1}
 .btn{display:inline-flex;align-items:center;justify-content:center;font-size:15px;padding:12px 24px;border-radius:8px;background:var(--green);color:#fff;white-space:nowrap;text-decoration:none}
-.btn.soon{background:#e3e9e5;color:var(--mute);cursor:not-allowed;pointer-events:none}
-.soonnote{font-size:13.5px;color:var(--mute)}
+.legal{font-size:13.5px;line-height:1.5;color:var(--mute);max-width:520px;margin-top:12px}
 .cover{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 18px 40px -26px rgba(11,61,46,.45)}
 /* trust strip */
 .strip{border-bottom:1px solid var(--line);padding:22px 0}
@@ -183,6 +182,7 @@ img,video{max-width:100%}
         <a href="/curriculum-mapping/">Curriculum</a>
         <a href="/pricing/">Licensing</a>
         <a href="/resources/">Resources</a>
+        <a href="/shop/">Shop</a>
         <a href="/curriculum-faq/">FAQ</a>
         <a href="/about/">About</a>
       </div>
@@ -198,6 +198,7 @@ img,video{max-width:100%}
     <a href="/curriculum-mapping/">Curriculum</a>
     <a href="/pricing/">Licensing</a>
     <a href="/resources/">Resources</a>
+    <a href="/shop/">Shop</a>
     <a href="/curriculum-faq/">FAQ</a>
     <a href="/about/">About</a>
     <a class="mm-cta" href="/pilot/">Join the waitlist</a>
@@ -214,10 +215,9 @@ img,video{max-width:100%}
       <ul class="facts"><li>3 lessons of about 55 minutes</li><li>16-page student workbook</li><li>10-page teacher guide</li><li>PDF and editable Word</li><li>Full answers included</li></ul>
       <div class="buyrow">
         <span class="price" data-price="5.50">£5.50</span>
-        <!-- CHECKOUT NOT LIVE: the live Stripe payment link for data-product="P1" is inserted here later. Until then href="#" and the button is rendered as not purchasable. -->
-<a class="btn soon" href="#" data-product="P1" role="button" aria-disabled="true" onclick="return false">Buy £5.50</a>
-        <span class="soonnote">Checkout opens soon.</span>
+        <a class="btn" href="https://buy.stripe.com/8x26oI0CcalB5jncvG2sM06" target="_self" data-product="P1">Buy now, £5.50</a>
       </div>
+      <p class="legal">Digital download. By buying you ask for immediate access to the files and acknowledge that you then lose the 14-day right to cancel. Refunds: see our <a href="/refunds/">refund page</a>.</p>
     </div>
     <img class="cover" src="/assets/shop/v1/kernow-kitchenware/cover.jpg" width="1200" height="900" alt="Cover: Kernow Kitchenware: which way to grow?, the first page of the student workbook">
   </div>
@@ -265,7 +265,7 @@ img,video{max-width:100%}
 <section class="sec" id="licence"><div class="wrap">
   <h2>Licence and refunds</h2>
   <div class="lic"><p>One purchase licenses you and your school to use the pack with the students you teach: print it, project it, adapt the Word files for your own lessons and share it with colleagues in your department. Please do not post it publicly, upload it to resource-sharing sites or resell it.</p>
-  <p>If you are charged twice, cannot open the files, or the pack is not as described, email <a href="mailto:support@thebusiness.school">support@thebusiness.school</a> and we put it right. Because the files are an immediate digital download, change-of-mind refunds are not normally offered once they have been downloaded. Your statutory rights are unaffected. The seller is TBS Education Ltd Oy; see the full <a href="/terms/">terms</a> and <a href="/refunds/">refund policy</a>.</p></div>
+  <p>If you are charged twice, cannot open the files, or the pack is not as described, email <a href="mailto:support@thebusiness.school">support@thebusiness.school</a> and we put it right. Because the files are an immediate digital download and you lose the 14-day right to cancel when you buy, change-of-mind refunds are not offered once you have access. Your statutory rights are unaffected. The seller is TBS Education Ltd Oy; see the full <a href="/terms/">terms</a> and <a href="/refunds/">refund policy</a>.</p></div>
 </div></section>
 <section class="sec" id="maker"><div class="wrap">
   <h2>Who makes these</h2>
@@ -282,9 +282,8 @@ img,video{max-width:100%}
 </div></section>
 <div class="wrap"><div class="endbuy">
   <div class="t">Kernow Kitchenware: which way to grow?, £5.50</div>
-  <!-- CHECKOUT NOT LIVE: the live Stripe payment link for data-product="P1" is inserted here later. Until then href="#" and the button is rendered as not purchasable. -->
-<a class="btn soon" href="#" data-product="P1" role="button" aria-disabled="true" onclick="return false">Buy £5.50</a>
-</div></div>
+  <a class="btn" href="https://buy.stripe.com/8x26oI0CcalB5jncvG2sM06" target="_self" data-product="P1">Buy now, £5.50</a>
+</div><p class="legal" style="margin:-40px 0 56px">Digital download. By buying you ask for immediate access to the files and acknowledge that you then lose the 14-day right to cancel. Refunds: see our <a href="/refunds/">refund page</a>.</p></div>
 </main>
 <footer class="ft">
   <div class="wrap ftop">
