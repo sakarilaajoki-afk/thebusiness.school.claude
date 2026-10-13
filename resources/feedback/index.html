@@ -22,6 +22,10 @@
     .intro{font-size:17px;line-height:1.55;max-width:66ch;margin:0 0 26px;color:#405467}
     form{background:#fff;border:1px solid #dce7e5;border-radius:14px;padding:clamp(22px,5vw,36px);box-shadow:0 18px 45px -38px #203b45}
     .field{margin-bottom:20px}
+    .resource-summary{display:none;margin:0 0 20px;font-size:15px;line-height:1.5;color:#405467}
+    .resource-summary b{color:#173145}
+    #resource-field.is-filled .resource-edit{display:none}
+    #resource-field.is-filled .resource-summary{display:block}
     .label,legend{display:block;font-weight:700;font-size:15px;margin-bottom:8px;padding:0}
     .optional{font-weight:400;color:#60717c}
     input[type="text"],input[type="email"],textarea{width:100%;font:inherit;font-size:16px;padding:12px 13px;border:1px solid #bfcfce;border-radius:8px;color:#173145;background:#fff}
@@ -29,13 +33,16 @@
     textarea{min-height:90px;resize:vertical}
     .hint{font-size:13px;color:#60717c;margin:6px 0 0;line-height:1.45}
     fieldset{border:0;margin:0 0 20px;padding:0}
-    .rating,.choices{display:flex;flex-wrap:wrap;gap:8px}
-    .rating label,.choices label{display:inline-flex;align-items:center;gap:7px;border:1px solid #bfcfce;border-radius:9px;padding:9px 12px;cursor:pointer;font-size:14px;font-weight:600;background:#fff}
-    .rating label:has(input:checked),.choices label:has(input:checked){border-color:#0a6b73;background:#e8f5f2}
-    .rating input,.choices input{width:17px;height:17px;accent-color:#0a6b73;margin:0}
+    .rating{display:flex;flex-wrap:wrap;gap:8px}
+    .rating label{display:inline-flex;align-items:center;gap:7px;border:1px solid #bfcfce;border-radius:9px;padding:9px 12px;cursor:pointer;font-size:14px;font-weight:600;background:#fff}
+    .rating label:has(input:checked){border-color:#0a6b73;background:#e8f5f2}
+    .rating input{width:17px;height:17px;accent-color:#0a6b73;margin:0}
     .star{color:#936f08;font-size:18px;line-height:1}
     .check{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5;cursor:pointer}
     .check input{margin-top:3px;width:17px;height:17px;flex:none;accent-color:#0a6b73}
+    details.extra{border-top:1px solid #e4eeeb;padding-top:16px;margin:4px 0 18px}
+    details.extra summary{cursor:pointer;color:#086b73;font-size:14px;font-weight:700}
+    details.extra .field{margin:16px 0 0}
     button{background:#0a6b73;color:#fff;border:0;border-radius:8px;padding:14px 21px;font:inherit;font-weight:700;cursor:pointer}
     button:hover{background:#075760}
     .fine{font-size:13px;color:#536778;line-height:1.5;margin:15px 0 0}
@@ -47,15 +54,15 @@
 <body>
   <header class="top"><div class="top-inner"><a class="brand" href="/">TBS The Business School</a><a class="back" href="/resources/">&larr; Resource Hub</a></div></header>
   <main class="shell">
-    <span class="eyebrow">A quick note from a teacher helps</span>
-    <h1>How was the resource?</h1>
-    <p class="intro">Rate it in 20 seconds. One sentence helps even more. We use teacher feedback to fix materials and choose what to make next. Your feedback stays private unless you separately allow us to quote it.</p>
+    <span class="eyebrow">Help shape the Resource Hub</span>
+    <h1>Was this useful?</h1>
+    <p class="intro">A quick rating tells us which resources to improve. If something was missing or saved you time, one sentence helps us decide what to make next. No account needed.</p>
     <form name="resource-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/resources/feedback/thanks/">
       <input type="hidden" name="form-name" value="resource-feedback">
       <input type="hidden" name="subject" value="Resource Hub feedback">
       <input type="hidden" id="resource-url" name="resource_url" value="">
       <p class="honeypot"><label>Leave this blank <input name="bot-field" type="text" tabindex="-1" autocomplete="off"></label></p>
-      <div class="field"><label class="label" for="resource">Which resource? *</label><input id="resource" name="resource" type="text" maxlength="160" required autocomplete="off" placeholder="e.g. Four Ways to Pay for a Laptop"><p class="hint">If you arrived from a resource page, we have filled this in for you.</p></div>
+      <div class="field" id="resource-field"><div class="resource-edit"><label class="label" for="resource">Which resource? *</label><input id="resource" name="resource" type="text" maxlength="160" required autocomplete="off" placeholder="e.g. Four Ways to Pay for a Laptop"></div><p class="resource-summary">Rating <b id="resource-name"></b></p></div>
       <fieldset><legend>How useful was it? *</legend><div class="rating">
         <label><input type="radio" name="rating" value="1" required><span class="star" aria-hidden="true">★</span> 1</label>
         <label><input type="radio" name="rating" value="2"><span class="star" aria-hidden="true">★</span> 2</label>
@@ -63,15 +70,13 @@
         <label><input type="radio" name="rating" value="4"><span class="star" aria-hidden="true">★</span> 4</label>
         <label><input type="radio" name="rating" value="5"><span class="star" aria-hidden="true">★</span> 5</label>
       </div><p class="hint">1 = not useful yet, 5 = ready to use again.</p></fieldset>
-      <fieldset><legend>Have you used it with a class? *</legend><div class="choices">
-        <label><input type="radio" name="used_in_class" value="yes" required> Yes</label>
-        <label><input type="radio" name="used_in_class" value="not_yet"> Not yet</label>
-      </div></fieldset>
-      <div class="field"><label class="label" for="feedback">What worked, or what should we change? <span class="optional">(optional)</span></label><textarea id="feedback" name="feedback" maxlength="1000" placeholder="One sentence is enough."></textarea><p class="hint">Please do not include pupil names or private classroom details.</p></div>
-      <div class="field"><label class="label" for="email">Email <span class="optional">(optional, only if you want a reply)</span></label><input id="email" name="email" type="email" autocomplete="email"></div>
-      <div class="field"><label class="check"><input type="checkbox" name="may_quote_anonymously" value="yes"><span>You may quote my rating and words anonymously after reviewing them. This is optional; leaving it unticked keeps my feedback private.</span></label></div>
+      <div class="field"><label class="label" for="feedback">One thing to keep or change <span class="optional">(optional)</span></label><textarea id="feedback" name="feedback" maxlength="1000" placeholder="A sentence is enough."></textarea><p class="hint">Please do not include pupil names or private classroom details.</p></div>
+      <details class="extra"><summary>Want a reply or happy for us to quote you? (optional)</summary>
+        <div class="field"><label class="label" for="email">Email <span class="optional">(only if you want a reply)</span></label><input id="email" name="email" type="email" autocomplete="email"></div>
+        <div class="field"><label class="check"><input type="checkbox" name="may_quote_anonymously" value="yes"><span>You may quote my rating and words anonymously after reviewing them. Leaving this unticked keeps my feedback private.</span></label></div>
+      </details>
       <button type="submit">Send feedback</button>
-      <p class="fine">No account or mailing list. We use this to improve the Resource Hub, not to send marketing. See our <a href="/privacy/">privacy information</a>.</p>
+      <p class="fine">Private by default. No mailing list. See our <a href="/privacy/">privacy information</a>.</p>
     </form>
     <p class="direct">Found a factual error? You can also email <a href="mailto:support@thebusiness.school?subject=Resource%20correction">support@thebusiness.school</a> directly. We log published fixes on the <a href="/resources/corrections/">corrections page</a>.</p>
   </main>
@@ -80,7 +85,11 @@
       var params=new URLSearchParams(location.search);
       var resource=(params.get('resource')||'').trim();
       var path=(params.get('source')||'').trim();
-      if(resource)document.getElementById('resource').value=resource.slice(0,160);
+      if(resource){
+        document.getElementById('resource').value=resource.slice(0,160);
+        document.getElementById('resource-name').textContent=resource.slice(0,160);
+        document.getElementById('resource-field').classList.add('is-filled');
+      }
       if(/^\/resources\/[a-z0-9/_-]+\/?$/i.test(path))document.getElementById('resource-url').value=path;
     })();
   </script>
