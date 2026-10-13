@@ -44,6 +44,7 @@
           <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
           <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
           <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
+<a href="/shop/" style="color:inherit;text-decoration:none;white-space:nowrap">Shop</a>
           <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a><a href="/about/" style="color:inherit;text-decoration:none;white-space:nowrap">About</a>
         </div>
         <div style="display:flex;gap:10px;align-items:center">
@@ -70,6 +71,7 @@
       <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
       <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
       <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
+<a href="/shop/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Shop</a>
       <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a><a href="/about/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">About</a>
       <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Join the waitlist</a>
       <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
@@ -83,6 +85,37 @@
     <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#7fe0d7">For Classroom Teachers</span>
     <h1 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(32px,4.4vw,50px);line-height:1.12;letter-spacing:-.015em;margin:14px 0 16px;max-width:760px">Zero setup. A full class, engaged, in minutes.</h1>
     <p style="font-size:clamp(16px,1.5vw,18.5px);color:#c9d5e8;max-width:620px">You run it with a real class on a Tuesday. No install, no logins to manage, no marking pile-up, students join with a PIN and the dashboard records what they do as they go.</p>
+  </div>
+</section>
+
+<!-- TEACHER TUTORIAL VIDEO (12.10.2026) -->
+<section style="padding:72px 0 0">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <div style="max-width:640px;margin:0 auto 32px;text-align:center">
+      <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Teacher tutorial</span>
+      <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,36px);line-height:1.15;letter-spacing:-.01em;margin:12px 0">How to start a lesson</h2>
+      <p style="color:#40506e;font-size:16.5px">A 90-second walkthrough for teachers, from signing in to the end of the session.</p>
+    </div>
+    <figure style="margin:0 auto;max-width:960px;background:#0e2038;border:1px solid #e3e9f1;border-radius:16px;overflow:hidden;box-shadow:0 28px 60px -38px rgba(18,35,63,.45)">
+      <video id="teacher-tutorial" poster="/assets/tbs-web/teacher-tutorial-poster.jpg" preload="metadata" controls playsinline
+             width="1920" height="1080" style="display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0e2038"
+             aria-label="Teacher tutorial: how to start a lesson, from signing in to the end of the session">
+        <source src="/assets/tbs-web/teacher-tutorial.mp4" type="video/mp4">
+        Your browser cannot play this video. <a href="/assets/tbs-web/teacher-tutorial.mp4">Download it instead</a>.
+      </video>
+    </figure>
+    <p style="max-width:640px;margin:22px auto 0;text-align:center;color:#40506e;font-size:15.5px">Students do not need this video. When the game starts, each student gets a short tutorial for their own role and sees who is in their firm.</p>
+    <script>
+      /* The template renderer strips valueless attributes such as controls (see the film on the front page), so set it as a property until it sticks. */
+      (function(){
+        var tries = 0;
+        var t = setInterval(function(){
+          var v = document.getElementById("teacher-tutorial");
+          if (v) { v.controls = true; v.playsInline = true; }
+          if ((v && v.controls === true) || ++tries > 25) clearInterval(t);
+        }, 200);
+      })();
+    </script>
   </div>
 </section>
 
@@ -138,7 +171,7 @@
     <div style="background:#0e2038;color:#fff;border-radius:20px;padding:52px 40px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between">
       <div style="max-width:560px">
         <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(24px,3vw,34px);line-height:1.15;letter-spacing:-.01em;margin-bottom:10px">Join the waitlist</h2>
-        <p style="color:#c3cee0;font-size:16px">Our autumn pilot is full. Join the waitlist for the next round and we'll be in touch when places open. Nothing to install, students join with a nickname they choose. UK curriculum control.</p>
+        <p style="color:#c3cee0;font-size:16px">The first waitlist schools will be invited from 1 December 2026, in batches. Join the list and we’ll confirm your access by email. Nothing to install; students join with a PIN and a nickname.</p>
         <p style="color:#8ea3c4;font-size:14px;margin-top:12px">Or try the demo now: <a href="https://play.thebusiness.school/" style="color:#7fe0d7;font-weight:600;text-decoration:none">play.thebusiness.school</a></p>
       </div>
       <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent" style-hover="background:#075158">Join the waitlist</a>

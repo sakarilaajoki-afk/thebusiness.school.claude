@@ -81,23 +81,23 @@ a{text-decoration:none}
 
 /* live tools: hosted simulations, not downloads, so they sit outside the
    counted library grid */
-.live{padding:52px 0 8px}
-.livegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
-.lt{display:flex;flex-direction:column;background:#fff;border:1px solid #DDE5E1;border-radius:14px;padding:24px 26px;min-width:0;transition:box-shadow .15s ease,transform .15s ease}
-.lt:hover{box-shadow:0 14px 34px -18px rgba(11,61,46,.45);transform:translateY(-2px)}
-.lt .tag{align-self:flex-start;font-size:10.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;padding:5px 11px;border-radius:999px;margin-bottom:13px}
-.lt .tag.pilot{background:#FDF3DC;color:#7A5A00;border:1px solid #E3C46A}
-.lt .tag.used{background:#E4F1EA;color:#0B3D2E;border:1px solid #A8CDBA}
-.lt h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0B3D2E;margin-bottom:4px}
-.lt .who{font-size:13px;font-weight:600;color:#0a6b73;margin-bottom:10px}
-.lt p{font-size:14.5px;line-height:1.6;color:#4a5a53;margin-bottom:11px}
-.lt .note{font-size:13px;color:#55636B;background:#F4F7F4;border-left:3px solid #C9D4CE;padding:10px 13px;border-radius:0 6px 6px 0;margin-bottom:16px}
-.lt .go{margin-top:auto;align-self:flex-start;background:#0B3D2E;color:#fff;font-weight:600;font-size:15px;padding:12px 22px;border-radius:9px;text-decoration:none}
-.lt .go:hover{opacity:.9}
+.live{padding:28px 0 0}
+.livebar{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;background:#F4F7F4;border:1px solid #DDE5E1;border-radius:14px;padding:18px 22px}
+.livebar-copy{flex:1 1 560px;min-width:0}
+.livebar-k{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0a6b73}
+.livebar h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#0B3D2E;margin:2px 0 3px}
+.live-bottom{padding:36px 0 44px}
+.live-bottom .livebar{padding:14px 18px;border-radius:12px}
+.livebar p{font-size:13px;line-height:1.45;color:#4a5a53}
+.livebar details{font-size:12px;color:#55636B;margin-top:5px}
+.livebar summary{cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.livebar .go{display:inline-flex;align-items:center;justify-content:center;background:#0B3D2E;color:#fff;font-weight:600;font-size:13.5px;padding:9px 15px;border-radius:9px;white-space:nowrap}
+.livebar .go:hover{opacity:.9}
+@media(max-width:640px){.livebar .go{width:100%}}
 
 /* cards */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:18px}
-.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:18px}
 .card{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #DDE5E1;border-radius:14px;overflow:hidden;transition:box-shadow .15s ease,transform .15s ease}
 .card:hover{box-shadow:0 14px 34px -18px rgba(11,61,46,.45);transform:translateY(-2px)}
 .thumb{position:relative;display:block;aspect-ratio:16/9;background-size:cover;background-position:top center;background-color:#F4F7F4;border-bottom:1px solid #DDE5E1}
@@ -113,10 +113,11 @@ a{text-decoration:none}
 .fmt.free{color:#fff;background:#0B3D2E;border-color:#0B3D2E}
 
 /* topic library banner */
-.tl{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;border:1px solid #DDE5E1;background:#F4F7F4;border-left:5px solid #0B3D2E;border-radius:14px;padding:24px 26px;margin-top:26px}
-.tl h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0B3D2E}
-.tl p{font-size:14.5px;color:#55636B;margin-top:5px;max-width:640px}
-.tl .go{display:inline-flex;font-weight:600;font-size:14.5px;padding:12px 20px;border-radius:10px;background:#0B3D2E;color:#fff;white-space:nowrap}
+.tl{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;border:1px solid #DDE5E1;background:#F4F7F4;border-left:4px solid #0B3D2E;border-radius:12px;padding:13px 18px;margin-top:20px}
+.tl h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#0B3D2E}
+.tl p{font-size:13px;line-height:1.45;color:#55636B;margin-top:2px;max-width:720px}
+.tl .go{display:inline-flex;font-weight:600;font-size:13.5px;padding:9px 15px;border-radius:9px;background:#0B3D2E;color:#fff;white-space:nowrap}
+@media(max-width:640px){.tl .go{width:100%;justify-content:center}}
 
 /* filters */
 .toolbar{display:flex;flex-direction:column;gap:12px;margin-bottom:22px}
@@ -201,6 +202,25 @@ a{text-decoration:none}
 .fcols a{color:#40506e}
 .fcols a:hover{color:#0e2038}
 @media(prefers-reduced-motion:reduce){.card,.qrow{transition:none}.card:hover{transform:none}}
+/* hub intro video: poster button opens a larger player; no video bytes load before the click, nothing autoplays */
+.hero.has-video{padding-bottom:56px}
+.hero.has-video .dec{display:none}
+/* wide intro video: plays muted in a loop when visible; a click restarts it with sound */
+.hvid{position:relative;margin:40px 0 0;width:min(1400px,calc(100vw - 32px));left:50%;transform:translateX(-50%)}
+.hvid-frame{position:relative;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:#06140f;box-shadow:0 40px 90px -40px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.14)}
+.hvid video{display:block;width:100%;height:100%;object-fit:cover}
+.hvid-snd{position:absolute;left:22px;bottom:22px;display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.28);background:rgba(8,22,16,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;border-radius:999px;padding:10px 20px 10px 10px;font:600 16px/1 'Inter',sans-serif;cursor:pointer}
+.hvid-snd .ic{width:38px;height:38px;border-radius:50%;background:#fff;position:relative;flex:0 0 auto}
+.hvid-snd .ic::after{content:"";position:absolute;left:15px;top:11px;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #0B3D2E}
+.hvid-snd:hover{background:rgba(11,61,46,.92)}
+.hvid:not(.sound) .hvid-frame{cursor:pointer}
+.hvid:not(.sound) .hvid-frame:hover .hvid-snd{background:rgba(11,61,46,.92)}
+.hvid-snd:focus-visible{outline:3px solid #9fd8c4;outline-offset:3px}
+.hvid.sound .hvid-snd{display:none}
+.hvid-tx{margin-top:12px;font-size:13.5px;color:#d7e6de}
+.hvid-tx summary{cursor:pointer;color:#9fd8c4;font-weight:600}
+.hero .hvid-tx p{font-size:13.5px;max-width:none;margin-top:6px;color:#d7e6de}
+@media(max-width:640px){.hvid{margin-top:28px}.hvid-frame{border-radius:14px}.hvid-snd{left:12px;bottom:12px;font-size:14px;padding:8px 14px 8px 8px}.hvid-snd .ic{width:30px;height:30px}.hvid-snd .ic::after{left:12px;top:8px;border-width:7px 0 7px 11px}}
 /* print: teachers print pages; force dark text on light so nothing comes out white on white */
 @media print{
   .hd,.mmenu,.hero .dec,.gcta,.searchrow,.chips{display:none!important}
@@ -235,6 +255,7 @@ a{text-decoration:none}
         <a href="/curriculum-mapping/">Curriculum</a>
         <a href="/pricing/">Licensing</a>
         <a href="/resources/">Resources</a>
+<a href="/shop/">Shop</a>
         <a href="/curriculum-faq/">FAQ</a>
         <a href="/about/">About</a>
       </div>
@@ -250,24 +271,39 @@ a{text-decoration:none}
     <a href="/curriculum-mapping/">Curriculum</a>
     <a href="/pricing/">Licensing</a>
     <a href="/resources/">Resources</a>
+<a href="/shop/">Shop</a>
     <a href="/curriculum-faq/">FAQ</a>
     <a href="/about/">About</a>
     <a class="mm-cta" href="/pilot/">Join the waitlist</a>
   </div>
 </header>
 
-<section class="hero">
+<section class="hero has-video">
   <span class="dec" aria-hidden="true">&pound;</span>
   <div class="wrap">
+    <div>
     <span class="kick">Free teaching resources</span>
     <h1>The resource library.</h1>
     <p>Complete packs, revision pages, quick downloads and classroom games for Business and Economics teachers. Every full pack includes the answers. Free to download, free to share with your department, no sign up.</p>
     <div class="stats">
-      <span class="stat">55 free downloads</span>
+      <span class="stat">Free teaching resources</span>
       <span class="stat">64 topic revision pages</span>
-      <span class="stat">12 classroom games</span>
+      <span class="stat">12 classroom activities</span>
       <span class="stat">Answers included</span>
     </div>
+    </div>
+    <figure class="hvid" id="hvid">
+      <div class="hvid-frame">
+        <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/video/library-intro-v3/poster.webp" aria-label="How the resource library works, 30-second video with subtitles">
+          <source src="/assets/video/library-intro-v3/library-intro-720p.mp4" type="video/mp4" media="(max-width: 900px)">
+          <source src="/assets/video/library-intro-v3/library-intro-1080p.mp4" type="video/mp4">
+        </video>
+        <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with sound &middot; 30 sec</button>
+      </div>
+      <details class="hvid-tx"><summary>Read the video text</summary>
+        <p>Free Business and Economics lessons, with full answers. Pick your level and subject to see only what matches. Open one to see what&rsquo;s inside. Students get the scenario and the tasks. You get the lesson plan and the answers. For A level, GCSE, IGCSE and BTEC. Free to download, with no sign-up, at thebusiness.school.</p>
+      </details>
+    </figure>
   </div>
 </section>
 
@@ -275,11 +311,11 @@ a{text-decoration:none}
   <div class="wrap">
     <div class="ss">
       <div class="ss-l">
-        <span class="ss-k">From teachers, not just from us</span>
-        <h2>Made something that works? Put it on this shelf.</h2>
-        <p>If you have a worksheet, a starter, a case study or a game your classes actually respond to, add it here and it goes out free under your name. No account, no upload limit, no catch.</p>
+        <span class="ss-k">Built around real lessons</span>
+        <h2>What do you need to teach next?</h2>
+        <p>Tell us the qualification, exam board and topic. We use teacher requests to decide what TBS makes next.</p>
       </div>
-      <a class="ss-btn" href="/resources/share/">Post a free resource &rarr;</a>
+      <a class="ss-btn" href="/resources/request/">Request a resource &rarr;</a>
     </div>
   </div>
 </section>
@@ -288,73 +324,52 @@ a{text-decoration:none}
   <div class="wrap">
     <div class="sechead">
       <h2>New this month</h2>
-      <p>The latest full packs. Word and PowerPoint included where you see the badges.</p>
+      <p>Our latest classroom-ready lessons, with student pages and teacher answers.</p>
     </div>
     <div class="grid4">
-<a class="card lcard" href="/resources/a-level-business-7138-switchover/">
-  <span class="thumb" style="background-image:url('/resources/a-level-business-7138-switchover/cover.jpg')"><span class="cnew">New</span></span>
-  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The 7138 Switchover Pack</span><span class="cdesc">AQA 7138 starts this September and nearly every A Level Business resource in the country was written for 7132. The dates, the three units, the papers and the five command words, with the specification section printed beside every claim.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+<a class="card lcard" href="/resources/gcse-business-sources-of-finance-bike-repair/">
+  <span class="thumb" style="background-image:url('/resources/gcse-business-sources-of-finance-bike-repair/cover.jpg')"><span class="cnew">New</span></span>
+  <span class="cbody"><span class="ck">GCSE Business</span><span class="ct">How Should a Bike Repair Shop Pay for Its Van?</span><span class="cdesc">AQA GCSE 8132, 3.6.1. Students cost a loan, an overdraft, hire purchase, shares and retained profit, and recommend one.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card lcard" href="/resources/a-level-economics-first-term-survival-pack/">
-  <span class="thumb" style="background-image:url('/resources/a-level-economics-first-term-survival-pack/cover.jpg')"><span class="cnew">New</span></span>
-  <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">The First Term Survival Pack</span><span class="cdesc">Where the marks actually sit on AQA 7136 and Edexcel 9EC0, both mark grids quoted word for word, the 20% that is arithmetic, and a nine question baseline test for week one.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+<a class="card lcard" href="/resources/a-level-business-sales-forecasting-ice-cream/">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-sales-forecasting-ice-cream/cover.jpg')"><span class="cnew">New</span></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Sales Forecasting: How Many Tubs for Next Summer?</span><span class="cdesc">Edexcel 9BS0, Theme 3. Students calculate centred moving averages, extrapolate a trend and judge how far to trust the forecast.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
-<a class="card lcard" href="/resources/a-level-business-evaluation-which-sentence-earns-which-mark/">
-  <span class="thumb" style="background-image:url('/resources/a-level-business-evaluation-which-sentence-earns-which-mark/cover.jpg')"><span class="cnew">New</span></span>
-  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Which Sentence Earns Which Mark</span><span class="cdesc">Three model answers with every sentence tagged for what it earns and why, plus four complete lessons with answers. AQA 7132 (7138 from September 2026) and Edexcel 9BS0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+<a class="card lcard" href="/shop/thistledown-garden-centre/">
+  <span class="thumb" style="background-image:url('/assets/shop/v1/thistledown-garden-centre/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">Lesson pack &middot; A Level Business</span><span class="ct">Thistledown Garden Centre: forecast first, then invest</span><span class="cdesc">Edexcel 9BS0, Theme 3. Three lessons on forecasting, payback, ARR and NPV, with a teacher guide and full worked answers. Free sample PDF on the pack page.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Lesson pack &middot; &pound;5.50</span></span></span>
 </a>
-<a class="card lcard" href="/resources/a-level-economics-data-response-decoder/">
-  <span class="thumb" style="background-image:url('/resources/a-level-economics-data-response-decoder/cover.jpg')"><span class="cnew">New</span></span>
-  <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">The Data Response Decoder</span><span class="cdesc">A six step method for reading an extract, two extracts with full data, and model answers with every sentence tagged. AQA 7136 and Edexcel 9EC0.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt">Slides</span><span class="fmt free">Free</span></span></span>
+<a class="card lcard" href="/resources/igcse-business-cambridge-ownership-bakery/">
+  <span class="thumb" style="background-image:url('/resources/igcse-business-cambridge-ownership-bakery/cover.jpg')"><span class="cnew">New</span></span>
+  <span class="cbody"><span class="ck">Cambridge IGCSE Business</span><span class="ct">Types of Business Organisation: Should Mei Stay a Sole Trader?</span><span class="cdesc">Cambridge IGCSE Business 0264 / 0774, 1.4.1. Learners compare unlimited and limited liability and recommend a type of business organisation.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card lcard" href="/resources/igcse-business-pricing-strategies-phone-cases/">
+  <span class="thumb" style="background-image:url('/resources/igcse-business-pricing-strategies-phone-cases/cover.jpg')"><span class="cnew">New</span></span>
+  <span class="cbody"><span class="ck">IGCSE Business</span><span class="ct">Pricing Strategies: How Should Tidewell Price Its Phone Cases?</span><span class="cdesc">Pearson Edexcel International GCSE 4BS1, 4.3.2. Learners calculate cost-plus prices, match pricing strategies and recommend a launch price.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
     </div>
     <div class="tl">
       <div>
         <h3>The Topic Library: 64 revision pages</h3>
-        <p>Notes, key terms, practice questions and examiner tips for every major topic. Edexcel A Level, AQA GCSE, Cambridge IGCSE, BTEC and IB.</p>
+        <p>42 Edexcel A Level Business, 12 AQA GCSE and 8 Cambridge IGCSE 0450 pages, plus one BTEC and one IB. Notes, practice and answer guidance.</p>
       </div>
-      <a class="go" href="/resources/topics/">Browse the Topic Library</a>
+      <a class="go" href="/resources/topics/">Browse the library</a>
     </div>
   </div>
 </section>
 
-<section class="sec live" id="live">
-  <div class="wrap">
-    <div class="sechead">
-      <h2>Run it in the room</h2>
-      <p>Two simulations you open in a browser. Nothing to install, nothing to download.</p>
-    </div>
-    <div class="livegrid">
-
-      <div class="lt">
-        <span class="tag used">Used in lessons</span>
-        <h3>Founder&rsquo;s Hour</h3>
-        <div class="who">One lesson &middot; Key Stage 4 and 5 &middot; students work solo</div>
-        <p>Found a caf&eacute; and survive its first year. Students make the opening decisions, defend each one in writing, and get pushed back on by Vic, the mentor in the game. You mark the writing; the game does not put a grade on anyone.</p>
-        <p>It runs about an hour and it fills a lesson on its own. There is a class dashboard so you can see every student&rsquo;s decisions and writing as they go.</p>
-        <div class="note">It has been run with real classes. One pilot hit slow responses when a whole class typed at once, which we have worked on since. Worth knowing before you book a lesson round it.</div>
-        <a class="go" href="https://lesson.thebusiness.school/" target="_blank" rel="noopener">Try Founder&rsquo;s Hour &rarr;</a>
-      </div>
-
-      <div class="lt">
-        <span class="tag pilot">In pilot</span>
-        <h3>Market Simulation Studio</h3>
-        <div class="who">You build it &middot; any level &middot; students play in groups</div>
-        <p>Build your own market simulation for your class without writing anything technical. Start from one that already works, change the products, the customers and the numbers, and run it. Every copy is yours to change and the original is never touched.</p>
-        <p>Use it for a market you actually teach, or for the local businesses your students know.</p>
-        <div class="note">This one is in pilot. It is finished and it works, and what it has not had yet is thirty teenagers finding the holes in it. If you try it, tell us what broke and what you would change: <a href="mailto:support@thebusiness.school">support@thebusiness.school</a>. That feedback is the whole reason it is here.</div>
-        <a class="go" href="https://market.thebusiness.school/explore" target="_blank" rel="noopener">Open the Studio &rarr;</a>
-      </div>
-
-    </div>
+<section aria-label="Lesson packs" style="border-top:1px solid #DDE5E1;border-bottom:1px solid #DDE5E1;background:#F4F7F4">
+  <div class="wrap" style="padding-top:12px;padding-bottom:12px;font-size:15px;color:#2b3936">
+    <strong style="color:#0B3D2E">Lesson packs:</strong> three or four lessons on one original case, with a teacher guide, full worked answers and editable Word files. Each has a free sample PDF. <a href="/shop/" style="color:#0a6b73;text-decoration:underline;text-underline-offset:3px;font-weight:600">See the lesson packs</a>
   </div>
 </section>
+
 
 <section class="sec" id="library">
   <div class="wrap">
     <div class="sechead">
       <h2>Browse the library</h2>
-      <p>Filter by level or subject, or just search.</p>
+      <p>Choose your qualification, subject or format. Your selection stays in the link, so you can come straight back to it.</p>
     </div>
     <div class="toolbar">
       <div class="chips" id="lvlchips">
@@ -386,13 +401,93 @@ a{text-decoration:none}
     </div>
       <p class="fmtnote">Editable means a Word file is included, so you can change the business, the figures or the questions before you set it.</p>
     <div class="grid" id="cards">
+<a class="card" href="/resources/gcse-business-sources-of-finance-bike-repair/" data-fmt="word pdf" data-lvl="gcse" data-subj="business" data-name="gcse business sources of finance internal external bank loan overdraft hire purchase share issue retained profit interest short-term long-term aqa 8132 finance">
+  <span class="thumb" style="background-image:url('/resources/gcse-business-sources-of-finance-bike-repair/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">GCSE Business</span><span class="ct">How Should a Bike Repair Shop Pay for Its Van?</span><span class="cdesc">AQA GCSE 8132, 3.6.1. Students cost a loan, an overdraft, hire purchase, shares and retained profit, sort short-term and long-term finance and recommend one. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-sales-forecasting-ice-cream/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business sales forecasting moving averages four quarter centred three period scatter graph line of best fit extrapolation edexcel 9bs0 theme 3">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-sales-forecasting-ice-cream/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Sales Forecasting: How Many Tubs for Next Summer?</span><span class="cdesc">Edexcel 9BS0, Theme 3. Students calculate centred moving averages, extrapolate a trend, read a scatter graph and judge how far to trust the forecast. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/igcse-business-cambridge-ownership-bakery/" data-fmt="word pdf" data-lvl="igcse" data-subj="business" data-name="cambridge igcse business 0264 0774 types of business organisation sole trader partnership private limited company public limited company franchise joint venture limited liability">
+  <span class="thumb" style="background-image:url('/resources/igcse-business-cambridge-ownership-bakery/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">Cambridge IGCSE Business</span><span class="ct">Types of Business Organisation: Should Mei Stay a Sole Trader?</span><span class="cdesc">Cambridge IGCSE Business 0264 / 0774, 1.4.1. Learners compare unlimited and limited liability, sort business features and recommend a type of business organisation. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/igcse-business-pricing-strategies-phone-cases/" data-fmt="word pdf" data-lvl="igcse" data-subj="business" data-name="igcse international gcse business pricing strategies cost plus penetration competition skimming promotional markup edexcel 4bs1">
+  <span class="thumb" style="background-image:url('/resources/igcse-business-pricing-strategies-phone-cases/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">IGCSE Business</span><span class="ct">Pricing Strategies: How Should Tidewell Price Its Phone Cases?</span><span class="cdesc">Pearson Edexcel International GCSE 4BS1, 4.3.2. Learners calculate cost-plus prices, match pricing strategies and recommend a launch price. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-hr-data-contact-centre/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business labour turnover labour productivity labour cost per unit employee costs human resource data aqa 7132">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-hr-data-contact-centre/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">HR Data: Which Contact Centre Site Gets the Retention Budget?</span><span class="cdesc">AQA 7132, exams in 2027. Students calculate the four human resource measures for two contact centre sites and recommend where a retention budget should go. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-economics-unemployment-coastal-town/" data-fmt="word pdf" data-lvl="alevel" data-subj="economics" data-name="a level economics unemployment claimant count ilo labour force survey under-employment inactivity structural frictional seasonal cyclical edexcel 9ec0 theme 2">
+  <span class="thumb" style="background-image:url('/resources/a-level-economics-unemployment-coastal-town/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">After the Ferry: Unemployment in a Coastal Town</span><span class="cdesc">Edexcel 9EC0, Theme 2. Students calculate labour market rates, compare the claimant count with the ILO measure, sort causes of unemployment in pairs and choose a policy. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/btec-business-unit-3-income-statement-florist/" data-fmt="word pdf" data-lvl="btec" data-subj="business" data-name="btec business unit 3 personal and business finance statement of comprehensive income sole trader cost of goods sold gross profit depreciation accrual prepayment capital revenue expenditure">
+  <span class="thumb" style="background-image:url('/resources/btec-business-unit-3-income-statement-florist/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">BTEC Business</span><span class="ct">Did the Florist Have a Good Year?</span><span class="cdesc">BTEC Nationals Business Unit 3, F1. Learners complete a sole trader florist&rsquo;s statement of comprehensive income, adjust it for an accrual and judge the year. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-ratio-analysis-gyms/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business ratio analysis roce gearing return on capital employed edexcel 9bs0 theme 3 finance">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-ratio-analysis-gyms/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">ROCE and Gearing: Which Gym Is in Better Shape?</span><span class="cdesc">Edexcel 9BS0, Theme 3. Students calculate ROCE and gearing for two gyms, compare a loan with a share issue and advise. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/gcse-business-market-research-bubble-tea/" data-fmt="word pdf" data-lvl="gcse" data-subj="business" data-name="gcse business market research primary secondary qualitative quantitative survey focus group segmentation market share competitive pricing aqa 8132 marketing">
+  <span class="thumb" style="background-image:url('/resources/gcse-business-market-research-bubble-tea/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">GCSE Business</span><span class="ct">Market Research for a Bubble Tea Kiosk</span><span class="cdesc">AQA GCSE 8132, 3.5.3. Students choose research methods, interpret a survey and a bar chart, judge how reliable the data is and recommend a price and segment. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-decision-tree-theatre/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business decision trees expected value net gain risk aqa 7132 decision making">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-decision-tree-theatre/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Decision Trees: the New Musical or the Safe Tour?</span><span class="cdesc">AQA 7132, exams in 2027. Students complete a decision tree for a small theatre, test a lower probability and weigh the mission against the numbers. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-economics-indirect-tax-sugary-drinks/" data-fmt="word pdf" data-lvl="alevel" data-subj="economics" data-name="a level economics indirect tax subsidy incidence specific tax elasticity edexcel 9ec0 theme 1 market failure">
+  <span class="thumb" style="background-image:url('/resources/a-level-economics-indirect-tax-sugary-drinks/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">Who Really Pays a Tax on Sugary Drinks?</span><span class="cdesc">Edexcel 9EC0, Theme 1. Students read a tax diagram, work out the incidence and the revenue, link it to elasticity and draw a subsidy. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/btec-business-unit-3-borrowing-laptop/" data-fmt="word pdf" data-lvl="btec" data-subj="business" data-name="btec business unit 3 personal and business finance personal finance borrowing loan hire purchase credit card payday loan cost of credit">
+  <span class="thumb" style="background-image:url('/resources/btec-business-unit-3-borrowing-laptop/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">BTEC Business</span><span class="ct">Four Ways to Pay for a Laptop</span><span class="cdesc">BTEC Nationals Business Unit 3, A4. Learners compare four ways to borrow £900, calculate the cost of credit and advise a young apprentice. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/igcse-business-cash-flow-smoothie-truck/" data-fmt="word pdf" data-lvl="igcse" data-subj="business" data-name="igcse international gcse business cash flow forecast net cash flow opening closing balance edexcel 4bs1">
+  <span class="thumb" style="background-image:url('/resources/igcse-business-cash-flow-smoothie-truck/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">IGCSE Business</span><span class="ct">Cash-flow Forecasting: Will the Smoothie Truck Run Dry?</span><span class="cdesc">Pearson Edexcel International GCSE 4BS1, 3.2. Learners complete a cash-flow forecast, find the negative months and recommend a fix. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-investment-appraisal-bike-hire/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business investment appraisal payback arr npv net present value edexcel 9bs0 theme 3">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-investment-appraisal-bike-hire/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Investment Appraisal: an E-bike Fleet or a Tour Van?</span><span class="cdesc">Edexcel 9BS0, Theme 3. Students calculate payback, ARR and NPV for two projects, test a weaker forecast and recommend one. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/gcse-business-supplier-choice-cafe/" data-fmt="word pdf" data-lvl="gcse" data-subj="business" data-name="gcse business procurement supplier choice price quality reliability just in time just in case aqa 8132 operations">
+  <span class="thumb" style="background-image:url('/resources/gcse-business-supplier-choice-cafe/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">GCSE Business</span><span class="ct">Which Coffee Supplier for the Corner Cafe?</span><span class="cdesc">AQA GCSE 8132, 3.3.2. Students compare three suppliers on price, quality and reliability, weigh JIT against JIC and recommend one. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-economics-inflation-two-households/" data-fmt="word pdf" data-lvl="alevel" data-subj="economics" data-name="a level economics inflation cpi rpi weighted price index edexcel 9ec0 theme 2 deflation disinflation">
+  <span class="thumb" style="background-image:url('/resources/a-level-economics-inflation-two-households/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">One Inflation Rate, Two Households</span><span class="cdesc">Edexcel 9EC0, Theme 2. Students build a weighted price index, compare a pensioner and a student household and judge whether the CPI protects pensioners. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-budget-variances-cafe/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business budget variances edexcel 9bs0 historical zero based budget variance analysis">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-budget-variances-cafe/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Budget Variances at Harbour Street Cafe</span><span class="cdesc">Edexcel 9BS0, Theme 2. Students calculate budget variances, decide which deserve investigation, link them to causes and choose how to set next month&rsquo;s budget. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-economics-real-or-nominal-gdp/" data-fmt="word pdf" data-lvl="alevel" data-subj="economics" data-name="a level economics real or nominal gdp edexcel 9ec0 growth inflation price index living standards">
+  <span class="thumb" style="background-image:url('/resources/a-level-economics-real-or-nominal-gdp/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">Real or Nominal? Reading a Country&rsquo;s Growth Figures</span><span class="cdesc">Edexcel 9EC0, Theme 2. Students deflate nominal GDP with a price index, compare nominal growth, real growth and inflation, and judge whether living standards rose. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-price-elasticity-cinema/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business price elasticity of demand cinema pricing edexcel 9bs0 revenue contribution">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-price-elasticity-cinema/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Price Elasticity and the Cinema Pricing Decision</span><span class="cdesc">Edexcel 9BS0, Theme 1. Students calculate price elasticity for cinema tickets and a snack combo, link it to revenue and contribution, and judge a manager's pricing plan. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-capacity-supermarket-contract/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business capacity unit costs supermarket contract aqa 7132 capacity utilisation productivity">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-capacity-supermarket-contract/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Capacity, Unit Costs and a Supermarket Contract</span><span class="cdesc">AQA 7132, exams in 2027. Students work out capacity utilisation, unit cost and productivity for a bakery and decide whether a supermarket contract below unit cost is worth taking. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
+<a class="card" href="/resources/a-level-business-break-even-price-decision/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business break even and the price decision edexcel 9bs0 contribution margin of safety">
+  <span class="thumb" style="background-image:url('/resources/a-level-business-break-even-price-decision/cover.jpg')"></span>
+  <span class="cbody"><span class="ck">A Level Business</span><span class="ct">Break-even and the Price Decision</span><span class="cdesc">Edexcel 9BS0, Theme 2. Students read a break-even chart, then compare a price cut with extra advertising for the same fictional business and decide which plan to back. Student pages and teacher guide.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
+</a>
 <a class="card" href="/resources/a-level-business-7138-switchover/" data-fmt="word pdf" data-lvl="alevel" data-subj="business" data-name="a level business aqa 7138 switchover pack new specification september 2026">
   <span class="thumb" style="background-image:url('/resources/a-level-business-7138-switchover/cover.jpg')"></span>
   <span class="cbody"><span class="ck">A Level Business</span><span class="ct">The 7138 Switchover Pack</span><span class="cdesc">AQA 7138 starts in September 2026 and your Year 13 still sits 7132. Which group sits what, ten sections becoming three units, the papers, the five command words, and why the nine mark question changed job.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
-</a>
-<a class="card" href="/resources/a-level-economics-first-term-survival-pack/" data-fmt="word pdf" data-lvl="alevel" data-subj="economics" data-name="a level economics first term survival pack year 12 quantitative skills mark grids">
-  <span class="thumb" style="background-image:url('/resources/a-level-economics-first-term-survival-pack/cover.jpg')"></span>
-  <span class="cbody"><span class="ck">A Level Economics</span><span class="ct">The First Term Survival Pack</span><span class="cdesc">A real AQA paper mapped question by question, both levels of response grids quoted, Edexcel's three commands in Pearson's words, and a nine question quantitative baseline with answers.</span><span class="cbadges"><span class="fmt">PDF</span><span class="fmt">Word</span><span class="fmt free">Free</span></span></span>
 </a>
 <a class="card" href="/resources/gcse-business-which-sentence-earns-which-mark/" data-fmt="word pdf" data-lvl="gcse" data-subj="business" data-name="gcse business which sentence earns which mark">
   <span class="thumb" style="background-image:url('/resources/gcse-business-which-sentence-earns-which-mark/cover.jpg')"></span>
@@ -593,7 +688,7 @@ a{text-decoration:none}
 </a>
     </div>
     <p class="fmtnote" style="margin:22px 0 0">Everything we have ever got wrong on a resource, and when we fixed it, is on the <a href="/resources/corrections/" style="color:#0a6b73">corrections page</a>. If you downloaded something before 16 August 2026, check it there.</p>
-    <p class="noresults" id="noresults">Nothing matches those filters yet. Try widening them, or tell us in the free group what you need and it goes on the build list.</p>
+    <p class="noresults" id="noresults">Nothing matches those filters yet. Try widening them, or <a href="/resources/request/">request the topic you need</a>.</p>
   </div>
 </section>
 
@@ -608,7 +703,6 @@ a{text-decoration:none}
 <a class="qrow" href="/resources/a-level-financial-ratios-cheat-sheet.pdf" download><span class="qtx"><span class="qt">Financial Ratios Cheat Sheet</span><span class="qs">A Level Business, 1 page</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
 <a class="qrow" href="/resources/year-12-business-first-lesson-back.pdf" download><span class="qtx"><span class="qt">Year 12: First Lesson Back</span><span class="qs">A Level Business, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
 <a class="qrow" href="/resources/gcse-business-first-lesson-back.pdf" download><span class="qtx"><span class="qt">GCSE: First Lesson Back</span><span class="qs">GCSE Business, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
-<a class="qrow" href="/resources/btec-business-first-lesson-back.pdf" download><span class="qtx"><span class="qt">BTEC: First Lesson Back</span><span class="qs">BTEC Level 3, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
 <a class="qrow" href="/resources/september-business-starter-bank.pdf" download><span class="qtx"><span class="qt">September Starter Bank</span><span class="qs">GCSE and A Level, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
 <a class="qrow" href="/resources/year-12-business-autumn-scheme-of-work-at-a-glance.pdf" download><span class="qtx"><span class="qt">Year 12 Autumn Scheme of Work at a Glance</span><span class="qs">A Level Business, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
 <a class="qrow" href="/resources/gymshark-case-study-pack.pdf" download><span class="qtx"><span class="qt">Gymshark: Case Study Pack</span><span class="qs">GCSE and A Level, 8 pages</span></span><span class="qb"><span class="fmt">PDF</span><span class="fmt free">Free</span></span></a>
@@ -626,18 +720,57 @@ a{text-decoration:none}
   </div>
 </section>
 
+<section id="feedback" aria-labelledby="feedback-heading" style="border-top:1px solid #e3e9e7;padding:20px 0 22px;background:#fff">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <h2 id="feedback-heading" style="font:600 16px 'Inter',Arial,sans-serif;color:#0e2038;margin:0 0 5px">What did you think of the resources?</h2>
+    <p style="font-size:13px;color:#65728c;margin:0 0 12px">A quick rating helps us choose what to improve next.</p>
+    <form name="resource-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/resources/feedback/thanks/" style="display:flex;flex-wrap:wrap;align-items:center;gap:10px">
+      <input type="hidden" name="form-name" value="resource-feedback">
+      <input type="hidden" name="subject" value="Resource Hub quick feedback">
+      <input type="hidden" name="resource" value="Resource Hub">
+      <input type="hidden" name="resource_url" value="/resources/">
+      <p style="position:absolute;left:-9999px"><label>Leave blank <input name="bot-field" type="text" tabindex="-1" autocomplete="off"></label></p>
+      <fieldset style="border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:5px;align-items:center"><legend style="position:absolute;left:-9999px">How useful were the resources?</legend>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="1" required aria-label="1 star">★ 1</label>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="2" aria-label="2 stars">★ 2</label>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="3" aria-label="3 stars">★ 3</label>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="4" aria-label="4 stars">★ 4</label>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="5" aria-label="5 stars">★ 5</label>
+      </fieldset>
+      <label for="hub-feedback-note" style="position:absolute;left:-9999px">Your feedback, optional</label>
+      <input id="hub-feedback-note" name="feedback" type="text" maxlength="500" placeholder="Anything to keep or change? (optional)" style="flex:1 1 230px;min-width:0;max-width:440px;padding:9px 11px;border:1px solid #cbd6d2;border-radius:7px;font:13px 'Inter',Arial,sans-serif">
+      <button type="submit" style="border:0;border-radius:7px;background:#0B3D2E;color:#fff;padding:10px 15px;font:600 13px 'Inter',Arial,sans-serif;cursor:pointer">Send</button>
+    </form>
+    <p style="font-size:11px;color:#65728c;margin:8px 0 0">Private feedback. We do not publish responses from this form.</p>
+  </div>
+</section>
+
 <section style="background:#f4f7fb;border-top:1px solid #e3e9f1;border-bottom:1px solid #e3e9f1;padding:52px 0">
   <div style="max-width:1160px;margin:0 auto;padding:0 24px;display:flex;gap:34px;flex-wrap:wrap;align-items:center;justify-content:space-between">
     <div style="flex:1 1 460px">
-      <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8a7320;margin-bottom:9px">Free only</span>
-      <h2 style="font-family:'Fraunces',Georgia,serif;font-size:29px;font-weight:600;color:#0e2038;margin-bottom:11px">Made something that works? Put it here.</h2>
-      <p style="font-size:15.5px;color:#2a3a58;line-height:1.6;max-width:62ch">Most departments have a worksheet that works every year and never leaves the building. Post it and another teacher can use it on Monday. Nothing here is ever paywalled, your name stays on it, and every exam board claim is checked against the board&rsquo;s own document before it goes up.</p>
+      <span style="display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#8a7320;margin-bottom:9px">Help shape the library</span>
+      <h2 style="font-family:'Fraunces',Georgia,serif;font-size:29px;font-weight:600;color:#0e2038;margin-bottom:11px">Missing a topic for your class?</h2>
+      <p style="font-size:15.5px;color:#2a3a58;line-height:1.6;max-width:62ch">Tell us exactly what you teach and what would save you preparation time. We read the requests and make the resources ourselves.</p>
     </div>
-    <a href="/resources/share/" style="display:inline-block;background:#0a6b73;color:#fff;text-decoration:none;border-radius:11px;padding:15px 26px;font-weight:600;font-size:16px;white-space:nowrap">Post a free resource</a>
+    <a href="/resources/request/" style="display:inline-block;background:#0a6b73;color:#fff;text-decoration:none;border-radius:11px;padding:15px 26px;font-weight:600;font-size:16px;white-space:nowrap">Request a resource</a>
   </div>
 </section>
 
 
+
+<section class="sec live live-bottom" id="live">
+  <div class="wrap">
+    <div class="livebar">
+      <div class="livebar-copy">
+        <span class="livebar-k">Browser-based lesson &middot; used in classes</span>
+        <h2>Founder&rsquo;s Hour</h2>
+        <p>One solo lesson: found a London caf&eacute;, make business decisions and defend them in writing. Vic offers provisional feedback; the teacher confirms the assessment.</p>
+        <details><summary>Classroom pilot note</summary>One pilot saw slow responses when a whole class submitted writing at once. We have worked on this since; test it before relying on it for a scheduled lesson.</details>
+      </div>
+      <a class="go" href="https://lesson.thebusiness.school/" target="_blank" rel="noopener">Try Founder&rsquo;s Hour &rarr;</a>
+    </div>
+  </div>
+</section>
 
 <section class="trust">
   <div class="wrap trow">
@@ -675,6 +808,36 @@ a{text-decoration:none}
   var lvl="all", subj="all", fmt="all", q="";
   var cards=[].slice.call(document.querySelectorAll("#cards .card"));
   var count=document.getElementById("count"), none=document.getElementById("noresults");
+  var allowed={level:["alevel","gcse","igcse","btec","ib","game"],subject:["business","economics"],format:["word","slides"]};
+  function selected(key){
+    var value=new URLSearchParams(window.location.search).get(key);
+    return allowed[key].indexOf(value)>-1?value:"all";
+  }
+  function selectChip(id,attr,value){
+    var box=document.getElementById(id);
+    [].forEach.call(box.querySelectorAll(".chip"),function(chip){
+      var active=chip.dataset[attr]===value;
+      chip.classList.toggle("on",active);
+      chip.setAttribute("aria-pressed",active?"true":"false");
+    });
+  }
+  function restoreFromUrl(){
+    lvl=selected("level"); subj=selected("subject"); fmt=selected("format");
+    q=(new URLSearchParams(window.location.search).get("q")||"").trim().toLowerCase();
+    document.getElementById("q").value=q;
+    selectChip("lvlchips","lvl",lvl);
+    selectChip("subjchips","subj",subj);
+    selectChip("fmtchips","fmt",fmt);
+    apply();
+  }
+  function updateUrl(){
+    var url=new URL(window.location.href);
+    [["level",lvl],["subject",subj],["format",fmt],["q",q]].forEach(function(item){
+      if(item[1]==="all"||item[1]==="")url.searchParams.delete(item[0]);
+      else url.searchParams.set(item[0],item[1]);
+    });
+    window.history.replaceState(null,"",url.pathname+url.search+url.hash);
+  }
   function apply(){
     var shown=0;
     cards.forEach(function(c){
@@ -691,15 +854,15 @@ a{text-decoration:none}
     var box=document.getElementById(id);
     box.addEventListener("click",function(e){
       var b=e.target.closest(".chip"); if(!b)return;
-      [].forEach.call(box.querySelectorAll(".chip"),function(x){x.classList.remove("on");x.setAttribute("aria-pressed","false")});
-      b.classList.add("on"); b.setAttribute("aria-pressed","true"); set(b.dataset[attr]); apply();
+      selectChip(id,attr,b.dataset[attr]); set(b.dataset[attr]); apply(); updateUrl();
     });
   }
   wire("lvlchips","lvl",function(v){lvl=v});
   wire("subjchips","subj",function(v){subj=v});
   wire("fmtchips","fmt",function(v){fmt=v});
-  document.getElementById("q").addEventListener("input",function(e){q=e.target.value.trim().toLowerCase();apply();});
-  apply();
+  document.getElementById("q").addEventListener("input",function(e){q=e.target.value.trim().toLowerCase();apply();updateUrl();});
+  window.addEventListener("popstate",restoreFromUrl);
+  restoreFromUrl();
 })();
 </script>
 
@@ -763,5 +926,25 @@ a{text-decoration:none}
 }
 </script>
 
+<script>
+(function(){
+  var f=document.getElementById('hvid'); if(!f) return;
+  var v=f.querySelector('video'), b=f.querySelector('.hvid-snd');
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c=navigator.connection, save=c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||''));
+  function start(){ if(rm||save||f.classList.contains('sound')) return; v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
+  }
+  var fr=f.querySelector('.hvid-frame');
+  function snd(){
+    if(f.classList.contains('sound')) return;
+    f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
+    var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
+  }
+  b.addEventListener('click',function(e){ e.stopPropagation(); snd(); });
+  fr.addEventListener('click',snd);
+})();
+</script>
 </body>
 </html>
