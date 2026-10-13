@@ -1,3 +1,8 @@
 
 /assets/fh/*
   Access-Control-Allow-Origin: *
+
+/get/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+  Referrer-Policy: no-referrer
