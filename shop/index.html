@@ -61,6 +61,8 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .buyrow{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:26px}
 .price{font-size:28px;font-weight:600;color:var(--green);line-height:1}
 .btn{display:inline-flex;align-items:center;justify-content:center;font-size:15px;padding:12px 24px;border-radius:8px;background:var(--green);color:#fff;white-space:nowrap;text-decoration:none}
+.btn[aria-disabled="true"]{background:#E4EAE7;color:#4A5853;cursor:not-allowed;border:1px solid #CBD6D1}
+.cbtn{}
 .legal{font-size:13.5px;line-height:1.5;color:var(--mute);max-width:520px;margin-top:12px}
 .cover{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 18px 40px -26px rgba(11,61,46,.45)}
 /* trust strip */
@@ -120,6 +122,9 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .shop .strip{padding:14px 0}
 .shop .sgrid{font-size:13px;line-height:1.45;gap:18px}
 .shop .sec{padding:26px 0 0;scroll-margin-top:118px}
+.subh{font-size:16px;color:var(--green);margin:22px 0 10px;font-weight:600}
+.subh:first-of-type{margin-top:0}
+.cover-sm{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 14px 32px -24px rgba(11,61,46,.45)}
 .sel{position:sticky;top:65px;z-index:40;background:#fff;border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
 .sel .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:4px 0}
 .sel a{color:var(--green);text-decoration:none;font-weight:600;white-space:nowrap;padding:3px 0}
@@ -242,17 +247,18 @@ img,video{max-width:100%}
 <main class="shop">
 <section class="top intro"><div class="wrap">
   <h1>Lesson packs</h1>
-  <p class="lead">Lesson packs for Business and Economics, each built on one original case: a student workbook and a teacher guide with full worked answers, as PDF and editable Word. Every pack is independently checked, and has a free sample PDF and a short film so you can judge the level before you pay. The packs are new and have no reviews yet.</p>
+  <p class="lead">Lesson packs for Business and Economics, each built on one original case: a student workbook and a teacher guide with full worked answers, as PDF and editable Word. Every pack is independently checked and has a free sample PDF so you can judge the level before you pay; most also have a short film. The packs are new and have no reviews yet.</p>
 </div></section>
 <nav class="sel" aria-label="Jump to a course"><div class="wrap"><a href="#btec-business">BTEC</a><i aria-hidden="true">&middot;</i><a href="#alevel-business">A level Business</a><i aria-hidden="true">&middot;</i><a href="#alevel-economics">A level Economics</a><i aria-hidden="true">&middot;</i><a href="#gcse-business">GCSE</a><i aria-hidden="true">&middot;</i><a href="#igcse-business">Cambridge IGCSE</a></div></nav>
 <section class="strip"><div class="wrap"><div class="sgrid">
-<div><b>What you get</b>A student workbook and a teacher guide with full answers, as PDF and editable Word.</div>
+<div><b>What you get</b>A student or learner workbook and a teacher guide with full answers, as PDF and editable Word.</div>
 <div><b>Payment</b>Secure card payment through Stripe. The files are available straight after payment.</div>
 <div><b>Refunds</b>Charged twice, cannot open the files, or not as described: email us and we put it right. <a href="/refunds/">Refund policy</a></div>
 <div><b>Licence</b>For you and your school, for your own classes. Please do not post publicly or resell. <a href="/terms/">Terms</a></div>
 </div></div></section>
 <section class="sec" id="btec-business"><div class="wrap">
-<div class="sechead"><h2>BTEC Business</h2><p>Level 3 National Extended Certificate, Unit 2.</p></div>
+<div class="sechead"><h2>BTEC Business</h2><p>Level 3 National Extended Certificate: Unit 2 and the eight Unit 3 packs.</p></div>
+<h3 class="subh">Unit 2: Developing a Marketing Campaign</h3>
 <div class="grid">
 <article class="card">
   <a class="cimg" href="/shop/mendlow-repairs/"><img src="/assets/shop/v1/mendlow-repairs/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Mendlow Repairs: planning a marketing campaign"></a>
@@ -263,7 +269,84 @@ img,video{max-width:100%}
   </div>
 </article>
 </div>
-<p class="soon">More BTEC Business packs (Unit 3, finance) are in preparation.</p></div></section>
+<h3 class="subh" style="margin-top:34px">Unit 3: Personal and Business Finance</h3>
+<div class="grid">
+<article class="card">
+  <a class="cimg" href="/shop/pellwick-physio/"><img src="/assets/shop/v1/pellwick-physio/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Pellwick Physio: money and everyday banking"></a>
+  <div class="cbody">
+    <span class="ct"><a href="/shop/pellwick-physio/">Pellwick Physio: money and everyday banking</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/pellwick-physio-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/pellwick-physio/">View pack</a></div>
+  </div>
+</article>
+<article class="card">
+  <a class="cimg" href="/shop/sundersby-driving-school/"><img src="/assets/shop/v1/sundersby-driving-school/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Sundersby Driving School: borrow, save, insure"></a>
+  <div class="cbody">
+    <span class="ct"><a href="/shop/sundersby-driving-school/">Sundersby Driving School: borrow, save, insure</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/sundersby-driving-school-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/sundersby-driving-school/">View pack</a></div>
+  </div>
+</article>
+<article class="card">
+  <a class="cimg" href="/shop/yarrowby-pet-grooming/"><img src="/assets/shop/v1/yarrowby-pet-grooming/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Yarrowby Pet Grooming: who can help with money?"></a>
+  <div class="cbody">
+    <span class="ct"><a href="/shop/yarrowby-pet-grooming/">Yarrowby Pet Grooming: who can help with money?</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/yarrowby-pet-grooming-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/yarrowby-pet-grooming/">View pack</a></div>
+  </div>
+</article>
+<article class="card">
+  <a class="cimg" href="/shop/hollinwick-brewing/"><img src="/assets/shop/v1/hollinwick-brewing/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Hollinwick Brewing: the purpose of accounting and sources of finance"></a>
+  <div class="cbody">
+    <span class="ct"><a href="/shop/hollinwick-brewing/">Hollinwick Brewing: the purpose of accounting and sources of finance</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/hollinwick-brewing-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/hollinwick-brewing/">View pack</a></div>
+  </div>
+</article>
+<article class="card">
+  <a class="cimg" href="/shop/ivelston-furniture/"><img src="/assets/shop/v1/ivelston-furniture/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Ivelston Furniture: cash flow and break-even"></a>
+  <div class="cbody">
+    <span class="ct"><a href="/shop/ivelston-furniture/">Ivelston Furniture: cash flow and break-even</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/ivelston-furniture-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/ivelston-furniture/">View pack</a></div>
+  </div>
+</article>
+<article class="card">
+  <a class="cimg" href="/shop/larkmoor-toys/"><img src="/assets/shop/v1/larkmoor-toys/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Larkmoor Toys: the statement of comprehensive income"></a>
+  <div class="cbody">
+    <span class="ct"><a href="/shop/larkmoor-toys/">Larkmoor Toys: the statement of comprehensive income</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/larkmoor-toys-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/larkmoor-toys/">View pack</a></div>
+  </div>
+</article>
+<article class="card">
+  <a class="cimg" href="/shop/bartholm-hair/"><img src="/assets/shop/v1/bartholm-hair/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Bartholm Hair: the statement of financial position"></a>
+  <div class="cbody">
+    <span class="ct"><a href="/shop/bartholm-hair/">Bartholm Hair: the statement of financial position</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/bartholm-hair-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/bartholm-hair/">View pack</a></div>
+  </div>
+</article>
+<article class="card">
+  <a class="cimg" href="/shop/dalverley-heating/"><img src="/assets/shop/v1/dalverley-heating/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Dalverley Heating: reading the ratios"></a>
+  <div class="cbody">
+    <span class="ct"><a href="/shop/dalverley-heating/">Dalverley Heating: reading the ratios</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/dalverley-heating-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/dalverley-heating/">View pack</a></div>
+  </div>
+</article>
+</div>
+<p class="soon">Checkout for the Unit 3 packs opens soon. Each pack page has a free sample PDF you can read first.</p>
+<div class="bundle" id="btec-bundle" style="margin-top:34px">
+  <img class="cover-sm" src="/assets/shop/v1/btec-unit-3-bundle/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: the BTEC Unit 3 bundle, first pages of the eight learner workbooks">
+  <div>
+    <h2>BTEC Unit 3 bundle: 24 lessons, 8 cases</h2>
+    <p>All eight Unit 3 packs in one download: eight learner workbooks and eight teacher guides, PDF and editable Word.</p>
+    <div class="buyrow"><span class="price" data-price="13">£13</span><a class="btn" href="#" role="button" aria-disabled="true" tabindex="-1" data-product="BTEC_BUNDLE" onclick="return false">Checkout opens soon</a><a href="/shop/btec-unit-3-bundle/">See what is inside</a></div>
+    <p class="legal">Digital download. By buying you ask for immediate access to the files and acknowledge that you then lose the 14-day right to cancel. Refunds: see our <a href="/refunds/">refund page</a>.</p>
+  </div>
+</div>
+</div></section>
 <section class="sec" id="bundle"><div class="wrap">
 <div class="bundle">
   <figure class="hvid" id="hvid">

@@ -61,6 +61,8 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .buyrow{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:26px}
 .price{font-size:28px;font-weight:600;color:var(--green);line-height:1}
 .btn{display:inline-flex;align-items:center;justify-content:center;font-size:15px;padding:12px 24px;border-radius:8px;background:var(--green);color:#fff;white-space:nowrap;text-decoration:none}
+.btn[aria-disabled="true"]{background:#E4EAE7;color:#4A5853;cursor:not-allowed;border:1px solid #CBD6D1}
+.cbtn{}
 .legal{font-size:13.5px;line-height:1.5;color:var(--mute);max-width:520px;margin-top:12px}
 .cover{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 18px 40px -26px rgba(11,61,46,.45)}
 /* trust strip */
@@ -120,6 +122,9 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .shop .strip{padding:14px 0}
 .shop .sgrid{font-size:13px;line-height:1.45;gap:18px}
 .shop .sec{padding:26px 0 0;scroll-margin-top:118px}
+.subh{font-size:16px;color:var(--green);margin:22px 0 10px;font-weight:600}
+.subh:first-of-type{margin-top:0}
+.cover-sm{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 14px 32px -24px rgba(11,61,46,.45)}
 .sel{position:sticky;top:65px;z-index:40;background:#fff;border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
 .sel .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:4px 0}
 .sel a{color:var(--green);text-decoration:none;font-weight:600;white-space:nowrap;padding:3px 0}

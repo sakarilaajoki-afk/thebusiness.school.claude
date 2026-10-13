@@ -61,6 +61,8 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .buyrow{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:26px}
 .price{font-size:28px;font-weight:600;color:var(--green);line-height:1}
 .btn{display:inline-flex;align-items:center;justify-content:center;font-size:15px;padding:12px 24px;border-radius:8px;background:var(--green);color:#fff;white-space:nowrap;text-decoration:none}
+.btn[aria-disabled="true"]{background:#E4EAE7;color:#4A5853;cursor:not-allowed;border:1px solid #CBD6D1}
+.cbtn{}
 .legal{font-size:13.5px;line-height:1.5;color:var(--mute);max-width:520px;margin-top:12px}
 .cover{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 18px 40px -26px rgba(11,61,46,.45)}
 /* trust strip */
@@ -120,6 +122,9 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .shop .strip{padding:14px 0}
 .shop .sgrid{font-size:13px;line-height:1.45;gap:18px}
 .shop .sec{padding:26px 0 0;scroll-margin-top:118px}
+.subh{font-size:16px;color:var(--green);margin:22px 0 10px;font-weight:600}
+.subh:first-of-type{margin-top:0}
+.cover-sm{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 14px 32px -24px rgba(11,61,46,.45)}
 .sel{position:sticky;top:65px;z-index:40;background:#fff;border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
 .sel .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:4px 0}
 .sel a{color:var(--green);text-decoration:none;font-weight:600;white-space:nowrap;padding:3px 0}
@@ -259,7 +264,7 @@ img,video{max-width:100%}
   </div>
 </div></section>
 <section class="strip"><div class="wrap"><div class="sgrid">
-<div><b>What you get</b>A student workbook and a teacher guide with full answers, as PDF and editable Word.</div>
+<div><b>What you get</b>A learner workbook and a teacher guide with full answers, as PDF and editable Word.</div>
 <div><b>Payment</b>Secure card payment through Stripe. The files are available straight after payment.</div>
 <div><b>Refunds</b>Charged twice, cannot open the files, or not as described: email us and we put it right. <a href="/refunds/">Refund policy</a></div>
 <div><b>Licence</b>For you and your school, for your own classes. Please do not post publicly or resell. <a href="/terms/">Terms</a></div>
@@ -298,7 +303,7 @@ img,video{max-width:100%}
 </div></section>
 <section class="sec" id="faq"><div class="wrap">
   <h2>Questions</h2>
-  <div class="faq"><details><summary>What exactly do I get?</summary><p>A student workbook and a teacher guide for one original, fictional case. Both come as PDF and as editable Word files. The teacher guide has the lesson plans, full worked answers, completed diagrams and indicative guidance for the written tasks.</p></details>
+  <div class="faq"><details><summary>What exactly do I get?</summary><p>A learner workbook and a teacher guide for one original, fictional case. Both come as PDF and as editable Word files. The teacher guide has the lesson plans, full worked answers, completed diagrams and indicative guidance for the written tasks.</p></details>
 <details><summary>Can I edit the files?</summary><p>Yes. The Word files are editable, so you can change the business name, the figures or the questions before you set it. They were laid out and checked in LibreOffice, not Microsoft Word, so you may see small layout differences in Word; the PDF is the reference layout. The download is a ZIP that opens on Windows and Mac without extra software.</p></details>
 <details><summary>Is it a mark scheme, and is it endorsed?</summary><p>No to both. The teacher guide gives full answers for calculations and tables, and indicative guidance plus an example answer for each written task. It is not an exam board mark scheme, and the pack awards no marks or grades. It is mapped to the specification by section but is not endorsed by Pearson, and contains no exam board questions.</p></details>
 <details><summary>How does delivery work?</summary><p>After payment you are sent straight to your download page and get a Stripe receipt by email. The download page is personal to your purchase; bookmark it.</p></details>
