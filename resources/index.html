@@ -210,6 +210,8 @@ a{text-decoration:none}
 .hvid-snd .ic{width:38px;height:38px;border-radius:50%;background:#fff;position:relative;flex:0 0 auto}
 .hvid-snd .ic::after{content:"";position:absolute;left:15px;top:11px;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #0B3D2E}
 .hvid-snd:hover{background:rgba(11,61,46,.92)}
+.hvid:not(.sound) .hvid-frame{cursor:pointer}
+.hvid:not(.sound) .hvid-frame:hover .hvid-snd{background:rgba(11,61,46,.92)}
 .hvid-snd:focus-visible{outline:3px solid #9fd8c4;outline-offset:3px}
 .hvid.sound .hvid-snd{display:none}
 .hvid-tx{margin-top:12px;font-size:13.5px;color:#d7e6de}
@@ -897,10 +899,14 @@ a{text-decoration:none}
   if('IntersectionObserver' in window){
     new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
   }
-  b.addEventListener('click',function(){
+  var fr=f.querySelector('.hvid-frame');
+  function snd(){
+    if(f.classList.contains('sound')) return;
     f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
     var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
-  });
+  }
+  b.addEventListener('click',function(e){ e.stopPropagation(); snd(); });
+  fr.addEventListener('click',snd);
 })();
 </script>
 </body>
