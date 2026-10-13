@@ -712,13 +712,28 @@ a{text-decoration:none}
   </div>
 </section>
 
-<section aria-labelledby="feedback-heading" style="background:#edf6f2;border-bottom:1px solid #dce9e2;padding:34px 0">
-  <div style="max-width:1160px;margin:0 auto;padding:0 24px;display:flex;gap:20px;flex-wrap:wrap;align-items:center;justify-content:space-between">
-    <div style="flex:1 1 460px">
-      <h2 id="feedback-heading" style="font-family:'Fraunces',Georgia,serif;font-size:25px;font-weight:600;color:#0B3D2E;margin:0 0 5px">Used one of these resources?</h2>
-      <p style="font-size:15px;color:#40554b;line-height:1.6;max-width:64ch;margin:0">Give it a quick rating. One sentence about what to keep or change helps even more. We use teacher feedback to fix materials and choose what to make next.</p>
-    </div>
-    <a href="/resources/feedback/" style="display:inline-block;background:#0B3D2E;color:#fff;text-decoration:none;border-radius:10px;padding:13px 22px;font-weight:600;font-size:15px;white-space:nowrap">★ Rate a resource</a>
+<section id="feedback" aria-labelledby="feedback-heading" style="border-top:1px solid #e3e9e7;padding:20px 0 22px;background:#fff">
+  <div style="max-width:1160px;margin:0 auto;padding:0 24px">
+    <h2 id="feedback-heading" style="font:600 16px 'Inter',Arial,sans-serif;color:#0e2038;margin:0 0 5px">What did you think of the resources?</h2>
+    <p style="font-size:13px;color:#65728c;margin:0 0 12px">A quick rating helps us choose what to improve next.</p>
+    <form name="resource-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/resources/feedback/thanks/" style="display:flex;flex-wrap:wrap;align-items:center;gap:10px">
+      <input type="hidden" name="form-name" value="resource-feedback">
+      <input type="hidden" name="subject" value="Resource Hub quick feedback">
+      <input type="hidden" name="resource" value="Resource Hub">
+      <input type="hidden" name="resource_url" value="/resources/">
+      <p style="position:absolute;left:-9999px"><label>Leave blank <input name="bot-field" type="text" tabindex="-1" autocomplete="off"></label></p>
+      <fieldset style="border:0;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:5px;align-items:center"><legend style="position:absolute;left:-9999px">How useful were the resources?</legend>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="1" required aria-label="1 star">★ 1</label>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="2" aria-label="2 stars">★ 2</label>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="3" aria-label="3 stars">★ 3</label>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="4" aria-label="4 stars">★ 4</label>
+        <label style="display:inline-flex;align-items:center;gap:3px;cursor:pointer;font-size:14px;color:#7a5f08"><input type="radio" name="rating" value="5" aria-label="5 stars">★ 5</label>
+      </fieldset>
+      <label for="hub-feedback-note" style="position:absolute;left:-9999px">Your feedback, optional</label>
+      <input id="hub-feedback-note" name="feedback" type="text" maxlength="500" placeholder="Anything to keep or change? (optional)" style="flex:1 1 230px;min-width:0;max-width:440px;padding:9px 11px;border:1px solid #cbd6d2;border-radius:7px;font:13px 'Inter',Arial,sans-serif">
+      <button type="submit" style="border:0;border-radius:7px;background:#0B3D2E;color:#fff;padding:10px 15px;font:600 13px 'Inter',Arial,sans-serif;cursor:pointer">Send</button>
+    </form>
+    <p style="font-size:11px;color:#65728c;margin:8px 0 0">Private feedback. We do not publish responses from this form.</p>
   </div>
 </section>
 
