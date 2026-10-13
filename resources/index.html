@@ -85,11 +85,13 @@ a{text-decoration:none}
 .livebar{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;background:#F4F7F4;border:1px solid #DDE5E1;border-radius:14px;padding:18px 22px}
 .livebar-copy{flex:1 1 560px;min-width:0}
 .livebar-k{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#0a6b73}
-.livebar h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0B3D2E;margin:3px 0 5px}
-.livebar p{font-size:14px;line-height:1.5;color:#4a5a53}
+.livebar h2{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#0B3D2E;margin:2px 0 3px}
+.live-bottom{padding:36px 0 44px}
+.live-bottom .livebar{padding:14px 18px;border-radius:12px}
+.livebar p{font-size:13px;line-height:1.45;color:#4a5a53}
 .livebar details{font-size:12px;color:#55636B;margin-top:5px}
 .livebar summary{cursor:pointer;text-decoration:underline;text-underline-offset:2px}
-.livebar .go{display:inline-flex;align-items:center;justify-content:center;background:#0B3D2E;color:#fff;font-weight:600;font-size:14px;padding:11px 18px;border-radius:9px;white-space:nowrap}
+.livebar .go{display:inline-flex;align-items:center;justify-content:center;background:#0B3D2E;color:#fff;font-weight:600;font-size:13.5px;padding:9px 15px;border-radius:9px;white-space:nowrap}
 .livebar .go:hover{opacity:.9}
 @media(max-width:640px){.livebar .go{width:100%}}
 
@@ -111,10 +113,11 @@ a{text-decoration:none}
 .fmt.free{color:#fff;background:#0B3D2E;border-color:#0B3D2E}
 
 /* topic library banner */
-.tl{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;border:1px solid #DDE5E1;background:#F4F7F4;border-left:5px solid #0B3D2E;border-radius:14px;padding:24px 26px;margin-top:26px}
-.tl h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:21px;color:#0B3D2E}
-.tl p{font-size:14.5px;color:#55636B;margin-top:5px;max-width:640px}
-.tl .go{display:inline-flex;font-weight:600;font-size:14.5px;padding:12px 20px;border-radius:10px;background:#0B3D2E;color:#fff;white-space:nowrap}
+.tl{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;border:1px solid #DDE5E1;background:#F4F7F4;border-left:4px solid #0B3D2E;border-radius:12px;padding:13px 18px;margin-top:20px}
+.tl h3{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#0B3D2E}
+.tl p{font-size:13px;line-height:1.45;color:#55636B;margin-top:2px;max-width:720px}
+.tl .go{display:inline-flex;font-weight:600;font-size:13.5px;padding:9px 15px;border-radius:9px;background:#0B3D2E;color:#fff;white-space:nowrap}
+@media(max-width:640px){.tl .go{width:100%;justify-content:center}}
 
 /* filters */
 .toolbar{display:flex;flex-direction:column;gap:12px;margin-bottom:22px}
@@ -346,26 +349,13 @@ a{text-decoration:none}
     <div class="tl">
       <div>
         <h3>The Topic Library: 64 revision pages</h3>
-        <p>42 Edexcel A Level Business pages, 12 AQA GCSE pages, 8 Cambridge IGCSE 0450 pages for 2026 exams, plus one BTEC and one IB page. Each has notes, practice and answer guidance.</p>
+        <p>42 Edexcel A Level Business, 12 AQA GCSE and 8 Cambridge IGCSE 0450 pages, plus one BTEC and one IB. Notes, practice and answer guidance.</p>
       </div>
-      <a class="go" href="/resources/topics/">Browse the Topic Library</a>
+      <a class="go" href="/resources/topics/">Browse the library</a>
     </div>
   </div>
 </section>
 
-<section class="sec live" id="live">
-  <div class="wrap">
-    <div class="livebar">
-      <div class="livebar-copy">
-        <span class="livebar-k">Browser-based lesson &middot; used in classes</span>
-        <h2>Founder&rsquo;s Hour</h2>
-        <p>One solo lesson: found a London caf&eacute;, make business decisions and defend them in writing. Vic offers provisional feedback; the teacher confirms the assessment.</p>
-        <details><summary>Classroom pilot note</summary>One pilot saw slow responses when a whole class submitted writing at once. We have worked on this since; test it before relying on it for a scheduled lesson.</details>
-      </div>
-      <a class="go" href="https://lesson.thebusiness.school/" target="_blank" rel="noopener">Try Founder&rsquo;s Hour &rarr;</a>
-    </div>
-  </div>
-</section>
 
 <section class="sec" id="library">
   <div class="wrap">
@@ -734,6 +724,20 @@ a{text-decoration:none}
 </section>
 
 
+
+<section class="sec live live-bottom" id="live">
+  <div class="wrap">
+    <div class="livebar">
+      <div class="livebar-copy">
+        <span class="livebar-k">Browser-based lesson &middot; used in classes</span>
+        <h2>Founder&rsquo;s Hour</h2>
+        <p>One solo lesson: found a London caf&eacute;, make business decisions and defend them in writing. Vic offers provisional feedback; the teacher confirms the assessment.</p>
+        <details><summary>Classroom pilot note</summary>One pilot saw slow responses when a whole class submitted writing at once. We have worked on this since; test it before relying on it for a scheduled lesson.</details>
+      </div>
+      <a class="go" href="https://lesson.thebusiness.school/" target="_blank" rel="noopener">Try Founder&rsquo;s Hour &rarr;</a>
+    </div>
+  </div>
+</section>
 
 <section class="trust">
   <div class="wrap trow">
