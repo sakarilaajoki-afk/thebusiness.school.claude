@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Paid lesson packs for Business and Economics teachers | The Business School</title>
-<meta name="description" content="Three- and four-lesson case packs for A level, GCSE, IGCSE and BTEC Business and A level Economics. Original fictional cases, student workbook and teacher guide with full answers, PDF and editable Word. £5.50 a pack, Theme 3 bundle £13.">
+<meta name="description" content="Three- and four-lesson case packs for A level, GCSE, IGCSE and BTEC Business and A level Economics. Original fictional cases, student workbook and teacher guide with full answers, PDF and editable Word.">
 <link rel="canonical" href="https://thebusiness.school/shop/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Paid lesson packs for Business and Economics teachers | The Business School">
-<meta property="og:description" content="Three- and four-lesson case packs for A level, GCSE, IGCSE and BTEC Business and A level Economics. Original fictional cases, student workbook and teacher guide with full answers, PDF and editable Word. £5.50 a pack, Theme 3 bundle £13.">
+<meta property="og:description" content="Three- and four-lesson case packs for A level, GCSE, IGCSE and BTEC Business and A level Economics. Original fictional cases, student workbook and teacher guide with full answers, PDF and editable Word.">
 <meta property="og:url" content="https://thebusiness.school/shop/">
 <meta property="og:site_name" content="The Business School">
 <meta property="og:image" content="https://thebusiness.school/assets/shop/v1/theme-3-bundle/cover.jpg">
@@ -115,29 +115,65 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .endbuy .t{font-size:17px;font-weight:600;color:var(--green)}
 @media(max-width:640px){.endbuy .btn{width:100%}.buyrow .btn{width:100%}}
 /* listing */
-.intro h1{max-width:640px}
-.intro .lead{max-width:640px}
-.bundle{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:36px;align-items:center;padding:40px 0 8px}
-@media(max-width:860px){.bundle{grid-template-columns:1fr;gap:22px}}
-.bundle h2{font-size:clamp(21px,2.4vw,26px);color:var(--green);margin:0 0 10px}
-.bundle p{font-size:15.5px;color:#2b3936}
-.bundle .names{font-size:14.5px;color:var(--mute);margin-top:10px}
-.bundle .names a{color:var(--mute)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:26px 22px}
+.shop .top{padding:20px 0 18px}
+.shop h1{font-size:clamp(24px,3vw,30px)}
+.shop .lead{font-size:15.5px;margin-top:8px;max-width:700px}
+.shop .strip{padding:14px 0}
+.shop .sgrid{font-size:13px;line-height:1.45;gap:18px}
+.shop .sec{padding:26px 0 0;scroll-margin-top:118px}
+.sel{position:sticky;top:65px;z-index:40;background:#fff;border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
+.sel .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:4px 0}
+.sel a{color:var(--green);text-decoration:none;font-weight:600;white-space:nowrap;padding:3px 0}
+.sel a:hover{text-decoration:underline}
+.sel i{font-style:normal;color:var(--mute);margin:0 10px}
+.shop .sechead{display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;margin-bottom:12px}
+.shop .sechead h2{font-size:20px;margin:0}
+.shop .sechead p{font-size:13.5px;color:var(--mute)}
+.soon{font-size:14px;color:var(--mute);margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 16px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .card{display:flex;flex-direction:column;min-width:0}
-.card img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line);border-radius:4px}
-.cbody{display:flex;flex-direction:column;gap:6px;padding-top:12px;flex:1}
-.ct{font-size:17px;font-weight:600;line-height:1.3;color:var(--green)}
+.cimg{position:relative;display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#06140f;padding:0;cursor:pointer;font:inherit}
+.cimg img,.cimg video{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.cplay{position:absolute;left:8px;bottom:8px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.94)}
+.cplay::after{content:"";position:absolute;left:11px;top:8px;border-style:solid;border-width:6px 0 6px 9px;border-color:transparent transparent transparent #0B3D2E}
+.cimg:focus-visible{outline:3px solid #9fd8c4;outline-offset:2px}
+.cbody{display:flex;flex-direction:column;gap:3px;padding-top:9px;flex:1;min-width:0}
+.ct{font-size:15px;font-weight:600;line-height:1.3;color:var(--green)}
 .ct a{color:inherit;text-decoration:none}
 .ct a:hover{text-decoration:underline}
-.cdesc{font-size:14px;line-height:1.5;color:#41504c}
-.cmeta{font-size:13px;color:var(--mute)}
-.cfoot{display:flex;align-items:baseline;gap:14px;margin-top:auto;padding-top:6px;font-size:14px}
-.cfoot .price{font-size:19px}
-.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
-.sechead h2{margin-bottom:0}
-.sechead p{font-size:14px;color:var(--mute)}
-.hub{max-width:720px;font-size:15px;color:#2b3936;margin:52px 0 56px;padding-top:24px;border-top:1px solid var(--line)}
+.cmeta{font-size:13px;color:var(--mute);line-height:1.4}
+.cmeta a{color:var(--mute)}
+.cfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:6px}
+.cfoot .price{font-size:18px}
+.cbtn{display:inline-flex;border:1px solid var(--green);color:var(--green);padding:5px 12px;border-radius:6px;font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap}
+.cbtn:hover{background:var(--green);color:#fff}
+@media(max-width:520px){
+  .grid{grid-template-columns:1fr;gap:14px}
+  .card{flex-direction:row;gap:12px;align-items:flex-start}
+  .card .cimg{width:132px;flex:0 0 132px}
+  .card .cbody{padding-top:0}
+  .card.playing{flex-direction:column}
+  .card.playing .cimg{width:100%;flex:0 0 auto}
+}
+.bundle{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px;align-items:center}
+@media(max-width:860px){.bundle{grid-template-columns:1fr;gap:16px}}
+.bundle .hvid{max-width:none}
+.bundle h2{font-size:20px;color:var(--green);margin:0 0 6px}
+.bundle p{font-size:15px;color:#2b3936}
+.bundle .buyrow{margin-top:14px;gap:14px}
+.bundle .price{font-size:24px}
+.gal{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 14px;margin-top:20px}
+@media(max-width:520px){.gal{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.gal a{display:block;text-decoration:none;color:var(--green);font-size:13.5px;font-weight:600;line-height:1.3}
+.gal img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line);border-radius:4px;margin-bottom:6px}
+.gal span{display:block;font-weight:400;font-size:12.5px;color:var(--mute)}
+.pklist{list-style:none;max-width:760px;margin-top:18px;border-top:1px solid var(--line)}
+.pklist li{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.pklist a{color:var(--green);font-weight:600;text-decoration:none}
+.pklist span{color:var(--mute);font-size:14px}
+.sample{font-size:14.5px;margin-top:12px}
+.hub{max-width:720px;font-size:15px;color:#2b3936;margin:34px 0 40px;padding-top:18px;border-top:1px solid var(--line)}
 /* product film: same behaviour as the Resource Hub intro film */
 .hvid{position:relative;margin:0;max-width:900px}
 .hvid-frame{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#06140f;border:1px solid var(--line)}
@@ -204,110 +240,125 @@ img,video{max-width:100%}
     <a class="mm-cta" href="/pilot/">Join the waitlist</a>
   </div>
 </header>
-<main>
+<main class="shop">
 <section class="top intro"><div class="wrap">
   <h1>Lesson packs</h1>
-  <p class="lead">Original cases for three or four lessons each, for Business and Economics. Every pack is a student workbook and a teacher guide with full answers, as PDF and editable Word. £5.50 a pack.</p>
-  <p class="lead" style="font-size:15px;margin-top:10px">These packs are new and have no reviews yet. Each has real preview pages and a short film, so you can judge the level before you pay.</p>
+  <p class="lead">Lesson packs for Business and Economics, each built on one original case: a student workbook and a teacher guide with full worked answers, as PDF and editable Word. Every pack is independently checked, and has a free sample PDF and a short film so you can judge the level before you pay. The packs are new and have no reviews yet.</p>
 </div></section>
+<nav class="sel" aria-label="Jump to a course"><div class="wrap"><a href="#btec-business">BTEC</a><i aria-hidden="true">&middot;</i><a href="#alevel-business">A level Business</a><i aria-hidden="true">&middot;</i><a href="#alevel-economics">A level Economics</a><i aria-hidden="true">&middot;</i><a href="#gcse-business">GCSE</a><i aria-hidden="true">&middot;</i><a href="#igcse-business">Cambridge IGCSE</a></div></nav>
 <section class="strip"><div class="wrap"><div class="sgrid">
 <div><b>What you get</b>A student workbook and a teacher guide with full answers, as PDF and editable Word.</div>
 <div><b>Payment</b>Secure card payment through Stripe. The files are available straight after payment.</div>
 <div><b>Refunds</b>Charged twice, cannot open the files, or not as described: email us and we put it right. <a href="/refunds/">Refund policy</a></div>
 <div><b>Licence</b>For you and your school, for your own classes. Please do not post publicly or resell. <a href="/terms/">Terms</a></div>
 </div></div></section>
-<section id="bundle"><div class="wrap"><div class="bundle">
-  <a href="/shop/theme-3-bundle/"><img class="cover" src="/assets/shop/v1/theme-3-bundle/cover.jpg" width="1200" height="900" alt="Cover: the Theme 3 bundle, first pages of the eight student workbooks"></a>
+<section class="sec" id="btec-business"><div class="wrap">
+<div class="sechead"><h2>BTEC Business</h2><p>Level 3 National Extended Certificate, Unit 2.</p></div>
+<div class="grid">
+<article class="card">
+  <a class="cimg" href="/shop/mendlow-repairs/"><img src="/assets/shop/v1/mendlow-repairs/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Mendlow Repairs: planning a marketing campaign"></a>
+  <div class="cbody">
+    <span class="ct"><a href="/shop/mendlow-repairs/">Mendlow Repairs: planning a marketing campaign</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/mendlow-repairs-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/mendlow-repairs/">View pack</a></div>
+  </div>
+</article>
+</div>
+<p class="soon">More BTEC Business packs (Unit 3, finance) are in preparation.</p></div></section>
+<section class="sec" id="bundle"><div class="wrap">
+<div class="bundle">
+  <figure class="hvid" id="hvid">
+  <div class="hvid-frame">
+    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v1/theme-3-bundle/poster.jpg" aria-label="Short film about the Theme 3 bundle, about 30 seconds, with subtitles">
+      <source src="/assets/shop/v1/theme-3-bundle/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="/assets/shop/v1/theme-3-bundle/video-1080.mp4" type="video/mp4">
+    </video>
+    <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with sound &middot; 30 sec</button>
+  </div>
+  <details class="hvid-tx"><summary>Read the video text</summary><p>Twenty-four lessons, one theme. Edexcel A level Business, Theme 3: business decisions and strategy. Eight original cases, from strategy and growth to forecasting, investment, decision trees, ethics, accounts, people and change. Every lesson has student pages, a teacher guide, and full answers, as PDF and editable Word. Original cases, not exam board questions.</p></details>
+</figure>
   <div>
     <h2>Theme 3 bundle: 24 lessons, 8 cases</h2>
     <p>Every Theme 3 pack for Edexcel A level Business (9BS0) in one download: eight student workbooks and eight teacher guides, PDF and editable Word.</p>
-    <p class="names"><a href="/shop/harrowfield-linen/">Harrowfield Linen</a>, <a href="/shop/marrick-print/">Marrick Print</a>, <a href="/shop/thistledown-garden-centre/">Thistledown Garden Centre</a>, <a href="/shop/calder-reach-building/">Calder Reach Building</a>, <a href="/shop/skerrow-buses/">Skerrow Buses</a>, <a href="/shop/tarnbeck-creamery/">Tarnbeck Creamery</a>, <a href="/shop/corvane-parcels/">Corvane Parcels</a>, <a href="/shop/alderscar-furniture/">Alderscar Furniture</a></p>
-    <div class="buyrow"><span class="price" data-price="13">£13</span><a class="btn" href="https://buy.stripe.com/fZubJ23OoeBR7rvfHS2sM0k" target="_self" data-product="BUNDLE">Buy now, £13</a><a href="/shop/theme-3-bundle/">Preview the bundle</a></div>
+    <div class="buyrow"><span class="price" data-price="13">£13</span><a class="btn" href="https://buy.stripe.com/fZubJ23OoeBR7rvfHS2sM0k" target="_self" data-product="BUNDLE">Buy now, £13</a><a href="/shop/theme-3-bundle/">See what is inside</a></div>
     <p class="legal">Digital download. By buying you ask for immediate access to the files and acknowledge that you then lose the 14-day right to cancel. Refunds: see our <a href="/refunds/">refund page</a>.</p>
   </div>
-</div></div></section>
+</div>
+<ul class="gal"><li><a href="/shop/harrowfield-linen/"><img src="/assets/shop/v1/harrowfield-linen/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Harrowfield Linen">Harrowfield Linen<span>3 lessons</span></a></li><li><a href="/shop/marrick-print/"><img src="/assets/shop/v1/marrick-print/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Marrick Print">Marrick Print<span>3 lessons</span></a></li><li><a href="/shop/thistledown-garden-centre/"><img src="/assets/shop/v1/thistledown-garden-centre/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Thistledown Garden Centre">Thistledown Garden Centre<span>3 lessons</span></a></li><li><a href="/shop/calder-reach-building/"><img src="/assets/shop/v1/calder-reach-building/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Calder Reach Building">Calder Reach Building<span>3 lessons</span></a></li><li><a href="/shop/skerrow-buses/"><img src="/assets/shop/v1/skerrow-buses/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Skerrow Buses">Skerrow Buses<span>3 lessons</span></a></li><li><a href="/shop/tarnbeck-creamery/"><img src="/assets/shop/v1/tarnbeck-creamery/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Tarnbeck Creamery">Tarnbeck Creamery<span>3 lessons</span></a></li><li><a href="/shop/corvane-parcels/"><img src="/assets/shop/v1/corvane-parcels/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Corvane Parcels">Corvane Parcels<span>3 lessons</span></a></li><li><a href="/shop/alderscar-furniture/"><img src="/assets/shop/v1/alderscar-furniture/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Alderscar Furniture">Alderscar Furniture<span>3 lessons</span></a></li></ul>
+</div></section>
 <section class="sec" id="alevel-business"><div class="wrap">
 <div class="sechead"><h2>A Level Business</h2><p>Edexcel 9BS0. Theme 3 packs and one Theme 4 case.</p></div>
 <div class="grid">
 <article class="card">
-  <a href="/shop/harrowfield-linen/"><img src="/assets/shop/v1/harrowfield-linen/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Harrowfield Linen: where next?"></a>
+  <button class="cimg" type="button" data-slug="harrowfield-linen" aria-label="Play the short film about Harrowfield Linen: where next?, with sound"><img src="/assets/shop/v1/harrowfield-linen/poster-sm.jpg" data-poster="/assets/shop/v1/harrowfield-linen/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Harrowfield Linen: where next?"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/harrowfield-linen/">Harrowfield Linen: where next?</a></span>
-    <span class="cdesc">A family-owned commercial laundry must choose between more care homes, a new area, linen rental or wiping cloths. Objectives, Ansoff, Porter, SWOT, PESTLE and Five Forces.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/harrowfield-linen/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/harrowfield-linen-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/harrowfield-linen/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <a href="/shop/marrick-print/"><img src="/assets/shop/v1/marrick-print/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Marrick Print: how should we grow?"></a>
+  <button class="cimg" type="button" data-slug="marrick-print" aria-label="Play the short film about Marrick Print: how should we grow?, with sound"><img src="/assets/shop/v1/marrick-print/poster-sm.jpg" data-poster="/assets/shop/v1/marrick-print/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Marrick Print: how should we grow?"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/marrick-print/">Marrick Print: how should we grow?</a></span>
-    <span class="cdesc">A Yorkshire printer can take over a rival, buy a new press, stay small or do nothing. Objectives of growth, market share, economies of scale, overtrading and five-year profit tables.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/marrick-print/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/marrick-print-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/marrick-print/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <a href="/shop/thistledown-garden-centre/"><img src="/assets/shop/v1/thistledown-garden-centre/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Thistledown Garden Centre: forecast first, then invest"></a>
+  <button class="cimg" type="button" data-slug="thistledown-garden-centre" aria-label="Play the short film about Thistledown Garden Centre: forecast first, then invest, with sound"><img src="/assets/shop/v1/thistledown-garden-centre/poster-sm.jpg" data-poster="/assets/shop/v1/thistledown-garden-centre/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Thistledown Garden Centre: forecast first, then invest"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/thistledown-garden-centre/">Thistledown Garden Centre: forecast first, then invest</a></span>
-    <span class="cdesc">A garden centre forecasts sales with moving averages and a scatter graph, then appraises a café and a glasshouse with payback, ARR and NPV.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/thistledown-garden-centre/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/thistledown-garden-centre-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/thistledown-garden-centre/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <a href="/shop/calder-reach-building/"><img src="/assets/shop/v1/calder-reach-building/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Calder Reach Building: bid, build, on time?"></a>
+  <button class="cimg" type="button" data-slug="calder-reach-building" aria-label="Play the short film about Calder Reach Building: bid, build, on time?, with sound"><img src="/assets/shop/v1/calder-reach-building/poster-sm.jpg" data-poster="/assets/shop/v1/calder-reach-building/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Calder Reach Building: bid, build, on time?"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/calder-reach-building/">Calder Reach Building: bid, build, on time?</a></span>
-    <span class="cdesc">A small builder decides whether to tender for a sports pavilion, plans the build with a critical path network, then protects the job against a late steel delivery.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/calder-reach-building/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/calder-reach-building-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/calder-reach-building/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <a href="/shop/skerrow-buses/"><img src="/assets/shop/v1/skerrow-buses/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Skerrow Buses: whose interests come first?"></a>
+  <button class="cimg" type="button" data-slug="skerrow-buses" aria-label="Play the short film about Skerrow Buses: whose interests come first?, with sound"><img src="/assets/shop/v1/skerrow-buses/poster-sm.jpg" data-poster="/assets/shop/v1/skerrow-buses/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Skerrow Buses: whose interests come first?"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/skerrow-buses/">Skerrow Buses: whose interests come first?</a></span>
-    <span class="cdesc">A family-founded bus company weighs old buses against new, evidence against a hunch, culture in two depots, how to share a profit and how far to pay for cleaner buses.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/skerrow-buses/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/skerrow-buses-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/skerrow-buses/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <a href="/shop/tarnbeck-creamery/"><img src="/assets/shop/v1/tarnbeck-creamery/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Tarnbeck Creamery: reading the accounts"></a>
+  <button class="cimg" type="button" data-slug="tarnbeck-creamery" aria-label="Play the short film about Tarnbeck Creamery: reading the accounts, with sound"><img src="/assets/shop/v1/tarnbeck-creamery/poster-sm.jpg" data-poster="/assets/shop/v1/tarnbeck-creamery/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Tarnbeck Creamery: reading the accounts"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/tarnbeck-creamery/">Tarnbeck Creamery: reading the accounts</a></span>
-    <span class="cdesc">A cheese maker&#x27;s income statement and statement of financial position, gearing and ROCE, a £300,000 borrowing decision and a recommendation to a bank.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/tarnbeck-creamery/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/tarnbeck-creamery-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/tarnbeck-creamery/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <a href="/shop/corvane-parcels/"><img src="/assets/shop/v1/corvane-parcels/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Corvane Parcels: the people numbers, the causes of change, and which plan?"></a>
+  <button class="cimg" type="button" data-slug="corvane-parcels" aria-label="Play the short film about Corvane Parcels: the people numbers, the causes of change, and which plan?, with sound"><img src="/assets/shop/v1/corvane-parcels/poster-sm.jpg" data-poster="/assets/shop/v1/corvane-parcels/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Corvane Parcels: the people numbers, the causes of change, and which plan?"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/corvane-parcels/">Corvane Parcels: the people numbers, the causes of change, and which plan?</a></span>
-    <span class="cdesc">A parcel firm with two warehouses is bought by a larger group. Labour productivity, turnover, retention and absenteeism, the causes of change and three HR plans.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/corvane-parcels/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/corvane-parcels-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/corvane-parcels/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <a href="/shop/alderscar-furniture/"><img src="/assets/shop/v1/alderscar-furniture/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Alderscar Furniture: change, risk and the next move"></a>
+  <button class="cimg" type="button" data-slug="alderscar-furniture" aria-label="Play the short film about Alderscar Furniture: change, risk and the next move, with sound"><img src="/assets/shop/v1/alderscar-furniture/poster-sm.jpg" data-poster="/assets/shop/v1/alderscar-furniture/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Alderscar Furniture: change, risk and the next move"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/alderscar-furniture/">Alderscar Furniture: change, risk and the next move</a></span>
-    <span class="cdesc">A family furniture maker decides how fast to bring in a new computer system, which protections to fund against flood, IT failure and a lost master joiner, and which way to grow.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/alderscar-furniture/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/alderscar-furniture-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/alderscar-furniture/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <a href="/shop/kernow-kitchenware/"><img src="/assets/shop/v1/kernow-kitchenware/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Kernow Kitchenware: which way to grow?"></a>
+  <button class="cimg" type="button" data-slug="kernow-kitchenware" aria-label="Play the short film about Kernow Kitchenware: which way to grow?, with sound"><img src="/assets/shop/v1/kernow-kitchenware/poster-sm.jpg" data-poster="/assets/shop/v1/kernow-kitchenware/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Kernow Kitchenware: which way to grow?"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/kernow-kitchenware/">Kernow Kitchenware: which way to grow?</a></span>
-    <span class="cdesc">A Cornish cookware maker must choose between exporting to Germany, a factory in Poland or UK online growth. Exchange rates, a decision tree, stakeholders and ethics.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/kernow-kitchenware/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/kernow-kitchenware-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/kernow-kitchenware/">View pack</a></div>
   </div>
 </article>
 </div></div></section>
@@ -315,12 +366,11 @@ img,video{max-width:100%}
 <div class="sechead"><h2>A Level Economics</h2><p>Edexcel 9EC0, Theme 2.</p></div>
 <div class="grid">
 <article class="card">
-  <a href="/shop/kestria/"><img src="/assets/shop/v1/kestria/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Kestria under pressure"></a>
+  <button class="cimg" type="button" data-slug="kestria" aria-label="Play the short film about Kestria under pressure, with sound"><img src="/assets/shop/v1/kestria/poster-sm.jpg" data-poster="/assets/shop/v1/kestria/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Kestria under pressure"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/kestria/">Kestria under pressure</a></span>
-    <span class="cdesc">A fictional economy hit by a gas-price shock. Four lessons of macro data response: measuring the damage, AD/AS and the multiplier, policy options and a 250-word evaluation.</span>
-    <span class="cmeta">4 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/kestria/">View pack</a></div>
+    <span class="cmeta">4 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/kestria-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/kestria/">View pack</a></div>
   </div>
 </article>
 </div></div></section>
@@ -328,12 +378,11 @@ img,video{max-width:100%}
 <div class="sechead"><h2>GCSE Business</h2><p>AQA 8132.</p></div>
 <div class="grid">
 <article class="card">
-  <a href="/shop/harbourside-hotel/"><img src="/assets/shop/v1/harbourside-hotel/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Harbourside Hotel: staffing up for the season"></a>
+  <button class="cimg" type="button" data-slug="harbourside-hotel" aria-label="Play the short film about Harbourside Hotel: staffing up for the season, with sound"><img src="/assets/shop/v1/harbourside-hotel/poster-sm.jpg" data-poster="/assets/shop/v1/harbourside-hotel/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Harbourside Hotel: staffing up for the season"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/harbourside-hotel/">Harbourside Hotel: staffing up for the season</a></span>
-    <span class="cdesc">A 40-room seaside hotel reopens after a refit and must build a team of 50. Organisation charts, recruitment, contracts, training and a £12,000 motivation budget.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/harbourside-hotel/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/harbourside-hotel-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/harbourside-hotel/">View pack</a></div>
   </div>
 </article>
 </div></div></section>
@@ -341,25 +390,11 @@ img,video{max-width:100%}
 <div class="sechead"><h2>Cambridge IGCSE Business</h2><p>0264 and 0774, exams 2027 to 2029.</p></div>
 <div class="grid">
 <article class="card">
-  <a href="/shop/moreno-snack-bars/"><img src="/assets/shop/v1/moreno-snack-bars/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Moreno Snack Bars: which way to grow?"></a>
+  <button class="cimg" type="button" data-slug="moreno-snack-bars" aria-label="Play the short film about Moreno Snack Bars: which way to grow?, with sound"><img src="/assets/shop/v1/moreno-snack-bars/poster-sm.jpg" data-poster="/assets/shop/v1/moreno-snack-bars/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Moreno Snack Bars: which way to grow?"><span class="cplay" aria-hidden="true"></span></button>
   <div class="cbody">
     <span class="ct"><a href="/shop/moreno-snack-bars/">Moreno Snack Bars: which way to grow?</a></span>
-    <span class="cdesc">A family snack-bar maker must choose a cheap supermarket bar or a premium sports bar. Survey data, marketing mix, break-even, finance and a justified recommendation.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/moreno-snack-bars/">View pack</a></div>
-  </div>
-</article>
-</div></div></section>
-<section class="sec" id="btec-business"><div class="wrap">
-<div class="sechead"><h2>BTEC Business</h2><p>Level 3 National Extended Certificate, Unit 2.</p></div>
-<div class="grid">
-<article class="card">
-  <a href="/shop/mendlow-repairs/"><img src="/assets/shop/v1/mendlow-repairs/cover.jpg" width="1200" height="900" loading="lazy" alt="Cover: Mendlow Repairs: planning a marketing campaign"></a>
-  <div class="cbody">
-    <span class="ct"><a href="/shop/mendlow-repairs/">Mendlow Repairs: planning a marketing campaign</a></span>
-    <span class="cdesc">A small clothing repair studio has £2,000 to launch a weekly repair club. Marketing aims, SWOT, survey data, target market, pricing, a media plan and a campaign rationale.</span>
-    <span class="cmeta">3 lessons &middot; PDF and Word &middot; answers included</span>
-    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a href="/shop/mendlow-repairs/">View pack</a></div>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/moreno-snack-bars-sample.pdf">Free sample (PDF)</a></span>
+    <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/moreno-snack-bars/">View pack</a></div>
   </div>
 </article>
 </div></div></section>
@@ -379,5 +414,43 @@ img,video{max-width:100%}
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  var f=document.getElementById('hvid'); if(!f) return;
+  var v=f.querySelector('video'), b=f.querySelector('.hvid-snd');
+  if(window.innerWidth<=900){ var s0=v.querySelector('source'); if(s0) v.src=s0.getAttribute('src'); }
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c=navigator.connection, save=c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||''));
+  function start(){ if(rm||save||f.classList.contains('sound')) return; v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
+  }
+  if('IntersectionObserver' in window&&!save){ var pre=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(v.preload==='none') v.preload='metadata'; pre.disconnect(); } },{rootMargin:'400px 0px'}); pre.observe(f); }
+  var fr=f.querySelector('.hvid-frame');
+  function snd(){
+    if(f.classList.contains('sound')) return;
+    f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
+    var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
+  }
+  b.addEventListener('click',function(e){ e.stopPropagation(); snd(); });
+  fr.addEventListener('click',snd);
+})();
+</script>
+<script>
+(function(){
+  var cur=null;
+  function stop(){ if(!cur) return; var c=cur.card, b=cur.btn; if(cur.vid){ cur.vid.pause(); cur.vid.remove(); } b.hidden=false; c.classList.remove('playing'); cur=null; }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('button.cimg'); if(!b) return;
+    stop();
+    var card=b.closest('.card'), slug=b.getAttribute('data-slug');
+    var v=document.createElement('video'); v.controls=true; v.playsInline=true; v.preload='auto'; v.setAttribute('poster',b.querySelector('img').getAttribute('data-poster'));
+    v.src='/assets/shop/v1/'+slug+'/video-720.mp4'; v.setAttribute('aria-label','Short film about this pack, with sound');
+    v.style.cssText='display:block;width:100%;aspect-ratio:16/9;border:1px solid #DDE5E1;border-radius:4px;background:#06140f';
+    b.hidden=true; b.parentNode.insertBefore(v,b); card.classList.add('playing'); cur={card:card,btn:b,vid:v};
+    var p=v.play(); if(p&&p.catch)p.catch(function(){});
+  });
+})();
+</script>
 </body>
 </html>

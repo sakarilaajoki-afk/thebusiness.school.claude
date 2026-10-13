@@ -114,29 +114,65 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .endbuy .t{font-size:17px;font-weight:600;color:var(--green)}
 @media(max-width:640px){.endbuy .btn{width:100%}.buyrow .btn{width:100%}}
 /* listing */
-.intro h1{max-width:640px}
-.intro .lead{max-width:640px}
-.bundle{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:36px;align-items:center;padding:40px 0 8px}
-@media(max-width:860px){.bundle{grid-template-columns:1fr;gap:22px}}
-.bundle h2{font-size:clamp(21px,2.4vw,26px);color:var(--green);margin:0 0 10px}
-.bundle p{font-size:15.5px;color:#2b3936}
-.bundle .names{font-size:14.5px;color:var(--mute);margin-top:10px}
-.bundle .names a{color:var(--mute)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:26px 22px}
+.shop .top{padding:20px 0 18px}
+.shop h1{font-size:clamp(24px,3vw,30px)}
+.shop .lead{font-size:15.5px;margin-top:8px;max-width:700px}
+.shop .strip{padding:14px 0}
+.shop .sgrid{font-size:13px;line-height:1.45;gap:18px}
+.shop .sec{padding:26px 0 0;scroll-margin-top:118px}
+.sel{position:sticky;top:65px;z-index:40;background:#fff;border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
+.sel .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:4px 0}
+.sel a{color:var(--green);text-decoration:none;font-weight:600;white-space:nowrap;padding:3px 0}
+.sel a:hover{text-decoration:underline}
+.sel i{font-style:normal;color:var(--mute);margin:0 10px}
+.shop .sechead{display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;margin-bottom:12px}
+.shop .sechead h2{font-size:20px;margin:0}
+.shop .sechead p{font-size:13.5px;color:var(--mute)}
+.soon{font-size:14px;color:var(--mute);margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 16px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .card{display:flex;flex-direction:column;min-width:0}
-.card img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line);border-radius:4px}
-.cbody{display:flex;flex-direction:column;gap:6px;padding-top:12px;flex:1}
-.ct{font-size:17px;font-weight:600;line-height:1.3;color:var(--green)}
+.cimg{position:relative;display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#06140f;padding:0;cursor:pointer;font:inherit}
+.cimg img,.cimg video{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.cplay{position:absolute;left:8px;bottom:8px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.94)}
+.cplay::after{content:"";position:absolute;left:11px;top:8px;border-style:solid;border-width:6px 0 6px 9px;border-color:transparent transparent transparent #0B3D2E}
+.cimg:focus-visible{outline:3px solid #9fd8c4;outline-offset:2px}
+.cbody{display:flex;flex-direction:column;gap:3px;padding-top:9px;flex:1;min-width:0}
+.ct{font-size:15px;font-weight:600;line-height:1.3;color:var(--green)}
 .ct a{color:inherit;text-decoration:none}
 .ct a:hover{text-decoration:underline}
-.cdesc{font-size:14px;line-height:1.5;color:#41504c}
-.cmeta{font-size:13px;color:var(--mute)}
-.cfoot{display:flex;align-items:baseline;gap:14px;margin-top:auto;padding-top:6px;font-size:14px}
-.cfoot .price{font-size:19px}
-.sechead{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
-.sechead h2{margin-bottom:0}
-.sechead p{font-size:14px;color:var(--mute)}
-.hub{max-width:720px;font-size:15px;color:#2b3936;margin:52px 0 56px;padding-top:24px;border-top:1px solid var(--line)}
+.cmeta{font-size:13px;color:var(--mute);line-height:1.4}
+.cmeta a{color:var(--mute)}
+.cfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:6px}
+.cfoot .price{font-size:18px}
+.cbtn{display:inline-flex;border:1px solid var(--green);color:var(--green);padding:5px 12px;border-radius:6px;font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap}
+.cbtn:hover{background:var(--green);color:#fff}
+@media(max-width:520px){
+  .grid{grid-template-columns:1fr;gap:14px}
+  .card{flex-direction:row;gap:12px;align-items:flex-start}
+  .card .cimg{width:132px;flex:0 0 132px}
+  .card .cbody{padding-top:0}
+  .card.playing{flex-direction:column}
+  .card.playing .cimg{width:100%;flex:0 0 auto}
+}
+.bundle{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px;align-items:center}
+@media(max-width:860px){.bundle{grid-template-columns:1fr;gap:16px}}
+.bundle .hvid{max-width:none}
+.bundle h2{font-size:20px;color:var(--green);margin:0 0 6px}
+.bundle p{font-size:15px;color:#2b3936}
+.bundle .buyrow{margin-top:14px;gap:14px}
+.bundle .price{font-size:24px}
+.gal{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px 14px;margin-top:20px}
+@media(max-width:520px){.gal{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.gal a{display:block;text-decoration:none;color:var(--green);font-size:13.5px;font-weight:600;line-height:1.3}
+.gal img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--line);border-radius:4px;margin-bottom:6px}
+.gal span{display:block;font-weight:400;font-size:12.5px;color:var(--mute)}
+.pklist{list-style:none;max-width:760px;margin-top:18px;border-top:1px solid var(--line)}
+.pklist li{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.pklist a{color:var(--green);font-weight:600;text-decoration:none}
+.pklist span{color:var(--mute);font-size:14px}
+.sample{font-size:14.5px;margin-top:12px}
+.hub{max-width:720px;font-size:15px;color:#2b3936;margin:34px 0 40px;padding-top:18px;border-top:1px solid var(--line)}
 /* product film: same behaviour as the Resource Hub intro film */
 .hvid{position:relative;margin:0;max-width:900px}
 .hvid-frame{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#06140f;border:1px solid var(--line)}
@@ -211,12 +247,13 @@ img,video{max-width:100%}
       <p class="eyebrow">BTEC Business &middot; Pearson BTEC Level 3 National Extended Certificate in Business, Unit 2</p>
       <h1>Mendlow Repairs: planning a marketing campaign</h1>
       <p class="lead">A small clothing repair studio has £2,000 to launch a weekly repair club. Marketing aims, SWOT, survey data, target market, pricing, a media plan and a campaign rationale.</p>
-      <ul class="facts"><li>3 lessons of about 55 minutes</li><li>26-page learner workbook</li><li>12-page teacher guide</li><li>PDF and editable Word</li><li>Full answers included</li></ul>
+      <ul class="facts"><li>3 lessons of about 55 minutes</li><li>26-page learner workbook</li><li>12-page teacher guide</li><li>PDF and editable Word</li><li>Teacher guide with full worked answers</li><li>Independently checked</li></ul>
       <div class="buyrow">
         <span class="price" data-price="5.50">£5.50</span>
         <a class="btn" href="https://buy.stripe.com/cNiaEY5WwbpFbHL67i2sM0b" target="_self" data-product="P5">Buy now, £5.50</a>
       </div>
       <p class="legal">Digital download. By buying you ask for immediate access to the files and acknowledge that you then lose the 14-day right to cancel. Refunds: see our <a href="/refunds/">refund page</a>.</p>
+      <p class="sample"><a href="/assets/shop/v1/samples/mendlow-repairs-sample.pdf">Free sample (PDF)</a>: cover, contents and the first two pages of Lesson 1. No answers, no email needed.</p>
     </div>
     <img class="cover" src="/assets/shop/v1/mendlow-repairs/cover.jpg" width="1200" height="900" alt="Cover: Mendlow Repairs: planning a marketing campaign, the first page of the learner workbook">
   </div>
