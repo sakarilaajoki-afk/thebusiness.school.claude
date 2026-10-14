@@ -294,7 +294,18 @@ img,video{max-width:100%}
 <div><b>Refunds</b>Charged twice, cannot open the files, or not as described: email us and we put it right. <a href="/refunds/">Refund policy</a></div>
 <div><b>Licence</b>For you and your school, for your own classes. Please do not post publicly or resell. <a href="/terms/">Terms</a></div>
 </div></div></section>
-
+<section class="sec" id="video"><div class="wrap">
+<figure class="hvid" id="hvid">
+  <div class="hvid-frame">
+    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v5/ivelston-furniture/poster.jpg" aria-label="Short film about Ivelston Furniture: cash flow and break-even, about 30 seconds, with music and on-screen text">
+      <source src="/assets/shop/v5/ivelston-furniture/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="/assets/shop/v5/ivelston-furniture/video-1080.mp4" type="video/mp4">
+    </video>
+    <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with music &middot; 30 sec</button>
+  </div>
+  <details class="hvid-tx"><summary>Read the video text</summary><p>Ivelston Furniture: cash flow and break-even. BTEC Level 3 Business, Unit 3. Build a cash flow forecast. Lesson 1: Will Ivelston have the cash?. Find the shortfall and fix it. Six months of cash, and what to do about a negative balance. Find break-even. Lesson 2: How many tables to break even?. Draw the break-even chart. Then find the margin of safety. Revise both after a change. Lesson 3: What should Rhona change?. Write a recommendation. Compare the options, then advise Rhona. What you get: Learner workbook + teacher guide, Full worked answers, PDF and editable Word. The Business School. Free sample on the pack page.</p></details>
+</figure>
+</div></section>
 <section class="sec" id="inside"><div class="wrap">
   <h2>What is inside</h2>
   <div class="prose"><p>One original, fictional UK case for three 55-minute lessons plus named homework. A small made-to-order furniture workshop owned by a sole trader wants to know whether it will have enough cash over six months and how many tables it must sell to break even.</p><p>Learners build a six-month cash flow forecast with credit sales, credit purchases and VAT, find the negative balance and fix it; work out contribution, break-even in tables and sales value, draw the chart on a numbered grid and find the margin of safety; then revise both after a price, cost or loan change, weigh benefits and limitations and write a recommendation.</p></div>
@@ -357,5 +368,30 @@ img,video{max-width:100%}
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  var figs=[].slice.call(document.querySelectorAll('figure.hvid')); if(!figs.length) return;
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c=navigator.connection, save=c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||''));
+  figs.forEach(function(f){
+    var v=f.querySelector('video'), b=f.querySelector('.hvid-snd');
+    if(window.innerWidth<=900){ var s0=v.querySelector('source'); if(s0) v.src=s0.getAttribute('src'); }
+    function start(){ if(rm||save||f.classList.contains('sound')) return; v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
+    }
+    if('IntersectionObserver' in window&&!save){ var pre=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(v.preload==='none') v.preload='metadata'; pre.disconnect(); } },{rootMargin:'400px 0px'}); pre.observe(f); }
+    var fr=f.querySelector('.hvid-frame');
+    function snd(){
+      if(f.classList.contains('sound')) return;
+      figs.forEach(function(o){ if(o!==f&&o.classList.contains('sound')){ var ov=o.querySelector('video'); ov.pause(); ov.controls=false; ov.muted=true; ov.loop=true; o.classList.remove('sound'); } });
+      f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
+      var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
+    }
+    b.addEventListener('click',function(e){ e.stopPropagation(); snd(); });
+    fr.addEventListener('click',snd);
+  });
+})();
+</script>
 </body>
 </html>

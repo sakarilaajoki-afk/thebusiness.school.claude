@@ -288,7 +288,18 @@ img,video{max-width:100%}
     <img class="cover" src="/assets/shop/v1/btec-unit-3-bundle/cover.jpg" width="1200" height="900" alt="Cover: the BTEC Unit 3 bundle, first pages of the eight learner workbooks">
   </div>
 </div></section>
-
+<section class="sec" id="video"><div class="wrap">
+<figure class="hvid" id="hvid">
+  <div class="hvid-frame">
+    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v5/btec-unit-3-bundle/poster.jpg" aria-label="Short film about BTEC Unit 3 bundle: 24 lessons, 8 original cases, about 25 seconds, with music and on-screen text">
+      <source src="/assets/shop/v5/btec-unit-3-bundle/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="/assets/shop/v5/btec-unit-3-bundle/video-1080.mp4" type="video/mp4">
+    </video>
+    <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with music &middot; 25 sec</button>
+  </div>
+  <details class="hvid-tx"><summary>Read the video text</summary><p>BTEC Unit 3 bundle: 8 cases, 24 lessons. BTEC Level 3 Business, Unit 3. Who can help, and how to fund a business. Yarrowby Pet Grooming and Hollinwick Brewing. Cash flow, break-even and the income statement. Ivelston Furniture and Larkmoor Toys. The financial position and the ratios. Bartholm Hair and Dalverley Heating. What you get: 8 workbooks + 8 teacher guides, Full worked answers, PDF and editable Word. The Business School. Free samples on the pack pages.</p></details>
+</figure>
+</div></section>
 <section class="sec" id="packs"><div class="wrap"><h2>The eight packs</h2><ul class="gal"><li><a href="/shop/pellwick-physio/"><img src="/assets/shop/v1/pellwick-physio/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Pellwick Physio">Pellwick Physio<span>3 lessons</span></a></li><li><a href="/shop/sundersby-driving-school/"><img src="/assets/shop/v1/sundersby-driving-school/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Sundersby Driving School">Sundersby Driving School<span>3 lessons</span></a></li><li><a href="/shop/yarrowby-pet-grooming/"><img src="/assets/shop/v1/yarrowby-pet-grooming/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Yarrowby Pet Grooming">Yarrowby Pet Grooming<span>3 lessons</span></a></li><li><a href="/shop/hollinwick-brewing/"><img src="/assets/shop/v1/hollinwick-brewing/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Hollinwick Brewing">Hollinwick Brewing<span>3 lessons</span></a></li><li><a href="/shop/ivelston-furniture/"><img src="/assets/shop/v1/ivelston-furniture/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Ivelston Furniture">Ivelston Furniture<span>3 lessons</span></a></li><li><a href="/shop/larkmoor-toys/"><img src="/assets/shop/v1/larkmoor-toys/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Larkmoor Toys">Larkmoor Toys<span>3 lessons</span></a></li><li><a href="/shop/bartholm-hair/"><img src="/assets/shop/v1/bartholm-hair/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Bartholm Hair">Bartholm Hair<span>3 lessons</span></a></li><li><a href="/shop/dalverley-heating/"><img src="/assets/shop/v1/dalverley-heating/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Dalverley Heating">Dalverley Heating<span>3 lessons</span></a></li></ul></div></section>
 <section class="strip"><div class="wrap"><div class="sgrid">
 <div><b>What you get</b>A learner workbook and a teacher guide with full answers, as PDF and editable Word.</div>
@@ -358,5 +369,30 @@ img,video{max-width:100%}
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  var figs=[].slice.call(document.querySelectorAll('figure.hvid')); if(!figs.length) return;
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c=navigator.connection, save=c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||''));
+  figs.forEach(function(f){
+    var v=f.querySelector('video'), b=f.querySelector('.hvid-snd');
+    if(window.innerWidth<=900){ var s0=v.querySelector('source'); if(s0) v.src=s0.getAttribute('src'); }
+    function start(){ if(rm||save||f.classList.contains('sound')) return; v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
+    }
+    if('IntersectionObserver' in window&&!save){ var pre=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(v.preload==='none') v.preload='metadata'; pre.disconnect(); } },{rootMargin:'400px 0px'}); pre.observe(f); }
+    var fr=f.querySelector('.hvid-frame');
+    function snd(){
+      if(f.classList.contains('sound')) return;
+      figs.forEach(function(o){ if(o!==f&&o.classList.contains('sound')){ var ov=o.querySelector('video'); ov.pause(); ov.controls=false; ov.muted=true; ov.loop=true; o.classList.remove('sound'); } });
+      f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
+      var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
+    }
+    b.addEventListener('click',function(e){ e.stopPropagation(); snd(); });
+    fr.addEventListener('click',snd);
+  });
+})();
+</script>
 </body>
 </html>

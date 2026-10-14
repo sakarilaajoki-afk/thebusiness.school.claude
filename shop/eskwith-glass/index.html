@@ -294,7 +294,18 @@ img,video{max-width:100%}
 <div><b>Refunds</b>Charged twice, cannot open the files, or not as described: email us and we put it right. <a href="/refunds/">Refund policy</a></div>
 <div><b>Licence</b>For you and your school, for your own classes. Please do not post publicly or resell. <a href="/terms/">Terms</a></div>
 </div></div></section>
-
+<section class="sec" id="video"><div class="wrap">
+<figure class="hvid" id="hvid">
+  <div class="hvid-frame">
+    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v5/eskwith-glass/poster.jpg" aria-label="Short film about Eskwith Glass: scale, profit and efficiency, about 30 seconds, with music and on-screen text">
+      <source src="/assets/shop/v5/eskwith-glass/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="/assets/shop/v5/eskwith-glass/video-1080.mp4" type="video/mp4">
+    </video>
+    <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with music &middot; 30 sec</button>
+  </div>
+  <details class="hvid-tx"><summary>Read the video text</summary><p>Eskwith Glass: scale, profit and efficiency. Edexcel A level Economics (9EC0), Theme 3. Plot the long-run average cost curve. Lesson 1: How big should Eskwith be?. Economies and diseconomies of scale. Does the evidence justify a bigger furnace?. Find the profit-maximising output. Lesson 2: Is Eskwith making enough profit to stay?. Draw the diagram. Mark where MR meets MC, then check the completed diagram. Judge the efficiency. Lesson 3: Is Eskwith efficient, and should the furnace go ahead?. Write a recommendation. Should the regional board back the second furnace?. What you get: Student workbook + teacher guide, Full worked answers, PDF and editable Word. The Business School. Free sample on the pack page.</p></details>
+</figure>
+</div></section>
 <section class="sec" id="inside"><div class="wrap">
   <h2>What is inside</h2>
   <div class="prose"><p>One original, fictional bottle maker for three lessons of about 55 minutes with Year 12 or 13. Eskwith has one furnace and a contract offer that needs a second.</p><p>In Lesson 1 students calculate average cost at six scales, plot the long-run average cost curve, find the minimum efficient scale and sort evidence into economies and diseconomies of scale. In Lesson 2 they find the profit-maximising output with MR and MC, mark diagrams for supernormal profit, a loss that is still worth carrying and a shut-down, and separate normal from supernormal profit. In Lesson 3 they test productive, allocative and dynamic efficiency and X-inefficiency, link them to market structure, compare the options with figures, and write a recommendation of about 180 words with the figure at which the decision would change.</p><p>Each lesson plan counts the written work against the minutes; questions that do not fit are named as homework.</p></div>
@@ -357,5 +368,30 @@ img,video{max-width:100%}
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  var figs=[].slice.call(document.querySelectorAll('figure.hvid')); if(!figs.length) return;
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c=navigator.connection, save=c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||''));
+  figs.forEach(function(f){
+    var v=f.querySelector('video'), b=f.querySelector('.hvid-snd');
+    if(window.innerWidth<=900){ var s0=v.querySelector('source'); if(s0) v.src=s0.getAttribute('src'); }
+    function start(){ if(rm||save||f.classList.contains('sound')) return; v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
+    }
+    if('IntersectionObserver' in window&&!save){ var pre=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(v.preload==='none') v.preload='metadata'; pre.disconnect(); } },{rootMargin:'400px 0px'}); pre.observe(f); }
+    var fr=f.querySelector('.hvid-frame');
+    function snd(){
+      if(f.classList.contains('sound')) return;
+      figs.forEach(function(o){ if(o!==f&&o.classList.contains('sound')){ var ov=o.querySelector('video'); ov.pause(); ov.controls=false; ov.muted=true; ov.loop=true; o.classList.remove('sound'); } });
+      f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
+      var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
+    }
+    b.addEventListener('click',function(e){ e.stopPropagation(); snd(); });
+    fr.addEventListener('click',snd);
+  });
+})();
+</script>
 </body>
 </html>

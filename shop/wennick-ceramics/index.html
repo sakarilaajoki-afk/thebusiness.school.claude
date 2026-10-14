@@ -294,7 +294,18 @@ img,video{max-width:100%}
 <div><b>Refunds</b>Charged twice, cannot open the files, or not as described: email us and we put it right. <a href="/refunds/">Refund policy</a></div>
 <div><b>Licence</b>For you and your school, for your own classes. Please do not post publicly or resell. <a href="/terms/">Terms</a></div>
 </div></div></section>
-
+<section class="sec" id="video"><div class="wrap">
+<figure class="hvid" id="hvid">
+  <div class="hvid-frame">
+    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v5/wennick-ceramics/poster.jpg" aria-label="Short film about Wennick Ceramics: revenue, costs and profit, about 30 seconds, with music and on-screen text">
+      <source src="/assets/shop/v5/wennick-ceramics/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="/assets/shop/v5/wennick-ceramics/video-1080.mp4" type="video/mp4">
+    </video>
+    <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with music &middot; 30 sec</button>
+  </div>
+  <details class="hvid-tx"><summary>Read the video text</summary><p>Wennick Ceramics: revenue, costs and profit. Edexcel A level Economics (9EC0), Theme 3. Build the revenue table. Lesson 1: How much revenue will the mug bring in?. Measure price elasticity of demand. Should Wennick cut the price?. Find marginal product and total costs. Lesson 2: What will it cost?. Draw the diagram. Plot the cost curves, then check the completed diagram. Find the profit-maximising output. Lesson 3: What should Wennick do?. Write a recommendation. A pay rise for the potters? Decide for Wennick. What you get: Student workbook + teacher guide, Full worked answers, PDF and editable Word. The Business School. Free sample on the pack page.</p></details>
+</figure>
+</div></section>
 <section class="sec" id="inside"><div class="wrap">
   <h2>What is inside</h2>
   <div class="prose"><p>One original, fictional pottery launching a new mug, for three lessons of about 55 minutes with Year 12 or 13.</p><p>Students work from a small data pack to calculate total, average and marginal revenue and price elasticity of demand (and link it to total revenue), work out marginal product, fixed, variable, total, average and marginal cost and plot the cost curves, then find the profit-maximising output, show profit on a diagram, relate short-run and long-run average cost, test the effect of a pay rise and write a recommendation of about 160 words.</p><p>Each lesson plan counts the written work against the minutes and names any homework.</p></div>
@@ -357,5 +368,30 @@ img,video{max-width:100%}
     </div>
   </div>
 </footer>
+<script>
+(function(){
+  var figs=[].slice.call(document.querySelectorAll('figure.hvid')); if(!figs.length) return;
+  var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var c=navigator.connection, save=c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||''));
+  figs.forEach(function(f){
+    var v=f.querySelector('video'), b=f.querySelector('.hvid-snd');
+    if(window.innerWidth<=900){ var s0=v.querySelector('source'); if(s0) v.src=s0.getAttribute('src'); }
+    function start(){ if(rm||save||f.classList.contains('sound')) return; v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
+    }
+    if('IntersectionObserver' in window&&!save){ var pre=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(v.preload==='none') v.preload='metadata'; pre.disconnect(); } },{rootMargin:'400px 0px'}); pre.observe(f); }
+    var fr=f.querySelector('.hvid-frame');
+    function snd(){
+      if(f.classList.contains('sound')) return;
+      figs.forEach(function(o){ if(o!==f&&o.classList.contains('sound')){ var ov=o.querySelector('video'); ov.pause(); ov.controls=false; ov.muted=true; ov.loop=true; o.classList.remove('sound'); } });
+      f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
+      var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
+    }
+    b.addEventListener('click',function(e){ e.stopPropagation(); snd(); });
+    fr.addEventListener('click',snd);
+  });
+})();
+</script>
 </body>
 </html>
