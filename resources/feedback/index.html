@@ -41,6 +41,8 @@
       <input type="hidden" name="form-name" value="resource-feedback">
       <input type="hidden" name="subject" value="Resource Hub feedback">
       <input type="hidden" id="resource-url" name="resource_url" value="">
+      <input type="hidden" id="pack" name="pack" value="">
+      <input type="hidden" id="origin" name="origin" value="">
       <p class="honeypot"><label>Leave blank <input name="bot-field" type="text" tabindex="-1" autocomplete="off"></label></p>
       <div class="field"><label for="resource">Resource</label><input id="resource" name="resource" type="text" maxlength="160" required placeholder="Which resource?"></div>
       <fieldset><legend>Rating</legend><div class="rating">
@@ -61,6 +63,12 @@
       var resource=(params.get('resource')||'').trim();
       var path=(params.get('source')||'').trim();
       if(resource)document.getElementById('resource').value=resource.slice(0,160);
+      var pack=(params.get('pack')||'').trim();
+      if(/^[A-Za-z0-9_-]{1,20}$/.test(pack)){
+        document.getElementById('pack').value=pack;
+        if(params.get('from')==='purchase')document.getElementById('origin').value='purchase';
+        if(!resource)document.getElementById('resource').value='Purchased pack '+pack;
+      }
       if(/^\/resources\/[a-z0-9/_-]+\/?$/i.test(path))document.getElementById('resource-url').value=path;
     })();
   </script>
