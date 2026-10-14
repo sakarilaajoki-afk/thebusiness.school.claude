@@ -139,6 +139,20 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .card{display:flex;flex-direction:column;min-width:0}
 .cimg{position:relative;display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#06140f;padding:0;cursor:pointer;font:inherit}
 .cimg img,.cimg video{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+div.cimg{cursor:default}
+.cpb{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:none;cursor:pointer;font:inherit;display:block}
+.cpb:focus-visible{outline:3px solid #9fd8c4;outline-offset:-3px}
+.cimg video{position:absolute;inset:0;opacity:0;pointer-events:none}
+.cimg.on video{opacity:1;pointer-events:auto}
+.cimg.on .cpb{display:none}
+.cload{position:absolute;left:8px;bottom:8px;display:none;align-items:center;gap:7px;background:rgba(255,255,255,.94);color:#0B3D2E;border-radius:999px;padding:4px 11px 4px 5px;font-size:13px;font-weight:600;z-index:2}
+.cload::before{content:"";width:18px;height:18px;border-radius:50%;background:#0B3D2E}
+.cimg.wait .cload{display:inline-flex}
+.cclose{position:absolute;right:6px;top:6px;z-index:3;display:none;border:1px solid rgba(255,255,255,.4);background:rgba(8,22,16,.78);color:#fff;border-radius:999px;font:600 13px/1 inherit;padding:6px 11px;cursor:pointer}
+.cimg.on .cclose{display:inline-block}
+.cmodal{position:fixed;inset:0;z-index:1000;background:rgba(6,20,15,.88);display:flex;align-items:center;justify-content:center;padding:12px}
+.cmodal .cimg{width:100%;max-width:640px;flex:0 0 auto}
+.cmodal .cimg video{opacity:1;pointer-events:auto}
 .cplay{position:absolute;left:8px;bottom:8px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.94)}
 .cplay::after{content:"";position:absolute;left:11px;top:8px;border-style:solid;border-width:6px 0 6px 9px;border-color:transparent transparent transparent #0B3D2E}
 .cimg:focus-visible{outline:3px solid #9fd8c4;outline-offset:2px}
@@ -157,8 +171,6 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
   .card{flex-direction:row;gap:12px;align-items:flex-start}
   .card .cimg{width:132px;flex:0 0 132px}
   .card .cbody{padding-top:0}
-  .card.playing{flex-direction:column}
-  .card.playing .cimg{width:100%;flex:0 0 auto}
 }
 .bundle{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px;align-items:center}
 @media(max-width:860px){.bundle{grid-template-columns:1fr;gap:16px}}
@@ -247,7 +259,7 @@ img,video{max-width:100%}
 <main class="shop">
 <section class="top intro"><div class="wrap">
   <h1>Lesson packs</h1>
-  <p class="lead">Lesson packs for Business and Economics, each built on one original case: a student workbook and a teacher guide with full worked answers, as PDF and editable Word. Every pack is independently checked and has a free sample PDF so you can judge the level before you pay; most also have a short film. The packs are new and have no reviews yet.</p>
+  <p class="lead">Lesson packs for Business and Economics, each built on one original case: a student workbook and a teacher guide with full worked answers, as PDF and editable Word. Every pack is independently checked, and every pack has a free sample on its page so you can judge the level before you pay; most also have a short film. The packs are new and have no reviews yet.</p>
 </div></section>
 <nav class="sel" aria-label="Jump to a course"><div class="wrap"><a href="#btec-business">BTEC</a><i aria-hidden="true">&middot;</i><a href="#btec-unit3">BTEC Unit 3 packs</a><i aria-hidden="true">&middot;</i><a href="#btec-bundle">BTEC bundle</a><i aria-hidden="true">&middot;</i><a href="#alevel-business">A level Business</a><i aria-hidden="true">&middot;</i><a href="#alevel-economics">A level Economics</a><i aria-hidden="true">&middot;</i><a href="#gcse-business">GCSE</a><i aria-hidden="true">&middot;</i><a href="#igcse-business">Cambridge IGCSE</a></div></nav>
 <section class="strip"><div class="wrap"><div class="sgrid">
@@ -264,7 +276,7 @@ img,video{max-width:100%}
   <a class="cimg" href="/shop/mendlow-repairs/"><img src="/assets/shop/v1/mendlow-repairs/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Mendlow Repairs: planning a marketing campaign"></a>
   <div class="cbody">
     <span class="ct"><a href="/shop/mendlow-repairs/">Mendlow Repairs: planning a marketing campaign</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/mendlow-repairs-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/mendlow-repairs/">View pack</a></div>
   </div>
 </article>
@@ -275,7 +287,7 @@ img,video{max-width:100%}
   <a class="cimg" href="/shop/pellwick-physio/"><img src="/assets/shop/v1/pellwick-physio/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Pellwick Physio: money and everyday banking"></a>
   <div class="cbody">
     <span class="ct"><a href="/shop/pellwick-physio/">Pellwick Physio: money and everyday banking</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/pellwick-physio-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/pellwick-physio/">View pack</a></div>
   </div>
 </article>
@@ -283,7 +295,7 @@ img,video{max-width:100%}
   <a class="cimg" href="/shop/sundersby-driving-school/"><img src="/assets/shop/v1/sundersby-driving-school/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Sundersby Driving School: borrow, save, insure"></a>
   <div class="cbody">
     <span class="ct"><a href="/shop/sundersby-driving-school/">Sundersby Driving School: borrow, save, insure</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/sundersby-driving-school-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/sundersby-driving-school/">View pack</a></div>
   </div>
 </article>
@@ -291,7 +303,7 @@ img,video{max-width:100%}
   <a class="cimg" href="/shop/yarrowby-pet-grooming/"><img src="/assets/shop/v1/yarrowby-pet-grooming/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Yarrowby Pet Grooming: who can help with money?"></a>
   <div class="cbody">
     <span class="ct"><a href="/shop/yarrowby-pet-grooming/">Yarrowby Pet Grooming: who can help with money?</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/yarrowby-pet-grooming-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/yarrowby-pet-grooming/">View pack</a></div>
   </div>
 </article>
@@ -299,7 +311,7 @@ img,video{max-width:100%}
   <a class="cimg" href="/shop/hollinwick-brewing/"><img src="/assets/shop/v1/hollinwick-brewing/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Hollinwick Brewing: the purpose of accounting and sources of finance"></a>
   <div class="cbody">
     <span class="ct"><a href="/shop/hollinwick-brewing/">Hollinwick Brewing: the purpose of accounting and sources of finance</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/hollinwick-brewing-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/hollinwick-brewing/">View pack</a></div>
   </div>
 </article>
@@ -307,7 +319,7 @@ img,video{max-width:100%}
   <a class="cimg" href="/shop/ivelston-furniture/"><img src="/assets/shop/v1/ivelston-furniture/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Ivelston Furniture: cash flow and break-even"></a>
   <div class="cbody">
     <span class="ct"><a href="/shop/ivelston-furniture/">Ivelston Furniture: cash flow and break-even</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/ivelston-furniture-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/ivelston-furniture/">View pack</a></div>
   </div>
 </article>
@@ -315,7 +327,7 @@ img,video{max-width:100%}
   <a class="cimg" href="/shop/larkmoor-toys/"><img src="/assets/shop/v1/larkmoor-toys/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Larkmoor Toys: the statement of comprehensive income"></a>
   <div class="cbody">
     <span class="ct"><a href="/shop/larkmoor-toys/">Larkmoor Toys: the statement of comprehensive income</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/larkmoor-toys-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/larkmoor-toys/">View pack</a></div>
   </div>
 </article>
@@ -323,7 +335,7 @@ img,video{max-width:100%}
   <a class="cimg" href="/shop/bartholm-hair/"><img src="/assets/shop/v1/bartholm-hair/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Bartholm Hair: the statement of financial position"></a>
   <div class="cbody">
     <span class="ct"><a href="/shop/bartholm-hair/">Bartholm Hair: the statement of financial position</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/bartholm-hair-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/bartholm-hair/">View pack</a></div>
   </div>
 </article>
@@ -331,7 +343,7 @@ img,video{max-width:100%}
   <a class="cimg" href="/shop/dalverley-heating/"><img src="/assets/shop/v1/dalverley-heating/cover-sm.jpg" width="480" height="360" loading="lazy" alt="Cover: Dalverley Heating: reading the ratios"></a>
   <div class="cbody">
     <span class="ct"><a href="/shop/dalverley-heating/">Dalverley Heating: reading the ratios</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/dalverley-heating-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/dalverley-heating/">View pack</a></div>
   </div>
 </article>
@@ -351,9 +363,9 @@ img,video{max-width:100%}
 <div class="bundle">
   <figure class="hvid" id="hvid">
   <div class="hvid-frame">
-    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v2/theme-3-bundle/poster.jpg" aria-label="Short film about the Theme 3 bundle, about 30 seconds, with subtitles">
-      <source src="/assets/shop/v2/theme-3-bundle/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
-      <source src="/assets/shop/v2/theme-3-bundle/video-1080.mp4" type="video/mp4">
+    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v3/theme-3-bundle/poster.jpg" aria-label="Short film about the Theme 3 bundle, about 30 seconds, with subtitles">
+      <source src="/assets/shop/v3/theme-3-bundle/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="/assets/shop/v3/theme-3-bundle/video-1080.mp4" type="video/mp4">
     </video>
     <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with sound &middot; 30 sec</button>
   </div>
@@ -372,74 +384,74 @@ img,video{max-width:100%}
 <div class="sechead"><h2>A Level Business</h2><p>Edexcel 9BS0. Theme 3 packs and one Theme 4 case.</p></div>
 <div class="grid">
 <article class="card">
-  <button class="cimg" type="button" data-slug="harrowfield-linen" aria-label="Play the short film about Harrowfield Linen: where next?, with sound"><img src="/assets/shop/v2/harrowfield-linen/poster-sm.jpg" data-poster="/assets/shop/v2/harrowfield-linen/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Harrowfield Linen: where next?"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="harrowfield-linen"><button class="cpb" type="button" aria-label="Play the short film about Harrowfield Linen: where next?, with sound"><img src="/assets/shop/v3/harrowfield-linen/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Harrowfield Linen: where next?"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/harrowfield-linen/">Harrowfield Linen: where next?</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/harrowfield-linen-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/harrowfield-linen/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <button class="cimg" type="button" data-slug="marrick-print" aria-label="Play the short film about Marrick Print: how should we grow?, with sound"><img src="/assets/shop/v2/marrick-print/poster-sm.jpg" data-poster="/assets/shop/v2/marrick-print/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Marrick Print: how should we grow?"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="marrick-print"><button class="cpb" type="button" aria-label="Play the short film about Marrick Print: how should we grow?, with sound"><img src="/assets/shop/v3/marrick-print/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Marrick Print: how should we grow?"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/marrick-print/">Marrick Print: how should we grow?</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/marrick-print-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/marrick-print/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <button class="cimg" type="button" data-slug="thistledown-garden-centre" aria-label="Play the short film about Thistledown Garden Centre: forecast first, then invest, with sound"><img src="/assets/shop/v2/thistledown-garden-centre/poster-sm.jpg" data-poster="/assets/shop/v2/thistledown-garden-centre/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Thistledown Garden Centre: forecast first, then invest"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="thistledown-garden-centre"><button class="cpb" type="button" aria-label="Play the short film about Thistledown Garden Centre: forecast first, then invest, with sound"><img src="/assets/shop/v3/thistledown-garden-centre/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Thistledown Garden Centre: forecast first, then invest"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/thistledown-garden-centre/">Thistledown Garden Centre: forecast first, then invest</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/thistledown-garden-centre-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/thistledown-garden-centre/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <button class="cimg" type="button" data-slug="calder-reach-building" aria-label="Play the short film about Calder Reach Building: bid, build, on time?, with sound"><img src="/assets/shop/v2/calder-reach-building/poster-sm.jpg" data-poster="/assets/shop/v2/calder-reach-building/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Calder Reach Building: bid, build, on time?"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="calder-reach-building"><button class="cpb" type="button" aria-label="Play the short film about Calder Reach Building: bid, build, on time?, with sound"><img src="/assets/shop/v3/calder-reach-building/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Calder Reach Building: bid, build, on time?"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/calder-reach-building/">Calder Reach Building: bid, build, on time?</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/calder-reach-building-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/calder-reach-building/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <button class="cimg" type="button" data-slug="skerrow-buses" aria-label="Play the short film about Skerrow Buses: whose interests come first?, with sound"><img src="/assets/shop/v2/skerrow-buses/poster-sm.jpg" data-poster="/assets/shop/v2/skerrow-buses/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Skerrow Buses: whose interests come first?"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="skerrow-buses"><button class="cpb" type="button" aria-label="Play the short film about Skerrow Buses: whose interests come first?, with sound"><img src="/assets/shop/v3/skerrow-buses/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Skerrow Buses: whose interests come first?"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/skerrow-buses/">Skerrow Buses: whose interests come first?</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/skerrow-buses-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/skerrow-buses/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <button class="cimg" type="button" data-slug="tarnbeck-creamery" aria-label="Play the short film about Tarnbeck Creamery: reading the accounts, with sound"><img src="/assets/shop/v2/tarnbeck-creamery/poster-sm.jpg" data-poster="/assets/shop/v2/tarnbeck-creamery/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Tarnbeck Creamery: reading the accounts"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="tarnbeck-creamery"><button class="cpb" type="button" aria-label="Play the short film about Tarnbeck Creamery: reading the accounts, with sound"><img src="/assets/shop/v3/tarnbeck-creamery/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Tarnbeck Creamery: reading the accounts"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/tarnbeck-creamery/">Tarnbeck Creamery: reading the accounts</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/tarnbeck-creamery-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/tarnbeck-creamery/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <button class="cimg" type="button" data-slug="corvane-parcels" aria-label="Play the short film about Corvane Parcels: the people numbers, the causes of change, and which plan?, with sound"><img src="/assets/shop/v2/corvane-parcels/poster-sm.jpg" data-poster="/assets/shop/v2/corvane-parcels/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Corvane Parcels: the people numbers, the causes of change, and which plan?"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="corvane-parcels"><button class="cpb" type="button" aria-label="Play the short film about Corvane Parcels: the people numbers, the causes of change, and which plan?, with sound"><img src="/assets/shop/v3/corvane-parcels/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Corvane Parcels: the people numbers, the causes of change, and which plan?"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/corvane-parcels/">Corvane Parcels: the people numbers, the causes of change, and which plan?</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/corvane-parcels-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/corvane-parcels/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <button class="cimg" type="button" data-slug="alderscar-furniture" aria-label="Play the short film about Alderscar Furniture: change, risk and the next move, with sound"><img src="/assets/shop/v2/alderscar-furniture/poster-sm.jpg" data-poster="/assets/shop/v2/alderscar-furniture/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Alderscar Furniture: change, risk and the next move"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="alderscar-furniture"><button class="cpb" type="button" aria-label="Play the short film about Alderscar Furniture: change, risk and the next move, with sound"><img src="/assets/shop/v3/alderscar-furniture/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Alderscar Furniture: change, risk and the next move"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/alderscar-furniture/">Alderscar Furniture: change, risk and the next move</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/alderscar-furniture-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/alderscar-furniture/">View pack</a></div>
   </div>
 </article>
 <article class="card">
-  <button class="cimg" type="button" data-slug="kernow-kitchenware" aria-label="Play the short film about Kernow Kitchenware: which way to grow?, with sound"><img src="/assets/shop/v2/kernow-kitchenware/poster-sm.jpg" data-poster="/assets/shop/v2/kernow-kitchenware/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Kernow Kitchenware: which way to grow?"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="kernow-kitchenware"><button class="cpb" type="button" aria-label="Play the short film about Kernow Kitchenware: which way to grow?, with sound"><img src="/assets/shop/v3/kernow-kitchenware/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Kernow Kitchenware: which way to grow?"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/kernow-kitchenware/">Kernow Kitchenware: which way to grow?</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/kernow-kitchenware-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/kernow-kitchenware/">View pack</a></div>
   </div>
 </article>
@@ -448,10 +460,10 @@ img,video{max-width:100%}
 <div class="sechead"><h2>A Level Economics</h2><p>Edexcel 9EC0, Theme 2.</p></div>
 <div class="grid">
 <article class="card">
-  <button class="cimg" type="button" data-slug="kestria" aria-label="Play the short film about Kestria under pressure, with sound"><img src="/assets/shop/v2/kestria/poster-sm.jpg" data-poster="/assets/shop/v2/kestria/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Kestria under pressure"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="kestria"><button class="cpb" type="button" aria-label="Play the short film about Kestria under pressure, with sound"><img src="/assets/shop/v3/kestria/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Kestria under pressure"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/kestria/">Kestria under pressure</a></span>
-    <span class="cmeta">4 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/kestria-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">4 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/kestria/">View pack</a></div>
   </div>
 </article>
@@ -460,10 +472,10 @@ img,video{max-width:100%}
 <div class="sechead"><h2>GCSE Business</h2><p>AQA 8132.</p></div>
 <div class="grid">
 <article class="card">
-  <button class="cimg" type="button" data-slug="harbourside-hotel" aria-label="Play the short film about Harbourside Hotel: staffing up for the season, with sound"><img src="/assets/shop/v2/harbourside-hotel/poster-sm.jpg" data-poster="/assets/shop/v2/harbourside-hotel/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Harbourside Hotel: staffing up for the season"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="harbourside-hotel"><button class="cpb" type="button" aria-label="Play the short film about Harbourside Hotel: staffing up for the season, with sound"><img src="/assets/shop/v3/harbourside-hotel/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Harbourside Hotel: staffing up for the season"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/harbourside-hotel/">Harbourside Hotel: staffing up for the season</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/harbourside-hotel-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/harbourside-hotel/">View pack</a></div>
   </div>
 </article>
@@ -472,10 +484,10 @@ img,video{max-width:100%}
 <div class="sechead"><h2>Cambridge IGCSE Business</h2><p>0264 and 0774, exams 2027 to 2029.</p></div>
 <div class="grid">
 <article class="card">
-  <button class="cimg" type="button" data-slug="moreno-snack-bars" aria-label="Play the short film about Moreno Snack Bars: which way to grow?, with sound"><img src="/assets/shop/v2/moreno-snack-bars/poster-sm.jpg" data-poster="/assets/shop/v2/moreno-snack-bars/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Moreno Snack Bars: which way to grow?"><span class="cplay" aria-hidden="true"></span></button>
+  <div class="cimg" data-slug="moreno-snack-bars"><button class="cpb" type="button" aria-label="Play the short film about Moreno Snack Bars: which way to grow?, with sound"><img src="/assets/shop/v3/moreno-snack-bars/poster-sm.jpg" width="480" height="270" loading="lazy" alt="Pages from Moreno Snack Bars: which way to grow?"><span class="cplay" aria-hidden="true"></span></button><span class="cload" aria-live="polite">Loading</span><button class="cclose" type="button" aria-label="Close the film">Close</button></div>
   <div class="cbody">
     <span class="ct"><a href="/shop/moreno-snack-bars/">Moreno Snack Bars: which way to grow?</a></span>
-    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span><span class="cmeta"><a href="/assets/shop/v1/samples/moreno-snack-bars-sample.pdf">Free sample (PDF)</a></span>
+    <span class="cmeta">3 lessons &middot; full answers &middot; PDF and Word</span>
     <div class="cfoot"><span class="price" data-price="5.50">£5.50</span><a class="cbtn" href="/shop/moreno-snack-bars/">View pack</a></div>
   </div>
 </article>
@@ -520,18 +532,47 @@ img,video{max-width:100%}
 </script>
 <script>
 (function(){
-  var cur=null;
-  function stop(){ if(!cur) return; var c=cur.card, b=cur.btn; if(cur.vid){ cur.vid.pause(); cur.vid.remove(); } b.hidden=false; c.classList.remove('playing'); cur=null; }
+  var vids={}, cur=null, mq=window.matchMedia&&window.matchMedia('(max-width:520px)');
+  function mk(box){
+    var slug=box.getAttribute('data-slug'); if(vids[slug]) return vids[slug];
+    var v=document.createElement('video'); v.playsInline=true; v.preload='metadata'; v.setAttribute('playsinline','');
+    v.setAttribute('aria-label','Short film about this pack, with sound');
+    var im=box.querySelector('img'); v.poster=im.currentSrc||im.src;
+    v.src='/assets/shop/v3/'+slug+'/video-720.mp4';
+    box.insertBefore(v,box.firstChild); vids[slug]=v; return v;
+  }
+  function warm(box){ var v=mk(box); if(v.preload!=='auto') v.preload='auto'; }
+  function stop(){
+    if(!cur) return; var box=cur.box, v=cur.v; v.pause(); v.controls=false; v.currentTime=0; box.classList.remove('on','wait');
+    if(cur.modal){ cur.home.insertBefore(box,cur.ph); cur.ph.remove(); cur.modal.remove(); }
+    cur=null;
+  }
+  function start(box){
+    stop(); var v=mk(box); cur={box:box,v:v};
+    if(mq&&mq.matches){
+      var home=box.parentNode, ph=document.createElement('div'); ph.className='cimg'; ph.style.visibility='hidden'; ph.setAttribute('aria-hidden','true');
+      var modal=document.createElement('div'); modal.className='cmodal'; modal.setAttribute('role','dialog'); modal.setAttribute('aria-label','Short film');
+      home.insertBefore(ph,box); modal.appendChild(box); document.body.appendChild(modal);
+      modal.addEventListener('click',function(e){ if(e.target===modal) stop(); });
+      cur.home=home; cur.ph=ph; cur.modal=modal;
+    }
+    box.classList.add('on','wait'); v.controls=false; v.preload='auto'; v.muted=false; v.currentTime=0;
+    function ok(){ box.classList.remove('wait'); v.controls=true; v.removeEventListener('playing',ok); }
+    v.addEventListener('playing',ok);
+    var p=v.play(); if(p&&p.catch)p.catch(function(){ box.classList.remove('wait'); v.controls=true; });
+  }
   document.addEventListener('click',function(e){
-    var b=e.target.closest&&e.target.closest('button.cimg'); if(!b) return;
-    stop();
-    var card=b.closest('.card'), slug=b.getAttribute('data-slug');
-    var v=document.createElement('video'); v.controls=true; v.playsInline=true; v.preload='auto'; v.setAttribute('poster',b.querySelector('img').getAttribute('data-poster'));
-    v.src='/assets/shop/v2/'+slug+'/video-720.mp4'; v.setAttribute('aria-label','Short film about this pack, with sound');
-    v.style.cssText='display:block;width:100%;aspect-ratio:16/9;border:1px solid #DDE5E1;border-radius:4px;background:#06140f';
-    b.hidden=true; b.parentNode.insertBefore(v,b); card.classList.add('playing'); cur={card:card,btn:b,vid:v};
-    var p=v.play(); if(p&&p.catch)p.catch(function(){});
+    if(e.target.closest&&e.target.closest('.cclose')){ stop(); return; }
+    var b=e.target.closest&&e.target.closest('.cpb'); if(b) start(b.parentNode);
   });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') stop(); });
+  var boxes=[].slice.call(document.querySelectorAll('div.cimg[data-slug]'));
+  boxes.forEach(function(box){ ['pointerenter','touchstart','focusin'].forEach(function(ev){ box.addEventListener(ev,function(){ warm(box); },{passive:true,once:true}); }); });
+  var c=navigator.connection, save=c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||''));
+  if('IntersectionObserver' in window&&!save){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ mk(e.target); io.unobserve(e.target); } }); },{rootMargin:'300px 0px'});
+    boxes.forEach(function(b){ io.observe(b); });
+  }
 })();
 </script>
 </body>

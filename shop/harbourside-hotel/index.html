@@ -139,6 +139,20 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .card{display:flex;flex-direction:column;min-width:0}
 .cimg{position:relative;display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#06140f;padding:0;cursor:pointer;font:inherit}
 .cimg img,.cimg video{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+div.cimg{cursor:default}
+.cpb{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:none;cursor:pointer;font:inherit;display:block}
+.cpb:focus-visible{outline:3px solid #9fd8c4;outline-offset:-3px}
+.cimg video{position:absolute;inset:0;opacity:0;pointer-events:none}
+.cimg.on video{opacity:1;pointer-events:auto}
+.cimg.on .cpb{display:none}
+.cload{position:absolute;left:8px;bottom:8px;display:none;align-items:center;gap:7px;background:rgba(255,255,255,.94);color:#0B3D2E;border-radius:999px;padding:4px 11px 4px 5px;font-size:13px;font-weight:600;z-index:2}
+.cload::before{content:"";width:18px;height:18px;border-radius:50%;background:#0B3D2E}
+.cimg.wait .cload{display:inline-flex}
+.cclose{position:absolute;right:6px;top:6px;z-index:3;display:none;border:1px solid rgba(255,255,255,.4);background:rgba(8,22,16,.78);color:#fff;border-radius:999px;font:600 13px/1 inherit;padding:6px 11px;cursor:pointer}
+.cimg.on .cclose{display:inline-block}
+.cmodal{position:fixed;inset:0;z-index:1000;background:rgba(6,20,15,.88);display:flex;align-items:center;justify-content:center;padding:12px}
+.cmodal .cimg{width:100%;max-width:640px;flex:0 0 auto}
+.cmodal .cimg video{opacity:1;pointer-events:auto}
 .cplay{position:absolute;left:8px;bottom:8px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.94)}
 .cplay::after{content:"";position:absolute;left:11px;top:8px;border-style:solid;border-width:6px 0 6px 9px;border-color:transparent transparent transparent #0B3D2E}
 .cimg:focus-visible{outline:3px solid #9fd8c4;outline-offset:2px}
@@ -157,8 +171,6 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
   .card{flex-direction:row;gap:12px;align-items:flex-start}
   .card .cimg{width:132px;flex:0 0 132px}
   .card .cbody{padding-top:0}
-  .card.playing{flex-direction:column}
-  .card.playing .cimg{width:100%;flex:0 0 auto}
 }
 .bundle{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px;align-items:center}
 @media(max-width:860px){.bundle{grid-template-columns:1fr;gap:16px}}
@@ -258,7 +270,7 @@ img,video{max-width:100%}
         <a class="btn" href="https://buy.stripe.com/7sYfZidoY2T9dPT1R22sM07" target="_self" data-product="P2">Buy now, £5.50</a>
       </div>
       <p class="legal">Digital download. By buying you ask for immediate access to the files and acknowledge that you then lose the 14-day right to cancel. Refunds: see our <a href="/refunds/">refund page</a>.</p>
-      <p class="sample"><a href="/assets/shop/v1/samples/harbourside-hotel-sample.pdf">Free sample (PDF)</a>: cover, contents and the first two pages of Lesson 1. No answers, no email needed.</p>
+      <p class="sample"><a href="/assets/shop/v3/samples/harbourside-hotel-sample.pdf">Free sample (PDF)</a>: cover, contents and the first two pages of Lesson 1. No answers, no email needed.</p>
     </div>
     <img class="cover" src="/assets/shop/v1/harbourside-hotel/cover.jpg" width="1200" height="900" alt="Cover: Harbourside Hotel: staffing up for the season, the first page of the student workbook">
   </div>
@@ -272,9 +284,9 @@ img,video{max-width:100%}
 <section class="sec" id="video"><div class="wrap">
 <figure class="hvid" id="hvid">
   <div class="hvid-frame">
-    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v2/harbourside-hotel/poster.jpg" aria-label="Short film about Harbourside Hotel: staffing up for the season, about 25 seconds, with subtitles">
-      <source src="/assets/shop/v2/harbourside-hotel/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
-      <source src="/assets/shop/v2/harbourside-hotel/video-1080.mp4" type="video/mp4">
+    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v3/harbourside-hotel/poster.jpg" aria-label="Short film about Harbourside Hotel: staffing up for the season, about 25 seconds, with subtitles">
+      <source src="/assets/shop/v3/harbourside-hotel/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="/assets/shop/v3/harbourside-hotel/video-1080.mp4" type="video/mp4">
     </video>
     <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with sound &middot; 25 sec</button>
   </div>
