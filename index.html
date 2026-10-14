@@ -747,6 +747,56 @@
   </div>
 </section>
 
+<!-- LESSON PACKS BLOCK -->
+<style>
+@media(max-width:480px){#tbs-home div[style*="auto-fit"]{grid-template-columns:minmax(0,1fr)!important}}
+.lp{background:#F4F7F4;border-top:1px solid #DDE5E1;border-bottom:1px solid #DDE5E1;padding:58px 0 62px;font-family:'Inter',system-ui,sans-serif;color:#1F2724}
+.lp-in{max-width:1160px;margin:0 auto;padding:0 22px}
+.lp h2{font-family:'Inter',system-ui,sans-serif!important;font-weight:600;color:#0B3D2E;font-size:clamp(24px,2.8vw,32px);line-height:1.2;letter-spacing:-.015em!important;margin:0 0 8px}
+.lp-sub{font-size:16.5px;color:#3b4a46;max-width:640px;margin:0 0 26px}
+.lp-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.lp-card{display:flex;flex-direction:column;gap:5px;min-width:0}
+.lp-img{position:relative;display:block;width:100%;aspect-ratio:16/9;border:1px solid #DDE5E1;border-radius:4px;overflow:hidden;background:#06140f;padding:0;cursor:pointer;font:inherit}
+.lp-img img,.lp-card video{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.lp-card video{aspect-ratio:16/9;border:1px solid #DDE5E1;border-radius:4px;background:#06140f}
+.lp-play{position:absolute;left:8px;bottom:8px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.94)}
+.lp-play::after{content:"";position:absolute;left:11px;top:8px;border-style:solid;border-width:6px 0 6px 9px;border-color:transparent transparent transparent #0B3D2E}
+.lp-img:focus-visible{outline:3px solid #9fd8c4;outline-offset:2px}
+.lp-name{text-decoration:none;font-size:16px;font-weight:600;line-height:1.3;color:#0B3D2E;margin-top:4px}
+.lp-name:hover{text-decoration:underline}
+.lp-spec{font-size:13.5px;color:#55636B;line-height:1.4}
+.lp-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:2px}
+.lp-price{font-size:14px;color:#55636B}
+.lp-btn{text-decoration:none;display:inline-flex;border:1px solid #0B3D2E;color:#0B3D2E;padding:5px 12px;border-radius:6px;font-size:13.5px;font-weight:600;white-space:nowrap}
+.lp-btn:hover{background:#0B3D2E;color:#fff}
+.lp-all{display:inline-block;margin-top:24px;font-size:15px;font-weight:600;color:#0a6b73;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.lp-grid{grid-template-columns:1fr;gap:22px}.lp{padding:44px 0 46px}}
+</style>
+<section class="lp" id="lesson-packs" aria-labelledby="lp-h">
+  <div class="lp-in">
+    <h2 id="lp-h">Lesson packs</h2>
+    <p class="lp-sub">Student workbook, teacher guide and full answers for each lesson. PDF and editable Word. Every pack has a free sample.</p>
+    <ul class="lp-grid"><li class="lp-card"><button class="lp-img" type="button" data-slug="thistledown-garden-centre" aria-label="Play the short film about Thistledown Garden Centre (B3), with sound"><img src="/assets/shop/v1/thistledown-garden-centre/poster-sm.jpg" data-poster="/assets/shop/v1/thistledown-garden-centre/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Thistledown Garden Centre"><span class="lp-play" aria-hidden="true"></span></button><a class="lp-name" href="/shop/thistledown-garden-centre/">Thistledown Garden Centre (B3)</a><span class="lp-spec">Edexcel A level Business 9BS0, Theme 3</span><span class="lp-foot"><span class="lp-price">£5.50</span><a class="lp-btn" href="/shop/thistledown-garden-centre/">View pack</a></span></li><li class="lp-card"><button class="lp-img" type="button" data-slug="tarnbeck-creamery" aria-label="Play the short film about Tarnbeck Creamery (B6), with sound"><img src="/assets/shop/v1/tarnbeck-creamery/poster-sm.jpg" data-poster="/assets/shop/v1/tarnbeck-creamery/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from Tarnbeck Creamery"><span class="lp-play" aria-hidden="true"></span></button><a class="lp-name" href="/shop/tarnbeck-creamery/">Tarnbeck Creamery (B6)</a><span class="lp-spec">Edexcel A level Business 9BS0, Theme 3</span><span class="lp-foot"><span class="lp-price">£5.50</span><a class="lp-btn" href="/shop/tarnbeck-creamery/">View pack</a></span></li><li class="lp-card"><button class="lp-img" type="button" data-slug="theme-3-bundle" aria-label="Play the short film about Theme 3 bundle (24 lessons), with sound"><img src="/assets/shop/v1/theme-3-bundle/poster-sm.jpg" data-poster="/assets/shop/v1/theme-3-bundle/poster.jpg" width="480" height="270" loading="lazy" alt="Pages from the Theme 3 bundle"><span class="lp-play" aria-hidden="true"></span></button><a class="lp-name" href="/shop/theme-3-bundle/">Theme 3 bundle (24 lessons)</a><span class="lp-spec">Edexcel A level Business 9BS0, Theme 3</span><span class="lp-foot"><span class="lp-price">£13</span><a class="lp-btn" href="/shop/theme-3-bundle/">View pack</a></span></li></ul>
+    <a class="lp-all" href="/shop/">See all lesson packs</a>
+  </div>
+</section>
+<script>
+(function(){
+  var cur=null;
+  function stop(){ if(!cur) return; if(cur.vid){ cur.vid.pause(); cur.vid.remove(); } cur.btn.hidden=false; cur=null; }
+  document.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('button.lp-img'); if(!b) return;
+    stop();
+    var v=document.createElement('video'); v.controls=true; v.playsInline=true; v.preload='auto';
+    v.setAttribute('poster',b.querySelector('img').getAttribute('data-poster'));
+    v.src='/assets/shop/v1/'+b.getAttribute('data-slug')+'/video-720.mp4';
+    v.setAttribute('aria-label','Short film about this pack, with sound');
+    b.hidden=true; b.parentNode.insertBefore(v,b); cur={btn:b,vid:v};
+    var p=v.play(); if(p&&p.catch)p.catch(function(){});
+  });
+})();
+</script>
+
 
 <!-- FOOTER -->
 
