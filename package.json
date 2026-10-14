@@ -1,0 +1,8 @@
+{
+  "name": "thebusiness-school",
+  "private": true,
+  "description": "Static site. This file only exists so Netlify installs the package the download counter function needs.",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}
