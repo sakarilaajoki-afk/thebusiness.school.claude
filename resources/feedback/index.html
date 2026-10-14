@@ -36,7 +36,7 @@
   <header><div><a href="/">TBS The Business School</a><a href="/resources/">&larr; Resource Hub</a></div></header>
   <main>
     <h1>What did you think?</h1>
-    <p>A quick rating helps us choose what to improve next. A sentence is optional.</p>
+    <p id="intro">A quick rating helps us choose what to improve next. A sentence is optional.</p>
     <form name="resource-feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/resources/feedback/thanks/">
       <input type="hidden" name="form-name" value="resource-feedback">
       <input type="hidden" name="subject" value="Resource Hub feedback">
@@ -45,14 +45,14 @@
       <input type="hidden" id="origin" name="origin" value="">
       <p class="honeypot"><label>Leave blank <input name="bot-field" type="text" tabindex="-1" autocomplete="off"></label></p>
       <div class="field"><label for="resource">Resource</label><input id="resource" name="resource" type="text" maxlength="160" required placeholder="Which resource?"></div>
-      <fieldset><legend>Rating</legend><div class="rating">
+      <fieldset id="rating-field"><legend>Rating</legend><div class="rating">
         <label><input type="radio" name="rating" value="1" required aria-label="1 star">★ 1</label>
         <label><input type="radio" name="rating" value="2" aria-label="2 stars">★ 2</label>
         <label><input type="radio" name="rating" value="3" aria-label="3 stars">★ 3</label>
         <label><input type="radio" name="rating" value="4" aria-label="4 stars">★ 4</label>
         <label><input type="radio" name="rating" value="5" aria-label="5 stars">★ 5</label>
       </div></fieldset>
-      <div class="field"><label for="feedback">Anything to keep or change? (optional)</label><input id="feedback" name="feedback" type="text" maxlength="500"></div>
+      <div class="field"><label id="feedback-label" for="feedback">Anything to keep or change? (optional)</label><input id="feedback" name="feedback" type="text" maxlength="500"></div>
       <button type="submit">Send</button>
       <p class="small">Private feedback. We do not publish responses from this form. No account or mailing list. <a href="/privacy/">Privacy information</a>.</p>
     </form>
@@ -66,7 +66,15 @@
       var pack=(params.get('pack')||'').trim();
       if(/^[A-Za-z0-9_-]{1,20}$/.test(pack)){
         document.getElementById('pack').value=pack;
-        if(params.get('from')==='purchase')document.getElementById('origin').value='purchase';
+        if(params.get('from')==='purchase'){
+          document.getElementById('origin').value='purchase';
+          var rf=document.getElementById('rating-field');
+          rf.hidden=true;
+          rf.querySelectorAll('input').forEach(function(i){i.disabled=true;i.required=false;});
+          document.getElementById('intro').textContent='Thank you for buying. One short note helps us improve the packs.';
+          document.getElementById('feedback-label').textContent='What worked, what would you change?';
+          document.getElementById('feedback').required=true;
+        }
         if(!resource)document.getElementById('resource').value='Purchased pack '+pack;
       }
       if(/^\/resources\/[a-z0-9/_-]+\/?$/i.test(path))document.getElementById('resource-url').value=path;
