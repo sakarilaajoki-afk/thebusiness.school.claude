@@ -60,7 +60,11 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .facts{list-style:none;margin:18px 0 0;display:grid;gap:4px;font-size:15px;color:#2b3936}
 .buyrow{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:26px}
 .price{font-size:28px;font-weight:600;color:var(--green);line-height:1}
-.btn{display:inline-flex;align-items:center;justify-content:center;font-size:15px;padding:12px 24px;border-radius:8px;background:var(--green);color:#fff;white-space:nowrap;text-decoration:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-size:15px;line-height:1.2;padding:15px 32px;border-radius:2px;border:1px solid var(--green);background:var(--green);color:#fff;white-space:nowrap;text-decoration:none;box-shadow:none}
+.btn:hover{background:#08301F;border-color:#08301F}
+.btn:focus-visible,.cbtn:focus-visible,.sel a:focus-visible,.hvid-snd:focus-visible,.cclose:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.btn[aria-disabled="true"]{background:#E4EAE7;color:#4A5853;cursor:not-allowed;border:1px solid #CBD6D1}
+.cbtn{}
 .legal{font-size:13.5px;line-height:1.5;color:var(--mute);max-width:520px;margin-top:12px}
 .cover{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 18px 40px -26px rgba(11,61,46,.45)}
 /* trust strip */
@@ -98,11 +102,20 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .pnote{font-size:14px;color:var(--mute);margin-bottom:16px}
 .notes{list-style:none;display:grid;gap:8px;max-width:720px;font-size:15px;line-height:1.55;color:#2b3936}
 .notes li{padding-left:18px;position:relative}
-.notes li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--green)}
+.notes li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:0;background:var(--green)}
 .lic{max-width:720px;font-size:15.5px;color:#2b3936}
 .lic p+p{margin-top:12px}
 .maker{max-width:720px}
 .maker p{font-size:15px;color:#2b3936}
+.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 32px;max-width:720px}
+@media(max-width:560px){.people{grid-template-columns:1fr}}
+.person{display:flex;gap:16px;align-items:flex-start}
+.person img{flex:0 0 88px;width:88px;height:88px;object-fit:cover;border-radius:2px;border:1px solid var(--line)}
+.person b{display:block;font-size:16px;color:var(--green);line-height:1.3}
+.person .role{display:block;font-size:13.5px;color:var(--mute);margin-bottom:4px}
+.person p{font-size:14.5px;line-height:1.5;color:#2b3936}
+.sold{font-size:14.5px;color:#2b3936;margin-top:20px;max-width:720px}
+.whoone{font-size:14.5px;color:#2b3936;margin-top:10px;max-width:700px}
 .faq{max-width:720px;border-top:1px solid var(--line)}
 .faq details{border-bottom:1px solid var(--line)}
 .faq summary{cursor:pointer;font-size:15.5px;color:var(--green);padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
@@ -120,11 +133,15 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .shop .strip{padding:14px 0}
 .shop .sgrid{font-size:13px;line-height:1.45;gap:18px}
 .shop .sec{padding:26px 0 0;scroll-margin-top:118px}
-.sel{position:sticky;top:65px;z-index:40;background:#fff;border-bottom:1px solid var(--line);padding:10px 0;font-size:14.5px}
-.sel .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:4px 0}
-.sel a{color:var(--green);text-decoration:none;font-weight:600;white-space:nowrap;padding:3px 0}
-.sel a:hover{text-decoration:underline}
-.sel i{font-style:normal;color:var(--mute);margin:0 10px}
+.subh{font-size:16px;color:var(--green);margin:22px 0 10px;font-weight:600}
+.subh:first-of-type{margin-top:0}
+.cover-sm{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--line);box-shadow:0 14px 32px -24px rgba(11,61,46,.45)}
+.sel{position:sticky;top:65px;z-index:40;background:#fff;border-bottom:1px solid var(--line);padding:10px 0;font-size:14px}
+.sel .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.sel a{color:var(--green);background:#fff;border:1px solid var(--green);border-radius:2px;text-decoration:none;font-weight:600;white-space:nowrap;padding:6px 12px;line-height:1.3}
+.sel a:hover{background:var(--wash)}
+.sel a.on{background:var(--green);color:#fff}
+@media(max-width:640px){.sel .wrap{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}.sel .wrap::-webkit-scrollbar{display:none}.sel a{flex:0 0 auto}}
 .shop .sechead{display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;margin-bottom:12px}
 .shop .sechead h2{font-size:20px;margin:0}
 .shop .sechead p{font-size:13.5px;color:var(--mute)}
@@ -134,8 +151,22 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .card{display:flex;flex-direction:column;min-width:0}
 .cimg{position:relative;display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#06140f;padding:0;cursor:pointer;font:inherit}
 .cimg img,.cimg video{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
-.cplay{position:absolute;left:8px;bottom:8px;width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,.94)}
-.cplay::after{content:"";position:absolute;left:11px;top:8px;border-style:solid;border-width:6px 0 6px 9px;border-color:transparent transparent transparent #0B3D2E}
+div.cimg{cursor:default}
+.cpb{position:absolute;inset:0;width:100%;height:100%;padding:0;border:0;background:none;cursor:pointer;font:inherit;display:block}
+.cpb:focus-visible{outline:3px solid #9fd8c4;outline-offset:-3px}
+.cimg video{position:absolute;inset:0;opacity:0;pointer-events:none}
+.cimg.on video{opacity:1;pointer-events:auto}
+.cimg.on .cpb{display:none}
+.cload{position:absolute;left:8px;bottom:8px;display:none;align-items:center;gap:7px;background:rgba(255,255,255,.94);color:#0B3D2E;border-radius:2px;padding:4px 10px 4px 5px;font-size:13px;font-weight:600;z-index:2}
+.cload::before{content:"";width:14px;height:14px;border-radius:0;background:#0B3D2E}
+.cimg.wait .cload{display:inline-flex}
+.cclose{position:absolute;right:6px;top:6px;z-index:3;display:none;border:1px solid rgba(255,255,255,.4);background:rgba(8,22,16,.78);color:#fff;border-radius:2px;font:600 13px/1 inherit;padding:7px 12px;cursor:pointer}
+.cimg.on .cclose{display:inline-block}
+.cmodal{position:fixed;inset:0;z-index:1000;background:rgba(6,20,15,.88);display:flex;align-items:center;justify-content:center;padding:12px}
+.cmodal .cimg{width:100%;max-width:640px;flex:0 0 auto}
+.cmodal .cimg video{opacity:1;pointer-events:auto}
+.cplay{position:absolute;left:8px;bottom:8px;width:34px;height:24px;border-radius:2px;background:rgba(255,255,255,.94)}
+.cplay::after{content:"";position:absolute;left:13px;top:6px;border-style:solid;border-width:6px 0 6px 9px;border-color:transparent transparent transparent #0B3D2E}
 .cimg:focus-visible{outline:3px solid #9fd8c4;outline-offset:2px}
 .cbody{display:flex;flex-direction:column;gap:3px;padding-top:9px;flex:1;min-width:0}
 .ct{font-size:15px;font-weight:600;line-height:1.3;color:var(--green)}
@@ -145,15 +176,13 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .cmeta a{color:var(--mute)}
 .cfoot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:6px}
 .cfoot .price{font-size:18px}
-.cbtn{display:inline-flex;border:1px solid var(--green);color:var(--green);padding:5px 12px;border-radius:6px;font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap}
-.cbtn:hover{background:var(--green);color:#fff}
+.cbtn{display:inline-flex;align-items:center;border:1px solid var(--green);background:#fff;color:var(--green);padding:8px 16px;border-radius:2px;font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;box-shadow:none}
+.cbtn:hover{background:var(--wash)}
 @media(max-width:520px){
   .grid{grid-template-columns:1fr;gap:14px}
   .card{flex-direction:row;gap:12px;align-items:flex-start}
   .card .cimg{width:132px;flex:0 0 132px}
   .card .cbody{padding-top:0}
-  .card.playing{flex-direction:column}
-  .card.playing .cimg{width:100%;flex:0 0 auto}
 }
 .bundle{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:28px;align-items:center}
 @media(max-width:860px){.bundle{grid-template-columns:1fr;gap:16px}}
@@ -177,9 +206,9 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .hvid{position:relative;margin:0;max-width:900px}
 .hvid-frame{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#06140f;border:1px solid var(--line)}
 .hvid video{display:block;width:100%;height:100%;object-fit:cover}
-.hvid-snd{position:absolute;left:18px;bottom:18px;display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.28);background:rgba(8,22,16,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;border-radius:999px;padding:9px 18px 9px 9px;font:600 15px/1 'Inter',sans-serif;cursor:pointer}
-.hvid-snd .ic{width:34px;height:34px;border-radius:50%;background:#fff;position:relative;flex:0 0 auto}
-.hvid-snd .ic::after{content:"";position:absolute;left:13px;top:9px;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #0B3D2E}
+.hvid-snd{position:absolute;left:18px;bottom:18px;display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(255,255,255,.28);background:rgba(8,22,16,.78);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);color:#fff;border-radius:2px;padding:9px 18px 9px 9px;font:600 15px/1 'Inter',sans-serif;cursor:pointer}
+.hvid-snd .ic{width:44px;height:30px;border-radius:2px;background:#fff;position:relative;flex:0 0 auto}
+.hvid-snd .ic::after{content:"";position:absolute;left:17px;top:7px;border-style:solid;border-width:8px 0 8px 13px;border-color:transparent transparent transparent #0B3D2E}
 .hvid-snd:hover{background:rgba(11,61,46,.92)}
 .hvid:not(.sound) .hvid-frame{cursor:pointer}
 .hvid-snd:focus-visible{outline:3px solid #9fd8c4;outline-offset:3px}
@@ -187,7 +216,7 @@ h1{font-size:clamp(28px,3.6vw,40px);line-height:1.15;letter-spacing:-.01em;color
 .hvid-tx{margin-top:10px;font-size:13.5px;color:var(--mute)}
 .hvid-tx summary{cursor:pointer;color:var(--mute);font-weight:400;text-decoration:underline;text-underline-offset:3px}
 .hvid-tx p{margin-top:6px}
-@media(max-width:640px){.hvid-snd{left:10px;bottom:10px;font-size:14px;padding:7px 14px 7px 7px}.hvid-snd .ic{width:28px;height:28px}.hvid-snd .ic::after{left:11px;top:7px;border-width:7px 0 7px 11px}}
+@media(max-width:640px){.hvid-snd{left:10px;bottom:10px;font-size:14px;padding:7px 14px 7px 7px}.hvid-snd .ic{width:38px;height:26px}.hvid-snd .ic::after{left:15px;top:6px;border-width:7px 0 7px 11px}}
 img,video{max-width:100%}
 @media print{.hd,.mmenu{display:none!important}}
 /* footer */
@@ -247,13 +276,13 @@ img,video{max-width:100%}
       <p class="eyebrow">A Level Business &middot; Edexcel A level Business (9BS0)</p>
       <h1>Kernow Kitchenware: which way to grow?</h1>
       <p class="lead">A Cornish cookware maker must choose between exporting to Germany, a factory in Poland or UK online growth. Exchange rates, a decision tree, stakeholders and ethics.</p>
-      <ul class="facts"><li>3 lessons of about 55 minutes</li><li>16-page student workbook</li><li>10-page teacher guide</li><li>PDF and editable Word</li><li>Teacher guide with full worked answers</li><li>Independently checked</li></ul>
+      <ul class="facts"><li>3 lessons of about 55 minutes</li><li>16-page student workbook</li><li>10-page teacher guide</li><li>PDF and editable Word</li><li>Teacher guide with full worked answers</li><li>Checked page by page and recalculated before release</li></ul>
       <div class="buyrow">
         <span class="price" data-price="5.50">£5.50</span>
         <a class="btn" href="https://buy.stripe.com/8x26oI0CcalB5jncvG2sM06" target="_self" data-product="P1">Buy now, £5.50</a>
       </div>
       <p class="legal">Digital download. By buying you ask for immediate access to the files and acknowledge that you then lose the 14-day right to cancel. Refunds: see our <a href="/refunds/">refund page</a>.</p>
-      <p class="sample"><a href="/assets/shop/v1/samples/kernow-kitchenware-sample.pdf">Free sample (PDF)</a>: cover, contents and the first two pages of Lesson 1. No answers, no email needed.</p>
+      <p class="sample"><a href="/assets/shop/v3/samples/kernow-kitchenware-sample.pdf">Free sample (PDF)</a>: cover, contents and the first two pages of Lesson 1. No answers, no email needed.</p>
     </div>
     <img class="cover" src="/assets/shop/v1/kernow-kitchenware/cover.jpg" width="1200" height="900" alt="Cover: Kernow Kitchenware: which way to grow?, the first page of the student workbook">
   </div>
@@ -267,9 +296,9 @@ img,video{max-width:100%}
 <section class="sec" id="video"><div class="wrap">
 <figure class="hvid" id="hvid">
   <div class="hvid-frame">
-    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v1/kernow-kitchenware/poster.jpg" aria-label="Short film about Kernow Kitchenware: which way to grow?, about 25 seconds, with subtitles">
-      <source src="/assets/shop/v1/kernow-kitchenware/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
-      <source src="/assets/shop/v1/kernow-kitchenware/video-1080.mp4" type="video/mp4">
+    <video muted playsinline loop preload="none" width="1280" height="720" poster="/assets/shop/v3/kernow-kitchenware/poster.jpg" aria-label="Short film about Kernow Kitchenware: which way to grow?, about 25 seconds, with subtitles">
+      <source src="/assets/shop/v3/kernow-kitchenware/video-720.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="/assets/shop/v3/kernow-kitchenware/video-1080.mp4" type="video/mp4">
     </video>
     <button class="hvid-snd" type="button"><span class="ic" aria-hidden="true"></span>Watch with sound &middot; 25 sec</button>
   </div>
@@ -304,8 +333,12 @@ img,video{max-width:100%}
   <p>If you are charged twice, cannot open the files, or the pack is not as described, email <a href="mailto:support@thebusiness.school">support@thebusiness.school</a> and we put it right. Because the files are an immediate digital download and you lose the 14-day right to cancel when you buy, change-of-mind refunds are not offered once you have access. Your statutory rights are unaffected. The seller is TBS Education Ltd Oy; see the full <a href="/terms/">terms</a> and <a href="/refunds/">refund policy</a>.</p></div>
 </div></section>
 <section class="sec" id="maker"><div class="wrap">
-  <h2>Who makes these</h2>
-  <div class="maker"><p>These resources are made by The Business School, founded by Sakari Laajoki. <a href="/about/">About us</a></p></div>
+  <h2>Who makes this</h2>
+  <div class="people">
+    <div class="person"><img src="/assets/shop/v1/people/sakari-laajoki.jpg" width="240" height="240" loading="lazy" alt="Sakari Laajoki, founder of The Business School"><div><b>Sakari Laajoki</b><span class="role">Founder</span><p>Writes the teaching material, runs the company and answers the support email himself.</p></div></div>
+    <div class="person"><img src="/assets/shop/v1/people/olli-pekka-laajoki.jpg" width="240" height="240" loading="lazy" alt="Olli-Pekka Laajoki, board member of The Business School"><div><b>Olli-Pekka Laajoki</b><span class="role">Board member</span><p>Ten years teaching in Finnish vocational education.</p></div></div>
+  </div>
+  <p class="sold">Sold by TBS Education Ltd Oy, company number 3614159-3. <a href="/about/">About us</a></p>
 </div></section>
 <section class="sec" id="faq"><div class="wrap">
   <h2>Questions</h2>
@@ -336,24 +369,27 @@ img,video{max-width:100%}
 </footer>
 <script>
 (function(){
-  var f=document.getElementById('hvid'); if(!f) return;
-  var v=f.querySelector('video'), b=f.querySelector('.hvid-snd');
-  if(window.innerWidth<=900){ var s0=v.querySelector('source'); if(s0) v.src=s0.getAttribute('src'); }
+  var figs=[].slice.call(document.querySelectorAll('figure.hvid')); if(!figs.length) return;
   var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var c=navigator.connection, save=c&&(c.saveData||/(^|-)2g$/.test(c.effectiveType||''));
-  function start(){ if(rm||save||f.classList.contains('sound')) return; v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
-  }
-  if('IntersectionObserver' in window&&!save){ var pre=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(v.preload==='none') v.preload='metadata'; pre.disconnect(); } },{rootMargin:'400px 0px'}); pre.observe(f); }
-  var fr=f.querySelector('.hvid-frame');
-  function snd(){
-    if(f.classList.contains('sound')) return;
-    f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
-    var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
-  }
-  b.addEventListener('click',function(e){ e.stopPropagation(); snd(); });
-  fr.addEventListener('click',snd);
+  figs.forEach(function(f){
+    var v=f.querySelector('video'), b=f.querySelector('.hvid-snd');
+    if(window.innerWidth<=900){ var s0=v.querySelector('source'); if(s0) v.src=s0.getAttribute('src'); }
+    function start(){ if(rm||save||f.classList.contains('sound')) return; v.muted=true; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+    if('IntersectionObserver' in window){
+      new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ if(document.readyState==='complete') start(); else window.addEventListener('load',start,{once:true}); } else if(!f.classList.contains('sound')) v.pause(); }); },{threshold:.35}).observe(f);
+    }
+    if('IntersectionObserver' in window&&!save){ var pre=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ if(v.preload==='none') v.preload='metadata'; pre.disconnect(); } },{rootMargin:'400px 0px'}); pre.observe(f); }
+    var fr=f.querySelector('.hvid-frame');
+    function snd(){
+      if(f.classList.contains('sound')) return;
+      figs.forEach(function(o){ if(o!==f&&o.classList.contains('sound')){ var ov=o.querySelector('video'); ov.pause(); ov.controls=false; ov.muted=true; ov.loop=true; o.classList.remove('sound'); } });
+      f.classList.add('sound'); v.loop=false; v.muted=false; v.controls=true; v.currentTime=0;
+      var p=v.play(); if(p&&p.catch)p.catch(function(){}); v.focus();
+    }
+    b.addEventListener('click',function(e){ e.stopPropagation(); snd(); });
+    fr.addEventListener('click',snd);
+  });
 })();
 </script>
 </body>
