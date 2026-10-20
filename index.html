@@ -61,25 +61,23 @@
 
 <!-- FEEDBACK BOX, very top of the page. Closed by default, opens downward. -->
 <style>
-.fbbox{background:#0a6b73;border-bottom:1px solid #075158;font-family:'Inter',system-ui,sans-serif;color:#fff}
-.fbbox>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px 18px;flex-wrap:wrap;padding:9px 20px;font-size:15px;transition:background .15s}
-.fbbox>summary:hover{background:#075158}
-.fbwrap{position:relative}
-.fbwrap .fbjoin{position:absolute;top:0;right:max(20px,calc((100% - 1160px)/2 + 24px));height:53px;display:flex;align-items:center;gap:8px;color:#e6f3f3;font-size:13.5px;text-decoration:none;white-space:nowrap}
+.fbbox{font-family:'Inter',system-ui,sans-serif;color:#fff}
+.fbbox>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:12px 22px;flex-wrap:wrap;padding:0}
+.fbbox>summary::-webkit-details-marker{display:none}
+.fbwrap .fbjoin{display:inline-flex;align-items:center;gap:8px;color:#e6f3f3;font-size:14.5px;text-decoration:none}
 .fbwrap .fbjoin:hover{color:#fff;text-decoration:underline}
-.fbwrap .fbjoin svg{width:15px;height:15px;flex:0 0 auto}
+.fbwrap .fbjoin svg{width:16px;height:16px;flex:0 0 auto}
 .fbwrap .fbjs{display:none}
-@media(max-width:760px){.fbbox>summary{justify-content:flex-start;padding-left:16px}.fbwrap .fbjoin{right:16px}.fbwrap .fbjl{display:none}.fbwrap .fbjs{display:inline}}
+@media(max-width:760px){.fbwrap .fbjl{display:none}.fbwrap .fbjs{display:inline}}
 .fbbox .fbbtn{display:inline-flex;align-items:center;gap:7px;font-weight:600;font-size:13px;color:#075158;background:#fff;border:1px solid #fff;border-radius:999px;padding:6px 18px}
 .fbbox>summary:hover .fbbtn{background:#e6f1f2}
-@media(max-width:600px){.fbbox>summary{padding:8px 16px}}
 .fbbox .fbchev{width:12px;height:12px;transition:transform .25s}
 .fbbox[open] .fbchev{transform:rotate(180deg)}
 .fbbox .fbclose{display:none}
 .fbbox[open] .fbopen{display:none}
 .fbbox[open] .fbclose{display:inline}
-.fbbox .fbpanel{background:#fff;border-top:1px solid #d3e4e6;padding:44px 24px 52px;animation:fbdrop .38s ease both}
-@keyframes fbdrop{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:none}}
+.fbbox .fbpanel{background:#fff;border-radius:16px;text-align:left;padding:40px 28px 44px;margin-top:22px;width:min(1100px,calc(100vw - 32px));position:relative;left:50%;transform:translateX(-50%);animation:fbdrop .38s ease both}
+@keyframes fbdrop{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){.fbbox .fbpanel{animation:none}.fbbox .fbchev{transition:none}}
 .fbbox .fbin{max-width:1160px;margin:0 auto}
 .fbbox .fbk{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73}
@@ -93,54 +91,6 @@
 .fbbox .fbnote{font-size:14.5px;line-height:1.55;color:#40506e}
 .fbbox .fbfoot{margin-top:26px;font-size:13px;color:#65728c}
 </style>
-<div class="fbwrap"><details class="fbbox" id="feedback">
-  <summary>
-    <span class="fbbtn"><span class="fbopen">Feedback</span><span class="fbclose">Close</span><svg class="fbchev" viewBox="0 0 12 12" fill="none"><path d="M2 4.2l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-  </summary>
-  <div class="fbpanel">
-    <div class="fbin">
-      <span class="fbk">From the first classrooms</span>
-      <h2>Teachers ran it. Then they ran it again.</h2>
-      <div class="fbgrid">
-        <figure>
-          <div class="fbwho">Trinity School, Cumbria</div>
-          <div class="fbrole">Kandis Watson, Year 11 class</div>
-          <blockquote>&ldquo;At first learners seemed unsure on how it worked or what it meant but once they got the hang of it they seemed to enjoy it.&rdquo;</blockquote>
-          <blockquote>&ldquo;It reinforced that a number of learners struggle with word finance calculations so an area for focus.&rdquo;</blockquote>
-          <blockquote>&ldquo;Overall a great concept&rdquo;</blockquote>
-          <p class="fbnote">Asked if they would play it again: <b style="color:#0e2038;font-weight:600">&ldquo;Yeah, I would play again&rdquo;</b></p>
-        </figure>
-        <figure>
-          <div class="fbwho">Dame Allan&rsquo;s School, Newcastle</div>
-          <div class="fbrole">Vanessa Harrison, Head of Business</div>
-          <blockquote>&ldquo;They really enjoyed it.&rdquo;</blockquote>
-          <blockquote>&ldquo;The final group to play LOVED it and asked to play again - which I think is probably because I was more comfortable with it by then.&rdquo;</blockquote>
-          <blockquote>&ldquo;They did find it initially a little confusing.&rdquo;</blockquote>
-        </figure>
-        <figure>
-          <div class="fbwho">Gulf English School, Kuwait</div>
-          <div class="fbrole">Lyn Pryde, Head of Business</div>
-          <blockquote>&ldquo;The pupils really enjoyed this today.&rdquo;</blockquote>
-          <p class="fbnote">Another session: <b style="color:#0e2038;font-weight:600">&ldquo;It was really good today&hellip;&rdquo;</b> And later: <b style="color:#0e2038;font-weight:600">&ldquo;We are really enjoying it and appreciate the opportunity.&rdquo;</b> The school now plays it every week.</p>
-        </figure>
-        <figure>
-          <div class="fbwho">Verbier International School, Switzerland</div>
-          <div class="fbrole">Henry Bagnall, Business teacher</div>
-          <blockquote>&ldquo;&hellip;definitely seemed much better&rdquo;</blockquote>
-          <p class="fbnote">Henry had run a first class before, and came back for a second.</p>
-        </figure>
-        <figure>
-          <div class="fbwho">A student</div>
-          <div class="fbrole">Asked what surprised them most</div>
-          <blockquote>&ldquo;profit gives u an adrenaline rush.&rdquo;</blockquote>
-        </figure>
-      </div>
-      <p class="fbfoot">Feedback from the first classroom sessions, quoted as written. Some of it says it was confusing at first. We left that in.</p>
-    </div>
-  </div>
-</details>
-  <a class="fbjoin" href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V13h2.7v8h3.1z"/></svg><span class="fbjl"><b>250+</b> business heads and teachers, join the group</span><span class="fbjs">Join the group</span></a>
-</div>
 <header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
   <div style="max-width:1160px;margin:0 auto;padding:0 20px">
     <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
@@ -284,6 +234,54 @@
           <a href="/resources/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:16px;padding:15px 12px;text-decoration:underline;text-underline-offset:4px;color:#fff">Free teaching resources &rarr;</a>
           
         </div>
+        <div class="fbwrap" style="margin-top:22px"><details class="fbbox" id="feedback">
+  <summary>
+    <span class="fbbtn"><span class="fbopen">Feedback</span><span class="fbclose">Close</span><svg class="fbchev" viewBox="0 0 12 12" fill="none"><path d="M2 4.2l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <a class="fbjoin" href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.8c0-.9.3-1.5 1.6-1.5h1.7V3.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.4H7.7V13h2.7v8h3.1z"/></svg><span class="fbjl"><b>250+</b> business heads and teachers, join the group</span><span class="fbjs">Join the group</span></a>
+  </summary>
+  <div class="fbpanel">
+    <div class="fbin">
+      <span class="fbk">From the first classrooms</span>
+      <h2>Teachers ran it. Then they ran it again.</h2>
+      <div class="fbgrid">
+        <figure>
+          <div class="fbwho">Trinity School, Cumbria</div>
+          <div class="fbrole">Kandis Watson, Year 11 class</div>
+          <blockquote>&ldquo;At first learners seemed unsure on how it worked or what it meant but once they got the hang of it they seemed to enjoy it.&rdquo;</blockquote>
+          <blockquote>&ldquo;It reinforced that a number of learners struggle with word finance calculations so an area for focus.&rdquo;</blockquote>
+          <blockquote>&ldquo;Overall a great concept&rdquo;</blockquote>
+          <p class="fbnote">Asked if they would play it again: <b style="color:#0e2038;font-weight:600">&ldquo;Yeah, I would play again&rdquo;</b></p>
+        </figure>
+        <figure>
+          <div class="fbwho">Dame Allan&rsquo;s School, Newcastle</div>
+          <div class="fbrole">Vanessa Harrison, Head of Business</div>
+          <blockquote>&ldquo;They really enjoyed it.&rdquo;</blockquote>
+          <blockquote>&ldquo;The final group to play LOVED it and asked to play again - which I think is probably because I was more comfortable with it by then.&rdquo;</blockquote>
+          <blockquote>&ldquo;They did find it initially a little confusing.&rdquo;</blockquote>
+        </figure>
+        <figure>
+          <div class="fbwho">Gulf English School, Kuwait</div>
+          <div class="fbrole">Lyn Pryde, Head of Business</div>
+          <blockquote>&ldquo;The pupils really enjoyed this today.&rdquo;</blockquote>
+          <p class="fbnote">Another session: <b style="color:#0e2038;font-weight:600">&ldquo;It was really good today&hellip;&rdquo;</b> And later: <b style="color:#0e2038;font-weight:600">&ldquo;We are really enjoying it and appreciate the opportunity.&rdquo;</b> The school now plays it every week.</p>
+        </figure>
+        <figure>
+          <div class="fbwho">Verbier International School, Switzerland</div>
+          <div class="fbrole">Henry Bagnall, Business teacher</div>
+          <blockquote>&ldquo;&hellip;definitely seemed much better&rdquo;</blockquote>
+          <p class="fbnote">Henry had run a first class before, and came back for a second.</p>
+        </figure>
+        <figure>
+          <div class="fbwho">A student</div>
+          <div class="fbrole">Asked what surprised them most</div>
+          <blockquote>&ldquo;profit gives u an adrenaline rush.&rdquo;</blockquote>
+        </figure>
+      </div>
+      <p class="fbfoot">Feedback from the first classroom sessions, quoted as written. Some of it says it was confusing at first. We left that in.</p>
+    </div>
+  </div>
+</details>
+</div>
         <p style="margin-top:18px;font-size:15px;color:#c3cee0">Complete packs with the answers, revision pages and classroom games. Free to download, no sign up.</p>
       </div>
       <div style="max-width:940px;margin:44px auto 0;background:#fff;border:1px solid #dce3e9;border-radius:8px;box-shadow:0 18px 44px -28px rgba(0,0,0,.55);overflow:hidden;color:#16233f">
