@@ -377,6 +377,25 @@
         window.addEventListener("load", setup);
       })();
     </script>
+    <!-- Owner 21.10.2026: a class of 1 to 5 plays solo; its own short film. -->
+    <style>
+    .smallclass{display:flex;gap:26px;align-items:center;margin-top:26px;padding:18px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.04)}
+    .smallclass video{flex:0 0 46%;width:46%;height:auto;aspect-ratio:16/9;border-radius:12px;background:#0b2430;display:block}
+    .smallclass h3{margin:0 0 8px;color:#fff;font-size:24px;line-height:1.2}
+    .smallclass p{margin:0;color:#c9d6e6;font-size:17px;line-height:1.5}
+    @media (max-width:760px){.smallclass{flex-direction:column;align-items:stretch}.smallclass video{width:100%;flex-basis:auto}}
+    </style>
+    <div class="smallclass">
+      <video id="small-class-film" poster="/assets/tbs-web/small-class-film-poster.jpg" preload="none" controls playsinline
+             width="1280" height="720" aria-label="A 70-second film for a class of 1 to 5 students">
+        <source src="/assets/tbs-web/small-class-film.mp4" type="video/mp4">
+        Your browser cannot play this film. <a href="/assets/tbs-web/small-class-film.mp4">Download it instead</a>.
+      </video>
+      <div>
+        <h3>Teaching 1 to 5 students?</h3>
+        <p>Every student runs their own firm and competes with the class live: one fleet tender for the class, sabotage between firms, and from four students they trade with each other. Show them this 70-second film before you start.</p>
+      </div>
+    </div>
   </div>
 </section>
 
