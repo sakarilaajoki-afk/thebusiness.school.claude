@@ -59,7 +59,7 @@
   <div class="eyebrow">School-signable agreement · UK GDPR Art. 28</div>
   <h1>Data Processing Agreement</h1>
   <div class="subtitle">
-    Between the School (Data Controller) and TBS Education Ltd Oy (Data Processor) · Version 1.0, September 2026. Effective 28 April 2026
+    Between the School (Data Controller) and TBS Education Ltd Oy (Data Processor) · Version 1.1, October 2026. Effective 28 April 2026
   </div>
 </div>
 
@@ -79,7 +79,7 @@
 </div>
 
 <h2>2. Subject Matter and Duration</h2>
-<p>The Processor processes personal data on behalf of the Controller for the purpose of operating The Business School classroom simulation, generating session scores, and producing AI-assisted post-session feedback reports. This DPA remains in force for the duration of the Controller's licence and continues to apply to any retained data thereafter.</p>
+<p>The Processor processes personal data on behalf of the Controller for the purpose of operating The Business School classroom simulation, generating session scores, and producing post-session reports. This DPA remains in force for the duration of the Controller's licence and continues to apply to any retained data thereafter.</p>
 
 <h2>3. Nature and Purpose of Processing</h2>
 <p>The Processor will process personal data only for the documented purposes set out in this DPA and the Controller's instructions. Processing includes: storing teacher account information; capturing pseudonymous student session data; generating scores and reports; and supporting the Controller in fulfilling data-subject requests.</p>
@@ -97,7 +97,7 @@
   <thead><tr><th style="width:24%">Category</th><th>Detail</th></tr></thead>
   <tbody>
     <tr><td><strong>Teacher data</strong></td><td>Name, email, school name, session history</td></tr>
-    <tr><td><strong>Student data</strong></td><td>Self-selected nickname only, no real name, email, DOB, photo or other identifier collected</td></tr>
+    <tr><td><strong>Student data</strong></td><td>A first name or classroom nickname only; no surname, email, DOB, photo or other identifier collected</td></tr>
     <tr><td><strong>Gameplay data</strong></td><td>In-session decisions and team scores</td></tr>
     <tr><td><strong>Technical data</strong></td><td>IP address (server logs, 30-day retention); browser/device headers; session timestamps</td></tr>
   </tbody>
@@ -125,12 +125,12 @@
     <tr>
       <td><strong>Neon, Inc.</strong></td>
       <td>Postgres database (sessions, scores, teacher accounts)</td>
-      <td>AWS US East 1 (current), EU region migration planned May 2026</td>
+      <td>AWS eu-central-1 (Frankfurt, EU)</td>
       <td>Standard Contractual Clauses (UK Addendum); AES-256 at rest; TLS 1.2+ in transit</td>
     </tr>
     <tr>
       <td><strong>OpenAI</strong></td>
-      <td>AI inference for end-of-session feedback reports (Claude API)</td>
+      <td>Optional class analysis for the teacher: anonymous figures only (no names, no student text); not stored by OpenAI</td>
       <td>EU and US regions</td>
       <td>Standard Contractual Clauses (UK Addendum); no student identifiers sent</td>
     </tr>
@@ -202,7 +202,7 @@
 
 <div class="footer-block">
   <strong>TBS Education Ltd Oy</strong> · Business ID 3614159-3 · ICO Registration ZC133810<br>
-  www.thebusiness.school · Lahti, Finland · Version 1.0, September 2026. Effective 28 April 2026
+  www.thebusiness.school · Lahti, Finland · Version 1.1, October 2026. Effective 28 April 2026
 </div>
 
 </body>

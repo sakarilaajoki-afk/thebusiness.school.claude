@@ -52,7 +52,7 @@
   <div class="eyebrow">For Data Protection Officers · One-page summary</div>
   <h1>Data Protection Summary</h1>
   <div class="subtitle">
-    The Business School · TBS Education Ltd Oy · Version 1.0, September 2026. Effective 28 April 2026
+    The Business School · TBS Education Ltd Oy · Version 1.1, October 2026. Effective 28 April 2026
   </div>
 </div>
 
@@ -78,7 +78,7 @@
   <thead><tr><th style="width:24%">Data type</th><th>Detail</th></tr></thead>
   <tbody>
     <tr><td><strong>Teacher</strong></td><td>Name, email, school name, session history</td></tr>
-    <tr><td><strong>Student</strong></td><td>Self-selected nickname only (no real name, no email, no DOB, no photos). PIN-code join, no account, no password.</td></tr>
+    <tr><td><strong>Student</strong></td><td>A first name or classroom nickname only (no surname, no email, no DOB, no photos). PIN-code join, no account, no password.</td></tr>
     <tr><td><strong>Gameplay</strong></td><td>In-session decisions (purchases, pricing, VAT filing, hiring) and team scores</td></tr>
     <tr><td><strong>Technical</strong></td><td>IP address (server logs only, 30-day auto-purge); browser/device headers; session timestamps</td></tr>
   </tbody>
@@ -89,8 +89,8 @@
   <thead><tr><th style="width:24%">Sub-processor</th><th style="width:24%">Purpose</th><th style="width:22%">Location</th><th>Safeguard</th></tr></thead>
   <tbody>
     <tr><td><strong>Netlify</strong></td><td>Frontend hosting + edge CDN</td><td>Global edge; primary EU edge</td><td>SCC (UK Addendum)</td></tr>
-    <tr><td><strong>Neon</strong></td><td>Postgres database</td><td>AWS US East 1, EU migration planned May 2026</td><td>SCC (UK Addendum); AES-256 at rest; TLS 1.2+ in transit</td></tr>
-    <tr><td><strong>OpenAI</strong></td><td>AI inference for end-of-session reports (Claude API)</td><td>EU and US regions</td><td>SCC (UK Addendum); no student personal identifiers sent to model</td></tr>
+    <tr><td><strong>Neon</strong></td><td>Postgres database</td><td>AWS eu-central-1 (Frankfurt, EU)</td><td>SCC (UK Addendum); AES-256 at rest; TLS 1.2+ in transit</td></tr>
+    <tr><td><strong>OpenAI</strong></td><td>Optional class analysis for the teacher: anonymous figures only (no names, no student text); not stored</td><td>EU and US regions</td><td>SCC (UK Addendum); no student personal identifiers sent to model</td></tr>
   </tbody>
 </table>
 
@@ -107,7 +107,7 @@
 <p><strong>Sakari Laajoki, TBS Education Ltd Oy</strong> · support@thebusiness.school · Response within 72 hours. Full Privacy Policy and Data Processing Agreement available at <strong>thebusiness.school/data-protection</strong>.</p>
 
 <div class="footer-block">
-  <strong>TBS Education Ltd Oy</strong> · Business ID 3614159-3 · ICO Registration ZC133810 · www.thebusiness.school · Version 1.0, September 2026. Effective 28 April 2026
+  <strong>TBS Education Ltd Oy</strong> · Business ID 3614159-3 · ICO Registration ZC133810 · www.thebusiness.school · Version 1.1, October 2026. Effective 28 April 2026
 </div>
 
 </body>
