@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Business School, a live business simulation for high school</title>
+<meta name="description" content="A live classroom business simulation for high school, grades 9-12. Every student runs a car dealership: pricing, sales tax, loans and live deals with classmates. 30 to 75 minutes, classes of 1 to 40, students join with a PIN. Free trial for your school.">
+<link rel="canonical" href="https://thebusiness.school/us/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Business School, a live business simulation for high school">
+<meta property="og:description" content="Every student runs a car dealership, live, in one class period. Pricing, sales tax, loans and deals with classmates. Free trial for your school.">
+<meta property="og:url" content="https://thebusiness.school/us/">
+<meta property="og:image" content="https://thebusiness.school/assets/tbs-web/us/us-deal.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;color:#16233f;line-height:1.6;background:#e8ebef url('/assets/tbs-web/facet-background.svg') center top/1600px 1600px repeat-y;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{letter-spacing:-.035em;line-height:1.12;color:#0e2038}
+  a{color:#0a6b73}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  header{position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap}
+  .brand img{height:44px;width:auto}
+  .links{display:flex;align-items:center;gap:24px}
+  .links a{color:#dbe4ef;text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap}
+  .links a:hover{text-decoration:underline;text-underline-offset:4px}
+  .cta{display:inline-flex;align-items:center;font-weight:600;font-size:15px;padding:13px 24px;border-radius:6px;text-decoration:none;background:#0a6b73;color:#fff!important;border:1px solid transparent}
+  .cta:hover{background:#075158;text-decoration:none!important}
+  .links .cta{padding:9px 15px;font-size:14px}
+  .ghost{display:inline-flex;align-items:center;font-weight:600;font-size:15px;padding:13px 24px;border-radius:6px;text-decoration:none;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);color:#fff}
+  .ghost:hover{background:rgba(255,255,255,.2)}
+  @media(max-width:760px){.links a:not(.cta){display:none}}
+  .hero{position:relative;background:#0e2038;color:#fff;overflow:hidden;padding:86px 0 150px;text-align:center}
+  .hero .bg{position:absolute;inset:0;z-index:0}
+  .hero .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+  .hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,56,.72) 0%,rgba(14,32,56,.6) 45%,rgba(14,32,56,.5) 75%,rgba(14,32,56,.6) 100%)}
+  .hero .in{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:0 24px}
+  .kicker{font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#a9e6df;text-shadow:0 1px 12px rgba(4,16,31,.8)}
+  .hero h1{color:#fff;font-size:clamp(40px,6.2vw,72px);margin:18px auto 0;text-shadow:0 2px 16px rgba(4,16,31,.65)}
+  .hero p.lead{font-size:clamp(17px,1.9vw,21px);font-weight:500;color:#f0f4f8;max-width:680px;margin:24px auto 0;line-height:1.55;text-shadow:0 1px 7px rgba(4,16,31,.65)}
+  .hero .btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:30px}
+  .facts{display:flex;gap:34px;flex-wrap:wrap;justify-content:center;margin-top:34px;font-size:14px;color:#dbe4ef}
+  .facts b{display:block;color:#fff;font-size:15px}
+  section{padding:76px 0}
+  .film{margin-top:-110px;padding-top:0;position:relative;z-index:2}
+  .film video{display:block;width:100%;max-width:960px;margin:0 auto;border-radius:12px;box-shadow:0 40px 90px -40px rgba(0,0,0,.55);background:#0e2038;aspect-ratio:16/9}
+  .film p{text-align:center;color:#40506e;font-size:14.5px;margin-top:14px}
+  .eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73}
+  h2{font-size:clamp(28px,3.4vw,40px);margin:10px 0 14px}
+  .sub{color:#40506e;font-size:17px;max-width:720px}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:36px}
+  .card{background:#fff;border:1px solid #e3e9f1;border-radius:10px;overflow:hidden;box-shadow:0 2px 9px rgba(14,32,56,.06)}
+  .card img{display:block;width:100%;height:auto;border-bottom:1px solid #e3e9f1}
+  .card .t{padding:18px 20px 22px}
+  .card h3{font-size:19px;margin-bottom:6px}
+  .card p{color:#40506e;font-size:15px}
+  .split{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px;align-items:center}
+  .split img{width:100%;border-radius:10px;border:1px solid #e3e9f1;box-shadow:0 30px 60px -40px rgba(14,32,56,.5)}
+  ul.ticks{list-style:none;margin-top:18px}
+  ul.ticks li{padding:7px 0 7px 28px;position:relative;color:#26355a;font-size:16px}
+  ul.ticks li::before{content:"";position:absolute;left:4px;top:15px;width:12px;height:7px;border-left:2.5px solid #0a6b73;border-bottom:2.5px solid #0a6b73;transform:rotate(-45deg)}
+  .courses{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+  .courses span{background:#fff;border:1px solid #d5dee9;border-radius:999px;padding:8px 16px;font-size:14.5px;font-weight:600;color:#0e2038}
+  .trial{background:#0e2038;color:#fff;text-align:center}
+  .trial h2{color:#fff}
+  .trial p{color:#c9d5e8;max-width:640px;margin:0 auto;font-size:17px}
+  .trial .btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:28px}
+  footer{background:#0b1a2e;color:#8fa1bf;font-size:13.5px;padding:28px 0}
+  footer .wrap{display:flex;gap:18px;flex-wrap:wrap;justify-content:space-between}
+  footer a{color:#c9d5e8;text-decoration:none;margin-right:18px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="/us/"><img src="/assets/tbs-web/logo-tbs-education.png" alt="TBS Education"> The Business School</a>
+      <div class="links">
+        <a href="#how">How it works</a>
+        <a href="#courses">Courses</a>
+        <a href="#privacy">Student privacy</a>
+        <a class="cta" href="mailto:support@thebusiness.school?subject=Free%20trial%20for%20our%20school%20(US)">Free trial</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="bg" aria-hidden="true"><img src="/assets/tbs-web/hero-map-us.jpg" alt=""></div>
+  <div class="in">
+    <span class="kicker">High school Business · Grades 9–12</span>
+    <h1>Bring your next Business lesson to life.</h1>
+    <p class="lead">Every student runs their own car dealership, live, in one class period: pricing, sales tax, loans and deals with classmates. No install. Students join with a PIN.</p>
+    <div class="btns">
+      <a class="cta" href="mailto:support@thebusiness.school?subject=Free%20trial%20for%20our%20school%20(US)">Start a free trial</a>
+      <a class="ghost" href="#film">Watch the 1-minute film</a>
+    </div>
+    <p style="margin-top:16px;font-size:14px;color:#c9d5e8">Have a teacher login? <a href="https://play.thebusiness.school/?countries=uk,us&amp;country=us" style="color:#7fe0d7;font-weight:600;text-decoration:none">Open the game</a></p>
+    <div class="facts">
+      <div><b>1 to 40 students</b>Each student runs a firm</div>
+      <div><b>30 to 75 minutes</b>One class period</div>
+      <div><b>Any browser</b>Chromebooks, laptops, tablets</div>
+    </div>
+  </div>
+</section>
+
+<section class="film" id="film">
+  <div class="wrap">
+    <video controls preload="metadata" playsinline poster="/assets/tbs-web/us/us-film-poster.jpg">
+      <source src="/assets/tbs-web/us/us-film.mp4" type="video/mp4">
+    </video>
+    <p>Show this to your class before the first lesson.</p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <span class="eyebrow">How a lesson runs</span>
+    <h2>Students learn business by running one.</h2>
+    <p class="sub">The game opens with a short guided tour, so students can play without a lecture first. You see every firm live and stop the lesson whenever you want.</p>
+    <div class="steps">
+      <div class="card"><img src="/assets/tbs-web/us/us-wholesale.jpg" alt="The Wholesale page in dollars" loading="lazy"><div class="t"><h3>1. Buy inventory</h3><p>Students buy cars at wholesale and watch their cash and free space. A car has to be in inventory before it can be sold.</p></div></div>
+      <div class="card"><img src="/assets/tbs-web/us/us-deal.jpg" alt="A live deal with a classmate" loading="lazy"><div class="t"><h3>2. Deal with classmates</h3><p>Students set prices, make offers and counteroffers, and sell to customers. Nothing is calculated for them: they decide if the price makes a profit.</p></div></div>
+      <div class="card"><img src="/assets/tbs-web/us/us-loans-sales-tax.jpg" alt="Loans and the sales tax return" loading="lazy"><div class="t"><h3>3. Manage cash</h3><p>Sales tax is collected on every retail sale and filed each round. Loans carry real interest. Profit and cash are not the same thing.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <img src="/assets/tbs-web/us/us-teacher-live.jpg" alt="The teacher's live class view" loading="lazy">
+    <div>
+      <span class="eyebrow">For the teacher</span>
+      <h2>See the whole class, live.</h2>
+      <p class="sub">The class view shows every firm's net position as the lesson runs. When it ends, you download one class pack.</p>
+      <ul class="ticks">
+        <li>Create a lesson in two minutes, students join with a 6-digit PIN</li>
+        <li>Pause or stop the lesson at any time</li>
+        <li>Six questions on your chosen topic at the end of the lesson</li>
+        <li>A class report and a report for each student</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="courses">
+  <div class="wrap split">
+    <div>
+      <span class="eyebrow">Where it fits</span>
+      <h2>Built for high school, ages 14–18.</h2>
+      <p class="sub">Use it as a one-period activity or as the start of a unit. Each lesson has a topic: cash and sales tax, pricing, promotion, inventory, or loans and investments.</p>
+      <div class="courses">
+        <span>Intro to Business</span><span>Entrepreneurship</span><span>Personal Finance</span><span>Marketing</span><span>CTE Business</span><span>Economics</span>
+      </div>
+    </div>
+    <img src="/assets/tbs-web/us/us-question.jpg" alt="A topic question in dollars with sales tax" loading="lazy">
+  </div>
+</section>
+
+<section id="privacy" style="padding-top:20px">
+  <div class="wrap">
+    <span class="eyebrow">Student privacy</span>
+    <h2>No student accounts.</h2>
+    <p class="sub">Students join with a PIN and a first name. No email addresses, no passwords, nothing to install. Read our <a href="/privacy/">privacy notice</a> and <a href="/data-protection/">data protection</a> pages.</p>
+  </div>
+</section>
+
+<section class="trial">
+  <div class="wrap">
+    <h2>Try it free with your class.</h2>
+    <p>Tell us your school and course, and we will send you a teacher login for a free trial. It takes one class period to see if it works for your students.</p>
+    <div class="btns">
+      <a class="cta" href="mailto:support@thebusiness.school?subject=Free%20trial%20for%20our%20school%20(US)">Start a free trial</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; TBS Education · The Business School</span>
+    <span><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="mailto:support@thebusiness.school">support@thebusiness.school</a></span>
+  </div>
+</footer>
+</body>
+</html>
