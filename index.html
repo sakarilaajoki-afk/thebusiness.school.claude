@@ -396,6 +396,30 @@
         <p>Every student runs their own firm and competes live with the class. 30 to 75 minutes. Show this 50-second film first.</p>
       </div>
     </div>
+    <script>
+      /* The template renderer strips valueless controls and playsinline off
+         the video tag (see the film above), which left this film with no
+         play button on a phone. Set them as properties until they stick;
+         a tap on the picture starts it too. */
+      (function(){
+        var tries = 0;
+        function setup(){
+          var v = document.getElementById("small-class-film");
+          if (!v) return false;
+          v.controls = true;
+          v.playsInline = true;
+          v.setAttribute("playsinline", "");
+          v.setAttribute("webkit-playsinline", "");
+          if (!v.dataset.tap) {
+            v.dataset.tap = "1";
+            v.addEventListener("click", function(){ if (v.paused) { var p = v.play(); if (p && p.catch) { p.catch(function(){}); } } });
+          }
+          return v.controls === true;
+        }
+        var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
+        window.addEventListener("load", setup);
+      })();
+    </script>
   </div>
 </section>
 
@@ -784,6 +808,7 @@
       <div style="max-width:560px">
         <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(24px,3vw,34px);line-height:1.15;letter-spacing:-.01em;margin-bottom:10px">Request a trial</h2>
         <p style="color:#c3cee0;font-size:16px">Trials open on 2 November 2026: one free lesson with your class. Nothing to install, and students join with a PIN.</p>
+        <p style="color:#f0d9a8;font-size:16px;font-weight:600;margin-top:10px">Already on the waitlist? Your trial key arrives by email on 2 November.</p>
         <p style="color:#8ea3c4;font-size:14px;margin-top:12px">Or try the demo now: <a href="https://play.thebusiness.school/" style="color:#7fe0d7;font-weight:600;text-decoration:none">play.thebusiness.school</a></p>
       </div>
       <div style="display:flex;gap:12px;flex-wrap:wrap">
