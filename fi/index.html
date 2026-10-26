@@ -319,6 +319,59 @@
   box-shadow:0 28px 60px -38px rgba(18,35,63,.45)}
 .motor-film video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0e2038}
 </style>
+<section class="filmband">
+  <div class="wrap">
+    <figure class="motor-film">
+      <video id="motor-film" poster="/assets/tbs-web/fi/fi-film-poster.jpg" preload="metadata"
+             muted autoplay loop playsinline controls
+             width="1920" height="1080"
+             aria-label="Lyhyt elokuva autokaupan live-tunnista kirjautumisesta tunnin loppuun">
+                <source src="/assets/tbs-web/fi/fi-film.mp4?v=20261025" type="video/mp4">
+        Selaimesi ei pysty toistamaan tätä elokuvaa. <a href="/assets/tbs-web/fi/fi-film.mp4">Lataa se sen sijaan</a>.
+      </video>
+    </figure>
+    <script>
+      /* Two things fight us here. The template renderer strips valueless muted,
+         loop and controls attributes off the video tag, and it re-renders after
+         this script first runs, wiping anything set too early. So set them as
+         properties and keep re-applying until they stick. Without muted every
+         browser refuses to autoplay, and without controls there would be no way
+         to start it by hand either.
+
+         Playback is then tied to visibility rather than to page load: a browser
+         will quietly pause an offscreen autoplaying video and never resume it,
+         which left the film frozen on a poster halfway down the page. Reduced
+         motion opts out of all of it and just gets the poster and a button. */
+      (function(){
+        var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var watching = false;
+        function setup(){
+          var v = document.getElementById("motor-film");
+          if (!v) return false;
+          v.muted = true;
+          v.controls = true;
+          v.playsInline = true;
+          v.loop = !still;
+          if (still) { v.autoplay = false; v.removeAttribute("autoplay"); v.pause(); }
+          else if (!watching && "IntersectionObserver" in window) {
+            watching = true;
+            new IntersectionObserver(function(entries){
+              entries.forEach(function(e){
+                if (e.isIntersecting) { var p = v.play(); if (p && p.catch) { p.catch(function(){}); } }
+                else if (!v.paused) { v.pause(); }
+              });
+            }, {threshold: 0.25}).observe(v);
+          }
+          return v.muted === true && v.controls === true && (still || watching);
+        }
+        var tries = 0;
+        var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
+        window.addEventListener("load", setup);
+      })();
+    </script>
+  </div>
+</section>
+
 <!-- TRUST STRIP -->
 <div style="border-bottom:1px solid #e3e9f1;background:#fff">
   <div style="max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center;justify-content:center;padding:18px 24px"><span style="font-size:13px;font-weight:600;color:#40506e;border:1px solid #e3e9f1;border-radius:999px;padding:7px 15px;background:#f6f8fb">Sopii <b style="color:#0e2038">yhteiskuntaoppiin, taloustietoon ja yrittäjyyteen</b> sekä <b style="color:#0e2038">ammatilliseen liiketalouteen</b></span><span style="font-size:13px;font-weight:600;color:#40506e;border:1px solid #e3e9f1;border-radius:999px;padding:7px 15px;background:#f6f8fb">Suomen ympäristö · <b style="color:#0e2038">€ · ALV</b></span><span style="font-size:13px;font-weight:600;color:#40506e;border:1px solid #e3e9f1;border-radius:999px;padding:7px 15px;background:#f6f8fb">Muotoiltu yhdessä <b style="color:#0e2038">oppilaiden ja opettajien kanssa</b> pilottitunneilla</span><span style="font-size:13px;font-weight:600;color:#40506e;border:1px solid #e3e9f1;border-radius:999px;padding:7px 15px;background:#f6f8fb">Tekijä <b style="color:#0e2038">TBS Education Ltd Oy</b></span></div>
@@ -518,7 +571,11 @@
         <p style="font-size:14.5px;color:#40506e">Jokainen oppilas lataa oman raporttinsa. Sinä lataat yhden luokkapaketin: luokan raportin ja jokaisen oppilaan raportin.</p>
       </div>
     </div>
+    <div style="max-width:860px;margin:40px auto 0;text-align:center">
+      <video controls preload="none" playsinline poster="/assets/tbs-web/fi/fi-teacher-tutorial-poster.jpg" style="width:100%;border-radius:12px;border:1px solid #e3e9f1;background:#0f1720;display:block"><source src="/assets/tbs-web/fi/fi-teacher-tutorial.mp4" type="video/mp4"></video>
+      <p style="font-size:14px;color:#40506e;margin-top:10px">Opettajan tutoriaali: näin aloitat tunnin, 80 sekunnissa.</p>
     </div>
+  </div>
 </section>
 
 <!-- PERSONAL FEEDBACK -->
