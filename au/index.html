@@ -319,6 +319,59 @@
   box-shadow:0 28px 60px -38px rgba(18,35,63,.45)}
 .motor-film video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0e2038}
 </style>
+<section class="filmband">
+  <div class="wrap">
+    <figure class="motor-film">
+      <video id="motor-film" poster="/assets/tbs-web/au/au-film-poster.jpg?v=20261026" preload="metadata"
+             muted autoplay loop playsinline controls
+             width="1920" height="1080"
+             aria-label="A short film of a live Motor Trade lesson, from sign in to the end of the session">
+                <source src="/assets/tbs-web/au/au-film.mp4?v=20261026" type="video/mp4">
+        Your browser cannot play this film. <a href="/assets/tbs-web/au/au-film.mp4">Download it instead</a>.
+      </video>
+    </figure>
+    <script>
+      /* Two things fight us here. The template renderer strips valueless muted,
+         loop and controls attributes off the video tag, and it re-renders after
+         this script first runs, wiping anything set too early. So set them as
+         properties and keep re-applying until they stick. Without muted every
+         browser refuses to autoplay, and without controls there would be no way
+         to start it by hand either.
+
+         Playback is then tied to visibility rather than to page load: a browser
+         will quietly pause an offscreen autoplaying video and never resume it,
+         which left the film frozen on a poster halfway down the page. Reduced
+         motion opts out of all of it and just gets the poster and a button. */
+      (function(){
+        var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var watching = false;
+        function setup(){
+          var v = document.getElementById("motor-film");
+          if (!v) return false;
+          v.muted = true;
+          v.controls = true;
+          v.playsInline = true;
+          v.loop = !still;
+          if (still) { v.autoplay = false; v.removeAttribute("autoplay"); v.pause(); }
+          else if (!watching && "IntersectionObserver" in window) {
+            watching = true;
+            new IntersectionObserver(function(entries){
+              entries.forEach(function(e){
+                if (e.isIntersecting) { var p = v.play(); if (p && p.catch) { p.catch(function(){}); } }
+                else if (!v.paused) { v.pause(); }
+              });
+            }, {threshold: 0.25}).observe(v);
+          }
+          return v.muted === true && v.controls === true && (still || watching);
+        }
+        var tries = 0;
+        var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
+        window.addEventListener("load", setup);
+      })();
+    </script>
+  </div>
+</section>
+
 <!-- TRUST STRIP -->
 <div style="border-bottom:1px solid #e3e9f1;background:#fff">
   <div style="max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center;justify-content:center;padding:18px 24px"><span style="font-size:13px;font-weight:600;color:#40506e;border:1px solid #e3e9f1;border-radius:999px;padding:7px 15px;background:#f6f8fb">For <b style="color:#0e2038">Intro to Business, Entrepreneurship, Personal Finance</b> and <b style="color:#0e2038">CTE</b></span><span style="font-size:13px;font-weight:600;color:#40506e;border:1px solid #e3e9f1;border-radius:999px;padding:7px 15px;background:#f6f8fb">Australian context · <b style="color:#0e2038">$ · sales tax</b></span><span style="font-size:13px;font-weight:600;color:#40506e;border:1px solid #e3e9f1;border-radius:999px;padding:7px 15px;background:#f6f8fb">Shaped with <b style="color:#0e2038">students and teachers</b> in pilot lessons</span><span style="font-size:13px;font-weight:600;color:#40506e;border:1px solid #e3e9f1;border-radius:999px;padding:7px 15px;background:#f6f8fb">Built by <b style="color:#0e2038">TBS Education Ltd Oy</b></span></div>
@@ -517,6 +570,10 @@
         <h4 style="font-family:'Inter',sans-serif;font-weight:700;font-size:16.5px;color:#0e2038;margin:8px 0 6px">After the lesson</h4>
         <p style="font-size:14.5px;color:#40506e">Each student downloads their own report. You download one class pack: the class report and every student&rsquo;s report.</p>
       </div>
+    </div>
+    <div style="max-width:860px;margin:40px auto 0;text-align:center">
+      <video controls preload="none" playsinline poster="/assets/tbs-web/au/au-teacher-tutorial-poster.jpg" style="width:100%;border-radius:12px;border:1px solid #e3e9f1;background:#0f1720;display:block"><source src="/assets/tbs-web/au/au-teacher-tutorial.mp4" type="video/mp4"></video>
+      <p style="font-size:14px;color:#40506e;margin-top:10px">Teacher tutorial: how to start a lesson, in 85 seconds.</p>
     </div>
     </div>
 </section>
