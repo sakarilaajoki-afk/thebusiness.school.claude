@@ -58,3 +58,12 @@ footer{padding:28px 0;background:var(--navy);color:#a6b8ca;font-size:13px}
 @media(max-width:760px){.hero-grid{grid-template-columns:1fr;gap:28px}.film{max-width:420px}h1{font-size:clamp(40px,8vw,52px)}}
 @media(max-width:640px){.wrap{padding:0 18px}.nav nav a:not(.nav-cta){display:none}.nav{gap:10px}.brand{font-size:15px}.nav .nav-cta{padding:8px 9px;font-size:12px}.hero .wrap{padding-top:62px;padding-bottom:35px}.fields,.checks{grid-template-columns:1fr}.field.full{grid-column:auto}.followup{margin-top:46px}}
 @media(max-width:360px){.brand{font-size:13px}.logo{width:26px;height:26px}}
+/* What would you like? A free trial lesson or a school licence (owner 27.10.2026). */
+.want{margin:0 0 26px}
+.want legend{display:block;margin-bottom:10px;color:#e5eef4;font-size:13px;font-weight:600}
+.want-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.want-option{display:flex;align-items:center;gap:12px;padding:14px 16px;border:1px solid rgba(229,238,244,.28);border-radius:10px;background:rgba(255,255,255,.05);color:#e5eef4;font-size:15px;line-height:1.35;cursor:pointer}
+.want-option b{color:#fff;font-weight:600}
+.want-option input{width:18px;height:18px;flex:0 0 auto;margin:0;accent-color:var(--teal)}
+.want-option:has(input:checked){border-color:var(--teal);background:rgba(10,107,115,.28)}
+@media(max-width:640px){.want-options{grid-template-columns:1fr}}
