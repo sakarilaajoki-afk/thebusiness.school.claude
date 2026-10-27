@@ -6,9 +6,9 @@
 <meta name="theme-color" content="#1a1a2e">
 <meta name="robots" content="noindex, nofollow">
 
-<title>Trial requested | The Business School</title>
-<meta name="description" content="Thanks for requesting a trial. We'll reply from support@thebusiness.school within 48 hours.">
-<link rel="canonical" href="https://thebusiness.school/waitlist/thanks/">
+<title>Request received | The Business School</title>
+<meta name="description" content="Thanks for your request. We'll reply from support@thebusiness.school within 48 hours.">
+<link rel="canonical" href="https://thebusiness.school/trial/thanks/">
 
 
 <style>
@@ -94,9 +94,9 @@
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Your trial request is in">
-<meta property="og:description" content="Thanks for requesting a trial. We'll reply from support@thebusiness.school within 48 hours.">
-<meta property="og:url" content="https://thebusiness.school/waitlist/thanks/">
+<meta property="og:title" content="Your request is in">
+<meta property="og:description" content="Thanks for your request. We'll reply from support@thebusiness.school within 48 hours.">
+<meta property="og:url" content="https://thebusiness.school/trial/thanks/">
 <meta property="og:image" content="https://thebusiness.school/assets/og-cover.png?v=20261006b">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -114,8 +114,8 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="check-mark">✓</div>
-    <h1>Your trial request is in</h1>
-    <p class="lead">Thanks for your application. We'll reply within 48 hours.</p>
+    <h1 id="thanks-title">Your request is in</h1>
+    <p class="lead" id="thanks-lead">Thanks. We'll reply within 48 hours.</p>
   </div>
 </section>
 
@@ -126,7 +126,7 @@
     <ol>
       <li>We'll reply from <b>support@thebusiness.school</b> within 48 hours.</li>
       <li>If you haven't heard from us by then, please check your junk folder.</li>
-      <li>Trials open on 2 November 2026. We'll email your trial key and how to start.</li>
+      <li id="thanks-step">If you asked for a trial: trials open on 2 November 2026, and we'll email your trial key and how to start. If you asked for a licence: we'll send a quote for your school.</li>
       <li>You can explore the teacher demo while you wait.</li>
     </ol>
     <a href="https://play.thebusiness.school/" target="_blank" rel="noopener noreferrer" class="demo-cta">Try the live demo →</a>
@@ -138,6 +138,19 @@
   </div>
 
   <a href="/" class="back-link">← Back to thebusiness.school</a>
+  <script>
+    (function () {
+      var type = '';
+      try { type = new URLSearchParams(location.search).get('type') || ''; } catch (_) {}
+      if (type === 'trial') {
+        document.getElementById('thanks-title').textContent = 'Your trial request is in';
+        document.getElementById('thanks-step').textContent = "Trials open on 2 November 2026. We'll email your trial key and how to start.";
+      } else if (type === 'licence') {
+        document.getElementById('thanks-title').textContent = 'Your licence request is in';
+        document.getElementById('thanks-step').textContent = "We'll send a quote for your school: one licence per school, per year, never per seat.";
+      }
+    })();
+  </script>
 
 </main>
 

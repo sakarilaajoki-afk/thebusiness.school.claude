@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0e2038">
   <title>Request a trial | The Business School</title>
-  <meta name="description" content="Bring your next Business lesson to life. Request a free trial lesson of The Business School's live classroom simulation.">
-  <link rel="canonical" href="https://thebusiness.school/waitlist/">
+  <meta name="description" content="Bring your next Business lesson to life. Request a free trial lesson with your class, or a quote for a school licence.">
+  <link rel="canonical" href="https://thebusiness.school/trial/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Request a trial | The Business School">
   <meta property="og:description" content="Bring your next Business lesson to life. Request a free trial lesson of our live classroom simulation.">
-  <meta property="og:url" content="https://thebusiness.school/waitlist/">
+  <meta property="og:url" content="https://thebusiness.school/trial/">
   <meta property="og:image" content="https://thebusiness.school/assets/og-simulation.png?v=20261023b">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/waitlist/style.css">
+  <link rel="stylesheet" href="/trial/style.css">
 </head>
 <body>
   <header class="site-header">
@@ -51,8 +51,8 @@
         </div>
         <figure class="film">
           <video controls playsinline preload="none" poster="/assets/tbs-web/motor-film-v26-poster.jpg" aria-label="Short film of the live Motor Trade classroom simulation">
-            <source src="/assets/tbs-web/motor-film-v25-720p.mp4" type="video/mp4" media="(max-width: 900px)">
-        <source src="/assets/tbs-web/motor-film-v25.mp4" type="video/mp4">
+            <source src="/assets/tbs-web/motor-film-v26-720p.mp4?v=20261026h" type="video/mp4" media="(max-width: 900px)">
+            <source src="/assets/tbs-web/motor-film-v26.mp4?v=20261026h" type="video/mp4">
             <a href="/">See the simulation on our website</a>.
           </video>
           <figcaption>A short look at the live classroom simulation</figcaption>
@@ -62,14 +62,18 @@
 
     <section class="application-section" aria-labelledby="application-title">
       <div class="wrap">
-        <form id="application" name="pilot-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/waitlist/thanks/" class="application-form">
+        <form id="application" name="pilot-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/trial/thanks/" class="application-form">
           <input type="hidden" name="form-name" value="pilot-application">
-          <input type="hidden" name="submission_type" value="waitlist">
-          <input type="hidden" name="source" value="waitlist-page">
+          <input type="hidden" name="submission_type" id="submission-type" value="trial">
+          <input type="hidden" name="source" value="trial-page">
           <p class="honeypot"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
-          <h2 id="application-title">Request a trial</h2>
-          <p class="form-lead">For Business teachers and school leaders. Tell us about the class you have in mind; approximate answers are fine. The trial is one free lesson with your class and is not a purchase. Trials open on 2 November 2026.</p>
+          <h2 id="application-title">Request a trial or a licence</h2>
+          <p class="form-lead">For Business teachers and school leaders. A trial is one free lesson with your class and is not a purchase; trials open on 2 November 2026. A licence is one licence per school, per year, never per seat. Approximate answers are fine.</p>
+          <fieldset class="want" id="want-group"><legend>What would you like? *</legend><div class="want-options">
+            <label class="want-option"><input type="radio" name="request_type" value="trial" required checked><span><b>A free trial lesson</b> with my class</span></label>
+            <label class="want-option"><input type="radio" name="request_type" value="licence" required><span><b>A school licence</b> (quote)</span></label>
+          </div></fieldset>
           <div class="fields">
             <div class="field"><label for="full-name">Full name *</label><input id="full-name" name="name" autocomplete="name" required></div>
             <div class="field"><label for="school-email">School email *</label><input id="school-email" name="email" type="email" autocomplete="email" required></div>
@@ -98,14 +102,16 @@
             <div class="field"><label for="referral">How did you hear about us? (optional)</label><input id="referral" name="referral" type="text" maxlength="120" placeholder="For example, a colleague or a newsletter"></div>
           </div>
 
+          <div id="trial-plan">
           <h3 class="section-title">Your classroom plan</h3>
           <p class="commit-note">A genuine classroom plan helps us offer access to schools ready to use it.</p>
           <div class="commitments">
-            <label class="check"><input type="checkbox" name="classroom_intent" value="yes" required>If offered access, I plan to run at least one session with a class.</label>
+            <label class="check"><input type="checkbox" id="classroom-intent" name="classroom_intent" value="yes" required>I plan to run the trial lesson with a class.</label>
             <label class="check"><input type="checkbox" name="feedback_opt_in" value="yes">I’d be happy to share brief feedback afterwards (optional).</label>
           </div>
-          <button type="submit" class="button">Request a trial</button>
-          <p class="micro">We’ll use these details to contact you about classroom access. <a href="/data-protection/">Privacy information</a>.</p>
+          </div>
+          <button type="submit" class="button" id="submit-btn">Request a trial</button>
+          <p class="micro">We’ll use these details only to reply about your request. <a href="/data-protection/">Privacy information</a>.</p>
         </form>
 
         <div class="followup"><h2>What happens next?</h2><p>We’ll email you within 48 hours from <a href="mailto:support@thebusiness.school">support@thebusiness.school</a>. If you haven’t heard from us by then, please check your junk folder. You can also join our <a href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener noreferrer">Facebook group for Business teachers</a>.</p></div>
@@ -128,6 +134,27 @@
         qualificationError.scrollIntoView({ block: 'center' });
       }
     });
+    /* One choice decides what the request is: a free trial lesson or a school
+       licence. The hidden submission_type follows it, and the thanks page says which. */
+    const typeInput = document.getElementById('submission-type');
+    const plan = document.getElementById('trial-plan');
+    const intent = document.getElementById('classroom-intent');
+    const submitBtn = document.getElementById('submit-btn');
+    function applyWant() {
+      const want = (form.querySelector('input[name="request_type"]:checked') || {}).value || 'trial';
+      typeInput.value = want;
+      const licence = want === 'licence';
+      plan.hidden = licence;
+      intent.required = !licence;
+      submitBtn.textContent = licence ? 'Request a licence quote' : 'Request a trial';
+      form.setAttribute('action', '/trial/thanks/?type=' + want);
+    }
+    try {
+      const asked = new URLSearchParams(location.search).get('want');
+      if (asked === 'licence') form.querySelector('input[name="request_type"][value="licence"]').checked = true;
+    } catch (_) {}
+    form.querySelectorAll('input[name="request_type"]').forEach(function (input) { input.addEventListener('change', applyWant); });
+    applyWant();
     form.querySelectorAll('input[name="qualification"]').forEach(function (input) {
       input.addEventListener('change', function () { if (form.querySelector('input[name="qualification"]:checked')) qualificationError.hidden = true; });
     });

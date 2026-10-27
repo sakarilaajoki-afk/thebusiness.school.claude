@@ -82,10 +82,21 @@
   to = "/resources/a-level-business-revision-pack/TBS-A-Level-Business-Revision-Pack.pdf"
   status = 301
 
-# Pilot page moved to /waitlist (Autumn 2026 cohort full). Keep old links working.
+# "Request a trial" page is /trial/ (owner 27.10.2026): a free trial lesson or a
+# school licence. The old /pilot and /waitlist links keep working.
 [[redirects]]
   from = "/pilot"
-  to = "/waitlist/"
+  to = "/trial/"
+  status = 301
+
+[[redirects]]
+  from = "/waitlist"
+  to = "/trial/"
+  status = 301
+
+[[redirects]]
+  from = "/waitlist/*"
+  to = "/trial/:splat"
   status = 301
 
 # Short link for the class briefing deck, so it can be read out loud
@@ -96,7 +107,7 @@
 
 [[redirects]]
   from = "/pilot/*"
-  to = "/waitlist/:splat"
+  to = "/trial/:splat"
   status = 301
 
 # Complete Year products withdrawn. Keep these redirects for old shared links.

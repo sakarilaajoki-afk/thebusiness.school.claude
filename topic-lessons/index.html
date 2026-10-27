@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0e2038">
 <title>Topic lessons | The Business School</title>
-<meta name="description" content="One 45-minute lesson per exam topic for GCSE and A level Business. Each pupil runs their own firm, works out the topic's numbers to decide, then does exam-style practice on their own figures. Early access for pilot schools.">
+<meta name="description" content="One 45-minute lesson per exam topic for GCSE and A level Business. Each pupil runs their own firm, works out the topic's numbers to decide, then does exam-style practice on their own figures. Early access: request a trial.">
 <link rel="canonical" href="https://thebusiness.school/topic-lessons/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Topic lessons | The Business School">
-<meta property="og:description" content="One 45-minute lesson per exam topic. Each pupil runs their own firm and competes with the class. Early access for pilot schools.">
+<meta property="og:description" content="One 45-minute lesson per exam topic. Each pupil runs their own firm and competes with the class. Early access: request a trial.">
 <meta property="og:url" content="https://thebusiness.school/topic-lessons/">
 <meta property="og:image" content="https://thebusiness.school/assets/tbs-web/topic/topic-break-even-chart.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -71,11 +71,12 @@ a{color:#0a6b73}
 .card{border:1px solid #e3e9f1;border-radius:14px;padding:24px;background:#fff}
 .card h3{font-size:17px;font-weight:700;color:#0e2038;margin-bottom:6px}
 .card p{font-size:15px;color:#40506e}
-.shots{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;max-width:980px}
-.shot.narrow{width:min(100%,700px)}
+.shots{display:grid;grid-template-columns:minmax(0,1.135fr) minmax(0,1.996fr);gap:24px;align-items:stretch}
+.shot.wide{grid-column:1/-1}
+@media(max-width:820px){.shots{grid-template-columns:minmax(0,1fr)}}
 .shot{margin:0;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden;box-shadow:0 18px 40px -32px rgba(18,35,63,.36);display:flex;flex-direction:column}
 .shot img{display:block;width:100%;height:auto;border-bottom:1px solid #eef2f7}
-.shot figcaption{padding:14px 18px 16px;font-size:14.5px;line-height:1.45;color:#0e2038;font-weight:500}
+.shot figcaption{flex:1;padding:14px 18px 16px;font-size:14.5px;line-height:1.45;color:#0e2038;font-weight:500}
 .licence{margin-top:26px;font-size:15px;color:#40506e}
 /* form */
 .formbox{background:#0e2038;color:#fff;border-radius:20px;padding:48px 40px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px}
@@ -149,7 +150,7 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
 <section class="hero">
   <div class="wrap">
     <span class="kick">Topic lessons · GCSE and A level Business</span><br>
-    <span class="badge"><i></i>Early access for pilot schools</span>
+    <span class="badge"><i></i>Early access · request a trial</span>
     <h1>One exam topic. One 45-minute lesson. Every pupil runs a firm.</h1>
     <p class="lead">Each pupil runs their own firm and competes with the class. To make the firm's decisions, they work out the topic's numbers. Then they do exam-style practice on their own figures.</p>
     <div class="btns">
@@ -193,9 +194,9 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
     <h2>What pupils and teachers see</h2>
     <p class="intro">Screenshots from a Break-even topic lesson.</p>
     <div class="shots">
-      <figure class="shot narrow"><img src="/assets/tbs-web/topic/topic-round-card.jpg" width="758" height="668" loading="lazy" alt="Pupil's round card: fixed costs £3,500, buy price per car £5,600, their price £6,900 and their answer, 3 cars to break even"><figcaption>The round card. The pupil sets a price and works out the cars to break even.</figcaption></figure>
+      <figure class="shot"><img src="/assets/tbs-web/topic/topic-round-card.jpg" width="758" height="668" loading="lazy" alt="Pupil's round card: fixed costs £3,500, buy price per car £5,600, their price £6,900 and their answer, 3 cars to break even"><figcaption>The round card. The pupil sets a price and works out the cars to break even.</figcaption></figure>
       <figure class="shot"><img src="/assets/tbs-web/topic/topic-break-even-chart.jpg" width="1030" height="516" loading="lazy" alt="Break-even chart after round 1 with revenue, total costs and fixed costs lines, break-even at 2.7 cars, 6 cars sold, answer 3 cars marked right"><figcaption>After the round: their own break-even chart and margin of safety.</figcaption></figure>
-      <figure class="shot"><img src="/assets/tbs-web/topic/topic-teacher-table.jpg" width="1326" height="544" loading="lazy" alt="Teacher's live table for round 1: each pupil's price, break-even answer marked right or wrong, cars sold and profit, with the spec points AQA 8132 3.6.3 and Edexcel 1BS0 1.3.2 at the top"><figcaption>Your live table. The spec point is at the top.</figcaption></figure>
+      <figure class="shot wide"><img src="/assets/tbs-web/topic/topic-teacher-table.jpg" width="1326" height="544" loading="lazy" alt="Teacher's live table for round 1: each pupil's price, break-even answer marked right or wrong, cars sold and profit, with the spec points AQA 8132 3.6.3 and Edexcel 1BS0 1.3.2 at the top"><figcaption>Your live table. The spec point is at the top.</figcaption></figure>
     </div>
     <p class="licence">Topic lessons are included in the one school licence, with the class game. Never per seat. <a href="/pricing/">Licensing</a></p>
   </div>
@@ -207,9 +208,9 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
       <div class="side">
         <span class="kick" style="color:#7fe0d7">Early access</span>
         <h2>Request a trial</h2>
-        <p>Topic lessons are in early access for pilot schools. Tell us what you teach and we will reply by email.</p>
+        <p>Topic lessons are in early access. Request a trial, tell us what you teach, and we will reply by email.</p>
         <p>Students join with a PIN. Nothing to install.</p>
-        <p class="small">Want the class game now? <a href="/waitlist/">Request a class game trial</a></p>
+        <p class="small">Want the class game now? <a href="/trial/">Request a class game trial</a></p>
       </div>
       <div>
         <form id="trial-form" name="product-trial" method="POST" action="/topic-lessons/?sent=1#request" data-netlify="true" netlify-honeypot="bot-field">
