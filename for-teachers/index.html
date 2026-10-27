@@ -49,7 +49,7 @@
         </div>
         <div style="display:flex;gap:10px;align-items:center">
           <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
-          <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Request a trial</a>
+          <a href="/trial/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Request a trial</a>
         </div>
       </sc-if>
       <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
@@ -73,7 +73,7 @@
       <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
 <a href="/shop/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Shop</a>
       <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a><a href="/about/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">About</a>
-      <a href="/pilot/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Request a trial</a>
+      <a href="/trial/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Request a trial</a>
       <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
     </div>
   </sc-if>
@@ -87,6 +87,7 @@
     <p style="font-size:clamp(16px,1.5vw,18.5px);color:#c9d5e8;max-width:620px">You run it with a real class on a Tuesday. No install, no logins to manage, no marking pile-up, students join with a PIN and the dashboard records what they do as they go.</p>
   </div>
 </section>
+
 
 <!-- TEACHER TUTORIAL VIDEO (12.10.2026) -->
 <section style="padding:72px 0 0">
@@ -155,7 +156,8 @@
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Teacher dashboard</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,36px);line-height:1.15;letter-spacing:-.01em;margin:12px 0">Full control throughout the session</h2>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px">
+    <style>.tbs-dash-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}@media(max-width:900px){.tbs-dash-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.tbs-dash-grid{grid-template-columns:minmax(0,1fr)}}</style>
+    <div class="tbs-dash-grid">
       <div style="padding:26px;border:1px solid #e3e9f1;border-radius:12px;background:#fff"><h4 style="font-weight:700;font-size:16px;color:#0e2038;margin-bottom:6px">Live class overview</h4><p style="font-size:14.5px;color:#40506e">Each student's firm, role, recorded actions and questions answered, and who is online.</p></div>
       <div style="padding:26px;border:1px solid #e3e9f1;border-radius:12px;background:#fff"><h4 style="font-weight:700;font-size:16px;color:#0e2038;margin-bottom:6px">Optional class events</h4><p style="font-size:14.5px;color:#40506e">Start a market event for the whole class when it suits the lesson. Not needed for a first lesson.</p></div>
       <div style="padding:26px;border:1px solid #e3e9f1;border-radius:12px;background:#fff"><h4 style="font-weight:700;font-size:16px;color:#0e2038;margin-bottom:6px">Pause &amp; discuss</h4><p style="font-size:14.5px;color:#40506e">Pause the round for whole-class discussion, then resume.</p></div>
@@ -174,7 +176,7 @@
         <p style="color:#c3cee0;font-size:16px">Trials open on 2 November 2026: one free lesson with your class. Nothing to install; students join with a PIN and a first name or nickname.</p>
         <p style="color:#8ea3c4;font-size:14px;margin-top:12px">Or try the demo now: <a href="https://play.thebusiness.school/" style="color:#7fe0d7;font-weight:600;text-decoration:none">play.thebusiness.school</a></p>
       </div>
-      <a href="/pilot/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent" style-hover="background:#075158">Request a trial</a>
+      <a href="/trial/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent" style-hover="background:#075158">Request a trial</a>
     </div>
   </div>
 </section>
@@ -189,8 +191,8 @@
       </div>
       <div style="display:flex;gap:38px;flex-wrap:wrap">
         <div style="display:flex;flex-direction:column;gap:9px"><a href="/for-heads/" style="color:#40506e;text-decoration:none">For Heads</a><a href="/for-teachers/" style="color:#40506e;text-decoration:none">For Teachers</a><a href="/pricing/" style="color:#40506e;text-decoration:none">Licensing</a><a href="/about/" style="color:#40506e;text-decoration:none">About</a><a href="/contact/" style="color:#40506e;text-decoration:none">Contact</a></div>
-        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Request a trial</a></div>
-        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/refunds/" style="color:#40506e;text-decoration:none">Refund policy</a><a href="/privacy/" style="color:#40506e;text-decoration:none">Privacy</a><a href="/terms/" style="color:#40506e;text-decoration:none">Terms</a><a href="/pilot/" style="color:#40506e;text-decoration:none">Free demo</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/curriculum-mapping/" style="color:#40506e;text-decoration:none">Curriculum</a><a href="/resources/" style="color:#40506e;text-decoration:none">Resources</a><a href="/curriculum-faq/" style="color:#40506e;text-decoration:none">FAQ</a><a href="/trial/" style="color:#40506e;text-decoration:none">Request a trial</a></div>
+        <div style="display:flex;flex-direction:column;gap:9px"><a href="/trust/" style="color:#40506e;text-decoration:none">Trust &amp; safety</a><a href="/resources/downloads/it-information-sheet.html" style="color:#40506e;text-decoration:none">IT one-sheet</a><a href="/data-protection/" style="color:#40506e;text-decoration:none">Data protection</a><a href="/refunds/" style="color:#40506e;text-decoration:none">Refund policy</a><a href="/privacy/" style="color:#40506e;text-decoration:none">Privacy</a><a href="/terms/" style="color:#40506e;text-decoration:none">Terms</a><a href="/trial/" style="color:#40506e;text-decoration:none">Free demo</a></div>
       </div>
     </div>
   </div>
