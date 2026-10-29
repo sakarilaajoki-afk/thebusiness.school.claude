@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0e2038">
   <title>Request a trial | The Business School</title>
-  <meta name="description" content="Bring your next Business lesson to life. Request a free trial lesson with your class, or a quote for a school licence.">
+  <meta name="description" content="The free trial is the live group simulation, with topic cards for your exam topic. Request a trial lesson with your class, or a school licence for the full year.">
   <link rel="canonical" href="https://thebusiness.school/trial/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Request a trial | The Business School">
-  <meta property="og:description" content="Bring your next Business lesson to life. Request a free trial lesson of our live classroom simulation.">
+  <meta property="og:description" content="The free trial is the live group simulation, with topic cards for your exam topic.">
   <meta property="og:url" content="https://thebusiness.school/trial/">
   <meta property="og:image" content="https://thebusiness.school/assets/og-simulation.png?v=20261023b">
   <meta name="twitter:card" content="summary_large_image">
@@ -20,6 +20,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/trial/style.css">
+  <style>
+    /* Topic product copy (draft). Same look as the live page; only the lines below are new. */
+    .lesson-lines{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:14px;max-width:660px}
+    .lesson-lines li{display:flex;align-items:center;gap:14px;font:600 clamp(22px,2.3vw,28px)/1.2 Fraunces,Georgia,serif;color:#fff}
+    .lesson-lines svg{flex:0 0 auto;width:26px;height:26px;color:var(--mint)}
+    .again{margin-top:24px}
+    .want-option b{display:block}
+    .want-option span{display:block}
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -39,10 +48,16 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div>
-          <p class="eyebrow">Live classroom simulation · free trial lessons from 2 November</p>
-          <h1 id="hero-title">Bring your next Business lesson to life.</h1>
-          <p class="hero-copy">Students run rival motor dealerships in one live lesson. They set prices, manage stock and respond to what competing firms do. Students join with a PIN; there’s nothing to install.</p>
-          <p class="access-timing">Trials open on 2 November 2026. We’ll email your trial key and how to start.</p>
+          <p class="eyebrow">Free trial · live classroom simulation</p>
+          <h1 id="hero-title">Run a free trial lesson with your class.</h1>
+          <p class="hero-copy">The free trial is the live group simulation. Pupils run rival firms in one lesson. They join with a PIN. Nothing to install.</p>
+          <ul class="lesson-lines" aria-label="What the lesson includes">
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4L19 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Topic cards for your exam topic</li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4L19 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>A teacher dashboard, live</li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4L19 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>A class of 6 to 40 (1 to 5 also works)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4L19 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>30 to 75 minutes</li>
+          </ul>
+          <p class="hero-copy again">With a school licence, use it again and again: after you teach a topic, as a revision lesson, or whenever students learn best by doing.</p>
           <a class="more-link" href="/">See how it works <span aria-hidden="true">→</span></a>
           <figure class="testimonial">
             <blockquote>“Students really enjoyed the game.”</blockquote>
@@ -70,10 +85,10 @@
           <p class="honeypot"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
           <h2 id="application-title">Request a trial or a licence</h2>
-          <p class="form-lead">For Business teachers and school leaders. A trial is one free lesson with your class and is not a purchase; trials open on 2 November 2026. A licence is one licence per school, per year, never per seat. Approximate answers are fine.</p>
+          <p class="form-lead">For Business teachers and school leaders. The trial is one free lesson with your class. It is not a purchase. Approximate answers are fine.</p>
           <fieldset class="want" id="want-group"><legend>What would you like? *</legend><div class="want-options">
             <label class="want-option"><input type="radio" name="request_type" value="trial" required checked><span><b>A free trial lesson</b> with my class</span></label>
-            <label class="want-option"><input type="radio" name="request_type" value="licence" required><span><b>A school licence</b> (quote)</span></label>
+            <label class="want-option"><input type="radio" name="request_type" value="licence" required><span><b>School licence</b> for the full year, every topic. Price on request.</span></label>
           </div></fieldset>
           <div class="fields">
             <div class="field"><label for="full-name">Full name *</label><input id="full-name" name="name" autocomplete="name" required></div>
@@ -92,20 +107,21 @@
               <label class="check"><input type="checkbox" name="qualification" value="A-level Business">A-level Business</label>
               <label class="check"><input type="checkbox" name="qualification" value="GCSE Business">GCSE Business</label>
               <label class="check"><input type="checkbox" name="qualification" value="BTEC Business">BTEC Business</label>
+              <label class="check"><input type="checkbox" name="qualification" value="OCR Business">OCR Business</label>
               <label class="check"><input type="checkbox" name="qualification" value="Cambridge IGCSE Business">Cambridge IGCSE Business</label>
               <label class="check"><input type="checkbox" name="qualification" value="IB Business Management">IB Business Management</label>
               <label class="check"><input type="checkbox" name="qualification" value="Other">Other</label>
             </div><p class="field-error" id="qualification-error" role="alert" hidden>Please choose at least one qualification.</p></fieldset>
-            <div class="field"><label for="exam-board">Exam board or specification *</label><input id="exam-board" name="exam_board" placeholder="For example, Edexcel 9BS0; or Not sure yet" required></div>
+            <div class="field"><label for="exam-board">Exam board or specification *</label><input id="exam-board" name="exam_board" placeholder="For example, Pearson Edexcel or AQA; or Not sure yet" required></div>
             <div class="field"><label for="year-group">Year group / learner age *</label><input id="year-group" name="year_group" placeholder="For example, Year 12 / age 16–17" required></div>
-            <div class="field"><label for="timing">When could you run a session? *</label><select id="timing" name="timing" required><option value="">Choose one</option><option>Within 2 weeks of access</option><option>Within a month of access</option><option>Later this term</option><option>Not sure yet</option></select></div>
+            <div class="field"><label for="timing">When could you run a lesson? *</label><select id="timing" name="timing" required><option value="">Choose one</option><option>Within 2 weeks of access</option><option>Within a month of access</option><option>Later this term</option><option>Not sure yet</option></select></div>
             <div class="field"><label for="school-it">Can school devices access new teaching websites? *</label><select id="school-it" name="it_whitelist" required><option value="">Choose one</option><option>Yes</option><option>Our IT team may need to allow the site</option><option>Not checked yet</option></select></div>
             <div class="field"><label for="referral">How did you hear about us? (optional)</label><input id="referral" name="referral" type="text" maxlength="120" placeholder="For example, a colleague or a newsletter"></div>
           </div>
 
           <div id="trial-plan">
           <h3 class="section-title">Your classroom plan</h3>
-          <p class="commit-note">A genuine classroom plan helps us offer access to schools ready to use it.</p>
+          <p class="commit-note">A trial is for teachers ready to use it with a class.</p>
           <div class="commitments">
             <label class="check"><input type="checkbox" id="classroom-intent" name="classroom_intent" value="yes" required>I plan to run the trial lesson with a class.</label>
             <label class="check"><input type="checkbox" name="feedback_opt_in" value="yes">I’d be happy to share brief feedback afterwards (optional).</label>

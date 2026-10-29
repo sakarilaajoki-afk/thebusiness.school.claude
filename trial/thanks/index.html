@@ -126,7 +126,7 @@
     <ol>
       <li>We'll reply from <b>support@thebusiness.school</b> within 48 hours.</li>
       <li>If you haven't heard from us by then, please check your junk folder.</li>
-      <li id="thanks-step">If you asked for a trial: trials open on 2 November 2026, and we'll email your trial key and how to start. If you asked for a licence: we'll send a quote for your school.</li>
+      <li id="thanks-step">If you asked for a trial: we'll email your trial key and how to start. If you asked for a licence: we'll reply about a school licence.</li>
       <li>You can explore the teacher demo while you wait.</li>
     </ol>
     <a href="https://play.thebusiness.school/" target="_blank" rel="noopener noreferrer" class="demo-cta">Try the live demo →</a>
@@ -144,10 +144,10 @@
       try { type = new URLSearchParams(location.search).get('type') || ''; } catch (_) {}
       if (type === 'trial') {
         document.getElementById('thanks-title').textContent = 'Your trial request is in';
-        document.getElementById('thanks-step').textContent = "Trials open on 2 November 2026. We'll email your trial key and how to start.";
+        document.getElementById('thanks-step').textContent = "We'll email your trial key and how to start.";
       } else if (type === 'licence') {
         document.getElementById('thanks-title').textContent = 'Your licence request is in';
-        document.getElementById('thanks-step').textContent = "We'll send a quote for your school: one licence per school, per year, never per seat.";
+        document.getElementById('thanks-step').textContent = "We'll reply about a school licence for the full year.";
       }
     })();
   </script>
