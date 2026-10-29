@@ -6,7 +6,7 @@
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#0e2038">
 <title>Topic cards | The Business School</title>
-<meta name="description" content="Topic cards for GCSE and A level Business, inside the live group simulation. Each firm gets deal cards with their own numbers and agrees one answer together.">
+<meta name="description" content="12 calculation topics for GCSE and A level Business, inside the live group simulation. Each firm gets deal cards with their own numbers and agrees one answer together.">
 <link rel="canonical" href="https://thebusiness.school/topic-cards/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Topic cards | The Business School">
@@ -64,6 +64,9 @@ a{color:#0a6b73}
 .card h3{font-size:22px;font-weight:700;color:#0e2038;margin-bottom:8px;line-height:1.25}
 .card p{font-size:18px;color:#40506e;line-height:1.5}
 .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.stats.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.facts{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:10px}
+.facts li{font-size:20px;font-weight:600;color:#0e2038}
 .stat{background:#fff;border:1px solid #e3e9f1;border-radius:14px;padding:26px}
 .stat b{display:block;font-size:clamp(40px,5vw,56px);line-height:1.05;letter-spacing:-.03em;color:#0a6b73;font-weight:700}
 .stat span{display:block;margin-top:8px;font-size:19px;color:#16233f;font-weight:500;line-height:1.35}
@@ -72,7 +75,7 @@ a{color:#0a6b73}
 .topics.first span{background:#0a6b73;border-color:#0a6b73;color:#fff;font-size:20px;padding:11px 22px}
 .sub{font-size:17px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#0a6b73;margin:30px 0 12px}
 .sub:first-of-type{margin-top:0}
-.spec{margin-top:28px;font-size:18px;color:#40506e;max-width:720px}
+.spec{margin-top:28px;font-size:19px;color:#16233f;max-width:760px}
 .shot{margin:30px 0 0;max-width:980px;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden;box-shadow:0 18px 40px -32px rgba(18,35,63,.36)}
 .shot img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid #eef2f7}
 .shot figcaption{padding:16px 20px 18px;font-size:18px;line-height:1.4;color:#0e2038;font-weight:600}
@@ -86,6 +89,7 @@ footer .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
 footer a{color:#40506e;text-decoration:none;margin-right:18px}
 @media(max-width:860px){
   .cards,.stats{grid-template-columns:minmax(0,1fr)}
+  .stats.four{grid-template-columns:repeat(2,minmax(0,1fr))}
   .panel{padding:32px 20px}
   .sec{padding:54px 0}
   .hero{padding:48px 0 56px}
@@ -136,8 +140,8 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
     <h2>A card is a deal</h2>
     <div class="cards">
       <div class="card"><div class="n">1</div><h3>A deal offer</h3><p>Each card has its own numbers.</p></div>
-      <div class="card"><div class="n">2</div><h3>One answer</h3><p>The firm works it out together. Everyone agrees.</p></div>
-      <div class="card"><div class="n">3</div><h3>The working</h3><p>The firm sees the right answer and how to reach it.</p></div>
+      <div class="card"><div class="n">2</div><h3>One answer</h3><p>The firm works it out together and agrees one answer.</p></div>
+      <div class="card"><div class="n">3</div><h3>Win the deal</h3><p>A right answer wins the deal: £5,000 to £10,000 in the game.</p></div>
     </div>
     <figure class="shot"><img src="/_draft-topics/assets/PLACEHOLDER-topic-card.jpg" width="1366" height="768" loading="lazy" alt="A Cash flow card: a deal offer for 2 EV hatchbacks, what the firm pays today, what the customer pays in 30 days, and the profit to work out. Three of four firm members have agreed."><figcaption>A Cash flow card. Three of four have agreed.</figcaption></figure>
   </div>
@@ -146,25 +150,27 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
 <section class="sec alt">
   <div class="wrap">
     <span class="kick">In the lesson</span>
-    <h2>Cards, spread over the lesson</h2>
-    <div class="stats">
-      <div class="stat"><b>3 to 6</b><span>cards for each firm, by lesson length</span></div>
-      <div class="stat"><b>30 to 75</b><span>minutes</span></div>
-      <div class="stat"><b>6 to 40</b><span>pupils. 1 to 5 also work.</span></div>
+    <h2>Cards for each firm, by lesson length</h2>
+    <div class="stats four">
+      <div class="stat"><b>3</b><span>cards in 30 minutes</span></div>
+      <div class="stat"><b>4</b><span>cards in 45 minutes</span></div>
+      <div class="stat"><b>5</b><span>cards in 60 minutes</span></div>
+      <div class="stat"><b>6</b><span>cards in 75 minutes</span></div>
     </div>
+    <ul class="facts">
+      <li>The cards run from easy to exam level.</li>
+      <li>One lesson, a class of 6 to 40. 1 to 5 also works.</li>
+    </ul>
   </div>
 </section>
 
 <section class="sec">
   <div class="wrap">
     <span class="kick">Topics</span>
-    <h2>You choose the exam board, the level and the topic</h2>
-    <p class="intro">GCSE or A level. Pearson Edexcel and AQA first. BTEC, OCR, Cambridge IGCSE and IB too.</p>
-    <p class="sub">First topics</p>
-    <div class="topics first"><span>Cash flow</span><span>Break-even</span><span>Pricing</span><span>Promotion</span><span>Stock</span></div>
-    <p class="sub">Then</p>
-    <div class="topics"><span>Revenue, costs and profit</span><span>Sources of finance</span><span>Investment appraisal</span><span>Ratios</span><span>Market share</span><span>Production and capacity</span><span>Growth</span></div>
-    <p class="spec">The cards cover calculation topics from the Pearson 1BS0 and 9BS0 and AQA 8132 and 7132 specifications.</p>
+    <h2>12 calculation topics, GCSE and A level</h2>
+    <p class="intro">Two tiers, GCSE and A level. You choose the exam board, the tier and the topic.</p>
+    <div class="topics first"><span>Cash flow</span><span>Break-even</span><span>Pricing</span><span>Promotion</span><span>Stock</span><span>Revenue, costs and profit</span><span>Sources of finance</span><span>Investment appraisal</span><span>Financial ratios</span><span>Market share and segmentation</span><span>Production and capacity</span><span>Growth and economies of scale</span></div>
+    <p class="spec">All 12 topics are matched to Pearson Edexcel (GCSE, International GCSE, A level, International A level) and AQA (GCSE, A level). For OCR, Cambridge IGCSE, IB and BTEC, six core topics are offered: cash flow, break-even, pricing, promotion, stock, and revenue, costs and profit.</p>
   </div>
 </section>
 

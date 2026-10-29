@@ -1,6 +1,10 @@
 # Switch-on: topic cards (draft, 29.10.2026)
 
-Nothing here is live. Do this in one commit, only when topic cards and the 8-hour game are released together and the owner says so.
+Nothing here is live. Owner approved the release, UK first (29.10.2026). The coordinator switches these on in one commit after the game release.
+
+Owner decisions in these drafts (29.10.2026):
+- Trial page: one added sentence "Use it again and again: after you teach a topic, as a revision lesson, or whenever students learn best by doing."; no "Trials open on 2 November"; class size "6 to 40 (1 to 5 also works)" on the trial page only; "Price on request".
+- Topic-cards page: the 12 topics in one list; 3, 4, 5, 6 cards for 30, 45, 60, 75 minutes; easy to exam level; a right answer wins the deal (£5,000 to £10,000 in the game); the exam-board sentence in the owner's exact wording; no price.
 
 ## Files
 | Draft | Replaces / goes to |
@@ -27,9 +31,9 @@ Captions: setup "You pick the class, the lesson length and the topic." / card "E
 ## Pictures needed (all from the published game, none before release)
 | File | Size | Used on |
 |---|---|---|
-| `assets/tbs-web/uk/uk-g-topic-card.jpg` pupil card, Cash flow, firm panel "3 of 4 agreed" | 1600x900 | home block, topic-cards page, gallery, og:image of topic-cards |
+| `assets/tbs-web/uk/uk-g-topic-card.jpg` (replaces `_draft-topics/assets/PLACEHOLDER-topic-card.jpg`) pupil card, Cash flow, firm panel "3 of 4 agreed" | 1600x900 | home block, topic-cards page, gallery, og:image of topic-cards |
 | `assets/tbs-web/uk/uk-g-topic-result.jpg` wrong answer with the working | 1600x900 | gallery |
-| `assets/tbs-web/uk/uk-g-topic-dashboard.jpg` teacher Cards tab, 6 firms, 3 cards, most common mistakes | 1600x900 | topic-cards page, gallery |
+| `assets/tbs-web/uk/uk-g-topic-dashboard.jpg` (replaces `_draft-topics/assets/PLACEHOLDER-topic-dashboard.jpg`) teacher Cards tab, 6 firms, 3 cards, most common mistakes | 1600x900 | topic-cards page, gallery |
 | `assets/tbs-web/uk/uk-g-setup.jpg` setup with board, level, topic | 1600x900 | gallery |
 | `assets/tbs-web/uk/uk-g-teacher.jpg` teacher page with Live and Cards tabs | 1600x900 | gallery |
 | every other `uk-g-*.jpg`, film posters, `og-simulation.png` (1200x630) | as now | re-shoot if the screen changed (owner rule: one release) |
