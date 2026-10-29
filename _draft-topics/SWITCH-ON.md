@@ -4,7 +4,7 @@ Nothing here is live. Owner approved the release, UK first (29.10.2026). The coo
 
 Owner decisions in these drafts (29.10.2026):
 - Trial page: one added sentence "With a school licence, use it again and again: after you teach a topic, as a revision lesson, or whenever students learn best by doing."; no "Trials open on 2 November"; class size "6 to 40 (1 to 5 also works)" on the trial page only; "Price on request".
-- Topic-cards page: the 12 topics in one list; 3, 4, 5, 6 cards for 30, 45, 60, 75 minutes; easy to exam level; a right answer wins the deal (£5,000 to £10,000 in the game); the exam-board sentence in the owner's exact wording; no price.
+- Topic-cards page: the 12 topics in one list; 3, 4, 5, 6 cards for 30, 45, 60, 75 minutes; easy to exam level; a right answer wins the deal; the exam-board sentence in the owner's exact wording; no price.
 
 ## Files
 | Draft | Replaces / goes to |
