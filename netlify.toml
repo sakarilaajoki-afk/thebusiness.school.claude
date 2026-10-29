@@ -82,6 +82,17 @@
   to = "/resources/a-level-business-revision-pack/TBS-A-Level-Business-Revision-Pack.pdf"
   status = 301
 
+# Topic cards are now topic tasks (owner 29.10.2026). Old links keep working.
+[[redirects]]
+  from = "/topic-cards"
+  to = "/topic-tasks/"
+  status = 301
+
+[[redirects]]
+  from = "/topic-cards/*"
+  to = "/topic-tasks/"
+  status = 301
+
 # Request page is /trial/ (trial lesson or school licence, owner 27.10.2026).
 # Old /pilot and /waitlist links keep working.
 [[redirects]]
