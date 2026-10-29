@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0e2038">
+<title>Topic cards | The Business School</title>
+<meta name="description" content="Topic cards for GCSE and A level Business, inside the live group simulation. Each firm gets deal cards with their own numbers and agrees one answer together.">
+<link rel="canonical" href="https://thebusiness.school/topic-cards/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Topic cards | The Business School">
+<meta property="og:description" content="Your exam topic, inside the live lesson. Each firm gets deal cards with their own numbers.">
+<meta property="og:url" content="https://thebusiness.school/topic-cards/">
+<meta property="og:image" content="https://thebusiness.school/assets/tbs-web/uk/uk-g-topic-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:#16233f;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#0a6b73}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+/* header, same as the home page */
+.hd{position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08)}
+.hd nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px;max-width:1160px;margin:0 auto;padding:0 20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap}
+.brand img{height:44px;width:auto}
+.links{display:flex;align-items:center;gap:24px}
+.links a{color:#dbe4ef;text-decoration:none;font-size:14px;font-weight:500;white-space:nowrap}
+.links a:hover,.mnav a:hover{text-decoration:underline;text-underline-offset:4px}
+.links .cta{padding:9px 15px;background:#0a6b73;border-radius:6px;color:#fff;font-weight:600}
+.mnav{display:none;position:relative}
+.mnav summary{list-style:none;cursor:pointer;color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:6px;padding:7px 12px;font-size:14px;font-weight:600}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav>div{position:absolute;right:0;top:calc(100% + 10px);width:min(280px,calc(100vw - 40px));padding:12px 18px;background:#0e2038;border:1px solid #39506c;border-radius:7px;box-shadow:0 12px 28px rgba(5,19,36,.28)}
+.mnav a{display:block;padding:10px 2px;color:#eef3f8;text-decoration:none;font-size:15px}
+@media(max-width:900px){.links{display:none}.mnav{display:block}}
+@media(max-width:420px){.brand{font-size:15px}.brand img{height:36px}}
+/* hero */
+.hero{background:#0e2038;color:#fff;padding:64px 0 72px}
+.kick{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73}
+.hero .kick{color:#7fe0d7}
+.hero h1{font-weight:700;line-height:1.1;letter-spacing:-.03em;font-size:clamp(34px,4.6vw,54px);margin:16px 0 18px;max-width:820px}
+.hero p.lead{font-size:clamp(18px,1.7vw,21px);color:#c9d5e8;max-width:660px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:17px;padding:15px 30px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent}
+.btn:hover{background:#075158}
+.btn.ghost{font-weight:600;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3)}
+.btn.ghost:hover{background:rgba(255,255,255,.18)}
+/* sections */
+.sec{padding:72px 0}
+.sec.alt{background:#f6f8fb;border-top:1px solid #e3e9f1;border-bottom:1px solid #e3e9f1}
+.sec h2{font-weight:700;color:#0e2038;font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-.02em;margin:12px 0 14px}
+.sec .intro{color:#40506e;font-size:19px;max-width:680px;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{border:1px solid #e3e9f1;border-radius:14px;padding:26px;background:#fff}
+.card .n{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#0a6b73;color:#fff;font-weight:700;font-size:19px;margin-bottom:14px}
+.card h3{font-size:22px;font-weight:700;color:#0e2038;margin-bottom:8px;line-height:1.25}
+.card p{font-size:18px;color:#40506e;line-height:1.5}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.stat{background:#fff;border:1px solid #e3e9f1;border-radius:14px;padding:26px}
+.stat b{display:block;font-size:clamp(40px,5vw,56px);line-height:1.05;letter-spacing:-.03em;color:#0a6b73;font-weight:700}
+.stat span{display:block;margin-top:8px;font-size:19px;color:#16233f;font-weight:500;line-height:1.35}
+.topics{display:flex;flex-wrap:wrap;gap:10px}
+.topics span{border:1px solid #c9d3df;border-radius:999px;padding:9px 18px;font-size:18px;font-weight:600;color:#0e2038;background:#fff}
+.topics.first span{background:#0a6b73;border-color:#0a6b73;color:#fff;font-size:20px;padding:11px 22px}
+.sub{font-size:17px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#0a6b73;margin:30px 0 12px}
+.sub:first-of-type{margin-top:0}
+.spec{margin-top:28px;font-size:18px;color:#40506e;max-width:720px}
+.shot{margin:30px 0 0;max-width:980px;background:#fff;border:1px solid #e3e9f1;border-radius:14px;overflow:hidden;box-shadow:0 18px 40px -32px rgba(18,35,63,.36)}
+.shot img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-bottom:1px solid #eef2f7}
+.shot figcaption{padding:16px 20px 18px;font-size:18px;line-height:1.4;color:#0e2038;font-weight:600}
+.panel{background:#0e2038;color:#fff;border-radius:20px;padding:48px 40px}
+.panel h2{color:#fff;margin-top:0}
+.panel p{color:#d5e0ea;font-size:20px;max-width:700px;margin-bottom:12px}
+.panel .kick{color:#7fe0d7}
+.panel b{color:#fff}
+footer{border-top:1px solid #e3e9f1;padding:36px 0;color:#65728c;font-size:14px;background:#f6f8fb}
+footer .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer a{color:#40506e;text-decoration:none;margin-right:18px}
+@media(max-width:860px){
+  .cards,.stats{grid-template-columns:minmax(0,1fr)}
+  .panel{padding:32px 20px}
+  .sec{padding:54px 0}
+  .hero{padding:48px 0 56px}
+}
+@media(max-width:420px){.wrap{padding:0 16px}}
+</style>
+</head>
+<body>
+<header class="hd">
+  <nav aria-label="Main navigation">
+    <a class="brand" href="/"><img src="/assets/tbs-web/logo-tbs-education.png" alt="TBS Education"> The Business School</a>
+    <div class="links">
+      <a href="/for-teachers/">For Teachers</a>
+      <a href="/for-heads/">For Heads</a>
+      <a href="/resources/">Resources</a>
+      <a href="/shop/">Shop</a>
+      <a href="/trial/" class="cta">Request a trial</a>
+    </div>
+    <details class="mnav">
+      <summary>Menu</summary>
+      <div>
+        <a href="/for-teachers/">For Teachers</a>
+        <a href="/for-heads/">For Heads</a>
+        <a href="/resources/">Resources</a>
+        <a href="/shop/">Shop</a>
+        <a href="/trial/">Request a trial</a>
+      </div>
+    </details>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="kick">Topic cards · GCSE and A level Business</span>
+    <h1>Your exam topic, inside the live lesson.</h1>
+    <p class="lead">Each firm gets deal cards with their own numbers. The firm works out the answer and agrees it together.</p>
+    <div class="btns">
+      <a class="btn" href="/trial/">Request a trial</a>
+      <a class="btn ghost" href="#dashboard">See the dashboard</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="kick">How a card works</span>
+    <h2>A card is a deal</h2>
+    <div class="cards">
+      <div class="card"><div class="n">1</div><h3>A deal offer</h3><p>Each card has its own numbers.</p></div>
+      <div class="card"><div class="n">2</div><h3>One answer</h3><p>The firm works it out together. Everyone agrees.</p></div>
+      <div class="card"><div class="n">3</div><h3>The working</h3><p>The firm sees the right answer and how to reach it.</p></div>
+    </div>
+    <figure class="shot"><img src="/_draft-topics/assets/PLACEHOLDER-topic-card.jpg" width="1366" height="768" loading="lazy" alt="A Cash flow card: a deal offer for 2 EV hatchbacks, what the firm pays today, what the customer pays in 30 days, and the profit to work out. Three of four firm members have agreed."><figcaption>A Cash flow card. Three of four have agreed.</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec alt">
+  <div class="wrap">
+    <span class="kick">In the lesson</span>
+    <h2>Cards, spread over the lesson</h2>
+    <div class="stats">
+      <div class="stat"><b>3 to 6</b><span>cards for each firm, by lesson length</span></div>
+      <div class="stat"><b>30 to 75</b><span>minutes</span></div>
+      <div class="stat"><b>6 to 40</b><span>pupils. 1 to 5 also work.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <span class="kick">Topics</span>
+    <h2>You choose the exam board, the level and the topic</h2>
+    <p class="intro">GCSE or A level. Pearson Edexcel and AQA first. BTEC, OCR, Cambridge IGCSE and IB too.</p>
+    <p class="sub">First topics</p>
+    <div class="topics first"><span>Cash flow</span><span>Break-even</span><span>Pricing</span><span>Promotion</span><span>Stock</span></div>
+    <p class="sub">Then</p>
+    <div class="topics"><span>Revenue, costs and profit</span><span>Sources of finance</span><span>Investment appraisal</span><span>Ratios</span><span>Market share</span><span>Production and capacity</span><span>Growth</span></div>
+    <p class="spec">The cards cover calculation topics from the Pearson 1BS0 and 9BS0 and AQA 8132 and 7132 specifications.</p>
+  </div>
+</section>
+
+<section class="sec alt" id="dashboard">
+  <div class="wrap">
+    <span class="kick">What the teacher gets</span>
+    <h2>Every firm, every card</h2>
+    <div class="cards">
+      <div class="card"><h3>Firms by cards</h3><p>Right or wrong, live, for every firm.</p></div>
+      <div class="card"><h3>The most common mistake</h3><p>One line for each card.</p></div>
+      <div class="card"><h3>First half, second half</h3><p>See whether the class improved.</p></div>
+    </div>
+    <figure class="shot"><img src="/_draft-topics/assets/PLACEHOLDER-topic-dashboard.jpg" width="1366" height="768" loading="lazy" alt="Teacher dashboard for the Cash flow topic: six firms in rows, three cards in columns with right or wrong answers, the most common mistake for each card, and the class result first half against second half."><figcaption>Your dashboard: six firms, three cards, the most common mistake on each.</figcaption></figure>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:72px">
+  <div class="wrap">
+    <div class="panel">
+      <span class="kick">Try it, then decide</span>
+      <h2>The trial is one live lesson</h2>
+      <p>The live group simulation is the free trial.</p>
+      <p><b>School licence for the full year, every topic.</b> Price on request.</p>
+      <div class="btns">
+        <a class="btn" href="/trial/">Request a trial</a>
+        <a class="btn ghost" href="/trial/?want=licence">Ask about a licence</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap row">
+    <div>TBS Education Ltd Oy · company number 3614159-3 · <a href="mailto:support@thebusiness.school" style="color:#0a6b73;font-weight:600">support@thebusiness.school</a></div>
+    <div><a href="/">Home</a><a href="/for-teachers/">For Teachers</a><a href="/pricing/">Licensing</a><a href="/privacy/">Privacy</a></div>
+  </div>
+</footer>
+</body>
+</html>

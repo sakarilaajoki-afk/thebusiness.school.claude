@@ -214,6 +214,15 @@
   status = 404
   force = true
 
+# Topic product drafts (owner 29.10.2026). Nothing about topic cards is public yet.
+# The folder stays unreachable until SWITCH-ON.md is carried out; the switch-on commit
+# deletes this rule together with the folder.
+[[redirects]]
+  from = "/_draft-topics/*"
+  to = "/"
+  status = 404
+  force = true
+
 # The 7 May 2026 trade-show A5 flyer describes the same withdrawn retail edition:
 # an auto-graded quiz, an A* to U certificate, spec-tagged certificates, a teacher
 # CSV export for moderation and "Ofsted-ready" written evidence. None of that is
