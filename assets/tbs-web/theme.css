@@ -10,21 +10,46 @@ img[src*="logo-tbs-education"]{border-radius:0!important}
 
 /* 2. Eyebrow labels become technical mono labels. */
 [style*="letter-spacing:.14em"][style*="text-transform:uppercase"],
+
+/* 2. Eyebrow labels become technical mono labels. */
+[style*="letter-spacing: .14em"][style*="text-transform: uppercase"],
+
+/* 2. Eyebrow labels become technical mono labels. */
+[style*="letter-spacing: 0.14em"][style*="text-transform: uppercase"],
 [style*="letter-spacing:.2em"][style*="text-transform:uppercase"],
+[style*="letter-spacing: .2em"][style*="text-transform: uppercase"],
+[style*="letter-spacing: 0.2em"][style*="text-transform: uppercase"],
 [style*="letter-spacing:.12em"][style*="text-transform:uppercase"],
+[style*="letter-spacing: .12em"][style*="text-transform: uppercase"],
+[style*="letter-spacing: 0.12em"][style*="text-transform: uppercase"],
 .tbsback .lb,.pf .k,.pr .src,.fbbox .fbk,.fbbox .fbwho,.hs-n{
   font-family:var(--tbs-mono)!important;font-weight:600!important;letter-spacing:.18em!important
 }
 [style*="letter-spacing:.14em"][style*="text-transform:uppercase"]::before,
+[style*="letter-spacing: .14em"][style*="text-transform: uppercase"]::before,
+[style*="letter-spacing: 0.14em"][style*="text-transform: uppercase"]::before,
 [style*="letter-spacing:.2em"][style*="text-transform:uppercase"]::before,
+[style*="letter-spacing: .2em"][style*="text-transform: uppercase"]::before,
+[style*="letter-spacing: 0.2em"][style*="text-transform: uppercase"]::before,
 .pf .k::before,.fbbox .fbk::before{content:"";display:inline-block;width:7px;height:7px;background:currentColor;margin-right:10px;vertical-align:1px;opacity:.85}
 
 /* 3. Cards: thin teal top rule and a corner mark. */
-[style*="border:1px solid #e3e9f1"],[style*="border:1px solid #dce3e9"],[style*="border:1px solid #d9e2ec"],
+[style*="border:1px solid #e3e9f1"],
+
+/* 3. Cards: thin teal top rule and a corner mark. */
+[style*="border:1px solid rgb(227, 233, 241)"],
+
+/* 3. Cards: thin teal top rule and a corner mark. */
+[style*="border: 1px solid #e3e9f1"],
+
+/* 3. Cards: thin teal top rule and a corner mark. */
+[style*="border: 1px solid rgb(227, 233, 241)"],[style*="border:1px solid #dce3e9"],[style*="border: 1px solid #dce3e9"],[style*="border: 1px solid rgb(220, 227, 233)"],[style*="border:1px solid #d9e2ec"],[style*="border: 1px solid #d9e2ec"],[style*="border: 1px solid rgb(217, 226, 236)"],
 .pf .c,.pr figure,.fbbox figure,.hs-frame{
   position:relative;border-color:var(--tbs-line)!important;box-shadow:none!important
 }
-[style*="border:1px solid #e3e9f1"]::after,[style*="border:1px solid #dce3e9"]::after,[style*="border:1px solid #d9e2ec"]::after,
+[style*="border:1px solid #e3e9f1"]::after,
+[style*="border: 1px solid #e3e9f1"]::after,
+[style*="border: 1px solid rgb(227, 233, 241)"]::after,[style*="border:1px solid #dce3e9"]::after,[style*="border: 1px solid #dce3e9"]::after,[style*="border: 1px solid rgb(220, 227, 233)"]::after,[style*="border:1px solid #d9e2ec"]::after,[style*="border: 1px solid #d9e2ec"]::after,[style*="border: 1px solid rgb(217, 226, 236)"]::after,
 .pf .c::after,.pr figure::after,.fbbox figure::after,.hs-frame::after{
   content:"";position:absolute;right:-1px;top:-1px;width:14px;height:14px;pointer-events:none;z-index:3;
   background:linear-gradient(var(--tbs-teal),var(--tbs-teal)) right top/14px 2px no-repeat,linear-gradient(var(--tbs-teal),var(--tbs-teal)) right top/2px 14px no-repeat
@@ -50,7 +75,8 @@ img[src*="logo-tbs-education"]{border-radius:0!important}
 .tbs-status span::before{content:"";width:7px;height:7px;background:var(--tbs-mint);box-shadow:0 0 10px rgba(127,224,215,.9)}
 .tbs-status span:first-child::before{background:#fff}
 .tbs-status span:nth-child(2)::before{background:#f0b53d;box-shadow:0 0 10px rgba(240,181,61,.9)}
-[style*="max-width:940px"][style*="box-shadow"]{border:1px solid rgba(127,224,215,.35)!important;box-shadow:0 30px 70px -30px rgba(0,0,0,.7)!important;outline:1px solid rgba(255,255,255,.06);outline-offset:6px}
+[style*="max-width:940px"][style*="box-shadow"],
+[style*="max-width: 940px"][style*="box-shadow"]{border:1px solid rgba(127,224,215,.35)!important;box-shadow:0 30px 70px -30px rgba(0,0,0,.7)!important;outline:1px solid rgba(255,255,255,.06);outline-offset:6px}
 
 /* 6. Logo strip: technical, with hairline separators. */
 .tbsback{border-top:1px solid var(--tbs-line)}
