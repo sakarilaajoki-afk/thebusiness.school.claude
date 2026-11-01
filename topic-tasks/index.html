@@ -18,7 +18,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>.boardrows td{padding:9px 12px;border-top:1px solid #dde4ec}
 .boardwrap{margin:10px 0 28px}
 table.boards{border-collapse:collapse;width:100%;font-size:18px}
@@ -104,6 +104,12 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
   .hero{padding:48px 0 56px}
 }
 @media(max-width:420px){.wrap{padding:0 16px}}
+/* the film, same labelled frame as the films on the home page */
+.tfilm{margin:40px 0 0;max-width:980px;background:#0e2038;border:1px solid rgba(127,224,215,.3)}
+.tfilm video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0b2430}
+.film-tag{display:flex;margin:0;background:#07131f;border-bottom:1px solid #1b3254;font-family:'Roboto Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:11px;font-weight:500;line-height:1.6;letter-spacing:.14em;text-transform:uppercase;color:#7fe0d7}
+.film-tag span{padding:8px 14px;border-right:1px solid #1b3254}
+.film-tag span:last-child{border-right:0;margin-left:auto;color:#9fb2cf}
 </style>
 </head>
 <body>
@@ -140,6 +146,14 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
       <a class="btn" href="/trial/">Request a trial</a>
       <a class="btn ghost" href="#dashboard">See the dashboard</a>
     </div>
+    <figure class="tfilm"><figcaption class="film-tag"><span>Film</span><span>Topic tasks</span><span>0:59</span></figcaption>
+      <video id="topic-film" poster="/assets/tbs-web/topic-tasks-film-v4-poster.jpg?v=20261101" preload="metadata" controls playsinline
+             width="1920" height="1080" aria-label="A one-minute film about topic tasks in the live lesson">
+        <source src="/assets/tbs-web/topic-tasks-film-v4-720p.mp4?v=20261101" type="video/mp4" media="(max-width: 900px)">
+        <source src="/assets/tbs-web/topic-tasks-film-v4.mp4?v=20261101" type="video/mp4">
+        Your browser cannot play this film. <a href="/assets/tbs-web/topic-tasks-film-v4.mp4?v=20261101">Download it instead</a>.
+      </video>
+    </figure>
   </div>
 </section>
 
