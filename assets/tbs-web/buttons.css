@@ -3,7 +3,7 @@
 a.btn,a.btn-secondary,a.tbs-nav-cta,a.hcta,a.cbtn,a.lp-btn,a.mm-cta,a.cta,a.tier-cta,a.group-cta-top,a.group-cta-box__btn,a.download-btn,
 a[style*="border-radius"][style*="font-weight:600"][style*="padding:1"],
 a[style*="border-radius"][style*="font-weight:700"][style*="padding:1"]{
-  background-image:linear-gradient(rgba(5,34,40,.32),rgba(5,34,40,.32))!important;
+  background-image:linear-gradient(#0e2038,#0e2038)!important;
   background-repeat:no-repeat!important;
   background-position:left center!important;
   background-size:0% 100%!important;
