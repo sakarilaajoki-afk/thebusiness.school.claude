@@ -1,0 +1,137 @@
+/* TBS visual theme, November 2026.
+   Sharp corners everywhere, technical mono labels, thin grids and corner marks.
+   Loaded after buttons.css on the marketing pages. */
+
+:root{--tbs-navy:#0e2038;--tbs-teal:#0a6b73;--tbs-mint:#7fe0d7;--tbs-line:#dce3e9;--tbs-mono:'Roboto Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+/* 1. No rounded corners, no circles. Inline styles need !important. */
+*,*::before,*::after{border-radius:0!important}
+img[src*="logo-tbs-education"]{border-radius:0!important}
+
+/* 2. Eyebrow labels become technical mono labels. */
+[style*="letter-spacing:.14em"][style*="text-transform:uppercase"],
+
+/* 2. Eyebrow labels become technical mono labels. */
+[style*="letter-spacing: .14em"][style*="text-transform: uppercase"],
+
+/* 2. Eyebrow labels become technical mono labels. */
+[style*="letter-spacing: 0.14em"][style*="text-transform: uppercase"],
+[style*="letter-spacing:.2em"][style*="text-transform:uppercase"],
+[style*="letter-spacing: .2em"][style*="text-transform: uppercase"],
+[style*="letter-spacing: 0.2em"][style*="text-transform: uppercase"],
+[style*="letter-spacing:.12em"][style*="text-transform:uppercase"],
+[style*="letter-spacing: .12em"][style*="text-transform: uppercase"],
+[style*="letter-spacing: 0.12em"][style*="text-transform: uppercase"],
+.tbsback .lb,.pf .k,.pr .src,.fbbox .fbk,.fbbox .fbwho,.hs-n{
+  font-family:var(--tbs-mono)!important;font-weight:600!important;letter-spacing:.18em!important
+}
+[style*="letter-spacing:.14em"][style*="text-transform:uppercase"]::before,
+[style*="letter-spacing: .14em"][style*="text-transform: uppercase"]::before,
+[style*="letter-spacing: 0.14em"][style*="text-transform: uppercase"]::before,
+[style*="letter-spacing:.2em"][style*="text-transform:uppercase"]::before,
+[style*="letter-spacing: .2em"][style*="text-transform: uppercase"]::before,
+[style*="letter-spacing: 0.2em"][style*="text-transform: uppercase"]::before,
+.pf .k::before,.fbbox .fbk::before{content:"";display:inline-block;width:7px;height:7px;background:currentColor;margin-right:10px;vertical-align:1px;opacity:.85}
+
+/* 3. Cards: thin teal top rule and a corner mark. */
+[style*="border:1px solid #e3e9f1"],
+
+/* 3. Cards: thin teal top rule and a corner mark. */
+[style*="border:1px solid rgb(227, 233, 241)"],
+
+/* 3. Cards: thin teal top rule and a corner mark. */
+[style*="border: 1px solid #e3e9f1"],
+
+/* 3. Cards: thin teal top rule and a corner mark. */
+[style*="border: 1px solid rgb(227, 233, 241)"],[style*="border:1px solid #dce3e9"],[style*="border: 1px solid #dce3e9"],[style*="border: 1px solid rgb(220, 227, 233)"],[style*="border:1px solid #d9e2ec"],[style*="border: 1px solid #d9e2ec"],[style*="border: 1px solid rgb(217, 226, 236)"],
+.pf .c,.pr figure,.fbbox figure,.hs-frame{
+  position:relative;border-color:var(--tbs-line)!important;box-shadow:none!important
+}
+[style*="border:1px solid #e3e9f1"]::after,
+[style*="border: 1px solid #e3e9f1"]::after,
+[style*="border: 1px solid rgb(227, 233, 241)"]::after,[style*="border:1px solid #dce3e9"]::after,[style*="border: 1px solid #dce3e9"]::after,[style*="border: 1px solid rgb(220, 227, 233)"]::after,[style*="border:1px solid #d9e2ec"]::after,[style*="border: 1px solid #d9e2ec"]::after,[style*="border: 1px solid rgb(217, 226, 236)"]::after,
+.pf .c::after,.pr figure::after,.fbbox figure::after,.hs-frame::after{
+  content:"";position:absolute;right:-1px;top:-1px;width:14px;height:14px;pointer-events:none;z-index:3;
+  background:linear-gradient(var(--tbs-teal),var(--tbs-teal)) right top/14px 2px no-repeat,linear-gradient(var(--tbs-teal),var(--tbs-teal)) right top/2px 14px no-repeat
+}
+.pf .c.dk::after,.fbbox figure::after{background:linear-gradient(var(--tbs-mint),var(--tbs-mint)) right top/14px 2px no-repeat,linear-gradient(var(--tbs-mint),var(--tbs-mint)) right top/2px 14px no-repeat}
+.pf .c.dk{border-color:#1b3254!important}
+
+/* 4. Browser frame on screenshots: a mono title bar instead of traffic lights. */
+.hs-frame::before{
+  content:"play.thebusiness.school · live";background:#0e2038;color:#9fb2cf;height:30px;line-height:30px;padding:0 14px;
+  font-family:var(--tbs-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid #1b3254;background-image:none
+}
+.hs-item[aria-selected="true"]{border-color:var(--tbs-teal)!important;box-shadow:inset 3px 0 0 var(--tbs-teal)!important}
+.hs-bar{background:#dbe6ea}
+
+/* 5. Hero: faint grid, corner marks on the live class card. */
+.tbs-grid{position:absolute;inset:0;z-index:1;pointer-events:none;
+  background-image:linear-gradient(rgba(127,224,215,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(127,224,215,.09) 1px,transparent 1px);
+  background-size:72px 72px;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.9),rgba(0,0,0,0) 85%);mask-image:linear-gradient(180deg,rgba(0,0,0,.9),rgba(0,0,0,0) 85%)}
+.tbs-status{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin:0 auto 26px;font-family:var(--tbs-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#a9e6df}
+.tbs-status span{display:inline-flex;align-items:center;gap:9px;white-space:nowrap}
+.tbs-status span::before{content:"";width:7px;height:7px;background:var(--tbs-mint);box-shadow:0 0 10px rgba(127,224,215,.9)}
+.tbs-status span:first-child::before{background:#fff}
+.tbs-status span:nth-child(2)::before{background:#f0b53d;box-shadow:0 0 10px rgba(240,181,61,.9)}
+[style*="max-width:940px"][style*="box-shadow"],
+[style*="max-width: 940px"][style*="box-shadow"]{border:1px solid rgba(127,224,215,.35)!important;box-shadow:0 30px 70px -30px rgba(0,0,0,.7)!important;outline:1px solid rgba(255,255,255,.06);outline-offset:6px}
+
+/* 6. Logo strip: technical, with hairline separators. */
+.tbsback{border-top:1px solid var(--tbs-line)}
+.tbsback .in{gap:14px 0}
+.tbsback .it{padding:0 36px;position:relative}
+.tbsback .sep{display:none}
+.tbsback .it+.it::before{content:"";position:absolute;left:0;top:50%;height:34px;margin-top:-17px;width:1px;background:var(--tbs-line)}
+@media(max-width:640px){.tbsback .it{padding:0 14px}.tbsback .it+.it::before{display:none}}
+
+/* 7. Footer trust line. */
+.tbs-foot-status{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:14px;font-family:var(--tbs-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#0a6b73}
+.tbs-foot-status span::before{content:"";display:inline-block;width:6px;height:6px;background:currentColor;margin-right:9px;vertical-align:1px}
+
+/* 8. Feedback and Facebook controls, sharp. */
+.fbbox .fbbtn{border:1px solid #fff}
+.fbwrap .fbjoin{border-bottom:1px solid transparent}
+.fbwrap .fbjoin:hover{text-decoration:none;border-bottom-color:currentColor}
+
+/* 9. Section rules: a thin teal tick next to the mono eyebrow lines in dark blocks. */
+.pf .c.dk .big,.reslib h2{font-variant-numeric:tabular-nums}
+
+/* 10. Phones: the trust lines stay on one or two short rows. */
+@media(max-width:640px){
+  .tbs-status{gap:6px 16px;font-size:10px;letter-spacing:.12em;margin-bottom:18px}
+  .tbs-status span::before{width:5px;height:5px}
+  .tbsback .in{padding:12px 10px!important;gap:8px 0!important;flex-wrap:nowrap!important;justify-content:space-between!important}
+  .tbsback .it{padding:0 4px;gap:7px;flex-direction:column;align-items:center}
+  .tbsback .lb{font-size:9px!important;letter-spacing:.12em!important}
+  .tbsback img{height:30px}
+  .tbsback .vf{height:30px;width:30px}
+  .tbsback .vt{display:none}
+  .tbsback .it a img[alt="Appifest"]{height:30px!important;padding:5px 9px!important}
+}
+
+/* 11. Hero chips and a quieter feedback row. */
+.tbs-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:22px auto 0}
+.tbs-chip{display:inline-flex;align-items:center;gap:9px;padding:9px 14px;border:1px solid rgba(255,255,255,.26);background:rgba(10,20,38,.46);font-family:var(--tbs-mono);font-size:12px;letter-spacing:.06em;color:#e2eaf6;text-decoration:none;transition:border-color .2s,background .2s}
+a.tbs-chip:hover{border-color:#7fe0d7;background:rgba(10,20,38,.7)}
+.tbs-chip--live::before{content:"";width:7px;height:7px;background:#f0b53d;box-shadow:0 0 10px rgba(240,181,61,.9)}
+.tbs-quiet .fbbox .fbbtn{font-size:12.5px;padding:5px 14px;background:transparent;color:#e6f3f3;border:1px solid rgba(255,255,255,.35)}
+.tbs-quiet .fbbox>summary:hover .fbbtn{background:rgba(255,255,255,.1)}
+.tbs-quiet .fbjoin{font-size:13px;color:#c9d5e8}
+@media(max-width:640px){.tbs-chip{font-size:11px;padding:8px 11px;text-align:left}}
+
+/* 12. Two films side by side, labelled. */
+.films{display:grid;grid-template-columns:2fr 1fr;gap:22px;align-items:stretch}
+.films .motor-film{margin:0;border:1px solid rgba(127,224,215,.3);box-shadow:none;display:flex;flex-direction:column}
+.films .motor-film video{flex:1}
+.films .smallclass{margin-top:0;flex-direction:column;align-items:stretch;gap:16px;padding:0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
+.films .smallclass video{width:100%;flex:0 0 auto}
+.films .smallclass>div:last-child{padding:0 20px 22px}
+.films .smallclass h3{font-size:20px;font-family:'Fraunces',Georgia,serif;font-weight:600}
+.films .smallclass p{font-size:15px;color:#c3cee0}
+.film-tag{display:flex;gap:0;margin:0;background:#07131f;border-bottom:1px solid #1b3254;font-family:var(--tbs-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7fe0d7}
+.film-tag span{padding:8px 14px;border-right:1px solid #1b3254}
+.film-tag span:last-child{border-right:0;margin-left:auto;color:#9fb2cf}
+@media(max-width:900px){.films{grid-template-columns:1fr}}
+.tbs-chips>sc-if,.tbs-chips>div{display:contents}
