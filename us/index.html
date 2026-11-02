@@ -330,12 +330,12 @@
 <section class="filmband">
   <div class="wrap">
     <figure class="motor-film">
-      <video id="motor-film" poster="/assets/tbs-web/us/us-film-poster.jpg?v=20261026" preload="metadata"
+      <video id="motor-film" poster="/assets/tbs-web/us/us-film-poster.jpg?v=20261102us" preload="metadata"
              muted autoplay loop playsinline controls
              width="1920" height="1080"
              aria-label="A short film of a live Motor Trade lesson, from sign in to the end of the session">
-                <source src="/assets/tbs-web/us/us-film.mp4?v=20261026h" type="video/mp4">
-        Your browser cannot play this film. <a href="/assets/tbs-web/us/us-film.mp4?v=20261026h">Download it instead</a>.
+                <source src="/assets/tbs-web/us/us-film.mp4?v=20261102us" type="video/mp4">
+        Your browser cannot play this film. <a href="/assets/tbs-web/us/us-film.mp4?v=20261102us">Download it instead</a>.
       </video>
     </figure>
     <script>
@@ -373,6 +373,40 @@
           return v.muted === true && v.controls === true && (still || watching);
         }
         var tries = 0;
+        var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
+        window.addEventListener("load", setup);
+      })();
+    </script>
+    <!-- Owner 2.11.2026: a US class of 1 to 5 has its own short film (the home page's block). -->
+    <style>
+    .smallclass{display:flex;gap:26px;align-items:center;margin-top:26px;padding:18px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.04)}
+    .smallclass video{flex:0 0 46%;width:46%;height:auto;aspect-ratio:16/9;border-radius:12px;background:#0b2430;display:block}
+    .smallclass h3{margin:0 0 8px;color:#fff;font-size:24px;line-height:1.2;font-family:'Inter',system-ui,sans-serif}
+    .smallclass p{margin:0;color:#c9d6e6;font-size:17px;line-height:1.5;font-family:'Inter',system-ui,sans-serif}
+    @media (max-width:760px){.smallclass{flex-direction:column;align-items:stretch}.smallclass video{width:100%;flex-basis:auto}}
+    </style>
+    <div class="smallclass">
+      <video id="small-class-film" poster="/assets/tbs-web/us/us-small-class-film-poster.jpg?v=20261102us" preload="none" controls playsinline
+             width="1280" height="720" aria-label="A short film for a class of 1 to 5 students">
+        <source src="/assets/tbs-web/us/us-small-class-film.mp4?v=20261102us" type="video/mp4">
+        Your browser cannot play this film. <a href="/assets/tbs-web/us/us-small-class-film.mp4?v=20261102us">Download it instead</a>.
+      </video>
+      <div>
+        <h3>Teaching 1 to 5 students?</h3>
+        <p>Every student runs their own firm and competes live with the class. 30 to 75 minutes. Show this short film first.</p>
+      </div>
+    </div>
+    <script>
+      /* The template renderer strips valueless controls and playsinline (as on the home page). */
+      (function(){
+        var tries = 0;
+        function setup(){
+          var v = document.getElementById("small-class-film");
+          if (!v) return false;
+          v.controls = true; v.playsInline = true; v.setAttribute("playsinline", ""); v.setAttribute("webkit-playsinline", "");
+          if (!v.dataset.tap) { v.dataset.tap = "1"; v.addEventListener("click", function(){ if (v.paused) { var p = v.play(); if (p && p.catch) { p.catch(function(){}); } } }); }
+          return v.controls === true;
+        }
         var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
         window.addEventListener("load", setup);
       })();
@@ -626,7 +660,11 @@
         <p style="font-size:14.5px;color:#40506e">Each student downloads their own report. You download one class pack: the class report and every student&rsquo;s report.</p>
       </div>
     </div>
-    <!-- The US teacher tutorial film (us-teacher-tutorial.mp4, 22.10.2026) is off this page until it is re-rendered: it shows the old setup form (a country menu, no lesson-length tiles, no "The class has") and the old small-class lines (owner rule: no old pictures, 2.11.2026). -->
+    <!-- The US teacher tutorial, remade from the US game (owner 2.11.2026). -->
+    <div style="max-width:860px;margin:40px auto 0;text-align:center">
+      <video controls preload="none" playsinline poster="/assets/tbs-web/us/us-teacher-tutorial-poster.jpg?v=20261102us" style="width:100%;border-radius:12px;border:1px solid #e3e9f1;background:#0f1720;display:block"><source src="/assets/tbs-web/us/us-teacher-tutorial.mp4?v=20261102us" type="video/mp4"></video>
+      <p style="font-size:14px;color:#40506e;margin-top:10px">Teacher tutorial: how to start a lesson.</p>
+    </div>
   </div>
 </section>
 
