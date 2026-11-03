@@ -377,40 +377,6 @@
         window.addEventListener("load", setup);
       })();
     </script>
-    <!-- Owner 2.11.2026: a US class of 1 to 5 has its own short film (the home page's block). -->
-    <style>
-    .smallclass{display:flex;gap:26px;align-items:center;margin-top:26px;padding:18px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.04)}
-    .smallclass video{flex:0 0 46%;width:46%;height:auto;aspect-ratio:16/9;border-radius:12px;background:#0b2430;display:block}
-    .smallclass h3{margin:0 0 8px;color:#fff;font-size:24px;line-height:1.2;font-family:'Inter',system-ui,sans-serif}
-    .smallclass p{margin:0;color:#c9d6e6;font-size:17px;line-height:1.5;font-family:'Inter',system-ui,sans-serif}
-    @media (max-width:760px){.smallclass{flex-direction:column;align-items:stretch}.smallclass video{width:100%;flex-basis:auto}}
-    </style>
-    <div class="smallclass">
-      <video id="small-class-film" poster="/assets/tbs-web/us/us-small-class-film-poster-short.jpg?v=short-20261103" preload="none" controls playsinline
-             width="1280" height="720" aria-label="A short film for a class of 1 to 5 students">
-        <source src="/assets/tbs-web/us/us-small-class-film-short.mp4?v=short2-20261103" type="video/mp4">
-        Your browser cannot play this film. <a href="/assets/tbs-web/us/us-small-class-film-short.mp4?v=short2-20261103">Download it instead</a>.
-      </video>
-      <div>
-        <h3>Teaching 1 to 5 students?</h3>
-        <p>Every student runs their own firm and competes live with the class. 30 to 75 minutes. Show this short film first.</p>
-      </div>
-    </div>
-    <script>
-      /* The template renderer strips valueless controls and playsinline (as on the home page). */
-      (function(){
-        var tries = 0;
-        function setup(){
-          var v = document.getElementById("small-class-film");
-          if (!v) return false;
-          v.controls = true; v.playsInline = true; v.setAttribute("playsinline", ""); v.setAttribute("webkit-playsinline", "");
-          if (!v.dataset.tap) { v.dataset.tap = "1"; v.addEventListener("click", function(){ if (v.paused) { var p = v.play(); if (p && p.catch) { p.catch(function(){}); } } }); }
-          return v.controls === true;
-        }
-        var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
-        window.addEventListener("load", setup);
-      })();
-    </script>
   </div>
 </section>
 

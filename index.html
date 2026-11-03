@@ -387,52 +387,11 @@
         window.addEventListener("load", setup);
       })();
     </script>
-    <!-- Owner 21.10.2026: a class of 1 to 5 plays solo; its own short film. -->
+    <!-- Owner 1.11.2026: the topic tasks film, a full-width row under film 01.
+         Owner 3.11.2026: the separate film for a class of 1 to 5 is gone (one
+         game for 1 to 40), so film 01 takes the full width, as on the US page. -->
     <style>
-    .smallclass{display:flex;gap:26px;align-items:center;margin-top:26px;padding:18px;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(255,255,255,.04)}
-    .smallclass video{flex:0 0 46%;width:46%;height:auto;aspect-ratio:16/9;border-radius:12px;background:#0b2430;display:block}
-    .smallclass h3{margin:0 0 8px;color:#fff;font-size:24px;line-height:1.2}
-    .smallclass p{margin:0;color:#c9d6e6;font-size:17px;line-height:1.5}
-    @media (max-width:760px){.smallclass{flex-direction:column;align-items:stretch}.smallclass video{width:100%;flex-basis:auto}}
-    </style>
-    <div class="smallclass"><div class="film-tag"><span>Film 02</span><span>A class of 1 to 5</span><span>0:32</span></div>
-      <video id="small-class-film" poster="/assets/tbs-web/small-class-film-poster-v7.jpg?v=short-20261103" preload="none" controls playsinline
-             width="1280" height="720" aria-label="A short film for a class of 1 to 5 students">
-        <source src="/assets/tbs-web/small-class-film-v7.mp4?v=short2-20261103" type="video/mp4">
-        Your browser cannot play this film. <a href="/assets/tbs-web/small-class-film-v7.mp4?v=short2-20261103">Download it instead</a>.
-      </video>
-      <div>
-        <h3>Teaching 1 to 5 students?</h3>
-        <p>Every student runs their own firm and competes live with the class. 30 to 75 minutes. Show this short film first.</p>
-      </div>
-    </div>
-    <script>
-      /* The template renderer strips valueless controls and playsinline off
-         the video tag (see the film above), which left this film with no
-         play button on a phone. Set them as properties until they stick;
-         a tap on the picture starts it too. */
-      (function(){
-        var tries = 0;
-        function setup(){
-          var v = document.getElementById("small-class-film");
-          if (!v) return false;
-          v.controls = true;
-          v.playsInline = true;
-          v.setAttribute("playsinline", "");
-          v.setAttribute("webkit-playsinline", "");
-          if (!v.dataset.tap) {
-            v.dataset.tap = "1";
-            v.addEventListener("click", function(){ if (v.paused) { var p = v.play(); if (p && p.catch) { p.catch(function(){}); } } });
-          }
-          return v.controls === true;
-        }
-        var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
-        window.addEventListener("load", setup);
-      })();
-    </script>
-    <!-- Owner 1.11.2026: the topic tasks film, a full-width row under films 01 and 02.
-         Its video sits in the right-hand column, under film 02. -->
-    <style>
+    .films .motor-film{grid-column:1/-1}
     .films .topicfilm{grid-column:1/-1;display:grid;grid-template-columns:2fr 1fr;grid-template-areas:"tag tag" "text video";column-gap:22px;margin:0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
     .topicfilm .film-tag{grid-area:tag}
     .topicfilm video{grid-area:video;display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0b2430}
@@ -441,7 +400,7 @@
     .topicfilm p{margin:0;color:#c3cee0;font-size:17px;line-height:1.5}
     @media(max-width:900px){.films .topicfilm{grid-template-columns:1fr;grid-template-areas:"tag" "video" "text";row-gap:16px}.topicfilm>div:last-child{padding:0 20px 22px}.topicfilm h3{font-size:20px}.topicfilm p{font-size:15px}}
     </style>
-    <div class="topicfilm"><div class="film-tag"><span>Film 03</span><span>Topic tasks</span><span>1:15</span></div>
+    <div class="topicfilm"><div class="film-tag"><span>Film 02</span><span>Topic tasks</span><span>1:15</span></div>
       <video id="topic-film" poster="/assets/tbs-web/topic-tasks-film-v5-poster.jpg?v=20261101" preload="none" controls playsinline
              width="1920" height="1080" aria-label="A one-minute film about topic tasks in the live lesson">
         <source src="/assets/tbs-web/topic-tasks-film-v5-720p.mp4?v=20261101b" type="video/mp4" media="(max-width: 900px)">
@@ -454,7 +413,7 @@
       </div>
     </div>
     <script>
-      /* Same as film 02: the template renderer strips valueless controls and
+      /* Same as film 01: the template renderer strips valueless controls and
          playsinline, so set them as properties until they stick. */
       (function(){
         var tries = 0;
