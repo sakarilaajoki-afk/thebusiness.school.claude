@@ -608,8 +608,17 @@
       </div>
     </div>
     <div style="max-width:860px;margin:40px auto 0;text-align:center">
-      <video controls preload="none" playsinline poster="/assets/tbs-web/au/au-teacher-tutorial-poster.jpg" style="width:100%;border-radius:12px;border:1px solid #e3e9f1;background:#0f1720;display:block"><source src="/assets/tbs-web/au/au-teacher-tutorial.mp4" type="video/mp4"></video>
+      <video id="au-teacher-tutorial" controls preload="metadata" playsinline poster="/assets/tbs-web/au/au-teacher-tutorial-poster.jpg" style="width:100%;border-radius:12px;border:1px solid #e3e9f1;background:#0f1720;display:block"><source src="/assets/tbs-web/au/au-teacher-tutorial.mp4" type="video/mp4"></video>
       <p style="font-size:14px;color:#40506e;margin-top:10px">Teacher tutorial: how to start a lesson, in 85 seconds.</p>
+      <script>
+        /* The template renderer strips valueless attributes such as controls, which left this video as a poster with no play button (owner 4.11.2026). Set it as a property until it sticks. */
+        (function(){
+          var tries = 0;
+          function fix(){ var v = document.getElementById("au-teacher-tutorial"); if (v) { v.controls = true; v.playsInline = true; } return v && v.controls === true; }
+          var t = setInterval(function(){ if (fix() || ++tries > 25) clearInterval(t); }, 200);
+          window.addEventListener("load", fix);
+        })();
+      </script>
     </div>
     </div>
 </section>

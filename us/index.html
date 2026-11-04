@@ -149,8 +149,9 @@
 </div></div>
 <!-- HERO -->
 <section style="position:relative;background:#0e2038;color:#fff;overflow:hidden;padding:74px 0 170px">
+  <!-- The map no longer stretches over the whole tall hero: it keeps its own 4:3-ish box so the whole US shows (owner 4.11.2026: "too zoomed in"). -->
   <div ref="{{ mapRef }}" style="position:absolute;inset:0;z-index:0;opacity:.95" aria-hidden="true">
-    <img src="/assets/tbs-web/hero-map-us.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 32%" />
+    <img src="/assets/tbs-web/hero-map-us.jpg" alt="" style="position:absolute;left:0;top:0;width:100%;height:max(76vw,700px);object-fit:cover;object-position:center 20%;-webkit-mask-image:linear-gradient(180deg,#000 78%,transparent 100%);mask-image:linear-gradient(180deg,#000 78%,transparent 100%)" />
     <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,56,.68) 0%,rgba(14,32,56,.56) 42%,rgba(14,32,56,.42) 72%,rgba(14,32,56,.5) 100%)"></div>
     <div style="position:absolute;left:0;right:0;bottom:0;height:220px;background:linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.55) 62%,#ffffff 100%)"></div>
   </div>
@@ -284,6 +285,8 @@
   </div>
 </details>
 </div>
+        <!-- Owner 4.11.2026: one line, two links, no logo, no endorsement wording. -->
+        <p class="tbs-pearson" style="margin:14px auto 0;font-size:15px;line-height:1.5;color:#dbe4f0;text-shadow:0 1px 7px rgba(4,16,31,.7);text-align:center;">Featured in Pearson&rsquo;s <a href="https://qualifications.pearson.com/en/news-policy/subject-updates/business/november-2026-business-update.html" target="_blank" rel="noopener" style="color:#a9e6df;font-weight:600;text-decoration:underline;text-underline-offset:3px">November 2026 Business update</a> and <a href="https://qualifications.pearson.com/en/news-policy/subject-updates/business/november-2026-btec-business-update.html" target="_blank" rel="noopener" style="color:#a9e6df;font-weight:600;text-decoration:underline;text-underline-offset:3px">BTEC Business update</a>.</p>
       </div>
       <div style="max-width:940px;margin:44px auto 0;background:#fff;border:1px solid #dce3e9;border-radius:8px;box-shadow:0 18px 44px -28px rgba(0,0,0,.55);overflow:hidden;color:#16233f">
         <div style="background:#0c1a2e;padding:9px 16px;display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,255,255,.08)">
@@ -517,29 +520,29 @@
   <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
 
     <figure class="motor-gal-hero">
-      <img src="/assets/tbs-web/us/us-v-00-entry.jpg?v=20261102" width="1920" height="1080" alt="Entry screen at play.thebusiness.school with the Teacher, Student and Teacher Demo choices" />
+      <img src="/assets/tbs-web/us/us-v-00-entry.jpg?v=20261104live" width="1920" height="1080" alt="Entry screen at play.thebusiness.school with the Teacher, Student and Teacher Demo choices" />
       <figcaption>Teacher, student or a guided walkthrough. That is the whole sign in.</figcaption>
     </figure>
 
     <div class="motor-gal">
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/us/us-v-01-lobby.jpg?v=20261102" width="1920" height="1080" loading="lazy" decoding="async" alt="The teacher's waiting room with the game PIN at the top and the names of the students who have joined" />
+        <img src="/assets/tbs-web/us/us-v-01-lobby.jpg?v=20261104live" width="1920" height="1080" loading="lazy" decoding="async" alt="The teacher's waiting room with the game PIN at the top and the names of the students who have joined" />
         <figcaption>The whole class joins with one PIN.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/us/us-v-02-setup.jpg?v=20261102us3" width="1600" height="900" loading="lazy" decoding="async" alt="Teacher session setup with the course, the topic and the lesson length" />
+        <img src="/assets/tbs-web/us/us-v-02-setup.jpg?v=20261104live" width="1600" height="900" loading="lazy" decoding="async" alt="Teacher session setup with the course, the topic and the lesson length" />
         <figcaption>You pick the course, the topic and the lesson length.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/us/us-g-role.jpg?v=20261102n" width="1600" height="900" loading="lazy" decoding="async" alt="The first tutorial card for a Sales and Marketing Director: the role, what it does, and a guide pointing to Next" />
+        <img src="/assets/tbs-web/us/us-g-role.jpg?v=20261104live" width="1600" height="900" loading="lazy" decoding="async" alt="The first tutorial card for a Sales and Marketing Director: the role, what it does, and a guide pointing to Next" />
         <figcaption>Each student starts with a short tutorial for their own role.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/us/us-g-place.jpg?v=20261102o" width="1600" height="900" loading="lazy" decoding="async" alt="A firm picks its place on a map of Indianapolis with numbered places; the team votes" />
+        <img src="/assets/tbs-web/us/us-g-place.jpg?v=20261104live" width="1600" height="900" loading="lazy" decoding="async" alt="A firm picks its place on a map of Indianapolis with numbered places; the team votes" />
         <figcaption>Each firm picks its place on the Indianapolis map.</figcaption>
       </figure>
       <figure class="motor-gal-item">
-        <img src="/assets/tbs-web/us/us-g-reveal.jpg?v=20261102n" width="1600" height="900" loading="lazy" decoding="async" alt="The firm reveal: logo, firm name with its place, and the team" />
+        <img src="/assets/tbs-web/us/us-g-reveal.jpg?v=20261104live" width="1600" height="900" loading="lazy" decoding="async" alt="The firm reveal: logo, firm name with its place, and a card with each team member’s name and role" />
         <figcaption>Then the firm gets its name and logo.</figcaption>
       </figure>
       <figure class="motor-gal-item">
@@ -613,7 +616,7 @@
       <div style="padding:28px;border:1px solid #e3e9f1;border-radius:12px;background:#fff">
         <div style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:30px;color:#0a6b73">2</div>
         <h4 style="font-family:'Inter',sans-serif;font-weight:700;font-size:16.5px;color:#0e2038;margin:8px 0 6px">Students join</h4>
-        <p style="font-size:14.5px;color:#40506e">Students open play.thebusiness.school on a laptop, desktop, Chromebook or iPad and type the PIN and a first name. Press Start: with 6 or more the game makes firms of 3 or 4 and gives everyone a role; with 1 to 5 each student runs their own firm.</p>
+        <p style="font-size:14.5px;color:#40506e">Students open play.thebusiness.school on a laptop, desktop, Chromebook or iPad and type the PIN and a first name. Press Start and the game makes the firms and gives everyone a role. For classes of 4 to 40 students.</p>
       </div>
       <div style="padding:28px;border:1px solid #e3e9f1;border-radius:12px;background:#fff">
         <div style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:30px;color:#0a6b73">3</div>
@@ -628,8 +631,17 @@
     </div>
     <!-- The US teacher tutorial, remade from the US game (owner 2.11.2026). -->
     <div style="max-width:860px;margin:40px auto 0;text-align:center">
-      <video controls preload="none" playsinline poster="/assets/tbs-web/us/us-teacher-tutorial-poster.jpg?v=20261102us3" style="width:100%;border-radius:12px;border:1px solid #e3e9f1;background:#0f1720;display:block"><source src="/assets/tbs-web/us/us-teacher-tutorial.mp4?v=nosend-20261102" type="video/mp4"></video>
+      <video id="us-teacher-tutorial" controls preload="metadata" playsinline poster="/assets/tbs-web/us/us-teacher-tutorial-poster.jpg?v=20261102us3" style="width:100%;border-radius:12px;border:1px solid #e3e9f1;background:#0f1720;display:block"><source src="/assets/tbs-web/us/us-teacher-tutorial.mp4?v=nosend-20261102" type="video/mp4"></video>
       <p style="font-size:14px;color:#40506e;margin-top:10px">Teacher tutorial: how to start a lesson.</p>
+      <script>
+        /* The template renderer strips valueless attributes such as controls, which left this video as a poster with no play button (owner 4.11.2026). Set it as a property until it sticks. */
+        (function(){
+          var tries = 0;
+          function fix(){ var v = document.getElementById("us-teacher-tutorial"); if (v) { v.controls = true; v.playsInline = true; } return v && v.controls === true; }
+          var t = setInterval(function(){ if (fix() || ++tries > 25) clearInterval(t); }, 200);
+          window.addEventListener("load", fix);
+        })();
+      </script>
     </div>
   </div>
 </section>
@@ -713,7 +725,7 @@
       </details>
       <details style="border:1px solid #e3e9f1;border-radius:11px;background:#fff;padding:4px 20px;margin-bottom:12px">
         <summary style="list-style:none;cursor:pointer;font-weight:600;font-size:16px;color:#0e2038;padding:16px 0;display:flex;justify-content:space-between;align-items:center">How many students, and how long does it take?<span style="color:#0a6b73;font-size:22px;font-weight:400">＋</span></summary>
-        <p style="color:#40506e;font-size:15px;padding:0 0 18px">Up to 40 students. Most classes play in teams of 3 or 4, and smaller classes run a firm each. After up to 3 minutes of firm setup there are three rounds, and you set each round to 10, 15, 20 or 25 minutes. The rounds move on by themselves when the clock runs out, so it never stalls.</p>
+        <p style="color:#40506e;font-size:15px;padding:0 0 18px">4 to 40 students. Most classes play in teams of 3 or 4, and smaller classes run a firm each. After up to 3 minutes of firm setup there are three rounds, and you set each round to 10, 15, 20 or 25 minutes. The rounds move on by themselves when the clock runs out, so it never stalls.</p>
       </details>
       <details style="border:1px solid #e3e9f1;border-radius:11px;background:#fff;padding:4px 20px;margin-bottom:12px">
         <summary style="list-style:none;cursor:pointer;font-weight:600;font-size:16px;color:#0e2038;padding:16px 0;display:flex;justify-content:space-between;align-items:center">What does the teacher see and control?<span style="color:#0a6b73;font-size:22px;font-weight:400">＋</span></summary>
