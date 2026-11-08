@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0e2038">
-<title>Teacher guides | The Business School</title>
+<title>Every lesson topic | The Business School</title>
 <meta name="description" content="A PDF for each topic of your Business course: the lesson steps, the topic tasks with answers, and the final questions.">
 <link rel="canonical" href="https://thebusiness.school/teacher-guides/">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -96,9 +96,9 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
 <main>
 <section class="hero">
   <div class="wrap">
-    <span class="kick">Teacher guides · PDF</span>
-    <h1>One PDF for each topic</h1>
-    <p class="lead">The lesson step by step, the topic tasks with answers, and the final questions.</p>
+    <span class="kick">Teacher guides</span>
+    <h1>Every lesson topic</h1>
+    <p class="lead">Pick your course, then open a topic. Each topic is a short PDF: the lesson, the tasks with answers, the final questions.</p>
   </div>
 </section>
 <section class="sec">
@@ -127,13 +127,15 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
   function show() {
     var picked = select.value;
     try { if (picked) localStorage.setItem('tbs-guide-course', picked); } catch (e) {}
-    var rows = guides.filter(function (g) { return g.courseId === picked; });
-    var allDraft = rows.length && rows.every(function (g) { return g.draft; });
-    cname.hidden = !rows.length;
-    cname.innerHTML = rows.length ? esc(rows[0].course) + (allDraft ? '<span class="d">Draft</span>' : '') : '';
+    /* The course's topics, then the lesson without a topic last. The course
+       name is already in the menu, so it is not repeated. */
+    var rows = guides.filter(function (g) { return g.courseId === picked && g.topicId !== 'no-topic'; })
+      .concat(guides.filter(function (g) { return g.courseId === picked && g.topicId === 'no-topic'; }));
+    cname.hidden = true;
     list.innerHTML = rows.map(function (g) {
-      return '<li><span class="t">' + esc(g.topic) + (g.draft && !allDraft ? '<span class="d">Draft</span>' : '') + '</span>'
-        + '<a class="dl" href="pdf/' + encodeURIComponent(g.file) + '" download>Download PDF</a></li>';
+      var name = g.topicId === 'no-topic' ? 'No topic (just play)' : g.topic;
+      return '<li><span class="t">' + esc(name) + (g.draft ? '<span class="d">Draft</span>' : '') + '</span>'
+        + '<a class="dl" href="pdf/' + encodeURIComponent(g.file) + '" target="_blank" rel="noopener" aria-label="View topic: ' + esc(g.topic) + ' (PDF)">View topic</a></li>';
     }).join('');
   }
   fetch('guides.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (data) {
