@@ -1,7 +1,15 @@
 {
   "schemaVersion": 1,
-  "madeFrom": "bs-multiplayer 6ee2c4d6",
+  "madeFrom": "bs-multiplayer cddbcee5",
   "guides": [
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--no-topic.pdf"
+    },
     {
       "courseId": "btec-l3-extended-certificate",
       "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
@@ -93,6 +101,14 @@
     {
       "courseId": "btec-l3-certificate",
       "course": "Pearson BTEC Level 3 National Certificate in Business (601/7155/8)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-certificate-in-business-601-7155-8--no-topic.pdf"
+    },
+    {
+      "courseId": "btec-l3-certificate",
+      "course": "Pearson BTEC Level 3 National Certificate in Business (601/7155/8)",
       "topicId": "pricing",
       "topic": "Pricing",
       "draft": true,
@@ -137,6 +153,14 @@
       "topic": "External environment",
       "draft": true,
       "file": "pearson-btec-level-3-national-certificate-in-business-601-7155-8--external-environment.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--no-topic.pdf"
     },
     {
       "courseId": "btec-l3-diploma",
@@ -229,6 +253,14 @@
     {
       "courseId": "btec-l3-extended-diploma",
       "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--no-topic.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
       "topicId": "cash-flow",
       "topic": "Cash flow",
       "draft": true,
@@ -313,6 +345,14 @@
       "topic": "External environment",
       "draft": true,
       "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--external-environment.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--no-topic.pdf"
     },
     {
       "courseId": "ocr-a-level-h436",
@@ -477,6 +517,14 @@
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--no-topic.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
       "topicId": "cash-flow",
       "topic": "Cash flow",
       "draft": false,
@@ -617,6 +665,14 @@
       "topic": "External environment",
       "draft": false,
       "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--external-environment.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--no-topic.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
@@ -781,6 +837,14 @@
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--no-topic.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
       "topicId": "cash-flow",
       "topic": "Cash flow",
       "draft": false,
@@ -905,6 +969,14 @@
       "topic": "External environment",
       "draft": false,
       "file": "wjec-gcse-business-c00-4967-2--external-environment.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--no-topic.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
@@ -1069,6 +1141,14 @@
     {
       "courseId": "aqa-gcse-8132",
       "course": "AQA GCSE Business (8132)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--no-topic.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
       "topicId": "stakeholders-ethics",
       "topic": "Stakeholders and ethical considerations",
       "draft": false,
@@ -1201,6 +1281,14 @@
       "topic": "Analysing financial performance",
       "draft": false,
       "file": "aqa-gcse-business-8132--analysing-financial-performance.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--no-topic.pdf"
     },
     {
       "courseId": "aqa-a-level-7132",
@@ -1365,6 +1453,14 @@
     {
       "courseId": "aqa-a-level-7138",
       "course": "AQA A-level Business (7138)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--no-topic.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
       "topicId": "leadership",
       "topic": "Leadership and management",
       "draft": false,
@@ -1525,6 +1621,14 @@
     {
       "courseId": "edexcel-gcse-1bs0",
       "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--no-topic.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
       "topicId": "market-share",
       "topic": "Market segmentation",
       "draft": false,
@@ -1657,6 +1761,14 @@
       "topic": "Motivation",
       "draft": false,
       "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--motivation.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--no-topic.pdf"
     },
     {
       "courseId": "edexcel-a-level-9bs0",
@@ -1821,6 +1933,14 @@
     {
       "courseId": "edexcel-ial-business",
       "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--no-topic.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
       "topicId": "market-share",
       "topic": "Market size and share",
       "draft": false,
@@ -1981,6 +2101,14 @@
     {
       "courseId": "edexcel-igcse-4bs1",
       "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--no-topic.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
       "topicId": "market-share",
       "topic": "Market segmentation",
       "draft": false,
@@ -2125,6 +2253,14 @@
     {
       "courseId": "btec-tech-award-enterprise",
       "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--no-topic.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
       "topicId": "cash-flow",
       "topic": "Cash flow",
       "draft": true,
@@ -2193,6 +2329,14 @@
       "topic": "External environment",
       "draft": true,
       "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--external-environment.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--no-topic.pdf"
     },
     {
       "courseId": "ocr-gcse-j204",
@@ -2305,6 +2449,14 @@
       "topic": "Stakeholders and ethics",
       "draft": false,
       "file": "ocr-gcse-9-1-in-business-j204--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--no-topic.pdf"
     },
     {
       "courseId": "ocr-a-level-h431",
@@ -2469,6 +2621,14 @@
     {
       "courseId": "cambridge-igcse-0264",
       "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--no-topic.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
       "topicId": "cash-flow",
       "topic": "Cash flow",
       "draft": false,
@@ -2613,6 +2773,14 @@
     {
       "courseId": "ib-business-hl",
       "course": "IB Diploma Programme Business management HL",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--no-topic.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
       "topicId": "cash-flow",
       "topic": "Cash flow",
       "draft": true,
@@ -2753,6 +2921,14 @@
       "topic": "Stakeholders",
       "draft": true,
       "file": "ib-diploma-programme-business-management-hl--stakeholders.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--no-topic.pdf"
     },
     {
       "courseId": "ib-business-sl",
