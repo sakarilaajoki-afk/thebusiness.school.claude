@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "madeFrom": "bs-multiplayer 173b0eb5",
+  "madeFrom": "bs-multiplayer 6ee2c4d6",
   "guides": [
     {
       "courseId": "btec-l3-extended-certificate",
@@ -9,6 +9,2878 @@
       "topic": "Cash flow",
       "draft": true,
       "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--cash-flow.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--break-even.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--pricing.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--promotion.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--financial-ratios.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--organisational-structure.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--external-environment.pdf"
+    },
+    {
+      "courseId": "btec-l3-certificate",
+      "course": "Pearson BTEC Level 3 National Certificate in Business (601/7155/8)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-certificate-in-business-601-7155-8--pricing.pdf"
+    },
+    {
+      "courseId": "btec-l3-certificate",
+      "course": "Pearson BTEC Level 3 National Certificate in Business (601/7155/8)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-certificate-in-business-601-7155-8--promotion.pdf"
+    },
+    {
+      "courseId": "btec-l3-certificate",
+      "course": "Pearson BTEC Level 3 National Certificate in Business (601/7155/8)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-certificate-in-business-601-7155-8--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "btec-l3-certificate",
+      "course": "Pearson BTEC Level 3 National Certificate in Business (601/7155/8)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-certificate-in-business-601-7155-8--organisational-structure.pdf"
+    },
+    {
+      "courseId": "btec-l3-certificate",
+      "course": "Pearson BTEC Level 3 National Certificate in Business (601/7155/8)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-certificate-in-business-601-7155-8--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "btec-l3-certificate",
+      "course": "Pearson BTEC Level 3 National Certificate in Business (601/7155/8)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-certificate-in-business-601-7155-8--external-environment.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--cash-flow.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--break-even.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--pricing.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--promotion.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--financial-ratios.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--organisational-structure.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "btec-l3-diploma",
+      "course": "Pearson BTEC Level 3 National Diploma in Business (601/7157/1)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-diploma-in-business-601-7157-1--external-environment.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--cash-flow.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--break-even.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--pricing.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--promotion.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--financial-ratios.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--organisational-structure.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-diploma",
+      "course": "Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-diploma-in-business-601-7160-1--external-environment.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--cash-flow.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--break-even.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--pricing.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--promotion.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--stock.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--financial-ratios.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--motivation.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--organisational-structure.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--business-strategy.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--product-portfolio.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--external-environment.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--cash-flow.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--break-even.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--pricing.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--promotion.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--stock.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--financial-ratios.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--motivation.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--organisational-structure.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--product-portfolio.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--external-environment.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--cash-flow.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--break-even.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--pricing.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--promotion.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--stock.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--financial-ratios.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--motivation.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--organisational-structure.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--business-strategy.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--product-portfolio.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--external-environment.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--cash-flow.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--break-even.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--pricing.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--promotion.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--stock.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--financial-ratios.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--motivation.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--product-portfolio.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--external-environment.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--cash-flow.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--break-even.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--pricing.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--promotion.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--stock.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--financial-ratios.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--motivation.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--organisational-structure.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--business-strategy.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--product-portfolio.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--external-environment.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethical considerations",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--stakeholders-and-ethical-considerations.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "growth-scale",
+      "topic": "Expanding a business",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--expanding-a-business.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "external-environment",
+      "topic": "Influences on business",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--influences-on-business.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "stock",
+      "topic": "Procurement and stock",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--procurement-and-stock.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structures",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--organisational-structures.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment, selection and training",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--recruitment-selection-and-training.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "motivation",
+      "topic": "Motivating and retaining employees",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--motivating-and-retaining-employees.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "market-share",
+      "topic": "Segmentation and market share",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--segmentation-and-market-share.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "product-portfolio",
+      "topic": "Marketing mix: product",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--marketing-mix-product.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "pricing",
+      "topic": "Price",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--price.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--promotion.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--cash-flow.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Financial calculations: profit",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--financial-calculations-profit.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "break-even",
+      "topic": "Break-even (financial calculations)",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--break-even-financial-calculations.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "investment-appraisal",
+      "topic": "Financial calculations: ARR",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--financial-calculations-arr.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "financial-ratios",
+      "topic": "Analysing financial performance",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--analysing-financial-performance.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "leadership",
+      "topic": "Management and leadership",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--management-and-leadership.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and social responsibility",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--stakeholders-and-social-responsibility.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "market-share",
+      "topic": "Marketing objectives: market share",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--marketing-objectives-market-share.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "product-portfolio",
+      "topic": "Marketing mix: product",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--marketing-mix-product.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "pricing",
+      "topic": "Marketing mix: price",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--marketing-mix-price.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "promotion",
+      "topic": "Marketing mix: promotion",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--marketing-mix-promotion.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "production-capacity",
+      "topic": "Operational performance",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--operational-performance.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "stock",
+      "topic": "Managing inventory",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--managing-inventory.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "cash-flow",
+      "topic": "Improving cash flow",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--improving-cash-flow.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "break-even",
+      "topic": "Break-even (financial performance)",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--break-even-financial-performance.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "organisational-structure",
+      "topic": "Improving organisational design",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--improving-organisational-design.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "motivation",
+      "topic": "Improving motivation and engagement",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--improving-motivation-and-engagement.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "recruitment-training",
+      "topic": "Managing the human resource flow",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--managing-the-human-resource-flow.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "financial-ratios",
+      "topic": "Ratio analysis",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--ratio-analysis.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "external-environment",
+      "topic": "Analysing the external environment",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--analysing-the-external-environment.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "business-strategy",
+      "topic": "Strategic direction and positioning",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--strategic-direction-and-positioning.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "growth-scale",
+      "topic": "Assessing a change in scale",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--assessing-a-change-in-scale.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Forms of business and stakeholders",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--forms-of-business-and-stakeholders.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "market-share",
+      "topic": "Marketing management: market share",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--marketing-management-market-share.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "product-portfolio",
+      "topic": "Marketing management: product",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--marketing-management-product.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "pricing",
+      "topic": "Marketing management: price",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--marketing-management-price.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "promotion",
+      "topic": "Marketing management: promotion",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--marketing-management-promotion.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "production-capacity",
+      "topic": "Operations management: capacity",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--operations-management-capacity.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "stock",
+      "topic": "Operations management: inventory",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--operations-management-inventory.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Financial management: revenue, costs and profit",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "sources-of-finance",
+      "topic": "Financial management: sources of finance",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-sources-of-finance.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "cash-flow",
+      "topic": "Financial management: cash flow",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-cash-flow.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "break-even",
+      "topic": "Financial management: break-even",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-break-even.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--organisational-structure.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "motivation",
+      "topic": "People management: motivation",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--people-management-motivation.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "recruitment-training",
+      "topic": "People management: recruitment and training",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--people-management-recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "financial-ratios",
+      "topic": "Financial management: ratios",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-ratios.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "external-environment",
+      "topic": "Business and the external environment",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--business-and-the-external-environment.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "business-strategy",
+      "topic": "Strategy",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--strategy.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "investment-appraisal",
+      "topic": "Strategy: investment appraisal",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--strategy-investment-appraisal.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "growth-scale",
+      "topic": "Operations management: scale",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--operations-management-scale.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "market-share",
+      "topic": "Market segmentation",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--market-segmentation.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Business calculations",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--business-calculations.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "break-even",
+      "topic": "Revenues, costs and profits",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--revenues-costs-and-profits.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "cash-flow",
+      "topic": "Cash and cash flow",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--cash-and-cash-flow.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of business finance",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--sources-of-business-finance.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "external-environment",
+      "topic": "External influences",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--external-influences.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "product-portfolio",
+      "topic": "Product",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--product.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "pricing",
+      "topic": "Price",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--price.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--promotion.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "production-capacity",
+      "topic": "Business operations",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--business-operations.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "stock",
+      "topic": "Working with suppliers",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--working-with-suppliers.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "investment-appraisal",
+      "topic": "Business calculations: ARR",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--business-calculations-arr.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "financial-ratios",
+      "topic": "Business performance",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--business-performance.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structures",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--organisational-structures.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "recruitment-training",
+      "topic": "Effective recruitment and training",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--effective-recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--motivation.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "market-share",
+      "topic": "Market size and share",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--market-size-and-share.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "promotion",
+      "topic": "Branding and promotion",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--branding-and-promotion.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "pricing",
+      "topic": "Pricing strategies",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--pricing-strategies.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "product-portfolio",
+      "topic": "Marketing strategy",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--marketing-strategy.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment, selection and training",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--recruitment-selection-and-training.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational design",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--organisational-design.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "motivation",
+      "topic": "Motivation in theory and practice",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--motivation-in-theory-and-practice.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "leadership",
+      "topic": "Leadership",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--leadership.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "sources-of-finance",
+      "topic": "Internal and external finance",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--internal-and-external-finance.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "cash-flow",
+      "topic": "Cash-flow forecast",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--cash-flow-forecast.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Sales, revenue and costs",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--sales-revenue-and-costs.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--break-even.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "financial-ratios",
+      "topic": "Profit and liquidity",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--profit-and-liquidity.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "external-environment",
+      "topic": "External influences",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--external-influences.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "production-capacity",
+      "topic": "Productivity and capacity use",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--productivity-and-capacity-use.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "stock",
+      "topic": "Stock control",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--stock-control.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Shareholders, stakeholders and business ethics",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--shareholders-stakeholders-and-business-ethics.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "business-strategy",
+      "topic": "Theories of corporate strategy",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--theories-of-corporate-strategy.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "growth-scale",
+      "topic": "Growth and scale",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--growth-and-scale.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "market-share",
+      "topic": "Market size and share",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--market-size-and-share.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "promotion",
+      "topic": "Branding and promotion",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--branding-and-promotion.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "pricing",
+      "topic": "Pricing strategies",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--pricing-strategies.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "product-portfolio",
+      "topic": "Marketing strategy",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--marketing-strategy.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment, selection and training",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--recruitment-selection-and-training.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational design",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--organisational-design.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "motivation",
+      "topic": "Motivation in theory and practice",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--motivation-in-theory-and-practice.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "leadership",
+      "topic": "Leadership",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--leadership.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "sources-of-finance",
+      "topic": "Internal and external finance",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--internal-and-external-finance.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "cash-flow",
+      "topic": "Cash-flow forecast",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--cash-flow-forecast.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Sales, revenue and costs",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--sales-revenue-and-costs.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--break-even.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "financial-ratios",
+      "topic": "Profit and liquidity",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--profit-and-liquidity.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "external-environment",
+      "topic": "External influences",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--external-influences.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "production-capacity",
+      "topic": "Productivity and capacity use",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--productivity-and-capacity-use.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "stock",
+      "topic": "Stock control",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--stock-control.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Shareholders, stakeholders and business ethics",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--shareholders-stakeholders-and-business-ethics.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "business-strategy",
+      "topic": "Theories of corporate strategy",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--theories-of-corporate-strategy.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "growth-scale",
+      "topic": "Growth and scale",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--growth-and-scale.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "market-share",
+      "topic": "Market segmentation",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--market-segmentation.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Business calculations",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--business-calculations.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "break-even",
+      "topic": "Revenues, costs and profits",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--revenues-costs-and-profits.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "cash-flow",
+      "topic": "Cash and cash flow",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--cash-and-cash-flow.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of business finance",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--sources-of-business-finance.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "external-environment",
+      "topic": "External influences",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--external-influences.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "growth-scale",
+      "topic": "Business growth",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--business-growth.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "product-portfolio",
+      "topic": "Product",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--product.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "pricing",
+      "topic": "Price",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--price.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--promotion.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "production-capacity",
+      "topic": "Business operations",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--business-operations.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "stock",
+      "topic": "Working with suppliers",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--working-with-suppliers.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "investment-appraisal",
+      "topic": "Business calculations: ARR",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--business-calculations-arr.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "financial-ratios",
+      "topic": "Business performance",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--business-performance.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structures",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--organisational-structures.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "recruitment-training",
+      "topic": "Effective recruitment and training",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--effective-recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--motivation.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--cash-flow.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--break-even.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--pricing.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--promotion.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--financial-ratios.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--product-portfolio.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": true,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--external-environment.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--cash-flow.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--break-even.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--pricing.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--promotion.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--financial-ratios.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--motivation.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--organisational-structure.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--product-portfolio.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--cash-flow.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--break-even.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--pricing.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--promotion.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--stock.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--financial-ratios.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--motivation.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--organisational-structure.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--business-strategy.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--product-portfolio.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h431",
+      "course": "OCR A Level Business (H431)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "ocr-a-level-business-h431--external-environment.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--cash-flow.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--break-even.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--pricing.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--promotion.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--stock.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--financial-ratios.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--motivation.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--organisational-structure.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--product-portfolio.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--external-environment.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--cash-flow.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "break-even",
+      "topic": "Break-even analysis",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--break-even-analysis.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--pricing.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--promotion.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--stock.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "revenue-costs-profit",
+      "topic": "Costs and revenues",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--costs-and-revenues.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "financial-ratios",
+      "topic": "Profitability and liquidity ratio analysis",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--profitability-and-liquidity-ratio-analysis.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "growth-scale",
+      "topic": "Growth and evolution",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--growth-and-evolution.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "motivation",
+      "topic": "Motivation and demotivation",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--motivation-and-demotivation.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "organisational-structure",
+      "topic": "Organizational structure",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--organizational-structure.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--product-portfolio.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-hl--stakeholders.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--cash-flow.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "break-even",
+      "topic": "Break-even analysis",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--break-even-analysis.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--pricing.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--promotion.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "revenue-costs-profit",
+      "topic": "Costs and revenues",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--costs-and-revenues.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "financial-ratios",
+      "topic": "Profitability and liquidity ratio analysis",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--profitability-and-liquidity-ratio-analysis.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "growth-scale",
+      "topic": "Growth and evolution",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--growth-and-evolution.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "motivation",
+      "topic": "Motivation and demotivation",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--motivation-and-demotivation.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "organisational-structure",
+      "topic": "Organizational structure",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--organizational-structure.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--product-portfolio.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders",
+      "draft": true,
+      "file": "ib-diploma-programme-business-management-sl--stakeholders.pdf"
     }
   ]
 }
