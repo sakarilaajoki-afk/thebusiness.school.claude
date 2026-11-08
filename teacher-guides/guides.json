@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "madeFrom": "bs-multiplayer cddbcee5",
+  "madeFrom": "bs-multiplayer d3174b49",
   "guides": [
     {
       "courseId": "btec-l3-extended-certificate",
@@ -3057,6 +3057,198 @@
       "topic": "Stakeholders",
       "draft": true,
       "file": "ib-diploma-programme-business-management-sl--stakeholders.pdf"
+    },
+    {
+      "courseId": "ncca-jc-business-studies",
+      "course": "Junior Cycle Business Studies (NCCA)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "junior-cycle-business-studies-ncca--no-topic.pdf"
+    },
+    {
+      "courseId": "ncca-jc-business-studies",
+      "course": "Junior Cycle Business Studies (NCCA)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow and budgets",
+      "draft": true,
+      "file": "junior-cycle-business-studies-ncca--cash-flow-and-budgets.pdf"
+    },
+    {
+      "courseId": "ncca-jc-business-studies",
+      "course": "Junior Cycle Business Studies (NCCA)",
+      "topicId": "pricing",
+      "topic": "Marketing mix: price",
+      "draft": true,
+      "file": "junior-cycle-business-studies-ncca--marketing-mix-price.pdf"
+    },
+    {
+      "courseId": "ncca-jc-business-studies",
+      "course": "Junior Cycle Business Studies (NCCA)",
+      "topicId": "promotion",
+      "topic": "Marketing mix: promotion",
+      "draft": true,
+      "file": "junior-cycle-business-studies-ncca--marketing-mix-promotion.pdf"
+    },
+    {
+      "courseId": "ncca-jc-business-studies",
+      "course": "Junior Cycle Business Studies (NCCA)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Final accounts",
+      "draft": true,
+      "file": "junior-cycle-business-studies-ncca--final-accounts.pdf"
+    },
+    {
+      "courseId": "ncca-jc-business-studies",
+      "course": "Junior Cycle Business Studies (NCCA)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "junior-cycle-business-studies-ncca--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "ncca-jc-business-studies",
+      "course": "Junior Cycle Business Studies (NCCA)",
+      "topicId": "financial-ratios",
+      "topic": "Analysing final accounts",
+      "draft": true,
+      "file": "junior-cycle-business-studies-ncca--analysing-final-accounts.pdf"
+    },
+    {
+      "courseId": "ncca-jc-business-studies",
+      "course": "Junior Cycle Business Studies (NCCA)",
+      "topicId": "stakeholders-ethics",
+      "topic": "An organisation and its community",
+      "draft": true,
+      "file": "junior-cycle-business-studies-ncca--an-organisation-and-its-community.pdf"
+    },
+    {
+      "courseId": "ncca-jc-business-studies",
+      "course": "Junior Cycle Business Studies (NCCA)",
+      "topicId": "external-environment",
+      "topic": "Economic indicators",
+      "draft": true,
+      "file": "junior-cycle-business-studies-ncca--economic-indicators.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--no-topic.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--cash-flow.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "break-even",
+      "topic": "Break-even analysis",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--break-even-analysis.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "pricing",
+      "topic": "Marketing mix: price",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--marketing-mix-price.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "promotion",
+      "topic": "Marketing mix: promotion",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--marketing-mix-promotion.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Final accounts",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--final-accounts.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "financial-ratios",
+      "topic": "Profitability and liquidity ratios",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--profitability-and-liquidity-ratios.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "growth-scale",
+      "topic": "Expansion",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--expansion.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "motivation",
+      "topic": "Motivating: motivation theories",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--motivating-motivation-theories.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "leadership",
+      "topic": "Leading: direction and delegation",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--leading-direction-and-delegation.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "organisational-structure",
+      "topic": "Organising: structure and span of control",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--organising-structure-and-span-of-control.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "recruitment-training",
+      "topic": "Human resource management",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--human-resource-management.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Social responsibilities of business",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--social-responsibilities-of-business.pdf"
+    },
+    {
+      "courseId": "ncca-lc-business",
+      "course": "Leaving Certificate Business (current syllabus)",
+      "topicId": "external-environment",
+      "topic": "Business and the economy",
+      "draft": true,
+      "file": "leaving-certificate-business-current-syllabus--business-and-the-economy.pdf"
     }
   ]
 }
