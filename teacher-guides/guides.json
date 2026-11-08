@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "madeFrom": "bs-multiplayer 37e7ee50",
+  "guides": [
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": true,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--cash-flow.pdf"
+    }
+  ]
+}
