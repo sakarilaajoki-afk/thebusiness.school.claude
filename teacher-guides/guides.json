@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "madeFrom": "bs-multiplayer d3174b49",
+  "madeFrom": "bs-multiplayer a8db2f89",
   "guides": [
     {
       "courseId": "btec-l3-extended-certificate",
@@ -1137,6 +1137,430 @@
       "topic": "External environment",
       "draft": false,
       "file": "wjec-gce-a-level-in-business-1510qs--external-environment.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--no-topic.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--cash-flow.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--break-even.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--pricing.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--promotion.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--stock.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--financial-ratios.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--motivation.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--organisational-structure.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--business-strategy.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--product-portfolio.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International AS & A Level Business (9609)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "cambridge-international-as-and-a-level-business-9609--external-environment.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--no-topic.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--cash-flow.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--break-even.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--pricing.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--promotion.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--stock.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--motivation.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--product-portfolio.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "sqa-n5-business-management",
+      "course": "SQA National 5 Business Management (C810 75)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "sqa-national-5-business-management-c810-75--external-environment.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--no-topic.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--cash-flow.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--pricing.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--promotion.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--stock.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--financial-ratios.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--motivation.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--organisational-structure.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--business-strategy.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--product-portfolio.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "sqa-higher-business-management",
+      "course": "SQA Higher Business Management (C810 76)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": false,
+      "file": "sqa-higher-business-management-c810-76--external-environment.pdf"
     },
     {
       "courseId": "aqa-gcse-8132",
