@@ -744,6 +744,54 @@
   </div>
 </section>
 
+<!-- LESSON MAP: every game lesson for a course on one page (owner 9.11.2026) -->
+<section id="lesson-map" style="padding:78px 0">
+  <style>
+    .lm-in{max-width:1160px;margin:0 auto;padding:0 24px}
+    .lm-head{text-align:center;max-width:760px;margin:0 auto 26px}
+    .lm-bar{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin:0 auto 26px}
+    .lm-bar select{font:600 18px/1.2 inherit;font-family:inherit;color:#0e2038;background:#fff;border:1px solid #c9d3df;border-radius:10px;padding:13px 16px;min-height:50px;max-width:100%}
+    .lm-bar a{display:inline-flex;align-items:center;font-weight:700;font-size:16px;padding:13px 24px;min-height:50px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff}
+    .lm-fig{margin:0 auto;max-width:900px;background:#fff;border:1px solid #dce3e9;border-radius:8px;overflow:hidden;box-shadow:0 18px 40px -32px rgba(18,35,63,.36)}
+    .lm-fig img{display:block;width:100%;height:auto;aspect-ratio:1588/2246}
+    @media(max-width:600px){.lm-bar select,.lm-bar a{width:100%;justify-content:center}}
+  </style>
+  <div class="lm-in rvl">
+    <div class="lm-head">
+      <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Lesson map</span>
+      <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0 0;line-height:1.15;letter-spacing:-.01em">Every game lesson for your course, on one page</h2>
+    </div>
+    <div class="lm-bar">
+      <select id="lm-course" aria-label="Your course">
+        <option value="aqa-gcse-8132">AQA GCSE Business 8132</option>
+        <option value="aqa-a-level-7132">AQA A-level Business 7132</option>
+        <option value="aqa-a-level-7138">AQA A-level Business 7138</option>
+        <option value="edexcel-gcse-1bs0" selected>Edexcel GCSE Business 1BS0</option>
+        <option value="edexcel-a-level-9bs0">Edexcel A level Business 9BS0</option>
+        <option value="edexcel-igcse-4bs1">Edexcel International GCSE Business 4BS1</option>
+        <option value="edexcel-ial-business">Edexcel International A level Business</option>
+        <option value="btec-tech-award-enterprise">BTEC Tech Award Enterprise</option>
+        <option value="btec-l3-national">BTEC National Business</option>
+        <option value="ocr-gcse-j204">OCR GCSE Business J204</option>
+        <option value="ocr-a-level-h431">OCR A Level Business H431</option>
+        <option value="ocr-a-level-h436">OCR A Level Business H436</option>
+        <option value="cambridge-igcse-0264">Cambridge IGCSE Business 0264</option>
+        <option value="cambridge-igcse-0450">Cambridge IGCSE Business Studies 0450</option>
+        <option value="ib-business-hl">IB Business Management HL</option>
+        <option value="ib-business-sl">IB Business Management SL</option>
+      </select>
+      <a id="lm-pdf" href="/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.pdf" download>Download the PDF</a>
+    </div>
+    <figure class="lm-fig">
+      <img id="lm-img" src="/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.jpg?v=20261110" width="1200" height="1697" loading="lazy" decoding="async" alt="Lesson map for Edexcel GCSE Business 1BS0: each topic of the specification with its game lessons" />
+    </figure>
+  </div>
+  <script>
+    (function(){var s=document.getElementById('lm-course'),i=document.getElementById('lm-img'),p=document.getElementById('lm-pdf');if(!s||!i||!p)return;
+      s.addEventListener('change',function(){var b='/assets/lesson-maps/lessonmap-'+s.value;i.src=b+'.jpg?v=20261110';i.alt='Lesson map for '+s.options[s.selectedIndex].text+': each topic with its game lessons';p.href=b+'.pdf';});})();
+  </script>
+</section>
+
 <!-- HOW TO USE IT: one lesson as a timeline (owner 23.10.2026) -->
 <section class="tbs-facet" style="padding:78px 0">
   <style>
