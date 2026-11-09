@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "madeFrom": "bs-multiplayer 61393569",
+  "madeFrom": "bs-multiplayer 21b5e6ef",
   "guides": [
     {
       "courseId": "btec-l3-extended-certificate",
@@ -2062,17 +2062,17 @@
       "courseId": "edexcel-gcse-1bs0",
       "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
       "topicId": "revenue-costs-profit",
-      "topic": "Business calculations",
+      "topic": "Revenues, costs and profits",
       "draft": false,
-      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--business-calculations.pdf"
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--revenues-costs-and-profits.pdf"
     },
     {
       "courseId": "edexcel-gcse-1bs0",
       "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
       "topicId": "break-even",
-      "topic": "Revenues, costs and profits",
+      "topic": "Break-even",
       "draft": false,
-      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--revenues-costs-and-profits.pdf"
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--break-even.pdf"
     },
     {
       "courseId": "edexcel-gcse-1bs0",
@@ -2542,17 +2542,17 @@
       "courseId": "edexcel-igcse-4bs1",
       "course": "Pearson Edexcel International GCSE in Business (4BS1)",
       "topicId": "revenue-costs-profit",
-      "topic": "Business calculations",
+      "topic": "Revenues, costs and profits",
       "draft": false,
-      "file": "pearson-edexcel-international-gcse-in-business-4bs1--business-calculations.pdf"
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--revenues-costs-and-profits.pdf"
     },
     {
       "courseId": "edexcel-igcse-4bs1",
       "course": "Pearson Edexcel International GCSE in Business (4BS1)",
       "topicId": "break-even",
-      "topic": "Revenues, costs and profits",
+      "topic": "Break-even",
       "draft": false,
-      "file": "pearson-edexcel-international-gcse-in-business-4bs1--revenues-costs-and-profits.pdf"
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--break-even.pdf"
     },
     {
       "courseId": "edexcel-igcse-4bs1",
