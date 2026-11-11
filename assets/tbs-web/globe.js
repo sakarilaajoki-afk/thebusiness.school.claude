@@ -1,5 +1,6 @@
 /* Homepage globe: a dot-matrix earth on a 2D canvas. Lines run from Lahti, where the game is made,
-   to Sydney, where it is engineered, and to the classrooms quoted on the page.
+   to Sydney, where it is engineered, to the classrooms quoted on the page,
+   and to countries where teachers have asked for a trial.
    The page template re-renders after load, so this waits for the canvas and re-attaches if it is replaced. */
 (function(){
 "use strict";
@@ -23,7 +24,13 @@ var MARKERS = [
   {v:ll(54.75,-6.61), kind:"school"},
   {v:ll(46.10,7.23),  kind:"school", text:"VERBIER", dx:-14, dy:16, right:true},
   {v:ll(44.43,26.10), kind:"school", text:"BUCHAREST", dx:14, dy:12},
-  {v:ll(29.37,47.98), kind:"school", text:"KUWAIT", dx:14, dy:10}
+  {v:ll(29.37,47.98), kind:"school", text:"KUWAIT", dx:14, dy:10},
+  {v:ll(53.35,-6.26), kind:"trial", text:"IRELAND", dx:-16, dy:6, right:true},
+  {v:ll(51.0,10.0),   kind:"trial", text:"GERMANY", dx:14, dy:-8},
+  {v:ll(38.72,-9.14), kind:"trial", text:"PORTUGAL", dx:-14, dy:12, right:true},
+  {v:ll(25.20,55.27), kind:"trial", text:"UAE", dx:14, dy:12},
+  {v:ll(0.35,32.58),  kind:"trial", text:"UGANDA", dx:14, dy:10},
+  {v:ll(13.75,100.5), kind:"trial", text:"THAILAND", dx:-14, dy:-12, right:true}
 ];
 function arc(a,b,n){
   var d = clamp(a[0]*b[0]+a[1]*b[1]+a[2]*b[2],-1,1), om = Math.acos(d), so = Math.sin(om), pts = new Float32Array((n+1)*3);
@@ -33,7 +40,7 @@ function arc(a,b,n){
   return pts;
 }
 var ARCS = [{p:arc(LAHTI,SYDNEY,72), amber:true, off:0}];
-MARKERS.forEach(function(m,i){ if(m.kind==="school") ARCS.push({p:arc(LAHTI,m.v,40), amber:false, off:.18*i}); });
+MARKERS.forEach(function(m,i){ if(m.kind==="school") ARCS.push({p:arc(LAHTI,m.v,40), amber:false, off:.18*i}); if(m.kind==="trial") ARCS.push({p:arc(LAHTI,m.v,48), amber:false, faint:true, off:.13*i}); });
 
 function Globe(canvas){
   var self=this; this.c=canvas; this.x=canvas.getContext("2d"); this.yaw=-.38; this.pitch=.42; this.vel=0; this.drag=false; this.t0=performance.now(); this.vis=true; this.dead=false;
@@ -91,15 +98,15 @@ Globe.prototype.draw=function(now){
     for(j=0;j<=m;j++){ px=p[3*j]; py=p[3*j+1]; pz=p[3*j+2];
       X=px*cyaw+pz*syaw; z1=-px*syaw+pz*cyaw; Y=py*cp-z1*sp; Z=py*sp+z1*cp;
       var vis=(Z>0||X*X+Y*Y>1.0)&&(j/m)<=ease, SX=cx+X*R, SY=cy-Y*R;
-      if(j>0&&vis&&lastVis){ var tj=j/m, dh=head-tj, al=.2+(dh>=0&&dh<.34?(1-dh/.34)*.8:0);
+      if(j>0&&vis&&lastVis){ var tj=j/m, dh=head-tj, al=(A.faint?.12:.2)+(dh>=0&&dh<.34?(1-dh/.34)*(A.faint?.5:.8):0);
         x.strokeStyle="rgba("+col+","+al.toFixed(3)+")"; x.lineWidth=(al>.4?2:1.1)*d; x.beginPath(); x.moveTo(lastX,lastY); x.lineTo(SX,SY); x.stroke(); }
       lastX=SX; lastY=SY; lastVis=vis; } }
   for(k=0;k<MARKERS.length;k++){ var M=MARKERS[k], v=M.v;
     X=v[0]*cyaw+v[2]*syaw; z1=-v[0]*syaw+v[2]*cyaw; Y=v[1]*cp-z1*sp; Z=v[1]*sp+z1*cp; if(Z<.06) continue;
-    var mx=cx+X*R, my=cy-Y*R, fade=clamp((Z-.06)/.3,0,1)*ease, mc=M.kind==="origin"?"240,181,61":"95,227,208";
-    var ph=((t*.6+k*.27)%1); x.strokeStyle="rgba("+mc+","+((1-ph)*.75*fade).toFixed(3)+")"; x.lineWidth=1.3*d; x.beginPath(); x.arc(mx,my,(4+ph*18)*d,0,6.2832); x.stroke();
+    var mx=cx+X*R, my=cy-Y*R, fade=clamp((Z-.06)/.3,0,1)*ease, mc=M.kind==="origin"?"240,181,61":M.kind==="trial"?"234,241,248":"95,227,208";
+    var ph=((t*.6+k*.27)%1); if(M.kind!=="trial"){ x.strokeStyle="rgba("+mc+","+((1-ph)*.75*fade).toFixed(3)+")"; x.lineWidth=1.3*d; x.beginPath(); x.arc(mx,my,(4+ph*18)*d,0,6.2832); x.stroke(); }
     x.fillStyle="rgba("+mc+","+fade.toFixed(3)+")"; x.shadowColor="rgba("+mc+",.9)"; x.shadowBlur=12*d;
-    if(M.kind==="origin"){ x.save(); x.translate(mx,my); x.rotate(.7854); x.fillRect(-4*d,-4*d,8*d,8*d); x.restore(); } else { x.fillRect(mx-3*d,my-3*d,6*d,6*d); }
+    if(M.kind==="origin"){ x.save(); x.translate(mx,my); x.rotate(.7854); x.fillRect(-4*d,-4*d,8*d,8*d); x.restore(); } else if(M.kind==="trial"){ x.shadowBlur=0; x.strokeStyle="rgba("+mc+","+fade.toFixed(3)+")"; x.lineWidth=1.6*d; x.strokeRect(mx-3*d,my-3*d,6*d,6*d); } else { x.fillRect(mx-3*d,my-3*d,6*d,6*d); }
     x.shadowBlur=0;
     if(M.text && Z>.3 && this.w>420){ var la3=clamp((Z-.3)/.25,0,1)*ease, ex=mx+M.dx*2.2*d, ey=my+M.dy*2.2*d;
       x.strokeStyle="rgba(234,241,248,"+(.45*la3).toFixed(3)+")"; x.lineWidth=1*d; x.beginPath(); x.moveTo(mx,my); x.lineTo(ex,ey); x.lineTo(ex+(M.right?-10:10)*d,ey); x.stroke();

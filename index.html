@@ -175,7 +175,7 @@
               <span style="width:7px;height:7px;border-radius:50%;background:#f0b53d;display:inline-block"></span>New: the lesson now runs step by step, so the whole class keeps up.
             </div>
           </sc-if>
-          <h1 style="font-weight:700;line-height:1.1;color:#fff;font-size:clamp(38px,4.7vw,58px);margin:16px 0 18px">The Business lesson your class asks to play again.</h1>
+          <h1 style="font-weight:700;line-height:1.1;color:#fff;font-size:clamp(38px,4.7vw,58px);margin:16px 0 18px">Bring your next Business lesson to life.</h1>
           <p style="font-size:clamp(16px,1.5vw,18.5px);color:#c9d5e8;max-width:520px">Students run rival firms in teams. They negotiate face to face, set prices, hire and manage cash, and watch the results live. Topic tasks follow your exam board. One lesson, nothing to install.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:28px">
             <a href="/trial/" style="display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:20px;padding:19px 38px;border-radius:12px;text-decoration:none;background:#0a6b73;color:#fff;border:1px solid transparent;box-shadow:0 8px 24px rgba(10,107,115,.35)" style-hover="background:#075158">Request a trial</a>
@@ -228,7 +228,7 @@
       <div style="text-align:center;max-width:860px;margin:0 auto">
         <div class="tbs-status" aria-label="Where it is made"><span>Made in Finland</span><span>Engineered in Australia</span><span>Data stored in the EU</span></div>
         <span style="font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#a9e6df;text-shadow:0 1px 12px rgba(4,16,31,.8)">A Level · GCSE · BTEC Business</span>
-        <h1 style="font-weight:700;line-height:1.08;color:#fff;font-size:clamp(42px,6.2vw,72px);margin:18px auto 0;max-width:900px;text-shadow:0 2px 16px rgba(4,16,31,.65)">The Business lesson your class asks to play again.</h1>
+        <h1 style="font-weight:700;line-height:1.08;color:#fff;font-size:clamp(42px,6.2vw,72px);margin:18px auto 0;max-width:900px;text-shadow:0 2px 16px rgba(4,16,31,.65)">Bring your next Business lesson to life.</h1>
         <p style="font-size:clamp(17.5px,1.9vw,21px);font-weight:500;color:#f0f4f8;max-width:680px;margin:24px auto 0;line-height:1.55;text-shadow:0 1px 7px rgba(4,16,31,.65)">Students run rival firms in teams. They negotiate face to face, set prices, hire and manage cash, and watch the results live. Topic tasks follow your exam board. One lesson, nothing to install.</p>
         <div class="tbs-chips">
           <sc-if value="{{ pilotBadge }}" hint-placeholder-val="{{ true }}"><span class="tbs-chip tbs-chip--live">New: the lesson now runs step by step, so the whole class keeps up.</span></sc-if>
@@ -517,6 +517,7 @@
     .gb-leg li{display:flex;align-items:center;gap:12px}
     .gb-leg i{flex:0 0 auto;width:9px;height:9px;background:#5fe3d0}
     .gb-leg i.o{background:#f0b53d;transform:rotate(45deg)}
+    .gb-leg i.t{background:transparent;border:2px solid #eaf1f8}
     .gb-drag{margin-top:16px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8ea3c4}
     .gb canvas{display:block;width:100%;height:600px;touch-action:pan-y;cursor:grab}
     @media(max-width:860px){.gb-in{grid-template-columns:1fr;gap:0}.gb-copy{padding:56px 0 0}.gb canvas{height:400px}.gb-drag{display:none}}
@@ -525,14 +526,15 @@
     <div class="gb-copy rvl">
       <span class="gb-k">Where it comes from</span>
       <h2>From Lahti to your classroom</h2>
-      <p>The game is made in Lahti, Finland, and engineered in Sydney with Appifest. The classrooms marked here are the ones quoted on this page, from Cumbria to Kuwait.</p>
+      <p>The game is made in Lahti, Finland, and engineered in Sydney with Appifest. Classes have played it from Cumbria to Kuwait, and teachers in Ireland, Germany, Portugal, the UAE, Uganda and Thailand have asked for a trial.</p>
       <ul class="gb-leg">
         <li><i class="o"></i>Made in Lahti, engineered in Sydney</li>
         <li><i></i>Classrooms quoted on this page</li>
+        <li><i class="t"></i>Teachers who have asked for a trial</li>
       </ul>
       <div class="gb-drag">Drag the globe</div>
     </div>
-    <canvas id="tbs-globe" aria-label="A rotating globe with lines from Lahti in Finland to Sydney and to the classrooms quoted on this page"></canvas>
+    <canvas id="tbs-globe" aria-label="A rotating globe with lines from Lahti in Finland to Sydney, to the classrooms quoted on this page and to countries where teachers have asked for a trial"></canvas>
   </div>
 </section>
 
@@ -1270,6 +1272,6 @@ class Component extends DCLogic {
 </script>
 <script>(function(){function o(){if(location.hash==="#feedback"){var d=document.getElementById("feedback");if(d){d.open=true;d.scrollIntoView();}}}window.addEventListener("hashchange",o);window.addEventListener("load",o);})();</script>
 <script src="/assets/tbs-web/howto.js?v=20261101"></script>
-<script src="/assets/tbs-web/globe.js?v=20261111"></script>
+<script src="/assets/tbs-web/globe.js?v=20261111b"></script>
 </body>
 </html>
