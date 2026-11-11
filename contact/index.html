@@ -29,7 +29,7 @@ a:hover{text-decoration:underline}
 .hd a{text-decoration:none}
 .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;white-space:nowrap}
 .brand b{width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em}
-.hlinks{display:flex;gap:22px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0}
+.hlinks{display:flex;gap:16px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0}
 .hlinks a{color:inherit;white-space:nowrap}
 .hlinks a:hover{color:#fff;text-decoration:none}
 .hcta{display:inline-flex;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;white-space:nowrap;background:#0a6b73;color:#fff}
@@ -37,7 +37,8 @@ a:hover{text-decoration:underline}
 .mtoggle:focus-visible ~ div .mburger{outline:2px solid #fff;outline-offset:2px}
 .mburger{display:none;width:44px;height:44px;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;place-items:center;color:#fff}
 .mmenu{display:none}
-@media(max-width:900px){
+.hd>div:not(.mmenu){max-width:1240px}
+@media(max-width:1240px){
   .hlinks,.hcta.desk{display:none}
   .mburger{display:grid}
   .mtoggle:checked ~ .mmenu{display:flex;flex-direction:column;gap:2px;background:#0e2038;border-top:1px solid rgba(255,255,255,.1);padding:10px 20px 22px}
@@ -82,9 +83,10 @@ main li{margin-bottom:7px}
     <nav>
       <a class="brand" href="/"><b>TBS</b> The Business School</a>
       <div class="hlinks">
+        <a href="/for-teachers/">For Teachers</a>
         <a href="/for-heads/">For Heads</a>
         <a href="/lesson-map/">Lesson map</a>
-        <a href="/for-teachers/">For Teachers</a>
+        <a href="/teacher-guides/">Topic guides</a>
         <a href="/curriculum-mapping/">Curriculum</a>
         <a href="/pricing/">Licensing</a>
         <a href="/resources/">Resources</a>
@@ -99,9 +101,10 @@ main li{margin-bottom:7px}
     </nav>
   </div>
   <div class="mmenu">
+    <a href="/for-teachers/">For Teachers</a>
     <a href="/for-heads/">For Heads</a>
     <a href="/lesson-map/">Lesson map</a>
-    <a href="/for-teachers/">For Teachers</a>
+    <a href="/teacher-guides/">Topic guides</a>
     <a href="/curriculum-mapping/">Curriculum</a>
     <a href="/pricing/">Licensing</a>
     <a href="/resources/">Resources</a>
