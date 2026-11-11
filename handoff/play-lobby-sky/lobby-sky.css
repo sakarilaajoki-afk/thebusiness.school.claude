@@ -1,0 +1,32 @@
+/* Earth behind the three screens before the game. Nothing here touches #screen-game, #screen-teacher, #screen-quiz or #screen-end. */
+html.tbs-sky #screen-login,html.tbs-sky #screen-waiting,html.tbs-sky #screen-host-lobby{background:#01030a url(images/lobby-sky/earth-bg.jpg) center bottom/cover no-repeat fixed !important}
+html.tbs-sky /* text that sits straight on the sky */
+#screen-login .login-wordmark__text,html.tbs-sky #screen-login #login-hero-title{color:#eef3f9 !important}
+html.tbs-sky #screen-login .login-header__tagline,html.tbs-sky #screen-login .login-hero__sub,html.tbs-sky #screen-login .sf-cafe-fallback{color:#b4c1d2 !important}
+html.tbs-sky #screen-login .login-hero__eyebrow{color:#7fe6d6 !important}
+html.tbs-sky #screen-login .login-footer{border-top-color:rgba(160,200,235,.18) !important}
+html.tbs-sky #screen-login .login-footer__line{color:#e3eaf3 !important;text-shadow:0 1px 6px rgba(0,0,0,.7)}
+html.tbs-sky #screen-login .login-pill{background:rgba(255,255,255,.07) !important;border-color:rgba(160,200,235,.25) !important;color:#c3cfdd !important}
+html.tbs-sky #screen-login .login-pill--live{color:#7fe6d6 !important;border-color:rgba(127,230,214,.45) !important}
+html.tbs-sky #screen-login .login-pill__dot{background:#7fe6d6 !important}
+html.tbs-sky /* TBS logo in place of the green tile */
+#screen-login .login-header__icon{width:62px !important;height:48px !important;background:url(images/lobby-sky/tbs-logo.png) center/contain no-repeat !important;border:0 !important;box-shadow:none !important}
+html.tbs-sky #screen-login .login-header__icon>*{display:none !important}
+html.tbs-sky /* cards sit in the middle of the screen */
+#screen-login .login-main{min-height:calc(100vh - 150px);display:flex;flex-direction:column;justify-content:center}
+html.tbs-sky #screen-login .sf-tile,html.tbs-sky #sf-pt-auth,html.tbs-sky #sf-pt-license,html.tbs-sky #sf-ps1,html.tbs-sky #sf-ps2{box-shadow:0 34px 70px -34px rgba(0,0,0,.8) !important}
+html.tbs-sky /* Set up the lesson: the same page as one white panel */
+#sf-pt-session-settings{background:transparent !important}
+html.tbs-sky #sf-pt-session-settings::before{content:"";position:fixed;left:50%;top:50%;width:min(1290px,calc(100vw - 48px));height:min(770px,calc(100vh - 48px));transform:translate(-50%,-50%);background:#fff;border-radius:16px;box-shadow:0 40px 80px -40px rgba(0,0,0,.85);z-index:-1}
+html.tbs-sky /* student waiting: the same content on a white card */
+#screen-waiting>div:first-child{background:#fff;border-radius:16px;padding:36px 24px 30px !important;box-shadow:0 40px 80px -40px rgba(0,0,0,.85)}
+html.tbs-sky /* teacher lobby: one white panel,html.tbs-sky full size from the start */
+#screen-host-lobby{align-items:center !important;justify-content:center !important}
+html.tbs-sky #screen-host-lobby>div:nth-child(1),html.tbs-sky #screen-host-lobby>div:nth-child(2),html.tbs-sky #screen-host-lobby>div:nth-child(3){width:min(1100px,calc(100vw - 48px)) !important;max-width:none !important;margin-left:auto !important;margin-right:auto !important;box-sizing:border-box !important;flex:0 0 auto !important}
+html.tbs-sky #screen-host-lobby>div:nth-child(1){border-radius:16px 16px 0 0;background:#d9ebeb !important}
+html.tbs-sky #screen-host-lobby>div:nth-child(2),html.tbs-sky #screen-host-lobby>div:nth-child(3){background:#fff !important;padding-left:56px !important;padding-right:56px !important}
+html.tbs-sky #screen-host-lobby>div:nth-child(3){border-radius:0 0 16px 16px;box-shadow:0 40px 80px -40px rgba(0,0,0,.85);padding-bottom:34px !important}
+html.tbs-sky #screen-host-lobby #lobby-list{min-height:230px;align-content:flex-start}
+html.tbs-sky #screen-host-lobby #game-pin-display{font-size:64px !important;line-height:1.15 !important}
+html.tbs-sky /* Set up the lesson covers the header,html.tbs-sky so the header rests while it is open */
+#screen-login:has(#sf-pt-session-settings:not([style*="display: none"])) .login-header{visibility:hidden}
