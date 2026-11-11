@@ -31,7 +31,7 @@
     .tick svg{width:34px;height:34px}
     .thanks h1{max-width:none;margin:0 0 16px;font-size:clamp(36px,4.4vw,54px);text-wrap:balance}
     .thanks .lead{margin:0 auto;max-width:620px;text-wrap:balance;color:#fff;font:500 clamp(19px,2vw,23px)/1.4 Inter,system-ui,sans-serif}
-    .thanks .from{margin:16px auto 0;max-width:560px;text-wrap:balance;color:var(--pale);font-size:16px;line-height:1.55}
+    .thanks .from{margin:16px auto 0;max-width:600px;text-wrap:balance;color:var(--pale);font-size:16px;line-height:1.55}
     .thanks .from b{color:#fff;font-weight:600;overflow-wrap:anywhere}
     .thanks .eyebrow{margin-top:54px}
     .while{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px;text-align:left}
@@ -78,7 +78,7 @@
       <div class="tick" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l4 4L19 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       <h1 id="thanks-title">Your request is in</h1>
       <p class="lead" id="thanks-lead">Your trial licence arrives by email within a few minutes.</p>
-      <p class="from" id="thanks-step">It comes from <b>support@thebusiness.school</b>. If you can’t see it, please check your junk folder. If you asked for a school licence, we’ll reply by email.</p>
+      <p class="from" id="thanks-step">It comes from <b>support@thebusiness.school</b>.<br>If you can’t see it, please check your junk folder.<br>If you asked for a school licence, we’ll reply by email.</p>
 
       <p class="eyebrow">While you wait</p>
       <div class="while">
@@ -100,11 +100,11 @@
       var step = document.getElementById('thanks-step');
       if (type === 'trial') {
         title.textContent = 'Your trial request is in';
-        step.innerHTML = 'It comes from <b>support@thebusiness.school</b>. If you can’t see it, please check your junk folder.';
+        step.innerHTML = 'It comes from <b>support@thebusiness.school</b>.<br>If you can’t see it, please check your junk folder.';
       } else if (type === 'licence') {
         title.textContent = 'Your licence request is in';
         lead.textContent = 'We’ll reply by email about a school licence for the full year.';
-        step.innerHTML = 'The reply comes from <b>support@thebusiness.school</b>. If you can’t see it, please check your junk folder.';
+        step.innerHTML = 'The reply comes from <b>support@thebusiness.school</b>.<br>If you can’t see it, please check your junk folder.';
       }
     })();
   </script>
