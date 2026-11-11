@@ -54,19 +54,26 @@ footer{border-top:1px solid #e3e9f1;padding:36px 0;color:#65728c;font-size:14px;
 footer .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
 footer a{color:#40506e;text-decoration:none;margin-right:18px}
 
-.pick{display:block;font-size:17px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#0a6b73;margin-bottom:10px}
-.course{width:100%;max-width:760px;font:600 19px/1.3 'Inter',system-ui,sans-serif;color:#0e2038;padding:15px 44px 15px 16px;border:1px solid #c9d3df;border-radius:10px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%230e2038' stroke-width='2'/%3E%3C/svg%3E") no-repeat right 16px center;-webkit-appearance:none;appearance:none}
-.sec .cname{font-size:clamp(24px,2.6vw,30px);font-weight:700;color:#0e2038;line-height:1.2;letter-spacing:-.01em;margin:34px 0 0;max-width:760px}
-.sec .cname .d{font-size:14px}
-.list{list-style:none;margin:18px 0 0;padding:0;max-width:760px;border-top:1px solid #e3e9f1}
-.list li{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid #e3e9f1}
+/* the course menu and the topic list, after the lesson map page */
+.lm-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+.lm-bar select{font:600 18px/1.2 'Inter',system-ui,sans-serif;color:#0e2038;background:#fff;border:1px solid #c9d3df;border-radius:10px;padding:13px 16px;min-height:54px;width:100%;max-width:660px}
+.tg{margin:0 auto;max-width:900px;background:#fff;border:1px solid #dce3e9;border-radius:14px;overflow:hidden;box-shadow:0 18px 40px -32px rgba(18,35,63,.36)}
+.list{list-style:none;margin:0;padding:0}
+.list li{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 24px;border-top:1px solid #e3e9f1}
+.list li:first-child{border-top:0}
 .list .t{flex:1;min-width:0;font-size:21px;font-weight:700;color:#0e2038;line-height:1.25}
-.list .d,.cname .d{display:inline-block;margin-left:10px;vertical-align:middle;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9a6a00;border:1px solid #e6c36a;border-radius:5px;padding:2px 7px}
-.dl{flex:none;display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:17px;padding:12px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff}
+.list .dh{padding:14px 24px;background:#fffaf0}
+.list .dh .d{margin-left:0}
+.list .d{display:inline-block;margin-left:12px;vertical-align:middle;font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8a5d00;background:#fdf3d7;border:1px solid #e6c36a;border-radius:6px;padding:2px 9px}
+.dl{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:132px;font-weight:700;font-size:17px;padding:12px 22px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff}
 .dl:hover{background:#075158}
-.empty{font-size:19px;color:#40506e;margin-top:24px}
-@media(max-width:860px){.sec{padding:54px 0}.hero{padding:48px 0 56px}}
-@media(max-width:600px){.list li{gap:12px;padding:14px 0}.list .t{font-size:19px}.dl{font-size:16px;padding:11px 14px}}
+.empty{font-size:19px;color:#40506e;padding:22px 24px}
+.panel{background:#0e2038;color:#fff;border-radius:20px;padding:48px 40px}
+.panel h2{color:#fff;margin-top:12px}
+.panel p{color:#d5e0ea;font-size:20px;max-width:700px;margin-bottom:12px}
+.panel .kick{color:#7fe0d7}
+@media(max-width:860px){.sec{padding:54px 0}.hero{padding:48px 0 56px}.panel{padding:32px 20px}}
+@media(max-width:600px){.list li,.list .dh{gap:12px;padding:14px 16px}.list .t{font-size:19px}.dl{font-size:16px;min-width:0;padding:11px 16px}.panel .btn{width:100%;justify-content:center}}
 @media(max-width:420px){.wrap{padding:0 16px}}
 </style>
 </head>
@@ -98,18 +105,63 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
 <main>
 <section class="hero">
   <div class="wrap">
-    <span class="kick">Teacher guides</span>
+    <span class="kick">Teacher guides · GCSE, A level, IB and BTEC Business</span>
     <h1>Every lesson topic</h1>
-    <p class="lead">Pick your course, then open a topic. Each topic is a short PDF: the lesson, the tasks with answers, the final questions.</p>
+    <p class="lead">Pick your course, then open a topic.</p>
+    <div class="lm-bar">
+      <select id="course" aria-label="Your course">
+        <option value="edexcel-gcse-1bs0">Pearson Edexcel GCSE (9-1) in Business (1BS0)</option>
+        <option value="aqa-gcse-8132">AQA GCSE Business (8132)</option>
+        <option value="aqa-a-level-7132">AQA A-level Business (7132)</option>
+        <option value="aqa-a-level-7138">AQA A-level Business (7138)</option>
+        <option value="edexcel-a-level-9bs0">Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)</option>
+        <option value="edexcel-igcse-4bs1">Pearson Edexcel International GCSE in Business (4BS1)</option>
+        <option value="edexcel-ial-business">Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)</option>
+        <option value="btec-tech-award-enterprise">Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)</option>
+        <option value="btec-l3-extended-certificate">Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)</option>
+        <option value="btec-l3-certificate">Pearson BTEC Level 3 National Certificate in Business (601/7155/8)</option>
+        <option value="btec-l3-diploma">Pearson BTEC Level 3 National Diploma in Business (601/7157/1)</option>
+        <option value="btec-l3-extended-diploma">Pearson BTEC Level 3 National Extended Diploma in Business (601/7160/1)</option>
+        <option value="ocr-gcse-j204">OCR GCSE (9-1) in Business (J204)</option>
+        <option value="ocr-a-level-h431">OCR A Level Business (H431)</option>
+        <option value="ocr-a-level-h436">OCR A Level Business (H436)</option>
+        <option value="cambridge-igcse-0264">Cambridge IGCSE Business (0450 / 0264)</option>
+        <option value="ib-business-hl">IB Diploma Programme Business management HL</option>
+        <option value="ib-business-sl">IB Diploma Programme Business management SL</option>
+        <option value="eduqas-gcse-c510qs">WJEC Eduqas GCSE (9-1) in Business (C510QS)</option>
+        <option value="eduqas-a-level-a510qs">WJEC Eduqas GCE A Level in Business (A510QS)</option>
+        <option value="wjec-gcse-wales-2025">WJEC GCSE Business (C00/4967/2)</option>
+        <option value="wjec-a-level-1510qs">WJEC GCE A Level in Business (1510QS)</option>
+        <option value="sqa-n5-business-management">SQA National 5 Business Management (C810 75)</option>
+        <option value="sqa-higher-business-management">SQA Higher Business Management (C810 76)</option>
+        <option value="cambridge-as-a-level-9609">Cambridge International AS &amp; A Level Business (9609)</option>
+        <option value="ncca-jc-business-studies">Junior Cycle Business Studies (NCCA)</option>
+        <option value="ncca-lc-business">Leaving Certificate Business (current syllabus)</option>
+      </select>
+    </div>
   </div>
 </section>
-<section class="sec">
+
+<section class="sec" style="padding-top:44px">
   <div class="wrap">
-    <label class="pick" for="course">Your course</label>
-    <select id="course" class="course"><option value="">Choose your course</option></select>
-    <h2 class="cname" id="cname" hidden></h2>
-    <ul class="list" id="topics" aria-live="polite"></ul>
-    <noscript><p class="empty">Turn on JavaScript to see the guides.</p></noscript>
+    <div class="tg">
+      <ul class="list" id="topics" aria-live="polite"></ul>
+      <noscript><p class="empty">Turn on JavaScript to see the topics.</p></noscript>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="panel">
+      <span class="kick">Try it, then decide</span>
+      <h2>The trial is one live lesson</h2>
+      <p>Pick any topic for your trial.</p>
+      <div class="btns">
+        <a class="btn" href="/trial/">Request a trial</a>
+        <a class="btn ghost" href="/lesson-map/">See the lesson map</a>
+      </div>
+    </div>
   </div>
 </section>
 </main>
@@ -123,39 +175,42 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
 (function () {
   var select = document.getElementById('course');
   var list = document.getElementById('topics');
-  var cname = document.getElementById('cname');
   var guides = [];
+  /* The lesson map's course ids that have another id here. */
+  var ALIAS = { 'btec-l3-national': 'btec-l3-extended-certificate', 'cambridge-igcse-0450': 'cambridge-igcse-0264' };
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function has(id) { return !!id && Array.prototype.some.call(select.options, function (o) { return o.value === id; }); }
   function show() {
     var picked = select.value;
     try { if (picked) localStorage.setItem('tbs-guide-course', picked); } catch (e) {}
-    /* The course's topics, then the lesson without a topic last. The course
-       name is already in the menu, so it is not repeated. */
+    /* The course's topics, then the lesson without a topic last. */
     var rows = guides.filter(function (g) { return g.courseId === picked && g.topicId !== 'no-topic'; })
       .concat(guides.filter(function (g) { return g.courseId === picked && g.topicId === 'no-topic'; }));
-    cname.hidden = true;
-    list.innerHTML = rows.map(function (g) {
-      var name = g.topicId === 'no-topic' ? 'No topic (just play)' : g.topic;
-      return '<li><span class="t">' + esc(name) + (g.draft ? '<span class="d">Draft</span>' : '') + '</span>'
-        + '<a class="dl" href="pdf/' + encodeURIComponent(g.file) + '" target="_blank" rel="noopener" aria-label="View topic: ' + esc(g.topic) + ' (PDF)">View topic</a></li>';
+    /* A course that is all draft says so once, above its topics. */
+    var allDraft = rows.length > 0 && rows.every(function (g) { return g.draft; });
+    list.innerHTML = (allDraft ? '<li class="dh"><span class="d">Draft</span></li>' : '') + rows.map(function (g) {
+      var name = g.topicId === 'no-topic' ? 'No topic · play any time' : g.topic;
+      return '<li><span class="t">' + esc(name) + (g.draft && !allDraft ? '<span class="d">Draft</span>' : '') + '</span>'
+        + '<a class="dl" href="pdf/' + encodeURIComponent(g.file) + '" target="_blank" rel="noopener" aria-label="Open the PDF: ' + esc(name) + '">Open PDF</a></li>';
     }).join('');
   }
   fetch('guides.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (data) {
     guides = (data && data.guides) || [];
-    var seen = {};
+    /* A course the list above does not name yet still gets its place in the menu. */
     guides.forEach(function (g) {
-      if (seen[g.courseId]) return;
-      seen[g.courseId] = 1;
+      if (has(g.courseId)) return;
       var o = document.createElement('option');
       o.value = g.courseId; o.textContent = g.course;
       select.appendChild(o);
     });
-    var keep = '';
-    try { keep = localStorage.getItem('tbs-guide-course') || ''; } catch (e) {}
-    if (keep && seen[keep]) select.value = keep;
-    else if (select.options.length === 2) select.selectedIndex = 1;
+    /* A link's ?course= first, then the course picked last time, then the first course. */
+    var want = '';
+    try { want = new URLSearchParams(location.search).get('course') || ''; } catch (e) {}
+    want = ALIAS[want] || want;
+    if (!has(want)) { try { want = localStorage.getItem('tbs-guide-course') || ''; } catch (e) { want = ''; } }
+    if (has(want)) select.value = want; else select.selectedIndex = 0;
     show();
-  }).catch(function () { list.innerHTML = '<li><span class="t">The guides could not load. Please reload the page.</span></li>'; });
+  }).catch(function () { list.innerHTML = '<li><span class="t">The topics could not load. Please reload the page.</span></li>'; });
   select.addEventListener('change', show);
 })();
 </script>
