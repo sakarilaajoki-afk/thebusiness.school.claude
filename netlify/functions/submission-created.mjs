@@ -49,7 +49,15 @@ async function post(body, secret, fetchFn) {
   return response.status;
 }
 
-export const handler = async (event, _context, fetchFn = fetch) => {
+/* The fetch in use. Not a handler parameter: Netlify calls the handler with
+   (event, context, callback), so a third parameter is the Lambda callback,
+   never a fetch. With `fetchFn = fetch` there the callback was called as if it
+   were fetch, and every real submission answered 502 (found 11.11.2026 with
+   the first real form test; nothing reached the game). */
+let fetchFn = fetch;
+export function setFetch(fn) { fetchFn = fn || fetch; }
+
+export const handler = async (event) => {
   const secret = process.env.TRIAL_HOOK_SECRET;
   if (!secret) return { statusCode: 200, body: "trial hook is off" };
   let payload = null;
