@@ -85,6 +85,8 @@
           <input type="hidden" name="form-name" value="pilot-application">
           <input type="hidden" name="submission_type" id="submission-type" value="trial">
           <input type="hidden" name="source" value="trial-page">
+          <!-- Declared here so Netlify stores it: the US page (/us/trial/) posts to this same form and asks for the state. -->
+          <input type="hidden" name="state" value="">
           <p class="honeypot"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
           <h2 id="application-title">Request a trial or a licence</h2>
@@ -137,7 +139,7 @@
           <p class="micro">We’ll use these details only to reply about your request. <a href="/data-protection/">Privacy information</a>.</p>
         </form>
 
-        <div class="followup"><h2>What happens next?</h2><p>We’ll email you within 48 hours from <a href="mailto:support@thebusiness.school">support@thebusiness.school</a>. If you haven’t heard from us by then, please check your junk folder. You can also join our <a href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener noreferrer">Facebook group for Business teachers</a>.</p></div>
+        <div class="followup"><h2>What happens next?</h2><p>Your trial licence arrives by email within a few minutes, from <a href="mailto:support@thebusiness.school">support@thebusiness.school</a>. If you can’t see it, please check your junk folder. You can also join our <a href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener noreferrer">Facebook group for Business teachers</a>.</p></div>
       </div>
     </section>
   </main>
