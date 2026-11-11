@@ -48,7 +48,7 @@ a{color:#0a6b73}
 .mnav summary::-webkit-details-marker{display:none}
 .mnav>div{position:absolute;right:0;top:calc(100% + 10px);width:min(280px,calc(100vw - 40px));padding:12px 18px;background:#0e2038;border:1px solid #39506c;border-radius:7px;box-shadow:0 12px 28px rgba(5,19,36,.28)}
 .mnav a{display:block;padding:10px 2px;color:#eef3f8;text-decoration:none;font-size:15px}
-@media(max-width:900px){.links{display:none}.mnav{display:block}}
+@media(max-width:1000px){.links{display:none}.mnav{display:block}}
 @media(max-width:420px){.brand{font-size:15px}.brand img{height:36px}}
 /* hero */
 .hero{background:#0e2038;color:#fff;padding:64px 0 72px}
@@ -120,6 +120,7 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
       <a href="/for-teachers/">For Teachers</a>
       <a href="/for-heads/">For Heads</a>
       <a href="/lesson-map/">Lesson map</a>
+      <a href="/teacher-guides/">Topic guides</a>
       <a href="/resources/">Resources</a>
       <a href="/shop/">Shop</a>
       <a href="/trial/" class="cta">Request a trial</a>
@@ -130,6 +131,7 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
         <a href="/for-teachers/">For Teachers</a>
         <a href="/for-heads/">For Heads</a>
         <a href="/lesson-map/">Lesson map</a>
+        <a href="/teacher-guides/">Topic guides</a>
         <a href="/resources/">Resources</a>
         <a href="/shop/">Shop</a>
         <a href="/trial/">Request a trial</a>
@@ -141,10 +143,27 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
 <main>
 <style>
 .lm-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
-.lm-bar select{font:600 18px/1.2 inherit;font-family:inherit;color:#0e2038;background:#fff;border:1px solid #c9d3df;border-radius:10px;padding:13px 16px;min-height:54px;max-width:100%}
-.lm-fig{margin:0 auto;max-width:900px;background:#fff;border:1px solid #dce3e9;border-radius:8px;overflow:hidden;box-shadow:0 18px 40px -32px rgba(18,35,63,.36)}
-.lm-fig img{display:block;width:100%;height:auto;aspect-ratio:1588/2246}
-.lm-note{margin:22px auto 0;max-width:900px;font-size:clamp(18px,1.7vw,21px);color:#40506e}
+.lm-bar select{font:600 18px/1.2 'Inter',system-ui,sans-serif;color:#0e2038;background:#fff;border:1px solid #c9d3df;border-radius:10px;padding:13px 16px;min-height:54px;max-width:100%}
+.lm-two{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:clamp(30px,6vw,84px);align-items:start}
+.lm-copy{position:sticky;top:96px}
+.lm-copy .kick{color:#0a6b73}
+.lm-keys{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid #0e2038}
+.lm-keys li{display:grid;grid-template-columns:20px 1fr;gap:12px;padding:15px 0;border-bottom:1px solid #dce3e9;font-size:18px;color:#40506e}
+.lm-keys li::before{content:"";width:0;height:0;border-left:9px solid #0a6b73;border-top:6px solid transparent;border-bottom:6px solid transparent;margin-top:9px}
+.lm-keys b{color:#0e2038;font-weight:600}
+.lm-paper{position:relative;max-width:620px;margin:14px auto 0}
+.lm-paper::before,.lm-paper::after{content:"";position:absolute;inset:0;background:#fff;border:1px solid #dce3e9;box-shadow:0 16px 30px -24px rgba(14,32,56,.5)}
+.lm-paper::before{transform:rotate(-2.4deg) translate(-12px,10px)}
+.lm-paper::after{transform:rotate(1.7deg) translate(11px,7px)}
+.lm-fig{position:relative;z-index:1;margin:0;background:#fff;border:1px solid #dce3e9;box-shadow:0 44px 70px -44px rgba(14,32,56,.6);transform:rotate(-.6deg);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.lm-paper:hover .lm-fig{transform:none}
+.lm-fig img{display:block;width:100%;height:auto;aspect-ratio:1588/2246;transition:opacity .28s ease}
+.lm-fig.swap img{opacity:0}
+.lm-tab{position:absolute;z-index:2;left:22px;top:-13px;background:#0e2038;color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px}
+@media(max-width:900px){.lm-two{grid-template-columns:1fr}.lm-copy{position:static}}
+@media(max-width:700px){.lm-paper::before{transform:rotate(-1.2deg) translate(-4px,7px)}.lm-paper::after{transform:rotate(.9deg) translate(4px,5px)}}
+main{overflow-x:clip}
+@media(prefers-reduced-motion:reduce){.lm-fig,.lm-fig img{transition:none}}
 @media(max-width:600px){.lm-bar select,.lm-bar a{width:100%;justify-content:center}}
 </style>
 <section class="hero">
@@ -176,16 +195,30 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
   </div>
 </section>
 
-<section class="sec" style="padding-top:44px">
-  <div class="wrap">
-    <figure class="lm-fig">
-      <img id="lm-img" src="/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.jpg?v=20261110b" width="1588" height="2246" decoding="async" alt="Lesson map for Edexcel GCSE Business 1BS0: each topic of the specification with its game lessons" />
-    </figure>
-    <p class="lm-note">No topic lesson: play it any time in the year.</p>
+<section class="sec" style="padding-top:64px">
+  <div class="wrap lm-two">
+    <div class="lm-copy">
+      <span class="kick">How to read it</span>
+      <h2>Your specification on the left, the game lessons on the right</h2>
+      <ul class="lm-keys">
+        <li><span><b>Each green arrow is one game lesson.</b> Pick it by name when you start.</span></li>
+        <li><span><b>Each lesson is a new topic,</b> so your class can play again and again through the year.</span></li>
+        <li><span><b>No topic (just play):</b> the full game without topic tasks, as a business activity any time in the year.</span></li>
+      </ul>
+    </div>
+    <div class="lm-paper">
+      <span class="lm-tab">One page, ready to print</span>
+      <figure class="lm-fig">
+        <img id="lm-img" src="/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.jpg?v=20261110b" width="1588" height="2246" decoding="async" alt="Lesson map for Edexcel GCSE Business 1BS0: each topic of the specification with its game lessons" />
+      </figure>
+    </div>
   </div>
   <script>
     document.addEventListener('change',function(e){var s=e.target;if(!s||s.id!=='lm-course')return;var i=document.getElementById('lm-img'),p=document.getElementById('lm-pdf');if(!i||!p)return;
-      var b='/assets/lesson-maps/lessonmap-'+s.value;i.src=b+'.jpg?v=20261110b';i.alt='Lesson map for '+s.options[s.selectedIndex].text+': each topic with its game lessons';p.href=b+'.pdf';});
+      var b='/assets/lesson-maps/lessonmap-'+s.value,f=i.parentNode,t=s.options[s.selectedIndex].text;p.href=b+'.pdf';
+      var show=function(){f.classList.remove('swap');};
+      f.classList.add('swap');
+      setTimeout(function(){i.onload=show;i.src=b+'.jpg?v=20261110b';i.alt='Lesson map for '+t+': each topic with its game lessons';setTimeout(show,1200);},240);});
   </script>
 </section>
 

@@ -12,6 +12,13 @@ a{color:inherit}
 .nav nav a{text-decoration:none;white-space:nowrap}
 .nav nav a:hover{text-decoration:underline}
 .nav .nav-cta{padding:9px 15px;border-radius:9px;background:var(--teal);color:#fff}
+.mnav{display:none;position:relative}
+.mnav summary{list-style:none;cursor:pointer;color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:6px;padding:7px 12px;font-size:14px;font-weight:600}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav>div{position:absolute;right:0;top:calc(100% + 10px);width:min(280px,calc(100vw - 40px));padding:12px 18px;background:#0e2038;border:1px solid #39506c;border-radius:7px;box-shadow:0 12px 28px rgba(5,19,36,.28)}
+.mnav a{display:block;padding:10px 2px;color:#eef3f8;text-decoration:none;font-size:15px}
+.mnav a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1000px){.nav nav{display:none}.mnav{display:block}}
 .map-page{position:relative;isolation:isolate;overflow:hidden;background:var(--navy)}
 .map-page:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(14,32,56,.76) 0%,rgba(14,32,56,.84) 35%,rgba(14,32,56,.91) 100%),url('/assets/tbs-web/hero-map.png') center top/cover no-repeat}
 .hero .wrap{padding-top:82px;padding-bottom:45px}
@@ -56,7 +63,7 @@ fieldset{border:0;padding:0;margin:0}
 .followup p{margin:0;color:var(--pale)}
 footer{padding:28px 0;background:var(--navy);color:#a6b8ca;font-size:13px}
 @media(max-width:760px){.hero-grid{grid-template-columns:1fr;gap:28px}.film{max-width:420px}h1{font-size:clamp(40px,8vw,52px)}}
-@media(max-width:640px){.wrap{padding:0 18px}.nav nav a:not(.nav-cta){display:none}.nav{gap:10px}.brand{font-size:15px}.nav .nav-cta{padding:8px 9px;font-size:12px}.hero .wrap{padding-top:62px;padding-bottom:35px}.fields,.checks{grid-template-columns:1fr}.field.full{grid-column:auto}.followup{margin-top:46px}}
+@media(max-width:640px){.wrap{padding:0 18px}.nav{gap:10px}.brand{font-size:15px}.hero .wrap{padding-top:62px;padding-bottom:35px}.fields,.checks{grid-template-columns:1fr}.field.full{grid-column:auto}.followup{margin-top:46px}}
 @media(max-width:360px){.brand{font-size:13px}.logo{width:26px;height:26px}}
 /* What would you like? A free trial lesson or a school licence (owner 27.10.2026). */
 .want{margin:0 0 26px}

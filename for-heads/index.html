@@ -18,6 +18,21 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/assets/tbs-web/buttons.css?v=20261101">
 <link rel="stylesheet" href="/assets/tbs-web/theme.css?v=20261101">
+<style>
+/* Site header: plain CSS, no script (11.11.2026) */
+.tbsh-wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.tbsh-links{display:flex;gap:16px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0}
+.tbsh-links a{color:inherit;text-decoration:none;white-space:nowrap}
+.tbsh-links a:hover{color:#fff}
+.tbsh-links a.hcta{display:inline-flex;margin-left:8px;font-weight:600;font-size:14px;line-height:1.6;padding:10px 16px;border-radius:10px;background:#0a6b73;color:#fff}
+.tbsh-m{display:none;position:relative}
+.tbsh-m summary{list-style:none;cursor:pointer;color:#fff;border:1px solid rgba(255,255,255,.35);border-radius:6px;padding:7px 12px;font-size:14px;font-weight:600}
+.tbsh-m summary::-webkit-details-marker{display:none}
+.tbsh-m>div{position:absolute;right:0;top:calc(100% + 10px);width:min(280px,calc(100vw - 40px));max-height:calc(100vh - 90px);overflow-y:auto;padding:12px 18px;background:#0e2038;border:1px solid #39506c;border-radius:7px;box-shadow:0 12px 28px rgba(5,19,36,.28)}
+.tbsh-m a{display:block;padding:10px 2px;color:#eef3f8;text-decoration:none;font-size:15px}
+.tbsh-m a:hover{text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1240px){.tbsh-links{display:none}.tbsh-m{display:block}}
+</style>
 </head>
 <body>
 <x-dc>
@@ -35,53 +50,43 @@
 <div style="font-family:'Inter',system-ui,sans-serif;background:#fff;color:#16233f;line-height:1.6">
 
 <header style="position:sticky;top:0;z-index:50;background:#0e2038;border-bottom:1px solid rgba(255,255,255,.08);font-family:'Inter',system-ui,sans-serif">
-  <div style="max-width:1160px;margin:0 auto;padding:0 20px">
+  <div class="tbsh-wrap">
     <nav style="display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px">
       <a href="/" style="display:flex;align-items:center;gap:10px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:17px;color:#fff;text-decoration:none;white-space:nowrap">
         <span style="width:30px;height:30px;border-radius:8px;background:#fff;display:grid;place-items:center;color:#0e2038;font-family:'Inter',sans-serif;font-weight:700;font-size:12px;letter-spacing:.04em;flex:0 0 auto">TBS</span> The Business School
       </a>
-      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
-        <div style="display:flex;gap:24px;align-items:center;font-size:14.5px;font-weight:500;color:#c3cee0">
-          <a href="/for-heads/" style="color:inherit;text-decoration:none;white-space:nowrap">For Heads</a>
-          <a href="/for-teachers/" style="color:inherit;text-decoration:none;white-space:nowrap">For Teachers</a>
-          <a href="/lesson-map/" style="color:inherit;text-decoration:none;white-space:nowrap">Lesson map</a>
-          <a href="/curriculum-mapping/" style="color:inherit;text-decoration:none;white-space:nowrap">Curriculum</a>
-          <a href="/pricing/" style="color:inherit;text-decoration:none;white-space:nowrap">Licensing</a>
-          <a href="/resources/" style="color:inherit;text-decoration:none;white-space:nowrap">Resources</a>
-<a href="/shop/" style="color:inherit;text-decoration:none;white-space:nowrap">Shop</a>
-          <a href="/curriculum-faq/" style="color:inherit;text-decoration:none;white-space:nowrap">FAQ</a><a href="/about/" style="color:inherit;text-decoration:none;white-space:nowrap">About</a>
+      <div class="tbsh-links">
+        <a href="/for-teachers/">For Teachers</a>
+        <a href="/for-heads/">For Heads</a>
+        <a href="/lesson-map/">Lesson map</a>
+        <a href="/teacher-guides/">Topic guides</a>
+        <a href="/curriculum-mapping/">Curriculum</a>
+        <a href="/pricing/">Licensing</a>
+        <a href="/resources/">Resources</a>
+        <a href="/shop/">Shop</a>
+        <a href="/curriculum-faq/">FAQ</a>
+        <a href="/about/">About</a>
+        <a class="hcta" href="/trial/">Request a trial</a>
+      </div>
+      <details class="tbsh-m">
+        <summary>Menu</summary>
+        <div>
+          <a href="/for-teachers/">For Teachers</a>
+          <a href="/for-heads/">For Heads</a>
+          <a href="/lesson-map/">Lesson map</a>
+          <a href="/teacher-guides/">Topic guides</a>
+          <a href="/curriculum-mapping/">Curriculum</a>
+          <a href="/pricing/">Licensing</a>
+          <a href="/resources/">Resources</a>
+          <a href="/shop/">Shop</a>
+          <a href="/curriculum-faq/">FAQ</a>
+          <a href="/about/">About</a>
+          <a href="/trial/">Request a trial</a>
+          <a href="/for-heads/">Department case</a>
         </div>
-        <div style="display:flex;gap:10px;align-items:center">
-          <a href="/for-heads/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);color:#fff">Department case</a>
-          <a href="/trial/" style="display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:14px;padding:10px 16px;border-radius:10px;text-decoration:none;white-space:nowrap;background:#0a6b73;border:1px solid transparent;color:#fff" style-hover="background:#075158">Request a trial</a>
-        </div>
-      </sc-if>
-      <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
-        <button onClick="{{ toggleMenu }}" aria-label="Menu" style="display:grid;place-items:center;width:44px;height:44px;background:transparent;border:1px solid rgba(255,255,255,.25);border-radius:10px;cursor:pointer;color:#fff">
-          <sc-if value="{{ menuClosed }}" hint-placeholder-val="{{ true }}">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </sc-if>
-          <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </sc-if>
-        </button>
-      </sc-if>
+      </details>
     </nav>
   </div>
-  <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-    <div style="border-top:1px solid rgba(255,255,255,.1);background:#0e2038;padding:10px 20px 22px;display:flex;flex-direction:column;gap:2px">
-      <a href="/for-heads/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Heads</a>
-      <a href="/for-teachers/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">For Teachers</a>
-      <a href="/lesson-map/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Lesson map</a>
-      <a href="/curriculum-mapping/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Curriculum</a>
-      <a href="/pricing/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Licensing</a>
-      <a href="/resources/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Resources</a>
-<a href="/shop/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">Shop</a>
-      <a href="/curriculum-faq/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">FAQ</a><a href="/about/" style="color:#e8edf5;text-decoration:none;font-size:16px;font-weight:500;padding:13px 4px;border-bottom:1px solid rgba(255,255,255,.07)">About</a>
-      <a href="/trial/" style="margin-top:16px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff">Request a trial</a>
-      <a href="/for-heads/" style="margin-top:8px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;padding:14px 20px;border-radius:10px;text-decoration:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.25);color:#fff">Department case</a>
-    </div>
-  </sc-if>
 </header>
 
 

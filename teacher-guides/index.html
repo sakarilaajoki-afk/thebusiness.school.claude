@@ -32,7 +32,7 @@ a{color:#0a6b73}
 .mnav summary::-webkit-details-marker{display:none}
 .mnav>div{position:absolute;right:0;top:calc(100% + 10px);width:min(280px,calc(100vw - 40px));padding:12px 18px;background:#0e2038;border:1px solid #39506c;border-radius:7px;box-shadow:0 12px 28px rgba(5,19,36,.28)}
 .mnav a{display:block;padding:10px 2px;color:#eef3f8;text-decoration:none;font-size:15px}
-@media(max-width:900px){.links{display:none}.mnav{display:block}}
+@media(max-width:1000px){.links{display:none}.mnav{display:block}}
 @media(max-width:420px){.brand{font-size:15px}.brand img{height:36px}}
 /* hero */
 .hero{background:#0e2038;color:#fff;padding:64px 0 72px}
@@ -57,15 +57,28 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
 /* the course menu and the topic list, after the lesson map page */
 .lm-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
 .lm-bar select{font:600 18px/1.2 'Inter',system-ui,sans-serif;color:#0e2038;background:#fff;border:1px solid #c9d3df;border-radius:10px;padding:13px 16px;min-height:54px;width:100%;max-width:660px}
-.tg{margin:0 auto;max-width:900px;background:#fff;border:1px solid #dce3e9;border-radius:14px;overflow:hidden;box-shadow:0 18px 40px -32px rgba(18,35,63,.36)}
+.tg-paper{position:relative;max-width:860px;margin:14px auto 0}
+.tg-paper::before,.tg-paper::after{content:"";position:absolute;inset:0;background:#fff;border:1px solid #dce3e9;box-shadow:0 16px 30px -24px rgba(14,32,56,.5)}
+.tg-paper::before{transform:rotate(-1.1deg) translate(-10px,9px)}
+.tg-paper::after{transform:rotate(.8deg) translate(9px,6px)}
+@media(max-width:700px){.tg-paper::before{transform:rotate(-.6deg) translate(-3px,7px)}.tg-paper::after{transform:rotate(.5deg) translate(3px,5px)}.tg-head{padding:30px 16px 16px}}
+main{overflow-x:clip}
+.tg-tab{position:absolute;z-index:2;left:22px;top:-13px;background:#0e2038;color:#fff;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px}
+.tg{position:relative;z-index:1;background:#fff;border:1px solid #dce3e9;box-shadow:0 44px 70px -44px rgba(14,32,56,.6)}
+.tg-head{padding:34px 28px 18px;border-bottom:2px solid #0e2038;margin:0 0 0}
+.tg-head small{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#65728c}
+.tg-head b{display:block;font-size:clamp(20px,2.4vw,27px);font-weight:700;color:#0e2038;line-height:1.2;margin-top:6px;letter-spacing:-.01em}
+.list .n{flex:none;width:34px;font-size:14px;font-weight:700;color:#0a6b73;font-variant-numeric:tabular-nums}
+.list li{transition:background .2s}
+.list li:not(.dh):hover{background:#f3f8f8}
 .list{list-style:none;margin:0;padding:0}
 .list li{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 24px;border-top:1px solid #e3e9f1}
 .list li:first-child{border-top:0}
-.list .t{flex:1;min-width:0;font-size:21px;font-weight:700;color:#0e2038;line-height:1.25}
+.list .t{flex:1;min-width:0;font-size:20px;font-weight:600;color:#0e2038;line-height:1.25}
 .list .dh{padding:14px 24px;background:#fffaf0}
 .list .dh .d{margin-left:0}
 .list .d{display:inline-block;margin-left:12px;vertical-align:middle;font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8a5d00;background:#fdf3d7;border:1px solid #e6c36a;border-radius:6px;padding:2px 9px}
-.dl{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:132px;font-weight:700;font-size:17px;padding:12px 22px;border-radius:10px;text-decoration:none;background:#0a6b73;color:#fff}
+.dl{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:132px;font-weight:700;font-size:17px;padding:12px 22px;text-decoration:none;background:#0a6b73;color:#fff}
 .dl:hover{background:#075158}
 .empty{font-size:19px;color:#40506e;padding:22px 24px}
 .panel{background:#0e2038;color:#fff;border-radius:20px;padding:48px 40px}
@@ -85,6 +98,7 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
       <a href="/for-teachers/">For Teachers</a>
       <a href="/for-heads/">For Heads</a>
       <a href="/lesson-map/">Lesson map</a>
+      <a href="/teacher-guides/">Topic guides</a>
       <a href="/resources/">Resources</a>
       <a href="/shop/">Shop</a>
       <a href="/trial/" class="cta">Request a trial</a>
@@ -95,6 +109,7 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
         <a href="/for-teachers/">For Teachers</a>
         <a href="/for-heads/">For Heads</a>
         <a href="/lesson-map/">Lesson map</a>
+        <a href="/teacher-guides/">Topic guides</a>
         <a href="/resources/">Resources</a>
         <a href="/shop/">Shop</a>
         <a href="/trial/">Request a trial</a>
@@ -144,9 +159,13 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
 
 <section class="sec" style="padding-top:44px">
   <div class="wrap">
-    <div class="tg">
-      <ul class="list" id="topics" aria-live="polite"></ul>
-      <noscript><p class="empty">Turn on JavaScript to see the topics.</p></noscript>
+    <div class="tg-paper">
+      <span class="tg-tab">One PDF for each lesson</span>
+      <div class="tg">
+        <div class="tg-head"><small>Teacher guides</small><b id="tg-course">&nbsp;</b></div>
+        <ul class="list" id="topics" aria-live="polite"></ul>
+        <noscript><p class="empty">Turn on JavaScript to see the topics.</p></noscript>
+      </div>
     </div>
   </div>
 </section>
@@ -188,9 +207,10 @@ footer a{color:#40506e;text-decoration:none;margin-right:18px}
       .concat(guides.filter(function (g) { return g.courseId === picked && g.topicId === 'no-topic'; }));
     /* A course that is all draft says so once, above its topics. */
     var allDraft = rows.length > 0 && rows.every(function (g) { return g.draft; });
-    list.innerHTML = (allDraft ? '<li class="dh"><span class="d">Draft</span></li>' : '') + rows.map(function (g) {
+    var head = document.getElementById('tg-course'); if (head && select.selectedIndex >= 0) head.textContent = select.options[select.selectedIndex].text;
+    list.innerHTML = (allDraft ? '<li class="dh"><span class="d">Draft</span></li>' : '') + rows.map(function (g, k) {
       var name = g.topicId === 'no-topic' ? 'No topic · play any time' : g.topic;
-      return '<li><span class="t">' + esc(name) + (g.draft && !allDraft ? '<span class="d">Draft</span>' : '') + '</span>'
+      return '<li><span class="n">' + ('0' + (k + 1)).slice(-2) + '</span><span class="t">' + esc(name) + (g.draft && !allDraft ? '<span class="d">Draft</span>' : '') + '</span>'
         + '<a class="dl" href="pdf/' + encodeURIComponent(g.file) + '" target="_blank" rel="noopener" aria-label="Open the PDF: ' + esc(name) + '">Open PDF</a></li>';
     }).join('');
   }
