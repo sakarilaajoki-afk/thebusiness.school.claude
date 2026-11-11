@@ -503,41 +503,6 @@
   </div>
 </div></section>
 
-<!-- GLOBE: where it is made and the classrooms quoted on this page (owner 11.11.2026) -->
-<section class="gb" aria-label="Where it is made and where it has been played">
-  <style>
-    .gb{background:#0e2038;color:#fff;position:relative;overflow:hidden}
-    .gb::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(127,224,215,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(127,224,215,.07) 1px,transparent 1px);background-size:72px 72px;-webkit-mask-image:radial-gradient(ellipse 60% 80% at 25% 50%,#000,transparent 75%);mask-image:radial-gradient(ellipse 60% 80% at 25% 50%,#000,transparent 75%)}
-    .gb-in{position:relative;max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px;align-items:center}
-    .gb-copy{padding:70px 0}
-    .gb-k{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8ff0c4}
-    .gb h2{font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(28px,3.4vw,42px);margin:12px 0 16px;line-height:1.12;letter-spacing:-.01em}
-    .gb p{color:#c3cee0;font-size:17px;max-width:46ch}
-    .gb-leg{list-style:none;margin:24px 0 0;padding:18px 0 0;border-top:1px solid rgba(255,255,255,.14);display:grid;gap:10px;font-size:14.5px;color:#c3cee0}
-    .gb-leg li{display:flex;align-items:center;gap:12px}
-    .gb-leg i{flex:0 0 auto;width:9px;height:9px;background:#5fe3d0}
-    .gb-leg i.o{background:#f0b53d;transform:rotate(45deg)}
-    .gb-leg i.t{background:transparent;border:2px solid #eaf1f8}
-    .gb-drag{margin-top:16px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#8ea3c4}
-    .gb canvas{display:block;width:100%;height:600px;touch-action:pan-y;cursor:grab}
-    @media(max-width:860px){.gb-in{grid-template-columns:1fr;gap:0}.gb-copy{padding:56px 0 0}.gb canvas{height:400px}.gb-drag{display:none}}
-  </style>
-  <div class="gb-in">
-    <div class="gb-copy rvl">
-      <span class="gb-k">Where it comes from</span>
-      <h2>From Lahti to your classroom</h2>
-      <p>The game is made in Lahti, Finland, and engineered in Sydney with Appifest. Classes have played it from Cumbria to Kuwait, and teachers in Ireland, Germany, Portugal, the UAE, Uganda and Thailand have asked for a trial.</p>
-      <ul class="gb-leg">
-        <li><i class="o"></i>Made in Lahti, engineered in Sydney</li>
-        <li><i></i>Classrooms quoted on this page</li>
-        <li><i class="t"></i>Teachers who have asked for a trial</li>
-      </ul>
-      <div class="gb-drag">Drag the globe</div>
-    </div>
-    <canvas id="tbs-globe" aria-label="A rotating globe with lines from Lahti in Finland to Sydney, to the classrooms quoted on this page and to countries where teachers have asked for a trial"></canvas>
-  </div>
-</section>
-
 <!-- OUR STORY -->
 <section style="padding:78px 0">
   <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
@@ -1272,6 +1237,5 @@ class Component extends DCLogic {
 </script>
 <script>(function(){function o(){if(location.hash==="#feedback"){var d=document.getElementById("feedback");if(d){d.open=true;d.scrollIntoView();}}}window.addEventListener("hashchange",o);window.addEventListener("load",o);})();</script>
 <script src="/assets/tbs-web/howto.js?v=20261101"></script>
-<script src="/assets/tbs-web/globe.js?v=20261111b"></script>
 </body>
 </html>
