@@ -407,53 +407,12 @@
         window.addEventListener("load", setup);
       })();
     </script>
-    <!-- Owner 1.11.2026: the topic tasks film, a full-width row under film 01.
+    <!-- Owner 13.11.2026: the topic tasks film is off the page (it showed the old game; film 01 covers topic tasks).
          Owner 3.11.2026: the separate film for a class of 1 to 5 is gone (one
          game for 1 to 40), so film 01 takes the full width, as on the US page. -->
     <style>
     .films .motor-film{grid-column:1/-1}
-    .films .topicfilm{grid-column:1/-1;display:grid;grid-template-columns:2fr 1fr;grid-template-areas:"tag tag" "text video";column-gap:22px;margin:0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
-    .topicfilm .film-tag{grid-area:tag}
-    .topicfilm video{grid-area:video;display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0b2430}
-    .topicfilm>div:last-child{grid-area:text;align-self:center;padding:22px 28px}
-    .topicfilm h3{margin:0 0 8px;color:#fff;font-size:24px;line-height:1.2;font-family:'Fraunces',Georgia,serif;font-weight:600}
-    .topicfilm p{margin:0;color:#c3cee0;font-size:17px;line-height:1.5}
-    @media(max-width:900px){.films .topicfilm{grid-template-columns:1fr;grid-template-areas:"tag" "video" "text";row-gap:16px}.topicfilm>div:last-child{padding:0 20px 22px}.topicfilm h3{font-size:20px}.topicfilm p{font-size:15px}}
     </style>
-    <div class="topicfilm"><div class="film-tag"><span>Film 02</span><span>Topic tasks</span><span>1:15</span></div>
-      <video id="topic-film" poster="/assets/tbs-web/topic-tasks-film-v5-poster.jpg?v=20261110" preload="none" controls playsinline
-             width="1920" height="1080" aria-label="A one-minute film about topic tasks in the live lesson">
-        <source src="/assets/tbs-web/topic-tasks-film-v5-720p.mp4?v=20261101b" type="video/mp4" media="(max-width: 900px)">
-        <source src="/assets/tbs-web/topic-tasks-film-v5.mp4?v=20261101b" type="video/mp4">
-        Your browser cannot play this film. <a href="/assets/tbs-web/topic-tasks-film-v5.mp4?v=20261101b">Download it instead</a>.
-      </video>
-      <div>
-        <h3>Your exam topic, inside the lesson</h3>
-        <p>Pick your exam board and a topic; firms get topic tasks while they trade.</p>
-      </div>
-    </div>
-    <script>
-      /* Same as film 01: the template renderer strips valueless controls and
-         playsinline, so set them as properties until they stick. */
-      (function(){
-        var tries = 0;
-        function setup(){
-          var v = document.getElementById("topic-film");
-          if (!v) return false;
-          v.controls = true;
-          v.playsInline = true;
-          v.setAttribute("playsinline", "");
-          v.setAttribute("webkit-playsinline", "");
-          if (!v.dataset.tap) {
-            v.dataset.tap = "1";
-            v.addEventListener("click", function(){ if (v.paused) { var p = v.play(); if (p && p.catch) { p.catch(function(){}); } } });
-          }
-          return v.controls === true;
-        }
-        var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
-        window.addEventListener("load", setup);
-      })();
-    </script>
     </div>
   </div>
 </section>
