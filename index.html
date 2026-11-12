@@ -349,14 +349,14 @@
 <section class="filmband">
   <div class="wrap">
     <div class="films">
-    <figure class="motor-film"><figcaption class="film-tag"><span>Film 01</span><span>A class of 6 to 40</span><span>1:21</span></figcaption>
-      <video id="motor-film" poster="/assets/tbs-web/class-film-v1-poster.jpg?v=20261110" preload="metadata"
+    <figure class="motor-film"><figcaption class="film-tag"><span>Film 01</span><span>A class of 6 to 40</span><span>2:25</span></figcaption>
+      <video id="motor-film" poster="/assets/tbs-web/motor-film-v27-poster.jpg?v=20261113" preload="metadata"
              muted autoplay loop playsinline controls
              width="1920" height="1080"
-             aria-label="A short film of a live Motor Trade lesson, from sign in to the end of the session">
-        <source src="/assets/tbs-web/class-film-v1-720p.mp4?v=20261103calm" type="video/mp4" media="(max-width: 900px)">
-        <source src="/assets/tbs-web/class-film-v1.mp4?v=20261103calm" type="video/mp4">
-        Your browser cannot play this film. <a href="/assets/tbs-web/class-film-v1.mp4?v=20261103calm">Download it instead</a>.
+             aria-label="A film with sound, 2 minutes 25 seconds: a live Motor Trade lesson shown to teachers, from sign in to the end of the session">
+        <source src="/assets/tbs-web/motor-film-v27-720p.mp4?v=20261113" type="video/mp4" media="(max-width: 900px)">
+        <source src="/assets/tbs-web/motor-film-v27.mp4?v=20261113" type="video/mp4">
+        Your browser cannot play this film. <a href="/assets/tbs-web/motor-film-v27.mp4?v=20261113">Download it instead</a>.
       </video>
     </figure>
     <script>
@@ -370,28 +370,37 @@
          Playback is then tied to visibility rather than to page load: a browser
          will quietly pause an offscreen autoplaying video and never resume it,
          which left the film frozen on a poster halfway down the page. Reduced
-         motion opts out of all of it and just gets the poster and a button. */
+         motion opts out of all of it and just gets the poster and a button.
+
+         Film 01 has a voice (13.11.2026). It still starts silent and loops, but
+         once the visitor turns the sound on it is never muted again by this
+         script, it plays to the end card once and stops there. */
       (function(){
         var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
         var watching = false;
+        var heard = false;
         function setup(){
           var v = document.getElementById("motor-film");
           if (!v) return false;
-          v.muted = true;
+          if (!v.tbsSound) {
+            v.tbsSound = true;
+            v.addEventListener("volumechange", function(){ if (!v.muted) { heard = true; v.loop = false; } });
+          }
+          if (!heard) v.muted = true;
           v.controls = true;
           v.playsInline = true;
-          v.loop = !still;
+          v.loop = !still && !heard;
           if (still) { v.autoplay = false; v.removeAttribute("autoplay"); v.pause(); }
           else if (!watching && "IntersectionObserver" in window) {
             watching = true;
             new IntersectionObserver(function(entries){
               entries.forEach(function(e){
-                if (e.isIntersecting) { var p = v.play(); if (p && p.catch) { p.catch(function(){}); } }
+                if (e.isIntersecting) { if (v.ended) return; var p = v.play(); if (p && p.catch) { p.catch(function(){}); } }
                 else if (!v.paused) { v.pause(); }
               });
             }, {threshold: 0.25}).observe(v);
           }
-          return v.muted === true && v.controls === true && (still || watching);
+          return (v.muted === true || heard) && v.controls === true && (still || watching);
         }
         var tries = 0;
         var t = setInterval(function(){ if (setup() || ++tries > 25) clearInterval(t); }, 200);
