@@ -25,7 +25,14 @@ function render(force){
   list.innerHTML = html; list.setAttribute('data-course', id);
 }
 fetch('/teacher-guides/guides.json').then(function(r){ return r.json(); }).then(function(d){ guides = (d && d.guides) || []; render(true); }).catch(function(){ failed = true; render(true); });
-document.addEventListener('change', function(e){ if(e.target && e.target.id === 'lm-course') render(true); });
+/* The sheet fades out, swaps to the picked course and fades back, in step with the lesson map above. */
+document.addEventListener('change', function(e){
+  if(!e.target || e.target.id !== 'lm-course') return;
+  var sheet = document.querySelector('.tp-sheet');
+  if(!sheet || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)){ render(true); return; }
+  sheet.classList.add('swap');
+  setTimeout(function(){ render(true); sheet.classList.remove('swap'); }, 240);
+});
 var tries = 0;
 (function tick(){ render(false); setTimeout(tick, tries++ < 40 ? 500 : 3000); })();
 })();
