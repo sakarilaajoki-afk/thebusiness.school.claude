@@ -10,7 +10,8 @@ function render(force){
   if(!list || !sel) return;
   var picked = sel.value, id = ALIAS[picked] || picked;
   if(!force && list.getAttribute('data-course') === id && list.children.length) return;
-  var head = document.getElementById('tp-course'), all = document.getElementById('tp-all');
+  var head = document.getElementById('tp-title'), all = document.getElementById('tp-all'), own = document.getElementById('tp-course');
+  if(own && own.value !== picked) own.value = picked;
   if(head && sel.selectedIndex >= 0) head.textContent = sel.options[sel.selectedIndex].text;
   if(all) all.href = '/teacher-guides/?course=' + encodeURIComponent(picked);
   if(failed){ list.innerHTML = '<li><span class="t">The topics could not load. Open the full list instead.</span></li>'; list.setAttribute('data-course', id); return; }
@@ -27,7 +28,14 @@ function render(force){
 fetch('/teacher-guides/guides.json').then(function(r){ return r.json(); }).then(function(d){ guides = (d && d.guides) || []; render(true); }).catch(function(){ failed = true; render(true); });
 /* The sheet fades out, swaps to the picked course and fades back, in step with the lesson map above. */
 document.addEventListener('change', function(e){
+  /* The sheet has its own course picker. It drives the lesson map's picker, so both sheets always show one course. */
+  if(e.target && e.target.id === 'tp-course'){
+    var lm = document.getElementById('lm-course');
+    if(lm && lm.value !== e.target.value){ lm.value = e.target.value; lm.dispatchEvent(new Event('change', { bubbles: true })); }
+    return;
+  }
   if(!e.target || e.target.id !== 'lm-course') return;
+  var own = document.getElementById('tp-course'); if(own) own.value = e.target.value;
   var sheet = document.querySelector('.tp-sheet');
   if(!sheet || (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)){ render(true); return; }
   sheet.classList.add('swap');

@@ -579,6 +579,8 @@
     .tp-list .dl{flex:none;font-weight:700;font-size:14.5px;padding:8px 14px;text-decoration:none;color:#0a6b73;border:1px solid #0a6b73;transition:background .2s,color .2s}
     .tp-list .dl:hover{background:#0a6b73;color:#fff}
     .tp-list .more a{font-weight:700;font-size:15.5px;color:#0a6b73;text-decoration:none;padding:4px 0 4px 42px}
+    .tp-pick{margin:0 0 18px}
+    .tp-pick select{width:100%;max-width:460px;font:600 17px/1.2 inherit;font-family:inherit;color:#0e2038;background:#fff;border:1px solid #0e2038;padding:13px 16px;min-height:50px}
     .tp-copy p{font-size:17px;color:#40506e;margin:0 0 22px;max-width:44ch}
     @media(max-width:900px){.tp-in{grid-template-columns:1fr}.tp-copy{order:-1}}
     @media(max-width:700px){.tp-paper::before{transform:rotate(.8deg) translate(4px,7px)}.tp-paper::after{transform:rotate(-.6deg) translate(-4px,5px)}.tp-head{padding:30px 16px 14px}.tp-list li{padding:11px 16px;gap:10px}}
@@ -588,14 +590,34 @@
     <div class="tp-paper rvl">
       <span class="tp-tab">One PDF for each lesson</span>
       <div class="tp-sheet">
-        <div class="tp-head"><small>Teacher guides</small><b id="tp-course">Edexcel GCSE Business 1BS0</b></div>
+        <div class="tp-head"><small>Teacher guides</small><b id="tp-title">Edexcel GCSE Business 1BS0</b></div>
         <ul class="tp-list" id="tp-list" aria-live="polite"></ul>
       </div>
     </div>
     <div class="tp-copy rvl">
       <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">Lesson topics</span>
       <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0 14px;line-height:1.15;letter-spacing:-.01em">Every lesson topic, with a teacher guide to open</h2>
-      <p>The list follows the course you picked in the lesson map above. Open a topic to see its teacher guide as a PDF.</p>
+      <p>Pick your course. Open a topic to see its teacher guide as a PDF.</p>
+      <div class="tp-pick">
+        <select id="tp-course" aria-label="Your course">
+        <option value="edexcel-gcse-1bs0">Edexcel GCSE Business 1BS0</option>
+        <option value="aqa-gcse-8132">AQA GCSE Business 8132</option>
+        <option value="aqa-a-level-7132">AQA A-level Business 7132</option>
+        <option value="aqa-a-level-7138">AQA A-level Business 7138</option>
+        <option value="edexcel-a-level-9bs0">Edexcel A level Business 9BS0</option>
+        <option value="edexcel-igcse-4bs1">Edexcel International GCSE Business 4BS1</option>
+        <option value="edexcel-ial-business">Edexcel International A level Business</option>
+        <option value="btec-tech-award-enterprise">BTEC Tech Award Enterprise</option>
+        <option value="btec-l3-national">BTEC National Business</option>
+        <option value="ocr-gcse-j204">OCR GCSE Business J204</option>
+        <option value="ocr-a-level-h431">OCR A Level Business H431</option>
+        <option value="ocr-a-level-h436">OCR A Level Business H436</option>
+        <option value="cambridge-igcse-0264">Cambridge IGCSE Business 0264</option>
+        <option value="cambridge-igcse-0450">Cambridge IGCSE Business Studies 0450</option>
+        <option value="ib-business-hl">IB Business Management HL</option>
+        <option value="ib-business-sl">IB Business Management SL</option>
+      </select>
+      </div>
       <a id="tp-all" href="/teacher-guides/" style="display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:16px;padding:13px 24px;text-decoration:none;background:#0a6b73;color:#fff;border-radius:10px">See every lesson topic</a>
     </div>
   </div>
@@ -1132,6 +1154,6 @@ class Component extends DCLogic {
 </script>
 <script>(function(){function o(){if(location.hash==="#feedback"){var d=document.getElementById("feedback");if(d){d.open=true;d.scrollIntoView();}}}window.addEventListener("hashchange",o);window.addEventListener("load",o);})();</script>
 <script src="/assets/tbs-web/howto.js?v=20261101"></script>
-<script src="/assets/tbs-web/topics.js?v=20261115"></script>
+<script src="/assets/tbs-web/topics.js?v=20261115b"></script>
 </body>
 </html>
