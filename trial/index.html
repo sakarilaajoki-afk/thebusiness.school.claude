@@ -99,6 +99,7 @@
           <input type="hidden" name="form-name" value="pilot-application">
           <input type="hidden" name="submission_type" id="submission-type" value="trial">
           <input type="hidden" name="source" value="trial-page">
+          <input type="hidden" name="claim" id="claim" value="">
           <p class="honeypot"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
           <h2 id="application-title">Request a trial or a licence</h2>
@@ -165,11 +166,24 @@
       document.getElementById('qualification-group').setAttribute('aria-invalid', String(!chosen));
       return chosen;
     }
+    /* The thank-you screen shows the trial licence key as well (the email
+       can land in junk). A random code made here goes with the request; only
+       this browser holds it, and the thank-you page reads the key with it. */
+    const claimInput = document.getElementById('claim');
+    try {
+      const bytes = new Uint8Array(16);
+      crypto.getRandomValues(bytes);
+      claimInput.value = Array.from(bytes, function (b) { return b.toString(16).padStart(2, '0'); }).join('');
+    } catch (_) { claimInput.value = ''; }
     form.addEventListener('submit', function (event) {
       if (!checkQualifications()) {
         event.preventDefault();
         qualificationError.scrollIntoView({ block: 'center' });
+        return;
       }
+      try {
+        sessionStorage.setItem('tbs-trial-claim', JSON.stringify({ claim: claimInput.value, email: document.getElementById('school-email').value.trim(), at: Date.now() }));
+      } catch (_) {}
     });
     /* One choice decides what the request is: a free trial lesson or a school
        licence. The hidden submission_type follows it, and the thanks page says which. */
