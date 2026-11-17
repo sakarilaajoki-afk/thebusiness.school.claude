@@ -54,6 +54,15 @@ main h3{font-size:17px;font-weight:700;color:#1F2724;margin:22px 0 6px}
 main p{margin:0 0 14px}
 main ul{padding-left:24px;margin:0 0 14px}
 main li{margin-bottom:7px}
+.cform{margin:8px 0 34px}
+.cform .field{margin:0 0 16px}
+.cform label{display:block;font-weight:600;font-size:15px;margin:0 0 6px;color:#0e2038}
+.cform input,.cform textarea{width:100%;font:inherit;font-size:16px;color:#1F2724;background:#fff;border:1px solid #B9C5D6;border-radius:10px;padding:12px 14px}
+.cform textarea{min-height:150px;resize:vertical}
+.cform input:focus,.cform textarea:focus{outline:2px solid #0a6b73;outline-offset:1px;border-color:#0a6b73}
+.cform button{font:inherit;font-weight:600;font-size:16px;color:#fff;background:#0a6b73;border:0;border-radius:10px;padding:13px 26px;cursor:pointer}
+.cform button:hover{background:#085860}
+.cform .honeypot{position:absolute;left:-9999px}
 .callout{background:#F4F7F4;border:1px solid #DDE5E1;border-left:4px solid #0B3D2E;border-radius:12px;padding:18px 22px;margin:20px 0}
 .meta{font-size:13.5px;color:#55636B}
 .founder{display:flex;gap:26px;align-items:flex-start;flex-wrap:wrap;margin:26px 0}
@@ -124,11 +133,20 @@ main li{margin-bottom:7px}
 <main>
   <div class="wrap">
 
-    <h2 style="margin-top:0">Email</h2>
+    <h2 style="margin-top:0">Send us a message</h2>
+    <form class="cform" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact/thanks/">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="honeypot"><label>Leave this blank <input name="bot-field" type="text" tabindex="-1" autocomplete="off"></label></p>
+      <div class="field"><label for="c-email">Your email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label for="c-subject">Subject</label><input id="c-subject" name="subject" type="text" maxlength="140" required></div>
+      <div class="field"><label for="c-message">Message</label><textarea id="c-message" name="message" maxlength="5000" required></textarea></div>
+      <button type="submit">Send message</button>
+    </form>
+
+    <h2>Or email us</h2>
     <div class="callout">
       <p style="margin:0;font-size:18px"><b><a href="mailto:support@thebusiness.school">support@thebusiness.school</a></b></p>
     </div>
-    <p>One inbox for everything: support, purchases and refunds, trial and licence enquiries, data protection requests, and plain questions. You are writing to the team that builds the product, not a ticket queue.</p>
 
     <h2>What to include</h2>
     <ul>
