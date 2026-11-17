@@ -12,7 +12,8 @@
 
    Only the fields the licence and its email need leave this site: the name,
    the school email, the school, the country, the answer to "When could you
-   run a lesson?" and which of the two requests it is. Nothing is logged but
+   run a lesson?", which of the two requests it is, and the thank-you
+   screen's one-time code. Nothing is logged but
    the outcome. The form's own storage and email notification are untouched,
    so a submission is never lost here: if the game cannot be reached the owner
    still has it in Netlify Forms, and the game's own record shows it missing.
@@ -36,6 +37,8 @@ export function bodyFor(payload) {
     school: clean(data.school, 120),
     country: clean(data.country, 80),
     timing: clean(data.timing, 80),
+    /* The thank-you screen's one-time code (trial/index.html). */
+    claim: /^[a-f0-9]{32,64}$/.test(clean(data.claim, 64)) ? clean(data.claim, 64) : "",
   };
 }
 

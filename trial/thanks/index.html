@@ -42,6 +42,21 @@
     .while i{font-style:normal;color:var(--mint)}
     .reach{margin:44px 0 0;color:var(--pale);font-size:15px}
     .reach a{color:var(--mint);text-underline-offset:4px;overflow-wrap:anywhere}
+    /* The trial licence key, shown as soon as it is made. */
+    .keybox{margin:30px auto 0;max-width:560px;padding:26px 26px 24px;border:1px solid rgba(229,238,244,.28);border-top:2px solid var(--mint);background:rgba(10,20,38,.62);text-align:left}
+    .keybox[hidden]{display:none}
+    .keybox .label{margin:0;color:var(--mint);font:700 12px/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+    .keyrow{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:12px}
+    .keyrow code{color:#fff;font:600 clamp(26px,5.6vw,36px)/1.1 'Roboto Mono',ui-monospace,monospace;letter-spacing:.04em;white-space:nowrap}
+    .keyrow button{flex:none;padding:11px 20px;border:1px solid var(--mint);background:transparent;color:#fff;font:600 16px/1 Inter,system-ui,sans-serif;cursor:pointer}
+    .keyrow button:hover,.keyrow button:focus-visible{background:rgba(10,107,115,.5);outline:0}
+    .keybox .sent{margin:12px 0 0;color:var(--pale);font-size:16px;line-height:1.45;overflow-wrap:anywhere}
+    .keybox ol{margin:20px 0 0;padding:18px 0 0;border-top:1px solid rgba(229,238,244,.2);list-style:none;counter-reset:step}
+    .keybox li{position:relative;margin:0 0 10px;padding-left:34px;color:#fff;font-size:17px;line-height:1.45;counter-increment:step}
+    .keybox li::before{content:counter(step);position:absolute;left:0;top:0;color:var(--mint);font:600 19px/1.35 Fraunces,Georgia,serif}
+    .keybox a{color:var(--mint);text-underline-offset:4px}
+    .keybox .film{margin:16px 0 0;font-size:17px}
+    @media(max-width:480px){.keybox{padding:22px 18px 20px}.keyrow{flex-direction:column;align-items:flex-start}}
     @media(max-width:760px){.while{grid-template-columns:1fr}.thanks{padding-top:54px;padding-bottom:60px}.thanks .eyebrow{margin-top:42px}}
   </style>
   <link rel="stylesheet" href="/assets/tbs-web/buttons.css?v=20261101">
@@ -80,7 +95,19 @@
       <p class="lead" id="thanks-lead">Your trial licence arrives by email within a few minutes.</p>
       <p class="from" id="thanks-step">It comes from <b>support@thebusiness.school</b>.<br>If you can’t see it, please check your junk folder.<br>If you asked for a school licence, we’ll reply by email.</p>
 
-      <p class="eyebrow">While you wait</p>
+      <div class="keybox" id="keybox" hidden>
+        <p class="label" id="key-label">Your licence key</p>
+        <div class="keyrow"><code id="key-value"></code><button type="button" id="key-copy">Copy</button></div>
+        <p class="sent" id="key-sent" hidden></p>
+        <ol>
+          <li>Go to <a id="key-door" href="https://play.thebusiness.school/" target="_blank" rel="noopener noreferrer">play.thebusiness.school</a></li>
+          <li>Choose “I’m a Teacher” and paste the key</li>
+          <li>Students join with the PIN on your screen</li>
+        </ol>
+        <p class="film" id="key-film"><a href="/for-teachers/#teacher-tutorial">Watch the 3-minute teacher tutorial →</a></p>
+      </div>
+
+      <p class="eyebrow" id="while-label">While you wait</p>
       <div class="while">
         <a href="https://play.thebusiness.school/demo/group-classroom/" target="_blank" rel="noopener noreferrer"><b>Teacher Demo <i aria-hidden="true">→</i></b><span>See the lesson from the teacher’s side.</span></a>
         <a href="/teacher-guides/"><b>Topic guides <i aria-hidden="true">→</i></b><span>The tasks, the answers and the final questions for every topic.</span></a>
@@ -101,10 +128,55 @@
       if (type === 'trial') {
         title.textContent = 'Your trial request is in';
         step.innerHTML = 'It comes from <b>support@thebusiness.school</b>.<br>If you can’t see it, please check your junk folder.';
+        showKey();
       } else if (type === 'licence') {
         title.textContent = 'Your licence request is in';
         lead.textContent = 'We’ll reply by email about a school licence for the full year.';
         step.innerHTML = 'The reply comes from <b>support@thebusiness.school</b>.<br>If you can’t see it, please check your junk folder.';
+      }
+
+      /* The key on this screen (the email can land in junk). The form left a
+         one-time code in this tab; the game hands the key to that code only. */
+      function showKey() {
+        var held = null;
+        try { held = JSON.parse(sessionStorage.getItem('tbs-trial-claim') || 'null'); } catch (_) {}
+        if (!held || !/^[a-f0-9]{32}$/.test(held.claim || '') || Date.now() - (held.at || 0) > 25 * 60 * 1000) return;
+        var tries = 0;
+        function ask() {
+          tries += 1;
+          fetch('https://play.thebusiness.school/api/trial-licence-key', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ claim: held.claim })
+          }).then(function (r) { return r.ok ? r.json() : null; }).then(function (out) {
+            if (out && out.ready && /^TBS-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(out.key || '')) return fill(out);
+            if (out && out.emailOnly) return;
+            if (tries < 20) setTimeout(ask, 2000);
+          }).catch(function () { if (tries < 20) setTimeout(ask, 3000); });
+        }
+        function fill(out) {
+          document.getElementById('key-value').textContent = out.key;
+          title.textContent = 'Your trial licence is ready';
+          lead.hidden = true;
+          step.hidden = true;
+          document.getElementById('while-label').textContent = 'Before the lesson';
+          if (out.us) {
+            document.getElementById('key-label').textContent = 'Your license key';
+            var door = document.getElementById('key-door');
+            door.href = 'https://play.thebusiness.school/us'; door.textContent = 'play.thebusiness.school/us';
+            document.getElementById('key-film').hidden = true;
+          }
+          if (out.emailed && held.email) {
+            var sent = document.getElementById('key-sent');
+            sent.textContent = 'Also sent to ' + held.email;
+            sent.hidden = false;
+          }
+          var copy = document.getElementById('key-copy');
+          copy.addEventListener('click', function () {
+            var done = function () { copy.textContent = 'Copied'; setTimeout(function () { copy.textContent = 'Copy'; }, 2000); };
+            if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(out.key).then(done, function () {});
+          });
+          document.getElementById('keybox').hidden = false;
+        }
+        ask();
       }
     })();
   </script>
