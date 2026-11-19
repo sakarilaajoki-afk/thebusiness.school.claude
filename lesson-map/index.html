@@ -11,7 +11,7 @@
 <meta property="og:title" content="Lesson map | The Business School">
 <meta property="og:description" content="Every game lesson for your course, on one page.">
 <meta property="og:url" content="https://thebusiness.school/lesson-map/">
-<meta property="og:image" content="https://thebusiness.school/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.jpg?v=20261110b">
+<meta property="og:image" content="https://thebusiness.school/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.jpg?v=20261119a">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
@@ -190,7 +190,7 @@ main{overflow-x:clip}
         <option value="ib-business-hl">IB Business Management HL</option>
         <option value="ib-business-sl">IB Business Management SL</option>
       </select>
-      <a class="btn" id="lm-pdf" href="/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.pdf" download>Download the PDF</a>
+      <a class="btn" id="lm-pdf" href="/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.pdf?v=20261119a" download>Download the PDF</a>
     </div>
   </div>
 </section>
@@ -201,24 +201,24 @@ main{overflow-x:clip}
       <span class="kick">How to read it</span>
       <h2>Your specification on the left, the game lessons on the right</h2>
       <ul class="lm-keys">
-        <li><span><b>Each green arrow is one game lesson.</b> Pick it by name when you start.</span></li>
-        <li><span><b>Each lesson is a new topic,</b> so your class can play again and again through the year.</span></li>
+        <li><span><b>Each green arrow is a game topic.</b> Play it whole, or one numbered lesson.</span></li>
+        <li><span><b>No game lesson:</b> the game does not teach that part of your course.</span></li>
         <li><span><b>No topic (just play):</b> the full game without topic tasks, as a business activity any time in the year.</span></li>
       </ul>
     </div>
     <div class="lm-paper">
       <span class="lm-tab">One page, ready to print</span>
       <figure class="lm-fig">
-        <img id="lm-img" src="/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.jpg?v=20261110b" width="1588" height="2246" decoding="async" alt="Lesson map for Edexcel GCSE Business 1BS0: each topic of the specification with its game lessons" />
+        <img id="lm-img" src="/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.jpg?v=20261119a" width="1588" height="2246" decoding="async" alt="Lesson map for Edexcel GCSE Business 1BS0: each topic of the specification with its game lessons" />
       </figure>
     </div>
   </div>
   <script>
     document.addEventListener('change',function(e){var s=e.target;if(!s||s.id!=='lm-course')return;var i=document.getElementById('lm-img'),p=document.getElementById('lm-pdf');if(!i||!p)return;
-      var b='/assets/lesson-maps/lessonmap-'+s.value,f=i.parentNode,t=s.options[s.selectedIndex].text;p.href=b+'.pdf';
+      var b='/assets/lesson-maps/lessonmap-'+s.value,f=i.parentNode,t=s.options[s.selectedIndex].text;p.href=b+'.pdf?v=20261119a';
       var show=function(){f.classList.remove('swap');};
       f.classList.add('swap');
-      setTimeout(function(){i.onload=show;i.src=b+'.jpg?v=20261110b';i.alt='Lesson map for '+t+': each topic with its game lessons';setTimeout(show,1200);},240);});
+      setTimeout(function(){i.onload=show;i.src=b+'.jpg?v=20261119a';i.alt='Lesson map for '+t+': each topic with its game lessons';setTimeout(show,1200);},240);});
   </script>
 </section>
 
