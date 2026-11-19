@@ -1,0 +1,1546 @@
+{
+  "schemaVersion": 1,
+  "madeFrom": "bs-multiplayer ffb74de7",
+  "lessons": [
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-l3-extended-certificate",
+      "course": "Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "pearson-btec-level-3-national-extended-certificate-in-business-601-7159-5--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-a-level-h436",
+      "course": "OCR A Level Business (H436)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "ocr-a-level-business-h436--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "pricing",
+      "topic": "Price",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--price--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "pricing",
+      "topic": "Price",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--price--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Financial calculations: profit",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--financial-calculations-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Financial calculations: profit",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--financial-calculations-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "break-even",
+      "topic": "Break-even (financial calculations)",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--break-even-financial-calculations--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-gcse-8132",
+      "course": "AQA GCSE Business (8132)",
+      "topicId": "break-even",
+      "topic": "Break-even (financial calculations)",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "aqa-gcse-business-8132--break-even-financial-calculations--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "pricing",
+      "topic": "Marketing mix: price",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--marketing-mix-price--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "pricing",
+      "topic": "Marketing mix: price",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--marketing-mix-price--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "cash-flow",
+      "topic": "Improving cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--improving-cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "cash-flow",
+      "topic": "Improving cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--improving-cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "cash-flow",
+      "topic": "Improving cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--improving-cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "break-even",
+      "topic": "Break-even (financial performance)",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--break-even-financial-performance--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7132",
+      "course": "AQA A-level Business (7132)",
+      "topicId": "break-even",
+      "topic": "Break-even (financial performance)",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "aqa-a-level-business-7132--break-even-financial-performance--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "pricing",
+      "topic": "Marketing management: price",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--marketing-management-price--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "pricing",
+      "topic": "Marketing management: price",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--marketing-management-price--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Financial management: revenue, costs and profit",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Financial management: revenue, costs and profit",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "sources-of-finance",
+      "topic": "Financial management: sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "sources-of-finance",
+      "topic": "Financial management: sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "cash-flow",
+      "topic": "Financial management: cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "cash-flow",
+      "topic": "Financial management: cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "cash-flow",
+      "topic": "Financial management: cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "break-even",
+      "topic": "Financial management: break-even",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "aqa-a-level-7138",
+      "course": "AQA A-level Business (7138)",
+      "topicId": "break-even",
+      "topic": "Financial management: break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "aqa-a-level-business-7138--financial-management-break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenues, costs and profits",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--revenues-costs-and-profits--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenues, costs and profits",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--revenues-costs-and-profits--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "cash-flow",
+      "topic": "Cash and cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--cash-and-cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "cash-flow",
+      "topic": "Cash and cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--cash-and-cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "cash-flow",
+      "topic": "Cash and cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--cash-and-cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of business finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--sources-of-business-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of business finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--sources-of-business-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "pricing",
+      "topic": "Price",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--price--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-gcse-1bs0",
+      "course": "Pearson Edexcel GCSE (9-1) in Business (1BS0)",
+      "topicId": "pricing",
+      "topic": "Price",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "pearson-edexcel-gcse-9-1-in-business-1bs0--price--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "pricing",
+      "topic": "Pricing strategies",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--pricing-strategies--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "pricing",
+      "topic": "Pricing strategies",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--pricing-strategies--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "sources-of-finance",
+      "topic": "Internal and external",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--internal-and-external--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "sources-of-finance",
+      "topic": "Internal and external",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--internal-and-external--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Sales, revenue and costs",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--sales-revenue-and-costs--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Sales, revenue and costs",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--sales-revenue-and-costs--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-a-level-9bs0",
+      "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "pricing",
+      "topic": "Pricing strategies",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--pricing-strategies--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "pricing",
+      "topic": "Pricing strategies",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--pricing-strategies--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "sources-of-finance",
+      "topic": "Internal and external",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--internal-and-external--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "sources-of-finance",
+      "topic": "Internal and external",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--internal-and-external--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Sales, revenue and costs",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--sales-revenue-and-costs--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Sales, revenue and costs",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--sales-revenue-and-costs--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-ial-business",
+      "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenues, costs and profits",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--revenues-costs-and-profits--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenues, costs and profits",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--revenues-costs-and-profits--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "cash-flow",
+      "topic": "Cash and cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--cash-and-cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "cash-flow",
+      "topic": "Cash and cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--cash-and-cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "cash-flow",
+      "topic": "Cash and cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--cash-and-cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of business finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--sources-of-business-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of business finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--sources-of-business-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "pricing",
+      "topic": "Price",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--price--lesson-1.pdf"
+    },
+    {
+      "courseId": "edexcel-igcse-4bs1",
+      "course": "Pearson Edexcel International GCSE in Business (4BS1)",
+      "topicId": "pricing",
+      "topic": "Price",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "pearson-edexcel-international-gcse-in-business-4bs1--price--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-tech-award-enterprise",
+      "course": "Pearson BTEC Level 1/Level 2 Tech Award in Enterprise (603/7063/4)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "pearson-btec-level-1-level-2-tech-award-in-enterprise-603-7063-4--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "ocr-gcse-j204",
+      "course": "OCR GCSE (9-1) in Business (J204)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "ocr-gcse-9-1-in-business-j204--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "cambridge-igcse-0264",
+      "course": "Cambridge IGCSE Business (0450 / 0264)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "cambridge-igcse-business-0450-0264--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "break-even",
+      "topic": "Break-even analysis",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--break-even-analysis--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "break-even",
+      "topic": "Break-even analysis",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--break-even-analysis--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "revenue-costs-profit",
+      "topic": "Costs and revenues",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--costs-and-revenues--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "revenue-costs-profit",
+      "topic": "Costs and revenues",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--costs-and-revenues--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-hl",
+      "course": "IB Diploma Programme Business management HL",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-hl--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "break-even",
+      "topic": "Break-even analysis",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--break-even-analysis--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "break-even",
+      "topic": "Break-even analysis",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--break-even-analysis--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "revenue-costs-profit",
+      "topic": "Costs and revenues",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--costs-and-revenues--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "revenue-costs-profit",
+      "topic": "Costs and revenues",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--costs-and-revenues--lesson-2.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "ib-business-sl",
+      "course": "IB Diploma Programme Business management SL",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "ib-diploma-programme-business-management-sl--sources-of-finance--lesson-2.pdf"
+    }
+  ]
+}
