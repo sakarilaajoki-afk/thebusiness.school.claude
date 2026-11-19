@@ -119,6 +119,27 @@
       </div>
     </sc-for>
 
+    <div id="lessons" style="margin-top:44px;scroll-margin-top:80px">
+      <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(24px,2.6vw,30px);color:#0e2038;line-height:1.2;margin-bottom:8px">Topics and their lessons</h2>
+      <p style="font-size:17px;color:#40506e;max-width:720px;margin-bottom:6px">Play a whole topic, or one numbered lesson of it. Each lesson is shown with its Pearson specification point.</p>
+      <p style="font-size:15px;color:#40506e;max-width:720px;margin-bottom:18px"><b style="color:#075158">✓</b> Checked against the Pearson specification PDF, 19 November 2026. Other courses: <a href="/lesson-map/" style="color:#0a6b73;font-weight:600">lesson map</a>.</p>
+      <sc-for list="{{ lessonBoards }}" as="b" hint-placeholder-count="3">
+        <details style="border:1px solid #e3e9f1;border-radius:14px;background:#fff;margin-bottom:12px;overflow:hidden">
+          <summary style="list-style:none;cursor:pointer;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 16px;padding:16px 20px;background:#f6f8fb"><span style="font-weight:600;font-size:17px;color:#0e2038">{{ b.name }}</span><span style="font-size:15px;color:#40506e;white-space:nowrap">{{ b.count }} <span style="color:#0a6b73;font-size:20px;margin-left:6px">＋</span></span></summary>
+          <sc-for list="{{ b.topics }}" as="t" hint-placeholder-count="3">
+            <div style="display:flex;flex-wrap:wrap;gap:6px 20px;padding:12px 20px;border-top:1px solid #f0f3f8">
+              <div style="flex:0 1 240px;min-width:0;font-weight:600;font-size:16px;color:#0e2038;line-height:1.35">{{ t.name }}</div>
+              <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:6px">
+                <sc-for list="{{ t.lessons }}" as="l" hint-placeholder-count="2">
+                  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font-size:16px;color:#16233f;line-height:1.35"><span style="display:inline-grid;place-items:center;min-width:24px;height:24px;border-radius:12px;background:#e6f1f2;color:#075158;font-weight:700;font-size:14px">{{ l.n }}</span><span>{{ l.title }}</span><sc-if value="{{ l.code }}" hint-placeholder-val="{{ true }}"><span style="color:#075158;font-weight:700;font-size:15px;background:#e6f1f2;border-radius:6px;padding:2px 9px;white-space:nowrap">{{ l.code }}</span></sc-if></div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+        </details>
+      </sc-for>
+    </div>
+
     <div style="margin-top:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
       <div style="background:#f6f8fb;border:1px solid #e3e9f1;border-radius:14px;padding:26px">
         <h3 style="font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:19px;color:#0e2038;margin-bottom:8px">What the reports contain</h3>
@@ -197,6 +218,57 @@ class Component extends DCLogic {
           { label: "Final questions: six for each pupil on the topic", evidence: "Recorded: answers", topic: "the one you choose", code: "" },
         ]},
       ].map((t) => ({ ...t, rows: t.rows.map((r) => ({ ...r, meta: r.evidence + (r.topic ? " · Topic: " + r.topic : "") })) })),
+      /* LESSONS:BEGIN made by _spec-check/lesson-pages/build.js from the game's
+         topicChoices, lessonChoices and its lesson split (handoff/TUNNIT-JAKO-*). Do not edit by hand. */
+      lessonBoards: [{"name":"Pearson Edexcel GCSE Business (1BS0)","count":"17 topics · 35 lessons","topics":[{"name":"Market segmentation","lessons":[{"n":1,"title":"Market share","code":"1BS0 1.2.4 ✓"},{"n":2,"title":"Segmentation","code":"1BS0 1.2.3 ✓"}]},
+        {"name":"Revenues, costs and profits","lessons":[{"n":1,"title":"Revenue and costs","code":"1BS0 1.3.2 ✓"},{"n":2,"title":"Profit and loss","code":"1BS0 1.3.2 ✓"}]},
+        {"name":"Break-even","lessons":[{"n":1,"title":"Break-even point","code":"1BS0 1.3.2 ✓"},{"n":2,"title":"Margin of safety","code":""}]},
+        {"name":"Cash and cash flow","lessons":[{"n":1,"title":"Why cash matters","code":"1BS0 1.3.3 ✓"},{"n":2,"title":"Cash-flow forecast","code":""},{"n":3,"title":"Improving cash flow","code":"1BS0 1.3.4 ✓"}]},
+        {"name":"Sources of business finance","lessons":[{"n":1,"title":"Internal and external","code":"1BS0 1.3.4 ✓"},{"n":2,"title":"Choosing a source","code":""}]},
+        {"name":"Stakeholders and ethics","lessons":[{"n":1,"title":"Stakeholders","code":"1BS0 1.5.1 ✓"},{"n":2,"title":"Ethics and environment","code":""}]},
+        {"name":"External influences","lessons":[{"n":1,"title":"The economy","code":"1BS0 1.5.4 ✓"},{"n":2,"title":"Law and trade","code":"1BS0 1.5.3, 1.5.4 ✓"}]},
+        {"name":"Product","lessons":[{"n":1,"title":"Product life cycle","code":""},{"n":2,"title":"Extending the range","code":""}]},
+        {"name":"Price","lessons":[{"n":1,"title":"Pricing methods","code":"1BS0 2.2.2 ✓"},{"n":2,"title":"Influences on price","code":""}]},
+        {"name":"Promotion","lessons":[{"n":1,"title":"Promotion methods","code":"1BS0 2.2.3 ✓"},{"n":2,"title":"Promotion mix","code":""}]},
+        {"name":"Business operations","lessons":[{"n":1,"title":"Labour productivity","code":"1BS0 2.3.1 ✓"},{"n":2,"title":"Improving efficiency","code":""}]},
+        {"name":"Working with suppliers","lessons":[{"n":1,"title":"Stock levels","code":"1BS0 2.3.2 ✓"},{"n":2,"title":"Just in time","code":"1BS0 2.3.2 ✓"}]},
+        {"name":"Business calculations: ARR","lessons":[{"n":1,"title":"Average rate of return","code":"1BS0 2.4.1 ✓"},{"n":2,"title":"Choosing an investment","code":"1BS0 2.4.2 ✓"}]},
+        {"name":"Business performance","lessons":[{"n":1,"title":"Profit margins","code":"1BS0 2.4.1 ✓"},{"n":2,"title":"Judging performance","code":"1BS0 2.4.2 ✓"}]},
+        {"name":"Organisational structures","lessons":[{"n":1,"title":"Organisation charts","code":""},{"n":2,"title":"Choosing a structure","code":"1BS0 2.5.1 ✓"}]},
+        {"name":"Effective recruitment and training","lessons":[{"n":1,"title":"Recruitment","code":"1BS0 2.5.2 ✓"},{"n":2,"title":"Training","code":""}]},
+        {"name":"Motivation","lessons":[{"n":1,"title":"Financial methods","code":"1BS0 2.5.4 ✓"},{"n":2,"title":"Non-financial methods","code":""}]}]},
+        {"name":"Pearson Edexcel A Level Business (9BS0)","count":"20 topics · 41 lessons","topics":[{"name":"Market size and share","lessons":[{"n":1,"title":"Share and growth","code":"9BS0 1.1.1 ✓"},{"n":2,"title":"Segmentation","code":"9BS0 1.1.3 ✓"}]},
+        {"name":"Branding and promotion","lessons":[{"n":1,"title":"Promotional mix","code":"9BS0 1.3.2 ✓"},{"n":2,"title":"Measuring promotion","code":""}]},
+        {"name":"Pricing strategies","lessons":[{"n":1,"title":"Pricing strategies","code":"9BS0 1.3.3 ✓"},{"n":2,"title":"Price and demand","code":"9BS0 1.2.4 ✓"}]},
+        {"name":"Marketing strategy","lessons":[{"n":1,"title":"Product life cycle","code":"9BS0 1.3.5 ✓"},{"n":2,"title":"Portfolio analysis","code":"9BS0 1.3.5 ✓"}]},
+        {"name":"Recruitment, selection and training","lessons":[{"n":1,"title":"Workforce planning","code":"9BS0 1.4.1 ✓"},{"n":2,"title":"Hiring and training","code":"9BS0 1.4.2 ✓"}]},
+        {"name":"Organisational design","lessons":[{"n":1,"title":"Types of structure","code":""},{"n":2,"title":"Delegation and control","code":"9BS0 1.4.3 ✓"}]},
+        {"name":"Motivation in theory and practice","lessons":[{"n":1,"title":"Needs and motivation","code":"9BS0 1.4.4 ✓"},{"n":2,"title":"Motivation in practice","code":""}]},
+        {"name":"Leadership","lessons":[{"n":1,"title":"Managers and leaders","code":"9BS0 1.4.5 ✓"},{"n":2,"title":"Choosing a style","code":""}]},
+        {"name":"Internal and external","lessons":[{"n":1,"title":"Internal and external","code":"9BS0 2.1.1, 2.1.2 ✓"},{"n":2,"title":"Choosing finance","code":""}]},
+        {"name":"Cash flow","lessons":[{"n":1,"title":"Cash-flow forecasting","code":"9BS0 2.1.4 ✓"},{"n":2,"title":"Causes of cash problems","code":""},{"n":3,"title":"Improving cash flow","code":""}]},
+        {"name":"Sales, revenue and costs","lessons":[{"n":1,"title":"Costs and revenue","code":"9BS0 2.2.2 ✓"},{"n":2,"title":"Types of profit","code":"9BS0 2.3.1 ✓"}]},
+        {"name":"Break-even","lessons":[{"n":1,"title":"Contribution","code":"9BS0 2.2.3 ✓"},{"n":2,"title":"Margin of safety","code":""}]},
+        {"name":"Profit and liquidity","lessons":[{"n":1,"title":"Profitability ratios","code":"9BS0 3.5.2 ✓"},{"n":2,"title":"Liquidity ratios","code":"9BS0 2.3.2 ✓"}]},
+        {"name":"External influences","lessons":[{"n":1,"title":"Economic change","code":"9BS0 2.5.1 ✓"},{"n":2,"title":"Global trade","code":"9BS0 2.5.1 ✓"}]},
+        {"name":"Productivity and capacity use","lessons":[{"n":1,"title":"Productivity","code":"9BS0 2.4.1 ✓"},{"n":2,"title":"Capacity utilisation","code":"9BS0 2.4.2 ✓"}]},
+        {"name":"Stock control","lessons":[{"n":1,"title":"Inventory control","code":"9BS0 2.4.3 ✓"},{"n":2,"title":"Lean and JIT","code":""}]},
+        {"name":"Shareholders, stakeholders and business ethics","lessons":[{"n":1,"title":"Stakeholders","code":"9BS0 3.4.3 ✓"},{"n":2,"title":"Ethics and CSR","code":"9BS0 3.4.4 ✓"}]},
+        {"name":"Theories of corporate strategy","lessons":[{"n":1,"title":"Strategic direction","code":"9BS0 3.1.2 ✓"},{"n":2,"title":"Strategic positioning","code":"9BS0 3.1.2 ✓"}]},
+        {"name":"Growth and scale","lessons":[{"n":1,"title":"Economies of scale","code":"9BS0 3.2.1 ✓"},{"n":2,"title":"Methods of growth","code":"9BS0 3.2.2, 3.2.3 ✓"}]},
+        {"name":"Investment appraisal","lessons":[{"n":1,"title":"Payback and ARR","code":"9BS0 3.3.2 ✓"},{"n":2,"title":"Choosing an investment","code":""}]}]},
+        {"name":"Pearson BTEC Level 3 National Extended Certificate in Business (601/7159/5)","count":"11 topics · 23 lessons","topics":[{"name":"Cash flow","lessons":[{"n":1,"title":"Cash-flow forecasting","code":""},{"n":2,"title":"Causes of cash problems","code":""},{"n":3,"title":"Improving cash flow","code":""}]},
+        {"name":"Break-even","lessons":[{"n":1,"title":"Contribution","code":""},{"n":2,"title":"Margin of safety","code":"U3.E2"}]},
+        {"name":"Pricing","lessons":[{"n":1,"title":"Pricing strategies","code":""},{"n":2,"title":"Price and demand","code":""}]},
+        {"name":"Promotion","lessons":[{"n":1,"title":"Promotional mix","code":"U2.C2/C3 ✓"},{"n":2,"title":"Measuring promotion","code":"U2.C3 ✓"}]},
+        {"name":"Revenue, costs and profit","lessons":[{"n":1,"title":"Costs and revenue","code":""},{"n":2,"title":"Types of profit","code":"U3.F1/F3"}]},
+        {"name":"Sources of finance","lessons":[{"n":1,"title":"Internal and external","code":"U3.D1"},{"n":2,"title":"Choosing finance","code":""}]},
+        {"name":"Financial ratios","lessons":[{"n":1,"title":"Profitability ratios","code":"U3.F3 ✓"},{"n":2,"title":"Liquidity ratios","code":"U3.F4 ✓"}]},
+        {"name":"Market share and segmentation","lessons":[{"n":1,"title":"Share and growth","code":""},{"n":2,"title":"Segmentation","code":"U2 ✓"}]},
+        {"name":"Organisational structure","lessons":[{"n":1,"title":"Types of structure","code":"U1.B ✓"},{"n":2,"title":"Delegation and control","code":""}]},
+        {"name":"Stakeholders and ethics","lessons":[{"n":1,"title":"Stakeholders","code":"U1.A"},{"n":2,"title":"Ethics and CSR","code":""}]},
+        {"name":"External environment","lessons":[{"n":1,"title":"Economic change","code":"U1.C1 ✓"},{"n":2,"title":"Global trade","code":""}]}]}],
+      /* LESSONS:END */
     };
   }
 }

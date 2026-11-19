@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0e2038">
 <title>Every lesson topic | The Business School</title>
-<meta name="description" content="A PDF for each topic of your Business course: the lesson steps, the topic tasks with answers, and the final questions.">
+<meta name="description" content="A PDF for each topic of your Business course and for each of its lessons: the lesson steps, the topic tasks with answers, and the final questions.">
 <link rel="canonical" href="https://thebusiness.school/teacher-guides/">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
@@ -80,13 +80,18 @@ main{overflow-x:clip}
 .list .d{display:inline-block;margin-left:12px;vertical-align:middle;font-size:15px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#8a5d00;background:#fdf3d7;border:1px solid #e6c36a;border-radius:6px;padding:2px 9px}
 .dl{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:132px;font-weight:700;font-size:17px;padding:12px 22px;text-decoration:none;background:#0a6b73;color:#fff}
 .dl:hover{background:#075158}
+.list li.has{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:10px 16px}
+.ls{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:8px}
+.ls a{display:inline-flex;align-items:center;gap:8px;font-size:16px;font-weight:600;color:#0e2038;text-decoration:none;border:1px solid #c9d3df;border-radius:999px;padding:6px 14px 6px 6px;background:#fff;line-height:1.25}
+.ls a:hover{border-color:#0a6b73;background:#f3f8f8}
+.ls a b{flex:none;display:inline-grid;place-items:center;width:24px;height:24px;border-radius:12px;background:#e6f1f2;color:#075158;font-size:14px}
 .empty{font-size:19px;color:#40506e;padding:22px 24px}
 .panel{background:#0e2038;color:#fff;border-radius:20px;padding:48px 40px}
 .panel h2{color:#fff;margin-top:12px}
 .panel p{color:#d5e0ea;font-size:20px;max-width:700px;margin-bottom:12px}
 .panel .kick{color:#7fe0d7}
 @media(max-width:860px){.sec{padding:54px 0}.hero{padding:48px 0 56px}.panel{padding:32px 20px}}
-@media(max-width:600px){.list li,.list .dh{gap:12px;padding:14px 16px}.list .t{font-size:19px}.dl{font-size:16px;min-width:0;padding:11px 16px}.panel .btn{width:100%;justify-content:center}}
+@media(max-width:600px){.list li,.list .dh{gap:12px;padding:14px 16px}.list li.has{grid-template-columns:28px 1fr auto;gap:10px 12px}.ls{grid-column:1/-1}.ls a{font-size:15.5px}.list .t{font-size:19px}.dl{font-size:16px;min-width:0;padding:11px 16px}.panel .btn{width:100%;justify-content:center}}
 @media(max-width:420px){.wrap{padding:0 16px}}
 </style>
 </head>
@@ -122,7 +127,7 @@ main{overflow-x:clip}
   <div class="wrap">
     <span class="kick">Teacher guides · GCSE, A level, IB and BTEC Business</span>
     <h1>Every lesson topic</h1>
-    <p class="lead">Pick your course, then open a topic.</p>
+    <p class="lead">Pick your course, then open a whole topic or one of its lessons.</p>
     <div class="lm-bar">
       <select id="course" aria-label="Your course">
         <option value="edexcel-gcse-1bs0">Pearson Edexcel GCSE (9-1) in Business (1BS0)</option>
@@ -195,6 +200,7 @@ main{overflow-x:clip}
   var select = document.getElementById('course');
   var list = document.getElementById('topics');
   var guides = [];
+  var lessons = [];
   /* The lesson map's course ids that have another id here. */
   var ALIAS = { 'btec-l3-national': 'btec-l3-extended-certificate', 'cambridge-igcse-0450': 'cambridge-igcse-0264' };
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
@@ -210,11 +216,22 @@ main{overflow-x:clip}
     var head = document.getElementById('tg-course'); if (head && select.selectedIndex >= 0) head.textContent = select.options[select.selectedIndex].text;
     list.innerHTML = (allDraft ? '<li class="dh"><span class="d">Draft</span></li>' : '') + rows.map(function (g, k) {
       var name = g.topicId === 'no-topic' ? 'No topic · play any time' : g.topic;
-      return '<li><span class="n">' + ('0' + (k + 1)).slice(-2) + '</span><span class="t">' + esc(name) + (g.draft && !allDraft ? '<span class="d">Draft</span>' : '') + '</span>'
-        + '<a class="dl" href="pdf/' + encodeURIComponent(g.file) + '" target="_blank" rel="noopener" aria-label="Open the PDF: ' + esc(name) + '">Open PDF</a></li>';
+      /* The topic's numbered lessons, each with its own PDF (lesson-guides.json). */
+      var own = lessons.filter(function (l) { return l.courseId === picked && l.topicId === g.topicId; })
+        .sort(function (a, b) { return a.lesson - b.lesson; });
+      return '<li' + (own.length ? ' class="has"' : '') + '><span class="n">' + ('0' + (k + 1)).slice(-2) + '</span><span class="t">' + esc(name) + (g.draft && !allDraft ? '<span class="d">Draft</span>' : '') + '</span>'
+        + '<a class="dl" href="pdf/' + encodeURIComponent(g.file) + '" target="_blank" rel="noopener" aria-label="Open the PDF: ' + esc(name) + (own.length ? ', whole topic' : '') + '">' + (own.length ? 'Whole topic' : 'Open PDF') + '</a>'
+        + (own.length ? '<span class="ls">' + own.map(function (l) {
+          return '<a href="pdf/' + encodeURIComponent(l.file) + '" target="_blank" rel="noopener" aria-label="Open the PDF: ' + esc(name) + ', lesson ' + l.lesson + ', ' + esc(l.title) + '"><b>' + l.lesson + '</b>' + esc(l.title) + '</a>';
+        }).join('') + '</span>' : '') + '</li>';
     }).join('');
   }
-  fetch('guides.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (data) {
+  /* The lesson PDFs are extra: if they do not load, the topics still show. */
+  var lessonsLoad = fetch('lesson-guides.json', { cache: 'no-cache' }).then(function (r) { return r.json(); })
+    .then(function (data) { return (data && data.lessons) || []; }).catch(function () { return []; });
+  Promise.all([fetch('guides.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }), lessonsLoad]).then(function (both) {
+    var data = both[0];
+    lessons = both[1];
     guides = (data && data.guides) || [];
     /* A course the list above does not name yet still gets its place in the menu. */
     guides.forEach(function (g) {
