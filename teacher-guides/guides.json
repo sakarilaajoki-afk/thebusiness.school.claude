@@ -2262,17 +2262,17 @@
       "courseId": "edexcel-a-level-9bs0",
       "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
       "topicId": "sources-of-finance",
-      "topic": "Internal and external finance",
+      "topic": "Internal and external",
       "draft": false,
-      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--internal-and-external-finance.pdf"
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--internal-and-external.pdf"
     },
     {
       "courseId": "edexcel-a-level-9bs0",
       "course": "Pearson Edexcel Level 3 Advanced GCE in Business (9BS0)",
       "topicId": "cash-flow",
-      "topic": "Cash-flow forecast",
+      "topic": "Cash flow",
       "draft": false,
-      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--cash-flow-forecast.pdf"
+      "file": "pearson-edexcel-level-3-advanced-gce-in-business-9bs0--cash-flow.pdf"
     },
     {
       "courseId": "edexcel-a-level-9bs0",
@@ -2430,17 +2430,17 @@
       "courseId": "edexcel-ial-business",
       "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
       "topicId": "sources-of-finance",
-      "topic": "Internal and external finance",
+      "topic": "Internal and external",
       "draft": false,
-      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--internal-and-external-finance.pdf"
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--internal-and-external.pdf"
     },
     {
       "courseId": "edexcel-ial-business",
       "course": "Pearson Edexcel International Advanced Level in Business (XBS11 / YBS11)",
       "topicId": "cash-flow",
-      "topic": "Cash-flow forecast",
+      "topic": "Cash flow",
       "draft": false,
-      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--cash-flow-forecast.pdf"
+      "file": "pearson-edexcel-international-advanced-level-in-business-xbs11-ybs11--cash-flow.pdf"
     },
     {
       "courseId": "edexcel-ial-business",
