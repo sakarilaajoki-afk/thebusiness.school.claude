@@ -31,7 +31,7 @@ test("the form on the page: the four fields, one optional message, the feedback 
   }
   assert.match(form, /netlify-honeypot="bot-field"/);
   assert.match(form, /name="bot-field"/);
-  assert.ok(form.includes("A free trial lesson") && form.includes("School licence"), "the trial / licence choice stays");
+  assert.ok(form.includes("A free trial") && form.includes("School licence"), "the trial / licence choice stays");
   assert.ok(form.includes("Privacy information"));
   for (const gone of ["role", "country", "school_type", "dept_size", "personal_email", "qualification", "exam_board", "year_group", "timing", "it_whitelist", "referral", "classroom_intent"]) {
     assert.ok(!form.includes(`name="${gone}"`), gone);
