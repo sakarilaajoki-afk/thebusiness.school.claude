@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "madeFrom": "bs-multiplayer 14ef25eb",
+  "madeFrom": "bs-multiplayer bf4db4ae",
   "lessons": [
     {
       "courseId": "btec-l3-extended-certificate",
@@ -4901,6 +4901,3286 @@
       "title": "Ethics and CSR",
       "draft": false,
       "file": "ib-diploma-programme-business-management-sl--stakeholders--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "gcse-business--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "gcse-business--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "gcse-business--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "gcse-business--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "gcse-business--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "gcse-business--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "gcse-business--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 1,
+      "title": "Promotion methods",
+      "draft": false,
+      "file": "gcse-business--promotion--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 2,
+      "title": "Promotion mix",
+      "draft": false,
+      "file": "gcse-business--promotion--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 1,
+      "title": "Stock levels",
+      "draft": false,
+      "file": "gcse-business--stock--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 2,
+      "title": "Just in time",
+      "draft": false,
+      "file": "gcse-business--stock--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "gcse-business--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "gcse-business--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "gcse-business--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "gcse-business--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 1,
+      "title": "Average rate of return",
+      "draft": false,
+      "file": "gcse-business--investment-appraisal--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 2,
+      "title": "Choosing an investment",
+      "draft": false,
+      "file": "gcse-business--investment-appraisal--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 1,
+      "title": "Profit margins",
+      "draft": false,
+      "file": "gcse-business--financial-ratios--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 2,
+      "title": "Judging performance",
+      "draft": false,
+      "file": "gcse-business--financial-ratios--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 1,
+      "title": "Market share",
+      "draft": false,
+      "file": "gcse-business--market-share-and-segmentation--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 2,
+      "title": "Segmentation",
+      "draft": false,
+      "file": "gcse-business--market-share-and-segmentation--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 1,
+      "title": "Labour productivity",
+      "draft": false,
+      "file": "gcse-business--production-and-capacity--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 2,
+      "title": "Improving efficiency",
+      "draft": false,
+      "file": "gcse-business--production-and-capacity--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 1,
+      "title": "Methods of growth",
+      "draft": false,
+      "file": "gcse-business--growth-and-economies-of-scale--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 2,
+      "title": "Economies of scale",
+      "draft": false,
+      "file": "gcse-business--growth-and-economies-of-scale--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 1,
+      "title": "Financial methods",
+      "draft": false,
+      "file": "gcse-business--motivation--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 2,
+      "title": "Non-financial methods",
+      "draft": false,
+      "file": "gcse-business--motivation--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 1,
+      "title": "Leadership styles",
+      "draft": false,
+      "file": "gcse-business--leadership-and-management--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 2,
+      "title": "Choosing a style",
+      "draft": false,
+      "file": "gcse-business--leadership-and-management--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 1,
+      "title": "Organisation charts",
+      "draft": false,
+      "file": "gcse-business--organisational-structure--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 2,
+      "title": "Choosing a structure",
+      "draft": false,
+      "file": "gcse-business--organisational-structure--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 1,
+      "title": "Recruitment",
+      "draft": false,
+      "file": "gcse-business--recruitment-and-training--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 2,
+      "title": "Training",
+      "draft": false,
+      "file": "gcse-business--recruitment-and-training--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 1,
+      "title": "Ways to grow",
+      "draft": false,
+      "file": "gcse-business--business-strategy--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 2,
+      "title": "Competing with rivals",
+      "draft": false,
+      "file": "gcse-business--business-strategy--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 1,
+      "title": "Product life cycle",
+      "draft": false,
+      "file": "gcse-business--product-portfolio--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 2,
+      "title": "Extending the range",
+      "draft": false,
+      "file": "gcse-business--product-portfolio--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 1,
+      "title": "Stakeholders",
+      "draft": false,
+      "file": "gcse-business--stakeholders-and-ethics--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 2,
+      "title": "Ethics and environment",
+      "draft": false,
+      "file": "gcse-business--stakeholders-and-ethics--lesson-2.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 1,
+      "title": "The economy",
+      "draft": false,
+      "file": "gcse-business--external-environment--lesson-1.pdf"
+    },
+    {
+      "courseId": "gcse",
+      "course": "GCSE Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 2,
+      "title": "Law and trade",
+      "draft": false,
+      "file": "gcse-business--external-environment--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "international-gcse-business--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "international-gcse-business--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "international-gcse-business--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "international-gcse-business--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "international-gcse-business--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "international-gcse-business--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "international-gcse-business--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 1,
+      "title": "Promotion methods",
+      "draft": false,
+      "file": "international-gcse-business--promotion--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 2,
+      "title": "Promotion mix",
+      "draft": false,
+      "file": "international-gcse-business--promotion--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 1,
+      "title": "Stock levels",
+      "draft": false,
+      "file": "international-gcse-business--stock--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 2,
+      "title": "Just in time",
+      "draft": false,
+      "file": "international-gcse-business--stock--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "international-gcse-business--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "international-gcse-business--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "international-gcse-business--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "international-gcse-business--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 1,
+      "title": "Average rate of return",
+      "draft": false,
+      "file": "international-gcse-business--investment-appraisal--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 2,
+      "title": "Choosing an investment",
+      "draft": false,
+      "file": "international-gcse-business--investment-appraisal--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 1,
+      "title": "Profit margins",
+      "draft": false,
+      "file": "international-gcse-business--financial-ratios--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 2,
+      "title": "Judging performance",
+      "draft": false,
+      "file": "international-gcse-business--financial-ratios--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 1,
+      "title": "Market share",
+      "draft": false,
+      "file": "international-gcse-business--market-share-and-segmentation--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 2,
+      "title": "Segmentation",
+      "draft": false,
+      "file": "international-gcse-business--market-share-and-segmentation--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 1,
+      "title": "Labour productivity",
+      "draft": false,
+      "file": "international-gcse-business--production-and-capacity--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 2,
+      "title": "Improving efficiency",
+      "draft": false,
+      "file": "international-gcse-business--production-and-capacity--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 1,
+      "title": "Methods of growth",
+      "draft": false,
+      "file": "international-gcse-business--growth-and-economies-of-scale--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 2,
+      "title": "Economies of scale",
+      "draft": false,
+      "file": "international-gcse-business--growth-and-economies-of-scale--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 1,
+      "title": "Financial methods",
+      "draft": false,
+      "file": "international-gcse-business--motivation--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 2,
+      "title": "Non-financial methods",
+      "draft": false,
+      "file": "international-gcse-business--motivation--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 1,
+      "title": "Leadership styles",
+      "draft": false,
+      "file": "international-gcse-business--leadership-and-management--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 2,
+      "title": "Choosing a style",
+      "draft": false,
+      "file": "international-gcse-business--leadership-and-management--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 1,
+      "title": "Organisation charts",
+      "draft": false,
+      "file": "international-gcse-business--organisational-structure--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 2,
+      "title": "Choosing a structure",
+      "draft": false,
+      "file": "international-gcse-business--organisational-structure--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 1,
+      "title": "Recruitment",
+      "draft": false,
+      "file": "international-gcse-business--recruitment-and-training--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 2,
+      "title": "Training",
+      "draft": false,
+      "file": "international-gcse-business--recruitment-and-training--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 1,
+      "title": "Ways to grow",
+      "draft": false,
+      "file": "international-gcse-business--business-strategy--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 2,
+      "title": "Competing with rivals",
+      "draft": false,
+      "file": "international-gcse-business--business-strategy--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 1,
+      "title": "Product life cycle",
+      "draft": false,
+      "file": "international-gcse-business--product-portfolio--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 2,
+      "title": "Extending the range",
+      "draft": false,
+      "file": "international-gcse-business--product-portfolio--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 1,
+      "title": "Stakeholders",
+      "draft": false,
+      "file": "international-gcse-business--stakeholders-and-ethics--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 2,
+      "title": "Ethics and environment",
+      "draft": false,
+      "file": "international-gcse-business--stakeholders-and-ethics--lesson-2.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 1,
+      "title": "The economy",
+      "draft": false,
+      "file": "international-gcse-business--external-environment--lesson-1.pdf"
+    },
+    {
+      "courseId": "igcse",
+      "course": "International GCSE Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 2,
+      "title": "Law and trade",
+      "draft": false,
+      "file": "international-gcse-business--external-environment--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "btec-level-2-business--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "btec-level-2-business--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "btec-level-2-business--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "btec-level-2-business--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "btec-level-2-business--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "btec-level-2-business--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "btec-level-2-business--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 1,
+      "title": "Promotion methods",
+      "draft": false,
+      "file": "btec-level-2-business--promotion--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 2,
+      "title": "Promotion mix",
+      "draft": false,
+      "file": "btec-level-2-business--promotion--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 1,
+      "title": "Stock levels",
+      "draft": false,
+      "file": "btec-level-2-business--stock--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 2,
+      "title": "Just in time",
+      "draft": false,
+      "file": "btec-level-2-business--stock--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "btec-level-2-business--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "btec-level-2-business--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "btec-level-2-business--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "btec-level-2-business--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 1,
+      "title": "Average rate of return",
+      "draft": false,
+      "file": "btec-level-2-business--investment-appraisal--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 2,
+      "title": "Choosing an investment",
+      "draft": false,
+      "file": "btec-level-2-business--investment-appraisal--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 1,
+      "title": "Profit margins",
+      "draft": false,
+      "file": "btec-level-2-business--financial-ratios--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 2,
+      "title": "Judging performance",
+      "draft": false,
+      "file": "btec-level-2-business--financial-ratios--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 1,
+      "title": "Market share",
+      "draft": false,
+      "file": "btec-level-2-business--market-share-and-segmentation--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 2,
+      "title": "Segmentation",
+      "draft": false,
+      "file": "btec-level-2-business--market-share-and-segmentation--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 1,
+      "title": "Labour productivity",
+      "draft": false,
+      "file": "btec-level-2-business--production-and-capacity--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 2,
+      "title": "Improving efficiency",
+      "draft": false,
+      "file": "btec-level-2-business--production-and-capacity--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 1,
+      "title": "Methods of growth",
+      "draft": false,
+      "file": "btec-level-2-business--growth-and-economies-of-scale--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 2,
+      "title": "Economies of scale",
+      "draft": false,
+      "file": "btec-level-2-business--growth-and-economies-of-scale--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 1,
+      "title": "Financial methods",
+      "draft": false,
+      "file": "btec-level-2-business--motivation--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 2,
+      "title": "Non-financial methods",
+      "draft": false,
+      "file": "btec-level-2-business--motivation--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 1,
+      "title": "Leadership styles",
+      "draft": false,
+      "file": "btec-level-2-business--leadership-and-management--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 2,
+      "title": "Choosing a style",
+      "draft": false,
+      "file": "btec-level-2-business--leadership-and-management--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 1,
+      "title": "Organisation charts",
+      "draft": false,
+      "file": "btec-level-2-business--organisational-structure--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 2,
+      "title": "Choosing a structure",
+      "draft": false,
+      "file": "btec-level-2-business--organisational-structure--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 1,
+      "title": "Recruitment",
+      "draft": false,
+      "file": "btec-level-2-business--recruitment-and-training--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 2,
+      "title": "Training",
+      "draft": false,
+      "file": "btec-level-2-business--recruitment-and-training--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 1,
+      "title": "Ways to grow",
+      "draft": false,
+      "file": "btec-level-2-business--business-strategy--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 2,
+      "title": "Competing with rivals",
+      "draft": false,
+      "file": "btec-level-2-business--business-strategy--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 1,
+      "title": "Product life cycle",
+      "draft": false,
+      "file": "btec-level-2-business--product-portfolio--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 2,
+      "title": "Extending the range",
+      "draft": false,
+      "file": "btec-level-2-business--product-portfolio--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 1,
+      "title": "Stakeholders",
+      "draft": false,
+      "file": "btec-level-2-business--stakeholders-and-ethics--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 2,
+      "title": "Ethics and environment",
+      "draft": false,
+      "file": "btec-level-2-business--stakeholders-and-ethics--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 1,
+      "title": "The economy",
+      "draft": false,
+      "file": "btec-level-2-business--external-environment--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-2",
+      "course": "BTEC Level 2 Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 2,
+      "title": "Law and trade",
+      "draft": false,
+      "file": "btec-level-2-business--external-environment--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "a-level-or-ib-business--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "a-level-or-ib-business--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "a-level-or-ib-business--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "a-level-or-ib-business--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "a-level-or-ib-business--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "a-level-or-ib-business--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "a-level-or-ib-business--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 1,
+      "title": "Promotional mix",
+      "draft": false,
+      "file": "a-level-or-ib-business--promotion--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 2,
+      "title": "Measuring promotion",
+      "draft": false,
+      "file": "a-level-or-ib-business--promotion--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 1,
+      "title": "Inventory control",
+      "draft": false,
+      "file": "a-level-or-ib-business--stock--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 2,
+      "title": "Lean and JIT",
+      "draft": false,
+      "file": "a-level-or-ib-business--stock--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "a-level-or-ib-business--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "a-level-or-ib-business--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "a-level-or-ib-business--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "a-level-or-ib-business--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 1,
+      "title": "Payback and ARR",
+      "draft": false,
+      "file": "a-level-or-ib-business--investment-appraisal--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 2,
+      "title": "Choosing an investment",
+      "draft": false,
+      "file": "a-level-or-ib-business--investment-appraisal--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 1,
+      "title": "Profitability ratios",
+      "draft": false,
+      "file": "a-level-or-ib-business--financial-ratios--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 2,
+      "title": "Liquidity ratios",
+      "draft": false,
+      "file": "a-level-or-ib-business--financial-ratios--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 1,
+      "title": "Share and growth",
+      "draft": false,
+      "file": "a-level-or-ib-business--market-share-and-segmentation--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 2,
+      "title": "Segmentation",
+      "draft": false,
+      "file": "a-level-or-ib-business--market-share-and-segmentation--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 1,
+      "title": "Productivity",
+      "draft": false,
+      "file": "a-level-or-ib-business--production-and-capacity--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 2,
+      "title": "Capacity utilisation",
+      "draft": false,
+      "file": "a-level-or-ib-business--production-and-capacity--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 1,
+      "title": "Economies of scale",
+      "draft": false,
+      "file": "a-level-or-ib-business--growth-and-economies-of-scale--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 2,
+      "title": "Methods of growth",
+      "draft": false,
+      "file": "a-level-or-ib-business--growth-and-economies-of-scale--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 1,
+      "title": "Needs and motivation",
+      "draft": false,
+      "file": "a-level-or-ib-business--motivation--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 2,
+      "title": "Motivation in practice",
+      "draft": false,
+      "file": "a-level-or-ib-business--motivation--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 1,
+      "title": "Managers and leaders",
+      "draft": false,
+      "file": "a-level-or-ib-business--leadership-and-management--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 2,
+      "title": "Choosing a style",
+      "draft": false,
+      "file": "a-level-or-ib-business--leadership-and-management--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 1,
+      "title": "Types of structure",
+      "draft": false,
+      "file": "a-level-or-ib-business--organisational-structure--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 2,
+      "title": "Delegation and control",
+      "draft": false,
+      "file": "a-level-or-ib-business--organisational-structure--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 1,
+      "title": "Workforce planning",
+      "draft": false,
+      "file": "a-level-or-ib-business--recruitment-and-training--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 2,
+      "title": "Hiring and training",
+      "draft": false,
+      "file": "a-level-or-ib-business--recruitment-and-training--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 1,
+      "title": "Strategic direction",
+      "draft": false,
+      "file": "a-level-or-ib-business--business-strategy--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 2,
+      "title": "Strategic positioning",
+      "draft": false,
+      "file": "a-level-or-ib-business--business-strategy--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 1,
+      "title": "Product life cycle",
+      "draft": false,
+      "file": "a-level-or-ib-business--product-portfolio--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 2,
+      "title": "Portfolio analysis",
+      "draft": false,
+      "file": "a-level-or-ib-business--product-portfolio--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 1,
+      "title": "Stakeholders",
+      "draft": false,
+      "file": "a-level-or-ib-business--stakeholders-and-ethics--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 2,
+      "title": "Ethics and CSR",
+      "draft": false,
+      "file": "a-level-or-ib-business--stakeholders-and-ethics--lesson-2.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 1,
+      "title": "Economic change",
+      "draft": false,
+      "file": "a-level-or-ib-business--external-environment--lesson-1.pdf"
+    },
+    {
+      "courseId": "a-level",
+      "course": "A Level or IB Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 2,
+      "title": "Global trade",
+      "draft": false,
+      "file": "a-level-or-ib-business--external-environment--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "international-a-level-business--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "international-a-level-business--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "international-a-level-business--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "international-a-level-business--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "international-a-level-business--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "international-a-level-business--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "international-a-level-business--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 1,
+      "title": "Promotional mix",
+      "draft": false,
+      "file": "international-a-level-business--promotion--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 2,
+      "title": "Measuring promotion",
+      "draft": false,
+      "file": "international-a-level-business--promotion--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 1,
+      "title": "Inventory control",
+      "draft": false,
+      "file": "international-a-level-business--stock--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 2,
+      "title": "Lean and JIT",
+      "draft": false,
+      "file": "international-a-level-business--stock--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "international-a-level-business--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "international-a-level-business--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "international-a-level-business--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "international-a-level-business--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 1,
+      "title": "Payback and ARR",
+      "draft": false,
+      "file": "international-a-level-business--investment-appraisal--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 2,
+      "title": "Choosing an investment",
+      "draft": false,
+      "file": "international-a-level-business--investment-appraisal--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 1,
+      "title": "Profitability ratios",
+      "draft": false,
+      "file": "international-a-level-business--financial-ratios--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 2,
+      "title": "Liquidity ratios",
+      "draft": false,
+      "file": "international-a-level-business--financial-ratios--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 1,
+      "title": "Share and growth",
+      "draft": false,
+      "file": "international-a-level-business--market-share-and-segmentation--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 2,
+      "title": "Segmentation",
+      "draft": false,
+      "file": "international-a-level-business--market-share-and-segmentation--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 1,
+      "title": "Productivity",
+      "draft": false,
+      "file": "international-a-level-business--production-and-capacity--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 2,
+      "title": "Capacity utilisation",
+      "draft": false,
+      "file": "international-a-level-business--production-and-capacity--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 1,
+      "title": "Economies of scale",
+      "draft": false,
+      "file": "international-a-level-business--growth-and-economies-of-scale--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 2,
+      "title": "Methods of growth",
+      "draft": false,
+      "file": "international-a-level-business--growth-and-economies-of-scale--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 1,
+      "title": "Needs and motivation",
+      "draft": false,
+      "file": "international-a-level-business--motivation--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 2,
+      "title": "Motivation in practice",
+      "draft": false,
+      "file": "international-a-level-business--motivation--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 1,
+      "title": "Managers and leaders",
+      "draft": false,
+      "file": "international-a-level-business--leadership-and-management--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 2,
+      "title": "Choosing a style",
+      "draft": false,
+      "file": "international-a-level-business--leadership-and-management--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 1,
+      "title": "Types of structure",
+      "draft": false,
+      "file": "international-a-level-business--organisational-structure--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 2,
+      "title": "Delegation and control",
+      "draft": false,
+      "file": "international-a-level-business--organisational-structure--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 1,
+      "title": "Workforce planning",
+      "draft": false,
+      "file": "international-a-level-business--recruitment-and-training--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 2,
+      "title": "Hiring and training",
+      "draft": false,
+      "file": "international-a-level-business--recruitment-and-training--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 1,
+      "title": "Strategic direction",
+      "draft": false,
+      "file": "international-a-level-business--business-strategy--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 2,
+      "title": "Strategic positioning",
+      "draft": false,
+      "file": "international-a-level-business--business-strategy--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 1,
+      "title": "Product life cycle",
+      "draft": false,
+      "file": "international-a-level-business--product-portfolio--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 2,
+      "title": "Portfolio analysis",
+      "draft": false,
+      "file": "international-a-level-business--product-portfolio--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 1,
+      "title": "Stakeholders",
+      "draft": false,
+      "file": "international-a-level-business--stakeholders-and-ethics--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 2,
+      "title": "Ethics and CSR",
+      "draft": false,
+      "file": "international-a-level-business--stakeholders-and-ethics--lesson-2.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 1,
+      "title": "Economic change",
+      "draft": false,
+      "file": "international-a-level-business--external-environment--lesson-1.pdf"
+    },
+    {
+      "courseId": "ial",
+      "course": "International A level Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 2,
+      "title": "Global trade",
+      "draft": false,
+      "file": "international-a-level-business--external-environment--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "btec-level-3-business--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "btec-level-3-business--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "btec-level-3-business--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "btec-level-3-business--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "btec-level-3-business--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "btec-level-3-business--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "btec-level-3-business--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 1,
+      "title": "Promotional mix",
+      "draft": false,
+      "file": "btec-level-3-business--promotion--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 2,
+      "title": "Measuring promotion",
+      "draft": false,
+      "file": "btec-level-3-business--promotion--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 1,
+      "title": "Inventory control",
+      "draft": false,
+      "file": "btec-level-3-business--stock--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 2,
+      "title": "Lean and JIT",
+      "draft": false,
+      "file": "btec-level-3-business--stock--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "btec-level-3-business--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "btec-level-3-business--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "btec-level-3-business--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "btec-level-3-business--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 1,
+      "title": "Payback and ARR",
+      "draft": false,
+      "file": "btec-level-3-business--investment-appraisal--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 2,
+      "title": "Choosing an investment",
+      "draft": false,
+      "file": "btec-level-3-business--investment-appraisal--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 1,
+      "title": "Profitability ratios",
+      "draft": false,
+      "file": "btec-level-3-business--financial-ratios--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 2,
+      "title": "Liquidity ratios",
+      "draft": false,
+      "file": "btec-level-3-business--financial-ratios--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 1,
+      "title": "Share and growth",
+      "draft": false,
+      "file": "btec-level-3-business--market-share-and-segmentation--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 2,
+      "title": "Segmentation",
+      "draft": false,
+      "file": "btec-level-3-business--market-share-and-segmentation--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 1,
+      "title": "Productivity",
+      "draft": false,
+      "file": "btec-level-3-business--production-and-capacity--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 2,
+      "title": "Capacity utilisation",
+      "draft": false,
+      "file": "btec-level-3-business--production-and-capacity--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 1,
+      "title": "Economies of scale",
+      "draft": false,
+      "file": "btec-level-3-business--growth-and-economies-of-scale--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 2,
+      "title": "Methods of growth",
+      "draft": false,
+      "file": "btec-level-3-business--growth-and-economies-of-scale--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 1,
+      "title": "Needs and motivation",
+      "draft": false,
+      "file": "btec-level-3-business--motivation--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 2,
+      "title": "Motivation in practice",
+      "draft": false,
+      "file": "btec-level-3-business--motivation--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 1,
+      "title": "Managers and leaders",
+      "draft": false,
+      "file": "btec-level-3-business--leadership-and-management--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 2,
+      "title": "Choosing a style",
+      "draft": false,
+      "file": "btec-level-3-business--leadership-and-management--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 1,
+      "title": "Types of structure",
+      "draft": false,
+      "file": "btec-level-3-business--organisational-structure--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 2,
+      "title": "Delegation and control",
+      "draft": false,
+      "file": "btec-level-3-business--organisational-structure--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 1,
+      "title": "Workforce planning",
+      "draft": false,
+      "file": "btec-level-3-business--recruitment-and-training--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 2,
+      "title": "Hiring and training",
+      "draft": false,
+      "file": "btec-level-3-business--recruitment-and-training--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 1,
+      "title": "Strategic direction",
+      "draft": false,
+      "file": "btec-level-3-business--business-strategy--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 2,
+      "title": "Strategic positioning",
+      "draft": false,
+      "file": "btec-level-3-business--business-strategy--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 1,
+      "title": "Product life cycle",
+      "draft": false,
+      "file": "btec-level-3-business--product-portfolio--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 2,
+      "title": "Portfolio analysis",
+      "draft": false,
+      "file": "btec-level-3-business--product-portfolio--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 1,
+      "title": "Stakeholders",
+      "draft": false,
+      "file": "btec-level-3-business--stakeholders-and-ethics--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 2,
+      "title": "Ethics and CSR",
+      "draft": false,
+      "file": "btec-level-3-business--stakeholders-and-ethics--lesson-2.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 1,
+      "title": "Economic change",
+      "draft": false,
+      "file": "btec-level-3-business--external-environment--lesson-1.pdf"
+    },
+    {
+      "courseId": "btec-level-3",
+      "course": "BTEC Level 3 Business",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 2,
+      "title": "Global trade",
+      "draft": false,
+      "file": "btec-level-3-business--external-environment--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Why cash matters",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Cash-flow forecast",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Break-even point",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing methods",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Influences on price",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 1,
+      "title": "Promotion methods",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--promotion--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 2,
+      "title": "Promotion mix",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--promotion--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 1,
+      "title": "Stock levels",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--stock--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 2,
+      "title": "Just in time",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--stock--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Revenue and costs",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Profit and loss",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing a source",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 1,
+      "title": "Average rate of return",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--investment-appraisal--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 2,
+      "title": "Choosing an investment",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--investment-appraisal--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 1,
+      "title": "Profit margins",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--financial-ratios--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 2,
+      "title": "Judging performance",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--financial-ratios--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 1,
+      "title": "Market share",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--market-share-and-segmentation--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 2,
+      "title": "Segmentation",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--market-share-and-segmentation--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 1,
+      "title": "Labour productivity",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--production-and-capacity--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 2,
+      "title": "Improving efficiency",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--production-and-capacity--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 1,
+      "title": "Methods of growth",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--growth-and-economies-of-scale--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 2,
+      "title": "Economies of scale",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--growth-and-economies-of-scale--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 1,
+      "title": "Financial methods",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--motivation--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 2,
+      "title": "Non-financial methods",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--motivation--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 1,
+      "title": "Leadership styles",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--leadership-and-management--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 2,
+      "title": "Choosing a style",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--leadership-and-management--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 1,
+      "title": "Organisation charts",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--organisational-structure--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 2,
+      "title": "Choosing a structure",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--organisational-structure--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 1,
+      "title": "Recruitment",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--recruitment-and-training--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 2,
+      "title": "Training",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--recruitment-and-training--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 1,
+      "title": "Ways to grow",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--business-strategy--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 2,
+      "title": "Competing with rivals",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--business-strategy--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 1,
+      "title": "Product life cycle",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--product-portfolio--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 2,
+      "title": "Extending the range",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--product-portfolio--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 1,
+      "title": "Stakeholders",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--stakeholders-and-ethics--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 2,
+      "title": "Ethics and environment",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--stakeholders-and-ethics--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 1,
+      "title": "The economy",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--external-environment--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-2",
+      "course": "General business, ages 14–16 (Level 2)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 2,
+      "title": "Law and trade",
+      "draft": false,
+      "file": "general-business-ages-14-16-level-2--external-environment--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 1,
+      "title": "Cash-flow forecasting",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--cash-flow--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 2,
+      "title": "Causes of cash problems",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--cash-flow--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "lesson": 3,
+      "title": "Improving cash flow",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--cash-flow--lesson-3.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 1,
+      "title": "Contribution",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--break-even--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "lesson": 2,
+      "title": "Margin of safety",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--break-even--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 1,
+      "title": "Pricing strategies",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--pricing--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "lesson": 2,
+      "title": "Price and demand",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--pricing--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 1,
+      "title": "Promotional mix",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--promotion--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "lesson": 2,
+      "title": "Measuring promotion",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--promotion--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 1,
+      "title": "Inventory control",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--stock--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "stock",
+      "topic": "Stock",
+      "lesson": 2,
+      "title": "Lean and JIT",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--stock--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 1,
+      "title": "Costs and revenue",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--revenue-costs-and-profit--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "lesson": 2,
+      "title": "Types of profit",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--revenue-costs-and-profit--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 1,
+      "title": "Internal and external",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--sources-of-finance--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "lesson": 2,
+      "title": "Choosing finance",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--sources-of-finance--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 1,
+      "title": "Payback and ARR",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--investment-appraisal--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "lesson": 2,
+      "title": "Choosing an investment",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--investment-appraisal--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 1,
+      "title": "Profitability ratios",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--financial-ratios--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "lesson": 2,
+      "title": "Liquidity ratios",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--financial-ratios--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 1,
+      "title": "Share and growth",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--market-share-and-segmentation--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "lesson": 2,
+      "title": "Segmentation",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--market-share-and-segmentation--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 1,
+      "title": "Productivity",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--production-and-capacity--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "lesson": 2,
+      "title": "Capacity utilisation",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--production-and-capacity--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 1,
+      "title": "Economies of scale",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--growth-and-economies-of-scale--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "lesson": 2,
+      "title": "Methods of growth",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--growth-and-economies-of-scale--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 1,
+      "title": "Needs and motivation",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--motivation--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "lesson": 2,
+      "title": "Motivation in practice",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--motivation--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 1,
+      "title": "Managers and leaders",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--leadership-and-management--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "lesson": 2,
+      "title": "Choosing a style",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--leadership-and-management--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 1,
+      "title": "Types of structure",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--organisational-structure--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "lesson": 2,
+      "title": "Delegation and control",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--organisational-structure--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 1,
+      "title": "Workforce planning",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--recruitment-and-training--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "lesson": 2,
+      "title": "Hiring and training",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--recruitment-and-training--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 1,
+      "title": "Strategic direction",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--business-strategy--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "lesson": 2,
+      "title": "Strategic positioning",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--business-strategy--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 1,
+      "title": "Product life cycle",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--product-portfolio--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "lesson": 2,
+      "title": "Portfolio analysis",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--product-portfolio--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 1,
+      "title": "Stakeholders",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--stakeholders-and-ethics--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "lesson": 2,
+      "title": "Ethics and CSR",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--stakeholders-and-ethics--lesson-2.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 1,
+      "title": "Economic change",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--external-environment--lesson-1.pdf"
+    },
+    {
+      "courseId": "general-level-3",
+      "course": "General business, ages 16+ (Level 3)",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "lesson": 2,
+      "title": "Global trade",
+      "draft": false,
+      "file": "general-business-ages-16-level-3--external-environment--lesson-2.pdf"
     }
   ]
 }
