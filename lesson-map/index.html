@@ -191,6 +191,7 @@ main{overflow-x:clip}
         <option value="ib-business-sl">IB Business Management SL</option>
       </select>
       <a class="btn" id="lm-pdf" href="/assets/lesson-maps/lessonmap-edexcel-gcse-1bs0.pdf?v=20261119a" download>Download the PDF</a>
+      <a class="btn ghost" id="lm-year" href="/assets/year-plans/yearplan-edexcel-gcse-1bs0.pdf?v=20261120" target="_blank" rel="noopener">Year plan</a>
     </div>
   </div>
 </section>
@@ -215,7 +216,7 @@ main{overflow-x:clip}
   </div>
   <script>
     document.addEventListener('change',function(e){var s=e.target;if(!s||s.id!=='lm-course')return;var i=document.getElementById('lm-img'),p=document.getElementById('lm-pdf');if(!i||!p)return;
-      var b='/assets/lesson-maps/lessonmap-'+s.value,f=i.parentNode,t=s.options[s.selectedIndex].text;p.href=b+'.pdf?v=20261119a';
+      var b='/assets/lesson-maps/lessonmap-'+s.value,f=i.parentNode,t=s.options[s.selectedIndex].text;p.href=b+'.pdf?v=20261119a';var y=document.getElementById('lm-year');if(y)y.href='/assets/year-plans/yearplan-'+s.value+'.pdf?v=20261120';
       var show=function(){f.classList.remove('swap');};
       f.classList.add('swap');
       setTimeout(function(){i.onload=show;i.src=b+'.jpg?v=20261119a';i.alt='Lesson map for '+t+': each topic with its game lessons';setTimeout(show,1200);},240);});
