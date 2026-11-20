@@ -1,0 +1,140 @@
+/* The short trial form (owner 19.11.2026).
+     node --test netlify/tests/trial-request.test.mjs
+   The game is never called: its answer is mocked with setFetch. */
+import test from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { handler, setFetch, COURSES, check, clientIp } from "../functions/trial-request.mjs";
+import { bodyFor } from "../functions/submission-created.mjs";
+
+const HTML = readFileSync(new URL("../../trial/index.html", import.meta.url), "utf8");
+const FORM = { name: "Kate Willett", email: "Kate@Cirencester.example", school: "Cirencester College", course: "AQA GCSE Business (8132)",
+  message: "Year 10", feedback_opt_in: "yes", "bot-field": "", request_type: "trial", claim: "a".repeat(32) };
+
+function game(answer, status = 200) {
+  const calls = [];
+  setFetch(async (url, options) => { calls.push({ url, options, body: JSON.parse(options.body) }); return { status, json: async () => answer }; });
+  return calls;
+}
+async function submit(data, headers = { "x-nf-client-connection-ip": "203.0.113.7" }) {
+  const res = await handler({ httpMethod: "POST", headers: { "content-type": "application/json", ...headers }, body: JSON.stringify(data) });
+  return { status: res.statusCode, body: JSON.parse(res.body), raw: res.body, headers: res.headers };
+}
+process.env.TRIAL_HOOK_SECRET = "s3cret";
+
+test("the form on the page: the four fields, one optional message, the feedback box, the honeypot; nothing of the long form", () => {
+  const form = HTML.slice(HTML.indexOf('<form id="application"'), HTML.indexOf("</form>"));
+  const required = [...form.matchAll(/<(input|select|textarea)\b[^>]*\bname="([^"]+)"[^>]*\brequired\b/g)].map((m) => m[2]);
+  assert.deepEqual([...new Set(required)], ["request_type", "name", "email", "school", "course"]);
+  for (const label of ["Your name *", "School email *", "School name *", "Your course *", "Anything you would like to say? (optional)", "I’d be happy to share brief feedback afterwards (optional)."]) {
+    assert.ok(form.includes(label), label);
+  }
+  assert.match(form, /netlify-honeypot="bot-field"/);
+  assert.match(form, /name="bot-field"/);
+  assert.ok(form.includes("A free trial lesson") && form.includes("School licence"), "the trial / licence choice stays");
+  assert.ok(form.includes("Privacy information"));
+  for (const gone of ["role", "country", "school_type", "dept_size", "personal_email", "qualification", "exam_board", "year_group", "timing", "it_whitelist", "referral", "classroom_intent"]) {
+    assert.ok(!form.includes(`name="${gone}"`), gone);
+  }
+  const options = [...form.slice(form.indexOf('id="course"')).matchAll(/<option>([^<]+)<\/option>/g)].map((m) => m[1]);
+  assert.deepEqual(options, COURSES, "the select lists exactly the courses the function accepts");
+  assert.ok(COURSES.includes("AQA GCSE Business (8132)") && COURSES.includes("Pearson Edexcel A level Business (9BS0)") && COURSES.at(-1) === "Other");
+  assert.ok(HTML.includes("<video") && HTML.includes("motor-film"), "the film stays");
+  assert.doesNotMatch(HTML, /£\s?\d|\$\s?\d|€\s?\d|\bper (pupil|student|year)\b/i, "no prices");
+});
+
+test("the result on the page says what the owner asked, and only that", () => {
+  const result = HTML.slice(HTML.indexOf('id="trial-result"'), HTML.indexOf('id="trial-note"'));
+  for (const line of ["Your licence key", "Free: ", "Expires ", "Start a lesson", 'href="https://play.thebusiness.school/"', "Want it for your whole school? Ask us for a quote:", "support@thebusiness.school"]) {
+    assert.ok(result.includes(line), line);
+  }
+});
+
+test("a good request: the game is asked with the secret and the sender's address; the new key, 2 lessons and the expiry come back", async () => {
+  const calls = game({ ok: true, status: "sent", outcome: "new", emailed: true, key: "TBS-AB12-CD34", expires_at: "2026-12-24", lessons: 2, licence_made: true });
+  const out = await submit(FORM);
+  assert.equal(out.status, 200);
+  assert.deepEqual(out.body, { ok: true, outcome: "new", key: "TBS-AB12-CD34", lessons: 2, expires: "2026-12-24", emailed: true });
+  assert.equal(out.headers["Cache-Control"], "no-store");
+  assert.equal(calls.length, 1);
+  assert.equal(calls[0].url, "https://play.thebusiness.school/api/trial-licence");
+  assert.equal(calls[0].options.headers["x-trial-secret"], "s3cret");
+  const sent = calls[0].body;
+  assert.match(sent.submission_id, /^web-[0-9a-f-]{36}$/);
+  assert.deepEqual({ ...sent, submission_id: "" }, { submission_id: "", request_type: "trial", instant: true, ip: "203.0.113.7", name: "Kate Willett", email: "kate@cirencester.example",
+    school: "Cirencester College", course: "AQA GCSE Business (8132)", message: "Year 10", feedback_opt_in: true });
+  assert.ok(!("claim" in sent) && !("bot-field" in sent), "only the form's own fields go");
+  /* two requests, two submissions */
+  await submit(FORM);
+  assert.notEqual(calls[1].body.submission_id, calls[0].body.submission_id);
+});
+
+test("no key unless the game made one for this request", async () => {
+  for (const [answer, status, want] of [
+    [{ outcome: "existing", emailed: true }, 200, { ok: true, outcome: "existing", emailed: true }],
+    [{ outcome: "existing", emailed: false, key: "TBS-AB12-CD34" }, 200, { ok: true, outcome: "existing", emailed: false }],
+    [{ outcome: "email_only", emailed: true }, 200, { ok: true, outcome: "email_only", emailed: true }],
+    [{ outcome: "limited", reason: "rate_limited_ip" }, 429, { ok: false, outcome: "limited" }],
+    [{ outcome: "new", key: "not-a-key", expires_at: "2026-12-24" }, 502, { ok: false, code: "unreachable" }],
+    [{ outcome: "invalid", reason: "invalid_email" }, 400, { ok: false, code: "invalid", fields: [] }],
+  ]) {
+    game(answer);
+    const out = await submit(FORM);
+    assert.equal(out.status, status, JSON.stringify(answer));
+    assert.deepEqual(out.body, want);
+    assert.doesNotMatch(out.raw, /TBS-/);
+  }
+});
+
+test("fields are checked here before anything is made: required, email format, a course from the list", async () => {
+  const calls = game({ outcome: "new" });
+  for (const [change, fields] of [
+    [{ name: "" }, ["name"]], [{ name: " 1 " }, ["name"]], [{ email: "" }, ["email"]], [{ email: "kate@school" }, ["email"]], [{ email: "kate school@x.example" }, ["email"]],
+    [{ school: "" }, ["school"]], [{ school: "https://spam.example" }, ["school"]], [{ course: "" }, ["course"]], [{ course: "Made-up course" }, ["course"]],
+    [{ name: "", email: "x", school: "", course: "" }, ["name", "email", "school", "course"]],
+  ]) {
+    const out = await submit({ ...FORM, ...change });
+    assert.equal(out.status, 400, JSON.stringify(change));
+    assert.deepEqual(out.body, { ok: false, code: "invalid", fields });
+  }
+  assert.equal(calls.length, 0, "the game is never asked");
+  assert.equal((await handler({ httpMethod: "POST", headers: {}, body: "{not json" })).statusCode, 400);
+  assert.equal((await handler({ httpMethod: "GET", headers: {}, body: "" })).statusCode, 405);
+  assert.equal(check({ ...FORM, message: "x".repeat(5000) }).form.message.length, 1000);
+});
+
+test("the honeypot: a bot is told nothing useful and nothing is made", async () => {
+  const calls = game({ outcome: "new", key: "TBS-AB12-CD34", expires_at: "2026-12-24" });
+  const out = await submit({ ...FORM, "bot-field": "http://spam.example" });
+  assert.equal(out.status, 200);
+  assert.doesNotMatch(out.raw, /TBS-/);
+  assert.equal(calls.length, 0);
+});
+
+test("game off or out of reach: the page is told to send the form the old way", async () => {
+  delete process.env.TRIAL_HOOK_SECRET;
+  assert.deepEqual((await submit(FORM)).body, { ok: false, code: "off" });
+  process.env.TRIAL_HOOK_SECRET = "s3cret";
+  game({}, 500);
+  assert.deepEqual((await submit(FORM)).body, { ok: false, code: "unreachable" });
+  game({}, 403);
+  assert.equal((await submit(FORM)).status, 502);
+  setFetch(async () => { throw Object.assign(new Error("t"), { name: "TimeoutError" }); });
+  assert.deepEqual((await submit(FORM)).body, { ok: false, code: "unreachable" });
+});
+
+test("the sender's address: Netlify's header first, nothing that is not an address", () => {
+  assert.equal(clientIp({ "x-nf-client-connection-ip": "2001:db8::1", "x-forwarded-for": "1.1.1.1" }), "2001:db8::1");
+  assert.equal(clientIp({ "x-forwarded-for": "198.51.100.4, 10.0.0.1" }), "198.51.100.4");
+  assert.equal(clientIp({ "x-nf-client-connection-ip": "evil; DROP TABLE" }), "");
+  assert.equal(clientIp({}), "");
+});
+
+test("the Netlify Forms copy of a request this page already handled is stored only, never sent to the game again", () => {
+  const payload = (data) => ({ form_name: "pilot-application", id: "n1", data: { request_type: "trial", name: "Kate", email: "k@s.example", school: "S", course: "Other", ...data } });
+  assert.equal(bodyFor(payload({ handled: "instant" })), null);
+  const fallback = bodyFor(payload({ handled: "", message: "Hi", feedback_opt_in: "yes", claim: "b".repeat(32) }));
+  assert.deepEqual([fallback.request_type, fallback.course, fallback.message, fallback.feedback_opt_in, fallback.claim, fallback.country, fallback.timing],
+    ["trial", "Other", "Hi", true, "b".repeat(32), "", ""]);
+  assert.equal(bodyFor(payload({ request_type: "licence" })).request_type, "licence", "a quote request still reaches the game (which leaves it to the owner)");
+});

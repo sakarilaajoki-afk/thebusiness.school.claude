@@ -28,6 +28,25 @@
     .again{margin-top:24px}
     .want-option b{display:block}
     .want-option span{display:block}
+    /* The short trial form (owner 19.11.2026): the key on this page at once. */
+    .feedback{margin-top:18px}
+    .result{max-width:790px;margin:auto;outline:0}
+    .result[hidden]{display:none}
+    .result h2{margin:0 0 18px;font-size:30px;font-weight:600;line-height:1.2}
+    .keybox{padding:26px 26px 24px;border:1px solid rgba(229,238,244,.28);border-top:2px solid var(--mint);background:rgba(10,20,38,.62)}
+    .keybox .label{margin:0;color:var(--mint);font:700 12px/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase}
+    .keyrow{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:12px}
+    .keyrow code{color:#fff;font:600 clamp(28px,5.6vw,40px)/1.1 'Roboto Mono',ui-monospace,monospace;letter-spacing:.04em;white-space:nowrap}
+    .keyrow button{flex:none;padding:11px 20px;border:1px solid var(--mint);background:transparent;color:#fff;font:600 16px/1 Inter,system-ui,sans-serif;cursor:pointer}
+    .keyrow button:hover,.keyrow button:focus-visible{background:rgba(10,107,115,.5);outline:0}
+    .terms{display:flex;flex-wrap:wrap;gap:8px 32px;margin:20px 0 0;padding:18px 0 0;border-top:1px solid rgba(229,238,244,.2);list-style:none;color:var(--pale);font-size:19px;line-height:1.4}
+    .terms b{color:#fff;font-weight:600}
+    .button.start{margin-top:22px;text-align:center;text-decoration:none;font-size:17px}
+    .keybox .sent{margin:14px 0 0;color:var(--pale);font-size:16px;overflow-wrap:anywhere}
+    .result .note{margin:0;color:#fff;font-size:19px;line-height:1.45}
+    .result .quote{margin:22px 0 0;color:var(--pale);font-size:16px}
+    .result .quote a{color:var(--mint);text-underline-offset:4px;overflow-wrap:anywhere}
+    @media(max-width:480px){.keybox{padding:22px 18px 20px}.keyrow{flex-direction:column;align-items:flex-start}}
   </style>
 <link rel="stylesheet" href="/assets/tbs-web/buttons.css?v=20261101">
 <link rel="stylesheet" href="/assets/tbs-web/theme.css?v=20261101">
@@ -65,7 +84,7 @@
       <div class="wrap hero-grid">
         <div>
           <p class="eyebrow">Free trial · live classroom simulation</p>
-          <h1 id="hero-title">Run a free trial lesson with your class.</h1>
+          <h1 id="hero-title">Try it free with your class: two lessons.</h1>
           <p class="hero-copy">The free trial is the live group simulation. Pupils run rival firms in one lesson. They join with a PIN. Nothing to install.</p>
           <ul class="lesson-lines" aria-label="What the lesson includes">
             <li><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12l4 4L19 7" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>Topic tasks for your exam topic</li>
@@ -100,105 +119,76 @@
           <input type="hidden" name="submission_type" id="submission-type" value="trial">
           <input type="hidden" name="source" value="trial-page">
           <input type="hidden" name="claim" id="claim" value="">
+          <input type="hidden" name="handled" id="handled" value="">
           <p class="honeypot"><label>Leave this field empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
 
           <h2 id="application-title">Request a trial or a licence</h2>
-          <p class="form-lead">For Business teachers and school leaders. The trial is one free lesson with your class. It is not a purchase.</p>
+          <p class="form-lead">For Business teachers and school leaders. The trial is two free lessons with your class. It is not a purchase.</p>
           <fieldset class="want" id="want-group"><legend>What would you like? *</legend><div class="want-options">
-            <label class="want-option"><input type="radio" name="request_type" value="trial" required checked><span><b>A free trial lesson</b> with my class</span></label>
+            <label class="want-option"><input type="radio" name="request_type" value="trial" required checked><span><b>A free trial</b>: two lessons with my class</span></label>
             <label class="want-option"><input type="radio" name="request_type" value="licence" required><span><b>School licence</b> for the full year, every topic. Price on request.</span></label>
           </div></fieldset>
           <div class="fields">
-            <div class="field"><label for="full-name">Full name *</label><input id="full-name" name="name" autocomplete="name" required></div>
-            <div class="field"><label for="school-email">School email *</label><input id="school-email" name="email" type="email" autocomplete="email" required></div>
-            <div class="field"><label for="role">Your role *</label><select id="role" name="role" required><option value="">Select your role</option><option>Business teacher</option><option>Head of Business / Economics</option><option>Curriculum Lead / school leader</option><option>Other</option></select></div>
-            <div class="field"><label for="school">School name *</label><input id="school" name="school" autocomplete="organization" required></div>
-            <div class="field"><label for="country">Country *</label><input id="country" name="country" autocomplete="country-name" required></div>
-            <div class="field"><label for="school-type">School type *</label><select id="school-type" name="school_type" required><option value="">Select school type</option><option>State school / academy</option><option>Sixth form / FE college</option><option>Independent school</option><option>International school</option><option>Other</option></select></div>
-            <div class="field"><label for="department-size">Business / Economics teachers at your school *</label><select id="department-size" name="dept_size" required><option value="">Approximate number</option><option>1</option><option>2–3</option><option>4–6</option><option>7 or more</option><option>Not sure yet</option></select></div>
-            <div class="field full"><label for="personal-email">Alternative email (optional)</label><input id="personal-email" name="personal_email" type="email" placeholder="If your school filters outside email"></div>
+            <div class="field"><label for="full-name">Your name *</label><input id="full-name" name="name" autocomplete="name" maxlength="120" required></div>
+            <div class="field"><label for="school-email">School email *</label><input id="school-email" name="email" type="email" autocomplete="email" maxlength="255" required></div>
+            <div class="field"><label for="school">School name *</label><input id="school" name="school" autocomplete="organization" maxlength="120" required></div>
+            <div class="field"><label for="course">Your course *</label><select id="course" name="course" required><option value="">Choose your course</option><option>AQA GCSE Business (8132)</option><option>AQA A level Business (7132)</option><option>Pearson Edexcel GCSE Business (1BS0)</option><option>Pearson Edexcel A level Business (9BS0)</option><option>Pearson Edexcel International GCSE Business (4BS1)</option><option>Pearson Edexcel International A level Business (IAL)</option><option>OCR GCSE Business (J204)</option><option>OCR A level Business</option><option>Eduqas GCSE Business</option><option>Eduqas A level Business</option><option>WJEC GCSE Business</option><option>WJEC A level Business</option><option>Cambridge IGCSE Business</option><option>Cambridge International A level Business (9609)</option><option>BTEC Tech Award in Enterprise</option><option>BTEC Level 3 Business</option><option>IB Business Management</option><option>Other</option></select></div>
+            <div class="field full"><label for="message">Anything you would like to say? (optional)</label><textarea id="message" name="message" rows="3" maxlength="1000"></textarea></div>
           </div>
-
-          <h3 class="section-title">Your class</h3>
-          <div class="fields">
-            <fieldset class="field full" id="qualification-group"><legend>Qualification(s) you teach *</legend><div class="checks">
-              <label class="check"><input type="checkbox" name="qualification" value="A-level Business">A-level Business</label>
-              <label class="check"><input type="checkbox" name="qualification" value="GCSE Business">GCSE Business</label>
-              <label class="check"><input type="checkbox" name="qualification" value="International A level Business (IAL)">International A level (IAL)</label>
-              <label class="check"><input type="checkbox" name="qualification" value="International GCSE Business">International GCSE Business</label>
-              <label class="check"><input type="checkbox" name="qualification" value="BTEC Business">BTEC Business</label>
-              <label class="check"><input type="checkbox" name="qualification" value="OCR Business">OCR Business</label>
-              <label class="check"><input type="checkbox" name="qualification" value="Cambridge IGCSE Business">Cambridge IGCSE Business</label>
-              <label class="check"><input type="checkbox" name="qualification" value="IB Business Management">IB Business Management</label>
-              <label class="check"><input type="checkbox" name="qualification" value="Other">Other</label>
-            </div><p class="field-error" id="qualification-error" role="alert" hidden>Please choose at least one qualification.</p></fieldset>
-            <div class="field"><label for="exam-board">Exam board or specification *</label><input id="exam-board" name="exam_board" placeholder="For example, Pearson Edexcel or AQA" required></div>
-            <div class="field"><label for="year-group">Year group / learner age *</label><input id="year-group" name="year_group" placeholder="For example, Year 12 / age 16–17" required></div>
-            <div class="field"><label for="timing">When could you run a lesson? *</label><select id="timing" name="timing" required><option value="">Choose one</option><option>Within 2 weeks of access</option><option>Within a month of access</option><option>Later this term</option><option>Not sure yet</option></select></div>
-            <div class="field"><label for="school-it">Can school devices access new teaching websites? *</label><select id="school-it" name="it_whitelist" required><option value="">Choose one</option><option>Yes</option><option>Our IT team may need to allow the site</option><option>Not checked yet</option></select></div>
-            <div class="field"><label for="referral">How did you hear about us? (optional)</label><select id="referral" name="referral"><option value="">Choose one</option><option>Facebook group</option><option>Reddit</option><option>LinkedIn</option><option>ChatGPT</option><option>A colleague</option><option>Google</option><option>Other</option></select></div>
-          </div>
-
-          <div id="trial-plan">
-          <h3 class="section-title">Your classroom plan</h3>
-          <p class="commit-note">A trial is for teachers ready to use it with a class.</p>
-          <div class="commitments">
-            <div class="field"><label for="message">Anything you would like to say? (optional)</label><textarea id="message" name="message" rows="3" maxlength="1000" placeholder="For example, your class, your exam board, or a question"></textarea></div>
-            <label class="check"><input type="checkbox" id="classroom-intent" name="classroom_intent" value="yes" required>I plan to run the trial lesson with a class.</label>
-            <label class="check"><input type="checkbox" name="feedback_opt_in" value="yes">I’d be happy to share brief feedback afterwards (optional).</label>
-          </div>
-          </div>
-          <button type="submit" class="button" id="submit-btn">Request a trial</button>
+          <label class="check feedback"><input type="checkbox" name="feedback_opt_in" value="yes">I’d be happy to share brief feedback afterwards (optional).</label>
+          <p class="field-error" id="form-error" role="alert" hidden></p>
+          <button type="submit" class="button" id="submit-btn">Get my trial licence</button>
           <p class="micro">We’ll use these details only to reply about your request. <a href="/data-protection/">Privacy information</a>.</p>
         </form>
 
-        <div class="followup"><h2>What happens next?</h2><p>Your trial licence arrives by email within a few minutes, from <a href="mailto:support@thebusiness.school">support@thebusiness.school</a>. If you can’t see it, please check your junk folder. You can also join our <a href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener noreferrer">Facebook group for Business teachers</a>.</p></div>
+        <div class="result" id="trial-result" tabindex="-1" hidden>
+          <h2>Your trial licence is ready</h2>
+          <div class="keybox">
+            <p class="label">Your licence key</p>
+            <div class="keyrow"><code id="key-value"></code><button type="button" id="key-copy">Copy</button></div>
+            <ul class="terms">
+              <li>Free: <b id="key-lessons">2 lessons</b></li>
+              <li>Expires <b id="key-expires"></b></li>
+            </ul>
+            <a class="button start" href="https://play.thebusiness.school/" target="_blank" rel="noopener noreferrer">Start a lesson <span aria-hidden="true">→</span></a>
+            <p class="sent" id="key-sent" hidden></p>
+          </div>
+          <p class="quote">Want it for your whole school? Ask us for a quote: <a href="mailto:support@thebusiness.school">support@thebusiness.school</a></p>
+        </div>
+
+        <div class="result" id="trial-note" tabindex="-1" hidden>
+          <h2 id="note-title"></h2>
+          <p class="note" id="note-text"></p>
+          <p class="quote">Want it for your whole school? Ask us for a quote: <a href="mailto:support@thebusiness.school">support@thebusiness.school</a></p>
+        </div>
+
+        <div class="followup" id="followup"><h2>What happens next?</h2><p>Your licence key appears here as soon as you send the form. It comes by email too, from <a href="mailto:support@thebusiness.school">support@thebusiness.school</a>. You can also join our <a href="https://www.facebook.com/groups/1244817211171667/" target="_blank" rel="noopener noreferrer">Facebook group for Business teachers</a>.</p></div>
       </div>
     </section>
   </main>
   <footer><div class="wrap">The Business School · TBS Education Ltd Oy</div></footer>
   <script>
     const form = document.getElementById('application');
-    const qualificationError = document.getElementById('qualification-error');
-    function checkQualifications() {
-      const chosen = !!form.querySelector('input[name="qualification"]:checked');
-      qualificationError.hidden = chosen;
-      document.getElementById('qualification-group').setAttribute('aria-invalid', String(!chosen));
-      return chosen;
-    }
-    /* The thank-you screen shows the trial licence key as well (the email
-       can land in junk). A random code made here goes with the request; only
-       this browser holds it, and the thank-you page reads the key with it. */
+    /* The thank-you page (the fallback below) shows the trial licence key as
+       well. A random code made here goes with the request; only this browser
+       holds it, and the thank-you page reads the key with it. */
     const claimInput = document.getElementById('claim');
     try {
       const bytes = new Uint8Array(16);
       crypto.getRandomValues(bytes);
       claimInput.value = Array.from(bytes, function (b) { return b.toString(16).padStart(2, '0'); }).join('');
     } catch (_) { claimInput.value = ''; }
-    form.addEventListener('submit', function (event) {
-      if (!checkQualifications()) {
-        event.preventDefault();
-        qualificationError.scrollIntoView({ block: 'center' });
-        return;
-      }
-      try {
-        sessionStorage.setItem('tbs-trial-claim', JSON.stringify({ claim: claimInput.value, email: document.getElementById('school-email').value.trim(), at: Date.now() }));
-      } catch (_) {}
-    });
     /* One choice decides what the request is: a free trial lesson or a school
-       licence. The hidden submission_type follows it, and the thanks page says which. */
+       licence. The hidden submission_type follows it. */
     const typeInput = document.getElementById('submission-type');
-    const plan = document.getElementById('trial-plan');
-    const intent = document.getElementById('classroom-intent');
     const submitBtn = document.getElementById('submit-btn');
+    const formError = document.getElementById('form-error');
+    function want() { return (form.querySelector('input[name="request_type"]:checked') || {}).value || 'trial'; }
     function applyWant() {
-      const want = (form.querySelector('input[name="request_type"]:checked') || {}).value || 'trial';
-      typeInput.value = want;
-      const licence = want === 'licence';
-      plan.hidden = licence;
-      intent.required = !licence;
-      submitBtn.textContent = licence ? 'Request a licence quote' : 'Request a trial';
-      form.setAttribute('action', '/trial/thanks/?type=' + want);
+      const choice = want();
+      typeInput.value = choice;
+      submitBtn.textContent = choice === 'licence' ? 'Request a licence quote' : 'Get my trial licence';
+      form.setAttribute('action', '/trial/thanks/?type=' + choice);
     }
     try {
       const asked = new URLSearchParams(location.search).get('want');
@@ -206,8 +196,73 @@
     } catch (_) {}
     form.querySelectorAll('input[name="request_type"]').forEach(function (input) { input.addEventListener('change', applyWant); });
     applyWant();
-    form.querySelectorAll('input[name="qualification"]').forEach(function (input) {
-      input.addEventListener('change', function () { if (form.querySelector('input[name="qualification"]:checked')) qualificationError.hidden = true; });
+
+    const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    function longDate(iso) { const p = String(iso).split('-'); return Number(p[2]) + ' ' + MONTHS[Number(p[1]) - 1] + ' ' + p[0]; }
+    function show(panel) {
+      form.hidden = true;
+      document.getElementById('followup').hidden = true;
+      panel.hidden = false;
+      panel.scrollIntoView({ block: 'start' });
+      panel.focus({ preventScroll: true });
+    }
+    function showKey(out, email) {
+      document.getElementById('key-value').textContent = out.key;
+      document.getElementById('key-lessons').textContent = out.lessons + ' lessons';
+      document.getElementById('key-expires').textContent = longDate(out.expires);
+      if (out.emailed) { const sent = document.getElementById('key-sent'); sent.textContent = 'Also sent to ' + email; sent.hidden = false; }
+      const copy = document.getElementById('key-copy');
+      copy.addEventListener('click', function () {
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(out.key).then(function () {
+          copy.textContent = 'Copied'; setTimeout(function () { copy.textContent = 'Copy'; }, 2000);
+        }, function () {});
+      });
+      show(document.getElementById('trial-result'));
+    }
+    function showNote(title, text) {
+      document.getElementById('note-title').textContent = title;
+      document.getElementById('note-text').textContent = text;
+      show(document.getElementById('trial-note'));
+    }
+    /* The owner's copy in Netlify Forms, marked as already handled. */
+    function keepCopy() {
+      document.getElementById('handled').value = 'instant';
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(new FormData(form)).toString() }).catch(function () {});
+    }
+    /* The game could not be reached: the form goes the old way (Netlify Forms,
+       then the thank-you page, which reads the key with the claim code). */
+    function sendTheOldWay(email) {
+      try { sessionStorage.setItem('tbs-trial-claim', JSON.stringify({ claim: claimInput.value, email: email, at: Date.now() })); } catch (_) {}
+      document.getElementById('handled').value = '';
+      HTMLFormElement.prototype.submit.call(form);
+    }
+    const LABELS = { name: 'your name', email: 'your school email', school: 'your school name', course: 'your course' };
+    form.addEventListener('submit', function (event) {
+      if (want() !== 'trial') return;
+      event.preventDefault();
+      const email = document.getElementById('school-email').value.trim();
+      const data = Object.fromEntries(new FormData(form));
+      formError.hidden = true;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Making your licence…';
+      fetch('/.netlify/functions/trial-request', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+        .then(function (r) { return r.json().catch(function () { return {}; }).then(function (out) { return { status: r.status, out: out }; }); })
+        .then(function (res) {
+          const out = res.out || {};
+          if (res.status === 400 && out.code === 'invalid') {
+            submitBtn.disabled = false; applyWant();
+            const names = (out.fields || []).map(function (f) { return LABELS[f]; }).filter(Boolean);
+            formError.textContent = names.length ? 'Please check ' + names.join(', ') + '.' : 'Please check the form.';
+            formError.hidden = false;
+            return;
+          }
+          if (out.ok && out.outcome === 'new') { keepCopy(); return showKey(out, email); }
+          if (out.ok && out.outcome === 'existing') { keepCopy(); return showNote('You already have a trial licence', 'It is in your email from support@thebusiness.school. If you can’t see it, please check your junk folder.'); }
+          if (out.ok && out.outcome === 'email_only') { keepCopy(); return showNote('Your trial licence is on its way', 'It comes by email from support@thebusiness.school in a few minutes.'); }
+          if (res.status === 429) { keepCopy(); return showNote('We couldn’t make a trial licence just now', 'Please write to support@thebusiness.school and we’ll send one.'); }
+          sendTheOldWay(email);
+        })
+        .catch(function () { sendTheOldWay(email); });
     });
   </script>
 </body>

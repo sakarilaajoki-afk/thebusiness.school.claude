@@ -12,10 +12,17 @@
    (the same value as on the game's site). Without it this function does
    nothing at all.
 
+   The short form (owner 19.11.2026) sends a free trial straight to the game
+   (trial-request.mjs) and shows the key at once; its copy here is marked
+   handled=instant and is only stored, never posted again. A trial that
+   arrives here unmarked (the page's fallback when the game could not be
+   reached) is posted as before.
+
    Only the fields the licence and its email need leave this site: the name,
-   the school email, the school, the country, the answer to "When could you
-   run a lesson?", which of the two requests it is, and the thank-you
-   screen's one-time code. Nothing is logged but
+   the school email, the school, the course, the optional message and
+   feedback answer, which of the two requests it is, and the thank-you
+   screen's one-time code (and, from older forms, the country and the answer
+   to "When could you run a lesson?"). Nothing is logged but
    the outcome. The form's own storage and email notification are untouched,
    so a submission is never lost here: if the game cannot be reached the owner
    still has it in Netlify Forms, and the game's own record shows it missing.
@@ -31,6 +38,7 @@ function clean(value, max) {
 export function bodyFor(payload) {
   if (!payload || payload.form_name !== FORM || !payload.id) return null;
   const data = payload.data || {};
+  if (clean(data.handled, 20) === "instant") return null;
   return {
     submission_id: clean(payload.id, 120),
     request_type: clean(data.request_type, 20).toLowerCase(),
@@ -39,6 +47,9 @@ export function bodyFor(payload) {
     school: clean(data.school, 120),
     country: clean(data.country, 80),
     timing: clean(data.timing, 80),
+    course: clean(data.course, 120),
+    message: String(data.message == null ? "" : data.message).trim().slice(0, 1000),
+    feedback_opt_in: clean(data.feedback_opt_in, 10).toLowerCase() === "yes",
     /* The thank-you screen's one-time code (trial/index.html). */
     claim: /^[a-f0-9]{32,64}$/.test(clean(data.claim, 64)) ? clean(data.claim, 64) : "",
   };
