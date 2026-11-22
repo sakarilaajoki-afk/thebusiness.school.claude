@@ -125,14 +125,15 @@
           <h2 id="application-title">Request a trial or a licence</h2>
           <p class="form-lead">For Business teachers and school leaders. The trial is two free lessons with your class. It is not a purchase.</p>
           <fieldset class="want" id="want-group"><legend>What would you like? *</legend><div class="want-options">
-            <label class="want-option"><input type="radio" name="request_type" value="trial" required checked><span><b>A free trial</b>: two lessons with my class</span></label>
+            <label class="want-option"><input type="radio" name="request_type" value="trial" required checked><span><b>A free trial</b> two lessons with my class</span></label>
             <label class="want-option"><input type="radio" name="request_type" value="licence" required><span><b>School licence</b> for the full year, every topic. Price on request.</span></label>
           </div></fieldset>
           <div class="fields">
             <div class="field"><label for="full-name">Your name *</label><input id="full-name" name="name" autocomplete="name" maxlength="120" required></div>
             <div class="field"><label for="school-email">School email *</label><input id="school-email" name="email" type="email" autocomplete="email" maxlength="255" required></div>
             <div class="field"><label for="school">School name *</label><input id="school" name="school" autocomplete="organization" maxlength="120" required></div>
-            <div class="field"><label for="course">Your course *</label><select id="course" name="course" required><option value="">Choose your course</option><option>AQA GCSE Business (8132)</option><option>AQA A level Business (7132)</option><option>Pearson Edexcel GCSE Business (1BS0)</option><option>Pearson Edexcel A level Business (9BS0)</option><option>Pearson Edexcel International GCSE Business (4BS1)</option><option>Pearson Edexcel International A level Business (IAL)</option><option>OCR GCSE Business (J204)</option><option>OCR A level Business</option><option>Eduqas GCSE Business</option><option>Eduqas A level Business</option><option>WJEC GCSE Business</option><option>WJEC A level Business</option><option>Cambridge IGCSE Business</option><option>Cambridge International A level Business (9609)</option><option>BTEC Tech Award in Enterprise</option><option>BTEC Level 3 Business</option><option>IB Business Management</option><option>Other</option></select></div>
+            <div class="field"><label for="role">Your role *</label><select id="role" name="role" required><option value="">Choose your role</option><option>Teacher</option><option>Head of Business</option><option>Curriculum lead</option><option>School leader</option><option>Other</option></select></div>
+            <div class="field full"><label for="course">Your course *</label><select id="course" name="course" required><option value="">Choose your course</option><option>AQA GCSE Business (8132)</option><option>AQA A level Business (7132)</option><option>Pearson Edexcel GCSE Business (1BS0)</option><option>Pearson Edexcel A level Business (9BS0)</option><option>Pearson Edexcel International GCSE Business (4BS1)</option><option>Pearson Edexcel International A level Business (IAL)</option><option>OCR GCSE Business (J204)</option><option>OCR A level Business</option><option>Eduqas GCSE Business</option><option>Eduqas A level Business</option><option>WJEC GCSE Business</option><option>WJEC A level Business</option><option>Cambridge IGCSE Business</option><option>Cambridge International A level Business (9609)</option><option>BTEC Tech Award in Enterprise</option><option>BTEC Level 3 Business</option><option>IB Business Management</option><option>Other</option></select></div>
             <div class="field full"><label for="message">Anything you would like to say? (optional)</label><textarea id="message" name="message" rows="3" maxlength="1000"></textarea></div>
           </div>
           <label class="check feedback"><input type="checkbox" name="feedback_opt_in" value="yes">I’d be happy to share brief feedback afterwards (optional).</label>
@@ -236,7 +237,12 @@
       document.getElementById('handled').value = '';
       HTMLFormElement.prototype.submit.call(form);
     }
-    const LABELS = { name: 'your name', email: 'your school email', school: 'your school name', course: 'your course' };
+    const LABELS = { name: 'your name', email: 'your school email', school: 'your school name', role: 'your role', course: 'your course' };
+    /* "Your role" is required (owner 22.11.2026): left empty, one short line. */
+    const roleSelect = document.getElementById('role');
+    function roleCheck() { roleSelect.setCustomValidity(roleSelect.value ? '' : 'Please choose your role.'); }
+    roleSelect.addEventListener('change', roleCheck);
+    roleCheck();
     form.addEventListener('submit', function (event) {
       if (want() !== 'trial') return;
       event.preventDefault();

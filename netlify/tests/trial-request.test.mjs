@@ -4,11 +4,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { handler, setFetch, COURSES, check, clientIp } from "../functions/trial-request.mjs";
+import { handler, setFetch, COURSES, ROLES, check, clientIp } from "../functions/trial-request.mjs";
 import { bodyFor } from "../functions/submission-created.mjs";
 
 const HTML = readFileSync(new URL("../../trial/index.html", import.meta.url), "utf8");
-const FORM = { name: "Kate Willett", email: "Kate@Cirencester.example", school: "Cirencester College", course: "AQA GCSE Business (8132)",
+const FORM = { name: "Kate Willett", email: "Kate@Cirencester.example", school: "Cirencester College", role: "Head of Business", course: "AQA GCSE Business (8132)",
   message: "Year 10", feedback_opt_in: "yes", "bot-field": "", request_type: "trial", claim: "a".repeat(32) };
 
 function game(answer, status = 200) {
@@ -22,20 +22,27 @@ async function submit(data, headers = { "x-nf-client-connection-ip": "203.0.113.
 }
 process.env.TRIAL_HOOK_SECRET = "s3cret";
 
-test("the form on the page: the four fields, one optional message, the feedback box, the honeypot; nothing of the long form", () => {
+test("the form on the page: the five fields, one optional message, the feedback box, the honeypot; nothing of the long form", () => {
   const form = HTML.slice(HTML.indexOf('<form id="application"'), HTML.indexOf("</form>"));
   const required = [...form.matchAll(/<(input|select|textarea)\b[^>]*\bname="([^"]+)"[^>]*\brequired\b/g)].map((m) => m[2]);
-  assert.deepEqual([...new Set(required)], ["request_type", "name", "email", "school", "course"]);
-  for (const label of ["Your name *", "School email *", "School name *", "Your course *", "Anything you would like to say? (optional)", "I’d be happy to share brief feedback afterwards (optional)."]) {
+  /* SPEC CHANGE (owner 22.11.2026): "Your role", required, between School name and Your course. */
+  assert.deepEqual([...new Set(required)], ["request_type", "name", "email", "school", "role", "course"]);
+  for (const label of ["Your name *", "School email *", "School name *", "Your role *", "Your course *", "Anything you would like to say? (optional)", "I’d be happy to share brief feedback afterwards (optional)."]) {
     assert.ok(form.includes(label), label);
   }
   assert.match(form, /netlify-honeypot="bot-field"/);
   assert.match(form, /name="bot-field"/);
   assert.ok(form.includes("A free trial") && form.includes("School licence"), "the trial / licence choice stays");
   assert.ok(form.includes("Privacy information"));
-  for (const gone of ["role", "country", "school_type", "dept_size", "personal_email", "qualification", "exam_board", "year_group", "timing", "it_whitelist", "referral", "classroom_intent"]) {
+  for (const gone of ["country", "school_type", "dept_size", "personal_email", "qualification", "exam_board", "year_group", "timing", "it_whitelist", "referral", "classroom_intent"]) {
     assert.ok(!form.includes(`name="${gone}"`), gone);
   }
+  const roleSelect = form.slice(form.indexOf('<select id="role"'), form.indexOf("</select>", form.indexOf('<select id="role"')));
+  assert.deepEqual([...roleSelect.matchAll(/<option>([^<]+)<\/option>/g)].map((m) => m[1]), ROLES, "the role select lists exactly the roles the function accepts");
+  assert.deepEqual(ROLES, ["Teacher", "Head of Business", "Curriculum lead", "School leader", "Other"]);
+  assert.match(roleSelect, /^<select id="role" name="role" required><option value="">Choose your role<\/option>/);
+  assert.ok(form.indexOf('id="school"') < form.indexOf('id="role"') && form.indexOf('id="role"') < form.indexOf('id="course"'), "between School name and Your course");
+  assert.ok(HTML.includes("setCustomValidity(roleSelect.value ? '' : 'Please choose your role.')") && HTML.includes("role: 'your role'"), "a short error when it is empty");
   const options = [...form.slice(form.indexOf('id="course"')).matchAll(/<option>([^<]+)<\/option>/g)].map((m) => m[1]);
   assert.deepEqual(options, COURSES, "the select lists exactly the courses the function accepts");
   assert.ok(COURSES.includes("AQA GCSE Business (8132)") && COURSES.includes("Pearson Edexcel A level Business (9BS0)") && COURSES.at(-1) === "Other");
@@ -62,7 +69,7 @@ test("a good request: the game is asked with the secret and the sender's address
   const sent = calls[0].body;
   assert.match(sent.submission_id, /^web-[0-9a-f-]{36}$/);
   assert.deepEqual({ ...sent, submission_id: "" }, { submission_id: "", request_type: "trial", instant: true, ip: "203.0.113.7", name: "Kate Willett", email: "kate@cirencester.example",
-    school: "Cirencester College", course: "AQA GCSE Business (8132)", message: "Year 10", feedback_opt_in: true });
+    school: "Cirencester College", role: "Head of Business", course: "AQA GCSE Business (8132)", message: "Year 10", feedback_opt_in: true }); /* SPEC CHANGE (owner 22.11.2026): the role goes on */
   assert.ok(!("claim" in sent) && !("bot-field" in sent), "only the form's own fields go");
   /* two requests, two submissions */
   await submit(FORM);
@@ -86,18 +93,21 @@ test("no key unless the game made one for this request", async () => {
   }
 });
 
-test("fields are checked here before anything is made: required, email format, a course from the list", async () => {
+test("fields are checked here before anything is made: required, email format, a role and a course from the list", async () => {
   const calls = game({ outcome: "new" });
   for (const [change, fields] of [
     [{ name: "" }, ["name"]], [{ name: " 1 " }, ["name"]], [{ email: "" }, ["email"]], [{ email: "kate@school" }, ["email"]], [{ email: "kate school@x.example" }, ["email"]],
     [{ school: "" }, ["school"]], [{ school: "https://spam.example" }, ["school"]], [{ course: "" }, ["course"]], [{ course: "Made-up course" }, ["course"]],
-    [{ name: "", email: "x", school: "", course: "" }, ["name", "email", "school", "course"]],
+    /* SPEC CHANGE (owner 22.11.2026): "Your role", one of the five. */
+    [{ role: "" }, ["role"]], [{ role: undefined }, ["role"]], [{ role: "Pupil" }, ["role"]], [{ role: "teacher" }, ["role"]],
+    [{ name: "", email: "x", school: "", role: "", course: "" }, ["name", "email", "school", "role", "course"]],
   ]) {
     const out = await submit({ ...FORM, ...change });
     assert.equal(out.status, 400, JSON.stringify(change));
     assert.deepEqual(out.body, { ok: false, code: "invalid", fields });
   }
   assert.equal(calls.length, 0, "the game is never asked");
+  for (const role of ROLES) assert.deepEqual(check({ ...FORM, role }).fields, [], role);
   assert.equal((await handler({ httpMethod: "POST", headers: {}, body: "{not json" })).statusCode, 400);
   assert.equal((await handler({ httpMethod: "GET", headers: {}, body: "" })).statusCode, 405);
   assert.equal(check({ ...FORM, message: "x".repeat(5000) }).form.message.length, 1000);
@@ -136,5 +146,9 @@ test("the Netlify Forms copy of a request this page already handled is stored on
   const fallback = bodyFor(payload({ handled: "", message: "Hi", feedback_opt_in: "yes", claim: "b".repeat(32) }));
   assert.deepEqual([fallback.request_type, fallback.course, fallback.message, fallback.feedback_opt_in, fallback.claim, fallback.country, fallback.timing],
     ["trial", "Other", "Hi", true, "b".repeat(32), "", ""]);
+  /* SPEC CHANGE (owner 22.11.2026): the fallback carries the role too; anything not one of the five goes as none. */
+  assert.equal(bodyFor(payload({ handled: "", role: "School leader" })).role, "School leader");
+  assert.equal(bodyFor(payload({ handled: "", role: "<script>" })).role, "");
+  assert.equal(bodyFor(payload({ handled: "" })).role, "");
   assert.equal(bodyFor(payload({ request_type: "licence" })).request_type, "licence", "a quote request still reaches the game (which leaves it to the owner)");
 });
