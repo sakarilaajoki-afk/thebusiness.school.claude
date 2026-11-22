@@ -626,65 +626,84 @@
   </div>
 </section>
 
-<!-- HOW TO USE IT: one lesson as a timeline (owner 23.10.2026) -->
-<section class="tbs-facet" style="padding:78px 0">
+<!-- HOW TO USE IT: one lesson as a carousel (owner 22.11.2026) -->
+<section class="lc-sec">
   <style>
-    .hs-wrap{background:#0e2038;position:relative;padding:34px;border:1px solid #1b3254}
-    .hs-wrap::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(127,224,215,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(127,224,215,.07) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:linear-gradient(180deg,#000,transparent 92%);mask-image:linear-gradient(180deg,#000,transparent 92%)}
-    .hs{position:relative;display:grid;grid-template-columns:minmax(260px,360px) 1fr;gap:40px;align-items:start}
-    .hs-list{display:flex;flex-direction:column;gap:0;position:relative}
-    .hs-list::before{content:"";position:absolute;left:21px;top:18px;bottom:18px;width:1px;background:linear-gradient(180deg,rgba(127,224,215,0),rgba(127,224,215,.45) 12%,rgba(127,224,215,.45) 88%,rgba(127,224,215,0))}
-    .hs-item{all:unset;box-sizing:border-box;cursor:pointer;display:flex;gap:18px;align-items:flex-start;padding:9px 14px 9px 0;position:relative;transition:background .25s}
-    .hs-item:hover .hs-t{color:#fff}
-    .hs-item:focus-visible{outline:1px solid #7fe0d7;outline-offset:2px}
-    .hs-n{flex:0 0 42px;height:42px;display:grid;place-items:center;font-family:'Roboto Mono',ui-monospace,Menlo,monospace;font-weight:600;font-size:12px;letter-spacing:.08em;color:#8fa1bf;background:#0e2038;border:1px solid #2a4468;transition:all .25s;position:relative;z-index:1}
-    .hs-t{display:block;font-weight:600;font-size:16px;color:#c3cee0;line-height:1.3;padding-top:10px;transition:color .25s}
-    .hs-d{display:none;font-size:14.5px;line-height:1.5;color:#9fb2cf;margin-top:6px;max-width:30ch}
-    .hs-item[aria-selected="true"] .hs-n{background:#0a6b73;border-color:#7fe0d7;color:#fff;box-shadow:0 0 0 4px rgba(127,224,215,.14),0 0 22px rgba(127,224,215,.35)}
-    .hs-item[aria-selected="true"] .hs-t{color:#fff;font-size:17px}
-    .hs-item[aria-selected="true"] .hs-d{display:block}
-    .hs-view{position:sticky;top:90px}
-    .hs-frame{position:relative;overflow:hidden;background:#fff;border:1px solid rgba(127,224,215,.35);box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}
-    .hs-frame::before{content:"play.thebusiness.school · live";display:block;background:#07131f;color:#7fe0d7;height:30px;line-height:30px;padding:0 14px;font-family:'Roboto Mono',ui-monospace,Menlo,monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid #1b3254}
-    .hs-stack{position:relative;aspect-ratio:16/9}
-    .hs-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;opacity:0;transition:opacity .5s ease}
-    .hs-img.on{opacity:1}
-    .hs-bar{height:3px;background:#1b3254}.hs-bar i{display:block;height:100%;width:0;background:#7fe0d7;box-shadow:0 0 10px #7fe0d7}
-    .hs-cap{display:none}
-    .hs-corner{position:absolute;width:18px;height:18px;pointer-events:none;z-index:4;border:2px solid #7fe0d7}
-    .hs-corner.tl{left:-1px;top:-1px;border-right:0;border-bottom:0}.hs-corner.tr{right:-1px;top:-1px;border-left:0;border-bottom:0}
-    .hs-corner.bl{left:-1px;bottom:-1px;border-right:0;border-top:0}.hs-corner.br{right:-1px;bottom:-1px;border-left:0;border-top:0}
+    #tbs-home .lc-sec,.lc-sec{background:linear-gradient(180deg,#0e2038 0%,#0a1830 100%);padding:56px 0 68px;font-family:'Inter',system-ui,sans-serif;overflow:hidden;overflow:clip}
+    .lc-head{max-width:680px;margin:0 auto 36px;padding:0 24px;text-align:center}
+    .lc-head h2{font-family:'Fraunces',Georgia,serif;font-weight:600;color:#fff;font-size:clamp(30px,3.6vw,44px);margin:0;line-height:1.12;letter-spacing:-.01em}
+    .lc{--w:min(860px,62vw);position:relative;outline:none}
+    .lc-view{position:relative;height:calc(var(--w)*.5627);touch-action:pan-y;-webkit-user-select:none;user-select:none}
+    .lc-slide{position:absolute;left:50%;top:0;width:var(--w);margin-left:calc(var(--w)*-.5);border-radius:12px;overflow:hidden;background:#0a1830;transform:scale(.8);opacity:0;visibility:hidden;z-index:0;transition:transform .75s cubic-bezier(.22,.61,.36,1),opacity .75s ease,box-shadow .75s ease,visibility 0s linear .75s;will-change:transform,opacity}
+    .lc-slide img{display:block;width:100%;height:auto;aspect-ratio:1100/619}
+    .lc-slide.is-far-l{transform:translateX(-186%) scale(.8);pointer-events:none}
+    .lc-slide.is-far-r{transform:translateX(186%) scale(.8);pointer-events:none}
+    .lc-slide.is-prev,.lc-slide.is-next,.lc-slide.is-cur,.lc-slide.is-far-l,.lc-slide.is-far-r{visibility:visible;transition:transform .75s cubic-bezier(.22,.61,.36,1),opacity .75s ease,box-shadow .75s ease,visibility 0s}
+    .lc-slide.is-prev{transform:translateX(-93%) scale(.8);opacity:.34;z-index:1;cursor:pointer}
+    .lc-slide.is-next{transform:translateX(93%) scale(.8);opacity:.34;z-index:1;cursor:pointer}
+    .lc-slide.is-prev:hover,.lc-slide.is-next:hover{opacity:.6}
+    .lc-slide.is-cur{transform:none;opacity:1;z-index:2;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 36px 80px -30px rgba(0,0,0,.85)}
+    .lc:focus-visible .lc-slide.is-cur{box-shadow:0 0 0 2px #7fe0d7,0 36px 80px -30px rgba(0,0,0,.85)}
+    .lc-cap{width:var(--w);max-width:calc(100% - 48px);margin:30px auto 0;text-align:center;min-height:86px;transition:opacity .22s ease}
+    .lc-cap.out{opacity:0}
+    .lc-cap b{display:block;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:30px;line-height:1.2;color:#fff;letter-spacing:-.005em}
+    .lc-cap span{display:block;margin-top:10px;font-size:19px;line-height:1.5;color:#c3cee0}
+    .lc-nav{width:var(--w);max-width:calc(100% - 48px);margin:20px auto 0;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .lc-btn{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-width:168px;height:56px;padding:0 26px;border-radius:999px;border:1px solid rgba(255,255,255,.34);color:#fff;font-family:'Inter',system-ui,sans-serif;font-weight:600;font-size:18px;transition:background .25s,border-color .25s,color .25s}
+    .lc-btn svg{width:20px;height:20px;flex:0 0 20px;transition:transform .25s}
+    .lc-btn:hover{border-color:#7fe0d7;background:rgba(127,224,215,.1)}
+    .lc-btn.lc-next{background:#0a6b73;border-color:#0a6b73}
+    .lc-btn.lc-next:hover{background:#0c7f88;border-color:#7fe0d7}
+    .lc-btn.lc-prev:hover svg{transform:translateX(-3px)}
+    .lc-btn.lc-next:hover svg{transform:translateX(3px)}
+    .lc-btn:focus-visible{outline:2px solid #7fe0d7;outline-offset:3px}
+    .lc-prog{display:flex;align-items:center}
+    .lc-segs{display:flex;gap:6px}
+    .lc-segs i{display:block;width:26px;height:3px;border-radius:2px;background:rgba(255,255,255,.2);overflow:hidden;transition:background .4s}
+    .lc-segs i.on{background:#7fe0d7}
+    .lc-segs i.on.run{background:rgba(255,255,255,.2)}
+    .lc-segs i.on.run::after{content:"";display:block;height:100%;background:#7fe0d7;animation:lcFill var(--lc-d,6500ms) linear both}
+    .lc-cta{margin-top:44px;display:flex;flex-direction:column;align-items:center;gap:18px}
+    .lc-trial{display:inline-block;background:#0a6b73;color:#fff;font-weight:700;padding:19px 38px;text-decoration:none;font-size:20px;box-shadow:0 8px 24px rgba(10,107,115,.35)}
+    .lc-trial:hover{background:#0c7f88}
+    .lc-demo{color:#c3cee0;font-size:17px;font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(195,206,224,.5)}
+    .lc-demo:hover{color:#fff}
+    @keyframes lcFill{from{width:0}to{width:100%}}
+    @media (max-width:1020px){.lc-segs i{width:16px}}
     @media (max-width:820px){
-      .hs-wrap{padding:16px;margin:0 -8px}
-      .hs{grid-template-columns:1fr;gap:14px}
-      .hs-view{position:static;order:-1}
-      .hs-list{flex-direction:row;overflow-x:auto;scroll-snap-type:x mandatory;gap:8px;padding:2px 16px 8px;margin:0 -16px;scrollbar-width:none}
-      .hs-list::before{display:none}
-      .hs-list::-webkit-scrollbar{display:none}
-      .hs-item{flex:0 0 auto;scroll-snap-align:center;padding:6px 12px 6px 6px;border:1px solid #2a4468;align-items:center;gap:10px}
-      .hs-n{flex-basis:30px;height:30px;font-size:11px}
-      .hs-t{font-size:13.5px;white-space:nowrap;padding-top:0}
-      .hs-item[aria-selected="true"]{border-color:#7fe0d7}
-      .hs-item[aria-selected="true"] .hs-t{font-size:13.5px}
-      .hs-d{display:none!important}
-      .hs-cap{display:block;font-size:15px;line-height:1.5;color:#c3cee0;text-align:center;padding:4px 4px 0}
-      .hs-cap b{display:block;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:20px;color:#fff;margin-bottom:4px}
+      #tbs-home .lc-sec,.lc-sec{padding:52px 0 56px}
+      .lc-head{margin-bottom:26px}
+      .lc{--w:calc(100vw - 48px)}
+      .lc-slide{border-radius:8px}
+      .lc-cap{margin-top:22px;min-height:120px}
+      .lc-cap b{font-size:25px}
+      .lc-cap span{font-size:18px}
+      .lc-nav{margin-top:14px;gap:10px}
+      .lc-btn{min-width:0;height:54px;padding:0 16px;font-size:17px;gap:8px}
+      .lc-segs{gap:4px}
+      .lc-segs i,.lc-segs i.on{width:5px;height:5px;border-radius:50%}
+      .lc-segs i.on.run{background:#7fe0d7}
+      .lc-segs i.on.run::after{display:none}
+      .lc-cta{margin-top:36px}
     }
+    @media (prefers-reduced-motion:reduce){.lc-slide,.lc-slide.is-prev,.lc-slide.is-next,.lc-slide.is-cur,.lc-slide.is-far-l,.lc-slide.is-far-r,.lc-cap,.lc-btn svg{transition:none}}
   </style>
-  <div class="rvl" style="max-width:1160px;margin:0 auto;padding:0 24px">
-    <div style="max-width:680px;margin:0 auto 44px;text-align:center">
-      <span style="font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#0a6b73">In one lesson</span>
-      <h2 style="font-family:'Fraunces',Georgia,serif;font-weight:600;color:#0e2038;font-size:clamp(26px,3.2vw,37px);margin:12px 0;line-height:1.15;letter-spacing:-.01em">How a lesson runs</h2>
-      <p style="color:#40506e;font-size:16.5px">One lesson of a topic as you teach it, the whole topic as revision, or a business activity any time (No topic).</p>
-      <p style="color:#40506e;font-size:16.5px;margin-top:10px">The lesson runs step by step. The whole class works on the same step at the same time, and your screen shows the step and its clock.</p>
-    </div>
-    <div class="hs-wrap"><div class="hs"><div class="hs-list" role="tablist" aria-label="How a lesson runs"><button class="hs-item" type="button" role="tab" aria-selected="true" data-i="0"><span class="hs-n">01</span><span><span class="hs-t">Students join with a PIN</span><span class="hs-d">You pick the class and the lesson length. The whole class joins with one PIN.</span></span></button><button class="hs-item" type="button" role="tab" aria-selected="false" data-i="1"><span class="hs-n">02</span><span><span class="hs-t">Each firm votes where to open</span><span class="hs-d">Everyone votes. Most votes wins.</span></span></button><button class="hs-item" type="button" role="tab" aria-selected="false" data-i="2"><span class="hs-n">03</span><span><span class="hs-t">Everyone deals</span><span class="hs-d">Students buy, price and negotiate face to face.</span></span></button><button class="hs-item" type="button" role="tab" aria-selected="false" data-i="3"><span class="hs-n">04</span><span><span class="hs-t">Firm decisions</span><span class="hs-d">Staff, marketing, loans: each role has its own page.</span></span></button><button class="hs-item" type="button" role="tab" aria-selected="false" data-i="4"><span class="hs-n">05</span><span><span class="hs-t">A topic task every round</span><span class="hs-d">Each firm agrees one answer. Right answers pay the firm.</span></span></button><button class="hs-item" type="button" role="tab" aria-selected="false" data-i="5"><span class="hs-n">06</span><span><span class="hs-t">A B2B deal between firms</span><span class="hs-d">One firm sells a lot of vehicles to another. They agree a price.</span></span></button><button class="hs-item" type="button" role="tab" aria-selected="false" data-i="6"><span class="hs-n">07</span><span><span class="hs-t">You see every firm live</span><span class="hs-d">Pause and Stop are one click away.</span></span></button><button class="hs-item" type="button" role="tab" aria-selected="false" data-i="7"><span class="hs-n">08</span><span><span class="hs-t">Questions, then the winner</span><span class="hs-d">Six final questions, then the podium.</span></span></button><button class="hs-item" type="button" role="tab" aria-selected="false" data-i="8"><span class="hs-n">09</span><span><span class="hs-t">Every student gets a report</span><span class="hs-d">You download the class pack.</span></span></button></div><div class="hs-view"><div class="hs-frame"><i class="hs-corner tl"></i><i class="hs-corner tr"></i><i class="hs-corner bl"></i><i class="hs-corner br"></i><div class="hs-stack"><img class="hs-img on" src="/assets/tbs-web/howto/1-join.jpg?v=20261112c" alt="Students join with a PIN" width="1100" height="619"><img class="hs-img" src="/assets/tbs-web/howto/2-location.jpg?v=20261110" alt="Each firm votes where to open" loading="lazy" width="1100" height="619"><img class="hs-img" src="/assets/tbs-web/howto/3-deal-1117.jpg?v=20261117" alt="Everyone deals" loading="lazy" width="1100" height="619"><img class="hs-img" src="/assets/tbs-web/howto/4-decisions-1117.jpg?v=20261117" alt="Firm decisions" loading="lazy" width="1100" height="619"><img class="hs-img" src="/assets/tbs-web/howto/5-topic-1117.jpg?v=20261117" alt="A topic task every round" loading="lazy" width="1100" height="619"><img class="hs-img" src="/assets/tbs-web/howto/6-b2b-1117.jpg?v=20261117" alt="A B2B deal between firms" loading="lazy" width="1100" height="619"><img class="hs-img" src="/assets/tbs-web/howto/4-teacher.jpg?v=20261115a" alt="You see every firm live" loading="lazy" width="1100" height="619"><img class="hs-img" src="/assets/tbs-web/howto/5-winner.jpg?v=20261113b" alt="Questions, then the winner" loading="lazy" width="1100" height="619"><img class="hs-img" src="/assets/tbs-web/howto/6-report.jpg?v=20261113d" alt="Every student gets a report" loading="lazy" width="1100" height="619"></div><div class="hs-bar"><i></i></div></div><p class="hs-cap" aria-live="polite"></p></div></div></div>
-    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:8px">
-      <a href="/trial/" style="display:inline-block;background:#0a6b73;color:#fff;font-weight:700;border-radius:12px;padding:19px 38px;text-decoration:none;font-size:20px;box-shadow:0 8px 24px rgba(10,107,115,.35)">Request a trial</a>
-      <a href="https://play.thebusiness.school/demo/group-classroom/" style="display:inline-block;background:#fff;color:#0e2038;border:1px solid #c9d3df;font-weight:700;border-radius:12px;padding:19px 30px;text-decoration:none;font-size:18px">Try the Teacher Demo</a>
-      <a href="/for-teachers/#teacher-tutorial" style="display:inline-block;background:#fff;color:#0e2038;border:1px solid #c9d3df;font-weight:700;border-radius:12px;padding:19px 30px;text-decoration:none;font-size:18px">Watch the teacher tutorial</a>
+  <div class="lc-head">
+    <h2>How a lesson runs</h2>
+  </div>
+  <div class="lc" tabindex="0" role="group" aria-roledescription="carousel" aria-label="How a lesson runs, 9 steps">
+    <div class="lc-view"><div class="lc-slide is-cur" data-t="Students join with a PIN" data-d="You pick the class and the lesson length. The whole class joins with one PIN."><img src="/assets/tbs-web/howto/1-join.jpg?v=20261112c" alt="Students join with a PIN" decoding="async" width="1100" height="619" draggable="false"></div><div class="lc-slide is-next" data-t="Each firm votes where to open" data-d="Everyone votes. Most votes wins." aria-hidden="true"><img src="/assets/tbs-web/howto/2-location.jpg?v=20261110" alt="Each firm votes where to open" loading="lazy" decoding="async" width="1100" height="619" draggable="false"></div><div class="lc-slide is-far-r" data-t="Everyone deals" data-d="Students buy, price and negotiate face to face." aria-hidden="true"><img src="/assets/tbs-web/howto/3-deal-1117.jpg?v=20261117" alt="Everyone deals" loading="lazy" decoding="async" width="1100" height="619" draggable="false"></div><div class="lc-slide" data-t="Firm decisions" data-d="Staff, marketing, loans: each role has its own page." aria-hidden="true"><img src="/assets/tbs-web/howto/4-decisions-1117.jpg?v=20261117" alt="Firm decisions" loading="lazy" decoding="async" width="1100" height="619" draggable="false"></div><div class="lc-slide" data-t="A topic task every round" data-d="Each firm agrees one answer. Right answers pay the firm." aria-hidden="true"><img src="/assets/tbs-web/howto/5-topic-1117.jpg?v=20261117" alt="A topic task every round" loading="lazy" decoding="async" width="1100" height="619" draggable="false"></div><div class="lc-slide" data-t="A B2B deal between firms" data-d="One firm sells a lot of vehicles to another. They agree a price." aria-hidden="true"><img src="/assets/tbs-web/howto/6-b2b-1117.jpg?v=20261117" alt="A B2B deal between firms" loading="lazy" decoding="async" width="1100" height="619" draggable="false"></div><div class="lc-slide" data-t="You see every firm live" data-d="Pause and Stop are one click away." aria-hidden="true"><img src="/assets/tbs-web/howto/4-teacher.jpg?v=20261115a" alt="You see every firm live" loading="lazy" decoding="async" width="1100" height="619" draggable="false"></div><div class="lc-slide is-far-l" data-t="Questions, then the winner" data-d="Six final questions, then the podium." aria-hidden="true"><img src="/assets/tbs-web/howto/5-winner.jpg?v=20261113b" alt="Questions, then the winner" loading="lazy" decoding="async" width="1100" height="619" draggable="false"></div><div class="lc-slide is-prev" data-t="Every student gets a report" data-d="You download the class pack." aria-hidden="true"><img src="/assets/tbs-web/howto/6-report.jpg?v=20261113d" alt="Every student gets a report" loading="lazy" decoding="async" width="1100" height="619" draggable="false"></div></div>
+    <p class="lc-cap" aria-live="polite"><b>Students join with a PIN</b><span>You pick the class and the lesson length. The whole class joins with one PIN.</span></p>
+    <div class="lc-nav">
+      <button class="lc-btn lc-prev" type="button" aria-label="Previous step"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 10H4M9 5l-5 5 5 5"/></svg>Previous</button>
+      <div class="lc-prog" aria-hidden="true"><span class="lc-segs"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+      <button class="lc-btn lc-next" type="button" aria-label="Next step">Next<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg></button>
     </div>
   </div>
+    <div class="lc-cta">
+      <a class="lc-trial" href="/trial/">Request a trial</a>
+      <a class="lc-demo" href="https://play.thebusiness.school/demo/group-classroom/">Try the Teacher Demo</a>
+    </div>
 </section>
 
 <!-- PROOF -->
@@ -1156,7 +1175,7 @@ class Component extends DCLogic {
 }
 </script>
 <script>(function(){function o(){if(location.hash==="#feedback"){var d=document.getElementById("feedback");if(d){d.open=true;d.scrollIntoView();}}}window.addEventListener("hashchange",o);window.addEventListener("load",o);})();</script>
-<script src="/assets/tbs-web/howto.js?v=20261117"></script>
+<script src="/assets/tbs-web/howto.js?v=20261122b"></script>
 <script src="/assets/tbs-web/topics.js?v=20261115b"></script>
 </body>
 </html>
