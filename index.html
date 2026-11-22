@@ -638,8 +638,8 @@
     .lc-view{position:relative;height:calc(var(--w)*.5627);touch-action:pan-y;-webkit-user-select:none;user-select:none}
     .lc-slide{position:absolute;left:50%;top:0;width:var(--w);margin-left:calc(var(--w)*-.5);border-radius:12px;overflow:hidden;background:#0a1830;transform:scale(.8);opacity:0;visibility:hidden;z-index:0;transition:transform .75s cubic-bezier(.22,.61,.36,1),opacity .75s ease,box-shadow .75s ease,visibility 0s linear .75s;will-change:transform,opacity}
     .lc-slide img{display:block;width:100%;height:auto;aspect-ratio:1100/619}
-    .lc-slide.is-far-l{transform:translateX(-186%) scale(.8)}
-    .lc-slide.is-far-r{transform:translateX(186%) scale(.8)}
+    .lc-slide.is-far-l{transform:translateX(-186%) scale(.8);pointer-events:none}
+    .lc-slide.is-far-r{transform:translateX(186%) scale(.8);pointer-events:none}
     .lc-slide.is-prev,.lc-slide.is-next,.lc-slide.is-cur,.lc-slide.is-far-l,.lc-slide.is-far-r{visibility:visible;transition:transform .75s cubic-bezier(.22,.61,.36,1),opacity .75s ease,box-shadow .75s ease,visibility 0s}
     .lc-slide.is-prev{transform:translateX(-93%) scale(.8);opacity:.34;z-index:1;cursor:pointer}
     .lc-slide.is-next{transform:translateX(93%) scale(.8);opacity:.34;z-index:1;cursor:pointer}
