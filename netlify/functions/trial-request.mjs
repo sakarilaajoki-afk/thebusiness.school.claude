@@ -1,9 +1,9 @@
 /* The short trial form: the licence key on screen at once (owner 19.11.2026).
 
    POST /.netlify/functions/trial-request   (JSON, from trial/index.html)
-   { name, email, school, course, message?, feedback_opt_in?, "bot-field" }
+   { name, email, school, role, course, message?, feedback_opt_in?, "bot-field" }
 
-   This function checks the four fields, then asks the game to make the trial
+   This function checks the five fields, then asks the game to make the trial
    licence (play.thebusiness.school/api/trial-licence, the same step the
    Netlify Forms hook uses, with the shared TRIAL_HOOK_SECRET), and hands the
    answer to the browser that sent the form, and to nobody else:
@@ -54,6 +54,10 @@ export const COURSES = [
   "Other",
 ];
 
+/* "Your role", as the select on trial/index.html lists it, in its order
+   (owner 22.11.2026; a test keeps the two the same). */
+export const ROLES = ["Teacher", "Head of Business", "Curriculum lead", "School leader", "Other"];
+
 const EMAIL_RE = /^[^\s@<>"',;]+@[^\s@<>"',;]+\.[a-z]{2,}$/i;
 const HEADERS = { "Content-Type": "application/json", "Cache-Control": "no-store" };
 
@@ -69,12 +73,13 @@ function parse(event) {
   try { const body = JSON.parse(raw); return body && typeof body === "object" ? body : null; } catch { return null; }
 }
 
-/* The four fields, checked as the game will check them. */
+/* The five fields, checked as the game will check them. */
 export function check(data) {
   const form = {
     name: clean(data.name, 120),
     email: clean(data.email, 255).toLowerCase(),
     school: clean(data.school, 120),
+    role: clean(data.role, 40),
     course: clean(data.course, 120),
     message: String(data.message == null ? "" : data.message).replace(/\u0000/g, "").trim().slice(0, 1000),
     feedback_opt_in: data.feedback_opt_in === true || clean(data.feedback_opt_in, 10).toLowerCase() === "yes",
@@ -83,6 +88,7 @@ export function check(data) {
   if (form.name.length < 2 || !/\p{L}/u.test(form.name)) fields.push("name");
   if (!EMAIL_RE.test(form.email)) fields.push("email");
   if (form.school.length < 2 || !/\p{L}/u.test(form.school) || /[<>{}\[\]]|https?:|@/i.test(form.school)) fields.push("school");
+  if (!ROLES.includes(form.role)) fields.push("role");
   if (!COURSES.includes(form.course)) fields.push("course");
   return { form, fields };
 }

@@ -19,7 +19,7 @@
    reached) is posted as before.
 
    Only the fields the licence and its email need leave this site: the name,
-   the school email, the school, the course, the optional message and
+   the school email, the school, the role, the course, the optional message and
    feedback answer, which of the two requests it is, and the thank-you
    screen's one-time code (and, from older forms, the country and the answer
    to "When could you run a lesson?"). Nothing is logged but
@@ -27,6 +27,8 @@
    so a submission is never lost here: if the game cannot be reached the owner
    still has it in Netlify Forms, and the game's own record shows it missing.
 */
+import { ROLES } from "./trial-request.mjs";
+
 const HOOK = "https://play.thebusiness.school/api/trial-licence";
 const FORM = "pilot-application";
 const TIMEOUT_MS = 8000;
@@ -48,6 +50,8 @@ export function bodyFor(payload) {
     country: clean(data.country, 80),
     timing: clean(data.timing, 80),
     course: clean(data.course, 120),
+    /* "Your role" (owner 22.11.2026): one of the form's five, or none. */
+    role: ROLES.includes(clean(data.role, 40)) ? clean(data.role, 40) : "",
     message: String(data.message == null ? "" : data.message).trim().slice(0, 1000),
     feedback_opt_in: clean(data.feedback_opt_in, 10).toLowerCase() === "yes",
     /* The thank-you screen's one-time code (trial/index.html). */
