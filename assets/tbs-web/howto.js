@@ -3,12 +3,12 @@
 function boot(){
   var r=document.querySelector('.lc');if(!r||r.getAttribute('data-ready'))return;r.setAttribute('data-ready','1');
   var sl=[].slice.call(r.querySelectorAll('.lc-slide')),L=sl.length,view=r.querySelector('.lc-view'),cap=r.querySelector('.lc-cap'),
-      segs=[].slice.call(r.querySelectorAll('.lc-segs i')),count=r.querySelector('.lc-count'),
+      segs=[].slice.call(r.querySelectorAll('.lc-segs i')),
       prev=r.querySelector('.lc-prev'),next=r.querySelector('.lc-next');
   var cur=0,timer=null,auto=false,hover=false,seen=false,capT=null,D=6500;
   var still=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
   var CLS=['is-far-l','is-prev','is-cur','is-next','is-far-r'];
-  function writeCap(k){var s=sl[k];cap.innerHTML='<b><i></i></b><span></span>';cap.firstChild.firstChild.textContent=s.getAttribute('data-n');cap.firstChild.appendChild(document.createTextNode(' · '+s.getAttribute('data-t')));cap.lastChild.textContent=s.getAttribute('data-d')}
+  function writeCap(k){var s=sl[k];cap.innerHTML='<b></b><span></span>';cap.firstChild.textContent=s.getAttribute('data-t');cap.lastChild.textContent=s.getAttribute('data-d')}
   function mark(){segs.forEach(function(e,n){e.className=n===cur?(auto&&!hover&&seen?'on run':'on'):''})}
   function set(k){
     cur=(k+L)%L;
@@ -18,7 +18,6 @@ function boot(){
       if(o>=-2&&o<=2){e.classList.add(CLS[o+2]);var im=e.querySelector('img');if(im&&im.loading==='lazy')im.loading='eager'}
       if(o===0)e.removeAttribute('aria-hidden');else e.setAttribute('aria-hidden','true');
     });
-    if(count)count.textContent=(cur+1)+' / '+L;
     mark();
     clearTimeout(capT);
     if(still){writeCap(cur)}else{cap.classList.add('out');capT=setTimeout(function(){writeCap(cur);cap.classList.remove('out')},220)}
