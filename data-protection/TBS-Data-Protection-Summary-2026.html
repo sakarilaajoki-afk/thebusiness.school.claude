@@ -79,7 +79,7 @@
   <tbody>
     <tr><td><strong>Teacher</strong></td><td>Name, email, school name, session history</td></tr>
     <tr><td><strong>Student</strong></td><td>A first name or classroom nickname only (no surname, no email, no DOB, no photos). PIN-code join, no account, no password.</td></tr>
-    <tr><td><strong>Gameplay</strong></td><td>In-session decisions (purchases, pricing, hiring) and team scores</td></tr>
+    <tr><td><strong>Gameplay</strong></td><td>In-session decisions (purchases, pricing, hiring), answers to questions and team scores</td></tr>
     <tr><td><strong>Technical</strong></td><td>IP address (server logs only, 30-day auto-purge); browser/device headers; session timestamps</td></tr>
   </tbody>
 </table>
@@ -88,23 +88,23 @@
 <table>
   <thead><tr><th style="width:24%">Sub-processor</th><th style="width:24%">Purpose</th><th style="width:22%">Location</th><th>Safeguard</th></tr></thead>
   <tbody>
-    <tr><td><strong>Netlify</strong></td><td>Frontend hosting + edge CDN</td><td>Global edge; primary EU edge</td><td>SCC (UK Addendum)</td></tr>
+    <tr><td><strong>Netlify</strong></td><td>Frontend hosting + edge CDN</td><td>Global edge network; primary EU edge nodes</td><td>SCC (UK Addendum)</td></tr>
     <tr><td><strong>Neon</strong></td><td>Postgres database</td><td>AWS eu-central-1 (Frankfurt, EU)</td><td>SCC (UK Addendum); AES-256 at rest; TLS 1.2+ in transit</td></tr>
-    <tr><td><strong>OpenAI</strong></td><td>Optional class analysis for the teacher: anonymous figures only (no names, no student text); not stored</td><td>EU and US regions</td><td>SCC (UK Addendum); no student personal identifiers sent to model</td></tr>
+    <tr><td><strong>Google Fonts</strong></td><td>Page fonts</td><td>Google's global network</td><td>The browser requests the font files directly; no names or game data are sent</td></tr>
   </tbody>
 </table>
 
 <h2>Retention</h2>
-<p><strong>Free tier sessions:</strong> deleted after 30 days. <strong>Paid tier saved sessions:</strong> teacher-controlled deletion. <strong>Teacher accounts:</strong> retained during subscription, deleted within 30 days of termination. <strong>Server logs (IP):</strong> 30 days, auto-purged.</p>
+<p><strong>Class report and student reports:</strong> deleted after 30 days; the teacher can delete them sooner. <strong>Live session working data:</strong> removed when the session expires. <strong>Teacher accounts:</strong> retained during subscription, deleted within 30 days of termination. <strong>Server logs (IP):</strong> 30 days, auto-purged.</p>
 
 <h2>Sharing</h2>
-<p>No sale, no rental, no advertising profiling. The three sub-processors above process data solely to deliver their infrastructure or inference services. No marketing tracking cookies. PIN-code join eliminates credential risks.</p>
+<p>No sale, no rental, no advertising profiling. The three sub-processors above process data solely to deliver their infrastructure services. No marketing tracking cookies. PIN-code join eliminates credential risks.</p>
 
 <h2>Rights and complaints</h2>
 <p>Under UK GDPR / EU GDPR: rights of access, rectification, erasure, restriction, portability, and objection. Student data requests are routed via the school as Data Controller. Complaints to the UK ICO at <strong>ico.org.uk/concerns</strong> or to the Finnish Data Protection Ombudsman at <strong>tietosuoja.fi</strong>.</p>
 
 <h2>Contact</h2>
-<p><strong>Sakari Laajoki, TBS Education Ltd Oy</strong> · support@thebusiness.school · Response within 72 hours. Full Privacy Policy and Data Processing Agreement available at <strong>thebusiness.school/data-protection</strong>.</p>
+<p><strong>Sakari Laajoki, TBS Education Ltd Oy</strong> · support@thebusiness.school · Reply within one working day. Full Privacy Policy and Data Processing Agreement available at <strong>thebusiness.school/data-protection</strong>.</p>
 
 <div class="footer-block">
   <strong>TBS Education Ltd Oy</strong> · Business ID 3614159-3 · ICO Registration ZC133810 · www.thebusiness.school · Version 1.1, October 2026. Effective 28 April 2026

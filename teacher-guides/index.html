@@ -203,6 +203,8 @@ main{overflow-x:clip}
   var lessons = [];
   /* The lesson map's course ids that have another id here. */
   var ALIAS = { 'btec-l3-national': 'btec-l3-extended-certificate', 'cambridge-igcse-0450': 'cambridge-igcse-0264' };
+  /* A course that shows another course's lesson PDFs: the same lessons, one set of files. */
+  var LESSONS_FROM = { 'ocr-a-level-h431': 'ocr-a-level-h436' };
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function has(id) { return !!id && Array.prototype.some.call(select.options, function (o) { return o.value === id; }); }
   function show() {
@@ -217,7 +219,7 @@ main{overflow-x:clip}
     list.innerHTML = (allDraft ? '<li class="dh"><span class="d">Draft</span></li>' : '') + rows.map(function (g, k) {
       var name = g.topicId === 'no-topic' ? 'No topic · play any time' : g.topic;
       /* The topic's numbered lessons, each with its own PDF (lesson-guides.json). */
-      var own = lessons.filter(function (l) { return l.courseId === picked && l.topicId === g.topicId; })
+      var own = lessons.filter(function (l) { return l.courseId === (LESSONS_FROM[picked] || picked) && l.topicId === g.topicId; })
         .sort(function (a, b) { return a.lesson - b.lesson; });
       return '<li' + (own.length ? ' class="has"' : '') + '><span class="n">' + ('0' + (k + 1)).slice(-2) + '</span><span class="t">' + esc(name) + (g.draft && !allDraft ? '<span class="d">Draft</span>' : '') + '</span>'
         + '<a class="dl" href="pdf/' + encodeURIComponent(g.file) + '" target="_blank" rel="noopener" aria-label="Open the PDF: ' + esc(name) + (own.length ? ', whole topic' : '') + '">' + (own.length ? 'Whole topic' : 'Open PDF') + '</a>'
