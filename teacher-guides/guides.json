@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "madeFrom": "bs-multiplayer 8c6b7938",
+  "madeFrom": "bs-multiplayer f83017e3",
   "guides": [
     {
       "courseId": "btec-l3-extended-certificate",
@@ -3597,14 +3597,6 @@
     {
       "courseId": "gcse",
       "course": "GCSE Business",
-      "topicId": "leadership",
-      "topic": "Leadership and management",
-      "draft": false,
-      "file": "gcse-business--leadership-and-management.pdf"
-    },
-    {
-      "courseId": "gcse",
-      "course": "GCSE Business",
       "topicId": "organisational-structure",
       "topic": "Organisational structure",
       "draft": false,
@@ -3617,14 +3609,6 @@
       "topic": "Recruitment and training",
       "draft": false,
       "file": "gcse-business--recruitment-and-training.pdf"
-    },
-    {
-      "courseId": "gcse",
-      "course": "GCSE Business",
-      "topicId": "business-strategy",
-      "topic": "Business strategy",
-      "draft": false,
-      "file": "gcse-business--business-strategy.pdf"
     },
     {
       "courseId": "gcse",
@@ -3789,14 +3773,6 @@
     {
       "courseId": "igcse",
       "course": "International GCSE Business",
-      "topicId": "business-strategy",
-      "topic": "Business strategy",
-      "draft": false,
-      "file": "international-gcse-business--business-strategy.pdf"
-    },
-    {
-      "courseId": "igcse",
-      "course": "International GCSE Business",
       "topicId": "product-portfolio",
       "topic": "Product portfolio",
       "draft": false,
@@ -3861,14 +3837,6 @@
     {
       "courseId": "btec-level-2",
       "course": "BTEC Level 2 Business",
-      "topicId": "stock",
-      "topic": "Stock",
-      "draft": false,
-      "file": "btec-level-2-business--stock.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
       "topicId": "revenue-costs-profit",
       "topic": "Revenue, costs and profit",
       "draft": false,
@@ -3885,14 +3853,6 @@
     {
       "courseId": "btec-level-2",
       "course": "BTEC Level 2 Business",
-      "topicId": "investment-appraisal",
-      "topic": "Investment appraisal",
-      "draft": false,
-      "file": "btec-level-2-business--investment-appraisal.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
       "topicId": "financial-ratios",
       "topic": "Financial ratios",
       "draft": false,
@@ -3901,82 +3861,10 @@
     {
       "courseId": "btec-level-2",
       "course": "BTEC Level 2 Business",
-      "topicId": "market-share",
-      "topic": "Market share and segmentation",
-      "draft": false,
-      "file": "btec-level-2-business--market-share-and-segmentation.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
-      "topicId": "production-capacity",
-      "topic": "Production and capacity",
-      "draft": false,
-      "file": "btec-level-2-business--production-and-capacity.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
-      "topicId": "growth-scale",
-      "topic": "Growth and economies of scale",
-      "draft": false,
-      "file": "btec-level-2-business--growth-and-economies-of-scale.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
-      "topicId": "motivation",
-      "topic": "Motivation",
-      "draft": false,
-      "file": "btec-level-2-business--motivation.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
-      "topicId": "leadership",
-      "topic": "Leadership and management",
-      "draft": false,
-      "file": "btec-level-2-business--leadership-and-management.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
-      "topicId": "organisational-structure",
-      "topic": "Organisational structure",
-      "draft": false,
-      "file": "btec-level-2-business--organisational-structure.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
-      "topicId": "recruitment-training",
-      "topic": "Recruitment and training",
-      "draft": false,
-      "file": "btec-level-2-business--recruitment-and-training.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
-      "topicId": "business-strategy",
-      "topic": "Business strategy",
-      "draft": false,
-      "file": "btec-level-2-business--business-strategy.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
       "topicId": "product-portfolio",
       "topic": "Product portfolio",
       "draft": false,
       "file": "btec-level-2-business--product-portfolio.pdf"
-    },
-    {
-      "courseId": "btec-level-2",
-      "course": "BTEC Level 2 Business",
-      "topicId": "stakeholders-ethics",
-      "topic": "Stakeholders and ethics",
-      "draft": false,
-      "file": "btec-level-2-business--stakeholders-and-ethics.pdf"
     },
     {
       "courseId": "btec-level-2",
@@ -4365,14 +4253,6 @@
     {
       "courseId": "btec-level-3",
       "course": "BTEC Level 3 Business",
-      "topicId": "stock",
-      "topic": "Stock",
-      "draft": false,
-      "file": "btec-level-3-business--stock.pdf"
-    },
-    {
-      "courseId": "btec-level-3",
-      "course": "BTEC Level 3 Business",
       "topicId": "revenue-costs-profit",
       "topic": "Revenue, costs and profit",
       "draft": false,
@@ -4385,14 +4265,6 @@
       "topic": "Sources of finance",
       "draft": false,
       "file": "btec-level-3-business--sources-of-finance.pdf"
-    },
-    {
-      "courseId": "btec-level-3",
-      "course": "BTEC Level 3 Business",
-      "topicId": "investment-appraisal",
-      "topic": "Investment appraisal",
-      "draft": false,
-      "file": "btec-level-3-business--investment-appraisal.pdf"
     },
     {
       "courseId": "btec-level-3",
@@ -4413,66 +4285,10 @@
     {
       "courseId": "btec-level-3",
       "course": "BTEC Level 3 Business",
-      "topicId": "production-capacity",
-      "topic": "Production and capacity",
-      "draft": false,
-      "file": "btec-level-3-business--production-and-capacity.pdf"
-    },
-    {
-      "courseId": "btec-level-3",
-      "course": "BTEC Level 3 Business",
-      "topicId": "growth-scale",
-      "topic": "Growth and economies of scale",
-      "draft": false,
-      "file": "btec-level-3-business--growth-and-economies-of-scale.pdf"
-    },
-    {
-      "courseId": "btec-level-3",
-      "course": "BTEC Level 3 Business",
-      "topicId": "motivation",
-      "topic": "Motivation",
-      "draft": false,
-      "file": "btec-level-3-business--motivation.pdf"
-    },
-    {
-      "courseId": "btec-level-3",
-      "course": "BTEC Level 3 Business",
-      "topicId": "leadership",
-      "topic": "Leadership and management",
-      "draft": false,
-      "file": "btec-level-3-business--leadership-and-management.pdf"
-    },
-    {
-      "courseId": "btec-level-3",
-      "course": "BTEC Level 3 Business",
       "topicId": "organisational-structure",
       "topic": "Organisational structure",
       "draft": false,
       "file": "btec-level-3-business--organisational-structure.pdf"
-    },
-    {
-      "courseId": "btec-level-3",
-      "course": "BTEC Level 3 Business",
-      "topicId": "recruitment-training",
-      "topic": "Recruitment and training",
-      "draft": false,
-      "file": "btec-level-3-business--recruitment-and-training.pdf"
-    },
-    {
-      "courseId": "btec-level-3",
-      "course": "BTEC Level 3 Business",
-      "topicId": "business-strategy",
-      "topic": "Business strategy",
-      "draft": false,
-      "file": "btec-level-3-business--business-strategy.pdf"
-    },
-    {
-      "courseId": "btec-level-3",
-      "course": "BTEC Level 3 Business",
-      "topicId": "product-portfolio",
-      "topic": "Product portfolio",
-      "draft": false,
-      "file": "btec-level-3-business--product-portfolio.pdf"
     },
     {
       "courseId": "btec-level-3",
