@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
 <meta charset="UTF-8">
-<title>Internal Data Policies, The Business School</title>
+<title>Data Handling Policies, The Business School</title>
 <style>
   @page { size: A4; margin: 22mm 20mm; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -36,7 +36,7 @@
 <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Internal Data Policies, The Business School">
+<meta property="og:title" content="Data Handling Policies, The Business School">
 <meta property="og:description" content="Free teaching resources for Business and Economics, written for the specification.">
 <meta property="og:url" content="https://thebusiness.school/data-protection/TBS-Internal-Data-Policies-2026.html">
 <meta property="og:image" content="https://thebusiness.school/assets/og-cover.png?v=20261006b">
@@ -48,8 +48,8 @@
 <body>
 
 <div class="title-block">
-  <div class="eyebrow">Internal · For TBS Education Ltd Oy staff and contractors</div>
-  <h1>Internal Data Policies</h1>
+  <div class="eyebrow">Data handling policies</div>
+  <h1>Data Handling Policies</h1>
   <div class="subtitle">
     Operational policies for handling personal data · Version 1.1, October 2026. Effective 28 April 2026
   </div>
@@ -69,8 +69,8 @@
   <thead><tr><th style="width:30%">Role</th><th>Responsibility</th></tr></thead>
   <tbody>
     <tr><td><strong>Data Protection Lead</strong></td><td>Sakari Laajoki (Founder &amp; Director), first point of contact for all data-protection enquiries, breach response, and regulator correspondence.</td></tr>
-    <tr><td><strong>Engineering Partner</strong></td><td>Appifest, Sydney, Australia (Muhammad Feroz), operates the production codebase under written confidentiality terms; access to production database is logged and audited.</td></tr>
-    <tr><td><strong>Sub-processors</strong></td><td>Netlify (frontend), Neon (database), OpenAI (optional anonymous class analysis; no student names or text). Each operates under their own DPA and Standard Contractual Clauses.</td></tr>
+    <tr><td><strong>Engineering Partner</strong></td><td>Our contracted developer, Appifest, Sydney, Australia, operates the production codebase under written confidentiality terms; access to production database is logged and audited.</td></tr>
+    <tr><td><strong>Sub-processors</strong></td><td>Netlify (frontend) and Neon (database), each under their own DPA and Standard Contractual Clauses. Google Fonts serves the page fonts; the browser fetches them.</td></tr>
   </tbody>
 </table>
 
@@ -79,7 +79,7 @@
 <ul>
   <li>Production database access is limited to the Data Protection Lead and the contracted Engineering Partner</li>
   <li>Each access uses a uniquely identifiable credential; shared accounts are not permitted</li>
-  <li>Multi-factor authentication is enabled on the Neon, Netlify and OpenAI admin consoles</li>
+  <li>Multi-factor authentication is enabled on the Neon and Netlify admin consoles</li>
   <li>Access is reviewed quarterly; any contractor whose engagement ends has access revoked within 24 hours</li>
 </ul>
 </div>
@@ -89,7 +89,7 @@
   <li>The simulation collects only what is operationally necessary (see Privacy Policy section 3)</li>
   <li>No real student names, emails, dates of birth, addresses or photos are collected</li>
   <li>Students join via PIN code, no account or password is required or generated</li>
-  <li>Student data and game states are deleted after 30 days</li>
+  <li>The class report and student reports are deleted after 30 days, and the teacher can delete them sooner. A live session's working data is removed when the session expires</li>
 </ul>
 
 <h2>5. Encryption</h2>
@@ -127,7 +127,7 @@
 
 <h2>9. Training and Awareness</h2>
 <ul>
-  <li>The Data Protection Lead reviews UK GDPR, UK Data Protection Act 2018, and KCSIE 2024/25 §143 obligations annually</li>
+  <li>The Data Protection Lead reviews UK GDPR, UK Data Protection Act 2018, and the current Keeping Children Safe in Education guidance annually</li>
   <li>Engineering Partner receives a written briefing on these obligations at the start of the engagement and on any material change</li>
 </ul>
 
@@ -145,8 +145,8 @@
 <table>
   <thead><tr><th style="width:34%">Data type</th><th style="width:22%">Retention</th><th>Trigger to delete</th></tr></thead>
   <tbody>
-    <tr><td>Free-tier session data</td><td>≤ 24 hours</td><td>Session end + 24h auto-delete</td></tr>
-    <tr><td>Paid-tier saved sessions</td><td>Teacher-controlled</td><td>Teacher delete action</td></tr>
+    <tr><td>Class report and student reports</td><td>30 days</td><td>Auto-delete; the teacher can delete them sooner</td></tr>
+    <tr><td>Live session working data</td><td>Until the session expires</td><td>Removed when the session expires</td></tr>
     <tr><td>Teacher account data</td><td>Subscription duration</td><td>Subscription termination + 30 days</td></tr>
     <tr><td>Server logs (incl. IP)</td><td>30 days</td><td>Auto-purge</td></tr>
     <tr><td>Backups</td><td>30 days rolling</td><td>Auto-rotation</td></tr>
