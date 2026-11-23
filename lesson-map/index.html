@@ -170,7 +170,8 @@ main{overflow-x:clip}
   <div class="wrap">
     <span class="kick">Lesson map · GCSE, A level, IB and BTEC Business</span>
     <h1>Every game lesson for your course, on one page.</h1>
-    <p class="lead">Play a topic whole, or lesson by lesson as you teach it.</p>
+    <p class="lead">Each topic is split into lessons. Play the one you are teaching that week, then the whole topic as revision.</p>
+    <p class="lead" id="lm-count" style="font-weight:700;margin-top:6px">35 game lessons across 17 topics</p>
     <div class="lm-bar">
       <select id="lm-course" aria-label="Your course">
         <option value="edexcel-gcse-1bs0">Edexcel GCSE Business 1BS0</option>
@@ -216,6 +217,7 @@ main{overflow-x:clip}
   </div>
   <script>
     document.addEventListener('change',function(e){var s=e.target;if(!s||s.id!=='lm-course')return;var i=document.getElementById('lm-img'),p=document.getElementById('lm-pdf');if(!i||!p)return;
+      var n={'edexcel-gcse-1bs0':[35,17],'aqa-gcse-8132':[35,17],'aqa-a-level-7132':[41,20],'aqa-a-level-7138':[41,20],'edexcel-a-level-9bs0':[41,20],'edexcel-igcse-4bs1':[37,18],'edexcel-ial-business':[41,20],'btec-tech-award-enterprise':[19,9],'btec-l3-national':[23,11],'ocr-gcse-j204':[29,14],'ocr-a-level-h431':[41,20],'ocr-a-level-h436':[41,20],'cambridge-igcse-0264':[37,18],'cambridge-igcse-0450':[37,18],'ib-business-hl':[37,18],'ib-business-sl':[33,16]}[s.value],c=document.getElementById('lm-count');if(c&&n)c.textContent=n[0]+' game lessons across '+n[1]+' topics';
       var b='/assets/lesson-maps/lessonmap-'+s.value,f=i.parentNode,t=s.options[s.selectedIndex].text;p.href=b+'.pdf?v=20261119a';var y=document.getElementById('lm-year');if(y)y.href='/assets/year-plans/yearplan-'+s.value+'.pdf?v=20261120';
       var show=function(){f.classList.remove('swap');};
       f.classList.add('swap');
@@ -227,8 +229,8 @@ main{overflow-x:clip}
   <div class="wrap">
     <div class="panel">
       <span class="kick">Try it, then decide</span>
-      <h2>The trial is one live lesson</h2>
-      <p>Pick any lesson on the map for your trial.</p>
+      <h2>Trial: 2 lessons, no cost</h2>
+      <p>Pick any two lessons on the map.</p>
       <div class="btns">
         <a class="btn" href="/trial/">Request a trial</a>
         <a class="btn ghost" href="/topic-tasks/">See the topic tasks</a>
