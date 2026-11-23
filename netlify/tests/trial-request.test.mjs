@@ -52,7 +52,7 @@ test("the form on the page: the five fields, one optional message, the feedback 
 
 test("the result on the page says what the owner asked, and only that", () => {
   const result = HTML.slice(HTML.indexOf('id="trial-result"'), HTML.indexOf('id="trial-note"'));
-  for (const line of ["Your licence key", "Free: ", "Expires ", "Start a lesson", 'href="https://play.thebusiness.school/"', "Want it for your whole school? Ask us for a quote:", "support@thebusiness.school"]) {
+  for (const line of ["Your licence key", "Trial: ", "Expires ", "Start a lesson", 'href="https://play.thebusiness.school/"', "Want it for your whole school? Ask us for a quote:", "support@thebusiness.school"]) {
     assert.ok(result.includes(line), line);
   }
 });
