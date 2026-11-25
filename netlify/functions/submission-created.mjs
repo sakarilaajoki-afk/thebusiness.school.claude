@@ -27,7 +27,7 @@
    so a submission is never lost here: if the game cannot be reached the owner
    still has it in Netlify Forms, and the game's own record shows it missing.
 */
-import { ROLES } from "./trial-request.mjs";
+import { ROLES, BUSINESS_TEACHERS, BUSINESS_STUDENTS, oneOf } from "./trial-request.mjs";
 
 const HOOK = "https://play.thebusiness.school/api/trial-licence";
 const FORM = "pilot-application";
@@ -54,6 +54,9 @@ export function bodyFor(payload) {
     role: ROLES.includes(clean(data.role, 40)) ? clean(data.role, 40) : "",
     message: String(data.message == null ? "" : data.message).trim().slice(0, 1000),
     feedback_opt_in: clean(data.feedback_opt_in, 10).toLowerCase() === "yes",
+    /* The two optional questions (owner 25.11.2026); "" when not answered. */
+    business_teachers: oneOf(BUSINESS_TEACHERS, data.business_teachers),
+    business_students: oneOf(BUSINESS_STUDENTS, data.business_students),
     /* The thank-you screen's one-time code (trial/index.html). */
     claim: /^[a-f0-9]{32,64}$/.test(clean(data.claim, 64)) ? clean(data.claim, 64) : "",
   };
