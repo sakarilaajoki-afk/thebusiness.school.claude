@@ -65,7 +65,9 @@ export const ROLES = ["Teacher", "Head of Business", "Curriculum lead", "School 
    The Netlify Forms hook (older forms, the fallback) still sends "" when none. */
 export const BUSINESS_TEACHERS = ["1", "2–3", "4–6", "7–10", "more than 10"];
 export const BUSINESS_STUDENTS = ["under 30", "30–100", "100–300", "more than 300"];
-export function oneOf(list, value) { const v = clean(value, 40); return list.includes(v) ? v : ""; }
+/* "How did you hear about us?" (owner 25.11.2026), required on this form. */
+export const HEARD_FROM = ["Google search", "An email from us", "LinkedIn", "Facebook", "Pearson website", "An AI assistant (ChatGPT, Claude, Gemini)", "A colleague", "A conference or event", "Other"];
+export function oneOf(list, value) { const v = clean(value, 60); return list.includes(v) ? v : ""; }
 
 const EMAIL_RE = /^[^\s@<>"',;]+@[^\s@<>"',;]+\.[a-z]{2,}$/i;
 const HEADERS = { "Content-Type": "application/json", "Cache-Control": "no-store" };
@@ -94,6 +96,7 @@ export function check(data) {
     feedback_opt_in: data.feedback_opt_in === true || clean(data.feedback_opt_in, 10).toLowerCase() === "yes",
     business_teachers: oneOf(BUSINESS_TEACHERS, data.business_teachers),
     business_students: oneOf(BUSINESS_STUDENTS, data.business_students),
+    heard_from: oneOf(HEARD_FROM, data.heard_from),
   };
   const fields = [];
   if (form.name.length < 2 || !/\p{L}/u.test(form.name)) fields.push("name");
@@ -103,6 +106,7 @@ export function check(data) {
   if (!COURSES.includes(form.course)) fields.push("course");
   if (!form.business_teachers) fields.push("business_teachers");
   if (!form.business_students) fields.push("business_students");
+  if (!form.heard_from) fields.push("heard_from");
   return { form, fields };
 }
 
