@@ -137,6 +137,7 @@
             <div class="field full"><label for="message">Anything you would like to say? (optional)</label><textarea id="message" name="message" rows="3" maxlength="1000"></textarea></div>
             <div class="field"><label for="business-teachers">Business / Economics teachers in your department *</label><select id="business-teachers" name="business_teachers" required><option value="">Choose</option><option>1</option><option>2–3</option><option>4–6</option><option>7–10</option><option>more than 10</option></select></div>
             <div class="field"><label for="business-students">Students taking Business at your school *</label><select id="business-students" name="business_students" required><option value="">Choose</option><option>under 30</option><option>30–100</option><option>100–300</option><option>more than 300</option></select></div>
+            <div class="field full"><label for="heard-from">How did you hear about us? *</label><select id="heard-from" name="heard_from" required><option value="">Choose</option><option>Google search</option><option>An email from us</option><option>LinkedIn</option><option>Facebook</option><option>Pearson website</option><option>An AI assistant (ChatGPT, Claude, Gemini)</option><option>A colleague</option><option>A conference or event</option><option>Other</option></select></div>
           </div>
           <label class="check feedback"><input type="checkbox" name="feedback_opt_in" value="yes">I’d be happy to share brief feedback afterwards (optional).</label>
           <p class="field-error" id="form-error" role="alert" hidden></p>
@@ -239,7 +240,7 @@
       document.getElementById('handled').value = '';
       HTMLFormElement.prototype.submit.call(form);
     }
-    const LABELS = { name: 'your name', email: 'your school email', school: 'your school name', role: 'your role', course: 'your course', business_teachers: 'the number of Business teachers', business_students: 'the number of Business students' };
+    const LABELS = { name: 'your name', email: 'your school email', school: 'your school name', role: 'your role', course: 'your course', business_teachers: 'the number of Business teachers', business_students: 'the number of Business students', heard_from: 'how you heard about us' };
     /* "Your role" is required (owner 22.11.2026): left empty, one short line. */
     const roleSelect = document.getElementById('role');
     function roleCheck() { roleSelect.setCustomValidity(roleSelect.value ? '' : 'Please choose your role.'); }
