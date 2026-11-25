@@ -59,9 +59,10 @@ export const COURSES = [
    (owner 22.11.2026; a test keeps the two the same). */
 export const ROLES = ["Teacher", "Head of Business", "Curriculum lead", "School leader", "Other"];
 
-/* Two optional questions at the end of the form (owner 25.11.2026), in the
-   form's order; a test keeps the selects the same. Empty or anything else is
-   sent as "" and never stops the request. */
+/* Two questions at the end of the form (owner 25.11.2026), in the form's
+   order; a test keeps the selects the same. Required on this form (owner
+   25.11.2026, "pakollisiksi"): an empty or unknown answer is a field to check.
+   The Netlify Forms hook (older forms, the fallback) still sends "" when none. */
 export const BUSINESS_TEACHERS = ["1", "2–3", "4–6", "7–10", "more than 10"];
 export const BUSINESS_STUDENTS = ["under 30", "30–100", "100–300", "more than 300"];
 export function oneOf(list, value) { const v = clean(value, 40); return list.includes(v) ? v : ""; }
@@ -100,6 +101,8 @@ export function check(data) {
   if (form.school.length < 2 || !/\p{L}/u.test(form.school) || /[<>{}\[\]]|https?:|@/i.test(form.school)) fields.push("school");
   if (!ROLES.includes(form.role)) fields.push("role");
   if (!COURSES.includes(form.course)) fields.push("course");
+  if (!form.business_teachers) fields.push("business_teachers");
+  if (!form.business_students) fields.push("business_students");
   return { form, fields };
 }
 
