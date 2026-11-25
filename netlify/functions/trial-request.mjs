@@ -1,7 +1,8 @@
 /* The short trial form: the licence key on screen at once (owner 19.11.2026).
 
    POST /.netlify/functions/trial-request   (JSON, from trial/index.html)
-   { name, email, school, role, course, message?, feedback_opt_in?, "bot-field" }
+   { name, email, school, role, course, message?, feedback_opt_in?,
+     business_teachers?, business_students?, "bot-field" }
 
    This function checks the five fields, then asks the game to make the trial
    licence (play.thebusiness.school/api/trial-licence, the same step the
@@ -58,6 +59,13 @@ export const COURSES = [
    (owner 22.11.2026; a test keeps the two the same). */
 export const ROLES = ["Teacher", "Head of Business", "Curriculum lead", "School leader", "Other"];
 
+/* Two optional questions at the end of the form (owner 25.11.2026), in the
+   form's order; a test keeps the selects the same. Empty or anything else is
+   sent as "" and never stops the request. */
+export const BUSINESS_TEACHERS = ["1", "2–3", "4–6", "7–10", "more than 10"];
+export const BUSINESS_STUDENTS = ["under 30", "30–100", "100–300", "more than 300"];
+export function oneOf(list, value) { const v = clean(value, 40); return list.includes(v) ? v : ""; }
+
 const EMAIL_RE = /^[^\s@<>"',;]+@[^\s@<>"',;]+\.[a-z]{2,}$/i;
 const HEADERS = { "Content-Type": "application/json", "Cache-Control": "no-store" };
 
@@ -83,6 +91,8 @@ export function check(data) {
     course: clean(data.course, 120),
     message: String(data.message == null ? "" : data.message).replace(/\u0000/g, "").trim().slice(0, 1000),
     feedback_opt_in: data.feedback_opt_in === true || clean(data.feedback_opt_in, 10).toLowerCase() === "yes",
+    business_teachers: oneOf(BUSINESS_TEACHERS, data.business_teachers),
+    business_students: oneOf(BUSINESS_STUDENTS, data.business_students),
   };
   const fields = [];
   if (form.name.length < 2 || !/\p{L}/u.test(form.name)) fields.push("name");

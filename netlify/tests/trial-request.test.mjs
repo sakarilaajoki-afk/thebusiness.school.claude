@@ -4,7 +4,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { handler, setFetch, COURSES, ROLES, check, clientIp } from "../functions/trial-request.mjs";
+import { handler, setFetch, COURSES, ROLES, BUSINESS_TEACHERS, BUSINESS_STUDENTS, check, clientIp } from "../functions/trial-request.mjs";
 import { bodyFor } from "../functions/submission-created.mjs";
 
 const HTML = readFileSync(new URL("../../trial/index.html", import.meta.url), "utf8");
@@ -43,7 +43,9 @@ test("the form on the page: the five fields, one optional message, the feedback 
   assert.match(roleSelect, /^<select id="role" name="role" required><option value="">Choose your role<\/option>/);
   assert.ok(form.indexOf('id="school"') < form.indexOf('id="role"') && form.indexOf('id="role"') < form.indexOf('id="course"'), "between School name and Your course");
   assert.ok(HTML.includes("setCustomValidity(roleSelect.value ? '' : 'Please choose your role.')") && HTML.includes("role: 'your role'"), "a short error when it is empty");
-  const options = [...form.slice(form.indexOf('id="course"')).matchAll(/<option>([^<]+)<\/option>/g)].map((m) => m[1]);
+  /* SPEC CHANGE (owner 25.11.2026): two optional selects follow, so only the course select is read. */
+  const courseSelect = form.slice(form.indexOf('<select id="course"'), form.indexOf("</select>", form.indexOf('<select id="course"')));
+  const options = [...courseSelect.matchAll(/<option>([^<]+)<\/option>/g)].map((m) => m[1]);
   assert.deepEqual(options, COURSES, "the select lists exactly the courses the function accepts");
   assert.ok(COURSES.includes("AQA GCSE Business (8132)") && COURSES.includes("Pearson Edexcel A level Business (9BS0)") && COURSES.at(-1) === "Other");
   assert.ok(HTML.includes("<video") && HTML.includes("motor-film"), "the film stays");
@@ -69,7 +71,7 @@ test("a good request: the game is asked with the secret and the sender's address
   const sent = calls[0].body;
   assert.match(sent.submission_id, /^web-[0-9a-f-]{36}$/);
   assert.deepEqual({ ...sent, submission_id: "" }, { submission_id: "", request_type: "trial", instant: true, ip: "203.0.113.7", name: "Kate Willett", email: "kate@cirencester.example",
-    school: "Cirencester College", role: "Head of Business", course: "AQA GCSE Business (8132)", message: "Year 10", feedback_opt_in: true }); /* SPEC CHANGE (owner 22.11.2026): the role goes on */
+    school: "Cirencester College", role: "Head of Business", course: "AQA GCSE Business (8132)", message: "Year 10", feedback_opt_in: true, business_teachers: "", business_students: "" }); /* SPEC CHANGE (owner 22.11.2026): the role goes on; (25.11.2026) the two optional answers, "" when not given */
   assert.ok(!("claim" in sent) && !("bot-field" in sent), "only the form's own fields go");
   /* two requests, two submissions */
   await submit(FORM);
@@ -151,4 +153,31 @@ test("the Netlify Forms copy of a request this page already handled is stored on
   assert.equal(bodyFor(payload({ handled: "", role: "<script>" })).role, "");
   assert.equal(bodyFor(payload({ handled: "" })).role, "");
   assert.equal(bodyFor(payload({ request_type: "licence" })).request_type, "licence", "a quote request still reaches the game (which leaves it to the owner)");
+});
+
+/* Owner 25.11.2026: two optional selects at the end of the form, before the
+   button. Never required; the game gets the answer or "". */
+test("the two optional questions: on the page before the button, never required, sent to the game and from the Forms hook", async () => {
+  const form = HTML.slice(HTML.indexOf('<form id="application"'), HTML.indexOf("</form>"));
+  const options = (id) => { const s = form.slice(form.indexOf(`<select id="${id}"`), form.indexOf("</select>", form.indexOf(`<select id="${id}"`))); return [...s.matchAll(/<option>([^<]+)<\/option>/g)].map((m) => m[1]); };
+  assert.deepEqual(options("business-teachers"), BUSINESS_TEACHERS);
+  assert.deepEqual(options("business-students"), BUSINESS_STUDENTS);
+  assert.deepEqual(BUSINESS_TEACHERS, ["1", "2–3", "4–6", "7–10", "more than 10"]);
+  assert.deepEqual(BUSINESS_STUDENTS, ["under 30", "30–100", "100–300", "more than 300"]);
+  assert.ok(form.includes("Business / Economics teachers in your department (optional)"));
+  assert.ok(form.includes("Students taking Business at your school (optional)"));
+  assert.doesNotMatch(form, /<select id="business-(teachers|students)"[^>]*required/);
+  assert.ok(form.indexOf('id="message"') < form.indexOf('id="business-teachers"') && form.indexOf('id="business-students"') < form.indexOf('id="submit-btn"'), "at the end, before the button");
+  /* empty, answered and nonsense: never a reason to refuse */
+  for (const [t, st, wantT, wantS] of [["", "", "", ""], ["4–6", "100–300", "4–6", "100–300"], ["lots", "<b>9</b>", "", ""]]) {
+    const { form: f, fields } = check({ ...FORM, business_teachers: t, business_students: st });
+    assert.deepEqual(fields, []);
+    assert.deepEqual([f.business_teachers, f.business_students], [wantT, wantS]);
+  }
+  const calls = game({ outcome: "new", key: "TBS-AB12-CD34", expires_at: "2027-02-28", lessons: 2, emailed: true });
+  const out = await submit({ ...FORM, business_teachers: "7–10", business_students: "more than 300" });
+  assert.equal(out.status, 200);
+  assert.deepEqual([calls[0].body.business_teachers, calls[0].body.business_students], ["7–10", "more than 300"]);
+  const hooked = bodyFor({ form_name: "pilot-application", id: "x1", data: { ...FORM, business_teachers: "2–3", business_students: "under 30" } });
+  assert.deepEqual([hooked.business_teachers, hooked.business_students], ["2–3", "under 30"]);
 });
