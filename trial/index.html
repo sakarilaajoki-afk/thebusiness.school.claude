@@ -267,7 +267,7 @@
           }
           if (out.ok && out.outcome === 'new') { keepCopy(); return showKey(out, email); }
           if (out.ok && out.outcome === 'existing') { keepCopy(); return showNote('You already have a trial licence', 'It is in your email from support@thebusiness.school. If you can’t see it, please check your junk folder.'); }
-          if (out.ok && out.outcome === 'email_only') { keepCopy(); return showNote('Your trial licence is on its way', 'It comes by email from support@thebusiness.school in a few minutes.'); }
+          if (out.ok && out.outcome === 'email_only') { keepCopy(); return showNote('Your trial licence is on its way', 'It comes by email in a few minutes.'); }
           if (res.status === 429) { keepCopy(); return showNote('We couldn’t make a trial licence just now', 'Please write to support@thebusiness.school and we’ll send one.'); }
           sendTheOldWay(email);
         })
