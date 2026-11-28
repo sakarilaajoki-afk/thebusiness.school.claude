@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "madeFrom": "bs-multiplayer f0079a2c",
+  "madeFrom": "bs-multiplayer 102ee812",
   "guides": [
     {
       "courseId": "btec-l3-extended-certificate",
@@ -525,50 +525,34 @@
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "cash-flow",
-      "topic": "Cash flow",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--cash-flow.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--stakeholders-and-ethics.pdf"
     },
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "break-even",
-      "topic": "Break-even",
+      "topicId": "growth-scale",
+      "topic": "Business growth",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--break-even.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--business-growth.pdf"
     },
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "pricing",
-      "topic": "Pricing",
+      "topicId": "external-environment",
+      "topic": "Economic influence",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--pricing.pdf"
-    },
-    {
-      "courseId": "eduqas-gcse-c510qs",
-      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "promotion",
-      "topic": "Promotion",
-      "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--promotion.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--economic-influence.pdf"
     },
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
       "topicId": "stock",
-      "topic": "Stock",
+      "topic": "Stock control",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--stock.pdf"
-    },
-    {
-      "courseId": "eduqas-gcse-c510qs",
-      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "revenue-costs-profit",
-      "topic": "Revenue, costs and profit",
-      "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--revenue-costs-and-profit.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--stock-control.pdf"
     },
     {
       "courseId": "eduqas-gcse-c510qs",
@@ -581,42 +565,82 @@
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "investment-appraisal",
-      "topic": "Investment appraisal",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--investment-appraisal.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--break-even.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "investment-appraisal",
+      "topic": "Revenue and costs: ARR",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--revenue-and-costs-arr.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "cash-flow",
+      "topic": "Cash-flow",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--cash-flow.pdf"
     },
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
       "topicId": "financial-ratios",
-      "topic": "Financial ratios",
+      "topic": "Financial performance",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--financial-ratios.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--financial-performance.pdf"
     },
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
       "topicId": "market-share",
-      "topic": "Market share and segmentation",
+      "topic": "Understanding customers",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--market-share-and-segmentation.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--understanding-customers.pdf"
     },
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "production-capacity",
-      "topic": "Production and capacity",
+      "topicId": "product-portfolio",
+      "topic": "Marketing mix: product",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--production-and-capacity.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--marketing-mix-product.pdf"
     },
     {
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "growth-scale",
-      "topic": "Growth and economies of scale",
+      "topicId": "pricing",
+      "topic": "Marketing mix: price",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--growth-and-economies-of-scale.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--marketing-mix-price.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "promotion",
+      "topic": "Marketing mix: promotion",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--marketing-mix-promotion.pdf"
+    },
+    {
+      "courseId": "eduqas-gcse-c510qs",
+      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--recruitment-and-training.pdf"
     },
     {
       "courseId": "eduqas-gcse-c510qs",
@@ -630,41 +654,9 @@
       "courseId": "eduqas-gcse-c510qs",
       "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
       "topicId": "organisational-structure",
-      "topic": "Organisational structure",
+      "topic": "Organisational structures",
       "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--organisational-structure.pdf"
-    },
-    {
-      "courseId": "eduqas-gcse-c510qs",
-      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "recruitment-training",
-      "topic": "Recruitment and training",
-      "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--recruitment-and-training.pdf"
-    },
-    {
-      "courseId": "eduqas-gcse-c510qs",
-      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "product-portfolio",
-      "topic": "Product portfolio",
-      "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--product-portfolio.pdf"
-    },
-    {
-      "courseId": "eduqas-gcse-c510qs",
-      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "stakeholders-ethics",
-      "topic": "Stakeholders and ethics",
-      "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--stakeholders-and-ethics.pdf"
-    },
-    {
-      "courseId": "eduqas-gcse-c510qs",
-      "course": "WJEC Eduqas GCSE (9-1) in Business (C510QS)",
-      "topicId": "external-environment",
-      "topic": "External environment",
-      "draft": false,
-      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--external-environment.pdf"
+      "file": "wjec-eduqas-gcse-9-1-in-business-c510qs--organisational-structures.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
@@ -677,10 +669,26 @@
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "cash-flow",
-      "topic": "Cash flow",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--cash-flow.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "sources-of-finance",
+      "topic": "Business finance",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--business-finance.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue and costs",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--revenue-and-costs.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
@@ -693,82 +701,58 @@
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "pricing",
-      "topic": "Pricing",
+      "topicId": "market-share",
+      "topic": "Markets: market share",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--pricing.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--markets-market-share.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "product-portfolio",
+      "topic": "Marketing mix: product",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--marketing-mix-product.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "pricing",
+      "topic": "Marketing mix: price",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--marketing-mix-price.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
       "topicId": "promotion",
-      "topic": "Promotion",
+      "topic": "Marketing mix: promotion",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--promotion.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--marketing-mix-promotion.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "stock",
-      "topic": "Stock",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--stock.pdf"
-    },
-    {
-      "courseId": "eduqas-a-level-a510qs",
-      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "revenue-costs-profit",
-      "topic": "Revenue, costs and profit",
-      "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--revenue-costs-and-profit.pdf"
-    },
-    {
-      "courseId": "eduqas-a-level-a510qs",
-      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "sources-of-finance",
-      "topic": "Sources of finance",
-      "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--sources-of-finance.pdf"
-    },
-    {
-      "courseId": "eduqas-a-level-a510qs",
-      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "investment-appraisal",
-      "topic": "Investment appraisal",
-      "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--investment-appraisal.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--cash-flow.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
       "topicId": "financial-ratios",
-      "topic": "Financial ratios",
+      "topic": "Ratio analysis",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--financial-ratios.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--ratio-analysis.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "market-share",
-      "topic": "Market share and segmentation",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--market-share-and-segmentation.pdf"
-    },
-    {
-      "courseId": "eduqas-a-level-a510qs",
-      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "production-capacity",
-      "topic": "Production and capacity",
-      "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--production-and-capacity.pdf"
-    },
-    {
-      "courseId": "eduqas-a-level-a510qs",
-      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "growth-scale",
-      "topic": "Growth and economies of scale",
-      "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--growth-and-economies-of-scale.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--recruitment-and-training.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
@@ -782,57 +766,65 @@
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
       "topicId": "leadership",
-      "topic": "Leadership and management",
+      "topic": "Management and leadership",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--leadership-and-management.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--management-and-leadership.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
       "topicId": "organisational-structure",
-      "topic": "Organisational structure",
+      "topic": "Organisational design",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--organisational-structure.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--organisational-design.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "recruitment-training",
-      "topic": "Recruitment and training",
+      "topicId": "production-capacity",
+      "topic": "Capacity utilisation",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--recruitment-and-training.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--capacity-utilisation.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "stock",
+      "topic": "Stock control",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--stock-control.pdf"
+    },
+    {
+      "courseId": "eduqas-a-level-a510qs",
+      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
+      "topicId": "growth-scale",
+      "topic": "Economies of scale",
+      "draft": false,
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--economies-of-scale.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
       "topicId": "business-strategy",
-      "topic": "Business strategy",
+      "topic": "Strategy",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--business-strategy.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--strategy.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "product-portfolio",
-      "topic": "Product portfolio",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--product-portfolio.pdf"
-    },
-    {
-      "courseId": "eduqas-a-level-a510qs",
-      "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
-      "topicId": "stakeholders-ethics",
-      "topic": "Stakeholders and ethics",
-      "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--stakeholders-and-ethics.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--investment-appraisal.pdf"
     },
     {
       "courseId": "eduqas-a-level-a510qs",
       "course": "WJEC Eduqas GCE A Level in Business (A510QS)",
       "topicId": "external-environment",
-      "topic": "External environment",
+      "topic": "PEST factors",
       "draft": false,
-      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--external-environment.pdf"
+      "file": "wjec-eduqas-gce-a-level-in-business-a510qs--pest-factors.pdf"
     },
     {
       "courseId": "wjec-gcse-wales-2025",
@@ -845,42 +837,18 @@
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "cash-flow",
-      "topic": "Cash flow",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and society",
       "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--cash-flow.pdf"
-    },
-    {
-      "courseId": "wjec-gcse-wales-2025",
-      "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "break-even",
-      "topic": "Break-even",
-      "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--break-even.pdf"
-    },
-    {
-      "courseId": "wjec-gcse-wales-2025",
-      "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "pricing",
-      "topic": "Pricing",
-      "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--pricing.pdf"
-    },
-    {
-      "courseId": "wjec-gcse-wales-2025",
-      "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "promotion",
-      "topic": "Promotion",
-      "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--promotion.pdf"
+      "file": "wjec-gcse-business-c00-4967-2--stakeholders-and-society.pdf"
     },
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
       "topicId": "stock",
-      "topic": "Stock",
+      "topic": "Stock control",
       "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--stock.pdf"
+      "file": "wjec-gcse-business-c00-4967-2--stock-control.pdf"
     },
     {
       "courseId": "wjec-gcse-wales-2025",
@@ -893,6 +861,30 @@
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--break-even.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "growth-scale",
+      "topic": "Business growth",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--business-growth.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "external-environment",
+      "topic": "Economic factors",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--economic-factors.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
       "topicId": "sources-of-finance",
       "topic": "Sources of finance",
       "draft": false,
@@ -901,42 +893,50 @@
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "financial-ratios",
-      "topic": "Financial ratios",
+      "topicId": "cash-flow",
+      "topic": "Cashflow forecasts",
       "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--financial-ratios.pdf"
+      "file": "wjec-gcse-business-c00-4967-2--cashflow-forecasts.pdf"
+    },
+    {
+      "courseId": "wjec-gcse-wales-2025",
+      "course": "WJEC GCSE Business (C00/4967/2)",
+      "topicId": "financial-ratios",
+      "topic": "Financial performance",
+      "draft": false,
+      "file": "wjec-gcse-business-c00-4967-2--financial-performance.pdf"
     },
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
       "topicId": "market-share",
-      "topic": "Market share and segmentation",
+      "topic": "Segmentation",
       "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--market-share-and-segmentation.pdf"
+      "file": "wjec-gcse-business-c00-4967-2--segmentation.pdf"
     },
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "production-capacity",
-      "topic": "Production and capacity",
+      "topicId": "product-portfolio",
+      "topic": "Marketing mix: product",
       "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--production-and-capacity.pdf"
+      "file": "wjec-gcse-business-c00-4967-2--marketing-mix-product.pdf"
     },
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "growth-scale",
-      "topic": "Growth and economies of scale",
+      "topicId": "pricing",
+      "topic": "Marketing mix: price",
       "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--growth-and-economies-of-scale.pdf"
+      "file": "wjec-gcse-business-c00-4967-2--marketing-mix-price.pdf"
     },
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "motivation",
-      "topic": "Motivation",
+      "topicId": "promotion",
+      "topic": "Marketing mix: promotion",
       "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--motivation.pdf"
+      "file": "wjec-gcse-business-c00-4967-2--marketing-mix-promotion.pdf"
     },
     {
       "courseId": "wjec-gcse-wales-2025",
@@ -949,26 +949,10 @@
     {
       "courseId": "wjec-gcse-wales-2025",
       "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "product-portfolio",
-      "topic": "Product portfolio",
+      "topicId": "motivation",
+      "topic": "Motivation",
       "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--product-portfolio.pdf"
-    },
-    {
-      "courseId": "wjec-gcse-wales-2025",
-      "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "stakeholders-ethics",
-      "topic": "Stakeholders and ethics",
-      "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--stakeholders-and-ethics.pdf"
-    },
-    {
-      "courseId": "wjec-gcse-wales-2025",
-      "course": "WJEC GCSE Business (C00/4967/2)",
-      "topicId": "external-environment",
-      "topic": "External environment",
-      "draft": false,
-      "file": "wjec-gcse-business-c00-4967-2--external-environment.pdf"
+      "file": "wjec-gcse-business-c00-4967-2--motivation.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
@@ -981,10 +965,26 @@
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "cash-flow",
-      "topic": "Cash flow",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--cash-flow.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "sources-of-finance",
+      "topic": "Business finance",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--business-finance.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue and costs",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--revenue-and-costs.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
@@ -997,82 +997,58 @@
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "pricing",
-      "topic": "Pricing",
+      "topicId": "market-share",
+      "topic": "Markets: market share",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--pricing.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--markets-market-share.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "product-portfolio",
+      "topic": "Marketing mix: product",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--marketing-mix-product.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "pricing",
+      "topic": "Marketing mix: price",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--marketing-mix-price.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
       "topicId": "promotion",
-      "topic": "Promotion",
+      "topic": "Marketing mix: promotion",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--promotion.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--marketing-mix-promotion.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "stock",
-      "topic": "Stock",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--stock.pdf"
-    },
-    {
-      "courseId": "wjec-a-level-1510qs",
-      "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "revenue-costs-profit",
-      "topic": "Revenue, costs and profit",
-      "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--revenue-costs-and-profit.pdf"
-    },
-    {
-      "courseId": "wjec-a-level-1510qs",
-      "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "sources-of-finance",
-      "topic": "Sources of finance",
-      "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--sources-of-finance.pdf"
-    },
-    {
-      "courseId": "wjec-a-level-1510qs",
-      "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "investment-appraisal",
-      "topic": "Investment appraisal",
-      "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--investment-appraisal.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--cash-flow.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
       "topicId": "financial-ratios",
-      "topic": "Financial ratios",
+      "topic": "Ratio analysis",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--financial-ratios.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--ratio-analysis.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "market-share",
-      "topic": "Market share and segmentation",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--market-share-and-segmentation.pdf"
-    },
-    {
-      "courseId": "wjec-a-level-1510qs",
-      "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "production-capacity",
-      "topic": "Production and capacity",
-      "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--production-and-capacity.pdf"
-    },
-    {
-      "courseId": "wjec-a-level-1510qs",
-      "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "growth-scale",
-      "topic": "Growth and economies of scale",
-      "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--growth-and-economies-of-scale.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--recruitment-and-training.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
@@ -1086,225 +1062,681 @@
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
       "topicId": "leadership",
-      "topic": "Leadership and management",
+      "topic": "Management and leadership",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--leadership-and-management.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--management-and-leadership.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
       "topicId": "organisational-structure",
-      "topic": "Organisational structure",
+      "topic": "Organisational design",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--organisational-structure.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--organisational-design.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "recruitment-training",
-      "topic": "Recruitment and training",
+      "topicId": "production-capacity",
+      "topic": "Capacity utilisation",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--recruitment-and-training.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--capacity-utilisation.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "stock",
+      "topic": "Stock control",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--stock-control.pdf"
+    },
+    {
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "growth-scale",
+      "topic": "Economies of scale",
+      "draft": false,
+      "file": "wjec-gce-a-level-in-business-1510qs--economies-of-scale.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
       "topicId": "business-strategy",
-      "topic": "Business strategy",
+      "topic": "Strategy",
       "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--business-strategy.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--strategy.pdf"
     },
     {
       "courseId": "wjec-a-level-1510qs",
       "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "product-portfolio",
-      "topic": "Product portfolio",
-      "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--product-portfolio.pdf"
-    },
-    {
-      "courseId": "wjec-a-level-1510qs",
-      "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "stakeholders-ethics",
-      "topic": "Stakeholders and ethics",
-      "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--stakeholders-and-ethics.pdf"
-    },
-    {
-      "courseId": "wjec-a-level-1510qs",
-      "course": "WJEC GCE A Level in Business (1510QS)",
-      "topicId": "external-environment",
-      "topic": "External environment",
-      "draft": false,
-      "file": "wjec-gce-a-level-in-business-1510qs--external-environment.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "no-topic",
-      "topic": "No topic",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--no-topic.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "cash-flow",
-      "topic": "Cash flow",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--cash-flow.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "break-even",
-      "topic": "Break-even",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--break-even.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "pricing",
-      "topic": "Pricing",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--pricing.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "promotion",
-      "topic": "Promotion",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--promotion.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "stock",
-      "topic": "Stock",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--stock.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "revenue-costs-profit",
-      "topic": "Revenue, costs and profit",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--revenue-costs-and-profit.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "sources-of-finance",
-      "topic": "Sources of finance",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--sources-of-finance.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
       "topicId": "investment-appraisal",
       "topic": "Investment appraisal",
       "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--investment-appraisal.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--investment-appraisal.pdf"
     },
     {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "financial-ratios",
-      "topic": "Financial ratios",
+      "courseId": "wjec-a-level-1510qs",
+      "course": "WJEC GCE A Level in Business (1510QS)",
+      "topicId": "external-environment",
+      "topic": "PEST factors",
       "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--financial-ratios.pdf"
+      "file": "wjec-gce-a-level-in-business-1510qs--pest-factors.pdf"
     },
     {
       "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "market-share",
-      "topic": "Market share and segmentation",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "no-topic",
+      "topic": "No topic",
       "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--market-share-and-segmentation.pdf"
+      "file": "cambridge-international-a-level-business-9609--no-topic.pdf"
     },
     {
       "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "production-capacity",
-      "topic": "Production and capacity",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--production-and-capacity.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
+      "course": "Cambridge International A Level Business (9609)",
       "topicId": "growth-scale",
-      "topic": "Growth and economies of scale",
+      "topic": "Business growth",
       "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--growth-and-economies-of-scale.pdf"
+      "file": "cambridge-international-a-level-business-9609--business-growth.pdf"
     },
     {
       "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "motivation",
-      "topic": "Motivation",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders",
       "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--motivation.pdf"
+      "file": "cambridge-international-a-level-business-9609--stakeholders.pdf"
     },
     {
       "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "leadership",
-      "topic": "Leadership and management",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--leadership-and-management.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "organisational-structure",
-      "topic": "Organisational structure",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--organisational-structure.pdf"
-    },
-    {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
+      "course": "Cambridge International A Level Business (9609)",
       "topicId": "recruitment-training",
       "topic": "Recruitment and training",
       "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--recruitment-and-training.pdf"
+      "file": "cambridge-international-a-level-business-9609--recruitment-and-training.pdf"
     },
     {
       "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
-      "topicId": "business-strategy",
-      "topic": "Business strategy",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "motivation",
+      "topic": "Motivation",
       "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--business-strategy.pdf"
+      "file": "cambridge-international-a-level-business-9609--motivation.pdf"
     },
     {
       "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "leadership",
+      "topic": "Management and leadership",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--management-and-leadership.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "market-share",
+      "topic": "Markets and segmentation",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--markets-and-segmentation.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
       "topicId": "product-portfolio",
       "topic": "Product portfolio",
       "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--product-portfolio.pdf"
+      "file": "cambridge-international-a-level-business-9609--product-portfolio.pdf"
     },
     {
       "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "pricing",
+      "topic": "Pricing methods",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--pricing-methods.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "promotion",
+      "topic": "Promotion methods",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--promotion-methods.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "production-capacity",
+      "topic": "Capacity utilisation",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--capacity-utilisation.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "stock",
+      "topic": "Inventory management",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--inventory-management.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow forecasts",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--cash-flow-forecasts.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Costs",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--costs.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "break-even",
+      "topic": "Break-even analysis",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--break-even-analysis.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "external-environment",
+      "topic": "External influences",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--external-influences.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--business-strategy.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--organisational-structure.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "financial-ratios",
+      "topic": "Published accounts",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--published-accounts.pdf"
+    },
+    {
+      "courseId": "cambridge-as-a-level-9609",
+      "course": "Cambridge International A Level Business (9609)",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": false,
+      "file": "cambridge-international-a-level-business-9609--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--no-topic.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "growth-scale",
+      "topic": "Business growth",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--business-growth.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--stakeholders.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--motivation.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "leadership",
+      "topic": "Management and leadership",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--management-and-leadership.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "market-share",
+      "topic": "Markets and segmentation",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--markets-and-segmentation.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--product-portfolio.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "pricing",
+      "topic": "Pricing methods",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--pricing-methods.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "promotion",
+      "topic": "Promotion methods",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--promotion-methods.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "production-capacity",
+      "topic": "Capacity utilisation",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--capacity-utilisation.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "stock",
+      "topic": "Inventory management",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--inventory-management.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "cash-flow",
+      "topic": "Cash flow forecasts",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--cash-flow-forecasts.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "revenue-costs-profit",
+      "topic": "Costs",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--costs.pdf"
+    },
+    {
+      "courseId": "cambridge-as-9609",
+      "course": "Cambridge International AS Level Business (9609)",
+      "topicId": "break-even",
+      "topic": "Break-even analysis",
+      "draft": false,
+      "file": "cambridge-international-as-level-business-9609--break-even-analysis.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--no-topic.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--cash-flow.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--break-even.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--pricing.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--promotion.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--stock.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--financial-ratios.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--motivation.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--organisational-structure.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": true,
+      "file": "ccea-gcse-business-studies--product-portfolio.pdf"
+    },
+    {
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
       "topicId": "stakeholders-ethics",
       "topic": "Stakeholders and ethics",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--stakeholders-and-ethics.pdf"
+      "draft": true,
+      "file": "ccea-gcse-business-studies--stakeholders-and-ethics.pdf"
     },
     {
-      "courseId": "cambridge-as-a-level-9609",
-      "course": "Cambridge International AS & A Level Business (9609)",
+      "courseId": "ccea-gcse",
+      "course": "CCEA GCSE Business Studies",
       "topicId": "external-environment",
       "topic": "External environment",
-      "draft": false,
-      "file": "cambridge-international-as-and-a-level-business-9609--external-environment.pdf"
+      "draft": true,
+      "file": "ccea-gcse-business-studies--external-environment.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "no-topic",
+      "topic": "No topic",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--no-topic.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "cash-flow",
+      "topic": "Cash flow",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--cash-flow.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "break-even",
+      "topic": "Break-even",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--break-even.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "pricing",
+      "topic": "Pricing",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--pricing.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "promotion",
+      "topic": "Promotion",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--promotion.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "stock",
+      "topic": "Stock",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--stock.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "revenue-costs-profit",
+      "topic": "Revenue, costs and profit",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--revenue-costs-and-profit.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "sources-of-finance",
+      "topic": "Sources of finance",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--sources-of-finance.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "investment-appraisal",
+      "topic": "Investment appraisal",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--investment-appraisal.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "financial-ratios",
+      "topic": "Financial ratios",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--financial-ratios.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "market-share",
+      "topic": "Market share and segmentation",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--market-share-and-segmentation.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "production-capacity",
+      "topic": "Production and capacity",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--production-and-capacity.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "growth-scale",
+      "topic": "Growth and economies of scale",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--growth-and-economies-of-scale.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "motivation",
+      "topic": "Motivation",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--motivation.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "leadership",
+      "topic": "Leadership and management",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--leadership-and-management.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "organisational-structure",
+      "topic": "Organisational structure",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--organisational-structure.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "recruitment-training",
+      "topic": "Recruitment and training",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--recruitment-and-training.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "business-strategy",
+      "topic": "Business strategy",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--business-strategy.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "product-portfolio",
+      "topic": "Product portfolio",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--product-portfolio.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "stakeholders-ethics",
+      "topic": "Stakeholders and ethics",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--stakeholders-and-ethics.pdf"
+    },
+    {
+      "courseId": "ccea-a-level",
+      "course": "CCEA A level Business Studies",
+      "topicId": "external-environment",
+      "topic": "External environment",
+      "draft": true,
+      "file": "ccea-a-level-business-studies--external-environment.pdf"
     },
     {
       "courseId": "sqa-n5-business-management",
